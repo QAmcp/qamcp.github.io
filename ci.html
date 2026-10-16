@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Run QAmcp in CI: test your MCP server on every pull request</title>
+<meta name="description" content="Add one file to GitHub and QAmcp tests your MCP server on every pull request, comments the score, and fails the build if the server got worse. Works in any CI.">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231A1A1A'/%3E%3Crect x='7' y='7' width='18' height='18' rx='2' fill='none' stroke='%23B9838A' stroke-width='2.4'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="site.css">
+<style>
+pre.code{position:relative;margin-top:18px;background:var(--ground);border:1px solid var(--frame);border-radius:10px;padding:18px 20px;font:400 13.5px/1.65 var(--mono);color:var(--soft);overflow-x:auto;font-variant-ligatures:none}
+pre.code .k{color:var(--ink)}pre.code .v{color:var(--rose)}pre.code .c{color:var(--faint)}
+.code-wrap{position:relative;max-width:760px}
+.code-wrap .copy{position:absolute;top:10px;right:10px;padding:8px 14px;border-radius:7px;font-size:13.5px}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="sheet">
+ <div class="sheet-in">
+  <header class="top">
+   <a class="brand" href="./">QA<b>mcp</b></a>
+   <nav aria-label="Main"><a href="how-it-works.html">How it works</a><a href="safety.html">Safety</a><a href="ci.html" aria-current="page">Run it in CI</a><a href="samples.html">Sample reports</a></nav>
+   <a class="gh" href="https://github.com/abhiramreddykalluru01-debug/qamcp-cli"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38v-1.33c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.06-.49.06-.49.8.06 1.23.83 1.23.83.72 1.22 1.88.87 2.34.66.07-.52.28-.87.5-1.07-1.78-.2-3.65-.89-3.65-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>GitHub</a>
+  </header>
+  <main id="main">
+   <div class="page-head">
+    <h1>Test your MCP server on every change</h1>
+    <p>Add one file to your GitHub repository. Every pull request gets a comment with the score, and the build fails if the server got worse, before your users' AI apps notice.</p>
+    <nav class="toc" aria-label="On this page"><a href="#start">Set it up in 2 minutes</a><a href="#key">A server that needs a key</a><a href="#changes">Catch what changed</a><a href="#other">Any other CI</a><a href="#options">All options</a></nav>
+   </div>
+  </main>
+ </div>
+</div>
+
+<section class="part" id="start" aria-labelledby="h-start">
+ <div class="part-in">
+  <span class="sheetno">Sheet 2 of 6 · Set it up</span>
+  <h2 id="h-start">One file, three steps</h2>
+  <ol class="proc">
+   <li><b>Create the file</b><span>In your repository, add <code>.github/workflows/qamcp.yml</code> with the contents below. Change the <code>url</code> to your server's link.</span></li>
+   <li><b>Commit it</b><span>That's the whole setup. GitHub runs it for free on public repositories.</span></li>
+   <li><b>Open a pull request</b><span>QAmcp tests the server and comments the score. If the score is under 80, the check turns red. Later runs update that same comment instead of adding new ones.</span></li>
+  </ol>
+  <div class="code-wrap">
+<pre class="code" id="yml1"><span class="k">name</span>: <span class="v">QAmcp</span>
+<span class="k">on</span>: <span class="v">[pull_request]</span>
+<span class="k">permissions</span>:
+  <span class="k">contents</span>: <span class="v">read</span>
+  <span class="k">pull-requests</span>: <span class="v">write</span>   <span class="c"># to comment the score</span>
+<span class="k">jobs</span>:
+  <span class="k">qamcp</span>:
+    <span class="k">runs-on</span>: <span class="v">ubuntu-latest</span>
+    <span class="k">steps</span>:
+      - <span class="k">uses</span>: <span class="v">actions/checkout@v7</span>
+      - <span class="k">uses</span>: <span class="v">abhiramreddykalluru01-debug/qamcp-cli@v0</span>
+        <span class="k">with</span>:
+          <span class="k">url</span>: <span class="v">https://your-server.com/mcp</span>
+          <span class="k">fail-under</span>: <span class="v">80</span></pre>
+   <button class="copy" type="button" data-copy-from="yml1">Copy</button>
+  </div>
+ </div>
+</section>
+
+<section class="part" id="key" aria-labelledby="h-key">
+ <div class="part-in">
+  <span class="sheetno">Sheet 3 of 6 · A server that needs a key</span>
+  <h2 id="h-key">Keep the key in GitHub's secrets</h2>
+  <ol class="proc">
+   <li><b>Make a test key</b><span>Create a key for your server that can only read, just for testing.</span></li>
+   <li><b>Add it as a secret</b><span>Repository → Settings → Secrets and variables → Actions → New repository secret. Name it <code>MCP_TEST_TOKEN</code>.</span></li>
+   <li><b>Send it as a header</b><span>Add these lines under <code>with:</code>. The key goes only to your server, and GitHub hides it in the logs.</span></li>
+  </ol>
+  <div class="code-wrap">
+<pre class="code" id="yml2">          <span class="k">headers</span>: |
+            <span class="v">Authorization: Bearer ${{ secrets.MCP_TEST_TOKEN }}</span></pre>
+   <button class="copy" type="button" data-copy-from="yml2">Copy</button>
+  </div>
+  <p class="intro">Is your server a program instead of a link? Use <code>stdio: npx -y your-mcp-server</code> in place of <code>url</code>.</p>
+ </div>
+</section>
+
+<section class="part" id="changes" aria-labelledby="h-changes">
+ <div class="part-in">
+  <span class="sheetno">Sheet 4 of 6 · Catch what changed</span>
+  <h2 id="h-changes">Compare every run with the last one</h2>
+  <p class="intro">With a baseline, QAmcp remembers the last report and fails the build if the score dropped by more than 5 points, a check started failing, or a tool was removed. Tools that changed are listed in the report and the <code>tools-changed</code> output, so you can decide what to do. That's how you catch a broken release before your customers do.</p>
+  <div class="code-wrap">
+<pre class="code" id="yml3">      <span class="c"># keep the last report between runs</span>
+      - <span class="k">uses</span>: <span class="v">actions/cache@v6</span>
+        <span class="k">with</span>:
+          <span class="k">path</span>: <span class="v">qamcp-baseline.json</span>
+          <span class="k">key</span>: <span class="v">qamcp-${{ github.ref_name }}-${{ github.sha }}</span>
+          <span class="k">restore-keys</span>: |
+            <span class="v">qamcp-${{ github.ref_name }}-</span>
+            <span class="v">qamcp-main-</span>
+      - <span class="k">uses</span>: <span class="v">abhiramreddykalluru01-debug/qamcp-cli@v0</span>
+        <span class="k">with</span>:
+          <span class="k">url</span>: <span class="v">https://your-server.com/mcp</span>
+          <span class="k">fail-under</span>: <span class="v">80</span>
+          <span class="k">baseline</span>: <span class="v">qamcp-baseline.json</span>
+          <span class="k">save-baseline</span>: <span class="v">qamcp-baseline.json</span></pre>
+   <button class="copy" type="button" data-copy-from="yml3">Copy</button>
+  </div>
+  <p class="intro">The first run has no baseline yet, and that's fine: it just saves one. The full example, with uploading the reports as files, is in <a href="https://github.com/abhiramreddykalluru01-debug/qamcp-cli/blob/main/examples/qamcp-ci.yml">examples/qamcp-ci.yml</a>.</p>
+ </div>
+</section>
+
+<section class="part" id="other" aria-labelledby="h-other">
+ <div class="part-in">
+  <span class="sheetno">Sheet 5 of 6 · Any other CI</span>
+  <h2 id="h-other">GitLab, CircleCI, Jenkins or your own script</h2>
+  <p class="intro">Run the same command anywhere Node.js 20 or newer is installed. The exit code tells your CI what happened.</p>
+  <div class="code-wrap">
+<pre class="code" id="cmd1">npx qamcp-cli https://your-server.com/mcp --fail-under 80 --baseline base.json --save-baseline base.json --junit report.xml</pre>
+   <button class="copy" type="button" data-copy-from="cmd1">Copy</button>
+  </div>
+  <table class="t">
+   <thead><tr><th>Exit code</th><th>Means</th></tr></thead>
+   <tbody>
+    <tr><td class="n">0</td><td>Fine: every rule you set passed</td></tr>
+    <tr><td class="n">1</td><td>A rule you set failed: score too low, a check failed, or the server got worse than the baseline</td></tr>
+    <tr><td class="n">2</td><td>Wrong options in the command</td></tr>
+    <tr><td class="n">3</td><td>Could not test: the server is down, needs a login, or asked us to slow down</td></tr>
+   </tbody>
+  </table>
+ </div>
+</section>
+
+<section class="part" id="options" aria-labelledby="h-options">
+ <div class="part-in">
+  <span class="sheetno">Sheet 6 of 6 · All options</span>
+  <h2 id="h-options">Everything the GitHub check accepts</h2>
+  <table class="t">
+   <thead><tr><th>Option</th><th>What it does</th><th>Default</th></tr></thead>
+   <tbody>
+    <tr><td><code>url</code></td><td>Link to the MCP server to test (use this or <code>stdio</code>)</td><td class="n">none</td></tr>
+    <tr><td><code>stdio</code></td><td>A command that starts the server as a program</td><td class="n">none</td></tr>
+    <tr><td><code>headers</code></td><td>Headers to send, one <code>Name: value</code> per line. Put keys in secrets.</td><td class="n">none</td></tr>
+    <tr><td><code>fail-under</code></td><td>Fail if the score is below this number</td><td class="n">none</td></tr>
+    <tr><td><code>fail-on-fail</code></td><td>Fail if any check failed</td><td class="n">false</td></tr>
+    <tr><td><code>baseline</code></td><td>A saved report to compare with (a missing file is fine on the first run)</td><td class="n">none</td></tr>
+    <tr><td><code>max-drop</code></td><td>How many points the score may fall below the baseline</td><td class="n">5</td></tr>
+    <tr><td><code>save-baseline</code></td><td>Where to save this run's report as the next baseline</td><td class="n">none</td></tr>
+    <tr><td><code>timeout</code></td><td>Seconds allowed per request</td><td class="n">20</td></tr>
+    <tr><td><code>comment</code></td><td>Comment the score on pull requests</td><td class="n">true</td></tr>
+    <tr><td><code>junit</code>, <code>markdown</code>, <code>json</code></td><td>Where to write each report file</td><td class="n">qamcp-junit.xml, qamcp-report.md, qamcp-report.json</td></tr>
+    <tr><td><code>extra-args</code></td><td>Any other command-line option, like <code>--look-only</code> or <code>--owner</code></td><td class="n">none</td></tr>
+   </tbody>
+  </table>
+  <p class="intro">It also gives the next steps in your workflow three outputs: <code>score</code>, <code>gate</code> (<code>passed</code>, <code>failed</code> or <code>not-tested</code>) and <code>tools-changed</code>.</p>
+ </div>
+</section>
+
+<footer>
+ <span>QAmcp · free and open source (MIT)</span>
+ <a href="./">Home</a>
+ <a href="how-it-works.html">How it works</a>
+ <a href="safety.html">Safety and privacy</a>
+ <a href="https://github.com/abhiramreddykalluru01-debug/qamcp-cli">GitHub</a>
+ <a href="https://github.com/abhiramreddykalluru01-debug/qamcp-cli/issues">Report a wrong result</a>
+ <a href="privacy.html">Privacy and terms</a>
+ <span class="r">This site has no tracking.</span>
+</footer>
+<script src="site.js"></script>
+</body>
+</html>

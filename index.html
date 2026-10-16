@@ -1,1 +1,406 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex, nofollow"><meta http-equiv="refresh" content="0; url=https://github.com/abhiramreddykalluru01-debug/qamcp-cli"><title>QAmcp</title></head><body><a href="https://github.com/abhiramreddykalluru01-debug/qamcp-cli">QAmcp</a></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QAmcp: test any MCP server in one command</title>
+<meta name="description" content="Free, open-source tester for MCP servers. Connects the way an AI app does and checks hidden instructions, leaked secrets, bad inputs, speed and login setup. Never runs risky tools.">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231A1A1A'/%3E%3Crect x='7' y='7' width='18' height='18' rx='2' fill='none' stroke='%23B9838A' stroke-width='2.4'/%3E%3C/svg%3E">
+<style>
+@font-face{font-family:"Archivo Narrow";font-weight:600;font-display:swap;src:url(fonts/archivo-narrow-latin-600-normal.woff2) format("woff2")}
+@font-face{font-family:"Archivo Narrow";font-weight:700;font-display:swap;src:url(fonts/archivo-narrow-latin-700-normal.woff2) format("woff2")}
+@font-face{font-family:"Atkinson Hyperlegible Next";font-weight:400;font-display:swap;src:url(fonts/atkinson-hyperlegible-next-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:"Atkinson Hyperlegible Next";font-weight:700;font-display:swap;src:url(fonts/atkinson-hyperlegible-next-latin-700-normal.woff2) format("woff2")}
+@font-face{font-family:"JetBrains Mono";font-weight:400;font-display:swap;src:url(fonts/jetbrains-mono-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:"JetBrains Mono";font-weight:600;font-display:swap;src:url(fonts/jetbrains-mono-latin-600-normal.woff2) format("woff2")}
+
+:root{
+  --ground:#1A1A1A;--sheet:#232323;--raise:#2A2726;--ink:#EDE7E3;--soft:#ABA49F;--faint:#938B86;
+  --rule:#38332F;--frame:#4A443F;--rose:#B9838A;--fail:#EC5F57;--off:#7C7570;
+  --head:"Archivo Narrow",sans-serif;--text:"Atkinson Hyperlegible Next",sans-serif;--mono:"JetBrains Mono",monospace;
+  --gutter:clamp(16px,2.6vw,40px);
+}
+*{box-sizing:border-box;margin:0}
+html{background:var(--ground);scroll-behavior:smooth;scrollbar-color:#4A443F var(--ground)}
+body{background:var(--ground);color:var(--ink);font:400 16.5px/1.55 var(--text);-webkit-font-smoothing:antialiased}
+::selection{background:var(--rose);color:#1A1A1A}
+a{color:inherit;text-underline-offset:3px;text-decoration-color:var(--frame)}
+a:hover{text-decoration-color:var(--rose)}
+:focus-visible{outline:2px solid var(--rose);outline-offset:3px;border-radius:3px}
+code,.mono{font-family:var(--mono);font-variant-ligatures:none;font-variant-numeric:tabular-nums}
+.skip{position:absolute;left:-999px}.skip:focus{left:16px;top:16px;background:var(--rose);color:#1A1A1A;padding:8px 12px;z-index:9}
+
+/* ---------- the sheet ---------- */
+.sheet{position:relative;margin:var(--gutter);border:1px solid var(--rule);padding:clamp(10px,1.4vw,22px)}
+.sheet-in{position:relative;background:var(--sheet);border:1.5px solid var(--frame)}
+.zones{position:absolute;inset:0;pointer-events:none;font:600 10.5px/1 var(--mono);color:var(--faint)}
+.zones span{position:absolute}
+.zones .l{left:calc(-1 * clamp(10px,1.4vw,22px) + 2px)}
+.zones .b{bottom:calc(-1 * clamp(10px,1.4vw,22px) + 1px)}
+
+header.top{display:flex;align-items:center;gap:clamp(14px,2.2vw,30px);padding:14px clamp(16px,2.4vw,34px);border-bottom:1px solid var(--rule);font-size:14px}
+.brand{font:700 21px/1 var(--head);letter-spacing:.01em;text-decoration:none}.brand b{color:var(--rose);font-weight:700}
+header.top nav{display:flex;gap:clamp(12px,2vw,26px)}
+header.top nav a{color:var(--soft);text-decoration:none}header.top nav a:hover{color:var(--ink)}
+.gh{margin-left:auto;color:var(--ink);text-decoration:none;border:1px solid var(--frame);border-radius:7px;padding:7px 13px;display:inline-flex;gap:8px;align-items:center}
+.gh:hover{border-color:var(--rose)}
+.gh svg{width:16px;height:16px}
+
+.first{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(400px,1fr);min-height:min(calc(100vh - 2 * var(--gutter) - 2 * clamp(10px,1.4vw,22px) - 54px),900px)}
+.fig{position:relative;border-right:1px solid var(--rule);padding:clamp(18px,2.4vw,34px)}
+.fig-cap{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.fig-cap b{font:700 clamp(26px,2.4vw,34px)/1 var(--head)}
+.fig-cap span{font:400 13px/1.4 var(--mono);color:var(--faint)}
+.fig svg{display:block;width:100%;height:auto;margin-top:clamp(10px,2vh,24px)}
+.swipe{display:none;margin-top:8px;font:400 12px/1 var(--mono);color:var(--faint)}
+
+.side{min-width:0;padding:clamp(22px,2.8vw,40px) clamp(20px,2.6vw,38px) 0;display:flex;flex-direction:column}
+h1{font:700 clamp(36px,3.5vw,52px)/1 var(--head);letter-spacing:-.01em;text-wrap:balance;max-width:16ch}
+.lede{margin-top:14px;color:var(--soft);font-size:clamp(16px,1.25vw,18px);max-width:40ch}
+.run{margin-top:clamp(18px,2.6vh,28px)}
+.run .k-run{display:block;font:600 11px/1 var(--mono);letter-spacing:.1em;color:var(--faint);margin-bottom:9px}
+.cmd{display:flex;align-items:stretch;border:1px solid var(--frame);border-radius:9px;background:var(--ground);overflow:hidden}
+.cmd .pre{flex:none;padding:15px 0 15px 16px;font:400 clamp(13.5px,1.02vw,15.5px)/1.3 var(--mono);color:var(--ink);font-variant-ligatures:none;cursor:text}
+.cmd .srv{flex:1;min-width:0;border:0;background:transparent;padding:15px 16px 15px 1ch;font:400 clamp(13.5px,1.02vw,15.5px)/1.3 var(--mono);color:var(--rose);caret-color:var(--rose);outline:none;font-variant-ligatures:none}
+.cmd .srv::placeholder{color:var(--rose);opacity:.8}
+.cmd:focus-within{border-color:var(--rose)}
+.copy{font:700 15px/1 var(--text);background:var(--rose);color:#1A1A1A;border:0;padding:0 20px;cursor:pointer;transition:background .2s}
+.copy:hover{background:#C89299}.copy[data-done]{background:var(--ink)}
+.promises{list-style:none;padding:0;margin-top:14px;display:grid;gap:5px;font-size:14px;color:var(--soft)}
+.promises li{display:flex;gap:9px;align-items:baseline}
+.promises li::before{content:"";flex:none;width:7px;height:7px;border:1.5px solid var(--rose);border-radius:1px;transform:translateY(-1px)}
+
+.findings{margin-top:clamp(20px,3vh,32px)}
+.findings h2{font:600 11px/1 var(--mono);letter-spacing:.1em;color:var(--faint);margin-bottom:6px;display:flex;justify-content:space-between}
+.findings h2 a{letter-spacing:0;color:var(--rose);text-decoration:none}
+.fd{display:grid;grid-template-columns:28px minmax(0,1fr);gap:8px;padding:9px 6px;border-top:1px solid var(--rule);font-size:14.5px;color:var(--soft);cursor:default;border-radius:4px;transition:background .2s}
+.fd b{font:600 15px/1.35 var(--mono);color:var(--fail)}.fd.adv b{color:var(--rose)}
+.fd em{font-style:normal;font-family:var(--mono);font-size:13.5px;color:var(--ink)}
+.fd.on,.fd:hover,.fd:focus-visible{background:var(--raise)}
+
+.block{margin-top:auto;display:grid;grid-template-columns:1fr auto;border-top:1.5px solid var(--frame);margin-left:calc(-1 * clamp(20px,2.6vw,38px));margin-right:calc(-1 * clamp(20px,2.6vw,38px))}
+.block>div{padding:12px clamp(20px,2.6vw,38px);border-right:1px solid var(--rule);font-size:13.5px;color:var(--soft)}
+.block>div:last-child{border-right:0}
+.block .k{display:block;font:600 11px/1 var(--mono);letter-spacing:.1em;color:var(--faint);margin-bottom:5px}
+.block a{color:var(--rose)}
+
+/* ---------- drawing ---------- */
+.box{fill:none;stroke:var(--ink);stroke-width:1.3}
+.box.bad{stroke:var(--fail)}.box.notrun{stroke:var(--off);stroke-dasharray:4 4}
+.group{fill:none;stroke:var(--rose);stroke-width:1.8}
+.spine{stroke:#5A544F;stroke-dasharray:4 6;fill:none}
+.lbl{fill:var(--ink);font:400 12.5px var(--mono);text-anchor:middle}
+.lbl.notrun{fill:var(--faint)}
+.grp-lbl{fill:var(--rose);font:600 11px var(--mono);letter-spacing:2px}
+.lead{fill:none;stroke:var(--fail);stroke-width:1.3;transition:stroke-width .2s}
+.lead.adv{stroke:var(--rose)}
+.num{fill:none;stroke:var(--fail);stroke-width:1.4}.num.adv{stroke:var(--rose)}
+.num-t{fill:var(--fail);font:600 13px var(--mono);text-anchor:middle}.num-t.adv{fill:var(--rose)}
+.rule-t{fill:var(--soft);font:400 11.5px var(--mono);text-anchor:end}
+.co{cursor:pointer}
+.fig svg,.fig svg *{outline:none;-webkit-tap-highlight-color:transparent}
+.fig svg text{user-select:none}
+.co.on .lead{stroke-width:2.4}.co.on .num{stroke-width:2.4}
+.tool.on .box{stroke-width:2.6}
+
+/* draw-in */
+@media (prefers-reduced-motion:no-preference){
+  .js .draw .box:not(.notrun),.js .draw .group,.js .draw .lead{stroke-dasharray:100;stroke-dashoffset:100;animation:ink .6s cubic-bezier(.33,1,.68,1) forwards;animation-delay:var(--d)}
+  .js .draw .box.notrun,.js .draw .spine{opacity:0;animation:show .45s ease-out forwards;animation-delay:var(--d)}
+  .js .draw .lbl,.js .draw .grp-lbl{opacity:0;animation:show .35s ease-out forwards;animation-delay:calc(var(--d) + .2s)}
+  .js .draw .num,.js .draw .num-t,.js .draw .rule-t{opacity:0;animation:show .3s ease-out forwards;animation-delay:calc(var(--d) + .5s)}
+}
+@keyframes ink{to{stroke-dashoffset:0}}
+@keyframes show{to{opacity:1}}
+.drawn .draw *{animation:none!important;opacity:1!important;stroke-dashoffset:0!important}
+.drawn .draw .box:not(.notrun),.drawn .draw .group,.drawn .draw .lead{stroke-dasharray:none!important}
+.drawn .draw .box.notrun{stroke-dasharray:4 4!important}.drawn .draw .spine{stroke-dasharray:4 6!important}
+
+/* ---------- sheets below ---------- */
+.part{margin:0 var(--gutter) var(--gutter);border:1px solid var(--rule);padding:clamp(10px,1.4vw,22px)}
+.part-in{background:var(--sheet);border:1.5px solid var(--frame);padding:clamp(28px,4.5vw,64px) clamp(20px,4vw,60px)}
+.part h2{font:700 clamp(30px,3vw,44px)/1.04 var(--head);text-wrap:balance;max-width:22ch}
+.part .sheetno{font:400 12.5px/1 var(--mono);color:var(--faint);margin-bottom:18px;display:block}
+.part p.intro{margin-top:14px;color:var(--soft);max-width:62ch}
+
+table.checks{width:100%;border-collapse:collapse;margin-top:clamp(24px,3vw,40px);font-size:15px}
+.checks th{text-align:left;font:600 11px/1 var(--mono);letter-spacing:.1em;color:var(--faint);padding:0 16px 12px 0;border-bottom:1.5px solid var(--frame)}
+.checks td{padding:15px 16px 15px 0;border-bottom:1px solid var(--rule);vertical-align:top;color:var(--soft)}
+.checks td:first-child{color:var(--ink);font-weight:700;width:26%}
+.checks td:last-child{font-family:var(--mono);font-size:13px;color:var(--faint);width:34%}
+.checks td:last-child b{color:var(--fail);font-weight:600}
+
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:clamp(28px,4vw,64px);align-items:start;margin-top:clamp(24px,3vw,40px)}
+.shot{display:block;border:1px solid var(--frame);border-radius:10px;overflow:hidden;background:var(--ground)}
+.shot img{display:block;width:100%;height:auto}
+.shot:hover{border-color:var(--rose)}
+.samples{list-style:none;padding:0;margin-top:22px}
+.samples li{display:flex;justify-content:space-between;gap:16px;align-items:baseline;padding:13px 0;border-top:1px solid var(--rule)}
+.samples a{font-weight:700;text-decoration:none}.samples a:hover{color:var(--rose)}
+.samples span{font:400 13px/1 var(--mono);color:var(--faint);white-space:nowrap}
+.samples .s-fail{color:var(--fail)}.samples .s-pass{color:#93BB9B}
+.note{margin-top:10px;font-size:13.5px;color:var(--faint)}
+.steps{margin-top:18px;display:grid;gap:12px;color:var(--soft);font-size:15px}
+.steps code{color:var(--ink);font-size:13.5px}
+
+pre.yaml{margin-top:0;background:var(--ground);border:1px solid var(--frame);border-radius:10px;padding:18px 20px;font:400 13.5px/1.65 var(--mono);color:var(--soft);overflow-x:auto;font-variant-ligatures:none}
+pre.yaml .k{color:var(--ink)}pre.yaml .v{color:var(--rose)}pre.yaml .c{color:var(--faint)}
+
+.never{list-style:none;padding:0;margin-top:clamp(22px,3vw,36px);display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 clamp(24px,4vw,56px)}
+.never li{padding:16px 0;border-top:1px solid var(--rule);color:var(--soft)}
+.never strong{display:block;color:var(--ink);font:700 19px/1.2 var(--head);margin-bottom:4px}
+
+.close{text-align:left}
+.close .cmd{max-width:640px;margin-top:22px}
+footer{margin:0 var(--gutter) var(--gutter);padding:18px 4px;display:flex;flex-wrap:wrap;gap:10px 24px;color:var(--faint);font-size:13.5px;border-top:1px solid var(--rule)}
+footer a{color:var(--soft)}
+footer .r{margin-left:auto}
+
+/* ---------- smaller screens ---------- */
+@media (max-width:1100px){
+  .first{grid-template-columns:minmax(0,1fr)}
+  .fig{border-right:0;border-bottom:1px solid var(--rule);order:2}
+  .side{order:1;padding-bottom:28px}
+  .block{margin-top:24px}
+  h1{max-width:14ch}
+}
+@media (max-width:760px){
+  header.top nav{display:none}
+  .two,.never{grid-template-columns:1fr}
+  .checks thead{display:none}
+  .checks tr{display:block;padding:14px 0;border-bottom:1px solid var(--rule)}
+  .checks td{display:block;width:auto!important;border:0;padding:3px 0}
+  .block{grid-template-columns:1fr}
+  .block>div{border-right:0;border-bottom:1px solid var(--rule)}
+  .zones{display:none}
+  .fig-wrap{overflow-x:auto;margin:0 calc(-1 * clamp(18px,2.4vw,34px));padding:0 clamp(18px,2.4vw,34px);scrollbar-width:thin}
+  .fig-wrap svg{min-width:600px}
+  .swipe{display:block}
+  .cmd{flex-wrap:wrap}
+  .cmd .pre{width:100%;padding-bottom:0}
+  .cmd .srv{padding-left:16px}
+  .cmd .copy{width:100%;padding:13px}
+  .lede{font-size:16px}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="sheet">
+ <div class="zones" aria-hidden="true">
+  <span class="l" style="top:22%">A</span><span class="l" style="top:50%">B</span><span class="l" style="top:78%">C</span>
+  <span class="b" style="left:16%">1</span><span class="b" style="left:40%">2</span><span class="b" style="left:64%">3</span><span class="b" style="left:88%">4</span>
+ </div>
+ <div class="sheet-in">
+  <header class="top">
+   <a class="brand" href="./">QA<b>mcp</b></a>
+   <nav aria-label="Main"><a href="how-it-works.html">How it works</a><a href="safety.html">Safety</a><a href="ci.html">Run it in CI</a><a href="samples.html">Sample reports</a><a href="#teams">For teams</a></nav>
+   <a class="gh" href="https://github.com/abhiramreddykalluru01-debug/qamcp-cli"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38v-1.33c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.06-.49.06-.49.8.06 1.23.83 1.23.83.72 1.22 1.88.87 2.34.66.07-.52.28-.87.5-1.07-1.78-.2-3.65-.89-3.65-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>GitHub</a>
+  </header>
+
+  <main id="main">
+  <section class="first" aria-labelledby="t">
+   <div class="fig">
+    <div class="fig-cap"><b>How QAmcp sees a broken server</b><span>Our own test server, broken on purpose · 38/100 · FAIL</span></div>
+    <div class="fig-wrap"><svg class="draw" viewBox="0 0 900 600" role="img" aria-labelledby="figdesc">
+     <desc id="figdesc">Drawing of the test server: it connects and lists 9 tools. 3 tools are outlined in red for problems, 4 are dashed because QAmcp did not run them. Five numbered callouts point at the problems listed beside the drawing.</desc>
+     <path class="spine" style="--d:0s" d="M380 52V560"/>
+     <rect pathLength="100" class="box" style="--d:0.03s" x="300" y="12" width="160" height="44" rx="5"/><text class="lbl" style="--d:0.03s" x="380" y="39">connect</text>
+     <rect pathLength="100" class="box" style="--d:0.15s" x="260" y="92" width="240" height="44" rx="5"/><text class="lbl" style="--d:0.15s" x="380" y="119">tool list · 9 tools</text>
+     <rect pathLength="100" class="group" style="--d:0.27s" x="60" y="172" width="640" height="236" rx="8"/><text class="grp-lbl" style="--d:0.27s" x="82" y="198">TOOLS</text>
+     <g class="tool" data-n="0"><rect pathLength="100" class="box" style="--d:0.42s" x="82" y="212" width="186" height="44" rx="4"/><text class="lbl" style="--d:0.42s" x="175" y="239">get_weather</text></g>
+     <g class="tool" data-n="1"><rect pathLength="100" class="box bad" style="--d:0.48s" x="287" y="212" width="186" height="44" rx="4"/><text class="lbl" style="--d:0.48s" x="380" y="239">fetch_notes</text></g>
+     <g class="tool" data-n="2 3"><rect pathLength="100" class="box bad" style="--d:0.54s" x="492" y="212" width="186" height="44" rx="4"/><text class="lbl" style="--d:0.54s" x="585" y="239">slow_report</text></g>
+     <g class="tool" data-n="5"><rect pathLength="100" class="box bad" style="--d:0.6s" x="82" y="272" width="186" height="44" rx="4"/><text class="lbl" style="--d:0.6s" x="175" y="299">search_users</text></g>
+     <g class="tool" data-n="0"><rect pathLength="100" class="box" style="--d:0.66s" x="287" y="272" width="186" height="44" rx="4"/><text class="lbl" style="--d:0.66s" x="380" y="299">strict_lookup</text></g>
+     <g class="tool" data-n="4"><rect class="box notrun" style="--d:0.72s" x="492" y="272" width="186" height="44" rx="4"/><text class="lbl notrun" style="--d:0.72s" x="585" y="299">delete_account</text></g>
+     <g class="tool"><rect class="box notrun" style="--d:0.78s" x="82" y="332" width="186" height="44" rx="4"/><text class="lbl notrun" style="--d:0.78s" x="175" y="359">list_projects</text></g>
+     <g class="tool"><rect class="box notrun" style="--d:0.84s" x="287" y="332" width="186" height="44" rx="4"/><text class="lbl notrun" style="--d:0.84s" x="380" y="359">team_digest</text></g>
+     <g class="tool"><rect class="box notrun" style="--d:0.9s" x="492" y="332" width="186" height="44" rx="4"/><text class="lbl notrun" style="--d:0.9s" x="585" y="359">get_or_create_user</text></g>
+     <rect pathLength="100" class="box" style="--d:0.96s" x="260" y="452" width="240" height="44" rx="5"/><text class="lbl" style="--d:0.96s" x="380" y="479">error messages</text>
+
+     <g class="co" data-n="1"><path pathLength="100" class="lead" style="--d:1.14s" d="M380 212C380 150 600 120 717 120"/><circle class="num" style="--d:1.14s" cx="730" cy="120" r="13"/><text class="num-t" style="--d:1.14s" x="730" y="125">1</text><text class="rule-t" style="--d:1.14s;text-anchor:start" x="752" y="124">hidden instruction</text></g>
+     <g class="co" data-n="2"><path pathLength="100" class="lead" style="--d:1.29s" d="M678 226C700 226 702 205 717 205"/><circle class="num" style="--d:1.29s" cx="730" cy="205" r="13"/><text class="num-t" style="--d:1.29s" x="730" y="210">2</text><text class="rule-t" style="--d:1.29s;text-anchor:start" x="752" y="209">never answers</text></g>
+     <g class="co" data-n="3"><path pathLength="100" class="lead" style="--d:1.44s" d="M678 244C700 244 702 290 717 290"/><circle class="num" style="--d:1.44s" cx="730" cy="290" r="13"/><text class="num-t" style="--d:1.44s" x="730" y="295">3</text><text class="rule-t" style="--d:1.44s;text-anchor:start" x="752" y="294">no description</text></g>
+     <g class="co" data-n="4"><path pathLength="100" class="lead adv" style="--d:1.56s" d="M678 300C700 300 702 375 717 375"/><circle class="num adv" style="--d:1.56s" cx="730" cy="375" r="13"/><text class="num-t adv" style="--d:1.56s" x="730" y="380">4</text><text class="rule-t" style="--d:1.56s;text-anchor:start" x="752" y="379">not marked dangerous</text></g>
+     <g class="co" data-n="5"><path pathLength="100" class="lead" style="--d:1.68s" d="M82 294C44 294 40 432 110 432L660 432C700 432 705 470 717 470"/><circle class="num" style="--d:1.68s" cx="730" cy="470" r="13"/><text class="num-t" style="--d:1.68s" x="730" y="475">5</text><text class="rule-t" style="--d:1.68s;text-anchor:start" x="752" y="474">password leaked</text></g>
+    </svg></div>
+    <span class="swipe" aria-hidden="true">Swipe to see the whole drawing</span>
+   </div>
+
+   <div class="side">
+    <h1 id="t">Test any MCP server in one command.</h1>
+    <p class="lede">QAmcp connects to your server the way an AI app does, checks every tool, and draws you exactly where it breaks.</p>
+    <div class="run">
+     <span class="k-run">Paste your server link, then copy · nothing to install</span>
+     <div class="cmd"><label class="pre" for="srv1">npx qamcp-cli</label><input id="srv1" class="srv" type="url" inputmode="url" placeholder="https://your-server.com/mcp" aria-label="Your MCP server link" spellcheck="false" autocomplete="off" autocapitalize="off"><button class="copy" type="button" data-for="srv1">Copy</button></div>
+     <ul class="promises"><li>Free and open source</li><li>Never runs tools that could change data</li><li>Sends nothing anywhere but your server; logins stay on your computer</li></ul>
+    </div>
+    <div class="findings">
+     <h2><span>Found on this server</span><a href="sample/broken.html">Full report →</a></h2>
+     <div class="fd" data-n="1" tabindex="0"><b>1</b><span><em>fetch_notes</em> hides an instruction telling the AI to read your SSH key</span></div>
+     <div class="fd" data-n="2" tabindex="0"><b>2</b><span><em>slow_report</em> never answers, even to bad input</span></div>
+     <div class="fd" data-n="3" tabindex="0"><b>3</b><span><em>slow_report</em> has no description, so the AI has to guess</span></div>
+     <div class="fd adv" data-n="4" tabindex="0"><b>4</b><span><em>delete_account</em> isn't marked dangerous. Dashed boxes weren't run, on purpose.</span></div>
+     <div class="fd" data-n="5" tabindex="0"><b>5</b><span><em>search_users</em> shows a database password in an error</span></div>
+    </div>
+    <div class="block">
+     <div><span class="k">FOR TEAMS</span>Publish a server for customers? <a href="#teams">Check it on every change</a></div>
+     <div><span class="k">SHEET</span>1 of 4 · v0.1.5 · MIT</div>
+    </div>
+   </div>
+  </section>
+  </main>
+ </div>
+</div>
+
+<section class="part" id="checks" aria-labelledby="h-checks">
+ <div class="part-in">
+  <span class="sheetno">Sheet 2 of 4 · What it checks</span>
+  <h2 id="h-checks">Ten checks, each a plain fact you can verify.</h2>
+  <p class="intro">No AI judges anything. Every result is pass or fail, a time in milliseconds, or an exact match, and the report always says what it could not test.</p>
+  <table class="checks">
+   <thead><tr><th>Check</th><th>What it means</th><th>On the test server</th></tr></thead>
+   <tbody>
+    <tr><td>No hidden instructions</td><td>Tool descriptions don't smuggle orders to the AI, invisible characters, or tricks.</td><td><b>Failed:</b> fetch_notes</td></tr>
+    <tr><td>No secrets leaked</td><td>Error messages don't show passwords, keys, tokens or internal file paths.</td><td><b>Failed:</b> search_users</td></tr>
+    <tr><td>Tools work with good inputs</td><td>Each safe tool answers in time with something real.</td><td><b>Failed:</b> slow_report</td></tr>
+    <tr><td>Bad inputs give a clean error</td><td>Missing or wrong-type inputs get a clear refusal, not a hang or a crash.</td><td><b>Failed:</b> slow_report</td></tr>
+    <tr><td>Every tool is described</td><td>Descriptions and inputs explain themselves, and no two tools read the same.</td><td><b>Failed:</b> slow_report</td></tr>
+    <tr><td>Tools are labeled safe or dangerous</td><td>Read-only and destructive labels exist, and match what the tool's name says.</td><td>Advisory: delete_account</td></tr>
+    <tr><td>Fast enough</td><td>Connecting, listing and answering, timed.</td><td>Advisory: search_users, 3.0 s</td></tr>
+    <tr><td>Login setup follows the spec</td><td>An AI app can find your login and sign in the way the MCP rules describe.</td><td>No login on this server</td></tr>
+    <tr><td>Resources and prompts work</td><td>What the server offers besides tools opens cleanly.</td><td>None offered</td></tr>
+    <tr><td>Ready for the newest MCP version</td><td>Protocol version and transport, checked against the current spec.</td><td>Advisory: older version</td></tr>
+   </tbody>
+  </table>
+ </div>
+</section>
+
+<section class="part" id="report" aria-labelledby="h-report">
+ <div class="part-in">
+  <span class="sheetno">Sheet 3 of 4 · The report</span>
+  <h2 id="h-report">A report page you can send to anyone.</h2>
+  <div class="two">
+   <div>
+    <p class="intro">Add <code>--html report.html</code> and QAmcp writes one file: the score, every failure and advisory, everything it did not run and why. It opens offline, on any computer.</p>
+    <ul class="samples">
+     <li><a href="sample/broken.html">The server we broke on purpose</a><span class="s-fail">38 / 100 · FAIL</span></li>
+     <li><a href="sample/context7.html">Context7, a public server by Upstash</a><span class="s-pass">100 / 100 · PASS</span></li>
+    </ul>
+    <p class="note">Context7 was tested independently on 15 Oct 2026, the same way anyone can. QAmcp is not affiliated with Upstash or Context7.</p>
+    <div class="steps">
+     <p>Server behind a login? Add <code>--login</code>. Its own login page opens in your browser, and the login stays on your computer.</p>
+     <p>A program on your computer, not a link? Use <code>--stdio "npx -y your-server"</code>.</p>
+    </div>
+   </div>
+   <a class="shot" href="sample/broken.html"><img src="img/report-broken.png" width="2400" height="1800" alt="The report page for the broken server: score 38 out of 100, FAIL, with six failures and ten advisories listed." loading="lazy"></a>
+  </div>
+ </div>
+</section>
+
+<section class="part" id="teams" aria-labelledby="h-teams">
+ <div class="part-in">
+  <span class="sheetno">Sheet 4 of 4 · For teams</span>
+  <h2 id="h-teams">Publish a server for customers? Check it on every change.</h2>
+  <div class="two">
+   <div>
+    <p class="intro">When your MCP server breaks, your customers' AI agents break with it. QAmcp runs in GitHub on every pull request, comments with the score, and fails the build if the server got worse or a tool disappeared.</p>
+    <ul class="never">
+     <li><strong>Never runs risky tools</strong>Only tools labeled read-only, whose names and descriptions agree.</li>
+     <li><strong>Sends nothing elsewhere</strong>No tracking, no account, no AI. Only your server hears from it.</li>
+     <li><strong>Your login stays yours</strong>You sign in on your server's own page; nothing is stored anywhere else.</li>
+     <li><strong>Open source</strong>MIT licensed. Read every check before you trust it.</li>
+    </ul>
+   </div>
+<pre class="yaml"><span class="c"># .github/workflows/qamcp.yml</span>
+<span class="k">on</span>: <span class="v">pull_request</span>
+<span class="k">jobs</span>:
+  <span class="k">qamcp</span>:
+    <span class="k">runs-on</span>: <span class="v">ubuntu-latest</span>
+    <span class="k">steps</span>:
+      - <span class="k">uses</span>: <span class="v">actions/checkout@v7</span>
+      - <span class="k">uses</span>: <span class="v">abhiramreddykalluru01-debug/qamcp-cli@v0</span>
+        <span class="k">with</span>:
+          <span class="k">url</span>: <span class="v">https://your-server.com/mcp</span>
+          <span class="k">fail-under</span>: <span class="v">80</span></pre>
+  </div>
+  <div class="close" style="margin-top:clamp(36px,5vw,64px)">
+   <h2>Try it on your server now.</h2>
+   <div class="cmd"><label class="pre" for="srv2">npx qamcp-cli</label><input id="srv2" class="srv" type="url" inputmode="url" placeholder="https://your-server.com/mcp" aria-label="Your MCP server link" spellcheck="false" autocomplete="off" autocapitalize="off"><button class="copy" type="button" data-for="srv2">Copy</button></div>
+  </div>
+ </div>
+</section>
+
+<footer>
+ <span>QAmcp · free and open source (MIT)</span>
+ <a href="https://github.com/abhiramreddykalluru01-debug/qamcp-cli">GitHub</a>
+ <a href="how-it-works.html">How it works</a>
+ <a href="https://www.npmjs.com/package/qamcp-cli">npm</a>
+ <a href="safety.html">Safety and privacy</a>
+ <a href="https://github.com/abhiramreddykalluru01-debug/qamcp-cli/issues">Report a wrong result</a>
+ <a href="privacy.html">Privacy and terms</a>
+ <span class="r">This site has no tracking.</span>
+</footer>
+
+<script>
+document.documentElement.classList.add('js');
+// If the drawing's animation is held up (a background tab, a slow device), show it finished.
+setTimeout(() => document.documentElement.classList.add('drawn'), 3600);
+// Copy buttons
+const EXAMPLE = 'https://your-server.com/mcp';
+for (const b of document.querySelectorAll('.copy[data-for]')) {
+  b.addEventListener('click', async () => {
+    const link = document.getElementById(b.dataset.for).value.trim() || EXAMPLE;
+    try { await navigator.clipboard.writeText('npx qamcp-cli ' + link); } catch { return; }
+    b.textContent = 'Copied'; b.dataset.done = '';
+    setTimeout(() => { b.textContent = 'Copy'; delete b.dataset.done; }, 1800);
+  });
+}
+// While a box is empty, example links type themselves in it (static when motion is reduced).
+const examples = [EXAMPLE, 'https://mcp.context7.com/mcp', 'https://api.example.com/v1/mcp'];
+if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  for (const box of document.querySelectorAll('.srv')) {
+    let i = 0, n = 0, back = false;
+    const tick = () => {
+      if (document.activeElement === box || box.value) { box.placeholder = EXAMPLE; return setTimeout(tick, 600); }
+      const word = examples[i];
+      n += back ? -1 : 1;
+      box.placeholder = word.slice(0, n) || ' ';
+      let wait = back ? 22 : 55;
+      if (!back && n >= word.length) { back = true; wait = 2200; }
+      else if (back && n <= 'https://'.length) { back = false; i = (i + 1) % examples.length; wait = 300; }
+      setTimeout(tick, wait);
+    };
+    box.placeholder = 'https://'; n = 'https://'.length;
+    setTimeout(tick, 1800);
+  }
+}
+// A finding lights its callout and tool box, and the other way round.
+const light = (n, on) => {
+  for (const el of document.querySelectorAll('.fd, .co, .tool')) {
+    if ((el.dataset.n || '').split(' ').includes(n)) el.classList.toggle('on', on);
+  }
+};
+for (const el of document.querySelectorAll('.fd, .co')) {
+  const n = el.dataset.n;
+  el.addEventListener('mouseenter', () => light(n, true));
+  el.addEventListener('mouseleave', () => light(n, false));
+  el.addEventListener('focus', () => light(n, true));
+  el.addEventListener('blur', () => light(n, false));
+}
+// Clicking a number keeps its problem lit (and shows it in the list); click again to let go.
+let held = null;
+for (const co of document.querySelectorAll('.co')) {
+  co.addEventListener('click', () => {
+    if (held) light(held, false);
+    held = held === co.dataset.n ? null : co.dataset.n;
+    if (held) { light(held, true); document.querySelector('.fd[data-n="' + held + '"]')?.scrollIntoView({ block: 'nearest', behavior: 'smooth' }); }
+  });
+  co.addEventListener('mouseleave', () => { if (held) light(held, true); });
+}
+</script>
+</body>
+</html>

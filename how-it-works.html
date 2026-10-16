@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How QAmcp works: every check and how the score is made</title>
+<meta name="description" content="What QAmcp does to an MCP server, step by step: the checks, how the 0–100 score is calculated, what caps it, and what 'not scored' means.">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231A1A1A'/%3E%3Crect x='7' y='7' width='18' height='18' rx='2' fill='none' stroke='%23B9838A' stroke-width='2.4'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="sheet">
+ <div class="sheet-in">
+  <header class="top">
+   <a class="brand" href="./">QA<b>mcp</b></a>
+   <nav aria-label="Main"><a href="how-it-works.html" aria-current="page">How it works</a><a href="safety.html">Safety</a><a href="ci.html">Run it in CI</a><a href="samples.html">Sample reports</a><a href="./#teams">For teams</a></nav>
+   <a class="gh" href="https://github.com/abhiramreddykalluru01-debug/qamcp-cli"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38v-1.33c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.06-.49.06-.49.8.06 1.23.83 1.23.83.72 1.22 1.88.87 2.34.66.07-.52.28-.87.5-1.07-1.78-.2-3.65-.89-3.65-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>GitHub</a>
+  </header>
+  <main id="main">
+   <div class="page-head">
+    <h1>How QAmcp tests an MCP server</h1>
+    <p>Everything it does, in order, and exactly how the score is calculated. Every result is a fact you can check yourself: pass or fail, a time in milliseconds, or an exact match. No AI judges anything.</p>
+    <nav class="toc" aria-label="On this page"><a href="#run">The test, step by step</a><a href="#checks">The checks</a><a href="#score">How the score works</a><a href="#modes">What runs, and when</a></nav>
+   </div>
+  </main>
+ </div>
+</div>
+
+<section class="part" id="run" aria-labelledby="h-run">
+ <div class="part-in">
+  <span class="sheetno">Sheet 2 of 5 · The test, step by step</span>
+  <h2 id="h-run">What happens when you run it</h2>
+  <p class="intro">A test takes about a minute. QAmcp talks only to the server you give it (and its login page, if it has one). Nothing goes anywhere else.</p>
+  <ol class="proc">
+   <li><b>Connect, the way an AI app does</b><span>Using the current MCP connection type, or the older one if that's all the server speaks. For a program on your computer (<code>--stdio</code>) it starts the program and talks to it directly.</span></li>
+   <li><b>Read the MCP version and the login setup</b><span>Is the server on the newest MCP rules? If it needs a login, can an AI app find the login page and sign in properly?</span></li>
+   <li><b>List every tool</b><span>Names, descriptions, inputs and safety labels, page by page, exactly as an AI app sees them.</span></li>
+   <li><b>Read every description</b><span>Missing or confusing descriptions, tools that read the same, hidden instructions aimed at the AI.</span></li>
+   <li><b>Decide which tools are safe to run</b><span>Only tools labeled read-only whose name and description agree. Anything that could change, send or delete something is skipped, and the report lists each one and why.</span></li>
+   <li><b>Run the safe tools, with good and bad inputs</b><span>Once with sensible sample inputs, then with a missing input and a wrong type. A good tool answers the first and refuses the others clearly.</span></li>
+   <li><b>Time everything, and read every error</b><span>Connecting, listing and each answer are timed. Every error message is scanned for passwords, keys, tokens and internal file paths.</span></li>
+   <li><b>Open resources and prompts</b><span>Only if the server offers them: each one should open and match what it says it is.</span></li>
+   <li><b>Write the report</b><span>A score, every failure and advisory, everything it could not test and why. Add <code>--html report.html</code> for a page you can share.</span></li>
+  </ol>
+ </div>
+</section>
+
+<section class="part" id="checks" aria-labelledby="h-checks">
+ <div class="part-in">
+  <span class="sheetno">Sheet 3 of 5 · The checks</span>
+  <h2 id="h-checks">Each check, what it looks at, and its points</h2>
+  <table class="t">
+   <thead><tr><th>Check</th><th>What it looks at</th><th>Points</th></tr></thead>
+   <tbody>
+    <tr><td>Connects</td><td>Current and older MCP connection types, or a program on your computer</td><td class="n">15</td></tr>
+    <tr><td>Every tool is described</td><td>Missing or vague descriptions, inputs with no description, tools that read the same</td><td class="n">15</td></tr>
+    <tr><td>Ready for the newest MCP version</td><td>On the July 2026 version? Still on the old SSE connection?</td><td class="n">10</td></tr>
+    <tr><td>Lists its tools</td><td>Duplicate or invalid names, a broken tool that stops AI apps loading the server</td><td class="n">10</td></tr>
+    <tr><td>Tools are labeled safe or dangerous</td><td>Safety labels exist, and the tool's own name doesn't contradict them</td><td class="n">10</td></tr>
+    <tr><td>No hidden instructions</td><td>Known tricks in descriptions: <code>&lt;IMPORTANT&gt;</code> blocks, "don't tell the user", invisible characters</td><td class="n">10</td></tr>
+    <tr><td>Tools work with good inputs</td><td>Safe tools answer in time; no hangs, crashes or "success" with no data</td><td class="n">10</td></tr>
+    <tr><td>Bad inputs give a clean error</td><td>A missing or wrong-type input gets a clear refusal</td><td class="n">10</td></tr>
+    <tr><td>Login setup follows the spec</td><td>Only when the server needs a login: the details AI apps need to sign in</td><td class="n">10</td></tr>
+    <tr><td>Resources and prompts work</td><td>Only when the server has them: each opens, and its content matches its type</td><td class="n">10</td></tr>
+    <tr><td>Fast enough</td><td>Connecting, listing and answering, timed</td><td class="n">5</td></tr>
+    <tr><td>No secrets leaked</td><td>Keys, passwords, server folders and stack traces in error messages</td><td class="n">5</td></tr>
+   </tbody>
+  </table>
+  <p class="intro">These add up to 120, but the score is a percentage, not a sum: most servers have no login and no resources, so 100 points are in play. A server with both has 120 in play, scaled to 100 the same way.</p>
+ </div>
+</section>
+
+<section class="part" id="score" aria-labelledby="h-score">
+ <div class="part-in">
+  <span class="sheetno">Sheet 4 of 5 · How the score works</span>
+  <h2 id="h-score">Plain arithmetic, so you can check it yourself</h2>
+  <div class="sample">score = points earned ÷ points tested × 100</div>
+  <p class="intro">Example: a server with a login and resources has 120 points in play. It earns 108 of them, so 108 ÷ 120 = 90%, and its score is 90/100.</p>
+  <ul class="facts">
+   <li><strong>A pass earns all the points</strong>A check with an advisory earns half; a failed check earns none.</li>
+   <li><strong>What couldn't run doesn't count</strong>The score is points earned out of points actually tested. A server isn't punished for what QAmcp couldn't try.</li>
+   <li><strong>Read the score with its coverage</strong>Every score comes with a line like <code>Tested 10 of 10 checks · ran 5 of 9 tools</code>. A 90 from 2 of 20 tools says much less than a 90 from all 20.</li>
+   <li><strong>"Not scored" is not a fail</strong>A login wall, or a server that asks us to slow down (HTTP 429), means nothing could be fairly scored. Add <code>--login</code> or try again in a minute.</li>
+  </ul>
+  <h2 style="margin-top:clamp(36px,5vw,56px);font-size:clamp(22px,2vw,28px)">Serious problems put a ceiling on the score</h2>
+  <p class="intro">However good the rest is. The lowest ceiling wins, and the report says so: "Would be 85, but capped at 50 because…"</p>
+  <table class="t">
+   <thead><tr><th>Problem</th><th>Highest possible score</th></tr></thead>
+   <tbody>
+    <tr><td>Hidden instructions in a tool, resource or prompt description</td><td class="cap">40</td></tr>
+    <tr><td>A secret (key, password, token) leaked in an error message</td><td class="cap">50</td></tr>
+    <tr><td>A broken tool definition that can stop AI apps loading the server</td><td class="cap">50</td></tr>
+    <tr><td>A tool that crashes or hangs, or claims success but returns nothing</td><td class="cap">70</td></tr>
+   </tbody>
+  </table>
+  <div class="guide" aria-label="Rough guide"><span><b>90+</b> solid</span><span><b>70–89</b> works, with things to fix</span><span><b>below 70</b> AI apps will likely struggle, or there's a safety problem</span></div>
+ </div>
+</section>
+
+<section class="part" id="modes" aria-labelledby="h-modes">
+ <div class="part-in">
+  <span class="sheetno">Sheet 5 of 5 · What runs, and when</span>
+  <h2 id="h-modes">You choose how much QAmcp may touch</h2>
+  <p class="intro">A tool's safety label is the server's own word, so QAmcp double-checks it against the tool's name and description. Tools that sound destructive, like <code>delete_account</code>, never run in any mode.</p>
+  <ul class="facts">
+   <li><strong>Default: safe mode</strong>Runs only tools labeled read-only whose name and description agree. Right for any server, yours or someone else's.</li>
+   <li><strong><code>--look-only</code>: run nothing</strong>Calls no tools at all; reads the tool list, descriptions, labels and login setup. For a server you don't trust. Tools, bad inputs and leaks are not tested.</li>
+   <li><strong><code>--owner</code>: your own server</strong>Also runs unlabeled tools whose names clearly only read (<code>get_</code>, <code>list_</code>, <code>search_</code>…). Tools that say they write, send or create are still skipped.</li>
+   <li><strong><code>--run-unlabeled</code>: your test copy</strong>Runs every tool not named or labeled dangerous. Use it on a test copy of your own server, never on live data.</li>
+  </ul>
+  <h2 style="margin-top:clamp(36px,5vw,56px);font-size:clamp(22px,2vw,28px)">Try it on your server</h2>
+  <div class="cmd"><label class="pre" for="srv1">npx qamcp-cli</label><input id="srv1" class="srv" type="url" inputmode="url" placeholder="https://your-server.com/mcp" aria-label="Your MCP server link" spellcheck="false" autocomplete="off" autocapitalize="off"><button class="copy" type="button" data-for="srv1">Copy</button></div>
+ </div>
+</section>
+
+<footer>
+ <span>QAmcp · free and open source (MIT)</span>
+ <a href="./">Home</a>
+ <a href="https://github.com/abhiramreddykalluru01-debug/qamcp-cli">GitHub</a>
+ <a href="https://www.npmjs.com/package/qamcp-cli">npm</a>
+ <a href="safety.html">Safety and privacy</a>
+ <a href="https://github.com/abhiramreddykalluru01-debug/qamcp-cli/issues">Report a wrong result</a>
+ <a href="privacy.html">Privacy and terms</a>
+ <span class="r">This site has no tracking.</span>
+</footer>
+<script src="site.js"></script>
+</body>
+</html>

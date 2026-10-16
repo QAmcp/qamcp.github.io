@@ -106,14 +106,14 @@ footer{margin-top:56px;padding-top:24px;border-top:1px solid var(--rule);display
 <header class="top"><a class="brand" href="https://github.com/abhiramreddykalluru01-debug/qamcp-cli">QA<b>mcp</b></a><nav><a href="https://github.com/abhiramreddykalluru01-debug/qamcp-cli#how-to-read-the-score">How scoring works</a><a href="https://github.com/abhiramreddykalluru01-debug/qamcp-cli#test-on-every-change-github">Run it in CI</a></nav><a class="again" href="https://github.com/abhiramreddykalluru01-debug/qamcp-cli#install-and-first-run">Test another server</a></header>
 <main>
 <section class="cert" aria-labelledby="t">
-  <div class="head"><h1 id="t">Test certificate: buggy-test-server<span class="addr">http://127.0.0.1:4198/mcp</span></h1></div>
+  <div class="head"><h1 id="t">Test certificate: buggy-test-server<span class="addr">http://127.0.0.1:4310/mcp</span></h1></div>
   <div class="fields">
     <div class="f"><div class="label">Server</div><div class="v">buggy-test-server 0.0.1</div></div>
     <div class="f"><div class="label">MCP version</div><div class="v">2025-11-25 · streamable HTTP</div></div>
-    <div class="f"><div class="label">Tested</div><div class="v">2026-10-15 · 11:18 UTC</div></div>
+    <div class="f"><div class="label">Tested</div><div class="v">2026-10-16 · 18:10 UTC</div></div>
     <div class="f"><div class="label">Safety mode</div><div class="v">Only tools labeled read-only were run</div></div>
     <div class="f"><div class="label">Logged in</div><div class="v">No</div></div>
-    <div class="f"><div class="label">Tester</div><div class="v">QAmcp 0.1.4</div></div>
+    <div class="f"><div class="label">Tester</div><div class="v">QAmcp 0.1.8</div></div>
   </div>
   <div class="result">
     <div class="label">Result</div>
@@ -152,9 +152,9 @@ footer{margin-top:56px;padding-top:24px;border-top:1px solid var(--rule);display
   <h2 id="items">All test items</h2>
   <p class="hint">Open an item to see every result behind it.</p>
   <details class="row pass">
-    <summary><svg class="mk pass" role="img" aria-label="Passed"><use href="#ok"/></svg><span class="code">T-1</span><span class="name">Connects</span><span class="lead">Connected in <span class="num">164 ms</span></span><span class="st">PASS</span><svg class="chev" aria-hidden="true"><use href="#chev"/></svg></summary>
+    <summary><svg class="mk pass" role="img" aria-label="Passed"><use href="#ok"/></svg><span class="code">T-1</span><span class="name">Connects</span><span class="lead">Connected in <span class="num">76 ms</span></span><span class="st">PASS</span><svg class="chev" aria-hidden="true"><use href="#chev"/></svg></summary>
     <div class="body">
-      <div class="fd pass"><svg class="mk pass" role="img" aria-label="Passed"><use href="#ok"/></svg><span class="code">T-1.1</span><p>Connected in <span class="num">164 ms</span></p></div>
+      <div class="fd pass"><svg class="mk pass" role="img" aria-label="Passed"><use href="#ok"/></svg><span class="code">T-1.1</span><p>Connected in <span class="num">76 ms</span></p></div>
     </div>
   </details>
   <details class="row warn">
@@ -192,11 +192,11 @@ footer{margin-top:56px;padding-top:24px;border-top:1px solid var(--rule);display
   <details class="row fail">
     <summary><svg class="mk fail" role="img" aria-label="Failed"><use href="#x"/></svg><span class="code">T-7</span><span class="name">Tools work with good inputs</span><span class="lead"><em>slow_report</em>: No answer within the time limit</span><span class="st">FAIL</span><svg class="chev" aria-hidden="true"><use href="#chev"/></svg></summary>
     <div class="body">
-      <div class="fd pass"><svg class="mk pass" role="img" aria-label="Passed"><use href="#ok"/></svg><span class="code">T-7.1</span><p><em>get_weather</em>: Worked (<span class="num">14 ms</span>)</p></div>
+      <div class="fd pass"><svg class="mk pass" role="img" aria-label="Passed"><use href="#ok"/></svg><span class="code">T-7.1</span><p><em>get_weather</em>: Worked (<span class="num">13 ms</span>)</p></div>
       <div class="fd pass"><svg class="mk pass" role="img" aria-label="Passed"><use href="#ok"/></svg><span class="code">T-7.2</span><p><em>search_users</em>: Worked (<span class="num">3.0 s</span>)</p></div>
       <div class="fd warn"><svg class="mk warn" role="img" aria-label="Advisory"><use href="#w"/></svg><span class="code">T-7.3</span><p><em>fetch_notes</em>: Answered, but it gives the exact same answer to bad input as to good input, so it may be ignoring what it is sent</p></div>
       <div class="fd fail"><svg class="mk fail" role="img" aria-label="Failed"><use href="#x"/></svg><span class="code">T-7.4</span><p><em>slow_report</em>: No answer within the time limit</p></div>
-      <div class="fd pass"><svg class="mk pass" role="img" aria-label="Passed"><use href="#ok"/></svg><span class="code">T-7.5</span><p><em>strict_lookup</em>: Worked (<span class="num">9 ms</span>)</p></div>
+      <div class="fd pass"><svg class="mk pass" role="img" aria-label="Passed"><use href="#ok"/></svg><span class="code">T-7.5</span><p><em>strict_lookup</em>: Worked (<span class="num">12 ms</span>)</p></div>
       <div class="fd skip"><svg class="mk skip" role="img" aria-label="Not tested"><use href="#na"/></svg><span class="code">T-7.6</span><p><em>list_projects</em>: Not run: no safety label (if you own this server, test again in owner mode)</p></div>
       <div class="fd skip"><svg class="mk skip" role="img" aria-label="Not tested"><use href="#na"/></svg><span class="code">T-7.7</span><p><em>team_digest</em>: Not run: no safety label (if you own this server, test again in owner mode)</p></div>
       <div class="fd skip"><svg class="mk skip" role="img" aria-label="Not tested"><use href="#na"/></svg><span class="code">T-7.8</span><p><em>get_or_create_user</em>: Not run: no safety label (if you own this server, test again in owner mode)</p></div>
@@ -222,9 +222,9 @@ footer{margin-top:56px;padding-top:24px;border-top:1px solid var(--rule);display
   <details class="row warn">
     <summary><svg class="mk warn" role="img" aria-label="Advisory"><use href="#w"/></svg><span class="code">T-9</span><span class="name">Fast enough</span><span class="lead"><em>search_users</em>: Slowest tool: search_users (<span class="num">3.0 s</span>): users will notice the wait</span><span class="st">ADVISORY</span><svg class="chev" aria-hidden="true"><use href="#chev"/></svg></summary>
     <div class="body">
-      <div class="fd pass"><svg class="mk pass" role="img" aria-label="Passed"><use href="#ok"/></svg><span class="code">T-9.1</span><p>Connecting took <span class="num">164 ms</span></p></div>
-      <div class="fd pass"><svg class="mk pass" role="img" aria-label="Passed"><use href="#ok"/></svg><span class="code">T-9.2</span><p>Listing tools took <span class="num">12 ms</span></p></div>
-      <div class="fd pass"><svg class="mk pass" role="img" aria-label="Passed"><use href="#ok"/></svg><span class="code">T-9.3</span><p>Average tool answer: <span class="num">761 ms</span></p></div>
+      <div class="fd pass"><svg class="mk pass" role="img" aria-label="Passed"><use href="#ok"/></svg><span class="code">T-9.1</span><p>Connecting took <span class="num">76 ms</span></p></div>
+      <div class="fd pass"><svg class="mk pass" role="img" aria-label="Passed"><use href="#ok"/></svg><span class="code">T-9.2</span><p>Listing tools took <span class="num">11 ms</span></p></div>
+      <div class="fd pass"><svg class="mk pass" role="img" aria-label="Passed"><use href="#ok"/></svg><span class="code">T-9.3</span><p>Average tool answer: <span class="num">763 ms</span></p></div>
       <div class="fd warn"><svg class="mk warn" role="img" aria-label="Advisory"><use href="#w"/></svg><span class="code">T-9.4</span><p><em>search_users</em>: Slowest tool: search_users (<span class="num">3.0 s</span>): users will notice the wait</p></div>
     </div>
   </details>
@@ -245,6 +245,6 @@ footer{margin-top:56px;padding-top:24px;border-top:1px solid var(--rule);display
 <footer>
   <p>Privacy: nothing was sent anywhere except to the server being tested (and its login server, if it needed a login). QAmcp has no tracking.</p>
   <p>Every result is a hard fact: pass or fail, milliseconds, exact matches. No AI judged anything. A check that could not run doesn't count either way; serious problems cap the score. <a href="https://github.com/abhiramreddykalluru01-debug/qamcp-cli#how-to-read-the-score">How the score works</a>.</p>
-  <p class="made">Made with <a href="https://github.com/abhiramreddykalluru01-debug/qamcp-cli">QAmcp</a> · <span class="mono">npx qamcp-cli http://127.0.0.1:4198/mcp</span></p>
+  <p class="made">Made with <a href="https://github.com/abhiramreddykalluru01-debug/qamcp-cli">QAmcp</a> · <span class="mono">npx qamcp-cli http://127.0.0.1:4310/mcp</span></p>
 </footer>
 </main></body></html>

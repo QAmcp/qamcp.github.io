@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QAmcp sample reports: a broken server, a login wall, and a perfect score</title>
+<meta name="description" content="Three real QAmcp reports: a server broken on purpose (38/100), a server behind a login (not scored), and Context7 (100/100). See what a report shows before you run one.">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231A1A1A'/%3E%3Crect x='7' y='7' width='18' height='18' rx='2' fill='none' stroke='%23B9838A' stroke-width='2.4'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="site.css">
+<style>
+.sample-row{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:start;margin-top:clamp(22px,3vw,34px)}
+.shot{display:block;border:1px solid var(--frame);border-radius:10px;overflow:hidden;background:var(--ground)}
+.shot img{display:block;width:100%;height:auto}
+.shot:hover{border-color:var(--rose)}
+.verdict{display:inline-block;font:600 13px/1 var(--mono);letter-spacing:.08em;padding:8px 11px;border:1.5px solid currentColor;border-radius:6px;margin-top:14px}
+.verdict.fail{color:var(--fail)}.verdict.pass{color:var(--pass)}.verdict.skip{color:var(--soft)}
+.notice{list-style:none;padding:0;margin-top:16px}
+.notice li{padding:10px 0;border-top:1px solid var(--rule);color:var(--soft);font-size:15px}
+.notice code{color:var(--ink)}
+.open{display:inline-block;margin-top:18px;color:var(--rose);font-weight:700;text-decoration:none}
+.open:hover{text-decoration:underline}
+.small{margin-top:12px;font-size:13.5px;color:var(--faint)}
+@media (max-width:760px){.sample-row{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="sheet">
+ <div class="sheet-in">
+  <header class="top">
+   <a class="brand" href="./">QA<b>mcp</b></a>
+   <nav aria-label="Main"><a href="how-it-works.html">How it works</a><a href="safety.html">Safety</a><a href="ci.html">Run it in CI</a><a href="samples.html" aria-current="page">Sample reports</a></nav>
+   <a class="gh" href="https://github.com/abhiramreddykalluru01-debug/qamcp-cli"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38v-1.33c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.06-.49.06-.49.8.06 1.23.83 1.23.83.72 1.22 1.88.87 2.34.66.07-.52.28-.87.5-1.07-1.78-.2-3.65-.89-3.65-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>GitHub</a>
+  </header>
+  <main id="main">
+   <div class="page-head">
+    <h1>See a real report before you run one</h1>
+    <p>Three real results: a server that fails, one behind a login, and one that passes everything. Each opens the full report page, exactly as QAmcp writes it with <code>--html report.html</code>.</p>
+   </div>
+  </main>
+ </div>
+</div>
+
+<section class="part" aria-labelledby="h-broken">
+ <div class="part-in">
+  <span class="sheetno">Sample 1 of 3 · A server that fails</span>
+  <h2 id="h-broken">The server we broke on purpose</h2>
+  <div class="sample-row">
+   <a class="shot" href="sample/broken.html"><img src="img/sample-broken.png" width="1800" height="1140" alt="Report page for the broken test server: 38 out of 100, FAIL, with failures and advisories listed." loading="lazy"></a>
+   <div>
+    <span class="verdict fail">38 / 100 · FAIL</span>
+    <ul class="notice">
+     <li>A hidden instruction in <code>fetch_notes</code> tells the AI to read the user's SSH key.</li>
+     <li>An error from <code>search_users</code> shows a database password.</li>
+     <li>Hidden instructions alone would cap any server at 40, however good the rest is. This one scored 38 anyway.</li>
+     <li>The dangerous tools weren't run at all; the report says which, and why.</li>
+    </ul>
+    <a class="open" href="sample/broken.html">Open the full report →</a>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="part" aria-labelledby="h-login">
+ <div class="part-in">
+  <span class="sheetno">Sample 2 of 3 · A server behind a login</span>
+  <h2 id="h-login">A login wall is not a failure</h2>
+  <div class="sample-row">
+   <a class="shot" href="sample/login.html"><img src="img/sample-login.png" width="1800" height="1140" alt="Report page for the test login server: NOT SCORED, login setup passed, every other check marked needs login." loading="lazy"></a>
+   <div>
+    <span class="verdict skip">NOT SCORED</span>
+    <ul class="notice">
+     <li>From outside, QAmcp checks the login setup: can an AI app find the login and sign in properly? Here it passed.</li>
+     <li>Every check behind the login is listed as "needs login", never as a fail.</li>
+     <li>The page shows the one command to test the rest with your own login.</li>
+    </ul>
+    <a class="open" href="sample/login.html">Open the full report →</a>
+    <p class="small">This is our own test login server, so no real company's account is involved.</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="part" aria-labelledby="h-pass">
+ <div class="part-in">
+  <span class="sheetno">Sample 3 of 3 · A server that passes</span>
+  <h2 id="h-pass">Context7, a public server</h2>
+  <div class="sample-row">
+   <a class="shot" href="sample/context7.html"><img src="img/sample-context7.png" width="1800" height="1140" alt="Report page for Context7: 100 out of 100, PASS." loading="lazy"></a>
+   <div>
+    <span class="verdict pass">100 / 100 · PASS</span>
+    <ul class="notice">
+     <li>Every tool is described, labeled, and answers in time.</li>
+     <li>Bad inputs get clean errors that leak nothing.</li>
+     <li>It's on the newest MCP version.</li>
+    </ul>
+    <a class="open" href="sample/context7.html">Open the full report →</a>
+    <p class="small">Context7 is a public server by Upstash, tested independently on 16 Oct 2026, the same way anyone can. QAmcp is not affiliated with Upstash or Context7.</p>
+   </div>
+  </div>
+  <h2 style="margin-top:clamp(40px,5vw,60px);font-size:clamp(22px,2vw,28px)">Make one for your server</h2>
+  <div class="cmd"><label class="pre" for="srv1">npx qamcp-cli</label><input id="srv1" class="srv" type="url" inputmode="url" placeholder="https://your-server.com/mcp" aria-label="Your MCP server link" spellcheck="false" autocomplete="off" autocapitalize="off"><button class="copy" type="button" data-for="srv1" data-extra="--html report.html">Copy</button></div>
+  <p class="small">Copies the command with <code>--html report.html</code>, so you get the page as well as the score.</p>
+ </div>
+</section>
+
+<footer>
+ <span>QAmcp · free and open source (MIT)</span>
+ <a href="./">Home</a>
+ <a href="how-it-works.html">How it works</a>
+ <a href="safety.html">Safety and privacy</a>
+ <a href="ci.html">Run it in CI</a>
+ <a href="https://github.com/abhiramreddykalluru01-debug/qamcp-cli">GitHub</a>
+ <a href="privacy.html">Privacy and terms</a>
+ <span class="r">This site has no tracking.</span>
+</footer>
+<script src="site.js"></script>
+</body>
+</html>

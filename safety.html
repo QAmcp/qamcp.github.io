@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QAmcp safety and privacy: what it touches, and what it never does</title>
+<meta name="description" content="What QAmcp sends and to whom, which tools it runs, where your login is kept, and what it never does. Free, open source, no tracking.">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231A1A1A'/%3E%3Crect x='7' y='7' width='18' height='18' rx='2' fill='none' stroke='%23B9838A' stroke-width='2.4'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="sheet">
+ <div class="sheet-in">
+  <header class="top">
+   <a class="brand" href="./">QA<b>mcp</b></a>
+   <nav aria-label="Main"><a href="how-it-works.html">How it works</a><a href="safety.html" aria-current="page">Safety</a><a href="ci.html">Run it in CI</a><a href="samples.html">Sample reports</a><a href="./#teams">For teams</a></nav>
+   <a class="gh" href="https://github.com/abhiramreddykalluru01-debug/qamcp-cli"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38v-1.33c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.06-.49.06-.49.8.06 1.23.83 1.23.83.72 1.22 1.88.87 2.34.66.07-.52.28-.87.5-1.07-1.78-.2-3.65-.89-3.65-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>GitHub</a>
+  </header>
+  <main id="main">
+   <div class="page-head">
+    <h1>Safe on any server, private on yours</h1>
+    <p>A tester that might break the thing it tests, or send your data somewhere, is not one anyone should run. Here is exactly what QAmcp touches, where your login goes, and what it never does. It's open source, so you can check every line.</p>
+    <nav class="toc" aria-label="On this page"><a href="#talks">Who it talks to</a><a href="#tools">Which tools it runs</a><a href="#login">Your login</a><a href="#ours">This website, and our own tests</a></nav>
+   </div>
+  </main>
+ </div>
+</div>
+
+<section class="part" id="talks" aria-labelledby="h-talks">
+ <div class="part-in">
+  <span class="sheetno">Sheet 2 of 5 · Who it talks to</span>
+  <h2 id="h-talks">Only the server you give it</h2>
+  <ul class="facts">
+   <li><strong>Your server, and its login page</strong>QAmcp sends requests to the server you name, and to its login service if it has one. That's the whole list.</li>
+   <li><strong>No AI, no tracking, no telemetry</strong>The free tool calls no AI service and reports nothing back to us. There's no account and nothing to sign up for.</li>
+   <li><strong>Reports stay on your computer</strong>The score is printed in your terminal. Files like <code>report.html</code> or <code>report.json</code> are written only where you ask, and uploaded nowhere.</li>
+   <li><strong>Keys go only to your server</strong>A key you add with <code>--header</code> is sent to the server you're testing and nowhere else. QAmcp never writes it into a report.</li>
+  </ul>
+ </div>
+</section>
+
+<section class="part" id="tools" aria-labelledby="h-tools">
+ <div class="part-in">
+  <span class="sheetno">Sheet 3 of 5 · Which tools it runs</span>
+  <h2 id="h-tools">It never runs a tool that could change something</h2>
+  <p class="intro">A tool's safety label is the server's own word, so QAmcp checks it against what the tool's name and description say before running anything.</p>
+  <ul class="facts">
+   <li><strong>By default: read-only tools only</strong>Only tools the server labels read-only, and whose name and description agree. Everything else is skipped, and the report lists each skipped tool and why.</li>
+   <li><strong>Destructive-sounding tools: never</strong>A tool named like <code>delete_account</code> or <code>drop_table</code> is never run, in any mode.</li>
+   <li><strong>Harmless inputs</strong>Each safe tool gets one sensible sample input, then a missing input and a wrong-type input, to see if it refuses them clearly.</li>
+   <li><strong>Don't trust the server? Run nothing</strong><code>--look-only</code> calls no tools at all. It only reads the tool list, descriptions, labels and login setup.</li>
+   <li><strong>A program on your computer</strong>With <code>--stdio</code>, QAmcp starts the program once more for a moment, to check it prints only MCP messages. The report says it did.</li>
+   <li><strong>More only when you ask</strong><code>--owner</code> and <code>--run-unlabeled</code> run more tools, for your own server or a test copy. You choose; QAmcp never decides that for you.</li>
+  </ul>
+ </div>
+</section>
+
+<section class="part" id="login" aria-labelledby="h-login">
+ <div class="part-in">
+  <span class="sheetno">Sheet 4 of 5 · Your login</span>
+  <h2 id="h-login">Your password never reaches QAmcp</h2>
+  <ul class="facts">
+   <li><strong>You sign in on the server's own page</strong>With <code>--login</code>, your browser opens the service's real login page. You type your password there, not into QAmcp.</li>
+   <li><strong>QAmcp gets a temporary pass</strong>After you approve, the service hands QAmcp a pass for this server, the way it would any AI app you connect.</li>
+   <li><strong>Kept on your computer only</strong>The pass is saved in a <code>.qamcp</code> folder where you ran the test, so you don't log in every time. On Mac and Linux only your user can read it.</li>
+   <li><strong>It can't be committed by accident</strong>That folder tells git to ignore it, so a login saved inside a project never ends up in your repository.</li>
+  </ul>
+  <p class="intro">To log out, delete the <code>.qamcp</code> folder. You can also revoke the pass on the service's own settings page, like any connected app.</p>
+ </div>
+</section>
+
+<section class="part" id="ours" aria-labelledby="h-ours">
+ <div class="part-in">
+  <span class="sheetno">Sheet 5 of 5 · This website, and our own tests</span>
+  <h2 id="h-ours">No tracking here either</h2>
+  <ul class="facts">
+   <li><strong>This website</strong>No analytics, no cookies, no ads. The fonts are served from this site, so your visit isn't reported to anyone else.</li>
+   <li><strong>When we test public servers</strong>We test new servers from the official MCP Registry in the same safe mode, and send the results to their owners. Those report links are unlisted and hidden from search engines.</li>
+   <li><strong>Open source, MIT licensed</strong>Every check is in the <a href="https://github.com/abhiramreddykalluru01-debug/qamcp-cli">code on GitHub</a>. Read it before you trust it.</li>
+   <li><strong>Found a problem?</strong>If QAmcp gets something wrong about your server, or does something it shouldn't, <a href="https://github.com/abhiramreddykalluru01-debug/qamcp-cli/issues">tell us on GitHub</a>. Being fair matters more than anything.</li>
+  </ul>
+  <h2 style="margin-top:clamp(36px,5vw,56px);font-size:clamp(22px,2vw,28px)">Start with a look that touches nothing</h2>
+  <div class="cmd"><label class="pre" for="srv1">npx qamcp-cli</label><input id="srv1" class="srv" type="url" inputmode="url" placeholder="https://your-server.com/mcp" aria-label="Your MCP server link" spellcheck="false" autocomplete="off" autocapitalize="off"><button class="copy" type="button" data-for="srv1" data-extra="--look-only">Copy</button></div>
+  <p class="intro" style="font-size:14px">Copies the command with <code>--look-only</code> added.</p>
+ </div>
+</section>
+
+<footer>
+ <span>QAmcp · free and open source (MIT)</span>
+ <a href="./">Home</a>
+ <a href="how-it-works.html">How it works</a>
+ <a href="https://github.com/abhiramreddykalluru01-debug/qamcp-cli">GitHub</a>
+ <a href="https://github.com/abhiramreddykalluru01-debug/qamcp-cli/issues">Report a wrong result</a>
+ <a href="privacy.html">Privacy and terms</a>
+ <span class="r">This site has no tracking.</span>
+</footer>
+<script src="site.js"></script>
+</body>
+</html>
