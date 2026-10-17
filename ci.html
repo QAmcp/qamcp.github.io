@@ -23,7 +23,7 @@ pre.code .k{color:var(--ink)}pre.code .v{color:var(--rose)}pre.code .c{color:var
   <header class="top">
    <a class="brand" href="./">QA<b>mcp</b></a>
    <nav aria-label="Main"><a href="how-it-works.html">How it works</a><a href="safety.html">Safety</a><a href="ci.html" aria-current="page">Run it in CI</a><a href="samples.html">Sample reports</a></nav>
-   <a class="gh" href="https://github.com/abhiramreddykalluru01-debug/qamcp-cli"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38v-1.33c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.06-.49.06-.49.8.06 1.23.83 1.23.83.72 1.22 1.88.87 2.34.66.07-.52.28-.87.5-1.07-1.78-.2-3.65-.89-3.65-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>GitHub</a>
+   <a class="gh" href="https://github.com/QAmcp/qamcp-cli"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38v-1.33c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.06-.49.06-.49.8.06 1.23.83 1.23.83.72 1.22 1.88.87 2.34.66.07-.52.28-.87.5-1.07-1.78-.2-3.65-.89-3.65-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>GitHub</a>
   </header>
   <main id="main">
    <div class="page-head">
@@ -55,7 +55,7 @@ pre.code .k{color:var(--ink)}pre.code .v{color:var(--rose)}pre.code .c{color:var
     <span class="k">runs-on</span>: <span class="v">ubuntu-latest</span>
     <span class="k">steps</span>:
       - <span class="k">uses</span>: <span class="v">actions/checkout@v7</span>
-      - <span class="k">uses</span>: <span class="v">abhiramreddykalluru01-debug/qamcp-cli@v0</span>
+      - <span class="k">uses</span>: <span class="v">QAmcp/qamcp-cli@v0</span>
         <span class="k">with</span>:
           <span class="k">url</span>: <span class="v">https://your-server.com/mcp</span>
           <span class="k">fail-under</span>: <span class="v">80</span></pre>
@@ -96,7 +96,7 @@ pre.code .k{color:var(--ink)}pre.code .v{color:var(--rose)}pre.code .c{color:var
           <span class="k">restore-keys</span>: |
             <span class="v">qamcp-${{ github.ref_name }}-</span>
             <span class="v">qamcp-main-</span>
-      - <span class="k">uses</span>: <span class="v">abhiramreddykalluru01-debug/qamcp-cli@v0</span>
+      - <span class="k">uses</span>: <span class="v">QAmcp/qamcp-cli@v0</span>
         <span class="k">with</span>:
           <span class="k">url</span>: <span class="v">https://your-server.com/mcp</span>
           <span class="k">fail-under</span>: <span class="v">80</span>
@@ -104,7 +104,7 @@ pre.code .k{color:var(--ink)}pre.code .v{color:var(--rose)}pre.code .c{color:var
           <span class="k">save-baseline</span>: <span class="v">qamcp-baseline.json</span></pre>
    <button class="copy" type="button" data-copy-from="yml3">Copy</button>
   </div>
-  <p class="intro">The first run has no baseline yet, and that's fine: it just saves one. The full example, with uploading the reports as files, is in <a href="https://github.com/abhiramreddykalluru01-debug/qamcp-cli/blob/main/examples/qamcp-ci.yml">examples/qamcp-ci.yml</a>.</p>
+  <p class="intro">The first run has no baseline yet, and that's fine: it just saves one. The full example, with uploading the reports as files, is in <a href="https://github.com/QAmcp/qamcp-cli/blob/main/examples/qamcp-ci.yml">examples/qamcp-ci.yml</a>.</p>
  </div>
 </section>
 
@@ -159,8 +159,8 @@ pre.code .k{color:var(--ink)}pre.code .v{color:var(--rose)}pre.code .c{color:var
  <a href="./">Home</a>
  <a href="how-it-works.html">How it works</a>
  <a href="safety.html">Safety and privacy</a>
- <a href="https://github.com/abhiramreddykalluru01-debug/qamcp-cli">GitHub</a>
- <a href="https://github.com/abhiramreddykalluru01-debug/qamcp-cli/issues">Report a wrong result</a>
+ <a href="https://github.com/QAmcp/qamcp-cli">GitHub</a>
+ <a href="https://github.com/QAmcp/qamcp-cli/issues">Report a wrong result</a>
  <a href="privacy.html">Privacy and terms</a>
  <span class="r">This site has no tracking.</span>
 </footer>
