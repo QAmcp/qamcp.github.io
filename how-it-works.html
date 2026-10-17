@@ -41,6 +41,7 @@
    <li><b>Read every description</b><span>Missing or confusing descriptions, tools that read the same, hidden instructions aimed at the AI.</span></li>
    <li><b>Decide which tools are safe to run</b><span>Only tools labeled read-only whose name and description agree. Anything that could change, send or delete something is skipped, and the report lists each one and why.</span></li>
    <li><b>Run the safe tools, with good and bad inputs</b><span>Once with sensible sample inputs, then with a missing input and a wrong type. A good tool answers the first and refuses the others clearly.</span></li>
+   <li><b>Try tools together</b><span>When one tool's answer holds something another tool asks for, like an ID, QAmcp passes it along and checks the second tool can use it. That's how AI apps chain tools in real jobs.</span></li>
    <li><b>Time everything, and read every error</b><span>Connecting, listing and each answer are timed. Every error message is scanned for passwords, keys, tokens and internal file paths.</span></li>
    <li><b>Open resources and prompts</b><span>Only if the server offers them: each one should open and match what it says it is.</span></li>
    <li><b>Write the report</b><span>A score, every failure and advisory, everything it could not test and why. Add <code>--html report.html</code> for a page you can share.</span></li>
@@ -65,11 +66,12 @@
     <tr><td>Bad inputs give a clean error</td><td>A missing or wrong-type input gets a clear refusal</td><td class="n">10</td></tr>
     <tr><td>Login setup follows the spec</td><td>Only when the server needs a login: the details AI apps need to sign in</td><td class="n">10</td></tr>
     <tr><td>Resources and prompts work</td><td>Only when the server has them: each opens, and its content matches its type</td><td class="n">10</td></tr>
+    <tr><td>Tools work together</td><td>Only when tools chain: an ID one tool returns is accepted by the next</td><td class="n">10</td></tr>
     <tr><td>Fast enough</td><td>Connecting, listing and answering, timed</td><td class="n">5</td></tr>
     <tr><td>No secrets leaked</td><td>Keys, passwords, server folders and stack traces in error messages</td><td class="n">5</td></tr>
    </tbody>
   </table>
-  <p class="intro">These add up to 120, but the score is a percentage, not a sum: most servers have no login and no resources, so 100 points are in play. A server with both has 120 in play, scaled to 100 the same way.</p>
+  <p class="intro">These add up to 130, but the score is a percentage, not a sum: most servers have no login, no resources and no chained tools, so 100 points are in play. Each of those three checks that applies adds 10 points in play, and the total is scaled to 100 the same way.</p>
  </div>
 </section>
 

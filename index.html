@@ -259,7 +259,7 @@ footer .r{margin-left:auto}
 <section class="part" id="checks" aria-labelledby="h-checks">
  <div class="part-in">
   <span class="sheetno">Sheet 2 of 4 · What it checks</span>
-  <h2 id="h-checks">Ten checks, each a plain fact you can verify.</h2>
+  <h2 id="h-checks">Every check is a plain fact you can verify.</h2>
   <p class="intro">No AI judges anything. Every result is pass or fail, a time in milliseconds, or an exact match, and the report always says what it could not test.</p>
   <table class="checks">
    <thead><tr><th>Check</th><th>What it means</th><th>On the test server</th></tr></thead>
@@ -273,6 +273,7 @@ footer .r{margin-left:auto}
     <tr><td>Fast enough</td><td>Connecting, listing and answering, timed.</td><td>Advisory: search_users, 3.0 s</td></tr>
     <tr><td>Login setup follows the spec</td><td>An AI app can find your login and sign in the way the MCP rules describe.</td><td>No login on this server</td></tr>
     <tr><td>Resources and prompts work</td><td>What the server offers besides tools opens cleanly.</td><td>None offered</td></tr>
+    <tr><td>Tools work together</td><td>An ID one tool returns is accepted by the next tool, the way AI apps chain them.</td><td>No chains on this server</td></tr>
     <tr><td>Ready for the newest MCP version</td><td>Protocol version and transport, checked against the current spec.</td><td>Advisory: older version</td></tr>
    </tbody>
   </table>
