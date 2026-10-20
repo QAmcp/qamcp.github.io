@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>QAmcp Directory</title>
+<meta name="description" content="Every MCP server in the official MCP Registry, tested by QAmcp. Real scores from real tests.">
+<script>try{var t=localStorage.getItem('qamcp-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="stylesheet" href="site.css">
+<link rel="stylesheet" href="theme.css">
+<style>
+.head{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);align-items:end;gap:clamp(24px,4vw,56px);background:var(--sheet);border:1.5px solid var(--frame);padding:clamp(26px,4vw,48px)}
+.head h1{font:700 clamp(36px,4.6vw,56px)/1.02 var(--head);max-width:16ch;text-wrap:balance}
+.head p{color:var(--soft);margin-top:12px;max-width:44ch}
+.search{display:flex;border:1.5px solid var(--frame);border-radius:10px;background:var(--ground);overflow:hidden}
+.search:focus-within{border-color:var(--rose)}
+.search input{flex:1;min-width:0;border:0;background:transparent;padding:16px 18px;font:400 17px var(--text);color:var(--ink);outline:none}
+.search input::placeholder{color:var(--faint)}
+.sub{margin-top:10px;font:400 13px var(--mono);color:var(--faint)}
+
+.bar{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;justify-content:space-between;margin:var(--gutter) 0 14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips button,.sort{font:400 13px var(--mono);background:var(--sheet);color:var(--soft);border:1px solid var(--frame);border-radius:20px;padding:7px 13px;cursor:pointer}
+.chips button[aria-pressed="true"]{border-color:var(--rose);color:var(--ink);box-shadow:inset 0 0 0 1px var(--rose)}
+.chips button span{color:var(--faint);margin-left:4px}
+.sort{border-radius:8px;display:inline-flex;align-items:center;gap:8px;color:var(--ink)}
+.sort svg{width:10px;height:6px;color:var(--faint);transition:transform .15s}
+.sort[aria-expanded="true"]{border-color:var(--rose)}.sort[aria-expanded="true"] svg{transform:rotate(180deg)}
+.sortbox{position:relative}
+.barr{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;justify-content:flex-end}
+.sortlist{position:absolute;right:0;top:calc(100% + 6px);z-index:5;min-width:100%;list-style:none;margin:0;padding:5px;background:var(--sheet);border:1px solid var(--frame);border-radius:9px;box-shadow:0 8px 24px rgba(0,0,0,.18)}
+.sortlist li{font:400 13px var(--mono);color:var(--soft);padding:8px 12px 8px 26px;border-radius:6px;cursor:pointer;white-space:nowrap;position:relative}
+.sortlist li[aria-selected="true"]{color:var(--ink)}
+.sortlist li[aria-selected="true"]::before{content:"✓";position:absolute;left:9px;color:var(--rose)}
+.sortlist li:hover,.sortlist li.active{background:color-mix(in srgb,var(--rose) 16%,transparent);color:var(--ink)}
+.count{font:400 13px var(--mono);color:var(--faint)}
+
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.card{background:var(--sheet);border:1.5px solid var(--frame);border-radius:4px;padding:20px 22px 18px;display:flex;flex-direction:column;min-width:0}
+.card .k{font:600 11px var(--mono);letter-spacing:.08em;color:var(--faint);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.card h3{font:700 25px/1.1 var(--head);margin-top:6px;overflow-wrap:anywhere}
+.card h3 a{text-decoration:none}.card h3 a:hover{text-decoration:underline;text-decoration-color:var(--rose)}
+.card p{color:var(--soft);font-size:14.5px;line-height:1.5;margin-top:6px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:43px}
+.card .row{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:auto;padding-top:14px;border-top:1px solid var(--rule)}
+.card .top{margin-bottom:14px}
+.num{font:600 38px/1 var(--mono);font-variant-numeric:tabular-nums}.num small{font-size:14px;color:var(--faint)}
+.num.login{font-size:19px;font-weight:600}
+.stamp{font:700 12.5px var(--mono);letter-spacing:.12em;padding:7px 10px;border:2px solid currentColor;border-radius:5px;white-space:nowrap}
+.stamp.pass{color:var(--pass)}.stamp.fail{color:var(--fail)}.stamp.none{color:var(--soft)}.stamp.mid{color:var(--rose)}
+.facts{display:flex;flex-wrap:wrap;gap:4px 14px;margin-top:10px;font:400 12.5px var(--mono);color:var(--faint)}
+.facts .ok::before{content:"✓ ";color:var(--pass)}.facts .w{color:var(--rose)}.facts .f{color:var(--fail)}
+.foot{display:flex;justify-content:space-between;gap:10px;margin-top:12px;font:400 12px var(--mono);color:var(--faint)}
+.foot button{background:none;border:0;padding:0;font:inherit;color:var(--rose);cursor:pointer}
+.foot button:hover{text-decoration:underline}
+.empty{background:var(--sheet);border:1.5px dashed var(--frame);padding:40px;text-align:center;color:var(--soft)}
+.more{display:block;margin:18px auto 0;font:700 14px var(--text);background:var(--sheet);color:var(--ink);border:1px solid var(--frame);border-radius:8px;padding:11px 18px;cursor:pointer}
+.more:hover{border-color:var(--rose)}
+.claim{margin-top:var(--gutter);background:var(--sheet);border:1.5px dashed var(--frame);padding:22px clamp(18px,3vw,30px);display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center}
+.claim b{font:700 20px var(--head)}.claim p{color:var(--soft);font-size:14.5px;margin-top:4px;max-width:70ch}
+.how{font:400 13px var(--mono);color:var(--rose)}
+.nm{display:flex;align-items:center;gap:12px;margin-top:6px}.nm h3{margin-top:0}
+.lg{flex:none;width:36px;height:36px;border-radius:9px;border:1px solid var(--rule);background:var(--raise);object-fit:contain}
+.lg.letter{display:grid;place-items:center;font:700 17px var(--head);color:var(--rose)}
+.claim p a{color:var(--rose)}
+.shelf{margin-bottom:var(--gutter)}
+.shelf h2{font:700 26px var(--head)}.shelf > p{color:var(--soft);font-size:14.5px;margin:2px 0 12px}
+.facts .f.down{font-weight:600}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--ink);color:var(--ground);font:400 13px var(--mono);padding:9px 14px;border-radius:7px;opacity:0;transition:opacity .2s;pointer-events:none}
+.toast.on{opacity:1}
+@media (max-width:1080px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.head{grid-template-columns:1fr}}
+@media (max-width:640px){.cards{grid-template-columns:1fr}.gh{display:none}}
+</style></head><body>
+<a class="skip" href="#list">Skip to servers</a>
+<div class="wrap">
+ <header class="top"><a class="brand" href="index.html">QA<b>mcp</b></a><nav aria-label="Main"><a href="directory.html" aria-current="page">Directory</a><a href="test.html">Test a server</a><a href="how-it-works.html">How it works</a><a href="safety.html">Safety</a><a href="ci.html">Run it in CI</a><a href="samples.html">Sample reports</a></nav>
+  <div class="tools"><button class="theme" id="theme" type="button">Light</button><a class="gh" href="https://github.com/QAmcp/qamcp-cli">GitHub</a></div></header>
+ <div class="head">
+  <div><h1>Find an MCP server you can trust</h1><p>Every new server in the official MCP Registry, tested by QAmcp in safe mode. Real results from real tests.</p></div>
+  <div><label class="search"><span class="skip">Search servers</span><input id="q" type="search" placeholder="Search servers by name or what they do…" autocomplete="off"></label><div class="sub" id="sub">Loading…</div></div>
+ </div>
+ <div class="bar">
+  <div class="chips" id="chips" role="group" aria-label="Show">
+   <button type="button" data-f="all" aria-pressed="true">All<span id="n-all"></span></button>
+   <button type="button" data-f="scored" aria-pressed="false">Scored<span id="n-scored"></span></button>
+   <button type="button" data-f="login" aria-pressed="false">Needs login<span id="n-login"></span></button>
+  </div>
+  <div class="barr"><a class="how" href="directory-rules.html">How this is sorted</a><span class="count" id="count"></span>
+   <div class="sortbox"><button class="sort" id="sort" type="button" aria-haspopup="listbox" aria-expanded="false" aria-label="Sort: Highest score" data-v="score"><span id="sort-label">Highest score</span><svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></button>
+    <ul class="sortlist" id="sortlist" role="listbox" aria-label="Sort servers" tabindex="-1" hidden><li role="option" data-v="score" aria-selected="true">Highest score</li><li role="option" data-v="new" aria-selected="false">Newest tested</li><li role="option" data-v="az" aria-selected="false">A to Z</li></ul></div></div>
+ </div>
+ <section class="shelf" id="shelf" hidden aria-labelledby="shelf-h"><h2 id="shelf-h">New in the last 90 days</h2><p>Every new server spends 90 days here, in a fresh order each day.</p><div class="cards" id="newcards"></div></section>
+ <main id="list" class="cards" aria-live="polite"></main>
+ <button class="more" id="more" type="button" hidden>Show more servers</button>
+ <div class="claim"><div><b>Is this your server?</b><p>Test it yourself anytime with one command. Soon you can claim your page, re-test from here, and show a "Tested by QAmcp" badge.</p><p>Have a concern, or want it removed? <a href="https://github.com/QAmcp/qamcp-cli/issues">Ask us</a> and we'll take it off the list.</p></div><a class="how" href="directory-rules.html">How the directory works →</a></div>
+</div>
+<div class="toast" id="toast" role="status"></div>
+<script src="theme.js"></script>
+<script>
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
+let all = [], filter = 'all', shown = 24, today = new Date().toISOString().slice(0, 10);
+
+function verdict(s) {
+  if (s.notScored) return ['NOT SCORED', 'none'];
+  if (s.checks.some((c) => c.status === 'fail')) return ['FAIL', 'fail'];
+  if (s.checks.some((c) => c.status === 'warn')) return ['PASS · WITH NOTES', 'mid'];
+  return ['PASS', 'pass'];
+}
+// Up to three short facts, problems first, all straight from the test.
+function facts(s) {
+  const by = Object.fromEntries(s.checks.map((c) => [c.id, c]));
+  const out = [];
+  if (s.notScored && !needsLogin(s)) return [['w', s.notScored], ['', 'we will test again']];
+  if (s.notScored) {
+    const login = by.oauth;
+    if (login && login.status === 'pass') out.push(['ok', 'login setup works']);
+    else if (login && login.status !== 'skip') out.push(['w', 'login setup has issues']);
+    out.push(['', 'owner can test fully']);
+    return out;
+  }
+  if (s.notAnsweringSince) out.push(['f down', 'not answering']);
+  if (by.hidden?.status === 'fail') out.push(['f', 'hidden instructions']);
+  if (by.leaks?.status === 'fail') out.push(['f', 'leaks in errors']);
+  if (s.wrongLink) out.push(['f', 'registry link points to the wrong place']);
+  else if (by.connect?.status === 'fail') out.push(['f', 'could not connect']);
+  if (by.respond?.status === 'fail') out.push(['f', 'tools fail to answer']);
+  if (by['bad-input']?.status === 'fail') out.push(['w', 'bad input breaks it']);
+  if (by.protocol?.status === 'warn') out.push(['w', 'older MCP version']);
+  if (by.speed?.status === 'warn') out.push(['w', 'slow tools']);
+  if (by.descriptions?.status === 'warn') out.push(['w', 'inputs not described']);
+  if (by.chains?.status === 'pass') out.push(['ok', 'tools work together']);
+  if (by.hidden?.status === 'pass') out.push(['ok', 'no hidden instructions']);
+  if (by.leaks?.status === 'pass') out.push(['ok', 'no leaks']);
+  const f = out.slice(0, 3);
+  if (s.toolCount) f.push(['', s.toolCount + (s.toolCount === 1 ? ' tool' : ' tools')]);
+  return f;
+}
+// No title in the registry: "ai.shumi/mcp" reads better as "shumi" than as "mcp".
+const displayName = (s) => { if (s.title) return s.title; const [ns, id] = s.name.split('/'); return /^(mcp|server|api|mcp-server|remote)$/i.test(id) ? ns.split('.').pop() : id; };
+const needsLogin = (s) => /login/i.test(s.notScored || '');
+const host = (u) => { try { return new URL(u).hostname.replace(/^www\./, ''); } catch (e) { return ''; } };
+const daysAgo = (d) => { const n = Math.round((Date.now() - new Date(d + 'T12:00:00Z')) / 864e5); return n <= 0 ? 'today' : n === 1 ? '1 day ago' : n + ' days ago'; };
+
+function card(s) {
+  const [word, cls] = verdict(s);
+  const name = esc(displayName(s));
+  return `<article class="card">
+   <div class="top"><span class="k">${esc(host(s.remoteUrl))}</span>
+   <div class="nm">${s.logo ? `<img class="lg" src="s/logo/${esc(s.logo)}" alt="" width="36" height="36" loading="lazy" decoding="async">` : `<span class="lg letter" aria-hidden="true">${esc((displayName(s).match(/[A-Za-z0-9]/)?.[0] ?? '?').toUpperCase())}</span>`}<h3><a href="s/${esc(s.slug)}.html">${name}</a></h3></div>
+   <p>${esc(s.description || 'No description given.')}</p></div>
+   <div class="row">${s.notScored ? `<span class="num login">${needsLogin(s) ? 'needs login' : 'not scored'}</span>` : `<span class="num">${s.score}<small> / 100</small></span>`}<span class="stamp ${cls}">${word}</span></div>
+   <div class="facts">${facts(s).map(([c, t]) => `<span class="${c}">${esc(t)}</span>`).join('')}</div>
+   <div class="foot"><span>tested ${daysAgo(s.testedAt)}</span><button type="button" data-cmd="npx qamcp-cli ${esc(s.remoteUrl)}">Copy test command</button></div>
+  </article>`;
+}
+
+// The rules (directory-rules.html), in code.
+const days = (from, to) => Math.round((Date.parse(to + 'T12:00:00Z') - Date.parse(from + 'T12:00:00Z')) / 864e5);
+const isNew = (s) => days(s.firstListed, today) < 90;
+// Not answering for over 30 days: out of the main lists (still found by search), back when it answers.
+const longDown = (s) => s.notAnsweringSince && days(s.notAnsweringSince, today) > 30;
+// Results only start to count a little less once they're more than 60 days old.
+const rankScore = (s) => (s.score ?? -1) - Math.max(0, Math.min(10, (days(s.testedAt, today) - 60) / 10));
+// A fresh order each day, the same for everyone that day.
+function shuffled(list) {
+  let h = 2166136261; for (const c of today) h = Math.imul(h ^ c.charCodeAt(0), 16777619);
+  const rnd = () => { h = Math.imul(h ^ (h >>> 15), 2246822507); h = Math.imul(h ^ (h >>> 13), 3266489909); return ((h ^= h >>> 16) >>> 0) / 4294967296; };
+  const a = list.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(rnd() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a;
+}
+
+function render() {
+  const q = $('q').value.trim().toLowerCase();
+  let list = all.filter((s) => filter === 'all' || (filter === 'login' ? needsLogin(s) : !s.notScored));
+  if (q) list = list.filter((s) => [s.title, s.name, s.description, s.remoteUrl].join(' ').toLowerCase().includes(q));
+  else list = list.filter((s) => !longDown(s));
+  const by = $('sort').dataset.v;
+  list.sort(by === 'az' ? (a, b) => displayName(a).localeCompare(displayName(b))
+    : by === 'new' ? (a, b) => b.testedAt.localeCompare(a.testedAt) || (b.score ?? -1) - (a.score ?? -1)
+    : (a, b) => rankScore(b) - rankScore(a) || displayName(a).localeCompare(displayName(b)));
+  const fresh = !q && filter === 'all' ? shuffled(all.filter((s) => isNew(s) && !longDown(s))).slice(0, 6) : [];
+  $('shelf').hidden = !fresh.length;
+  $('newcards').innerHTML = fresh.map(card).join('');
+  $('count').textContent = list.length + (list.length === 1 ? ' server' : ' servers');
+  $('list').innerHTML = list.length ? list.slice(0, shown).map(card).join('') : `<div class="empty" style="grid-column:1/-1">No servers match “${esc(q)}”. Try a shorter word, or test any server yourself: <code>npx qamcp-cli &lt;server link&gt;</code></div>`;
+  $('more').hidden = list.length <= shown;
+}
+
+$('q').addEventListener('input', () => { shown = 24; render(); });
+// Our own sort menu (a browser's built-in one can't take the site's colours). Keyboard: arrows, Enter, Escape.
+(() => {
+  const btn = $('sort'), list = $('sortlist'), opts = [...list.children];
+  let at = 0;
+  const mark = (i) => { at = (i + opts.length) % opts.length; opts.forEach((o, k) => o.classList.toggle('active', k === at)); };
+  const open = () => { list.hidden = false; btn.setAttribute('aria-expanded', 'true'); mark(opts.findIndex((o) => o.dataset.v === btn.dataset.v)); list.focus(); };
+  const close = (focus) => { list.hidden = true; btn.setAttribute('aria-expanded', 'false'); if (focus) btn.focus(); };
+  const pick = (o) => {
+    btn.dataset.v = o.dataset.v; $('sort-label').textContent = o.textContent; btn.setAttribute('aria-label', 'Sort: ' + o.textContent);
+    opts.forEach((x) => x.setAttribute('aria-selected', String(x === o)));
+    close(true); render();
+  };
+  btn.addEventListener('click', () => (list.hidden ? open() : close(false)));
+  btn.addEventListener('keydown', (e) => { if (e.key === 'ArrowDown' || e.key === 'ArrowUp') { e.preventDefault(); open(); } });
+  list.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowDown') { e.preventDefault(); mark(at + 1); }
+    else if (e.key === 'ArrowUp') { e.preventDefault(); mark(at - 1); }
+    else if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); pick(opts[at]); }
+    else if (e.key === 'Escape' || e.key === 'Tab') close(e.key === 'Escape');
+  });
+  list.addEventListener('click', (e) => { const o = e.target.closest('li'); if (o) pick(o); });
+  list.addEventListener('mousemove', (e) => { const o = e.target.closest('li'); if (o) mark(opts.indexOf(o)); });
+  document.addEventListener('click', (e) => { if (!list.hidden && !e.target.closest('.sortbox')) close(false); });
+})();
+$('more').onclick = () => { shown += 24; render(); };
+$('chips').addEventListener('click', (e) => {
+  const b = e.target.closest('button'); if (!b) return;
+  filter = b.dataset.f; shown = 24;
+  for (const x of $('chips').querySelectorAll('button')) x.setAttribute('aria-pressed', String(x === b));
+  render();
+});
+$('list').addEventListener('click', async (e) => {
+  const b = e.target.closest('button[data-cmd]'); if (!b) return;
+  try { await navigator.clipboard.writeText(b.dataset.cmd); toast('Copied. Paste it in your terminal.'); } catch (err) { toast(b.dataset.cmd); }
+});
+function toast(t) { $('toast').textContent = t; $('toast').classList.add('on'); clearTimeout(toast.t); toast.t = setTimeout(() => $('toast').classList.remove('on'), 2200); }
+
+fetch('directory.json').then((r) => r.json()).then((d) => {
+  all = d.servers;
+  if (d.today) today = d.today;
+  const scored = all.filter((s) => !s.notScored).length;
+  $('n-all').textContent = all.length; $('n-scored').textContent = scored; $('n-login').textContent = all.filter(needsLogin).length;
+  $('sub').textContent = `${all.length} servers · each one tested by QAmcp · updated ${d.updated}`;
+  render();
+}).catch(() => { $('sub').textContent = 'Could not load the list. Please refresh.'; });
+</script>
+</body></html>

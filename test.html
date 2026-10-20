@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Test your MCP server · QAmcp</title>
+<meta name="description" content="Paste your MCP server's link and test it in the browser: connection, tools, hidden instructions, leaked secrets and speed. Free, the same checks as npx qamcp-cli.">
+<!-- Where the test service runs. Empty means http://localhost:8787 (for trying it on this computer). -->
+<meta name="qamcp-api" content="">
+<script>try{var t=localStorage.getItem('qamcp-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="stylesheet" href="site.css"><link rel="stylesheet" href="theme.css">
+<style>
+.grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:var(--gutter);align-items:start}
+.panel{background:var(--sheet);border:1.5px solid var(--frame);padding:clamp(22px,3.4vw,44px)}
+.panel h1{font:700 clamp(34px,4vw,50px)/1.02 var(--head)}
+.panel > p{color:var(--soft);margin-top:10px}
+.field{margin-top:24px}
+.field label{font:600 11px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--faint)}
+.field input{display:block;width:100%;margin-top:6px;border:1.5px solid var(--frame);border-radius:9px;background:var(--ground);padding:15px 16px;font:400 16px var(--mono);color:var(--ink)}
+.field input:focus{outline:none;border-color:var(--rose)}
+fieldset{border:0;padding:0;margin:16px 0 0;display:grid;gap:8px}
+legend{position:absolute;left:-999px}
+.opt{display:grid;grid-template-columns:20px 1fr;gap:10px;align-items:start;border:1px solid var(--frame);border-radius:9px;padding:12px 14px;font-size:14.5px;color:var(--soft);cursor:pointer}
+.opt b{color:var(--ink)}
+.opt:has(input:checked){border-color:var(--rose);box-shadow:inset 0 0 0 1px var(--rose)}
+.opt input{margin-top:4px;accent-color:var(--rose)}
+.go{margin-top:18px;width:100%;border:0;border-radius:9px;background:var(--rose);color:var(--on-rose);font:700 16px var(--text);padding:15px;cursor:pointer}
+.go:disabled{opacity:.55;cursor:default}
+.msg{margin-top:14px;font-size:14.5px;color:var(--soft)}
+.msg.err{color:var(--fail)}
+.step{margin-top:16px;border:1px dashed var(--frame);border-radius:9px;padding:14px 16px;font-size:14.5px;color:var(--soft)}
+.step b{color:var(--ink)}
+.step code{display:block;margin:6px 0;padding:8px 10px;background:var(--ground);border:1px solid var(--frame);border-radius:6px;font-size:13px;color:var(--ink);overflow-wrap:anywhere}
+.step button{margin-top:8px;border:1px solid var(--rose);background:none;color:var(--ink);border-radius:7px;padding:8px 14px;font:700 14px var(--text);cursor:pointer}
+
+.cert .k{font:600 11px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--faint)}
+.cert h2{font:700 clamp(28px,3.4vw,38px)/1.05 var(--head);margin-top:6px;overflow-wrap:anywhere}
+.cert .u{font:400 14px var(--mono);color:var(--soft);overflow-wrap:anywhere}
+.score{display:flex;flex-wrap:wrap;align-items:center;gap:18px;margin:20px 0 6px;padding:18px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.score .n{font:600 60px/1 var(--mono);font-variant-numeric:tabular-nums}.score .n small{font-size:18px;color:var(--faint)}
+.score .n.wait{color:var(--off)}.score .n.login{font-size:28px}
+.stamp{font:700 14px var(--mono);letter-spacing:.12em;padding:8px 12px;border:2px solid currentColor;border-radius:5px}
+.stamp.wait{border-style:dashed;color:var(--off)}.stamp.pass{color:var(--pass)}.stamp.fail{color:var(--fail)}.stamp.mid{color:var(--rose)}.stamp.none{color:var(--soft)}
+.now{min-height:22px;font:400 13px var(--mono);color:var(--soft);margin-bottom:6px}
+.rows{list-style:none;padding:0}
+.rows li{display:grid;grid-template-columns:22px minmax(0,1fr) auto;gap:10px;padding:9px 0;border-bottom:1px solid var(--rule);font-size:15px}
+.rows .m{font:700 15px var(--mono);text-align:center}
+.rows .t{color:var(--faint);font:400 12.5px var(--mono);text-align:right;max-width:24ch}
+.rows li.wait{color:var(--off)}
+.rows li.pass .m{color:var(--pass)}.rows li.warn .m{color:var(--rose)}.rows li.fail .m{color:var(--fail)}.rows li.off .m{color:var(--off)}
+.rows li.fail .t{color:var(--fail)}.rows li.warn .t{color:var(--rose)}
+.after{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.after a,.after button{font:700 14px var(--text);padding:10px 14px;border-radius:7px;text-decoration:none;cursor:pointer}
+.after .p{background:var(--rose);color:var(--on-rose);border:0}.after .s{border:1px solid var(--frame);color:var(--ink);background:none}
+.idle{color:var(--soft);font-size:15px;margin-top:12px}
+.foot{margin-top:var(--gutter);font:400 13px var(--mono);color:var(--faint)}
+@media (max-width:980px){.grid{grid-template-columns:1fr}}
+@media (max-width:640px){.gh{display:none}}
+</style></head><body>
+<a class="skip" href="#url">Skip to the server link</a>
+<div class="wrap">
+ <header class="top"><a class="brand" href="index.html">QA<b>mcp</b></a><nav aria-label="Main"><a href="directory.html">Directory</a><a href="test.html" aria-current="page">Test a server</a><a href="how-it-works.html">How it works</a><a href="safety.html">Safety</a><a href="ci.html">Run it in CI</a><a href="samples.html">Sample reports</a></nav>
+  <div class="tools"><button class="theme" id="theme" type="button">Light</button><a class="gh" href="https://github.com/QAmcp/qamcp-cli">GitHub</a></div></header>
+ <div class="grid">
+  <form class="panel" id="form" novalidate>
+   <h1>Test your MCP server</h1>
+   <p>Paste its link and watch the certificate fill in. Free, and the same checks as <code>npx qamcp-cli</code>.</p>
+   <div class="field"><label for="url">Server link</label><input id="url" name="url" type="url" inputmode="url" autocomplete="off" spellcheck="false" placeholder="https://your-server.com/mcp" required></div>
+   <fieldset><legend>How to test it</legend>
+    <label class="opt"><input type="radio" name="mode" value="safe" checked><span><b>Safe mode</b><br>Only tools labeled read-only are run. Nothing is changed or deleted.</span></label>
+    <label class="opt"><input type="radio" name="mode" value="login"><span><b>It needs a login</b><br>Sign in with your account. The login is used for this one test, then forgotten.</span></label>
+    <label class="opt"><input type="radio" name="mode" value="owner"><span><b>I own this server</b><br>Prove it with a small file on your site, then tools without a safety label can run too.</span></label>
+   </fieldset>
+   <div id="step" class="step" hidden></div>
+   <button class="go" id="go" type="submit">Test it</button>
+   <p class="msg" id="msg" role="status" aria-live="polite"></p>
+   <div id="soon" class="step" hidden>
+    <b>Testing in the browser opens very soon.</b> Until then, it's one command on your computer, with the same checks and the same score:
+    <code id="soon-cmd">npx qamcp-cli https://your-server.com/mcp</code>
+    <button type="button" id="soon-copy">Copy the command</button>
+    <br><br>Behind a login? Add <code style="display:inline;padding:2px 6px">--login</code>. Free, open source, and nothing is sent to us.
+   </div>
+  </form>
+  <section class="panel cert" id="cert" aria-live="polite">
+   <span class="k" id="state">Your certificate</span>
+   <h2 id="name">Waiting for a link</h2><span class="u" id="host"></span>
+   <div class="score"><span class="n wait" id="num">··<small> / 100</small></span><span class="stamp wait" id="stamp">NOT TESTED</span></div>
+   <p class="now" id="now"></p>
+   <ul class="rows" id="rows"></ul>
+   <div class="after" id="after" hidden></div>
+  </section>
+ </div>
+ <p class="foot">Tests run one at a time; a few per visitor each hour. Links into private networks are refused. Testing a program on your own computer? Use <code>npx qamcp-cli --stdio "your command"</code>.</p>
+</div>
+<script src="theme.js"></script>
+<script src="test.js"></script>
+</body></html>

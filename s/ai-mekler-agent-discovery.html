@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mekler AI: QAmcp test results</title>
+<meta name="description" content="Mekler AI MCP server: scored 80/100 when tested by QAmcp on 18 Oct 2026.">
+<script>try{var t=localStorage.getItem('qamcp-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="stylesheet" href="../site.css"><link rel="stylesheet" href="../theme.css"><link rel="stylesheet" href="server.css">
+</head><body>
+<div class="wrap">
+ <header class="top"><a class="brand" href="../index.html">QA<b>mcp</b></a><nav aria-label="Main"><a href="../directory.html" aria-current="page">Directory</a><a href="../test.html">Test a server</a><a href="../how-it-works.html">How it works</a><a href="../safety.html">Safety</a><a href="../ci.html">Run it in CI</a><a href="../samples.html">Sample reports</a></nav>
+  <div class="tools"><button class="theme" id="theme" type="button">Light</button><a class="gh" href="https://github.com/QAmcp/qamcp-cli">GitHub</a></div></header>
+ <section class="hero">
+  <span class="logo letter" aria-hidden="true">M</span>
+  <div class="who">
+   <p class="crumb"><a href="../directory.html">Directory</a> / Mekler AI</p>
+   <h1>Mekler AI</h1>
+   <p class="by">https://api.mekler.ai/mcp</p>
+   <p class="d">Inference, news, SEC facts, data checks, web extraction, mail, x402 checks and listing monitoring.</p>
+   <div class="chips"><span>17 tools</span><span class="ok">✓ no account needed</span><span>Pricing: not listed</span></div>
+   <div class="acts"><button class="p" type="button" id="copy-top">Copy the test command</button></div>
+  </div>
+  <div class="medal">
+   <div class="n">80<small> /100</small></div>
+   <span class="stamp mid">PASS · WITH NOTES</span>
+   
+   <p>10 of 10 checks · 18 Oct 2026</p>
+  </div>
+ </section>
+ <nav class="tabs" aria-label="On this page"><a href="#tools">What it can do</a><a href="#results">Test results</a><a href="#try">Test it yourself</a><a href="#history">Score over time</a><a href="#reviews">Reviews</a></nav>
+ <section class="sec" id="tools"><h2>What it can do</h2><p class="hint">17 tools, in the server's own words.</p><div class="grid">
+<div class="tool"><code>search_services</code><p>Find Mekler paid operations for a task, including exclusions and useful combinations.</p></div>
+<div class="tool"><code>get_service</code><p>Get a complete public service or operation contract by slug, operation ID, name, or endpoint URL.</p></div>
+<div class="tool"><code>scan_origin</code><p>Start or recover an asynchronous x402 conformance scan.</p></div>
+<div class="tool"><code>get_scan_status</code><span class="ro">read-only</span><p>Read a conformance job state with job_id and recovery_capability.</p></div>
+<div class="tool"><code>get_scan_report</code><span class="ro">read-only</span><p>Read a completed public cached report by report_id.</p></div>
+<div class="tool"><code>list_conformance_checks</code><span class="ro">read-only</span><p>Read the versioned 25-check linter and separate 14-check compliance catalogs, grading rules and unknown-evidence semantics.</p></div>
+<div class="tool"><code>get_trial_offer</code><span class="ro">read-only</span><p>Read the adjustable free-use offer, wallet authentication, allowance and explicit paid transition.</p></div>
+<div class="tool"><code>get_trial_access</code><span class="ro">read-only</span><p>Get the service request and standard wallet-auth instructions.</p></div>
+<div class="tool"><code>rotate_trial</code><p>Write: request a wallet-rotation challenge with old_wallet/new_wallet/request_id; then submit old_proof/new_proof signed with both keys.</p></div>
+<div class="tool"><code>referral_accept_terms</code><p>Accept a newer version of the referral terms to keep earning.</p></div>
+<div class="tool"><code>referral_acknowledge</code><p>Mark notices already served by referral_notices as read up to a cursor.</p></div>
+<div class="tool"><code>referral_notices</code><p>Read published program notices and the referrer&#39;s private account events.</p></div>
+<div class="tool"><code>referral_receipts</code><p>Page through a referrer&#39;s commission receipts, oldest first.</p></div>
+<div class="tool"><code>referral_register</code><p>Register a wallet as a Mekler referrer and receive a referral code.</p></div>
+<div class="tool"><code>referral_rotate</code><p>Move a referral registration to a new wallet without losing history.</p></div>
+<div class="tool"><code>referral_status</code><p>Read a registered referrer&#39;s code, referral link, accepted versus current terms and whether action is required.</p></div>
+<div class="tool"><code>referral_program</code><span class="ro">read-only</span><p>Read current Mekler referral availability, terms and commission offer.</p></div>
+ </div></section>
+ <section class="sec" id="results"><h2>Test results</h2><p class="hint">Safe mode: only tools labeled read-only were run. <a href="../how-it-works.html">How the test works</a></p><ul class="checks">
+<li class="chk warn"><span class="mk warn" aria-label="note">!</span><div><b>Ready for the newest MCP version</b><details><summary>1 warning</summary><ul><li class="warn"><span class="m">!</span>Uses an older MCP version (2025-11-25). It works today, but it isn&#39;t on the July 2026 version (2026-07-28) yet.</li></ul></details></div><span class="st">note</span></li>
+<li class="chk warn"><span class="mk warn" aria-label="note">!</span><div><b>Every tool is described</b><details><summary>15 warnings</summary><ul><li class="warn"><span class="m">!</span><b>search_services</b>: Inputs with no description: query, referral_code</li><li class="warn"><span class="m">!</span><b>get_service</b>: Inputs with no description: id, referral_code</li><li class="warn"><span class="m">!</span><b>scan_origin</b>: Inputs with no description: origin, quote_mode, idempotency_key, paths, recovery_capability, payment_signature</li><li class="warn"><span class="m">!</span><b>get_scan_status</b>: Inputs with no description: job_id, recovery_capability</li><li class="warn"><span class="m">!</span><b>get_scan_report</b>: Inputs with no description: report_id</li><li class="warn"><span class="m">!</span><b>get_trial_access</b>: Inputs with no description: operation</li><li class="warn"><span class="m">!</span><b>rotate_trial</b>: Inputs with no description: old_wallet, new_wallet, request_id, network, old_proof, new_proof</li><li class="warn"><span class="m">!</span><b>referral_accept_terms</b>: Inputs with no description: arguments, proof, new_proof</li><li class="more">and 7 more</li></ul></details></div><span class="st">note</span></li>
+<li class="chk warn"><span class="mk warn" aria-label="note">!</span><div><b>Tools are labeled safe or dangerous</b><details><summary>1 warning</summary><ul><li class="warn"><span class="m">!</span>2 of 17 tools have no safety label (read-only or dangerous): search_services, get_service</li></ul></details></div><span class="st">note</span></li>
+<li class="chk warn"><span class="mk warn" aria-label="note">!</span><div><b>Fast enough</b><details><summary>2 warnings</summary><ul><li class="warn"><span class="m">!</span>Average tool answer: 2.2 s</li><li class="warn"><span class="m">!</span><b>get_trial_offer</b>: Slowest tool: get_trial_offer (5.5 s): users will notice the wait</li><li class="more">and 2 more</li></ul></details></div><span class="st">note</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Connects</b><span class="sum">Connected in 2.2 s</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Lists its tools</b><span class="sum">Found 17 tools</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>No hidden instructions</b><span class="sum">No hidden instructions found in tool descriptions</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Tools work with good inputs</b><details><summary>All good</summary><ul><li class="pass"><span class="m">✓</span><b>get_scan_status</b>: Answered with an error, probably because of our sample input: {&quot;error&quot;: &quot;not_found&quot;, &quot;http_status&quot;: 404} {&quot;error&quot;:&quot;not_found&quot;,&quot;http_status&quot;:404}</li><li class="pass"><span class="m">✓</span><b>get_scan_report</b>: Answered with an error, probably because of our sample input: {&quot;error&quot;: &quot;not_found&quot;, &quot;http_status&quot;: 404} {&quot;error&quot;:&quot;not_found&quot;,&quot;http_status&quot;:404}</li><li class="pass"><span class="m">✓</span><b>list_conformance_checks</b>: Worked (321 ms)</li><li class="pass"><span class="m">✓</span><b>get_trial_offer</b>: Worked (5.5 s)</li><li class="pass"><span class="m">✓</span><b>get_trial_access</b>: Answered with an error, probably because of our sample input: invalid or unavailable tool request</li><li class="pass"><span class="m">✓</span><b>referral_program</b>: Worked (1.9 s)</li><li class="off"><span class="m">–</span><b>search_services</b>: Not run: no safety label (if you own this server, test again in owner mode)</li><li class="off"><span class="m">–</span><b>get_service</b>: Not run: no safety label (if you own this server, test again in owner mode)</li><li class="more">and 9 more</li></ul></details></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Bad inputs give a clean error</b><details><summary>All good</summary><ul><li class="pass"><span class="m">✓</span><b>get_scan_status</b>: Refused missing required input &quot;job_id&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>get_scan_status</b>: Refused wrong type for &quot;job_id&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>get_scan_report</b>: Refused missing required input &quot;report_id&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>get_scan_report</b>: Refused wrong type for &quot;report_id&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>get_trial_access</b>: Refused missing required input &quot;operation&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>get_trial_access</b>: Refused wrong type for &quot;operation&quot; with a clear error</li></ul></details></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>No secrets leaked</b><span class="sum">Checked 13 error messages: no secrets or internal details</span></div><span class="st">pass</span></li>
+<li class="chk off"><span class="mk off" aria-label="not tested">–</span><div><b>Tools work together</b><span class="sum">No tool&#39;s answer could be fed into another tool, so there were no chains to test (not counted either way)</span></div><span class="st">not tested</span></li>
+ </ul></section>
+ <section class="sec" id="try"><h2>Test it yourself</h2><p class="hint">Free and open source. Same checks, same score.</p>
+  <div class="cmd"><code id="cmd">npx qamcp-cli https://api.mekler.ai/mcp</code><button type="button" id="copy">Copy</button></div></section>
+ <section class="sec" id="history"><h2>Score over time</h2><ul class="hist"><li><span class="d">14 Oct 2026</span><span class="bar"><i style="width:80%"></i></span><span class="v">80</span></li><li><span class="d">17 Oct 2026</span><span class="bar"><i style="width:80%"></i></span><span class="v">80</span></li><li><span class="d">18 Oct 2026</span><span class="bar"><i style="width:80%"></i></span><span class="v">80</span></li></ul></section>
+ <section class="sec" id="reviews"><h2>Reviews</h2><p class="hint">Coming soon: reviews from people who use Mekler AI, signed in with GitHub, one per person. Reviews never change the score.</p></section>
+ <div class="claim"><div><b>Is this your server?</b><p>Soon you can claim this page: re-test it from here, reply to results, and show a "Tested by QAmcp" badge.</p><p>Have a concern, or want it removed? <a href="https://github.com/QAmcp/qamcp-cli/issues">Ask us</a> and we'll take it off the list. <a href="../directory-rules.html">How the directory works</a></p></div></div>
+</div>
+<script src="../theme.js"></script>
+<script>
+for (const id of ['copy', 'copy-top']) document.getElementById(id).onclick = async (e) => {
+  const b = e.currentTarget, was = b.textContent;
+  try { await navigator.clipboard.writeText(document.getElementById('cmd').textContent); b.textContent = 'Copied'; } catch (err) { b.textContent = 'Select the command below'; }
+  setTimeout(() => (b.textContent = was), 1800);
+};
+</script>
+</body></html>

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>INITE Visibility: QAmcp test results</title>
+<meta name="description" content="INITE Visibility MCP server: scored 91/100 when tested by QAmcp on 20 Oct 2026.">
+<script>try{var t=localStorage.getItem('qamcp-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="stylesheet" href="../site.css"><link rel="stylesheet" href="../theme.css"><link rel="stylesheet" href="server.css">
+</head><body>
+<div class="wrap">
+ <header class="top"><a class="brand" href="../index.html">QA<b>mcp</b></a><nav aria-label="Main"><a href="../directory.html" aria-current="page">Directory</a><a href="../test.html">Test a server</a><a href="../how-it-works.html">How it works</a><a href="../safety.html">Safety</a><a href="../ci.html">Run it in CI</a><a href="../samples.html">Sample reports</a></nav>
+  <div class="tools"><button class="theme" id="theme" type="button">Light</button><a class="gh" href="https://github.com/QAmcp/qamcp-cli">GitHub</a></div></header>
+ <section class="hero">
+  <img class="logo" src="logo/ai-inite-inite-visibility.png" alt="" width="96" height="96">
+  <div class="who">
+   <p class="crumb"><a href="../directory.html">Directory</a> / INITE Visibility</p>
+   <h1>INITE Visibility</h1>
+   <p class="by">by <a href="https://inite.ai/en/analyze" rel="noopener nofollow">inite.ai</a> · https://inite.ai/api/mcp/analyzer</p>
+   <p class="d">How ChatGPT, Claude, Gemini and Perplexity read a site: free check, fix plan, compare, history.</p>
+   <div class="chips"><span>7 tools</span><span class="ok">✓ no account needed</span><span>Pricing: on their site</span></div>
+   <div class="acts"><button class="p" type="button" id="copy-top">Copy the test command</button><a class="s" href="https://inite.ai/en/pricing" rel="noopener nofollow">See pricing →</a><a class="s" href="https://inite.ai/en/analyze" rel="noopener nofollow">Visit website</a></div>
+  </div>
+  <div class="medal">
+   <div class="n">91<small> /100</small></div>
+   <span class="stamp fail">FAIL</span>
+   
+   <p>11 of 11 checks · 20 Oct 2026</p>
+  </div>
+ </section>
+ <nav class="tabs" aria-label="On this page"><a href="#tools">What it can do</a><a href="#results">Test results</a><a href="#try">Test it yourself</a><a href="#history">Score over time</a><a href="#reviews">Reviews</a></nav>
+ <section class="sec" id="tools"><h2>What it can do</h2><p class="hint">7 tools, in the server's own words.</p><div class="grid">
+<div class="tool"><code>check_identity</code><span class="ro">read-only</span><p>Free and instant, no account: read a website the way an AI engine does before it ever answers about it.</p></div>
+<div class="tool"><code>analyze_site</code><p>The AI visibility audit: the identity files, crawler policy, schema graph and page health, then the answer engines asked whether they name the site, scored out…</p></div>
+<div class="tool"><code>get_analysis</code><span class="ro">read-only</span><p>Read an audit started by analyze_site: progress while it runs, then the score out of 100 and what to fix first.</p></div>
+<div class="tool"><code>visibility_fixes</code><span class="ro">read-only</span><p>The fix plan for a site&#39;s AI visibility, most important first: what to change, why it matters for being named in AI answers, how many points of the score it sh…</p></div>
+<div class="tool"><code>compare_sites</code><span class="ro">read-only</span><p>Your site against a competitor&#39;s, read the way an AI engine reads them before it answers: identity score out of 100, which answer-engine crawlers each lets in,…</p></div>
+<div class="tool"><code>visibility_history</code><span class="ro">read-only</span><p>How a site&#39;s AI visibility reading has moved over time: for a site in the INITE Atlas, its weekly readings (identity score, answer-engine crawlers let in, llms…</p></div>
+<div class="tool"><code>my_reports</code><span class="ro">read-only</span><p>The signed-in account&#39;s AI visibility audits, newest first: the site, the day, the tier, the score and the report&#39;s address.</p></div>
+ </div></section>
+ <section class="sec" id="results"><h2>Test results</h2><p class="hint">Safe mode: only tools labeled read-only were run. <a href="../how-it-works.html">How the test works</a></p><ul class="checks">
+<li class="chk fail"><span class="mk fail" aria-label="fail">✕</span><div><b>Fast enough</b><details><summary>1 failed, 1 warning</summary><ul><li class="warn"><span class="m">!</span>Average tool answer: 3.6 s</li><li class="fail"><span class="m">✕</span><b>check_identity</b>: Slowest tool: check_identity (17.8 s): most users will give up waiting</li><li class="more">and 2 more</li></ul></details></div><span class="st">fail</span></li>
+<li class="chk warn"><span class="mk warn" aria-label="note">!</span><div><b>Ready for the newest MCP version</b><details><summary>1 warning</summary><ul><li class="warn"><span class="m">!</span>Uses an older MCP version (2025-11-25). It works today, but it isn&#39;t on the July 2026 version (2026-07-28) yet.</li></ul></details></div><span class="st">note</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Connects</b><span class="sum">Connected in 325 ms</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Lists its tools</b><span class="sum">Found 7 tools</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Every tool is described</b><span class="sum">All 7 tools and their inputs are described</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Tools are labeled safe or dangerous</b><span class="sum">Every tool has a safety label</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>No hidden instructions</b><span class="sum">No hidden instructions found in tool descriptions</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Tools work with good inputs</b><details><summary>All good</summary><ul><li class="pass"><span class="m">✓</span><b>check_identity</b>: Worked (17.8 s)</li><li class="pass"><span class="m">✓</span><b>get_analysis</b>: Answered with an error, probably because of our sample input: No audit with that run_id belongs to this caller.</li><li class="pass"><span class="m">✓</span><b>visibility_fixes</b>: Worked (106 ms)</li><li class="pass"><span class="m">✓</span><b>compare_sites</b>: Answered with an error, probably because of our sample input: That does not look like a public website address. Pass a hostname such as example.com.</li><li class="pass"><span class="m">✓</span><b>visibility_history</b>: Worked (37 ms)</li><li class="off"><span class="m">–</span><b>my_reports</b>: Needs you to sign in, so it was not tested (not counted against the server)</li><li class="off"><span class="m">–</span><b>analyze_site</b>: Not run: labeled as changing data</li></ul></details></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Bad inputs give a clean error</b><details><summary>All good</summary><ul><li class="pass"><span class="m">✓</span><b>check_identity</b>: Refused missing required input &quot;url&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>check_identity</b>: Refused wrong type for &quot;url&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>get_analysis</b>: Refused missing required input &quot;run_id&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>get_analysis</b>: Refused wrong type for &quot;run_id&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>visibility_fixes</b>: Refused missing required input &quot;url&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>visibility_fixes</b>: Refused wrong type for &quot;url&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>compare_sites</b>: Refused missing required input &quot;url&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>compare_sites</b>: Refused wrong type for &quot;url&quot; with a clear error</li><li class="more">and 3 more</li></ul></details></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Tools work together</b><details><summary>5 chains working</summary><ul><li class="pass"><span class="m">✓</span>check_identity → visibility_fixes: visibility_fixes found what check_identity returned (url = &quot;https://example.com/&quot;)</li><li class="pass"><span class="m">✓</span>check_identity → visibility_history: visibility_history found what check_identity returned (url = &quot;https://example.com/&quot;)</li><li class="pass"><span class="m">✓</span>visibility_fixes → check_identity: check_identity found what visibility_fixes returned (url = &quot;https://example.com/&quot;)</li><li class="pass"><span class="m">✓</span>visibility_fixes → visibility_history: visibility_history found what visibility_fixes returned (url = &quot;https://example.com/&quot;)</li><li class="pass"><span class="m">✓</span>visibility_history → check_identity: check_identity found what visibility_history returned (url = &quot;https://example.com/&quot;)</li></ul></details></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>No secrets leaked</b><span class="sum">Checked 21 error messages: no secrets or internal details</span></div><span class="st">pass</span></li>
+ </ul></section>
+ <section class="sec" id="try"><h2>Test it yourself</h2><p class="hint">Free and open source. Same checks, same score.</p>
+  <div class="cmd"><code id="cmd">npx qamcp-cli https://inite.ai/api/mcp/analyzer</code><button type="button" id="copy">Copy</button></div></section>
+ <section class="sec" id="history"><h2>Score over time</h2><ul class="hist"><li><span class="d">20 Oct 2026</span><span class="bar"><i style="width:91%"></i></span><span class="v">91</span></li></ul><p class="hint">One test so far. New tests will show here.</p></section>
+ <section class="sec" id="reviews"><h2>Reviews</h2><p class="hint">Coming soon: reviews from people who use INITE Visibility, signed in with GitHub, one per person. Reviews never change the score.</p></section>
+ <div class="claim"><div><b>Is this your server?</b><p>Soon you can claim this page: re-test it from here, reply to results, and show a "Tested by QAmcp" badge.</p><p>Have a concern, or want it removed? <a href="https://github.com/QAmcp/qamcp-cli/issues">Ask us</a> and we'll take it off the list. <a href="../directory-rules.html">How the directory works</a></p></div></div>
+</div>
+<script src="../theme.js"></script>
+<script>
+for (const id of ['copy', 'copy-top']) document.getElementById(id).onclick = async (e) => {
+  const b = e.currentTarget, was = b.textContent;
+  try { await navigator.clipboard.writeText(document.getElementById('cmd').textContent); b.textContent = 'Copied'; } catch (err) { b.textContent = 'Select the command below'; }
+  setTimeout(() => (b.textContent = was), 1800);
+};
+</script>
+</body></html>

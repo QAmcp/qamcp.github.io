@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>knowledge: QAmcp test results</title>
+<meta name="description" content="knowledge MCP server: scored 77/100 when tested by QAmcp on 18 Oct 2026.">
+<script>try{var t=localStorage.getItem('qamcp-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="stylesheet" href="../site.css"><link rel="stylesheet" href="../theme.css"><link rel="stylesheet" href="server.css">
+</head><body>
+<div class="wrap">
+ <header class="top"><a class="brand" href="../index.html">QA<b>mcp</b></a><nav aria-label="Main"><a href="../directory.html" aria-current="page">Directory</a><a href="../test.html">Test a server</a><a href="../how-it-works.html">How it works</a><a href="../safety.html">Safety</a><a href="../ci.html">Run it in CI</a><a href="../samples.html">Sample reports</a></nav>
+  <div class="tools"><button class="theme" id="theme" type="button">Light</button><a class="gh" href="https://github.com/QAmcp/qamcp-cli">GitHub</a></div></header>
+ <section class="hero">
+  <span class="logo letter" aria-hidden="true">K</span>
+  <div class="who">
+   <p class="crumb"><a href="../directory.html">Directory</a> / knowledge</p>
+   <h1>knowledge</h1>
+   <p class="by">by <a href="https://flyvolo.ai/" rel="noopener nofollow">flyvolo.ai</a> · https://mcp.flyvolo.ai/mcp</p>
+   <p class="d">Sourced, task-level facts on how AI changes jobs, for agents answering &#39;what should I do?&#39;</p>
+   <div class="chips"><span>19 tools</span><span class="ok">✓ no account needed</span><span>Pricing: not listed</span></div>
+   <div class="acts"><button class="p" type="button" id="copy-top">Copy the test command</button><a class="s" href="https://flyvolo.ai/" rel="noopener nofollow">Visit website</a></div>
+  </div>
+  <div class="medal">
+   <div class="n">77<small> /100</small></div>
+   <span class="stamp mid">PASS · WITH NOTES</span>
+   
+   <p>Partial: 7 of 10 checks · 18 Oct 2026</p>
+  </div>
+ </section>
+ <nav class="tabs" aria-label="On this page"><a href="#tools">What it can do</a><a href="#results">Test results</a><a href="#try">Test it yourself</a><a href="#history">Score over time</a><a href="#reviews">Reviews</a></nav>
+ <section class="sec" id="tools"><h2>What it can do</h2><p class="hint">19 tools, in the server's own words.</p><div class="grid">
+<div class="tool"><code>resolve_occupation_or_major</code><p>Resolve a job title, a company&#39;s internal name for a role, a nickname or a degree name to a canonical VOLO entity.</p></div>
+<div class="tool"><code>search</code><p>Search occupations, majors and verified change records by keyword.</p></div>
+<div class="tool"><code>get_occupation</code><p>Full task-level assessment of one occupation.</p></div>
+<div class="tool"><code>get_ontology</code><p>Where an occupation or a degree sits in the official classifications (U.S.</p></div>
+<div class="tool"><code>query_ontology</code><p>Walk the VOLO Ontology directly.</p></div>
+<div class="tool"><code>get_role_tasks</code><p>The task breakdown for one occupation.</p></div>
+<div class="tool"><code>find_evidence</code><p>Verified evidence records for an occupation, optionally for one task.</p></div>
+<div class="tool"><code>get_change</code><p>One verified change record by id, with VOLO&#39;s reading: what it means, what it does not yet establish, and what a reader can verify themselves.</p></div>
+<div class="tool"><code>find_affected</code><p>Which occupation and which specific tasks a change record bears on.</p></div>
+<div class="tool"><code>get_change_history</code><p>The verified change timeline for an occupation, oldest first.</p></div>
+<div class="tool"><code>find_transition_paths</code><p>Options for someone in this occupation.</p></div>
+<div class="tool"><code>get_action_brief</code><p>Use this when a person asks what they should do about AI or automation in their job (&quot;I&#39;m an accountant, how do I stay employable?&quot;).</p></div>
+<div class="tool"><code>list_business_functions</code><p>For the business side: the functions a company is organised into, and which occupations sit in each.</p></div>
+<div class="tool"><code>get_major</code><p>A degree and the occupations it feeds.</p></div>
+<div class="tool"><code>find_majors_for_occupation</code><p>Which degrees lead into this occupation.</p></div>
+<div class="tool"><code>find_notes</code><p>VOLO&#39;s long-form answers to the big questions — how many jobs AI has actually taken, what actually gets automated, how long someone has, what AI law already ch…</p></div>
+<div class="tool"><code>get_note</code><p>The full text of one note, section by section, each section with the verified records it rests on.</p></div>
+<div class="tool"><code>find_notes_for_occupation</code><p>Which notes argue from this occupation&#39;s own records or task judgements.</p></div>
+<div class="tool"><code>describe_coverage</code><p>What VOLO covers and what it does not, including which occupations have no evidence yet.</p></div>
+ </div></section>
+ <section class="sec" id="results"><h2>Test results</h2><p class="hint">Safe mode: only tools labeled read-only were run. <a href="../how-it-works.html">How the test works</a></p><ul class="checks">
+<li class="chk warn"><span class="mk warn" aria-label="note">!</span><div><b>Ready for the newest MCP version</b><details><summary>1 warning</summary><ul><li class="warn"><span class="m">!</span>Uses an older MCP version (2025-11-25). It works today, but it isn&#39;t on the July 2026 version (2026-07-28) yet.</li></ul></details></div><span class="st">note</span></li>
+<li class="chk warn"><span class="mk warn" aria-label="note">!</span><div><b>Every tool is described</b><details><summary>19 warnings</summary><ul><li class="warn"><span class="m">!</span><b>resolve_occupation_or_major</b>: Inputs with no description: query, locale</li><li class="warn"><span class="m">!</span><b>search</b>: Inputs with no description: query, locale, limit</li><li class="warn"><span class="m">!</span><b>get_occupation</b>: Inputs with no description: slug, locale</li><li class="warn"><span class="m">!</span><b>get_ontology</b>: Inputs with no description: slug, locale</li><li class="warn"><span class="m">!</span><b>query_ontology</b>: Inputs with no description: type, id, link, direction, locale</li><li class="warn"><span class="m">!</span><b>get_role_tasks</b>: Inputs with no description: slug, locale</li><li class="warn"><span class="m">!</span><b>find_evidence</b>: Inputs with no description: slug, taskId, locale</li><li class="warn"><span class="m">!</span><b>get_change</b>: Inputs with no description: id, locale</li><li class="more">and 11 more</li></ul></details></div><span class="st">note</span></li>
+<li class="chk warn"><span class="mk warn" aria-label="note">!</span><div><b>Tools are labeled safe or dangerous</b><details><summary>1 warning</summary><ul><li class="warn"><span class="m">!</span>19 of 19 tools have no safety label (read-only or dangerous): resolve_occupation_or_major, search, get_occupation, get_ontology, query_ontology, get_role_tasks, find_evidence, get_change, find_affected, get_change_history, find_transition_p</li></ul></details></div><span class="st">note</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Connects</b><span class="sum">Connected in 2.2 s</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Lists its tools</b><span class="sum">Found 19 tools</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>No hidden instructions</b><span class="sum">No hidden instructions found in tool descriptions</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Fast enough</b><details><summary>All good</summary><ul><li class="pass"><span class="m">✓</span>Connecting took 2.2 s</li><li class="pass"><span class="m">✓</span>Listing tools took 159 ms</li></ul></details></div><span class="st">pass</span></li>
+<li class="chk off"><span class="mk off" aria-label="not tested">–</span><div><b>Tools work with good inputs</b><details><summary>Not tested</summary><ul><li class="off"><span class="m">–</span><b>resolve_occupation_or_major</b>: Not run: no safety label (if you own this server, test again in owner mode)</li><li class="off"><span class="m">–</span><b>search</b>: Not run: no safety label (if you own this server, test again in owner mode)</li><li class="off"><span class="m">–</span><b>get_occupation</b>: Not run: no safety label (if you own this server, test again in owner mode)</li><li class="off"><span class="m">–</span><b>get_ontology</b>: Not run: no safety label (if you own this server, test again in owner mode)</li><li class="off"><span class="m">–</span><b>query_ontology</b>: Not run: no safety label (if you own this server, test again in owner mode)</li><li class="off"><span class="m">–</span><b>get_role_tasks</b>: Not run: no safety label (if you own this server, test again in owner mode)</li><li class="off"><span class="m">–</span><b>find_evidence</b>: Not run: no safety label (if you own this server, test again in owner mode)</li><li class="off"><span class="m">–</span><b>get_change</b>: Not run: no safety label (if you own this server, test again in owner mode)</li><li class="more">and 11 more</li></ul></details></div><span class="st">not tested</span></li>
+<li class="chk off"><span class="mk off" aria-label="not tested">–</span><div><b>Bad inputs give a clean error</b><span class="sum">Not tested</span></div><span class="st">not tested</span></li>
+<li class="chk off"><span class="mk off" aria-label="not tested">–</span><div><b>Tools work together</b><span class="sum">No safe tool returned data to start a chain from, so chains were not tested (not counted either way)</span></div><span class="st">not tested</span></li>
+<li class="chk off"><span class="mk off" aria-label="not tested">–</span><div><b>No secrets leaked</b><span class="sum">No error messages to check</span></div><span class="st">not tested</span></li>
+ </ul></section>
+ <section class="sec" id="try"><h2>Test it yourself</h2><p class="hint">Free and open source. Same checks, same score.</p>
+  <div class="cmd"><code id="cmd">npx qamcp-cli https://mcp.flyvolo.ai/mcp</code><button type="button" id="copy">Copy</button></div></section>
+ <section class="sec" id="history"><h2>Score over time</h2><ul class="hist"><li><span class="d">14 Oct 2026</span><span class="bar"><i style="width:77%"></i></span><span class="v">77</span></li><li><span class="d">17 Oct 2026</span><span class="bar"><i style="width:77%"></i></span><span class="v">77</span></li><li><span class="d">18 Oct 2026</span><span class="bar"><i style="width:77%"></i></span><span class="v">77</span></li></ul></section>
+ <section class="sec" id="reviews"><h2>Reviews</h2><p class="hint">Coming soon: reviews from people who use knowledge, signed in with GitHub, one per person. Reviews never change the score.</p></section>
+ <div class="claim"><div><b>Is this your server?</b><p>Soon you can claim this page: re-test it from here, reply to results, and show a "Tested by QAmcp" badge.</p><p>Have a concern, or want it removed? <a href="https://github.com/QAmcp/qamcp-cli/issues">Ask us</a> and we'll take it off the list. <a href="../directory-rules.html">How the directory works</a></p></div></div>
+</div>
+<script src="../theme.js"></script>
+<script>
+for (const id of ['copy', 'copy-top']) document.getElementById(id).onclick = async (e) => {
+  const b = e.currentTarget, was = b.textContent;
+  try { await navigator.clipboard.writeText(document.getElementById('cmd').textContent); b.textContent = 'Copied'; } catch (err) { b.textContent = 'Select the command below'; }
+  setTimeout(() => (b.textContent = was), 1800);
+};
+</script>
+</body></html>

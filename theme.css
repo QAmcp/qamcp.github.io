@@ -1,0 +1,6 @@
+/* Layout shared by the directory, server and test pages, on top of site.css (which has the themes). */
+html,body{background:var(--ground)}
+.wrap{max-width:1360px;margin:0 auto;padding:var(--gutter)}
+header.top{background:var(--sheet);border:1.5px solid var(--frame);border-bottom:0}
+.gh{margin-left:0}.tools{margin-left:auto;display:flex;gap:10px;align-items:center}
+

@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How the QAmcp directory works: listing, ranking and the rules</title>
+<meta name="description" content="How servers get into the QAmcp directory, how the order is decided, and the rules that keep it fair. Every score comes from a real test anyone can re-run.">
+<meta name="color-scheme" content="light dark">
+<script>try{var t=localStorage.getItem('qamcp-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="sheet">
+ <div class="sheet-in">
+  <header class="top">
+   <a class="brand" href="./">QA<b>mcp</b></a>
+   <nav aria-label="Main"><a href="directory.html">Directory</a><a href="test.html">Test a server</a><a href="how-it-works.html">How it works</a><a href="safety.html">Safety</a><a href="ci.html">Run it in CI</a><a href="samples.html">Sample reports</a></nav>
+   <a class="gh" href="https://github.com/QAmcp/qamcp-cli">GitHub</a>
+   <button class="theme" id="theme" type="button" style="margin-left:10px">Light</button>
+  </header>
+  <main id="main">
+   <div class="page-head">
+    <h1>How the directory works</h1>
+    <p>Every server here was actually connected to and tested, not just read about. These are the rules for how servers get listed, how the order is decided, and what we never do. They're public so you can hold us to them.</p>
+    <nav class="toc" aria-label="On this page"><a href="#listed">Getting listed</a><a href="#order">How the order is decided</a><a href="#fair">Keeping it fair</a><a href="#promises">What never changes</a></nav>
+   </div>
+  </main>
+ </div>
+</div>
+
+<section class="part" id="listed" aria-labelledby="h-listed">
+ <div class="part-in">
+  <span class="sheetno">Sheet 2 of 5 · Getting listed</span>
+  <h2 id="h-listed">Every new server, tested the day it appears</h2>
+  <ul class="facts">
+   <li><strong>From the official MCP Registry</strong>Each day we test new servers published to the official MCP Registry and give each one a page with its result.</li>
+   <li><strong>The same test anyone can run</strong>It's the free, open-source <code>npx qamcp-cli</code> in safe mode: only tools labeled read-only are run, and nothing is changed or deleted.</li>
+   <li><strong>Behind a login? Still listed</strong>We check what we can from outside and mark it "needs login" instead of giving it a low score. The owner can test everything behind the login.</li>
+   <li><strong>Kept up to date</strong>Listed servers are re-tested on a rotation, so scores follow what's live. Every page shows when it was last tested.</li>
+   <li><strong>Coming soon</strong>Adding a server by pasting its link, and claiming your page to add a description, logo and links, and to reply to reviews.</li>
+  </ul>
+ </div>
+</section>
+
+<section class="part" id="order" aria-labelledby="h-order">
+ <div class="part-in">
+  <span class="sheetno">Sheet 3 of 5 · How the order is decided</span>
+  <h2 id="h-order">Relevance, then the test result</h2>
+  <ul class="facts">
+   <li><strong>1. What you searched for</strong>A search for "calendar" shows calendar servers first, by their name, description and tool names. The score only sorts servers that match.</li>
+   <li><strong>2. The score</strong>Higher scores come first. The score comes only from the test.</li>
+   <li><strong>3. How recent the test is</strong>Results only start to count a little less once they're more than 60 days old.</li>
+   <li><strong>New servers get 90 days</strong>Every new server spends 90 days on the "New" shelf, shuffled every day so no one is stuck at the bottom.</li>
+   <li><strong>No upvotes</strong>Votes are easy to fake, so there are none.</li>
+   <li><strong>Size doesn't matter</strong>A small server that does one thing well ranks the same as a big one. More tools isn't better.</li>
+  </ul>
+ </div>
+</section>
+
+<section class="part" id="fair" aria-labelledby="h-fair">
+ <div class="part-in">
+  <span class="sheetno">Sheet 4 of 5 · Keeping it fair</span>
+  <h2 id="h-fair">Rules for everyone, including us</h2>
+  <ul class="facts">
+   <li><strong>One server, one listing</strong>Copies of the same server under different names are merged into one.</li>
+   <li><strong>No cheating the test</strong>A server that behaves differently when it sees our tester is removed. Anyone can re-run the same open-source test to check.</li>
+   <li><strong>Security problems go to the owner first</strong>If we find a hidden instruction or a leaked secret, we tell the owner privately and wait 7 days before it shows here.</li>
+   <li><strong>Not answering</strong>A server that doesn't answer 3 tests in a row is marked "not answering". After 30 days it leaves the main lists, and comes back when it answers again.</li>
+   <li><strong>Think a result is wrong?</strong>Tell us. If QAmcp made the mistake, we fix the tester for everyone and test again.</li>
+   <li><strong>Our own servers</strong>Servers made by QAmcp, like our demo, are not ranked here.</li>
+  </ul>
+ </div>
+</section>
+
+<section class="part" id="promises" aria-labelledby="h-promises">
+ <div class="part-in">
+  <span class="sheetno">Sheet 5 of 5 · What never changes</span>
+  <h2 id="h-promises">Our promises</h2>
+  <ul class="facts">
+   <li><strong>Scores come only from the test</strong>Nobody edits a score by hand, for any reason.</li>
+   <li><strong>Free to list, free to look</strong>Being listed and browsing the directory are free.</li>
+   <li><strong>Every new server gets its 90 days</strong>No exceptions, no shortcuts.</li>
+   <li><strong>Your server, your call</strong>If you own a server and don't want it listed, ask and we'll remove it.</li>
+   <li><strong>Rules in the open</strong>These rules are public, and any change will be announced here before it happens.</li>
+  </ul>
+  <h2 style="margin-top:clamp(36px,5vw,56px);font-size:clamp(22px,2vw,28px)">Have a concern about a listing?</h2>
+  <p class="intro">Want your server removed, or think a result is wrong? <a href="https://github.com/QAmcp/qamcp-cli/issues">Tell us on GitHub</a> and we'll look at it.</p>
+ </div>
+</section>
+
+<footer>
+ <span>QAmcp · free and open source (MIT)</span>
+ <a href="./">Home</a>
+ <a href="directory.html">Directory</a>
+ <a href="how-it-works.html">How it works</a>
+ <a href="https://github.com/QAmcp/qamcp-cli">GitHub</a>
+ <a href="privacy.html">Privacy and terms</a>
+ <span class="r">This site has no tracking.</span>
+</footer>
+<script src="site.js"></script>
+<script src="theme.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AgentMart: QAmcp test results</title>
+<meta name="description" content="AgentMart MCP server: scored 94/100 when tested by QAmcp on 18 Oct 2026.">
+<script>try{var t=localStorage.getItem('qamcp-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="stylesheet" href="../site.css"><link rel="stylesheet" href="../theme.css"><link rel="stylesheet" href="server.css">
+</head><body>
+<div class="wrap">
+ <header class="top"><a class="brand" href="../index.html">QA<b>mcp</b></a><nav aria-label="Main"><a href="../directory.html" aria-current="page">Directory</a><a href="../test.html">Test a server</a><a href="../how-it-works.html">How it works</a><a href="../safety.html">Safety</a><a href="../ci.html">Run it in CI</a><a href="../samples.html">Sample reports</a></nav>
+  <div class="tools"><button class="theme" id="theme" type="button">Light</button><a class="gh" href="https://github.com/QAmcp/qamcp-cli">GitHub</a></div></header>
+ <section class="hero">
+  <span class="logo letter" aria-hidden="true">A</span>
+  <div class="who">
+   <p class="crumb"><a href="../directory.html">Directory</a> / AgentMart</p>
+   <h1>AgentMart</h1>
+   <p class="by">by <a href="https://agentmart.ciphyr.ai/" rel="noopener nofollow">agentmart.ciphyr.ai</a> · https://agentmart.ciphyr.ai/mcp</p>
+   <p class="d">Webhook inbox, memory, wake-up calls, uptime watch and code kits for AI agents. Prepaid balance.</p>
+   <div class="chips"><span>112 tools</span><span class="ok">✓ no account needed</span><span>Pricing: not listed</span></div>
+   <div class="acts"><button class="p" type="button" id="copy-top">Copy the test command</button><a class="s" href="https://agentmart.ciphyr.ai/" rel="noopener nofollow">Visit website</a></div>
+  </div>
+  <div class="medal">
+   <div class="n">94<small> /100</small></div>
+   <span class="stamp mid">PASS · WITH NOTES</span>
+   
+   <p>12 of 12 checks · 18 Oct 2026</p>
+  </div>
+ </section>
+ <nav class="tabs" aria-label="On this page"><a href="#tools">What it can do</a><a href="#results">Test results</a><a href="#try">Test it yourself</a><a href="#history">Score over time</a><a href="#reviews">Reviews</a></nav>
+ <section class="sec" id="tools"><h2>What it can do</h2><p class="hint">60 tools, in the server's own words.</p><div class="grid">
+<div class="tool"><code>create_passport</code><p>Only for MCP apps that cannot sign in to AgentMart: create your passport (your identity here).</p></div>
+<div class="tool"><code>whoami</code><span class="ro">read-only</span><p>Your passport, how strong this sign-in is (credential), balance (owner.balance_expires_at: when it expires without a top-up or purchase; tell your human in tim…</p></div>
+<div class="tool"><code>invite_agent</code><p>Make a single-use invite code (valid 15 minutes) so ANOTHER agent of your own human can share your owner&#39;s balance and utilities: it calls join_owner with the …</p></div>
+<div class="tool"><code>join_owner</code><p>Join your human&#39;s owner with an invite code from one of their other agents (invite_agent).</p></div>
+<div class="tool"><code>list_passports</code><span class="ro">read-only</span><p>The passports (agents) that share your owner: short id, nickname, created, last used, revoked.</p></div>
+<div class="tool"><code>remove_passport</code><p>Unlink an agent that joined your owner&#39;s account AFTER you (list_passports shows removable), for example a stranger who joined with a leaked invite code.</p></div>
+<div class="tool"><code>confirm_owner_email</code><p>Send your owner the one-time confirmation email now (&quot;Allow your AI agent to email you?&quot;): until they press Confirm in it, emails from your utilities (Ask my h…</p></div>
+<div class="tool"><code>leave_owner</code><p>Detach your passport from its owner, for example when whoami shows that a stranger paid your top-up.</p></div>
+<div class="tool"><code>rotate_token</code><p>Replace your passport bearer token (for example after it leaked).</p></div>
+<div class="tool"><code>revoke_passport</code><p>End your passport for good: its token, sessions and app sign-ins stop working at once and cannot be restored.</p></div>
+<div class="tool"><code>search_catalog</code><span class="ro">read-only</span><p>Search the shelves.</p></div>
+<div class="tool"><code>get_item</code><span class="ro">read-only</span><p>Full details of one item by slug.</p></div>
+<div class="tool"><code>top_up</code><p>Create a payment link to fund your balance.</p></div>
+<div class="tool"><code>top_up_status</code><span class="ro">read-only</span><p>Check whether a top-up was paid.</p></div>
+<div class="tool"><code>buy</code><p>Buy an item from your balance.</p></div>
+<div class="tool"><code>get_order</code><span class="ro">read-only</span><p>One of your orders, with its receipt.</p></div>
+<div class="tool"><code>list_orders</code><span class="ro">read-only</span><p>Your owner&#39;s orders, newest first, a page at a time: order_id, item, amount, status and created_at (get_order for one in full).</p></div>
+<div class="tool"><code>list_jobs</code><span class="ro">read-only</span><p>Your owner&#39;s human service jobs (done by AgentMart&#39;s own team), newest first: status, due time, price and credits.</p></div>
+<div class="tool"><code>get_job</code><span class="ro">read-only</span><p>One human service job in full: status (needs_verification, queued, assigned, in_progress, needs_info, delivered, accepted, disputed, refunded), due_at in our t…</p></div>
+<div class="tool"><code>answer_job_question</code><p>Answer our team&#39;s open question on a job (status needs_info); the clock starts again.</p></div>
+<div class="tool"><code>verify_job_sites</code><p>A website test starts only when each of its sites is proved yours: publish the job&#39;s verification.token (get_job) for every site as a file at https:// /.well-k…</p></div>
+<div class="tool"><code>quote_human_service</code><span class="ro">read-only</span><p>What a human service order would cost, free: our count (&quot;70 words, English to Turkish&quot;, &quot;40 lines of code&quot;), price_cents, the promise, daily_limit (whether it …</p></div>
+<div class="tool"><code>cancel_job</code><p>Cancel a website test still waiting for its sites&#39; proof (status needs_verification): the whole price comes back to your owner&#39;s balance as store credit at onc…</p></div>
+<div class="tool"><code>accept_job</code><p>Accept a delivered job: it closes, no dispute is possible after it, and its secret is deleted.</p></div>
+ </div><p class="hint">and 36 more</p></section>
+ <section class="sec" id="results"><h2>Test results</h2><p class="hint">Safe mode: only tools labeled read-only were run. <a href="../how-it-works.html">How the test works</a></p><ul class="checks">
+<li class="chk warn"><span class="mk warn" aria-label="note">!</span><div><b>Every tool is described</b><details><summary>1 warning</summary><ul><li class="warn"><span class="m">!</span><b>quote_human_service</b>: Inputs with no description: source_language, target_language, language</li></ul></details></div><span class="st">note</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Connects</b><span class="sum">Connected in 646 ms</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Ready for the newest MCP version</b><span class="sum">Uses the latest MCP version (2026-07-28)</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Lists its tools</b><span class="sum">Found 112 tools</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Tools are labeled safe or dangerous</b><span class="sum">Every tool has a safety label</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>No hidden instructions</b><span class="sum">No hidden instructions found in tool descriptions</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Tools work with good inputs</b><details><summary>All good</summary><ul><li class="off"><span class="m">–</span><b>whoami</b>: Needs you to sign in, so it was not tested (not counted against the server)</li><li class="off"><span class="m">–</span><b>list_passports</b>: Needs you to sign in, so it was not tested (not counted against the server)</li><li class="pass"><span class="m">✓</span><b>search_catalog</b>: Worked (790 ms)</li><li class="pass"><span class="m">✓</span><b>get_item</b>: Answered with an error, probably because of our sample input: {&quot;status&quot;:404,&quot;error&quot;:{&quot;type&quot;:&quot;https://agentmart.ciphyr.ai/errors#item_not_found&quot;,&quot;title&quot;:&quot;No item with slug \&quot;test\&quot;.&quot;,&quot;status&quot;:404,&quot;code&quot;…</li><li class="off"><span class="m">–</span><b>top_up_status</b>: Needs you to sign in, so it was not tested (not counted against the server)</li><li class="off"><span class="m">–</span><b>get_order</b>: Needs you to sign in, so it was not tested (not counted against the server)</li><li class="off"><span class="m">–</span><b>list_orders</b>: Needs you to sign in, so it was not tested (not counted against the server)</li><li class="off"><span class="m">–</span><b>list_jobs</b>: Needs you to sign in, so it was not tested (not counted against the server)</li><li class="more">and 32 more</li></ul></details></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Bad inputs give a clean error</b><details><summary>All good</summary><ul><li class="off"><span class="m">–</span><b>whoami</b>: Needs you to sign in, so bad inputs were not tested</li><li class="off"><span class="m">–</span><b>list_passports</b>: Needs you to sign in, so bad inputs were not tested</li><li class="pass"><span class="m">✓</span><b>search_catalog</b>: Refused wrong type for &quot;query&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>get_item</b>: Refused missing required input &quot;slug&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>get_item</b>: Refused wrong type for &quot;slug&quot; with a clear error</li><li class="off"><span class="m">–</span><b>top_up_status</b>: Needs you to sign in, so bad inputs were not tested</li><li class="off"><span class="m">–</span><b>get_order</b>: Needs you to sign in, so bad inputs were not tested</li><li class="off"><span class="m">–</span><b>list_orders</b>: Needs you to sign in, so bad inputs were not tested</li><li class="more">and 32 more</li></ul></details></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Tools work together</b><details><summary>1 chain working</summary><ul><li class="pass"><span class="m">✓</span>search_catalog → get_item: get_item found what search_catalog returned (slug = &quot;owner-reminders&quot;)</li><li class="pass"><span class="m">✓</span>Stopped looking for more chains after the limit on tool calls</li></ul></details></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Fast enough</b><details><summary>All good</summary><ul><li class="pass"><span class="m">✓</span>Connecting took 646 ms</li><li class="pass"><span class="m">✓</span>Listing tools took 514 ms</li><li class="pass"><span class="m">✓</span>Average tool answer: 359 ms</li><li class="pass"><span class="m">✓</span><b>search_catalog</b>: Slowest tool: search_catalog (790 ms)</li></ul></details></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>No secrets leaked</b><span class="sum">Checked 128 error messages: no secrets or internal details</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Resources and prompts work</b><details><summary>All good (1 resource)</summary><ul><li class="pass"><span class="m">✓</span>Opened 1 of 1 resources</li><li class="pass"><span class="m">✓</span>An address that does not exist gets a clean &quot;not found&quot; error</li></ul></details></div><span class="st">pass</span></li>
+ </ul></section>
+ <section class="sec" id="try"><h2>Test it yourself</h2><p class="hint">Free and open source. Same checks, same score.</p>
+  <div class="cmd"><code id="cmd">npx qamcp-cli https://agentmart.ciphyr.ai/mcp</code><button type="button" id="copy">Copy</button></div></section>
+ <section class="sec" id="history"><h2>Score over time</h2><ul class="hist"><li><span class="d">14 Oct 2026</span><span class="bar"><i style="width:70%"></i></span><span class="v">70</span></li><li><span class="d">17 Oct 2026</span><span class="bar"><i style="width:94%"></i></span><span class="v">94</span></li><li><span class="d">18 Oct 2026</span><span class="bar"><i style="width:94%"></i></span><span class="v">94</span></li></ul></section>
+ <section class="sec" id="reviews"><h2>Reviews</h2><p class="hint">Coming soon: reviews from people who use AgentMart, signed in with GitHub, one per person. Reviews never change the score.</p></section>
+ <div class="claim"><div><b>Is this your server?</b><p>Soon you can claim this page: re-test it from here, reply to results, and show a "Tested by QAmcp" badge.</p><p>Have a concern, or want it removed? <a href="https://github.com/QAmcp/qamcp-cli/issues">Ask us</a> and we'll take it off the list. <a href="../directory-rules.html">How the directory works</a></p></div></div>
+</div>
+<script src="../theme.js"></script>
+<script>
+for (const id of ['copy', 'copy-top']) document.getElementById(id).onclick = async (e) => {
+  const b = e.currentTarget, was = b.textContent;
+  try { await navigator.clipboard.writeText(document.getElementById('cmd').textContent); b.textContent = 'Copied'; } catch (err) { b.textContent = 'Select the command below'; }
+  setTimeout(() => (b.textContent = was), 1800);
+};
+</script>
+</body></html>

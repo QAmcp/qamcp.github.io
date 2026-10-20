@@ -5,8 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>How QAmcp works: every check and how the score is made</title>
 <meta name="description" content="What QAmcp does to an MCP server, step by step: the checks, how the 0–100 score is calculated, what caps it, and what 'not scored' means.">
-<meta name="color-scheme" content="dark">
+<meta name="color-scheme" content="light dark">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231A1A1A'/%3E%3Crect x='7' y='7' width='18' height='18' rx='2' fill='none' stroke='%23B9838A' stroke-width='2.4'/%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('qamcp-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
 <link rel="stylesheet" href="site.css">
 </head>
 <body>
@@ -16,8 +17,9 @@
  <div class="sheet-in">
   <header class="top">
    <a class="brand" href="./">QA<b>mcp</b></a>
-   <nav aria-label="Main"><a href="how-it-works.html" aria-current="page">How it works</a><a href="safety.html">Safety</a><a href="ci.html">Run it in CI</a><a href="samples.html">Sample reports</a><a href="./#teams">For teams</a></nav>
+   <nav aria-label="Main"><a href="directory.html">Directory</a><a href="test.html">Test a server</a><a href="how-it-works.html" aria-current="page">How it works</a><a href="safety.html">Safety</a><a href="ci.html">Run it in CI</a><a href="samples.html">Sample reports</a></nav>
    <a class="gh" href="https://github.com/QAmcp/qamcp-cli"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38v-1.33c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.06-.49.06-.49.8.06 1.23.83 1.23.83.72 1.22 1.88.87 2.34.66.07-.52.28-.87.5-1.07-1.78-.2-3.65-.89-3.65-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>GitHub</a>
+   <button class="theme" id="theme" type="button" style="margin-left:10px">Light</button>
   </header>
   <main id="main">
    <div class="page-head">
@@ -44,7 +46,7 @@
    <li><b>Try tools together</b><span>When one tool's answer holds something another tool asks for, like an ID, QAmcp passes it along and checks the second tool can use it. That's how AI apps chain tools in real jobs.</span></li>
    <li><b>Time everything, and read every error</b><span>Connecting, listing and each answer are timed. Every error message is scanned for passwords, keys, tokens and internal file paths.</span></li>
    <li><b>Open resources and prompts</b><span>Only if the server offers them: each one should open and match what it says it is.</span></li>
-   <li><b>Write the report</b><span>A score, every failure and advisory, everything it could not test and why. Add <code>--html report.html</code> for a page you can share.</span></li>
+   <li><b>Write the report</b><span>A score, every failure and note, everything it could not test and why. Add <code>--html report.html</code> for a page you can share.</span></li>
   </ol>
  </div>
 </section>
@@ -82,7 +84,7 @@
   <div class="sample">score = points earned ÷ points tested × 100</div>
   <p class="intro">Example: a server with a login and resources has 120 points in play. It earns 108 of them, so 108 ÷ 120 = 90%, and its score is 90/100.</p>
   <ul class="facts">
-   <li><strong>A pass earns all the points</strong>A check with an advisory earns half; a failed check earns none.</li>
+   <li><strong>A pass earns all the points</strong>A check with notes earns half; a failed check earns none.</li>
    <li><strong>What couldn't run doesn't count</strong>The score is points earned out of points actually tested. A server isn't punished for what QAmcp couldn't try.</li>
    <li><strong>Read the score with its coverage</strong>Every score comes with a line like <code>Tested 10 of 10 checks · ran 5 of 9 tools</code>. A 90 from 2 of 20 tools says much less than a 90 from all 20.</li>
    <li><strong>"Not scored" is not a fail</strong>A login wall, or a server that asks us to slow down (HTTP 429), means nothing could be fairly scored. Add <code>--login</code> or try again in a minute.</li>
@@ -129,5 +131,6 @@
  <span class="r">This site has no tracking.</span>
 </footer>
 <script src="site.js"></script>
+<script src="theme.js"></script>
 </body>
 </html>

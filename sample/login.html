@@ -66,6 +66,12 @@ details[open] .chev{transform:rotate(180deg)}
 .fd{display:grid;grid-template-columns:20px 64px 1fr;gap:10px;align-items:start;padding:8px 0}
 .fd .mk{width:17px;height:17px;margin-top:2px}
 .fd p{font-size:15px;line-height:1.45;max-width:72ch;overflow-wrap:anywhere}
+.outside{display:flex;gap:8px;align-items:center;margin-top:14px;font:600 15px/1.3 var(--text)}
+.outside.pass{color:var(--pass)}.outside.warn{color:var(--rose)}
+.outside .mk{width:18px;height:18px;flex:none}
+.col.pass h2{color:var(--pass)}
+.col.behind h2{color:var(--soft)}
+.col.behind .more a{color:var(--rose);font-weight:700;text-decoration:none}
 .next{margin-top:48px;padding:22px 24px;background:var(--sheet);border:1px solid var(--rule);border-left:3px solid var(--rose);border-radius:12px;max-width:88ch}
 .next p{color:var(--soft);font-size:15px;margin-top:8px}
 .next .cmd{margin:14px 0 4px;padding:12px 14px;background:var(--ground);border:1px solid var(--rule);border-radius:8px;font-family:var(--mono);font-size:14px;color:var(--ink);white-space:pre-wrap;word-break:break-all;font-variant-ligatures:none}
@@ -110,15 +116,16 @@ footer{margin-top:56px;padding-top:24px;border-top:1px solid var(--rule);display
   <div class="fields">
     <div class="f"><div class="label">Server</div><div class="v">Not reported</div></div>
     <div class="f"><div class="label">MCP version</div><div class="v">Behind the login</div></div>
-    <div class="f"><div class="label">Tested</div><div class="v">2026-10-16 · 18:17 UTC</div></div>
+    <div class="f"><div class="label">Tested</div><div class="v">2026-10-20 · 16:15 UTC</div></div>
     <div class="f"><div class="label">Safety mode</div><div class="v">Only tools labeled read-only were run</div></div>
     <div class="f"><div class="label">Logged in</div><div class="v">No</div></div>
-    <div class="f"><div class="label">Tester</div><div class="v">QAmcp 0.1.8</div></div>
+    <div class="f"><div class="label">Tester</div><div class="v">QAmcp 0.1.12</div></div>
   </div>
   <div class="result">
     <div class="label">Result</div>
     
     <div class="stamp skip">NOT SCORED</div>
+    <div class="outside pass"><svg class="mk pass" role="img" aria-label="Passed"><use href="#ok"/></svg><span>Login setup: passed all 7 checks</span></div>
     <div class="cov">Login setup checked · 10 checks behind the login</div>
     <p class="note">This server needs a login, so only the login setup could be checked from outside. A login wall is not a fault, so nothing is scored. The command below tests everything behind it.</p>
     
@@ -126,15 +133,29 @@ footer{margin-top:56px;padding-top:24px;border-top:1px solid var(--rule);display
 </section>
 
 <div class="cols">
-  <section class="col fail" aria-labelledby="h-fail">
-    <h2 id="h-fail">Failures: fix these first <span class="count">0</span></h2>
-    <p class="empty">Nothing failed.</p>
-    
+  <section class="col pass" aria-labelledby="h-out">
+    <h2 id="h-out">Checked from outside <span class="count">7</span></h2>
+    <div class="item"><svg class="mk pass" role="img" aria-label="Passed"><use href="#ok"/></svg><span class="code">T-2.1</span><p>The server asks for a login (it answers 401 to an anonymous request).</p></div>
+    <div class="item"><svg class="mk pass" role="img" aria-label="Passed"><use href="#ok"/></svg><span class="code">T-2.2</span><p>The 401 reply points AI apps to the login details (resource_metadata).</p></div>
+    <div class="item"><svg class="mk pass" role="img" aria-label="Passed"><use href="#ok"/></svg><span class="code">T-2.3</span><p>The login details name this exact server.</p></div>
+    <div class="item"><svg class="mk pass" role="img" aria-label="Passed"><use href="#ok"/></svg><span class="code">T-2.4</span><p>Found the login server&#39;s description at http://127.0.0.1:4311/.well-known/oauth-authorization-server.</p></div>
+    <div class="item"><svg class="mk pass" role="img" aria-label="Passed"><use href="#ok"/></svg><span class="code">T-2.5</span><p>The login server&#39;s name matches what the server points to.</p></div>
+    <div class="item"><svg class="mk pass" role="img" aria-label="Passed"><use href="#ok"/></svg><span class="code">T-2.6</span><p>PKCE with S256 is supported.</p></div>
+    <div class="item"><svg class="mk pass" role="img" aria-label="Passed"><use href="#ok"/></svg><span class="code">T-2.7</span><p>AI apps can register themselves (dynamic registration).</p></div>
   </section>
-  <section class="col warn" aria-labelledby="h-warn">
-    <h2 id="h-warn">Advisories: worth fixing <span class="count">0</span></h2>
-    <p class="empty">No advisories.</p>
-    
+  <section class="col behind" aria-labelledby="h-behind">
+    <h2 id="h-behind">Behind the login: not tested yet <span class="count">10</span></h2>
+    <div class="item"><svg class="mk skip" role="img" aria-label="Not tested"><use href="#na"/></svg><span class="code">T-3</span><p>Ready for the newest MCP version</p></div>
+    <div class="item"><svg class="mk skip" role="img" aria-label="Not tested"><use href="#na"/></svg><span class="code">T-4</span><p>Lists its tools</p></div>
+    <div class="item"><svg class="mk skip" role="img" aria-label="Not tested"><use href="#na"/></svg><span class="code">T-5</span><p>Every tool is described</p></div>
+    <div class="item"><svg class="mk skip" role="img" aria-label="Not tested"><use href="#na"/></svg><span class="code">T-6</span><p>Tools are labeled safe or dangerous</p></div>
+    <div class="item"><svg class="mk skip" role="img" aria-label="Not tested"><use href="#na"/></svg><span class="code">T-7</span><p>No hidden instructions</p></div>
+    <div class="item"><svg class="mk skip" role="img" aria-label="Not tested"><use href="#na"/></svg><span class="code">T-8</span><p>Tools work with good inputs</p></div>
+    <div class="item"><svg class="mk skip" role="img" aria-label="Not tested"><use href="#na"/></svg><span class="code">T-9</span><p>Bad inputs give a clean error</p></div>
+    <div class="item"><svg class="mk skip" role="img" aria-label="Not tested"><use href="#na"/></svg><span class="code">T-10</span><p>Fast enough</p></div>
+    <div class="item"><svg class="mk skip" role="img" aria-label="Not tested"><use href="#na"/></svg><span class="code">T-11</span><p>No secrets leaked</p></div>
+    <div class="item"><svg class="mk skip" role="img" aria-label="Not tested"><use href="#na"/></svg><span class="code">T-12</span><p>Resources and prompts work</p></div>
+    <p class="more"><a href="#nx">Test them with your own login →</a></p>
   </section>
 </div>
 

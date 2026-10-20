@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Veliane Discovery Plus: QAmcp test results</title>
+<meta name="description" content="Veliane Discovery Plus MCP server: scored 75/100 when tested by QAmcp on 18 Oct 2026.">
+<script>try{var t=localStorage.getItem('qamcp-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="stylesheet" href="../site.css"><link rel="stylesheet" href="../theme.css"><link rel="stylesheet" href="server.css">
+</head><body>
+<div class="wrap">
+ <header class="top"><a class="brand" href="../index.html">QA<b>mcp</b></a><nav aria-label="Main"><a href="../directory.html" aria-current="page">Directory</a><a href="../test.html">Test a server</a><a href="../how-it-works.html">How it works</a><a href="../safety.html">Safety</a><a href="../ci.html">Run it in CI</a><a href="../samples.html">Sample reports</a></nav>
+  <div class="tools"><button class="theme" id="theme" type="button">Light</button><a class="gh" href="https://github.com/QAmcp/qamcp-cli">GitHub</a></div></header>
+ <section class="hero">
+  <img class="logo" src="logo/app-aplusz-velianediscoveryplus-veliane.ico" alt="" width="96" height="96">
+  <div class="who">
+   <p class="crumb"><a href="../directory.html">Directory</a> / Veliane Discovery Plus</p>
+   <h1>Veliane Discovery Plus</h1>
+   <p class="by">by <a href="https://velianediscoveryplus.aplusz.app/" rel="noopener nofollow">velianediscoveryplus.aplusz.app</a> · https://velianediscoveryplus.aplusz.app/mcp</p>
+   <p class="d">Facts, price, safety and join links for Veliane, free marriage-minded matchmaking.</p>
+   <div class="chips"><span>7 tools</span><span class="ok">✓ all read-only</span><span class="ok">✓ no account needed</span><span>Pricing: not listed</span></div>
+   <div class="acts"><button class="p" type="button" id="copy-top">Copy the test command</button><a class="s" href="https://velianediscoveryplus.aplusz.app/" rel="noopener nofollow">Visit website</a></div>
+  </div>
+  <div class="medal">
+   <div class="n">75<small> /100</small></div>
+   <span class="stamp mid">PASS · WITH NOTES</span>
+   
+   <p>11 of 11 checks · 18 Oct 2026</p>
+  </div>
+ </section>
+ <nav class="tabs" aria-label="On this page"><a href="#tools">What it can do</a><a href="#results">Test results</a><a href="#try">Test it yourself</a><a href="#history">Score over time</a><a href="#reviews">Reviews</a></nav>
+ <section class="sec" id="tools"><h2>What it can do</h2><p class="hint">7 tools, in the server's own words.</p><div class="grid">
+<div class="tool"><code>get_veliane_facts</code><span class="ro">read-only</span><p>The 12 key facts about Veliane (veliane.org), free marriage-minded matchmaking: what it is, price, safety, languages, who it is for.</p></div>
+<div class="tool"><code>search_veliane_help</code><span class="ro">read-only</span><p>Search 121 short answers about Veliane by keywords or a full question (price, safety, profiles, matches, chat, privacy, languages, countries, app, account).</p></div>
+<div class="tool"><code>get_veliane_feature</code><span class="ro">read-only</span><p>One Veliane feature by id, or all 31 features when no id is given.</p></div>
+<div class="tool"><code>get_veliane_price</code><span class="ro">read-only</span><p>What Veliane costs: free for everyone today, planned membership options, what always stays free.</p></div>
+<div class="tool"><code>get_veliane_start_guide</code><span class="ro">read-only</span><p>Step-by-step: create a Veliane profile, install the app, fix common problems.</p></div>
+<div class="tool"><code>get_veliane_join_link</code><span class="ro">read-only</span><p>The link to create a free Veliane profile, in the right language, optionally for a country.</p></div>
+<div class="tool"><code>get_veliane_names</code><span class="ro">read-only</span><p>Every other name and search term for a site like Veliane (marriage site, matchmaking, Life partner finder...), in one of 21 languages.</p></div>
+ </div></section>
+ <section class="sec" id="results"><h2>Test results</h2><p class="hint">Safe mode: only tools labeled read-only were run. <a href="../how-it-works.html">How the test works</a></p><ul class="checks">
+<li class="chk warn"><span class="mk warn" aria-label="note">!</span><div><b>Ready for the newest MCP version</b><details><summary>1 warning</summary><ul><li class="warn"><span class="m">!</span>Uses an older MCP version (2025-06-18). It works today, but it isn&#39;t on the July 2026 version (2026-07-28) yet.</li></ul></details></div><span class="st">note</span></li>
+<li class="chk warn"><span class="mk warn" aria-label="note">!</span><div><b>Every tool is described</b><details><summary>6 warnings</summary><ul><li class="warn"><span class="m">!</span><b>search_veliane_help</b>: Inputs with no description: lang, limit</li><li class="warn"><span class="m">!</span><b>get_veliane_feature</b>: Inputs with no description: lang</li><li class="warn"><span class="m">!</span><b>get_veliane_price</b>: Inputs with no description: lang</li><li class="warn"><span class="m">!</span><b>get_veliane_start_guide</b>: Inputs with no description: lang</li><li class="warn"><span class="m">!</span><b>get_veliane_join_link</b>: Inputs with no description: lang</li><li class="warn"><span class="m">!</span><b>get_veliane_names</b>: Inputs with no description: lang</li></ul></details></div><span class="st">note</span></li>
+<li class="chk warn"><span class="mk warn" aria-label="note">!</span><div><b>Tools work with good inputs</b><details><summary>1 warning</summary><ul><li class="warn"><span class="m">!</span><b>search_veliane_help</b>: Answered, but it gives the exact same answer to bad input as to good input, so it may be ignoring what it is sent</li><li class="more">and 6 more</li></ul></details></div><span class="st">note</span></li>
+<li class="chk warn"><span class="mk warn" aria-label="note">!</span><div><b>Bad inputs give a clean error</b><details><summary>7 warnings</summary><ul><li class="warn"><span class="m">!</span><b>get_veliane_facts</b>: Accepted wrong type for &quot;lang&quot; without complaining</li><li class="warn"><span class="m">!</span><b>search_veliane_help</b>: Accepted missing required input &quot;query&quot; without complaining</li><li class="warn"><span class="m">!</span><b>search_veliane_help</b>: Accepted wrong type for &quot;query&quot; without complaining</li><li class="warn"><span class="m">!</span><b>get_veliane_price</b>: Accepted wrong type for &quot;lang&quot; without complaining</li><li class="warn"><span class="m">!</span><b>get_veliane_start_guide</b>: Accepted wrong type for &quot;lang&quot; without complaining</li><li class="warn"><span class="m">!</span><b>get_veliane_join_link</b>: Accepted wrong type for &quot;lang&quot; without complaining</li><li class="warn"><span class="m">!</span><b>get_veliane_names</b>: Accepted wrong type for &quot;lang&quot; without complaining</li><li class="more">and 1 more</li></ul></details></div><span class="st">note</span></li>
+<li class="chk warn"><span class="mk warn" aria-label="note">!</span><div><b>Resources and prompts work</b><details><summary>1 warning (4 resources, 1 template, 1 prompt)</summary><ul><li class="warn"><span class="m">!</span><b>explain_veliane</b>: Ignores its input (lang): what you type never appears in the result. Check the input is actually used.</li><li class="more">and 4 more</li></ul></details></div><span class="st">note</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Connects</b><span class="sum">Connected in 691 ms</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Lists its tools</b><span class="sum">Found 7 tools</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Tools are labeled safe or dangerous</b><span class="sum">Every tool has a safety label</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>No hidden instructions</b><span class="sum">No hidden instructions found in tool descriptions</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Fast enough</b><details><summary>All good</summary><ul><li class="pass"><span class="m">✓</span>Connecting took 691 ms</li><li class="pass"><span class="m">✓</span>Listing tools took 159 ms</li><li class="pass"><span class="m">✓</span>Average tool answer: 161 ms</li><li class="pass"><span class="m">✓</span><b>get_veliane_price</b>: Slowest tool: get_veliane_price (218 ms)</li></ul></details></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>No secrets leaked</b><span class="sum">Checked 5 error messages: no secrets or internal details</span></div><span class="st">pass</span></li>
+<li class="chk off"><span class="mk off" aria-label="not tested">–</span><div><b>Tools work together</b><span class="sum">No tool&#39;s answer could be fed into another tool, so there were no chains to test (not counted either way)</span></div><span class="st">not tested</span></li>
+ </ul></section>
+ <section class="sec" id="try"><h2>Test it yourself</h2><p class="hint">Free and open source. Same checks, same score.</p>
+  <div class="cmd"><code id="cmd">npx qamcp-cli https://velianediscoveryplus.aplusz.app/mcp</code><button type="button" id="copy">Copy</button></div></section>
+ <section class="sec" id="history"><h2>Score over time</h2><ul class="hist"><li><span class="d">15 Oct 2026</span><span class="bar"><i style="width:75%"></i></span><span class="v">75</span></li><li><span class="d">17 Oct 2026</span><span class="bar"><i style="width:75%"></i></span><span class="v">75</span></li><li><span class="d">18 Oct 2026</span><span class="bar"><i style="width:75%"></i></span><span class="v">75</span></li></ul></section>
+ <section class="sec" id="reviews"><h2>Reviews</h2><p class="hint">Coming soon: reviews from people who use Veliane Discovery Plus, signed in with GitHub, one per person. Reviews never change the score.</p></section>
+ <div class="claim"><div><b>Is this your server?</b><p>Soon you can claim this page: re-test it from here, reply to results, and show a "Tested by QAmcp" badge.</p><p>Have a concern, or want it removed? <a href="https://github.com/QAmcp/qamcp-cli/issues">Ask us</a> and we'll take it off the list. <a href="../directory-rules.html">How the directory works</a></p></div></div>
+</div>
+<script src="../theme.js"></script>
+<script>
+for (const id of ['copy', 'copy-top']) document.getElementById(id).onclick = async (e) => {
+  const b = e.currentTarget, was = b.textContent;
+  try { await navigator.clipboard.writeText(document.getElementById('cmd').textContent); b.textContent = 'Copied'; } catch (err) { b.textContent = 'Select the command below'; }
+  setTimeout(() => (b.textContent = was), 1800);
+};
+</script>
+</body></html>

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HouseFile UK property licensing checker: QAmcp test results</title>
+<meta name="description" content="HouseFile UK property licensing checker MCP server: scored 95/100 when tested by QAmcp on 18 Oct 2026.">
+<script>try{var t=localStorage.getItem('qamcp-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="stylesheet" href="../site.css"><link rel="stylesheet" href="../theme.css"><link rel="stylesheet" href="server.css">
+</head><body>
+<div class="wrap">
+ <header class="top"><a class="brand" href="../index.html">QA<b>mcp</b></a><nav aria-label="Main"><a href="../directory.html" aria-current="page">Directory</a><a href="../test.html">Test a server</a><a href="../how-it-works.html">How it works</a><a href="../safety.html">Safety</a><a href="../ci.html">Run it in CI</a><a href="../samples.html">Sample reports</a></nav>
+  <div class="tools"><button class="theme" id="theme" type="button">Light</button><a class="gh" href="https://github.com/QAmcp/qamcp-cli">GitHub</a></div></header>
+ <section class="hero">
+  <img class="logo" src="logo/app-housefile-licensing.ico" alt="" width="96" height="96">
+  <div class="who">
+   <p class="crumb"><a href="../directory.html">Directory</a> / HouseFile UK property licensing checker</p>
+   <h1>HouseFile UK property licensing checker</h1>
+   <p class="by">by <a href="https://www.housefile.app/mcp/about" rel="noopener nofollow">housefile.app</a> · https://www.housefile.app/mcp</p>
+   <p class="d">Checks whether a property in England is in a council&#39;s selective or HMO licensing scheme</p>
+   <div class="chips"><span>4 tools</span><span class="ok">✓ all read-only</span><span class="ok">✓ no account needed</span><span>Pricing: on their site</span></div>
+   <div class="acts"><button class="p" type="button" id="copy-top">Copy the test command</button><a class="s" href="https://www.housefile.app/pricing" rel="noopener nofollow">See pricing →</a><a class="s" href="https://www.housefile.app/mcp/about" rel="noopener nofollow">Visit website</a></div>
+  </div>
+  <div class="medal">
+   <div class="n">95<small> /100</small></div>
+   <span class="stamp mid">PASS · WITH NOTES</span>
+   
+   <p>10 of 10 checks · 18 Oct 2026</p>
+  </div>
+ </section>
+ <nav class="tabs" aria-label="On this page"><a href="#tools">What it can do</a><a href="#results">Test results</a><a href="#try">Test it yourself</a><a href="#history">Score over time</a><a href="#reviews">Reviews</a></nav>
+ <section class="sec" id="tools"><h2>What it can do</h2><p class="hint">4 tools, in the server's own words.</p><div class="grid">
+<div class="tool"><code>check_property_licensing</code><span class="ro">read-only</span><p>Looks up a postcode in England in HouseFile’s records of council licensing schemes and returns each scheme in force there, with its dates, fee, source link and…</p></div>
+<div class="tool"><code>list_council_schemes</code><span class="ro">read-only</span><p>Lists a council’s licensing schemes from HouseFile’s records: in force, starting soon, proposed, and ended in the last 12 months, each with its area, dates, fe…</p></div>
+<div class="tool"><code>upcoming_licensing_changes</code><span class="ro">read-only</span><p>What’s coming: schemes proposed or starting soon, and recent changes to schemes in HouseFile’s records (started, ended, fee or area changed), newest first.</p></div>
+<div class="tool"><code>licensing_coverage</code><span class="ro">read-only</span><p>Which councils HouseFile’s records cover, with the number of published schemes for each and when they were last verified.</p></div>
+ </div></section>
+ <section class="sec" id="results"><h2>Test results</h2><p class="hint">Safe mode: only tools labeled read-only were run. <a href="../how-it-works.html">How the test works</a></p><ul class="checks">
+<li class="chk warn"><span class="mk warn" aria-label="note">!</span><div><b>Ready for the newest MCP version</b><details><summary>1 warning</summary><ul><li class="warn"><span class="m">!</span>Uses an older MCP version (2025-11-25). It works today, but it isn&#39;t on the July 2026 version (2026-07-28) yet.</li></ul></details></div><span class="st">note</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Connects</b><span class="sum">Connected in 1.7 s</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Lists its tools</b><span class="sum">Found 4 tools</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Every tool is described</b><span class="sum">All 4 tools and their inputs are described</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Tools are labeled safe or dangerous</b><span class="sum">Every tool has a safety label</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>No hidden instructions</b><span class="sum">No hidden instructions found in tool descriptions</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Tools work with good inputs</b><details><summary>All good</summary><ul><li class="pass"><span class="m">✓</span><b>check_property_licensing</b>: Answered with an error, probably because of our sample input: That isn’t a full UK postcode. Send one like E8 1DY, in any spacing or case.</li><li class="pass"><span class="m">✓</span><b>list_council_schemes</b>: Worked (659 ms)</li><li class="pass"><span class="m">✓</span><b>upcoming_licensing_changes</b>: Worked (1.1 s)</li><li class="pass"><span class="m">✓</span><b>licensing_coverage</b>: Worked (593 ms)</li></ul></details></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Bad inputs give a clean error</b><details><summary>All good</summary><ul><li class="pass"><span class="m">✓</span><b>check_property_licensing</b>: Refused missing required input &quot;postcode&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>check_property_licensing</b>: Refused wrong type for &quot;postcode&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>list_council_schemes</b>: Refused missing required input &quot;council&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>list_council_schemes</b>: Refused wrong type for &quot;council&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>upcoming_licensing_changes</b>: Refused wrong type for &quot;council&quot; with a clear error</li></ul></details></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Fast enough</b><details><summary>All good</summary><ul><li class="pass"><span class="m">✓</span>Connecting took 1.7 s</li><li class="pass"><span class="m">✓</span>Listing tools took 317 ms</li><li class="pass"><span class="m">✓</span>Average tool answer: 691 ms</li><li class="pass"><span class="m">✓</span><b>upcoming_licensing_changes</b>: Slowest tool: upcoming_licensing_changes (1.1 s)</li></ul></details></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>No secrets leaked</b><span class="sum">Checked 6 error messages: no secrets or internal details</span></div><span class="st">pass</span></li>
+<li class="chk off"><span class="mk off" aria-label="not tested">–</span><div><b>Tools work together</b><span class="sum">No tool&#39;s answer could be fed into another tool, so there were no chains to test (not counted either way)</span></div><span class="st">not tested</span></li>
+ </ul></section>
+ <section class="sec" id="try"><h2>Test it yourself</h2><p class="hint">Free and open source. Same checks, same score.</p>
+  <div class="cmd"><code id="cmd">npx qamcp-cli https://www.housefile.app/mcp</code><button type="button" id="copy">Copy</button></div></section>
+ <section class="sec" id="history"><h2>Score over time</h2><ul class="hist"><li><span class="d">18 Oct 2026</span><span class="bar"><i style="width:95%"></i></span><span class="v">95</span></li></ul><p class="hint">One test so far. New tests will show here.</p></section>
+ <section class="sec" id="reviews"><h2>Reviews</h2><p class="hint">Coming soon: reviews from people who use HouseFile UK property licensing checker, signed in with GitHub, one per person. Reviews never change the score.</p></section>
+ <div class="claim"><div><b>Is this your server?</b><p>Soon you can claim this page: re-test it from here, reply to results, and show a "Tested by QAmcp" badge.</p><p>Have a concern, or want it removed? <a href="https://github.com/QAmcp/qamcp-cli/issues">Ask us</a> and we'll take it off the list. <a href="../directory-rules.html">How the directory works</a></p></div></div>
+</div>
+<script src="../theme.js"></script>
+<script>
+for (const id of ['copy', 'copy-top']) document.getElementById(id).onclick = async (e) => {
+  const b = e.currentTarget, was = b.textContent;
+  try { await navigator.clipboard.writeText(document.getElementById('cmd').textContent); b.textContent = 'Copied'; } catch (err) { b.textContent = 'Select the command below'; }
+  setTimeout(() => (b.textContent = was), 1800);
+};
+</script>
+</body></html>

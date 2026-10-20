@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mappit: QAmcp test results</title>
+<meta name="description" content="Mappit MCP server: scored 94/100 when tested by QAmcp on 20 Oct 2026.">
+<script>try{var t=localStorage.getItem('qamcp-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="stylesheet" href="../site.css"><link rel="stylesheet" href="../theme.css"><link rel="stylesheet" href="server.css">
+</head><body>
+<div class="wrap">
+ <header class="top"><a class="brand" href="../index.html">QA<b>mcp</b></a><nav aria-label="Main"><a href="../directory.html" aria-current="page">Directory</a><a href="../test.html">Test a server</a><a href="../how-it-works.html">How it works</a><a href="../safety.html">Safety</a><a href="../ci.html">Run it in CI</a><a href="../samples.html">Sample reports</a></nav>
+  <div class="tools"><button class="theme" id="theme" type="button">Light</button><a class="gh" href="https://github.com/QAmcp/qamcp-cli">GitHub</a></div></header>
+ <section class="hero">
+  <span class="logo letter" aria-hidden="true">M</span>
+  <div class="who">
+   <p class="crumb"><a href="../directory.html">Directory</a> / Mappit</p>
+   <h1>Mappit</h1>
+   <p class="by">by <a href="https://mappit.ai/mcp" rel="noopener nofollow">mappit.ai</a> · https://mappit.ai/mcp</p>
+   <p class="d">The world&#39;s news on a live map: place briefings, storylines, statistics, live layers, businesses.</p>
+   <div class="chips"><span>15 tools</span><span class="ok">✓ all read-only</span><span class="ok">✓ no account needed</span><span>Pricing: not listed</span></div>
+   <div class="acts"><button class="p" type="button" id="copy-top">Copy the test command</button><a class="s" href="https://mappit.ai/mcp" rel="noopener nofollow">Visit website</a></div>
+  </div>
+  <div class="medal">
+   <div class="n">94<small> /100</small></div>
+   <span class="stamp mid">PASS · WITH NOTES</span>
+   
+   <p>12 of 12 checks · 20 Oct 2026</p>
+  </div>
+ </section>
+ <nav class="tabs" aria-label="On this page"><a href="#tools">What it can do</a><a href="#results">Test results</a><a href="#try">Test it yourself</a><a href="#history">Score over time</a><a href="#reviews">Reviews</a></nav>
+ <section class="sec" id="tools"><h2>What it can do</h2><p class="hint">15 tools, in the server's own words.</p><div class="grid">
+<div class="tool"><code>whats_happening</code><span class="ro">read-only</span><p>Use first for the news in a place or the world: &quot;What&#39;s happening in Seattle?&quot;, &quot;Any news near Lagos?&quot;, &quot;What&#39;s the biggest news today?&quot;, &quot;What&#39;s going on in F…</p></div>
+<div class="tool"><code>list_stories</code><span class="ro">read-only</span><p>Page through Mappit&#39;s stories for a place, a country or the whole world, newest first (or sort &quot;trending&quot; for Mappit&#39;s ranking).</p></div>
+<div class="tool"><code>get_story</code><span class="ro">read-only</span><p>One story in full: headline, summary, publisher and article link, publication time, where it happened, how Mappit found it (found_by: its own crawler or an AI …</p></div>
+<div class="tool"><code>search_mappit</code><span class="ro">read-only</span><p>Search Mappit by words or meaning.</p></div>
+<div class="tool"><code>get_location</code><span class="ro">read-only</span><p>A place&#39;s profile on Mappit, for what a place is and who covers it: its written overview (geography, economy, recent history), its five latest stories, the sto…</p></div>
+<div class="tool"><code>list_threads</code><span class="ro">read-only</span><p>The storylines Mappit is following worldwide, ranked as on mappit.ai&#39;s Threads page.</p></div>
+<div class="tool"><code>get_thread</code><span class="ro">read-only</span><p>One storyline: its summary, its stories (newest first, paged) and, when it has one, Mappit&#39;s AI analysis — the story so far, why it matters, connections and wh…</p></div>
+<div class="tool"><code>get_digest</code><span class="ro">read-only</span><p>Mappit&#39;s editions: the Daily Digest (the day&#39;s top stories worldwide, as emailed to subscribers) and the weekly Week in Review (an analysis of the week&#39;s bigge…</p></div>
+<div class="tool"><code>find_places</code><span class="ro">read-only</span><p>Find businesses and landmarks near a place in Mappit&#39;s directory of 14.9 million OpenStreetMap entries: by name (&quot;Pike Place Market&quot;), by kind (&quot;pharmacy&quot;, &quot;ho…</p></div>
+<div class="tool"><code>get_map_layer</code><span class="ro">read-only</span><p>One of Mappit&#39;s live map layers, for a place or the whole world: earthquakes (USGS), wildfires (NASA FIRMS), air_quality and weather (Open-Meteo), history (eve…</p></div>
+<div class="tool"><code>get_mappit_info</code><span class="ro">read-only</span><p>About Mappit itself: what it is, its version, how many stories, storylines and places it holds right now, the topic list (the slugs other tools accept as topic…</p></div>
+<div class="tool"><code>list_map_apps</code><span class="ro">read-only</span><p>Mappit&#39;s Map Apps: statistics painted on the map — world and US economy, people, health, conflict and crisis, US elections and Mappit&#39;s own news atlas.</p></div>
+<div class="tool"><code>get_statistic</code><span class="ro">read-only</span><p>One statistic for one country, US state, US county or congressional district from Mappit&#39;s Map Apps data (World Bank, BLS, BEA, Census, CDC, UCDP, UNHCR, FEC, …</p></div>
+<div class="tool"><code>rank_regions</code><span class="ro">read-only</span><p>Countries, US states, US counties or congressional districts ranked by one indicator from Mappit&#39;s Map Apps data, for the latest or a given period, optionally …</p></div>
+<div class="tool"><code>get_directions</code><span class="ro">read-only</span><p>Driving, walking or cycling directions between places: distance, travel time and turn-by-turn steps, with a link that opens the route on Mappit&#39;s map.</p></div>
+ </div></section>
+ <section class="sec" id="results"><h2>Test results</h2><p class="hint">Safe mode: only tools labeled read-only were run. <a href="../how-it-works.html">How the test works</a></p><ul class="checks">
+<li class="chk warn"><span class="mk warn" aria-label="note">!</span><div><b>Fast enough</b><details><summary>1 warning</summary><ul><li class="warn"><span class="m">!</span><b>find_places</b>: Slowest tool: find_places (8.9 s): users will notice the wait</li><li class="more">and 3 more</li></ul></details></div><span class="st">note</span></li>
+<li class="chk warn"><span class="mk warn" aria-label="note">!</span><div><b>Resources and prompts work</b><details><summary>1 warning (3 prompts)</summary><ul><li class="warn"><span class="m">!</span><b>place_report</b>: Leaving out a required input gets an internal error instead of an &quot;invalid input&quot; error: An error occurred.</li><li class="more">and 1 more</li></ul></details></div><span class="st">note</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Connects</b><span class="sum">Connected in 279 ms</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Ready for the newest MCP version</b><span class="sum">Uses the latest MCP version (2026-07-28)</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Lists its tools</b><span class="sum">Found 15 tools</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Every tool is described</b><span class="sum">All 15 tools and their inputs are described</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Tools are labeled safe or dangerous</b><span class="sum">Every tool has a safety label</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>No hidden instructions</b><span class="sum">No hidden instructions found in tool descriptions</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Tools work with good inputs</b><details><summary>All good</summary><ul><li class="pass"><span class="m">✓</span><b>whats_happening</b>: Worked (1.2 s)</li><li class="pass"><span class="m">✓</span><b>list_stories</b>: Worked (162 ms)</li><li class="pass"><span class="m">✓</span><b>get_story</b>: Answered with an error, probably because of our sample input: NOT_FOUND: No story with id &quot;test&quot; is on the map. search_mappit finds stories by words or meaning.</li><li class="pass"><span class="m">✓</span><b>search_mappit</b>: Worked (828 ms)</li><li class="pass"><span class="m">✓</span><b>get_location</b>: Answered with an error, probably because of our sample input: NOT_FOUND: Mappit has no place called &quot;test&quot;. If you know where it is, pass place as &quot;lat,lon&quot; and the nearest Mappit place will answer.</li><li class="pass"><span class="m">✓</span><b>list_threads</b>: Worked (175 ms)</li><li class="pass"><span class="m">✓</span><b>get_thread</b>: Answered with an error, probably because of our sample input: NOT_FOUND: No storyline with id &quot;test&quot;. list_threads shows the current ones.</li><li class="pass"><span class="m">✓</span><b>get_digest</b>: Worked (131 ms)</li><li class="more">and 7 more</li></ul></details></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Bad inputs give a clean error</b><details><summary>All good</summary><ul><li class="pass"><span class="m">✓</span><b>whats_happening</b>: Refused wrong type for &quot;place&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>list_stories</b>: Refused wrong type for &quot;place&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>get_story</b>: Refused missing required input &quot;id&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>get_story</b>: Refused wrong type for &quot;id&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>search_mappit</b>: Refused missing required input &quot;q&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>search_mappit</b>: Refused wrong type for &quot;q&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>get_location</b>: Refused missing required input &quot;place&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>get_location</b>: Refused wrong type for &quot;place&quot; with a clear error</li><li class="more">and 16 more</li></ul></details></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Tools work together</b><details><summary>2 chains working</summary><ul><li class="pass"><span class="m">✓</span>whats_happening → get_story: get_story found what whats_happening returned (id = &quot;ag7RQvrlfY&quot;)</li><li class="pass"><span class="m">✓</span>list_stories → get_story: get_story found what list_stories returned (id = &quot;TKGWQJkDHt&quot;)</li></ul></details></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>No secrets leaked</b><span class="sum">Checked 48 error messages: no secrets or internal details</span></div><span class="st">pass</span></li>
+ </ul></section>
+ <section class="sec" id="try"><h2>Test it yourself</h2><p class="hint">Free and open source. Same checks, same score.</p>
+  <div class="cmd"><code id="cmd">npx qamcp-cli https://mappit.ai/mcp</code><button type="button" id="copy">Copy</button></div></section>
+ <section class="sec" id="history"><h2>Score over time</h2><ul class="hist"><li><span class="d">20 Oct 2026</span><span class="bar"><i style="width:94%"></i></span><span class="v">94</span></li></ul><p class="hint">One test so far. New tests will show here.</p></section>
+ <section class="sec" id="reviews"><h2>Reviews</h2><p class="hint">Coming soon: reviews from people who use Mappit, signed in with GitHub, one per person. Reviews never change the score.</p></section>
+ <div class="claim"><div><b>Is this your server?</b><p>Soon you can claim this page: re-test it from here, reply to results, and show a "Tested by QAmcp" badge.</p><p>Have a concern, or want it removed? <a href="https://github.com/QAmcp/qamcp-cli/issues">Ask us</a> and we'll take it off the list. <a href="../directory-rules.html">How the directory works</a></p></div></div>
+</div>
+<script src="../theme.js"></script>
+<script>
+for (const id of ['copy', 'copy-top']) document.getElementById(id).onclick = async (e) => {
+  const b = e.currentTarget, was = b.textContent;
+  try { await navigator.clipboard.writeText(document.getElementById('cmd').textContent); b.textContent = 'Copied'; } catch (err) { b.textContent = 'Select the command below'; }
+  setTimeout(() => (b.textContent = was), 1800);
+};
+</script>
+</body></html>

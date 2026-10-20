@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AgentsIndex: QAmcp test results</title>
+<meta name="description" content="AgentsIndex MCP server: scored 91/100 when tested by QAmcp on 19 Oct 2026.">
+<script>try{var t=localStorage.getItem('qamcp-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="stylesheet" href="../site.css"><link rel="stylesheet" href="../theme.css"><link rel="stylesheet" href="server.css">
+</head><body>
+<div class="wrap">
+ <header class="top"><a class="brand" href="../index.html">QA<b>mcp</b></a><nav aria-label="Main"><a href="../directory.html" aria-current="page">Directory</a><a href="../test.html">Test a server</a><a href="../how-it-works.html">How it works</a><a href="../safety.html">Safety</a><a href="../ci.html">Run it in CI</a><a href="../samples.html">Sample reports</a></nav>
+  <div class="tools"><button class="theme" id="theme" type="button">Light</button><a class="gh" href="https://github.com/QAmcp/qamcp-cli">GitHub</a></div></header>
+ <section class="hero">
+  <img class="logo" src="logo/ai-agentsindex-mcp.png" alt="" width="96" height="96">
+  <div class="who">
+   <p class="crumb"><a href="../directory.html">Directory</a> / AgentsIndex</p>
+   <h1>AgentsIndex</h1>
+   <p class="by">by <a href="https://agentsindex.ai/" rel="noopener nofollow">agentsindex.ai</a> · https://agentsindex.ai/mcp</p>
+   <p class="d">The editors&#39; index of AI-native software, from AI agents to the models and frameworks behind them.</p>
+   <div class="chips"><span>12 tools</span><span class="ok">✓ no account needed</span><span>Pricing: on their site</span></div>
+   <div class="acts"><button class="p" type="button" id="copy-top">Copy the test command</button><a class="s" href="https://agentsindex.ai/pricing" rel="noopener nofollow">See pricing →</a><a class="s" href="https://agentsindex.ai/" rel="noopener nofollow">Visit website</a></div>
+  </div>
+  <div class="medal">
+   <div class="n">91<small> /100</small></div>
+   <span class="stamp mid">PASS · WITH NOTES</span>
+   
+   <p>11 of 11 checks · 19 Oct 2026</p>
+  </div>
+ </section>
+ <nav class="tabs" aria-label="On this page"><a href="#tools">What it can do</a><a href="#results">Test results</a><a href="#try">Test it yourself</a><a href="#history">Score over time</a><a href="#reviews">Reviews</a></nav>
+ <section class="sec" id="tools"><h2>What it can do</h2><p class="hint">12 tools, in the server's own words.</p><div class="grid">
+<div class="tool"><code>search_listings</code><span class="ro">read-only</span><p>Full-text search over AgentsIndex&#39;s Published tools.</p></div>
+<div class="tool"><code>get_listing</code><span class="ro">read-only</span><p>One tool in full, as answer-first markdown: the summary, then every question on the sheet with its answer, the vendor&#39;s own words for it and the URL that prove…</p></div>
+<div class="tool"><code>list_categories</code><span class="ro">read-only</span><p>AgentsIndex&#39;s taxonomy with live listing counts.</p></div>
+<div class="tool"><code>compare_listings</code><span class="ro">read-only</span><p>Two tools side by side, as markdown: taglines, pricing, API availability, tags — the researched compare facts, honest about unknowns.</p></div>
+<div class="tool"><code>get_best_of</code><span class="ro">read-only</span><p>The Published tools in one category, in the order its category page prints (ranked by what we can confirm: a public price, an API and docs, independent sources…</p></div>
+<div class="tool"><code>submit_listing</code><p>Submit a tool to AgentsIndex: the url alone; we write its name and description from its own pages.</p></div>
+<div class="tool"><code>send_lead</code><p>Send a buyer-intent enquiry (lead) to a tool or a whole category on AgentsIndex.</p></div>
+<div class="tool"><code>list_offers</code><span class="ro">read-only</span><p>What a listing owner can buy on AgentsIndex, with prices in US cents (VAT included), each offer&#39;s term and what it needs.</p></div>
+<div class="tool"><code>get_quote</code><span class="ro">read-only</span><p>A signed price for one offer (from list_offers) on one listing, valid for a short time, and whether the listing can have it now.</p></div>
+<div class="tool"><code>create_order</code><p>Turns a quote (from get_quote) into an order, payable for 24 hours.</p></div>
+<div class="tool"><code>my_listings</code><span class="ro">read-only</span><p>What the AgentsIndex owner dashboard shows about the listings an account owns: each one&#39;s status (in review with the expected date, accepted and going live on …</p></div>
+<div class="tool"><code>subscribe_newsletter</code><p>Single opt-in subscribe to the AgentsIndex digest of new and freshly re-verified tools.</p></div>
+ </div></section>
+ <section class="sec" id="results"><h2>Test results</h2><p class="hint">Safe mode: only tools labeled read-only were run. <a href="../how-it-works.html">How the test works</a></p><ul class="checks">
+<li class="chk warn"><span class="mk warn" aria-label="note">!</span><div><b>Ready for the newest MCP version</b><details><summary>1 warning</summary><ul><li class="warn"><span class="m">!</span>Uses an older MCP version (2025-11-25). It works today, but it isn&#39;t on the July 2026 version (2026-07-28) yet.</li></ul></details></div><span class="st">note</span></li>
+<li class="chk warn"><span class="mk warn" aria-label="note">!</span><div><b>Bad inputs give a clean error</b><details><summary>1 warning</summary><ul><li class="warn"><span class="m">!</span><b>search_listings</b>: Accepted wrong type for &quot;query&quot; without complaining</li><li class="more">and 10 more</li></ul></details></div><span class="st">note</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Connects</b><span class="sum">Connected in 541 ms</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Lists its tools</b><span class="sum">Found 12 tools</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Every tool is described</b><span class="sum">All 12 tools and their inputs are described</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Tools are labeled safe or dangerous</b><span class="sum">Every tool has a safety label</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>No hidden instructions</b><span class="sum">No hidden instructions found in tool descriptions</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Tools work with good inputs</b><details><summary>All good</summary><ul><li class="pass"><span class="m">✓</span><b>search_listings</b>: Worked (178 ms)</li><li class="pass"><span class="m">✓</span><b>get_listing</b>: Answered with an error, probably because of our sample input: No Published listing with that slug. Try search_listings.</li><li class="pass"><span class="m">✓</span><b>list_categories</b>: Worked (110 ms)</li><li class="pass"><span class="m">✓</span><b>compare_listings</b>: Answered with an error, probably because of our sample input: No Published listing with slug &quot;test&quot;. Try search_listings.</li><li class="pass"><span class="m">✓</span><b>get_best_of</b>: Answered with an error, probably because of our sample input: No Published listings in category &quot;test&quot;. list_categories shows the live taxonomy.</li><li class="pass"><span class="m">✓</span><b>list_offers</b>: Worked (119 ms)</li><li class="pass"><span class="m">✓</span><b>get_quote</b>: Answered with an error, probably because of our sample input: { &quot;httpStatus&quot;: 401, &quot;error&quot;: &quot;sign_in_required&quot;, &quot;fix&quot;: &quot;A quote is for the account that owns the listing. Send that account&#39;s session, or…</li><li class="pass"><span class="m">✓</span><b>my_listings</b>: Answered with an error, probably because of our sample input: { &quot;httpStatus&quot;: 401, &quot;error&quot;: &quot;sign_in_required&quot;, &quot;fix&quot;: &quot;This is the owner&#39;s own data. Send the account&#39;s session, or an agent key with \&quot;…</li><li class="more">and 4 more</li></ul></details></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Tools work together</b><span class="sum">search_listings → get_listing: get_listing found what search_listings returned (slug = &quot;uptrain&quot;)</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Fast enough</b><details><summary>All good</summary><ul><li class="pass"><span class="m">✓</span>Connecting took 541 ms</li><li class="pass"><span class="m">✓</span>Listing tools took 119 ms</li><li class="pass"><span class="m">✓</span>Average tool answer: 123 ms</li><li class="pass"><span class="m">✓</span><b>search_listings</b>: Slowest tool: search_listings (178 ms)</li></ul></details></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>No secrets leaked</b><span class="sum">Checked 18 error messages: no secrets or internal details</span></div><span class="st">pass</span></li>
+ </ul></section>
+ <section class="sec" id="try"><h2>Test it yourself</h2><p class="hint">Free and open source. Same checks, same score.</p>
+  <div class="cmd"><code id="cmd">npx qamcp-cli https://agentsindex.ai/mcp</code><button type="button" id="copy">Copy</button></div></section>
+ <section class="sec" id="history"><h2>Score over time</h2><ul class="hist"><li><span class="d">18 Oct 2026</span><span class="bar"><i style="width:91%"></i></span><span class="v">91</span></li><li><span class="d">19 Oct 2026</span><span class="bar"><i style="width:91%"></i></span><span class="v">91</span></li></ul></section>
+ <section class="sec" id="reviews"><h2>Reviews</h2><p class="hint">Coming soon: reviews from people who use AgentsIndex, signed in with GitHub, one per person. Reviews never change the score.</p></section>
+ <div class="claim"><div><b>Is this your server?</b><p>Soon you can claim this page: re-test it from here, reply to results, and show a "Tested by QAmcp" badge.</p><p>Have a concern, or want it removed? <a href="https://github.com/QAmcp/qamcp-cli/issues">Ask us</a> and we'll take it off the list. <a href="../directory-rules.html">How the directory works</a></p></div></div>
+</div>
+<script src="../theme.js"></script>
+<script>
+for (const id of ['copy', 'copy-top']) document.getElementById(id).onclick = async (e) => {
+  const b = e.currentTarget, was = b.textContent;
+  try { await navigator.clipboard.writeText(document.getElementById('cmd').textContent); b.textContent = 'Copied'; } catch (err) { b.textContent = 'Select the command below'; }
+  setTimeout(() => (b.textContent = was), 1800);
+};
+</script>
+</body></html>

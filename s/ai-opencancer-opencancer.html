@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>OpenCancer: QAmcp test results</title>
+<meta name="description" content="OpenCancer MCP server: not scored when tested by QAmcp on 18 Oct 2026.">
+<script>try{var t=localStorage.getItem('qamcp-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="stylesheet" href="../site.css"><link rel="stylesheet" href="../theme.css"><link rel="stylesheet" href="server.css">
+</head><body>
+<div class="wrap">
+ <header class="top"><a class="brand" href="../index.html">QA<b>mcp</b></a><nav aria-label="Main"><a href="../directory.html" aria-current="page">Directory</a><a href="../test.html">Test a server</a><a href="../how-it-works.html">How it works</a><a href="../safety.html">Safety</a><a href="../ci.html">Run it in CI</a><a href="../samples.html">Sample reports</a></nav>
+  <div class="tools"><button class="theme" id="theme" type="button">Light</button><a class="gh" href="https://github.com/QAmcp/qamcp-cli">GitHub</a></div></header>
+ <section class="hero">
+  <span class="logo letter" aria-hidden="true">O</span>
+  <div class="who">
+   <p class="crumb"><a href="../directory.html">Directory</a> / OpenCancer</p>
+   <h1>OpenCancer</h1>
+   <p class="by">by <a href="https://opencancer.ai/connectors" rel="noopener nofollow">opencancer.ai</a> · https://opencancer.ai/api/mcp</p>
+   <p class="d">Cancer patient expert: NCCN-grounded answers with sources, recruiting trials, and expert review.</p>
+   <div class="chips"><span>Pricing: not listed</span></div>
+   <div class="acts"><button class="p" type="button" id="copy-top">Copy the test command</button><a class="s" href="https://opencancer.ai/connectors" rel="noopener nofollow">Visit website</a></div>
+  </div>
+  <div class="medal">
+   <div class="n login">not scored</div>
+   <span class="stamp none">NOT SCORED</span>
+   
+   <p>Not scored: limited our requests (HTTP 429) · 18 Oct 2026</p>
+  </div>
+ </section>
+ <nav class="tabs" aria-label="On this page"><a href="#results">Test results</a><a href="#try">Test it yourself</a><a href="#history">Score over time</a><a href="#reviews">Reviews</a></nav>
+
+ <section class="sec" id="results"><h2>Test results</h2><p class="hint">We will test again soon. <a href="../how-it-works.html">How the test works</a></p><ul class="checks">
+<li class="chk off"><span class="mk off" aria-label="not tested">–</span><div><b>Connects</b><span class="sum">The server limited our requests (HTTP 429: too many requests), even after waiting. This is not a fault; try again in a minute.</span></div><span class="st">not tested</span></li>
+ </ul></section>
+ <section class="sec" id="try"><h2>Test it yourself</h2><p class="hint">Free and open source. Same checks, same score.</p>
+  <div class="cmd"><code id="cmd">npx qamcp-cli https://opencancer.ai/api/mcp</code><button type="button" id="copy">Copy</button></div></section>
+ <section class="sec" id="history"><h2>Score over time</h2><ul class="hist"><li><span class="d">15 Oct 2026</span><span class="bar"><i style="width:85%"></i></span><span class="v">85</span></li><li><span class="d">17 Oct 2026</span><span class="v nl">not scored</span></li><li><span class="d">18 Oct 2026</span><span class="v nl">not scored</span></li></ul></section>
+ <section class="sec" id="reviews"><h2>Reviews</h2><p class="hint">Coming soon: reviews from people who use OpenCancer, signed in with GitHub, one per person. Reviews never change the score.</p></section>
+ <div class="claim"><div><b>Is this your server?</b><p>Soon you can claim this page: re-test it from here, reply to results, and show a "Tested by QAmcp" badge.</p><p>Have a concern, or want it removed? <a href="https://github.com/QAmcp/qamcp-cli/issues">Ask us</a> and we'll take it off the list. <a href="../directory-rules.html">How the directory works</a></p></div></div>
+</div>
+<script src="../theme.js"></script>
+<script>
+for (const id of ['copy', 'copy-top']) document.getElementById(id).onclick = async (e) => {
+  const b = e.currentTarget, was = b.textContent;
+  try { await navigator.clipboard.writeText(document.getElementById('cmd').textContent); b.textContent = 'Copied'; } catch (err) { b.textContent = 'Select the command below'; }
+  setTimeout(() => (b.textContent = was), 1800);
+};
+</script>
+</body></html>

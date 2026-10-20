@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GENOSYS UAE: QAmcp test results</title>
+<meta name="description" content="GENOSYS UAE MCP server: scored 83/100 when tested by QAmcp on 19 Oct 2026.">
+<script>try{var t=localStorage.getItem('qamcp-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="stylesheet" href="../site.css"><link rel="stylesheet" href="../theme.css"><link rel="stylesheet" href="server.css">
+</head><body>
+<div class="wrap">
+ <header class="top"><a class="brand" href="../index.html">QA<b>mcp</b></a><nav aria-label="Main"><a href="../directory.html" aria-current="page">Directory</a><a href="../test.html">Test a server</a><a href="../how-it-works.html">How it works</a><a href="../safety.html">Safety</a><a href="../ci.html">Run it in CI</a><a href="../samples.html">Sample reports</a></nav>
+  <div class="tools"><button class="theme" id="theme" type="button">Light</button><a class="gh" href="https://github.com/QAmcp/qamcp-cli">GitHub</a></div></header>
+ <section class="hero">
+  <img class="logo" src="logo/ae-genosys-genosys.png" alt="" width="96" height="96">
+  <div class="who">
+   <p class="crumb"><a href="../directory.html">Directory</a> / GENOSYS UAE</p>
+   <h1>GENOSYS UAE</h1>
+   <p class="by">by <a href="https://genosys.ae/ai" rel="noopener nofollow">genosys.ae</a> · https://genosys.ae/mcp</p>
+   <p class="d">Shop GENOSYS Korean skincare in the UAE from chat: find products, AED prices, order and pay.</p>
+   <div class="chips"><span>11 tools</span><span class="ok">✓ no account needed</span><span>Pricing: not listed</span></div>
+   <div class="acts"><button class="p" type="button" id="copy-top">Copy the test command</button><a class="s" href="https://genosys.ae/ai" rel="noopener nofollow">Visit website</a></div>
+  </div>
+  <div class="medal">
+   <div class="n">83<small> /100</small></div>
+   <span class="stamp mid">PASS · WITH NOTES</span>
+   
+   <p>12 of 12 checks · 19 Oct 2026</p>
+  </div>
+ </section>
+ <nav class="tabs" aria-label="On this page"><a href="#tools">What it can do</a><a href="#results">Test results</a><a href="#try">Test it yourself</a><a href="#history">Score over time</a><a href="#reviews">Reviews</a></nav>
+ <section class="sec" id="tools"><h2>What it can do</h2><p class="hint">11 tools, in the server's own words.</p><div class="grid">
+<div class="tool"><code>search_products</code><span class="ro">read-only</span><p>Search the live GENOSYS UAE catalog (Korean professional skincare, haircare, devices, beauty boxes).</p></div>
+<div class="tool"><code>get_product</code><span class="ro">read-only</span><p>Full details for one product: description, key features, benefits, key ingredients and actives, step-by-step how to use, sizes or shades with prices, and an ad…</p></div>
+<div class="tool"><code>recommend_routine</code><span class="ro">read-only</span><p>Ranked product picks for a shopper&#39;s skin type and concerns, the same scoring as the skin quiz on genosys.ae.</p></div>
+<div class="tool"><code>list_categories</code><span class="ro">read-only</span><p>All product categories and skin concerns in the live catalog, with product counts.</p></div>
+<div class="tool"><code>create_bag_link</code><span class="ro">read-only</span><p>Build one link that opens genosys.ae with these items already in the shopper&#39;s bag, ready to check out.</p></div>
+<div class="tool"><code>open_checkout</code><span class="ro">read-only</span><p>Show the shopper a checkout form for these items: shade picker where needed, quantities, delivery details (name, email, phone, emirate, address), live total an…</p></div>
+<div class="tool"><code>place_order</code><p>Create a GENOSYS UAE order from this chat and get a secure Stripe payment link (card, Apple Pay, Google Pay).</p></div>
+<div class="tool"><code>order_status</code><span class="ro">read-only</span><p>Status and payment of a GENOSYS order.</p></div>
+<div class="tool"><code>store_info</code><span class="ro">read-only</span><p>Delivery areas, times and fees, payment methods, returns, contact (WhatsApp, email), apps and policies for GENOSYS UAE.</p></div>
+<div class="tool"><code>search</code><span class="ro">read-only</span><p>Search GENOSYS products and skincare articles.</p></div>
+<div class="tool"><code>fetch</code><span class="ro">read-only</span><p>Full text of a result from search, by id (&quot;product:18&quot; or &quot;blog: &quot;).</p></div>
+ </div></section>
+ <section class="sec" id="results"><h2>Test results</h2><p class="hint">Safe mode: only tools labeled read-only were run. <a href="../how-it-works.html">How the test works</a></p><ul class="checks">
+<li class="chk warn"><span class="mk warn" aria-label="note">!</span><div><b>Ready for the newest MCP version</b><details><summary>1 warning</summary><ul><li class="warn"><span class="m">!</span>Uses an older MCP version (2025-11-25). It works today, but it isn&#39;t on the July 2026 version (2026-07-28) yet.</li></ul></details></div><span class="st">note</span></li>
+<li class="chk warn"><span class="mk warn" aria-label="note">!</span><div><b>Every tool is described</b><details><summary>8 warnings</summary><ul><li class="warn"><span class="m">!</span><b>search_products</b>: Inputs with no description: skin_type, in_stock_only</li><li class="warn"><span class="m">!</span><b>recommend_routine</b>: Inputs with no description: skin_type, age_group</li><li class="warn"><span class="m">!</span><b>create_bag_link</b>: Inputs with no description: items</li><li class="warn"><span class="m">!</span><b>open_checkout</b>: Inputs with no description: items, prefill</li><li class="warn"><span class="m">!</span><b>place_order</b>: Inputs with no description: items, customer</li><li class="warn"><span class="m">!</span><b>order_status</b>: Inputs with no description: order_number, email</li><li class="warn"><span class="m">!</span><b>search</b>: Inputs with no description: query</li><li class="warn"><span class="m">!</span><b>fetch</b>: Inputs with no description: id</li></ul></details></div><span class="st">note</span></li>
+<li class="chk warn"><span class="mk warn" aria-label="note">!</span><div><b>Tools are labeled safe or dangerous</b><details><summary>1 warning</summary><ul><li class="warn"><span class="m">!</span><b>open_checkout</b>: Labeled read-only, but its name starts with &quot;open&quot; and its description says &quot;creates&quot;. Worth double-checking the label, since AI apps trust it.</li></ul></details></div><span class="st">note</span></li>
+<li class="chk warn"><span class="mk warn" aria-label="note">!</span><div><b>Fast enough</b><details><summary>1 warning</summary><ul><li class="warn"><span class="m">!</span><b>search_products</b>: Slowest tool: search_products (2.1 s): users will notice the wait</li><li class="more">and 3 more</li></ul></details></div><span class="st">note</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Connects</b><span class="sum">Connected in 686 ms</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Lists its tools</b><span class="sum">Found 11 tools</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>No hidden instructions</b><span class="sum">No hidden instructions found in tool descriptions</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Tools work with good inputs</b><details><summary>All good</summary><ul><li class="pass"><span class="m">✓</span><b>search_products</b>: Worked (2.1 s)</li><li class="pass"><span class="m">✓</span><b>get_product</b>: Answered with an error, probably because of our sample input: No GENOSYS product with id &quot;test&quot;. Use search_products to find the id.</li><li class="pass"><span class="m">✓</span><b>recommend_routine</b>: Worked (524 ms)</li><li class="pass"><span class="m">✓</span><b>list_categories</b>: Worked (186 ms)</li><li class="pass"><span class="m">✓</span><b>store_info</b>: Worked (120 ms)</li><li class="pass"><span class="m">✓</span><b>search</b>: Worked (397 ms)</li><li class="pass"><span class="m">✓</span><b>fetch</b>: Answered with an error, probably because of our sample input: No product &quot;test&quot;.</li><li class="off"><span class="m">–</span><b>create_bag_link</b>: Not run: labeled read-only, but its name starts with &quot;create&quot;, which usually means it changes something. Skipped to be safe: if it only reads, a clearer name helps AI apps too, or test again with --owner</li><li class="more">and 3 more</li></ul></details></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Bad inputs give a clean error</b><details><summary>All good</summary><ul><li class="pass"><span class="m">✓</span><b>search_products</b>: Refused wrong type for &quot;query&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>get_product</b>: Refused missing required input &quot;product_id&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>get_product</b>: Refused wrong type for &quot;product_id&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>recommend_routine</b>: Refused wrong type for &quot;skin_type&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>store_info</b>: Refused wrong type for &quot;locale&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>search</b>: Refused missing required input &quot;query&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>search</b>: Refused wrong type for &quot;query&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>fetch</b>: Refused missing required input &quot;id&quot; with a clear error</li><li class="more">and 1 more</li></ul></details></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Tools work together</b><details><summary>5 chains working</summary><ul><li class="pass"><span class="m">✓</span>search_products → fetch: fetch found what search_products returned (id = &quot;19&quot;)</li><li class="pass"><span class="m">✓</span>recommend_routine → fetch: fetch found what recommend_routine returned (id = &quot;32&quot;)</li><li class="pass"><span class="m">✓</span>search → fetch: fetch found what search returned (id = &quot;product:19&quot;)</li><li class="pass"><span class="m">✓</span>search_products → get_product: get_product found what search_products returned (product_id = &quot;19&quot;)</li><li class="pass"><span class="m">✓</span>recommend_routine → get_product: get_product found what recommend_routine returned (product_id = &quot;32&quot;)</li></ul></details></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>No secrets leaked</b><span class="sum">Checked 16 error messages: no secrets or internal details</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Resources and prompts work</b><details><summary>All good (1 resource)</summary><ul><li class="pass"><span class="m">✓</span>Opened 1 of 1 resources</li><li class="pass"><span class="m">✓</span>An address that does not exist gets a clean &quot;not found&quot; error</li></ul></details></div><span class="st">pass</span></li>
+ </ul></section>
+ <section class="sec" id="try"><h2>Test it yourself</h2><p class="hint">Free and open source. Same checks, same score.</p>
+  <div class="cmd"><code id="cmd">npx qamcp-cli https://genosys.ae/mcp</code><button type="button" id="copy">Copy</button></div></section>
+ <section class="sec" id="history"><h2>Score over time</h2><ul class="hist"><li><span class="d">13 Oct 2026</span><span class="bar"><i style="width:79%"></i></span><span class="v">79</span></li><li><span class="d">17 Oct 2026</span><span class="bar"><i style="width:83%"></i></span><span class="v">83</span></li><li><span class="d">18 Oct 2026</span><span class="bar"><i style="width:83%"></i></span><span class="v">83</span></li><li><span class="d">19 Oct 2026</span><span class="bar"><i style="width:83%"></i></span><span class="v">83</span></li></ul></section>
+ <section class="sec" id="reviews"><h2>Reviews</h2><p class="hint">Coming soon: reviews from people who use GENOSYS UAE, signed in with GitHub, one per person. Reviews never change the score.</p></section>
+ <div class="claim"><div><b>Is this your server?</b><p>Soon you can claim this page: re-test it from here, reply to results, and show a "Tested by QAmcp" badge.</p><p>Have a concern, or want it removed? <a href="https://github.com/QAmcp/qamcp-cli/issues">Ask us</a> and we'll take it off the list. <a href="../directory-rules.html">How the directory works</a></p></div></div>
+</div>
+<script src="../theme.js"></script>
+<script>
+for (const id of ['copy', 'copy-top']) document.getElementById(id).onclick = async (e) => {
+  const b = e.currentTarget, was = b.textContent;
+  try { await navigator.clipboard.writeText(document.getElementById('cmd').textContent); b.textContent = 'Copied'; } catch (err) { b.textContent = 'Select the command below'; }
+  setTimeout(() => (b.textContent = was), 1800);
+};
+</script>
+</body></html>

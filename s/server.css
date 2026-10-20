@@ -1,0 +1,70 @@
+/* One server's page in the directory (version B: who it is and what it does first, the test result as a badge). */
+.hero{display:grid;grid-template-columns:96px minmax(0,1fr) auto;gap:clamp(18px,2.4vw,28px);align-items:start;background:var(--sheet);border:1.5px solid var(--frame);padding:clamp(22px,3vw,36px)}
+.logo{flex:none;width:96px;height:96px;border-radius:20px;border:1px solid var(--rule);background:var(--raise);object-fit:contain}
+.logo.letter{display:grid;place-items:center;font:700 44px var(--head);color:var(--rose)}
+.crumb{font:400 13px var(--mono);color:var(--faint);margin-bottom:8px}.crumb a{color:var(--soft)}
+.who h1{font:700 clamp(30px,3.6vw,44px)/1.05 var(--head);overflow-wrap:anywhere}
+.by{font:400 13px var(--mono);color:var(--faint);margin-top:6px;overflow-wrap:anywhere}.by a{color:var(--rose)}
+.who .d{color:var(--soft);margin-top:10px;max-width:64ch}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.chips span{font:400 12.5px var(--mono);border:1px solid var(--frame);border-radius:20px;padding:5px 11px;color:var(--soft)}
+.chips .ok{border-color:var(--pass);color:var(--pass)}
+.acts{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.acts .p,.acts .s{font:700 14px var(--text);padding:10px 15px;border-radius:8px;text-decoration:none;cursor:pointer}
+.acts .p{background:var(--rose);color:var(--on-rose);border:0}.acts .p:hover{filter:brightness(1.08)}
+.acts .s{border:1px solid var(--frame);color:var(--ink);background:none}.acts .s:hover{border-color:var(--rose)}
+.medal{text-align:center;border:1px solid var(--rule);border-radius:14px;padding:18px 22px;background:var(--ground);min-width:200px}
+.medal .n{font:600 58px/1 var(--mono);font-variant-numeric:tabular-nums}.medal .n small{font:400 17px var(--mono);color:var(--faint)}
+.medal .n.login{font-size:26px;padding:10px 0}
+.medal p{font:400 12px/1.5 var(--mono);color:var(--faint);margin-top:10px}
+.medal .down{color:var(--fail)}
+.stamp{display:inline-block;margin-top:12px;font:700 12.5px var(--mono);letter-spacing:.12em;padding:7px 10px;border:2px solid currentColor;border-radius:5px}
+.stamp.pass{color:var(--pass)}.stamp.fail{color:var(--fail)}.stamp.none{color:var(--soft)}.stamp.mid{color:var(--rose)}
+
+.tabs{display:flex;gap:4px;margin-top:var(--gutter);border-bottom:1px solid var(--frame);overflow-x:auto}
+.tabs a{font:400 14px var(--text);padding:10px 14px;color:var(--soft);text-decoration:none;border-bottom:2px solid transparent;white-space:nowrap}
+.tabs a:hover{color:var(--ink);border-bottom-color:var(--rose)}
+.sec{background:var(--sheet);border:1.5px solid var(--frame);padding:clamp(20px,3vw,32px);margin-top:16px;scroll-margin-top:16px}
+.sec h2{font:700 24px var(--head);margin-bottom:6px}
+.hint{color:var(--soft);font-size:14.5px}.hint a{color:var(--rose)}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:12px}
+.tool{border:1px solid var(--rule);border-radius:10px;padding:14px 16px;min-width:0}
+.tool code{font-size:13px;color:var(--ink);overflow-wrap:anywhere}
+.tool .ro{font:400 11px var(--mono);color:var(--pass);margin-left:6px}
+.tool p{color:var(--soft);font-size:14px;margin-top:6px}
+
+.checks{list-style:none;padding:0;margin-top:8px}
+.chk{display:grid;grid-template-columns:26px minmax(0,1fr) auto;gap:12px;padding:12px 0;border-top:1px solid var(--rule);font-size:15px}
+.chk b{color:var(--ink)}
+.chk .sum{display:block;color:var(--soft);font-size:14px;margin-top:2px}
+.mk{font:700 15px var(--mono);text-align:center;line-height:1.5}
+.mk.pass{color:var(--pass)}.mk.warn{color:var(--rose)}.mk.fail{color:var(--fail)}.mk.off{color:var(--off)}
+.st{font:400 12px var(--mono);color:var(--faint);padding-top:3px}
+.chk.fail .st{color:var(--fail)}.chk.warn .st{color:var(--rose)}
+details{margin-top:2px}
+summary{cursor:pointer;color:var(--soft);font-size:14px;width:max-content;max-width:100%}
+summary:hover{color:var(--ink)}
+details ul{list-style:none;padding:8px 0 2px;display:grid;gap:6px}
+details li{display:grid;grid-template-columns:18px minmax(0,1fr);gap:6px;font-size:13.5px;color:var(--soft);overflow-wrap:anywhere}
+details li b{display:contents;color:var(--ink)}
+details li .m{font-family:var(--mono)}
+details li.pass .m{color:var(--pass)}details li.warn .m{color:var(--rose)}details li.fail .m{color:var(--fail)}details li.off .m{color:var(--off)}
+details li.more{display:block;color:var(--faint);padding-left:24px}
+
+.cmd{display:flex;margin-top:12px;border:1px solid var(--frame);border-radius:8px;background:var(--ground);overflow:hidden;max-width:820px}
+.cmd code{flex:1;min-width:0;padding:12px 14px;font-size:13px;color:var(--ink);overflow-wrap:anywhere}
+.cmd button{border:0;border-left:1px solid var(--frame);background:var(--rose);color:var(--on-rose);font:700 14px var(--text);padding:0 16px;cursor:pointer}
+
+.hist{list-style:none;padding:0;margin-top:10px;display:grid;gap:10px;max-width:640px}
+.hist li{display:grid;grid-template-columns:96px minmax(0,1fr) 84px;gap:12px;align-items:center;font:400 13px var(--mono);color:var(--faint)}
+.hist .bar{height:8px;background:var(--rule);border-radius:4px;overflow:hidden}
+.hist .bar i{display:block;height:100%;background:var(--pass);opacity:.75;border-radius:4px}
+.hist .v{color:var(--ink);text-align:right}
+.hist .v.nl{grid-column:2/4;text-align:left;color:var(--soft)}
+
+.claim{margin-top:var(--gutter);background:var(--sheet);border:1.5px dashed var(--frame);padding:22px clamp(18px,3vw,30px)}
+.claim b{font:700 20px var(--head)}.claim p{color:var(--soft);font-size:14.5px;margin-top:4px;max-width:72ch}
+.claim p a{color:var(--rose)}
+
+@media (max-width:980px){.hero{grid-template-columns:72px minmax(0,1fr)}.logo{width:72px;height:72px;border-radius:16px}.logo.letter{font-size:34px}.medal{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:4px 16px;text-align:left}.medal p{margin-top:0}.medal .stamp{margin-top:0}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:640px){.gh{display:none}.hero{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.hist li{grid-template-columns:82px minmax(0,1fr) 70px}}

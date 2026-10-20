@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Life Scenario: QAmcp test results</title>
+<meta name="description" content="Life Scenario MCP server: scored 95/100 when tested by QAmcp on 20 Oct 2026.">
+<script>try{var t=localStorage.getItem('qamcp-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="stylesheet" href="../site.css"><link rel="stylesheet" href="../theme.css"><link rel="stylesheet" href="server.css">
+</head><body>
+<div class="wrap">
+ <header class="top"><a class="brand" href="../index.html">QA<b>mcp</b></a><nav aria-label="Main"><a href="../directory.html" aria-current="page">Directory</a><a href="../test.html">Test a server</a><a href="../how-it-works.html">How it works</a><a href="../safety.html">Safety</a><a href="../ci.html">Run it in CI</a><a href="../samples.html">Sample reports</a></nav>
+  <div class="tools"><button class="theme" id="theme" type="button">Light</button><a class="gh" href="https://github.com/QAmcp/qamcp-cli">GitHub</a></div></header>
+ <section class="hero">
+  <img class="logo" src="logo/ai-lifescenario-info.ico" alt="" width="96" height="96">
+  <div class="who">
+   <p class="crumb"><a href="../directory.html">Directory</a> / Life Scenario</p>
+   <h1>Life Scenario</h1>
+   <p class="by">by <a href="https://lifescenario.ai/" rel="noopener nofollow">lifescenario.ai</a> · https://lifescenario.ai/api/mcp</p>
+   <p class="d">For parents and teachers: SEL trait guides, practice scenarios, what-to-say guides (ages 6-14).</p>
+   <div class="chips"><span>4 tools</span><span class="ok">✓ all read-only</span><span class="ok">✓ no account needed</span><span>Pricing: on their site</span></div>
+   <div class="acts"><button class="p" type="button" id="copy-top">Copy the test command</button><a class="s" href="https://lifescenario.ai/subscribe" rel="noopener nofollow">See pricing →</a><a class="s" href="https://lifescenario.ai/" rel="noopener nofollow">Visit website</a></div>
+  </div>
+  <div class="medal">
+   <div class="n">95<small> /100</small></div>
+   <span class="stamp mid">PASS · WITH NOTES</span>
+   
+   <p>10 of 10 checks · 20 Oct 2026</p>
+  </div>
+ </section>
+ <nav class="tabs" aria-label="On this page"><a href="#tools">What it can do</a><a href="#results">Test results</a><a href="#try">Test it yourself</a><a href="#history">Score over time</a><a href="#reviews">Reviews</a></nav>
+ <section class="sec" id="tools"><h2>What it can do</h2><p class="hint">4 tools, in the server's own words.</p><div class="grid">
+<div class="tool"><code>list_traits</code><span class="ro">read-only</span><p>Lists the 15 social and emotional learning (SEL) traits Life Scenario practises, each with a plain-language description and the everyday skills it covers.</p></div>
+<div class="tool"><code>find_practice_situation</code><span class="ro">read-only</span><p>Finds up to 3 public Life Scenario practice scenarios for a real-life situation a child is facing (for example: left out at recess, peer pressure, cheating in …</p></div>
+<div class="tool"><code>get_what_to_say</code><span class="ro">read-only</span><p>Finds the published Life Scenario page for parents that best matches a topic (for example: &quot;nobody will play with me&quot;, &quot;being teased&quot;, &quot;a friend wants to copy …</p></div>
+<div class="tool"><code>get_site_overview</code><span class="ro">read-only</span><p>Factual overview of Life Scenario: what the SEL practice game for children aged 6–14 does, what it is not, how child safety is handled, what this server can an…</p></div>
+ </div></section>
+ <section class="sec" id="results"><h2>Test results</h2><p class="hint">Safe mode: only tools labeled read-only were run. <a href="../how-it-works.html">How the test works</a></p><ul class="checks">
+<li class="chk warn"><span class="mk warn" aria-label="note">!</span><div><b>Ready for the newest MCP version</b><details><summary>1 warning</summary><ul><li class="warn"><span class="m">!</span>Uses an older MCP version (2025-06-18). It works today, but it isn&#39;t on the July 2026 version (2026-07-28) yet.</li></ul></details></div><span class="st">note</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Connects</b><span class="sum">Connected in 726 ms</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Lists its tools</b><span class="sum">Found 4 tools</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Every tool is described</b><span class="sum">All 4 tools and their inputs are described</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Tools are labeled safe or dangerous</b><span class="sum">Every tool has a safety label</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>No hidden instructions</b><span class="sum">No hidden instructions found in tool descriptions</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Tools work with good inputs</b><details><summary>All good</summary><ul><li class="pass"><span class="m">✓</span><b>list_traits</b>: Worked (217 ms)</li><li class="pass"><span class="m">✓</span><b>find_practice_situation</b>: Worked (301 ms)</li><li class="pass"><span class="m">✓</span><b>get_what_to_say</b>: Worked (228 ms)</li><li class="pass"><span class="m">✓</span><b>get_site_overview</b>: Worked (298 ms)</li></ul></details></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Bad inputs give a clean error</b><details><summary>All good</summary><ul><li class="pass"><span class="m">✓</span><b>find_practice_situation</b>: Refused missing required input &quot;situation&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>find_practice_situation</b>: Refused wrong type for &quot;situation&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>get_what_to_say</b>: Refused missing required input &quot;topic&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>get_what_to_say</b>: Refused wrong type for &quot;topic&quot; with a clear error</li></ul></details></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Fast enough</b><details><summary>All good</summary><ul><li class="pass"><span class="m">✓</span>Connecting took 726 ms</li><li class="pass"><span class="m">✓</span>Listing tools took 207 ms</li><li class="pass"><span class="m">✓</span>Average tool answer: 261 ms</li><li class="pass"><span class="m">✓</span><b>find_practice_situation</b>: Slowest tool: find_practice_situation (301 ms)</li></ul></details></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>No secrets leaked</b><span class="sum">Checked 4 error messages: no secrets or internal details</span></div><span class="st">pass</span></li>
+<li class="chk off"><span class="mk off" aria-label="not tested">–</span><div><b>Tools work together</b><span class="sum">No tool&#39;s answer could be fed into another tool, so there were no chains to test (not counted either way)</span></div><span class="st">not tested</span></li>
+ </ul></section>
+ <section class="sec" id="try"><h2>Test it yourself</h2><p class="hint">Free and open source. Same checks, same score.</p>
+  <div class="cmd"><code id="cmd">npx qamcp-cli https://lifescenario.ai/api/mcp</code><button type="button" id="copy">Copy</button></div></section>
+ <section class="sec" id="history"><h2>Score over time</h2><ul class="hist"><li><span class="d">20 Oct 2026</span><span class="bar"><i style="width:95%"></i></span><span class="v">95</span></li></ul><p class="hint">One test so far. New tests will show here.</p></section>
+ <section class="sec" id="reviews"><h2>Reviews</h2><p class="hint">Coming soon: reviews from people who use Life Scenario, signed in with GitHub, one per person. Reviews never change the score.</p></section>
+ <div class="claim"><div><b>Is this your server?</b><p>Soon you can claim this page: re-test it from here, reply to results, and show a "Tested by QAmcp" badge.</p><p>Have a concern, or want it removed? <a href="https://github.com/QAmcp/qamcp-cli/issues">Ask us</a> and we'll take it off the list. <a href="../directory-rules.html">How the directory works</a></p></div></div>
+</div>
+<script src="../theme.js"></script>
+<script>
+for (const id of ['copy', 'copy-top']) document.getElementById(id).onclick = async (e) => {
+  const b = e.currentTarget, was = b.textContent;
+  try { await navigator.clipboard.writeText(document.getElementById('cmd').textContent); b.textContent = 'Copied'; } catch (err) { b.textContent = 'Select the command below'; }
+  setTimeout(() => (b.textContent = was), 1800);
+};
+</script>
+</body></html>

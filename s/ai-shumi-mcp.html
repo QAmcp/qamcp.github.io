@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>shumi: QAmcp test results</title>
+<meta name="description" content="shumi MCP server: scored 100/100 when tested by QAmcp on 18 Oct 2026.">
+<script>try{var t=localStorage.getItem('qamcp-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="stylesheet" href="../site.css"><link rel="stylesheet" href="../theme.css"><link rel="stylesheet" href="server.css">
+</head><body>
+<div class="wrap">
+ <header class="top"><a class="brand" href="../index.html">QA<b>mcp</b></a><nav aria-label="Main"><a href="../directory.html" aria-current="page">Directory</a><a href="../test.html">Test a server</a><a href="../how-it-works.html">How it works</a><a href="../safety.html">Safety</a><a href="../ci.html">Run it in CI</a><a href="../samples.html">Sample reports</a></nav>
+  <div class="tools"><button class="theme" id="theme" type="button">Light</button><a class="gh" href="https://github.com/QAmcp/qamcp-cli">GitHub</a></div></header>
+ <section class="hero">
+  <img class="logo" src="logo/ai-shumi-mcp.png" alt="" width="96" height="96">
+  <div class="who">
+   <p class="crumb"><a href="../directory.html">Directory</a> / shumi</p>
+   <h1>shumi</h1>
+   <p class="by">by <a href="https://shumi.ai/" rel="noopener nofollow">shumi.ai</a> · https://mcp.shumi.ai/mcp</p>
+   <p class="d">Crypto market intelligence: prices, funding rates, narratives, regime, and delta-neutral research.</p>
+   <div class="chips"><span>33 tools</span><span class="ok">✓ all read-only</span><span class="ok">✓ no account needed</span><span>Pricing: on their site</span></div>
+   <div class="acts"><button class="p" type="button" id="copy-top">Copy the test command</button><a class="s" href="https://shumi.ai/pricing" rel="noopener nofollow">See pricing →</a><a class="s" href="https://shumi.ai/" rel="noopener nofollow">Visit website</a></div>
+  </div>
+  <div class="medal">
+   <div class="n">100<small> /100</small></div>
+   <span class="stamp pass">PASS</span>
+   
+   <p>11 of 11 checks · 18 Oct 2026</p>
+  </div>
+ </section>
+ <nav class="tabs" aria-label="On this page"><a href="#tools">What it can do</a><a href="#results">Test results</a><a href="#try">Test it yourself</a><a href="#history">Score over time</a><a href="#reviews">Reviews</a></nav>
+ <section class="sec" id="tools"><h2>What it can do</h2><p class="hint">33 tools, in the server's own words.</p><div class="grid">
+<div class="tool"><code>get_coin_risk</code><span class="ro">read-only</span><p>Bundled risk context for one or more coins: price, funding APR, deterministic funding_paying_side, funding_receiving_side, carry_if_long and carry_if_short fie…</p></div>
+<div class="tool"><code>lookup_coin</code><span class="ro">read-only</span><p>Look up a single coin and its core metrics (price, trend, metadata) by symbol, name, CoinGecko/internal id, or on-chain contract address.</p></div>
+<div class="tool"><code>resolve_coin</code><span class="ro">read-only</span><p>Fuzzily resolve a symbol, name, or contract to canonical coin candidates.</p></div>
+<div class="tool"><code>get_coin_sentiment</code><span class="ro">read-only</span><p>On-chain/social sentiment aggregates for a single coin.</p></div>
+<div class="tool"><code>get_coin_historical</code><span class="ro">read-only</span><p>Market cap, volume, open interest, funding rate and price for a coin AS OF a chosen point in the past.</p></div>
+<div class="tool"><code>get_market_health</code><span class="ro">read-only</span><p>Overall market health: the UP/HODL/DOWN trend distribution and extreme movers.</p></div>
+<div class="tool"><code>get_global_market</code><span class="ro">read-only</span><p>Global market aggregates: BTC dominance, total market cap, total volume.</p></div>
+<div class="tool"><code>get_market_crossing</code><span class="ro">read-only</span><p>The most recent regime crossing — when one trend cohort (UP/HODL/DOWN) overtook another market-wide.</p></div>
+<div class="tool"><code>get_prices</code><span class="ro">read-only</span><p>Bulk live prices, optionally with 4h/24h/7d baseline overlays.</p></div>
+<div class="tool"><code>scan_trends</code><span class="ro">read-only</span><p>Trend scanner.</p></div>
+<div class="tool"><code>scan_coins</code><span class="ro">read-only</span><p>Filter the tracked universe by trend direction, category and market-cap band, and sort the result.</p></div>
+<div class="tool"><code>get_market_sentiment</code><span class="ro">read-only</span><p>Aggregate market sentiment.</p></div>
+<div class="tool"><code>list_narratives</code><span class="ro">read-only</span><p>List the currently active market narratives (e.g.</p></div>
+<div class="tool"><code>get_narrative</code><span class="ro">read-only</span><p>Sentiment and momentum for a single named narrative.</p></div>
+<div class="tool"><code>list_categories</code><span class="ro">read-only</span><p>List tracked crypto categories by their exact names (e.g.</p></div>
+<div class="tool"><code>get_category</code><span class="ro">read-only</span><p>Detail for one category.</p></div>
+<div class="tool"><code>get_funding_momentum</code><span class="ro">read-only</span><p>Perpetual funding-rate positioning context, market-wide or for one symbol.</p></div>
+<div class="tool"><code>get_funding_alerts</code><span class="ro">read-only</span><p>Discrete funding-rate alert events (asset, trigger zone, funding at trigger, fired-at time).</p></div>
+<div class="tool"><code>get_regime</code><span class="ro">read-only</span><p>Market regime signals.</p></div>
+<div class="tool"><code>get_signal</code><span class="ro">read-only</span><p>Synthesized verdict for a coin, combining trend, funding, sentiment and regime.</p></div>
+<div class="tool"><code>get_signal_quality</code><span class="ro">read-only</span><p>Signal validation envelope for an asset: Sharpe ratio, win rate, sample size, reliability tier.</p></div>
+<div class="tool"><code>get_pair_suggestions</code><span class="ro">read-only</span><p>Pair-trading and delta-neutral funding-arbitrage intelligence.</p></div>
+<div class="tool"><code>list_rwa_assets</code><span class="ro">read-only</span><p>List the tradable real-world assets — stocks and ETFs (AAPL, NVDA, SPY), metals and commodities (GOLD, SILVER, BRENT), stock indices (SP500, JP225) and FX.</p></div>
+<div class="tool"><code>get_rwa_asset</code><span class="ro">read-only</span><p>Price, daily/weekly trend and perp funding for one real-world asset (stock, ETF, commodity, index, FX).</p></div>
+ </div><p class="hint">and 9 more</p></section>
+ <section class="sec" id="results"><h2>Test results</h2><p class="hint">Safe mode: only tools labeled read-only were run. <a href="../how-it-works.html">How the test works</a></p><ul class="checks">
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Connects</b><span class="sum">Connected in 287 ms</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Ready for the newest MCP version</b><span class="sum">Uses the latest MCP version (2026-07-28)</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Lists its tools</b><span class="sum">Found 33 tools</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Every tool is described</b><span class="sum">All 33 tools and their inputs are described</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Tools are labeled safe or dangerous</b><span class="sum">Every tool has a safety label</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>No hidden instructions</b><span class="sum">No hidden instructions found in tool descriptions</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Tools work with good inputs</b><details><summary>All good</summary><ul><li class="pass"><span class="m">✓</span><b>get_coin_risk</b>: Answered with an error, probably because of our sample input: Input validation error: Invalid arguments for tool get_coin_risk: symbols: Provide between 1 and 15 symbols.</li><li class="pass"><span class="m">✓</span><b>lookup_coin</b>: Answered with an error, probably because of our sample input: { &quot;error&quot;: { &quot;code&quot;: &quot;AUTH_REQUIRED&quot;, &quot;message&quot;: &quot;Authentication required.&quot;, &quot;hint&quot;: &quot;Create a free Shumi key at https://shumi.ai — 10 quer…</li><li class="pass"><span class="m">✓</span><b>resolve_coin</b>: Answered with an error, probably because of our sample input: { &quot;error&quot;: { &quot;code&quot;: &quot;AUTH_REQUIRED&quot;, &quot;message&quot;: &quot;Authentication required.&quot;, &quot;hint&quot;: &quot;Create a free Shumi key at https://shumi.ai — 10 quer…</li><li class="pass"><span class="m">✓</span><b>get_coin_sentiment</b>: Answered with an error, probably because of our sample input: { &quot;error&quot;: { &quot;code&quot;: &quot;AUTH_REQUIRED&quot;, &quot;message&quot;: &quot;Authentication required.&quot;, &quot;hint&quot;: &quot;Create a free Shumi key at https://shumi.ai — 10 quer…</li><li class="pass"><span class="m">✓</span><b>get_market_health</b>: Answered with an error, probably because of our sample input: { &quot;error&quot;: { &quot;code&quot;: &quot;AUTH_REQUIRED&quot;, &quot;message&quot;: &quot;Authentication required.&quot;, &quot;hint&quot;: &quot;Create a free Shumi key at https://shumi.ai — 10 quer…</li><li class="pass"><span class="m">✓</span><b>get_global_market</b>: Answered with an error, probably because of our sample input: { &quot;error&quot;: { &quot;code&quot;: &quot;AUTH_REQUIRED&quot;, &quot;message&quot;: &quot;Authentication required.&quot;, &quot;hint&quot;: &quot;Create a free Shumi key at https://shumi.ai — 10 quer…</li><li class="pass"><span class="m">✓</span><b>get_market_crossing</b>: Answered with an error, probably because of our sample input: { &quot;error&quot;: { &quot;code&quot;: &quot;AUTH_REQUIRED&quot;, &quot;message&quot;: &quot;Authentication required.&quot;, &quot;hint&quot;: &quot;Create a free Shumi key at https://shumi.ai — 10 quer…</li><li class="pass"><span class="m">✓</span><b>get_prices</b>: Answered with an error, probably because of our sample input: { &quot;error&quot;: { &quot;code&quot;: &quot;AUTH_REQUIRED&quot;, &quot;message&quot;: &quot;Authentication required.&quot;, &quot;hint&quot;: &quot;Create a free Shumi key at https://shumi.ai — 10 quer…</li><li class="more">and 25 more</li></ul></details></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Bad inputs give a clean error</b><details><summary>All good</summary><ul><li class="pass"><span class="m">✓</span><b>get_coin_risk</b>: Refused missing required input &quot;symbols&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>lookup_coin</b>: Refused missing required input &quot;identifier&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>lookup_coin</b>: Refused wrong type for &quot;identifier&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>resolve_coin</b>: Refused missing required input &quot;query&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>resolve_coin</b>: Refused wrong type for &quot;query&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>get_coin_sentiment</b>: Refused missing required input &quot;symbol&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>get_coin_sentiment</b>: Refused wrong type for &quot;symbol&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>get_market_health</b>: Refused wrong type for &quot;context&quot; with a clear error</li><li class="more">and 32 more</li></ul></details></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Fast enough</b><details><summary>All good</summary><ul><li class="pass"><span class="m">✓</span>Connecting took 287 ms</li><li class="pass"><span class="m">✓</span>Listing tools took 260 ms</li><li class="pass"><span class="m">✓</span>Average tool answer: 176 ms</li><li class="pass"><span class="m">✓</span><b>get_coin_risk</b>: Slowest tool: get_coin_risk (336 ms)</li></ul></details></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>No secrets leaked</b><span class="sum">Checked 73 error messages: no secrets or internal details</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Resources and prompts work</b><details><summary>All good (2 resources)</summary><ul><li class="pass"><span class="m">✓</span>Opened 2 of 2 resources</li><li class="pass"><span class="m">✓</span>An address that does not exist gets a clean &quot;not found&quot; error</li></ul></details></div><span class="st">pass</span></li>
+<li class="chk off"><span class="mk off" aria-label="not tested">–</span><div><b>Tools work together</b><span class="sum">No safe tool returned data to start a chain from, so chains were not tested (not counted either way)</span></div><span class="st">not tested</span></li>
+ </ul></section>
+ <section class="sec" id="try"><h2>Test it yourself</h2><p class="hint">Free and open source. Same checks, same score.</p>
+  <div class="cmd"><code id="cmd">npx qamcp-cli https://mcp.shumi.ai/mcp</code><button type="button" id="copy">Copy</button></div></section>
+ <section class="sec" id="history"><h2>Score over time</h2><ul class="hist"><li><span class="d">15 Oct 2026</span><span class="bar"><i style="width:100%"></i></span><span class="v">100</span></li><li><span class="d">17 Oct 2026</span><span class="bar"><i style="width:100%"></i></span><span class="v">100</span></li><li><span class="d">18 Oct 2026</span><span class="bar"><i style="width:100%"></i></span><span class="v">100</span></li></ul></section>
+ <section class="sec" id="reviews"><h2>Reviews</h2><p class="hint">Coming soon: reviews from people who use shumi, signed in with GitHub, one per person. Reviews never change the score.</p></section>
+ <div class="claim"><div><b>Is this your server?</b><p>Soon you can claim this page: re-test it from here, reply to results, and show a "Tested by QAmcp" badge.</p><p>Have a concern, or want it removed? <a href="https://github.com/QAmcp/qamcp-cli/issues">Ask us</a> and we'll take it off the list. <a href="../directory-rules.html">How the directory works</a></p></div></div>
+</div>
+<script src="../theme.js"></script>
+<script>
+for (const id of ['copy', 'copy-top']) document.getElementById(id).onclick = async (e) => {
+  const b = e.currentTarget, was = b.textContent;
+  try { await navigator.clipboard.writeText(document.getElementById('cmd').textContent); b.textContent = 'Copied'; } catch (err) { b.textContent = 'Select the command below'; }
+  setTimeout(() => (b.textContent = was), 1800);
+};
+</script>
+</body></html>

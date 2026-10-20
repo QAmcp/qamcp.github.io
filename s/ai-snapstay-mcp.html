@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Snapstay: QAmcp test results</title>
+<meta name="description" content="Snapstay MCP server: not scored (needs a login) when tested by QAmcp on 18 Oct 2026.">
+<script>try{var t=localStorage.getItem('qamcp-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="stylesheet" href="../site.css"><link rel="stylesheet" href="../theme.css"><link rel="stylesheet" href="server.css">
+</head><body>
+<div class="wrap">
+ <header class="top"><a class="brand" href="../index.html">QA<b>mcp</b></a><nav aria-label="Main"><a href="../directory.html" aria-current="page">Directory</a><a href="../test.html">Test a server</a><a href="../how-it-works.html">How it works</a><a href="../safety.html">Safety</a><a href="../ci.html">Run it in CI</a><a href="../samples.html">Sample reports</a></nav>
+  <div class="tools"><button class="theme" id="theme" type="button">Light</button><a class="gh" href="https://github.com/QAmcp/qamcp-cli">GitHub</a></div></header>
+ <section class="hero">
+  <span class="logo letter" aria-hidden="true">S</span>
+  <div class="who">
+   <p class="crumb"><a href="../directory.html">Directory</a> / Snapstay</p>
+   <h1>Snapstay</h1>
+   <p class="by">by <a href="https://snapstay.ai/support#assistant-help" rel="noopener nofollow">snapstay.ai</a> · https://snapstay.ai/mcp</p>
+   <p class="d">Connect AI assistants to hotel reservations, availability, rates, guests, and analytics with OAuth.</p>
+   <div class="chips"><span>needs an account</span><span>Pricing: not listed</span></div>
+   <div class="acts"><button class="p" type="button" id="copy-top">Copy the test command</button><a class="s" href="https://snapstay.ai/support#assistant-help" rel="noopener nofollow">Visit website</a></div>
+  </div>
+  <div class="medal">
+   <div class="n login">needs login</div>
+   <span class="stamp none">NOT SCORED</span>
+   
+   <p>Checked from outside only · 18 Oct 2026</p>
+  </div>
+ </section>
+ <nav class="tabs" aria-label="On this page"><a href="#results">Test results</a><a href="#try">Test it yourself</a><a href="#history">Score over time</a><a href="#reviews">Reviews</a></nav>
+
+ <section class="sec" id="results"><h2>Test results</h2><p class="hint">We could only check it from outside. The owner can test everything behind the login. <a href="../how-it-works.html">How the test works</a></p><ul class="checks">
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Login setup follows the spec</b><details><summary>All good</summary><ul><li class="pass"><span class="m">✓</span>The server asks for a login (it answers 401 to an anonymous request).</li><li class="pass"><span class="m">✓</span>The 401 reply points AI apps to the login details (resource_metadata).</li><li class="pass"><span class="m">✓</span>The login details name this exact server.</li><li class="pass"><span class="m">✓</span>Found the login server&#39;s description at https://snapstay.ai/.well-known/oauth-authorization-server.</li><li class="pass"><span class="m">✓</span>The login server&#39;s name matches what the server points to.</li><li class="pass"><span class="m">✓</span>PKCE with S256 is supported.</li><li class="pass"><span class="m">✓</span>AI apps can register themselves (dynamic registration).</li></ul></details></div><span class="st">pass</span></li>
+<li class="chk off"><span class="mk off" aria-label="not tested">–</span><div><b>Asks for a login first</b><span class="sum">Everything else is behind the login, so we did not score it.</span></div><span class="st">not tested</span></li>
+ </ul></section>
+ <section class="sec" id="try"><h2>Test it yourself</h2><p class="hint">Is this your server? This signs in with your account and tests everything behind the login.</p>
+  <div class="cmd"><code id="cmd">npx qamcp-cli https://snapstay.ai/mcp --login</code><button type="button" id="copy">Copy</button></div></section>
+ <section class="sec" id="history"><h2>Score over time</h2><ul class="hist"><li><span class="d">18 Oct 2026</span><span class="v nl">not scored</span></li></ul><p class="hint">One test so far. New tests will show here.</p></section>
+ <section class="sec" id="reviews"><h2>Reviews</h2><p class="hint">Coming soon: reviews from people who use Snapstay, signed in with GitHub, one per person. Reviews never change the score.</p></section>
+ <div class="claim"><div><b>Is this your server?</b><p>Soon you can claim this page: re-test it from here, reply to results, and show a "Tested by QAmcp" badge.</p><p>Have a concern, or want it removed? <a href="https://github.com/QAmcp/qamcp-cli/issues">Ask us</a> and we'll take it off the list. <a href="../directory-rules.html">How the directory works</a></p></div></div>
+</div>
+<script src="../theme.js"></script>
+<script>
+for (const id of ['copy', 'copy-top']) document.getElementById(id).onclick = async (e) => {
+  const b = e.currentTarget, was = b.textContent;
+  try { await navigator.clipboard.writeText(document.getElementById('cmd').textContent); b.textContent = 'Copied'; } catch (err) { b.textContent = 'Select the command below'; }
+  setTimeout(() => (b.textContent = was), 1800);
+};
+</script>
+</body></html>

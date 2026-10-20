@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Analytics Legends — SAP Analytics Intelligence: QAmcp test results</title>
+<meta name="description" content="Analytics Legends — SAP Analytics Intelligence MCP server: scored 95/100 when tested by QAmcp on 19 Oct 2026.">
+<script>try{var t=localStorage.getItem('qamcp-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="stylesheet" href="../site.css"><link rel="stylesheet" href="../theme.css"><link rel="stylesheet" href="server.css">
+</head><body>
+<div class="wrap">
+ <header class="top"><a class="brand" href="../index.html">QA<b>mcp</b></a><nav aria-label="Main"><a href="../directory.html" aria-current="page">Directory</a><a href="../test.html">Test a server</a><a href="../how-it-works.html">How it works</a><a href="../safety.html">Safety</a><a href="../ci.html">Run it in CI</a><a href="../samples.html">Sample reports</a></nav>
+  <div class="tools"><button class="theme" id="theme" type="button">Light</button><a class="gh" href="https://github.com/QAmcp/qamcp-cli">GitHub</a></div></header>
+ <section class="hero">
+  <img class="logo" src="logo/ai-analyticslegends-sap-analytics.png" alt="" width="96" height="96">
+  <div class="who">
+   <p class="crumb"><a href="../directory.html">Directory</a> / Analytics Legends — SAP Analytics Intelligence</p>
+   <h1>Analytics Legends — SAP Analytics Intelligence</h1>
+   <p class="by">by <a href="https://analyticslegends.ai/" rel="noopener nofollow">analyticslegends.ai</a> · https://analyticslegends.ai/mcp</p>
+   <p class="d">AI agent for SAP analytics: firms, day rates, contract radar, news, concepts, studies</p>
+   <div class="chips"><span>22 tools</span><span class="ok">✓ all read-only</span><span class="ok">✓ no account needed</span><span>Pricing: on their site</span></div>
+   <div class="acts"><button class="p" type="button" id="copy-top">Copy the test command</button><a class="s" href="https://analyticslegends.ai/pricing/" rel="noopener nofollow">See pricing →</a><a class="s" href="https://analyticslegends.ai/" rel="noopener nofollow">Visit website</a></div>
+  </div>
+  <div class="medal">
+   <div class="n">95<small> /100</small></div>
+   <span class="stamp mid">PASS · WITH NOTES</span>
+   
+   <p>11 of 11 checks · 19 Oct 2026</p>
+  </div>
+ </section>
+ <nav class="tabs" aria-label="On this page"><a href="#tools">What it can do</a><a href="#results">Test results</a><a href="#try">Test it yourself</a><a href="#history">Score over time</a><a href="#reviews">Reviews</a></nav>
+ <section class="sec" id="tools"><h2>What it can do</h2><p class="hint">22 tools, in the server's own words.</p><div class="grid">
+<div class="tool"><code>search_firms</code><span class="ro">read-only</span><p>Search the published Analytics Legends directory of SAP AI &amp; analytics service providers — placement agencies, Big-4 and ESN practices, SAP vendors, platforms …</p></div>
+<div class="tool"><code>count_firms_by</code><span class="ro">read-only</span><p>Answer a COUNTING question about the published firm directory in one call: how many organisations per country, per REGION (the six-value geography), per kind, …</p></div>
+<div class="tool"><code>get_firm</code><span class="ro">read-only</span><p>Fetch one organisation from the published directory by its database slug (`rows[].slug` from search_firms, verbatim).</p></div>
+<div class="tool"><code>list_firm_kinds</code><span class="ro">read-only</span><p>Breakdown of the published firm directory by organisation kind, with a live row count per kind.</p></div>
+<div class="tool"><code>list_freelance_platforms</code><span class="ro">read-only</span><p>The subset of the published directory where a consultant can CREATE A PROFILE — freelance marketplaces, job boards with candidate profiles, talent platforms an…</p></div>
+<div class="tool"><code>find_opportunities</code><span class="ro">read-only</span><p>Search every SAP contract and permanent-role posting Analytics Legends publishes to an ANONYMOUS visitor.</p></div>
+<div class="tool"><code>search_news</code><span class="ro">read-only</span><p>Search the Analytics Legends market-news corpus.</p></div>
+<div class="tool"><code>search_concepts</code><span class="ro">read-only</span><p>Search the SAP AI &amp; analytics concept encyclopaedia — the vocabulary of the stack, written for practitioners.</p></div>
+<div class="tool"><code>get_concept</code><span class="ro">read-only</span><p>Fetch one concept entry by slug: title, category, level, tags and the editor&#39;s summary.</p></div>
+<div class="tool"><code>list_studies</code><span class="ro">read-only</span><p>List the Analytics Legends deep-research studies with their edition, as-of date, audience, word count and canonical URL.</p></div>
+<div class="tool"><code>get_day_rate_benchmark</code><span class="ro">read-only</span><p>The PUBLIC day-rate aggregate for SAP AI &amp; analytics freelance work: min/max daily rate by country, specialisation and seniority — `daily_rate_min` / `daily_ra…</p></div>
+<div class="tool"><code>list_sap_modules</code><span class="ro">read-only</span><p>The canonical SAP module/product taxonomy Analytics Legends classifies against (codes and EN/FR labels by category).</p></div>
+<div class="tool"><code>find_academy_modules</code><span class="ro">read-only</span><p>Search the Analytics Legends Academy — the written training modules on SAP Datasphere, Business Data Cloud, SAP Analytics Cloud, BW/4HANA and Databricks — by t…</p></div>
+<div class="tool"><code>query_knowledge_graph</code><span class="ro">read-only</span><p>The RELATIONS between the platform&#39;s teaching objects — which Academy module teaches which concept, which study covers which module, what a concept relates to.</p></div>
+<div class="tool"><code>get_concept_card</code><span class="ro">read-only</span><p>The FULL encyclopaedia card for one concept — body, cheat sheet, glossary, pro tip, and the four analysis tables (decision table, peer comparison, named pitfal…</p></div>
+<div class="tool"><code>get_study</code><span class="ro">read-only</span><p>Read one Analytics Legends study BODY — the paid text behind list_studies&#39; metadata.</p></div>
+<div class="tool"><code>get_academy_module</code><span class="ro">read-only</span><p>Read one Academy training module in full — body, learning objectives and summary, EN, FR and DE — the written course corpus the €29.90 Consultant Pass sells.</p></div>
+<div class="tool"><code>find_sap_clients</code><span class="ro">read-only</span><p>Search the SAP END-CUSTOMER corpus — the companies that RUN SAP, not the firms that sell services (those are search_firms).</p></div>
+<div class="tool"><code>get_sap_client_profile</code><span class="ro">read-only</span><p>The full profile of one SAP end-customer — SAP footprint (products in use, modules known), analytics solutions, identity and evidence fields.</p></div>
+<div class="tool"><code>get_expansion_brief</code><span class="ro">read-only</span><p>The one-call brief a services practice reads before opening a subsidiary in another region: providers already there (by kind and by country, and how many are L…</p></div>
+<div class="tool"><code>find_partner_candidates</code><span class="ro">read-only</span><p>Rank the LOCAL service providers of a target country or region — the firms a practice partners with, subcontracts to, or acquires to enter a market.</p></div>
+<div class="tool"><code>get_firm_intel</code><span class="ro">read-only</span><p>The paid intelligence profile of a services firm — SAP practice size and partner level, delivery flags per product, typical day rate and seniority, notable cli…</p></div>
+ </div></section>
+ <section class="sec" id="results"><h2>Test results</h2><p class="hint">Safe mode: only tools labeled read-only were run. <a href="../how-it-works.html">How the test works</a></p><ul class="checks">
+<li class="chk warn"><span class="mk warn" aria-label="note">!</span><div><b>Resources and prompts work</b><details><summary>1 warning ()</summary><ul><li class="off"><span class="m">–</span>Could not list resources: the server limited our requests (HTTP 429)</li><li class="warn"><span class="m">!</span>Listing resource templates failed: Error POSTing to endpoint: {&quot;jsonrpc&quot;:&quot;2.0&quot;,&quot;id&quot;:80,&quot;error&quot;:{&quot;code&quot;:-32000,&quot;message&quot;:&quot;Too many requests in a 10-second window (20 max). Slo…</li><li class="off"><span class="m">–</span>Could not list prompts: the server limited our requests (HTTP 429)</li></ul></details></div><span class="st">note</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Connects</b><span class="sum">Connected in 318 ms</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Ready for the newest MCP version</b><span class="sum">Uses the latest MCP version (2026-07-28)</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Lists its tools</b><span class="sum">Found 22 tools</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Every tool is described</b><span class="sum">All 22 tools and their inputs are described</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Tools are labeled safe or dangerous</b><span class="sum">Every tool has a safety label</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>No hidden instructions</b><span class="sum">No hidden instructions found in tool descriptions</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Tools work with good inputs</b><details><summary>All good</summary><ul><li class="pass"><span class="m">✓</span><b>search_firms</b>: Worked (1.3 s)</li><li class="pass"><span class="m">✓</span><b>count_firms_by</b>: Worked (944 ms)</li><li class="pass"><span class="m">✓</span><b>get_firm</b>: Answered with an error, probably because of our sample input: { &quot;tool&quot;: &quot;get_firm&quot;, &quot;error&quot;: &quot;No firm with slug &#39;test&#39; in the published tranche.&quot;, &quot;hint&quot;: &quot;The firm may exist in a paid dataset, or the …</li><li class="pass"><span class="m">✓</span><b>list_firm_kinds</b>: Worked (1.1 s)</li><li class="pass"><span class="m">✓</span><b>list_freelance_platforms</b>: Worked (922 ms)</li><li class="pass"><span class="m">✓</span><b>search_news</b>: Worked (1.1 s)</li><li class="pass"><span class="m">✓</span><b>search_concepts</b>: Worked (1.0 s)</li><li class="pass"><span class="m">✓</span><b>get_concept</b>: Answered with an error, probably because of our sample input: { &quot;tool&quot;: &quot;get_concept&quot;, &quot;error&quot;: &quot;No active concept with slug &#39;test&#39;.&quot;, &quot;hint&quot;: &quot;Call search_concepts to list valid slugs.&quot;, &quot;_attribution…</li><li class="more">and 14 more</li></ul></details></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Bad inputs give a clean error</b><details><summary>All good</summary><ul><li class="pass"><span class="m">✓</span><b>search_firms</b>: Refused wrong type for &quot;query&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>count_firms_by</b>: Refused missing required input &quot;by&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>count_firms_by</b>: Refused wrong type for &quot;by&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>get_firm</b>: Refused missing required input &quot;slug&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>get_firm</b>: Refused wrong type for &quot;slug&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>list_freelance_platforms</b>: Refused wrong type for &quot;country&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>search_news</b>: Refused wrong type for &quot;query&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>search_concepts</b>: Refused wrong type for &quot;query&quot; with a clear error</li><li class="more">and 15 more</li></ul></details></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Fast enough</b><details><summary>All good</summary><ul><li class="pass"><span class="m">✓</span>Connecting took 318 ms</li><li class="pass"><span class="m">✓</span>Listing tools took 294 ms</li><li class="pass"><span class="m">✓</span>Average tool answer: 802 ms</li><li class="pass"><span class="m">✓</span><b>search_firms</b>: Slowest tool: search_firms (1.3 s)</li></ul></details></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>No secrets leaked</b><span class="sum">Checked 67 error messages: no secrets or internal details</span></div><span class="st">pass</span></li>
+<li class="chk off"><span class="mk off" aria-label="not tested">–</span><div><b>Tools work together</b><span class="sum">No tool&#39;s answer could be fed into another tool, so there were no chains to test (not counted either way)</span></div><span class="st">not tested</span></li>
+ </ul></section>
+ <section class="sec" id="try"><h2>Test it yourself</h2><p class="hint">Free and open source. Same checks, same score.</p>
+  <div class="cmd"><code id="cmd">npx qamcp-cli https://analyticslegends.ai/mcp</code><button type="button" id="copy">Copy</button></div></section>
+ <section class="sec" id="history"><h2>Score over time</h2><ul class="hist"><li><span class="d">13 Oct 2026</span><span class="bar"><i style="width:89%"></i></span><span class="v">89</span></li><li><span class="d">17 Oct 2026</span><span class="bar"><i style="width:94%"></i></span><span class="v">94</span></li><li><span class="d">18 Oct 2026</span><span class="bar"><i style="width:100%"></i></span><span class="v">100</span></li><li><span class="d">19 Oct 2026</span><span class="bar"><i style="width:95%"></i></span><span class="v">95</span></li></ul></section>
+ <section class="sec" id="reviews"><h2>Reviews</h2><p class="hint">Coming soon: reviews from people who use Analytics Legends — SAP Analytics Intelligence, signed in with GitHub, one per person. Reviews never change the score.</p></section>
+ <div class="claim"><div><b>Is this your server?</b><p>Soon you can claim this page: re-test it from here, reply to results, and show a "Tested by QAmcp" badge.</p><p>Have a concern, or want it removed? <a href="https://github.com/QAmcp/qamcp-cli/issues">Ask us</a> and we'll take it off the list. <a href="../directory-rules.html">How the directory works</a></p></div></div>
+</div>
+<script src="../theme.js"></script>
+<script>
+for (const id of ['copy', 'copy-top']) document.getElementById(id).onclick = async (e) => {
+  const b = e.currentTarget, was = b.textContent;
+  try { await navigator.clipboard.writeText(document.getElementById('cmd').textContent); b.textContent = 'Copied'; } catch (err) { b.textContent = 'Select the command below'; }
+  setTimeout(() => (b.textContent = was), 1800);
+};
+</script>
+</body></html>
