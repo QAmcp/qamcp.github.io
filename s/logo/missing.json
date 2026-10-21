@@ -74,5 +74,15 @@
  "ai.productbay.connect/productbay-connect": "2026-10-20",
  "ai.quarri/quarri": "2026-10-20",
  "ai.satohub/onchain-agents": "2026-10-20",
- "ai.securenow/securenow": "2026-10-20"
+ "ai.securenow/securenow": "2026-10-20",
+ "ai.askgina/gina": "2026-10-21",
+ "ai.askgina/perps": "2026-10-21",
+ "ai.askgina/predictions": "2026-10-21",
+ "ai.askgina/spot": "2026-10-21",
+ "ai.autovox/autovox": "2026-10-21",
+ "ai.blinibot/agent-lounge": "2026-10-21",
+ "ai.buzzberg/mcp": "2026-10-21",
+ "ai.creatify/ad-agent": "2026-10-21",
+ "ai.metzia/metzia": "2026-10-21",
+ "ai.prologue/mcp": "2026-10-21"
 }

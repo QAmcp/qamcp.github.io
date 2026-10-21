@@ -753,5 +753,90 @@
  },
  "ai.securenow/securenow": {
   "checked": "2026-10-20"
+ },
+ "ai.1court.state/court-directory": {
+  "checked": "2026-10-21"
+ },
+ "ai.artemisgtm/gtm-engineer": {
+  "url": "https://artemisgtm.ai/pricing/",
+  "checked": "2026-10-21"
+ },
+ "ai.askgina/gina": {
+  "checked": "2026-10-21"
+ },
+ "ai.askgina/perps": {
+  "checked": "2026-10-21"
+ },
+ "ai.askgina/predictions": {
+  "checked": "2026-10-21"
+ },
+ "ai.askgina/spot": {
+  "checked": "2026-10-21"
+ },
+ "ai.autovox/autovox": {
+  "url": "https://autovox.ai/plans",
+  "checked": "2026-10-21"
+ },
+ "ai.betslipdoctor/mcp": {
+  "url": "https://betslipdoctor.ai/pricing",
+  "checked": "2026-10-21"
+ },
+ "ai.blinibot/agent-lounge": {
+  "url": "https://blinibot.ai/membership",
+  "checked": "2026-10-21"
+ },
+ "ai.booqer/booqer": {
+  "checked": "2026-10-21"
+ },
+ "ai.buzzberg/mcp": {
+  "checked": "2026-10-21"
+ },
+ "ai.clevera/mcp": {
+  "url": "https://www.clevera.ai/pricing",
+  "checked": "2026-10-21"
+ },
+ "ai.creatify/ad-agent": {
+  "checked": "2026-10-21"
+ },
+ "ai.dealsharp/dealsharp": {
+  "checked": "2026-10-21"
+ },
+ "ai.galatic/galatic": {
+  "url": "https://galatic.ai/pricing",
+  "checked": "2026-10-21"
+ },
+ "ai.genfeed/genfeed": {
+  "checked": "2026-10-21"
+ },
+ "ai.gosummer/summer": {
+  "checked": "2026-10-21"
+ },
+ "ai.linkitapp/linkit": {
+  "url": "https://linkitapp.ai/pricing/",
+  "checked": "2026-10-21"
+ },
+ "ai.metzia/metzia": {
+  "checked": "2026-10-21"
+ },
+ "ai.oceantoken/mcp": {
+  "checked": "2026-10-21"
+ },
+ "ai.okforest/okforest": {
+  "checked": "2026-10-21"
+ },
+ "ai.pipefire/pipefire": {
+  "url": "https://pipefire.ai/pricing",
+  "checked": "2026-10-21"
+ },
+ "ai.prologue/mcp": {
+  "url": "https://prologue.ai/plans",
+  "checked": "2026-10-21"
+ },
+ "ai.realtypad/realtypad": {
+  "url": "https://realtypad.ai/pricing",
+  "checked": "2026-10-21"
+ },
+ "ai.relaylink/relaylink": {
+  "checked": "2026-10-21"
  }
 }
