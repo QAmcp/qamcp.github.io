@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>nyna — AI wedding planner: QAmcp test results</title>
+<meta name="description" content="nyna — AI wedding planner MCP server: scored 88/100 when tested by QAmcp on 22 Oct 2026.">
+<script>try{var t=localStorage.getItem('qamcp-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="stylesheet" href="../site.css"><link rel="stylesheet" href="../theme.css"><link rel="stylesheet" href="server.css">
+</head><body>
+<div class="wrap">
+ <header class="top"><a class="brand" href="../index.html">QA<b>mcp</b></a><nav aria-label="Main"><a href="../directory.html" aria-current="page">Directory</a><a href="../test.html">Test a server</a><a href="../how-it-works.html">How it works</a><a href="../safety.html">Safety</a><a href="../ci.html">Run it in CI</a><a href="../samples.html">Sample reports</a></nav>
+  <div class="tools"><button class="theme" id="theme" type="button">Light</button><a class="gh" href="https://github.com/QAmcp/qamcp-cli">GitHub</a></div></header>
+ <section class="hero">
+  <img class="logo" src="logo/ai-nyna-mcp.png" alt="" width="96" height="96">
+  <div class="who">
+   <p class="crumb"><a href="../directory.html">Directory</a> / nyna — AI wedding planner</p>
+   <h1>nyna — AI wedding planner</h1>
+   <p class="by">by <a href="https://nyna.ai/for-agents" rel="noopener nofollow">nyna.ai</a> · https://nyna.ai/mcp</p>
+   <p class="d">Wedding provider directory, gift ideas, and a couple&#39;s own wedding plan behind OAuth.</p>
+   <div class="chips"><span>23 tools</span><span class="ok">✓ no account needed</span><span>Pricing: not listed</span></div>
+   <div class="acts"><button class="p" type="button" id="copy-top">Copy the test command</button><a class="s" href="https://nyna.ai/for-agents" rel="noopener nofollow">Visit website</a></div>
+  </div>
+  <div class="medal">
+   <div class="n">88<small> /100</small></div>
+   <span class="stamp mid">PASS · WITH NOTES</span>
+   
+   <p>10 of 10 checks · 22 Oct 2026</p>
+  </div>
+ </section>
+ <nav class="tabs" aria-label="On this page"><a href="#tools">What it can do</a><a href="#results">Test results</a><a href="#try">Test it yourself</a><a href="#history">Score over time</a><a href="#reviews">Reviews</a></nav>
+ <section class="sec" id="tools"><h2>What it can do</h2><p class="hint">23 tools, in the server's own words.</p><div class="grid">
+<div class="tool"><code>list_provider_categories</code><span class="ro">read-only</span><p>[Free] Lists the kinds of wedding provider nyna indexes (venues, caterers, photographers…) — costs no credits and returns the closed set of category slugs that…</p></div>
+<div class="tool"><code>list_cities</code><span class="ro">read-only</span><p>[Free] Lists the featured cities — the ones with a nyna directory page — optionally filtered by region — costs no credits and returns city slugs, country, regi…</p></div>
+<div class="tool"><code>search_providers</code><span class="ro">read-only</span><p>[Free] Searches wedding providers — venues, caterers, photographers, florists and more — around any city or place in the world, by category and free text — cos…</p></div>
+<div class="tool"><code>get_provider</code><span class="ro">read-only</span><p>[Free] Reads one provider by the id search_providers returns — costs no credits and returns at least what the search result held: name, address, city, category…</p></div>
+<div class="tool"><code>list_gift_categories</code><span class="ro">read-only</span><p>[Free] Lists the gift categories and the countries the gift catalogue is localised for — costs no credits and returns the closed sets of slugs that search_gift…</p></div>
+<div class="tool"><code>search_gift_ideas</code><span class="ro">read-only</span><p>[Free] Searches the wedding-gift ideas couples added to their nyna registries, by category, country, title and price — costs no credits and returns up to 50 id…</p></div>
+<div class="tool"><code>get_wedding</code><span class="ro">read-only</span><p>[Sign-in required] Reads the connected account’s wedding — costs no credits and returns the date, venue, budget, guest count and theme in a `writable` half (ex…</p></div>
+<div class="tool"><code>update_wedding</code><p>[Sign-in required] Updates the wedding’s details — date, venue, budget, guest count, theme, notes — as a merge patch — costs no credits and returns the fields …</p></div>
+<div class="tool"><code>get_checklist</code><span class="ro">read-only</span><p>[Sign-in required] Reads the couple’s checklist — costs no credits and returns each item with its id, title, status, due date and category, plus the totals (al…</p></div>
+<div class="tool"><code>set_checklist_item</code><p>[Sign-in required] Marks one checklist item done or not done — costs no credits and returns the item with its previous and new state.</p></div>
+<div class="tool"><code>get_guests</code><span class="ro">read-only</span><p>[Sign-in required] Reads the guest list — costs no credits and returns each guest with RSVP status, side and table, plus head-count totals by status so nothing…</p></div>
+<div class="tool"><code>add_guests</code><p>[Sign-in required] Appends up to 100 named guests to the guest list in one write — costs no credits and returns the names added, the names skipped as duplicate…</p></div>
+<div class="tool"><code>get_day_of_timeline</code><span class="ro">read-only</span><p>[Sign-in required] Reads the wedding-day plan — costs no credits and returns the run sheet, vendor coordination status, guest figures, readiness score and flag…</p></div>
+<div class="tool"><code>get_credit_balance</code><span class="ro">read-only</span><p>[Sign-in required] Reads the connected account’s credit balance — costs no credits and returns the balance, the price of each metered action in the nyna app, a…</p></div>
+<div class="tool"><code>suggest_menu</code><span class="ro">read-only</span><p>[Sign-in required] Generates a wedding menu — cocktail, starters, mains, desserts, drinks, cake and a children’s menu — sized to the connected account’s guest …</p></div>
+<div class="tool"><code>suggest_day_schedule</code><span class="ro">read-only</span><p>[Sign-in required] Generates a 10–15 event wedding-day timeline in 24h time, shaped by the connected account’s venue, ceremony type and guest count — costs no …</p></div>
+<div class="tool"><code>parse_guest_list</code><span class="ro">read-only</span><p>[Sign-in required] Parses a pasted guest list — one per line or comma-separated, with or without emails and phones — into structured guests with detected roles…</p></div>
+<div class="tool"><code>set_run_sheet</code><p>[Sign-in required] Writes a reviewed timeline to the wedding as the day-of run sheet, replacing the one there — costs no credits and returns the number of even…</p></div>
+<div class="tool"><code>get_provider_profile</code><span class="ro">read-only</span><p>[Partner] Reads the connected provider account’s own listing — costs no credits and returns an `editable` half (exactly the fields update_provider_profile acce…</p></div>
+<div class="tool"><code>update_provider_profile</code><p>[Partner] Updates the connected provider’s listing — description, services, price range, website, Instagram, phone, city (any city in the world, as a display n…</p></div>
+<div class="tool"><code>get_provider_inquiries</code><span class="ro">read-only</span><p>[Partner] Reads the enquiries couples sent through the connected provider’s nyna listing, newest first — costs no credits and returns each enquiry (sender name…</p></div>
+<div class="tool"><code>get_provider_stats</code><span class="ro">read-only</span><p>[Partner] Reads the connected provider’s listing performance over a chosen window — costs no credits and returns views, enquiries and conversion for the window…</p></div>
+<div class="tool"><code>quote_cost</code><span class="ro">read-only</span><p>[Free] Quotes a tool before it is called — costs no credits and returns the credits a successful call spends (0 for every tool today), the scopes it needs, the…</p></div>
+ </div></section>
+ <section class="sec" id="results"><h2>Test results</h2><p class="hint">Safe mode: only tools labeled read-only were run. <a href="../how-it-works.html">How the test works</a></p><ul class="checks">
+<li class="chk warn"><span class="mk warn" aria-label="note">!</span><div><b>Ready for the newest MCP version</b><details><summary>1 warning</summary><ul><li class="warn"><span class="m">!</span>Uses an older MCP version (2025-11-25). It works today, but it isn&#39;t on the July 2026 version (2026-07-28) yet.</li></ul></details></div><span class="st">note</span></li>
+<li class="chk warn"><span class="mk warn" aria-label="note">!</span><div><b>Every tool is described</b><details><summary>9 warnings</summary><ul><li class="warn"><span class="m">!</span><b>list_cities</b>: Inputs with no description: limit</li><li class="warn"><span class="m">!</span><b>search_gift_ideas</b>: Inputs with no description: category, max_price</li><li class="warn"><span class="m">!</span><b>update_wedding</b>: Inputs with no description: coupleNames, venue, venueName, theme, notes, budget, budgetMin, budgetMax, guestCount, ceremonyType, ceremonyLocation</li><li class="warn"><span class="m">!</span><b>get_checklist</b>: Inputs with no description: limit</li><li class="warn"><span class="m">!</span><b>set_checklist_item</b>: Inputs with no description: done</li><li class="warn"><span class="m">!</span><b>get_guests</b>: Inputs with no description: limit</li><li class="warn"><span class="m">!</span><b>parse_guest_list</b>: Inputs with no description: language</li><li class="warn"><span class="m">!</span><b>set_run_sheet</b>: Inputs with no description: events</li><li class="more">and 1 more</li></ul></details></div><span class="st">note</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Connects</b><span class="sum">Connected in 1.1 s</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Lists its tools</b><span class="sum">Found 23 tools</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Tools are labeled safe or dangerous</b><span class="sum">Every tool has a safety label</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>No hidden instructions</b><span class="sum">No hidden instructions found in tool descriptions</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Tools work with good inputs</b><details><summary>All good</summary><ul><li class="pass"><span class="m">✓</span><b>list_provider_categories</b>: Worked (557 ms)</li><li class="pass"><span class="m">✓</span><b>list_cities</b>: Worked (225 ms)</li><li class="pass"><span class="m">✓</span><b>search_providers</b>: Answered with an error, probably because of our sample input: { &quot;code&quot;: &quot;invalid_parameter&quot;, &quot;error&quot;: &quot;Give at least one of category, city or q — an unfiltered search of the whole directory is not a us…</li><li class="pass"><span class="m">✓</span><b>get_provider</b>: Answered with an error, probably because of our sample input: { &quot;code&quot;: &quot;not_found&quot;, &quot;error&quot;: &quot;No indexed provider with id test.&quot;, &quot;message&quot;: &quot;No indexed provider with id test.&quot;, &quot;next_step&quot;: &quot;Take the…</li><li class="pass"><span class="m">✓</span><b>list_gift_categories</b>: Worked (218 ms)</li><li class="pass"><span class="m">✓</span><b>search_gift_ideas</b>: Worked (251 ms)</li><li class="off"><span class="m">–</span><b>get_wedding</b>: Needs you to sign in, so it was not tested (not counted against the server)</li><li class="off"><span class="m">–</span><b>get_checklist</b>: Needs you to sign in, so it was not tested (not counted against the server)</li><li class="more">and 15 more</li></ul></details></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Bad inputs give a clean error</b><details><summary>All good</summary><ul><li class="pass"><span class="m">✓</span><b>list_cities</b>: Refused wrong type for &quot;region&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>search_providers</b>: Refused wrong type for &quot;category&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>get_provider</b>: Refused missing required input &quot;id&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>get_provider</b>: Refused wrong type for &quot;id&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>search_gift_ideas</b>: Refused wrong type for &quot;category&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>get_checklist</b>: Refused wrong type for &quot;status&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>get_guests</b>: Refused wrong type for &quot;rsvp&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>suggest_menu</b>: Refused missing required input &quot;prompt&quot; with a clear error</li><li class="more">and 9 more</li></ul></details></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Fast enough</b><details><summary>All good</summary><ul><li class="pass"><span class="m">✓</span>Connecting took 1.1 s</li><li class="pass"><span class="m">✓</span>Listing tools took 263 ms</li><li class="pass"><span class="m">✓</span>Average tool answer: 287 ms</li><li class="pass"><span class="m">✓</span><b>list_provider_categories</b>: Slowest tool: list_provider_categories (557 ms)</li></ul></details></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>No secrets leaked</b><span class="sum">Checked 33 error messages: no secrets or internal details</span></div><span class="st">pass</span></li>
+<li class="chk off"><span class="mk off" aria-label="not tested">–</span><div><b>Tools work together</b><span class="sum">No tool&#39;s answer could be fed into another tool, so there were no chains to test (not counted either way)</span></div><span class="st">not tested</span></li>
+ </ul></section>
+ <section class="sec" id="try"><h2>Test it yourself</h2><p class="hint">Free and open source. Same checks, same score.</p>
+  <div class="cmd"><code id="cmd">npx qamcp-cli https://nyna.ai/mcp</code><button type="button" id="copy">Copy</button></div></section>
+ <section class="sec" id="history"><h2>Score over time</h2><ul class="hist"><li><span class="d">22 Oct 2026</span><span class="bar"><i style="width:88%"></i></span><span class="v">88</span></li></ul><p class="hint">One test so far. New tests will show here.</p></section>
+ <section class="sec" id="reviews"><h2>Reviews</h2><p class="hint">Coming soon: reviews from people who use nyna — AI wedding planner, signed in with GitHub, one per person. Reviews never change the score.</p></section>
+ <div class="claim"><div><b>Is this your server?</b><p>Soon you can claim this page: re-test it from here, reply to results, and show a "Tested by QAmcp" badge.</p><p>Have a concern, or want it removed? <a href="https://github.com/QAmcp/qamcp-cli/issues">Ask us</a> and we'll take it off the list. <a href="../directory-rules.html">How the directory works</a></p></div></div>
+</div>
+<script src="../theme.js"></script>
+<script>
+for (const id of ['copy', 'copy-top']) document.getElementById(id).onclick = async (e) => {
+  const b = e.currentTarget, was = b.textContent;
+  try { await navigator.clipboard.writeText(document.getElementById('cmd').textContent); b.textContent = 'Copied'; } catch (err) { b.textContent = 'Select the command below'; }
+  setTimeout(() => (b.textContent = was), 1800);
+};
+</script>
+</body></html>

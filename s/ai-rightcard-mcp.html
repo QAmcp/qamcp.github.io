@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RightCard: QAmcp test results</title>
+<meta name="description" content="RightCard MCP server: scored 79/100 when tested by QAmcp on 22 Oct 2026.">
+<script>try{var t=localStorage.getItem('qamcp-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="stylesheet" href="../site.css"><link rel="stylesheet" href="../theme.css"><link rel="stylesheet" href="server.css">
+</head><body>
+<div class="wrap">
+ <header class="top"><a class="brand" href="../index.html">QA<b>mcp</b></a><nav aria-label="Main"><a href="../directory.html" aria-current="page">Directory</a><a href="../test.html">Test a server</a><a href="../how-it-works.html">How it works</a><a href="../safety.html">Safety</a><a href="../ci.html">Run it in CI</a><a href="../samples.html">Sample reports</a></nav>
+  <div class="tools"><button class="theme" id="theme" type="button">Light</button><a class="gh" href="https://github.com/QAmcp/qamcp-cli">GitHub</a></div></header>
+ <section class="hero">
+  <img class="logo" src="logo/ai-rightcard-mcp.ico" alt="" width="96" height="96">
+  <div class="who">
+   <p class="crumb"><a href="../directory.html">Directory</a> / RightCard</p>
+   <h1>RightCard</h1>
+   <p class="by">by <a href="https://rightcard.ai/mcp" rel="noopener nofollow">rightcard.ai</a> · https://mcp.rightcard.ai/mcp</p>
+   <p class="d">Which of your credit cards to use at any store, from verified bank data. No bank login.</p>
+   <div class="chips"><span>5 tools</span><span class="ok">✓ no account needed</span><span>Pricing: not listed</span></div>
+   <div class="acts"><button class="p" type="button" id="copy-top">Copy the test command</button><a class="s" href="https://rightcard.ai/mcp" rel="noopener nofollow">Visit website</a></div>
+  </div>
+  <div class="medal">
+   <div class="n">79<small> /100</small></div>
+   <span class="stamp mid">PASS · WITH NOTES</span>
+   
+   <p>Partial: 8 of 11 checks · 22 Oct 2026</p>
+  </div>
+ </section>
+ <nav class="tabs" aria-label="On this page"><a href="#tools">What it can do</a><a href="#results">Test results</a><a href="#try">Test it yourself</a><a href="#history">Score over time</a><a href="#reviews">Reviews</a></nav>
+ <section class="sec" id="tools"><h2>What it can do</h2><p class="hint">5 tools, in the server's own words.</p><div class="grid">
+<div class="tool"><code>best_card</code><p>Which of the given cards earns the most at a store (merchant) or for a spend category, today.</p></div>
+<div class="tool"><code>lookup_merchant</code><p>The store&#39;s reward category as RightCard&#39;s directory files it, its merchant type, and the merchant-code caveat when a category bonus usually will not post ther…</p></div>
+<div class="tool"><code>search_cards</code><p>Search RightCard&#39;s catalog by card or issuer name to get the ids to pass into best_card.</p></div>
+<div class="tool"><code>card</code><p>Everything RightCard knows about one card: rates by category, base rate, currency, annual fee, verification status, live rotating windows, and the choose-your-…</p></div>
+<div class="tool"><code>rotating_calendar</code><p>Live and upcoming rotating-category windows (Freedom Flex, Discover it, Citi Dividend…) and permanent merchant benefits, from the same verified data as the app.</p></div>
+ </div></section>
+ <section class="sec" id="results"><h2>Test results</h2><p class="hint">Safe mode: only tools labeled read-only were run. <a href="../how-it-works.html">How the test works</a></p><ul class="checks">
+<li class="chk warn"><span class="mk warn" aria-label="note">!</span><div><b>Ready for the newest MCP version</b><details><summary>1 warning</summary><ul><li class="warn"><span class="m">!</span>Uses an older MCP version (2025-11-25). It works today, but it isn&#39;t on the July 2026 version (2026-07-28) yet.</li></ul></details></div><span class="st">note</span></li>
+<li class="chk warn"><span class="mk warn" aria-label="note">!</span><div><b>Every tool is described</b><details><summary>4 warnings</summary><ul><li class="warn"><span class="m">!</span><b>lookup_merchant</b>: Inputs with no description: name</li><li class="warn"><span class="m">!</span><b>search_cards</b>: Inputs with no description: query, issuer, limit</li><li class="warn"><span class="m">!</span><b>card</b>: Inputs with no description: id</li><li class="warn"><span class="m">!</span><b>rotating_calendar</b>: Inputs with no description: card_id</li></ul></details></div><span class="st">note</span></li>
+<li class="chk warn"><span class="mk warn" aria-label="note">!</span><div><b>Tools are labeled safe or dangerous</b><details><summary>1 warning</summary><ul><li class="warn"><span class="m">!</span>5 of 5 tools have no safety label (read-only or dangerous): best_card, lookup_merchant, search_cards, card, rotating_calendar</li></ul></details></div><span class="st">note</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Connects</b><span class="sum">Connected in 471 ms</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Lists its tools</b><span class="sum">Found 5 tools</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>No hidden instructions</b><span class="sum">No hidden instructions found in tool descriptions</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Fast enough</b><details><summary>All good</summary><ul><li class="pass"><span class="m">✓</span>Connecting took 471 ms</li><li class="pass"><span class="m">✓</span>Listing tools took 53 ms</li></ul></details></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Resources and prompts work</b><details><summary>All good (2 resources, 1 prompt)</summary><ul><li class="pass"><span class="m">✓</span>Opened 2 of 2 resources</li><li class="pass"><span class="m">✓</span>An address that does not exist gets a clean &quot;not found&quot; error</li><li class="pass"><span class="m">✓</span>Opened 1 of 1 prompts</li></ul></details></div><span class="st">pass</span></li>
+<li class="chk off"><span class="mk off" aria-label="not tested">–</span><div><b>Tools work with good inputs</b><details><summary>Not tested</summary><ul><li class="off"><span class="m">–</span><b>best_card</b>: Not run: no safety label (if you own this server, test again in owner mode)</li><li class="off"><span class="m">–</span><b>lookup_merchant</b>: Not run: no safety label (if you own this server, test again in owner mode)</li><li class="off"><span class="m">–</span><b>search_cards</b>: Not run: no safety label (if you own this server, test again in owner mode)</li><li class="off"><span class="m">–</span><b>card</b>: Not run: no safety label (if you own this server, test again in owner mode)</li><li class="off"><span class="m">–</span><b>rotating_calendar</b>: Not run: no safety label (if you own this server, test again in owner mode)</li></ul></details></div><span class="st">not tested</span></li>
+<li class="chk off"><span class="mk off" aria-label="not tested">–</span><div><b>Bad inputs give a clean error</b><span class="sum">Not tested</span></div><span class="st">not tested</span></li>
+<li class="chk off"><span class="mk off" aria-label="not tested">–</span><div><b>Tools work together</b><span class="sum">No safe tool returned data to start a chain from, so chains were not tested (not counted either way)</span></div><span class="st">not tested</span></li>
+<li class="chk off"><span class="mk off" aria-label="not tested">–</span><div><b>No secrets leaked</b><span class="sum">No error messages to check</span></div><span class="st">not tested</span></li>
+ </ul></section>
+ <section class="sec" id="try"><h2>Test it yourself</h2><p class="hint">Free and open source. Same checks, same score.</p>
+  <div class="cmd"><code id="cmd">npx qamcp-cli https://mcp.rightcard.ai/mcp</code><button type="button" id="copy">Copy</button></div></section>
+ <section class="sec" id="history"><h2>Score over time</h2><ul class="hist"><li><span class="d">22 Oct 2026</span><span class="bar"><i style="width:79%"></i></span><span class="v">79</span></li></ul><p class="hint">One test so far. New tests will show here.</p></section>
+ <section class="sec" id="reviews"><h2>Reviews</h2><p class="hint">Coming soon: reviews from people who use RightCard, signed in with GitHub, one per person. Reviews never change the score.</p></section>
+ <div class="claim"><div><b>Is this your server?</b><p>Soon you can claim this page: re-test it from here, reply to results, and show a "Tested by QAmcp" badge.</p><p>Have a concern, or want it removed? <a href="https://github.com/QAmcp/qamcp-cli/issues">Ask us</a> and we'll take it off the list. <a href="../directory-rules.html">How the directory works</a></p></div></div>
+</div>
+<script src="../theme.js"></script>
+<script>
+for (const id of ['copy', 'copy-top']) document.getElementById(id).onclick = async (e) => {
+  const b = e.currentTarget, was = b.textContent;
+  try { await navigator.clipboard.writeText(document.getElementById('cmd').textContent); b.textContent = 'Copied'; } catch (err) { b.textContent = 'Select the command below'; }
+  setTimeout(() => (b.textContent = was), 1800);
+};
+</script>
+</body></html>

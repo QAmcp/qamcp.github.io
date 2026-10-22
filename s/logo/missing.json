@@ -84,5 +84,14 @@
  "ai.buzzberg/mcp": "2026-10-21",
  "ai.creatify/ad-agent": "2026-10-21",
  "ai.metzia/metzia": "2026-10-21",
- "ai.prologue/mcp": "2026-10-21"
+ "ai.prologue/mcp": "2026-10-21",
+ "ai.bluenexus/universal-mcp": "2026-10-22",
+ "ai.bnbgenius/mcp": "2026-10-22",
+ "ai.glassflow/rius": "2026-10-22",
+ "ai.harcourtvaluations/nav": "2026-10-22",
+ "ai.lianex/lianex": "2026-10-22",
+ "ai.memocore/mcp": "2026-10-22",
+ "ai.neuralverge/neuralverge": "2026-10-22",
+ "ai.saifs/customer-intelligence": "2026-10-22",
+ "ai.saifs/demand-forecasting": "2026-10-22"
 }

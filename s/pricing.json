@@ -838,5 +838,88 @@
  },
  "ai.relaylink/relaylink": {
   "checked": "2026-10-21"
+ },
+ "ai.achromat/mcp-server": {
+  "checked": "2026-10-22"
+ },
+ "ai.adkix/adkix": {
+  "url": "https://adkix.ai/pricing",
+  "checked": "2026-10-22"
+ },
+ "ai.arihaan/jobs": {
+  "checked": "2026-10-22"
+ },
+ "ai.augmentev/fabric-verify": {
+  "url": "https://augmentev.com/pricing",
+  "checked": "2026-10-22"
+ },
+ "ai.bluenexus/universal-mcp": {
+  "checked": "2026-10-22"
+ },
+ "ai.bnbgenius/mcp": {
+  "url": "https://bnbgenius.ai/pricing/",
+  "checked": "2026-10-22"
+ },
+ "ai.certscore/mcp-light": {
+  "url": "https://certscore.ai/pricing",
+  "checked": "2026-10-22"
+ },
+ "ai.cooperbuild/cooper": {
+  "checked": "2026-10-22"
+ },
+ "ai.deepscout/deepscout": {
+  "url": "https://deepscout.ai/en/pricing",
+  "checked": "2026-10-22"
+ },
+ "ai.dotsy/mcp": {
+  "checked": "2026-10-22"
+ },
+ "ai.getvda/rssa": {
+  "url": "https://github.com/pricing",
+  "checked": "2026-10-22"
+ },
+ "ai.glassflow/rius": {
+  "checked": "2026-10-22"
+ },
+ "ai.harcourtvaluations/nav": {
+  "checked": "2026-10-22"
+ },
+ "ai.lansy/desk": {
+  "checked": "2026-10-22"
+ },
+ "ai.lianex/lianex": {
+  "checked": "2026-10-22"
+ },
+ "ai.memocore/mcp": {
+  "checked": "2026-10-22"
+ },
+ "ai.neuralverge/neuralverge": {
+  "url": "https://neuralverge.ai/pricing",
+  "checked": "2026-10-22"
+ },
+ "ai.nyna/mcp": {
+  "checked": "2026-10-22"
+ },
+ "ai.olhary/olhary": {
+  "checked": "2026-10-22"
+ },
+ "ai.oriiion/oriiion": {
+  "checked": "2026-10-22"
+ },
+ "ai.prefrosh/prefrosh": {
+  "checked": "2026-10-22"
+ },
+ "ai.rightcard/mcp": {
+  "checked": "2026-10-22"
+ },
+ "ai.ripplewatch/ripplewatch": {
+  "url": "https://www.ripplewatch.ai/pricing",
+  "checked": "2026-10-22"
+ },
+ "ai.saifs/customer-intelligence": {
+  "checked": "2026-10-22"
+ },
+ "ai.saifs/demand-forecasting": {
+  "checked": "2026-10-22"
  }
 }
