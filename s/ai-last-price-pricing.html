@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Last Price: QAmcp test results</title>
+<meta name="description" content="Last Price MCP server: scored 77/100 when tested by QAmcp on 23 Oct 2026.">
+<script>try{var t=localStorage.getItem('qamcp-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="stylesheet" href="../site.css"><link rel="stylesheet" href="../theme.css"><link rel="stylesheet" href="server.css">
+</head><body>
+<div class="wrap">
+ <header class="top"><a class="brand" href="../index.html">QA<b>mcp</b></a><nav aria-label="Main"><a href="../directory.html" aria-current="page">Directory</a><a href="../test.html">Test a server</a><a href="../how-it-works.html">How it works</a><a href="../safety.html">Safety</a><a href="../ci.html">Run it in CI</a><a href="../samples.html">Sample reports</a></nav>
+  <div class="tools"><button class="theme" id="theme" type="button">Light</button><a class="gh" href="https://github.com/QAmcp/qamcp-cli">GitHub</a></div></header>
+ <section class="hero">
+  <span class="logo letter" aria-hidden="true">L</span>
+  <div class="who">
+   <p class="crumb"><a href="../directory.html">Directory</a> / Last Price</p>
+   <h1>Last Price</h1>
+   <p class="by">by <a href="https://last-price.ai/" rel="noopener nofollow">last-price.ai</a> · https://api.last-price.ai/api/mcp/rpc</p>
+   <p class="d">Compute and verify prices from an agent, metered per call. Works keyless on a demo tenant.</p>
+   <div class="chips"><span>280 tools</span><span class="ok">✓ no account needed</span><span>Pricing: on their site</span></div>
+   <div class="acts"><button class="p" type="button" id="copy-top">Copy the test command</button><a class="s" href="https://last-price.ai/pricing" rel="noopener nofollow">See pricing →</a><a class="s" href="https://last-price.ai/" rel="noopener nofollow">Visit website</a></div>
+  </div>
+  <div class="medal">
+   <div class="n">77<small> /100</small></div>
+   <span class="stamp mid">PASS · WITH NOTES</span>
+   
+   <p>Partial: 7 of 10 checks · 23 Oct 2026</p>
+  </div>
+ </section>
+ <nav class="tabs" aria-label="On this page"><a href="#tools">What it can do</a><a href="#results">Test results</a><a href="#try">Test it yourself</a><a href="#history">Score over time</a><a href="#reviews">Reviews</a></nav>
+ <section class="sec" id="tools"><h2>What it can do</h2><p class="hint">60 tools, in the server's own words.</p><div class="grid">
+<div class="tool"><code>pricing_conversation</code><p>Ask Last Price what pricing inputs are missing.</p></div>
+<div class="tool"><code>compute_price</code><p>Compute a price for a product/context via the Last Price Pricing Compute Network.</p></div>
+<div class="tool"><code>verify_price</code><p>Ask whether a price makes sense for its context, rather than what the price should be.</p></div>
+<div class="tool"><code>run_pricing_chain</code><p>Run a pricing chain: stages one after another, each stage&#39;s price feeding the next as current_price and its metadata carrying forward, your price guardrails ap…</p></div>
+<div class="tool"><code>list_functions</code><p>List the pricing functions registered for the authenticated tenant.</p></div>
+<div class="tool"><code>browse_catalog</code><p>Browse the public marketplace catalog of pricing functions.</p></div>
+<div class="tool"><code>verify_signed_quote</code><p>Check a signed price quote you received from a seller: was it issued by Last Price, is it unaltered, and is it still valid.</p></div>
+<div class="tool"><code>get_offer_terms</code><p>Read a seller&#39;s negotiable terms by their public handle: which products are open to offers, at what list price and currency, how many offers a negotiation allo…</p></div>
+<div class="tool"><code>make_offer</code><p>Name a price for a seller&#39;s product and get the answer: accept, counter or reject, with the price and the reason.</p></div>
+<div class="tool"><code>get_negotiation</code><p>Read your own negotiation with a seller: its status, the rounds used and left, the standing counter, the agreed price and the history.</p></div>
+<div class="tool"><code>accept_counter</code><p>Take the seller&#39;s standing counter: the negotiation closes as accepted at that price.</p></div>
+<div class="tool"><code>list_pricing_pipelines</code><p>See the multi-step pricing pipelines Last Price publishes and the stages they are built from: for each reference pipeline its name, what it is for, its topolog…</p></div>
+<div class="tool"><code>get_changelog</code><p>What changed in Last Price: the newest release notes, optionally for one feature, written for agents as well as people.</p></div>
+<div class="tool"><code>report_outcome</code><p>Report whether a price from compute_price was used: once the buyer has accepted or turned down a price, report it.</p></div>
+<div class="tool"><code>get_price_guardrails</code><p>Read the price guardrails saved for your workspace, and the defaults set_price_guardrails fills in for an omitted field.</p></div>
+<div class="tool"><code>set_price_guardrails</code><p>Save the price guardrails for your workspace.</p></div>
+<div class="tool"><code>get_prompt_class_benchmarks</code><p>Per-prompt-class quality benchmarks across pricing functions and providers: for each kind of request (no text, code, extraction or JSON, multilingual, long for…</p></div>
+<div class="tool"><code>get_channel_rates</code><p>Read the channel rates saved for your workspace: what each sales channel, such as a shopping agent or an agent marketplace, keeps of a sale, and how much of th…</p></div>
+<div class="tool"><code>set_channel_rates</code><p>Save the channel rates for your workspace.</p></div>
+<div class="tool"><code>get_pricing_analysis</code><p>Read what your workspace&#39;s own records say about its pricing, as findings, most urgent first: learned estimates ready while learned pricing is off, estimates t…</p></div>
+<div class="tool"><code>get_analyst_brief</code><p>Read the latest weekly brief the pricing analyst wrote for your workspace: short claims, each citing the findings it rests on (every number checked against the…</p></div>
+<div class="tool"><code>ask_pricing_analyst</code><p>Ask the pricing analyst one question about your workspace&#39;s pricing, in plain words, and get short claims that each cite the findings or estimates they rest on…</p></div>
+<div class="tool"><code>get_analyst_settings</code><p>Read whether the pricing analyst writes your workspace a brief, how often, whether a written brief may be paid from your Last Price balance and up to what mont…</p></div>
+<div class="tool"><code>set_analyst_settings</code><p>Change the pricing analyst settings for your workspace: turn the brief on or off, choose weekly or nightly, choose whether a written brief may be paid from you…</p></div>
+ </div><p class="hint">and 36 more</p></section>
+ <section class="sec" id="results"><h2>Test results</h2><p class="hint">Safe mode: only tools labeled read-only were run. <a href="../how-it-works.html">How the test works</a></p><ul class="checks">
+<li class="chk warn"><span class="mk warn" aria-label="note">!</span><div><b>Ready for the newest MCP version</b><details><summary>1 warning</summary><ul><li class="warn"><span class="m">!</span>Uses an older MCP version (2025-11-25). It works today, but it isn&#39;t on the July 2026 version (2026-07-28) yet.</li></ul></details></div><span class="st">note</span></li>
+<li class="chk warn"><span class="mk warn" aria-label="note">!</span><div><b>Every tool is described</b><details><summary>134 warnings</summary><ul><li class="warn"><span class="m">!</span><b>pricing_conversation</b>: Inputs with no description: action, answers</li><li class="warn"><span class="m">!</span>list_customers and list_contacts have nearly the same description (96% of their words are shared; the only difference: nothing vs &quot;contact&quot;), so an AI may not know which to pick</li><li class="warn"><span class="m">!</span>list_customers and list_orders have nearly the same description (96% of their words are shared; the only difference: nothing vs &quot;order&quot;), so an AI may not know which to pick</li><li class="warn"><span class="m">!</span>list_contacts and list_orders have nearly the same description (92% of their words are shared; the only difference: &quot;contact&quot; vs &quot;order&quot;), so an AI may not know which to pick</li><li class="warn"><span class="m">!</span>list_credits and get_credit have nearly the same description (88% of their words are shared; the only difference: &quot;list&quot;, &quot;bill&quot;, &quot;newest&quot; vs nothing), so an AI may not know which to pick</li><li class="warn"><span class="m">!</span>list_invoices and get_invoice have nearly the same description (87% of their words are shared; the only difference: &quot;list&quot;, &quot;newest&quot;, &quot;first&quot; vs nothing), so an AI may not know which to pick</li><li class="warn"><span class="m">!</span>delete_storefront and remove_storefront_domain have nearly the same description (86% of their words are shared; the only difference: &quot;delete&quot;, &quot;addresse&quot;, &quot;answering&quot; vs &quot;serving&quot;), so an AI may not know which to pick</li><li class="warn"><span class="m">!</span>get_customer and create_customer have nearly the same description (84% of their words are shared; the only difference: &quot;read&quot; vs &quot;add&quot;, &quot;optionally&quot;, &quot;own&quot;), so an AI may not know which to pick</li><li class="more">and 32 more</li></ul></details></div><span class="st">note</span></li>
+<li class="chk warn"><span class="mk warn" aria-label="note">!</span><div><b>Tools are labeled safe or dangerous</b><details><summary>19 warnings</summary><ul><li class="warn"><span class="m">!</span>280 of 280 tools have no safety label (read-only or dangerous): pricing_conversation, compute_price, verify_price, run_pricing_chain, list_functions, browse_catalog, verify_signed_quote, get_offer_terms, make_offer, get_negotiation, accept_</li><li class="warn"><span class="m">!</span><b>delete_feature_contract</b>: Name sounds like it deletes something, but it is not labeled dangerous</li><li class="warn"><span class="m">!</span><b>remove_offer_product</b>: Name sounds like it deletes something, but it is not labeled dangerous</li><li class="warn"><span class="m">!</span><b>delete_storefront</b>: Name sounds like it deletes something, but it is not labeled dangerous</li><li class="warn"><span class="m">!</span><b>remove_storefront_domain</b>: Name sounds like it deletes something, but it is not labeled dangerous</li><li class="warn"><span class="m">!</span><b>remove_storefront_dns_record</b>: Name sounds like it deletes something, but it is not labeled dangerous</li><li class="warn"><span class="m">!</span><b>delete_function</b>: Name sounds like it deletes something, but it is not labeled dangerous</li><li class="warn"><span class="m">!</span><b>delete_routing_policy</b>: Name sounds like it deletes something, but it is not labeled dangerous</li><li class="more">and 11 more</li></ul></details></div><span class="st">note</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Connects</b><span class="sum">Connected in 966 ms</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Lists its tools</b><span class="sum">Found 280 tools</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>No hidden instructions</b><span class="sum">No hidden instructions found in tool descriptions</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Fast enough</b><details><summary>All good</summary><ul><li class="pass"><span class="m">✓</span>Connecting took 966 ms</li><li class="pass"><span class="m">✓</span>Listing tools took 112 ms</li></ul></details></div><span class="st">pass</span></li>
+<li class="chk off"><span class="mk off" aria-label="not tested">–</span><div><b>Tools work with good inputs</b><details><summary>Not tested</summary><ul><li class="off"><span class="m">–</span><b>pricing_conversation</b>: Not run: no safety label (if you own this server, test again in owner mode)</li><li class="off"><span class="m">–</span><b>compute_price</b>: Not run: no safety label (if you own this server, test again in owner mode)</li><li class="off"><span class="m">–</span><b>verify_price</b>: Not run: no safety label (if you own this server, test again in owner mode)</li><li class="off"><span class="m">–</span><b>run_pricing_chain</b>: Not run: no safety label (if you own this server, test again in owner mode)</li><li class="off"><span class="m">–</span><b>list_functions</b>: Not run: no safety label (if you own this server, test again in owner mode)</li><li class="off"><span class="m">–</span><b>browse_catalog</b>: Not run: no safety label (if you own this server, test again in owner mode)</li><li class="off"><span class="m">–</span><b>verify_signed_quote</b>: Not run: no safety label (if you own this server, test again in owner mode)</li><li class="off"><span class="m">–</span><b>get_offer_terms</b>: Not run: no safety label (if you own this server, test again in owner mode)</li><li class="more">and 32 more</li></ul></details></div><span class="st">not tested</span></li>
+<li class="chk off"><span class="mk off" aria-label="not tested">–</span><div><b>Bad inputs give a clean error</b><span class="sum">Not tested</span></div><span class="st">not tested</span></li>
+<li class="chk off"><span class="mk off" aria-label="not tested">–</span><div><b>Tools work together</b><span class="sum">No safe tool returned data to start a chain from, so chains were not tested (not counted either way)</span></div><span class="st">not tested</span></li>
+<li class="chk off"><span class="mk off" aria-label="not tested">–</span><div><b>No secrets leaked</b><span class="sum">No error messages to check</span></div><span class="st">not tested</span></li>
+ </ul></section>
+ <section class="sec" id="try"><h2>Test it yourself</h2><p class="hint">Free and open source. Same checks, same score.</p>
+  <div class="cmd"><code id="cmd">npx qamcp-cli https://api.last-price.ai/api/mcp/rpc</code><button type="button" id="copy">Copy</button></div></section>
+ <section class="sec" id="history"><h2>Score over time</h2><ul class="hist"><li><span class="d">23 Oct 2026</span><span class="bar"><i style="width:77%"></i></span><span class="v">77</span></li></ul><p class="hint">One test so far. New tests will show here.</p></section>
+ <section class="sec" id="reviews"><h2>Reviews</h2><p class="hint">Coming soon: reviews from people who use Last Price, signed in with GitHub, one per person. Reviews never change the score.</p></section>
+ <div class="claim"><div><b>Is this your server?</b><p>Soon you can claim this page: re-test it from here, reply to results, and show a "Tested by QAmcp" badge.</p><p>Have a concern, or want it removed? <a href="https://github.com/QAmcp/qamcp-cli/issues">Ask us</a> and we'll take it off the list. <a href="../directory-rules.html">How the directory works</a></p></div></div>
+</div>
+<script src="../theme.js"></script>
+<script>
+for (const id of ['copy', 'copy-top']) document.getElementById(id).onclick = async (e) => {
+  const b = e.currentTarget, was = b.textContent;
+  try { await navigator.clipboard.writeText(document.getElementById('cmd').textContent); b.textContent = 'Copied'; } catch (err) { b.textContent = 'Select the command below'; }
+  setTimeout(() => (b.textContent = was), 1800);
+};
+</script>
+</body></html>

@@ -93,5 +93,11 @@
  "ai.memocore/mcp": "2026-10-22",
  "ai.neuralverge/neuralverge": "2026-10-22",
  "ai.saifs/customer-intelligence": "2026-10-22",
- "ai.saifs/demand-forecasting": "2026-10-22"
+ "ai.saifs/demand-forecasting": "2026-10-22",
+ "ai.brainattic/knowledge-base": "2026-10-23",
+ "ai.chucho/chucho": "2026-10-23",
+ "ai.getcor/mcp": "2026-10-23",
+ "ai.last-price/pricing": "2026-10-23",
+ "ai.ollive/mcp": "2026-10-23",
+ "ai.reclypse.csv/agent-services": "2026-10-23"
 }

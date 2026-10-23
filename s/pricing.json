@@ -921,5 +921,91 @@
  },
  "ai.saifs/demand-forecasting": {
   "checked": "2026-10-22"
+ },
+ "academy.ase/periodic-system": {
+  "checked": "2026-10-23"
+ },
+ "ae.beachclubs/mcp": {
+  "checked": "2026-10-23"
+ },
+ "ai.alwen/alwen": {
+  "url": "https://alwen.ai/pricing",
+  "checked": "2026-10-23"
+ },
+ "ai.brainattic/knowledge-base": {
+  "checked": "2026-10-23"
+ },
+ "ai.bumblebox/mail": {
+  "url": "https://bumblebox.ai/pricing",
+  "checked": "2026-10-23"
+ },
+ "ai.chucho/chucho": {
+  "url": "https://chucho.ai/pricing",
+  "checked": "2026-10-23"
+ },
+ "ai.cloudcrane/workspace": {
+  "url": "https://cloudcrane.ai/pricing/",
+  "checked": "2026-10-23"
+ },
+ "ai.discoveria/discoveria": {
+  "checked": "2026-10-23"
+ },
+ "ai.explorescience/mcp": {
+  "checked": "2026-10-23"
+ },
+ "ai.fapper/fapperai": {
+  "checked": "2026-10-23"
+ },
+ "ai.gensprite/gensprite": {
+  "url": "https://www.gensprite.ai/pricing",
+  "checked": "2026-10-23"
+ },
+ "ai.getcor/mcp": {
+  "checked": "2026-10-23"
+ },
+ "ai.getricky/ricky": {
+  "checked": "2026-10-23"
+ },
+ "ai.inite/site-agents": {
+  "url": "https://inite.ai/en/pricing",
+  "checked": "2026-10-23"
+ },
+ "ai.kliqo/ai-visibility": {
+  "url": "https://kliqo.ai/pricing",
+  "checked": "2026-10-23"
+ },
+ "ai.last-price/pricing": {
+  "url": "https://last-price.ai/pricing",
+  "checked": "2026-10-23"
+ },
+ "ai.neuralpartners/sasha": {
+  "checked": "2026-10-23"
+ },
+ "ai.nodary/nodary": {
+  "url": "https://nodary.ai/pricing",
+  "checked": "2026-10-23"
+ },
+ "ai.noxi/noxi": {
+  "checked": "2026-10-23"
+ },
+ "ai.ollive/mcp": {
+  "checked": "2026-10-23"
+ },
+ "ai.phantra/studio": {
+  "url": "https://phantra.ai/pricing",
+  "checked": "2026-10-23"
+ },
+ "ai.pickrun/pickrun": {
+  "checked": "2026-10-23"
+ },
+ "ai.pixelengine/mcp": {
+  "checked": "2026-10-23"
+ },
+ "ai.reclypse.csv/agent-services": {
+  "checked": "2026-10-23"
+ },
+ "ai.revid/revid": {
+  "url": "https://www.revid.ai/pricing",
+  "checked": "2026-10-23"
  }
 }
