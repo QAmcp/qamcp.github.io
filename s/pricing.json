@@ -1007,5 +1007,85 @@
  "ai.revid/revid": {
   "url": "https://www.revid.ai/pricing",
   "checked": "2026-10-23"
+ },
+ "ai.aistlabs/aistlabs": {
+  "checked": "2026-10-24"
+ },
+ "ai.aivikings/registrar": {
+  "checked": "2026-10-24"
+ },
+ "ai.appgoat/mcp": {
+  "url": "https://appgoat.ai/pricing",
+  "checked": "2026-10-24"
+ },
+ "ai.atmy/air-quality": {
+  "checked": "2026-10-24"
+ },
+ "ai.celestio/celestio": {
+  "checked": "2026-10-24"
+ },
+ "ai.dripmetrics/mcp": {
+  "checked": "2026-10-24"
+ },
+ "ai.earlyleads/earlyleads": {
+  "checked": "2026-10-24"
+ },
+ "ai.eventgen/eventgen": {
+  "checked": "2026-10-24"
+ },
+ "ai.fastresponse/fast-response-ai": {
+  "checked": "2026-10-24"
+ },
+ "ai.fetchfido/fido": {
+  "checked": "2026-10-24"
+ },
+ "ai.findbytes/findbytes": {
+  "checked": "2026-10-24"
+ },
+ "ai.fluxmail/cloud": {
+  "url": "https://fluxmail.ai/pricing",
+  "checked": "2026-10-24"
+ },
+ "ai.gighq/gighq": {
+  "checked": "2026-10-24"
+ },
+ "ai.hipa/clinical-trials": {
+  "checked": "2026-10-24"
+ },
+ "ai.human4ai/collaboration": {
+  "checked": "2026-10-24"
+ },
+ "ai.initialed/contract-drafting": {
+  "checked": "2026-10-24"
+ },
+ "ai.instantclips/instantclips": {
+  "checked": "2026-10-24"
+ },
+ "ai.intodns/scanner": {
+  "url": "https://intodns.ai/pricing",
+  "checked": "2026-10-24"
+ },
+ "ai.kalm/kalm": {
+  "checked": "2026-10-24"
+ },
+ "ai.lograck/lograck": {
+  "checked": "2026-10-24"
+ },
+ "ai.reclypse.csv/utility-node": {
+  "checked": "2026-10-24"
+ },
+ "ai.relayto/relay": {
+  "checked": "2026-10-24"
+ },
+ "ai.riffkit/riffkit": {
+  "url": "https://riffkit.ai/pricing",
+  "checked": "2026-10-24"
+ },
+ "ai.ruthven/ruthven": {
+  "checked": "2026-10-24"
+ },
+ "ai.screwtape/screwtape": {
+  "url": "https://screwtape.ai/pricing/",
+  "checked": "2026-10-24"
  }
 }

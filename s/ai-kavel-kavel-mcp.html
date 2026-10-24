@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>kavel-mcp: QAmcp test results</title>
-<meta name="description" content="kavel-mcp MCP server: scored 88/100 when tested by QAmcp on 18 Oct 2026.">
+<meta name="description" content="kavel-mcp MCP server: scored 95/100 when tested by QAmcp on 24 Oct 2026.">
 <script>try{var t=localStorage.getItem('qamcp-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
 <link rel="stylesheet" href="../site.css"><link rel="stylesheet" href="../theme.css"><link rel="stylesheet" href="server.css">
 </head><body>
@@ -19,10 +19,10 @@
    <div class="acts"><button class="p" type="button" id="copy-top">Copy the test command</button><a class="s" href="https://www.kavel.ai/pricing" rel="noopener nofollow">See pricing →</a><a class="s" href="https://www.kavel.ai/" rel="noopener nofollow">Visit website</a></div>
   </div>
   <div class="medal">
-   <div class="n">88<small> /100</small></div>
+   <div class="n">95<small> /100</small></div>
    <span class="stamp mid">PASS · WITH NOTES</span>
    
-   <p>10 of 10 checks · 18 Oct 2026</p>
+   <p>10 of 10 checks · 24 Oct 2026</p>
   </div>
  </section>
  <nav class="tabs" aria-label="On this page"><a href="#tools">What it can do</a><a href="#results">Test results</a><a href="#try">Test it yourself</a><a href="#history">Score over time</a><a href="#reviews">Reviews</a></nav>
@@ -34,20 +34,20 @@
  </div></section>
  <section class="sec" id="results"><h2>Test results</h2><p class="hint">Safe mode: only tools labeled read-only were run. <a href="../how-it-works.html">How the test works</a></p><ul class="checks">
 <li class="chk warn"><span class="mk warn" aria-label="note">!</span><div><b>Ready for the newest MCP version</b><details><summary>1 warning</summary><ul><li class="warn"><span class="m">!</span>Uses an older MCP version (2025-11-25). It works today, but it isn&#39;t on the July 2026 version (2026-07-28) yet.</li></ul></details></div><span class="st">note</span></li>
-<li class="chk warn"><span class="mk warn" aria-label="note">!</span><div><b>Every tool is described</b><details><summary>1 warning</summary><ul><li class="warn"><span class="m">!</span><b>generate_kavel_image</b>: Inputs with no description: aspect_ratio</li></ul></details></div><span class="st">note</span></li>
-<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Connects</b><span class="sum">Connected in 1.0 s</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Connects</b><span class="sum">Connected in 915 ms</span></div><span class="st">pass</span></li>
 <li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Lists its tools</b><span class="sum">Found 4 tools</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Every tool is described</b><span class="sum">All 4 tools and their inputs are described</span></div><span class="st">pass</span></li>
 <li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Tools are labeled safe or dangerous</b><span class="sum">Every tool has a safety label</span></div><span class="st">pass</span></li>
 <li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>No hidden instructions</b><span class="sum">No hidden instructions found in tool descriptions</span></div><span class="st">pass</span></li>
-<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Tools work with good inputs</b><details><summary>All good</summary><ul><li class="pass"><span class="m">✓</span><b>find_kavel_tool</b>: Worked (299 ms)</li><li class="pass"><span class="m">✓</span><b>check_kavel_generation</b>: Answered with an error, probably because of our sample input: Connect your Kavel account to generate images. New accounts get free credits.</li><li class="pass"><span class="m">✓</span><b>get_kavel_balance</b>: Answered with an error, probably because of our sample input: Connect your Kavel account to generate images. New accounts get free credits.</li><li class="off"><span class="m">–</span><b>generate_kavel_image</b>: Not run: labeled as changing data</li></ul></details></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Tools work with good inputs</b><details><summary>All good</summary><ul><li class="pass"><span class="m">✓</span><b>find_kavel_tool</b>: Worked (177 ms)</li><li class="pass"><span class="m">✓</span><b>check_kavel_generation</b>: Answered with an error, probably because of our sample input: Connect your Kavel account to generate images. New accounts get free credits.</li><li class="pass"><span class="m">✓</span><b>get_kavel_balance</b>: Answered with an error, probably because of our sample input: Connect your Kavel account to generate images. New accounts get free credits.</li><li class="off"><span class="m">–</span><b>generate_kavel_image</b>: Not run: labeled as changing data</li></ul></details></div><span class="st">pass</span></li>
 <li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Bad inputs give a clean error</b><details><summary>All good</summary><ul><li class="pass"><span class="m">✓</span><b>find_kavel_tool</b>: Refused wrong type for &quot;query&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>check_kavel_generation</b>: Refused missing required input &quot;task_id&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>check_kavel_generation</b>: Refused wrong type for &quot;task_id&quot; with a clear error</li></ul></details></div><span class="st">pass</span></li>
-<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Fast enough</b><details><summary>All good</summary><ul><li class="pass"><span class="m">✓</span>Connecting took 1.0 s</li><li class="pass"><span class="m">✓</span>Listing tools took 299 ms</li><li class="pass"><span class="m">✓</span>Average tool answer: 290 ms</li><li class="pass"><span class="m">✓</span><b>find_kavel_tool</b>: Slowest tool: find_kavel_tool (299 ms)</li></ul></details></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Fast enough</b><details><summary>All good</summary><ul><li class="pass"><span class="m">✓</span>Connecting took 915 ms</li><li class="pass"><span class="m">✓</span>Listing tools took 93 ms</li><li class="pass"><span class="m">✓</span>Average tool answer: 130 ms</li><li class="pass"><span class="m">✓</span><b>find_kavel_tool</b>: Slowest tool: find_kavel_tool (177 ms)</li></ul></details></div><span class="st">pass</span></li>
 <li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>No secrets leaked</b><span class="sum">Checked 5 error messages: no secrets or internal details</span></div><span class="st">pass</span></li>
 <li class="chk off"><span class="mk off" aria-label="not tested">–</span><div><b>Tools work together</b><span class="sum">No tool&#39;s answer could be fed into another tool, so there were no chains to test (not counted either way)</span></div><span class="st">not tested</span></li>
  </ul></section>
  <section class="sec" id="try"><h2>Test it yourself</h2><p class="hint">Free and open source. Same checks, same score.</p>
   <div class="cmd"><code id="cmd">npx qamcp-cli https://www.kavel.ai/api/mcp</code><button type="button" id="copy">Copy</button></div></section>
- <section class="sec" id="history"><h2>Score over time</h2><ul class="hist"><li><span class="d">14 Oct 2026</span><span class="bar"><i style="width:88%"></i></span><span class="v">88</span></li><li><span class="d">17 Oct 2026</span><span class="bar"><i style="width:88%"></i></span><span class="v">88</span></li><li><span class="d">18 Oct 2026</span><span class="bar"><i style="width:88%"></i></span><span class="v">88</span></li></ul></section>
+ <section class="sec" id="history"><h2>Score over time</h2><ul class="hist"><li><span class="d">14 Oct 2026</span><span class="bar"><i style="width:88%"></i></span><span class="v">88</span></li><li><span class="d">17 Oct 2026</span><span class="bar"><i style="width:88%"></i></span><span class="v">88</span></li><li><span class="d">18 Oct 2026</span><span class="bar"><i style="width:88%"></i></span><span class="v">88</span></li><li><span class="d">24 Oct 2026</span><span class="bar"><i style="width:95%"></i></span><span class="v">95</span></li></ul></section>
  <section class="sec" id="reviews"><h2>Reviews</h2><p class="hint">Coming soon: reviews from people who use kavel-mcp, signed in with GitHub, one per person. Reviews never change the score.</p></section>
  <div class="claim"><div><b>Is this your server?</b><p>Soon you can claim this page: re-test it from here, reply to results, and show a "Tested by QAmcp" badge.</p><p>Have a concern, or want it removed? <a href="https://github.com/QAmcp/qamcp-cli/issues">Ask us</a> and we'll take it off the list. <a href="../directory-rules.html">How the directory works</a></p></div></div>
 </div>

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>IntoDNS.ai DNS &amp; Email Security Scanner: QAmcp test results</title>
+<meta name="description" content="IntoDNS.ai DNS &amp; Email Security Scanner MCP server: scored 84/100 when tested by QAmcp on 24 Oct 2026.">
+<script>try{var t=localStorage.getItem('qamcp-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="stylesheet" href="../site.css"><link rel="stylesheet" href="../theme.css"><link rel="stylesheet" href="server.css">
+</head><body>
+<div class="wrap">
+ <header class="top"><a class="brand" href="../index.html">QA<b>mcp</b></a><nav aria-label="Main"><a href="../directory.html" aria-current="page">Directory</a><a href="../test.html">Test a server</a><a href="../how-it-works.html">How it works</a><a href="../safety.html">Safety</a><a href="../ci.html">Run it in CI</a><a href="../samples.html">Sample reports</a></nav>
+  <div class="tools"><button class="theme" id="theme" type="button">Light</button><a class="gh" href="https://github.com/QAmcp/qamcp-cli">GitHub</a></div></header>
+ <section class="hero">
+  <img class="logo" src="logo/ai-intodns-scanner.ico" alt="" width="96" height="96">
+  <div class="who">
+   <p class="crumb"><a href="../directory.html">Directory</a> / IntoDNS.ai DNS &amp; Email Security Scanner</p>
+   <h1>IntoDNS.ai DNS &amp; Email Security Scanner</h1>
+   <p class="by">by <a href="https://intodns.ai/mcp" rel="noopener nofollow">intodns.ai</a> · https://intodns.ai/api/mcp</p>
+   <p class="d">DNS and email security: check SPF, DKIM, DMARC, DNSSEC, DANE and build the records. 45 tools.</p>
+   <div class="chips"><span>45 tools</span><span class="ok">✓ no account needed</span><span>Pricing: on their site</span></div>
+   <div class="acts"><button class="p" type="button" id="copy-top">Copy the test command</button><a class="s" href="https://intodns.ai/pricing" rel="noopener nofollow">See pricing →</a><a class="s" href="https://intodns.ai/mcp" rel="noopener nofollow">Visit website</a></div>
+  </div>
+  <div class="medal">
+   <div class="n">84<small> /100</small></div>
+   <span class="stamp fail">FAIL</span>
+   
+   <p>11 of 11 checks · 24 Oct 2026</p>
+  </div>
+ </section>
+ <nav class="tabs" aria-label="On this page"><a href="#tools">What it can do</a><a href="#results">Test results</a><a href="#try">Test it yourself</a><a href="#history">Score over time</a><a href="#reviews">Reviews</a></nav>
+ <section class="sec" id="tools"><h2>What it can do</h2><p class="hint">45 tools, in the server's own words.</p><div class="grid">
+<div class="tool"><code>scan_domain</code><span class="ro">read-only</span><p>Run the fast IntoDNS.ai DNS and email security scan (~3-8s).</p></div>
+<div class="tool"><code>nis2_quickscan</code><span class="ro">read-only</span><p>Compute a NIS2 Article 21.2 readiness score for a domain by mapping the IntoDNS quickscan onto the ten NIS2 measures.</p></div>
+<div class="tool"><code>get_everything_report</code><span class="ro">read-only</span><p>Generate the complete live IntoDNS.ai report covering DNS, email authentication, web/HTTPS, blacklist reputation, sender requirements, and canonical citation U…</p></div>
+<div class="tool"><code>create_report_snapshot</code><p>Create an immutable evidence snapshot of the current Everything Report for a domain.</p></div>
+<div class="tool"><code>get_report_snapshot</code><span class="ro">read-only</span><p>Read a previously created IntoDNS.ai Everything Report evidence snapshot by snapshot ID.</p></div>
+<div class="tool"><code>start_deep_scan</code><p>Start a long-running Internet.nl deep scan.</p></div>
+<div class="tool"><code>get_deep_scan_status</code><span class="ro">read-only</span><p>Read-only status poll for a long-running Internet.nl deep scan.</p></div>
+<div class="tool"><code>cancel_deep_scan</code><p>Cancel an in-progress Internet.nl deep scan.</p></div>
+<div class="tool"><code>lookup_dns</code><span class="ro">read-only</span><p>Read-only DNS record lookup via DNS-over-HTTPS.</p></div>
+<div class="tool"><code>validate_dnssec</code><span class="ro">read-only</span><p>Read-only DNSSEC chain validation.</p></div>
+<div class="tool"><code>check_dns_propagation</code><span class="ro">read-only</span><p>Compare DNS responses across the nine currently configured public and authoritative resolvers to detect propagation lag, missing answers, or differing record s…</p></div>
+<div class="tool"><code>check_tlsa_dane</code><span class="ro">read-only</span><p>Read-only TLSA/DANE DNS record check.</p></div>
+<div class="tool"><code>check_spf</code><span class="ro">read-only</span><p>Read-only SPF parse and validation for a domain.</p></div>
+<div class="tool"><code>flatten_spf</code><span class="ro">read-only</span><p>Read-only SPF flattening for a domain.</p></div>
+<div class="tool"><code>discover_dkim</code><span class="ro">read-only</span><p>Read-only DKIM check for a domain.</p></div>
+<div class="tool"><code>check_dmarc</code><span class="ro">read-only</span><p>Read-only fetch and parse of the _dmarc TXT record.</p></div>
+<div class="tool"><code>check_bimi</code><span class="ro">read-only</span><p>Read-only BIMI readiness check.</p></div>
+<div class="tool"><code>check_mta_sts</code><span class="ro">read-only</span><p>Read-only check of MTA-STS: TXT record at _mta-sts.</p></div>
+<div class="tool"><code>check_smtp_tls</code><span class="ro">read-only</span><p>Live check of the first 4 MX hosts in priority order (hosts beyond 4 are not tested): opens TCP 25, runs EHLO + STARTTLS, validates TLS certificate trust chain…</p></div>
+<div class="tool"><code>check_fcrdns</code><span class="ro">read-only</span><p>Read-only FCrDNS (Forward-Confirmed Reverse DNS) audit for every IP that backs the domain&#39;s MX records.</p></div>
+<div class="tool"><code>check_blacklist</code><span class="ro">read-only</span><p>Read-only query against the configured public DNSBL/RBL providers; the response lists which ones answered, which could not be measured and which are disabled.</p></div>
+<div class="tool"><code>check_sender_requirements</code><span class="ro">read-only</span><p>Read-only domain-side preflight against Google/Yahoo bulk-sender requirements.</p></div>
+<div class="tool"><code>check_email_security</code><span class="ro">read-only</span><p>Read-only combined email-security check covering SPF parse, DKIM selector discovery, DMARC policy validation, MX IP blacklist status across major feeds, and an…</p></div>
+<div class="tool"><code>create_email_test</code><p>Create a new IntoDNS.ai inbound email-test session.</p></div>
+ </div><p class="hint">and 21 more</p></section>
+ <section class="sec" id="results"><h2>Test results</h2><p class="hint">Safe mode: only tools labeled read-only were run. <a href="../how-it-works.html">How the test works</a></p><ul class="checks">
+<li class="chk fail"><span class="mk fail" aria-label="fail">✕</span><div><b>Fast enough</b><details><summary>1 failed</summary><ul><li class="fail"><span class="m">✕</span><b>analyze_raw_email</b>: Slowest tool: analyze_raw_email (11.8 s): most users will give up waiting</li><li class="more">and 3 more</li></ul></details></div><span class="st">fail</span></li>
+<li class="chk warn"><span class="mk warn" aria-label="note">!</span><div><b>Ready for the newest MCP version</b><details><summary>1 warning</summary><ul><li class="warn"><span class="m">!</span>Uses an older MCP version (2025-11-25). It works today, but it isn&#39;t on the July 2026 version (2026-07-28) yet.</li></ul></details></div><span class="st">note</span></li>
+<li class="chk warn"><span class="mk warn" aria-label="note">!</span><div><b>Every tool is described</b><details><summary>5 warnings</summary><ul><li class="warn"><span class="m">!</span><b>explain_issue</b>: Inputs with no description: issue</li><li class="warn"><span class="m">!</span><b>generate_dns_fix</b>: Inputs with no description: issue</li><li class="warn"><span class="m">!</span><b>get_badge_link</b>: Inputs with no description: style</li><li class="warn"><span class="m">!</span><b>read_llm_discovery</b>: Inputs with no description: file</li><li class="warn"><span class="m">!</span><b>get_citation_guidance</b>: Inputs with no description: topic</li></ul></details></div><span class="st">note</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Connects</b><span class="sum">Connected in 973 ms</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Lists its tools</b><span class="sum">Found 45 tools</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Tools are labeled safe or dangerous</b><span class="sum">Every tool has a safety label</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>No hidden instructions</b><span class="sum">No hidden instructions found in tool descriptions</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Tools work with good inputs</b><details><summary>All good</summary><ul><li class="pass"><span class="m">✓</span><b>scan_domain</b>: Answered with an error, probably because of our sample input: MCP error -32602: Input validation error: Invalid arguments for tool scan_domain: Provide a valid DNS domain name such as example.com at do…</li><li class="pass"><span class="m">✓</span><b>nis2_quickscan</b>: Answered with an error, probably because of our sample input: MCP error -32602: Input validation error: Invalid arguments for tool nis2_quickscan: Provide a valid DNS domain name such as example.com at…</li><li class="pass"><span class="m">✓</span><b>get_everything_report</b>: Answered with an error, probably because of our sample input: MCP error -32602: Input validation error: Invalid arguments for tool get_everything_report: Provide a valid DNS domain name such as example…</li><li class="pass"><span class="m">✓</span><b>get_report_snapshot</b>: Answered with an error, probably because of our sample input: IntoDNS.ai API error: 404 Not Found - {&quot;error&quot;:&quot;Report snapshot not found&quot;}</li><li class="pass"><span class="m">✓</span><b>get_deep_scan_status</b>: Answered with an error, probably because of our sample input: IntoDNS.ai API error: 404 Not Found - {&quot;error&quot;:&quot;Scan not found&quot;}</li><li class="pass"><span class="m">✓</span><b>lookup_dns</b>: Answered with an error, probably because of our sample input: MCP error -32602: Input validation error: Invalid arguments for tool lookup_dns: Provide a valid DNS domain name such as example.com at dom…</li><li class="pass"><span class="m">✓</span><b>validate_dnssec</b>: Answered with an error, probably because of our sample input: MCP error -32602: Input validation error: Invalid arguments for tool validate_dnssec: Provide a valid DNS domain name such as example.com a…</li><li class="pass"><span class="m">✓</span><b>check_dns_propagation</b>: Answered with an error, probably because of our sample input: MCP error -32602: Input validation error: Invalid arguments for tool check_dns_propagation: Provide a valid DNS domain name such as example…</li><li class="more">and 32 more</li></ul></details></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Bad inputs give a clean error</b><details><summary>All good</summary><ul><li class="pass"><span class="m">✓</span><b>scan_domain</b>: Refused missing required input &quot;domain&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>scan_domain</b>: Refused wrong type for &quot;domain&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>nis2_quickscan</b>: Refused missing required input &quot;domain&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>nis2_quickscan</b>: Refused wrong type for &quot;domain&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>get_everything_report</b>: Refused missing required input &quot;domain&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>get_everything_report</b>: Refused wrong type for &quot;domain&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>get_report_snapshot</b>: Refused missing required input &quot;snapshotId&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>get_report_snapshot</b>: Refused wrong type for &quot;snapshotId&quot; with a clear error</li><li class="more">and 32 more</li></ul></details></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Tools work together</b><span class="sum">read_llm_discovery → scan_csp: scan_csp found what read_llm_discovery returned (url = &quot;https://intodns.ai&quot;)</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>No secrets leaked</b><span class="sum">Checked 105 error messages: no secrets or internal details</span></div><span class="st">pass</span></li>
+ </ul></section>
+ <section class="sec" id="try"><h2>Test it yourself</h2><p class="hint">Free and open source. Same checks, same score.</p>
+  <div class="cmd"><code id="cmd">npx qamcp-cli https://intodns.ai/api/mcp</code><button type="button" id="copy">Copy</button></div></section>
+ <section class="sec" id="history"><h2>Score over time</h2><ul class="hist"><li><span class="d">24 Oct 2026</span><span class="bar"><i style="width:84%"></i></span><span class="v">84</span></li></ul><p class="hint">One test so far. New tests will show here.</p></section>
+ <section class="sec" id="reviews"><h2>Reviews</h2><p class="hint">Coming soon: reviews from people who use IntoDNS.ai DNS &amp; Email Security Scanner, signed in with GitHub, one per person. Reviews never change the score.</p></section>
+ <div class="claim"><div><b>Is this your server?</b><p>Soon you can claim this page: re-test it from here, reply to results, and show a "Tested by QAmcp" badge.</p><p>Have a concern, or want it removed? <a href="https://github.com/QAmcp/qamcp-cli/issues">Ask us</a> and we'll take it off the list. <a href="../directory-rules.html">How the directory works</a></p></div></div>
+</div>
+<script src="../theme.js"></script>
+<script>
+for (const id of ['copy', 'copy-top']) document.getElementById(id).onclick = async (e) => {
+  const b = e.currentTarget, was = b.textContent;
+  try { await navigator.clipboard.writeText(document.getElementById('cmd').textContent); b.textContent = 'Copied'; } catch (err) { b.textContent = 'Select the command below'; }
+  setTimeout(() => (b.textContent = was), 1800);
+};
+</script>
+</body></html>

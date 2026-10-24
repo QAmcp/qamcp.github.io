@@ -99,5 +99,15 @@
  "ai.getcor/mcp": "2026-10-23",
  "ai.last-price/pricing": "2026-10-23",
  "ai.ollive/mcp": "2026-10-23",
- "ai.reclypse.csv/agent-services": "2026-10-23"
+ "ai.reclypse.csv/agent-services": "2026-10-23",
+ "ai.aivikings/registrar": "2026-10-24",
+ "ai.atmy/air-quality": "2026-10-24",
+ "ai.dripmetrics/mcp": "2026-10-24",
+ "ai.eventgen/eventgen": "2026-10-24",
+ "ai.fetchfido/fido": "2026-10-24",
+ "ai.findbytes/findbytes": "2026-10-24",
+ "ai.hipa/clinical-trials": "2026-10-24",
+ "ai.human4ai/collaboration": "2026-10-24",
+ "ai.lograck/lograck": "2026-10-24",
+ "ai.reclypse.csv/utility-node": "2026-10-24"
 }
