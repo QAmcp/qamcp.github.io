@@ -1087,5 +1087,90 @@
  "ai.screwtape/screwtape": {
   "url": "https://screwtape.ai/pricing/",
   "checked": "2026-10-24"
+ },
+ "agency.zoll/ausfuhr": {
+  "checked": "2026-10-25"
+ },
+ "ai.apiant/apiant": {
+  "url": "https://apiant.ai/pricing",
+  "checked": "2026-10-25"
+ },
+ "ai.blaze.app/blaze": {
+  "url": "https://www.blaze.ai/pricing",
+  "checked": "2026-10-25"
+ },
+ "ai.brevium/agent-puzzle-bounty": {
+  "checked": "2026-10-25"
+ },
+ "ai.buzzmark/mcp": {
+  "checked": "2026-10-25"
+ },
+ "ai.ciphyr.agentmart/core": {
+  "checked": "2026-10-25"
+ },
+ "ai.commerceai/shopping": {
+  "checked": "2026-10-25"
+ },
+ "ai.darim/darim": {
+  "checked": "2026-10-25"
+ },
+ "ai.foura/mcp": {
+  "checked": "2026-10-25"
+ },
+ "ai.jerry/insurance": {
+  "checked": "2026-10-25"
+ },
+ "ai.payzilla/marketplace": {
+  "checked": "2026-10-25"
+ },
+ "ai.pingaura/pingaura": {
+  "url": "https://www.pingaura.ai/pricing",
+  "checked": "2026-10-25"
+ },
+ "ai.plith/rigor": {
+  "url": "https://plith.ai/pricing",
+  "checked": "2026-10-25"
+ },
+ "ai.promptev/promptev": {
+  "url": "https://promptev.ai/pricing/",
+  "checked": "2026-10-25"
+ },
+ "ai.realton/mcp": {
+  "url": "https://realton.ai/en/pricing",
+  "checked": "2026-10-25"
+ },
+ "ai.slabline/slabline": {
+  "url": "https://slabline.ai/pricing",
+  "checked": "2026-10-25"
+ },
+ "ai.spelunking/hub": {
+  "checked": "2026-10-25"
+ },
+ "ai.tallynexa/tallynexa": {
+  "url": "https://tallynexa.ai/pricing",
+  "checked": "2026-10-25"
+ },
+ "ai.talmbout.leviathan/community": {
+  "checked": "2026-10-25"
+ },
+ "ai.tommos/tommos": {
+  "url": "https://tommos.ai/pricing",
+  "checked": "2026-10-25"
+ },
+ "ai.torchrunner/runnerid": {
+  "checked": "2026-10-25"
+ },
+ "ai.txscribe/txscribe": {
+  "url": "https://txscribe.ai/pricing",
+  "checked": "2026-10-25"
+ },
+ "ai.yahad/yahad": {
+  "checked": "2026-10-25"
+ },
+ "app.bitledger/bitledger": {
+  "checked": "2026-10-25"
+ },
+ "app.boxitem/boxitem": {
+  "checked": "2026-10-25"
  }
 }

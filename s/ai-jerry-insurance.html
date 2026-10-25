@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Jerry Insurance: QAmcp test results</title>
+<meta name="description" content="Jerry Insurance MCP server: scored 91/100 when tested by QAmcp on 25 Oct 2026.">
+<script>try{var t=localStorage.getItem('qamcp-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="stylesheet" href="../site.css"><link rel="stylesheet" href="../theme.css"><link rel="stylesheet" href="server.css">
+</head><body>
+<div class="wrap">
+ <header class="top"><a class="brand" href="../index.html">QA<b>mcp</b></a><nav aria-label="Main"><a href="../directory.html" aria-current="page">Directory</a><a href="../test.html">Test a server</a><a href="../how-it-works.html">How it works</a><a href="../safety.html">Safety</a><a href="../ci.html">Run it in CI</a><a href="../samples.html">Sample reports</a></nav>
+  <div class="tools"><button class="theme" id="theme" type="button">Light</button><a class="gh" href="https://github.com/QAmcp/qamcp-cli">GitHub</a></div></header>
+ <section class="hero">
+  <span class="logo letter" aria-hidden="true">J</span>
+  <div class="who">
+   <p class="crumb"><a href="../directory.html">Directory</a> / Jerry Insurance</p>
+   <h1>Jerry Insurance</h1>
+   <p class="by">by <a href="https://mcp.jerry.ai/docs" rel="noopener nofollow">mcp.jerry.ai</a> · https://mcp.jerry.ai/mcp</p>
+   <p class="d">Compare US car, home and renters insurance quotes with Jerry. Sign-in required; buy in the app.</p>
+   <div class="chips"><span>8 tools</span><span class="ok">✓ no account needed</span><span>Pricing: not listed</span></div>
+   <div class="acts"><button class="p" type="button" id="copy-top">Copy the test command</button><a class="s" href="https://mcp.jerry.ai/docs" rel="noopener nofollow">Visit website</a></div>
+  </div>
+  <div class="medal">
+   <div class="n">91<small> /100</small></div>
+   <span class="stamp mid">PASS · WITH NOTES</span>
+   
+   <p>Partial: 8 of 10 checks · 25 Oct 2026</p>
+  </div>
+ </section>
+ <nav class="tabs" aria-label="On this page"><a href="#tools">What it can do</a><a href="#results">Test results</a><a href="#try">Test it yourself</a><a href="#history">Score over time</a><a href="#reviews">Reviews</a></nav>
+ <section class="sec" id="tools"><h2>What it can do</h2><p class="hint">8 tools, in the server's own words.</p><div class="grid">
+<div class="tool"><code>jerry_get_account</code><span class="ro">read-only</span><p>Read the name, email and phone on the customer&#39;s Jerry account, and whether the phone is verified.</p></div>
+<div class="tool"><code>jerry_start_shopping</code><p>Start shopping for the insurance products the customer asked for.</p></div>
+<div class="tool"><code>jerry_update_application</code><p>Save application facts the customer gave, in their own words.</p></div>
+<div class="tool"><code>jerry_request_quotes</code><p>Request quotes.</p></div>
+<div class="tool"><code>jerry_request_final_price</code><p>Get the final price of the quote the customer chose.</p></div>
+<div class="tool"><code>jerry_wait</code><span class="ro">read-only</span><p>Wait for quotes or a final price after requesting them.</p></div>
+<div class="tool"><code>jerry_get_status</code><span class="ro">read-only</span><p>Read where the customer&#39;s insurance shopping stands: the stage, what the current goal still needs (by application path), a summary of the application, what Jer…</p></div>
+<div class="tool"><code>jerry_get_quotes</code><span class="ro">read-only</span><p>List every quote for a shopping intent, cheapest first by monthly price (in USD cents); each policy has a coverageSummary.</p></div>
+ </div></section>
+ <section class="sec" id="results"><h2>Test results</h2><p class="hint">Safe mode: only tools labeled read-only were run. <a href="../how-it-works.html">How the test works</a></p><ul class="checks">
+<li class="chk warn"><span class="mk warn" aria-label="note">!</span><div><b>Every tool is described</b><details><summary>1 warning</summary><ul><li class="warn"><span class="m">!</span><b>jerry_update_application</b>: Inputs with no description: application</li></ul></details></div><span class="st">note</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Connects</b><span class="sum">Connected in 255 ms</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Ready for the newest MCP version</b><span class="sum">Uses the latest MCP version (2026-07-28)</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Lists its tools</b><span class="sum">Found 8 tools</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Tools are labeled safe or dangerous</b><span class="sum">Every tool has a safety label</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>No hidden instructions</b><span class="sum">No hidden instructions found in tool descriptions</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Fast enough</b><details><summary>All good</summary><ul><li class="pass"><span class="m">✓</span>Connecting took 255 ms</li><li class="pass"><span class="m">✓</span>Listing tools took 386 ms</li></ul></details></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>No secrets leaked</b><span class="sum">Checked 9 error messages: no secrets or internal details</span></div><span class="st">pass</span></li>
+<li class="chk off"><span class="mk off" aria-label="not tested">–</span><div><b>Tools work with good inputs</b><details><summary>Not tested</summary><ul><li class="off"><span class="m">–</span><b>jerry_get_account</b>: Needs you to sign in, so it was not tested (not counted against the server)</li><li class="off"><span class="m">–</span><b>jerry_wait</b>: Needs you to sign in, so it was not tested (not counted against the server)</li><li class="off"><span class="m">–</span><b>jerry_get_status</b>: Needs you to sign in, so it was not tested (not counted against the server)</li><li class="off"><span class="m">–</span><b>jerry_get_quotes</b>: Needs you to sign in, so it was not tested (not counted against the server)</li><li class="off"><span class="m">–</span><b>jerry_start_shopping</b>: Not run: labeled as changing data</li><li class="off"><span class="m">–</span><b>jerry_update_application</b>: Not run: labeled as changing data</li><li class="off"><span class="m">–</span><b>jerry_request_quotes</b>: Not run: labeled as changing data</li><li class="off"><span class="m">–</span><b>jerry_request_final_price</b>: Not run: labeled as changing data</li></ul></details></div><span class="st">not tested</span></li>
+<li class="chk off"><span class="mk off" aria-label="not tested">–</span><div><b>Bad inputs give a clean error</b><details><summary>Not tested</summary><ul><li class="off"><span class="m">–</span><b>jerry_wait</b>: Needs you to sign in, so bad inputs were not tested</li><li class="off"><span class="m">–</span><b>jerry_get_status</b>: Needs you to sign in, so bad inputs were not tested</li><li class="off"><span class="m">–</span><b>jerry_get_quotes</b>: Needs you to sign in, so bad inputs were not tested</li></ul></details></div><span class="st">not tested</span></li>
+<li class="chk off"><span class="mk off" aria-label="not tested">–</span><div><b>Tools work together</b><span class="sum">No safe tool returned data to start a chain from, so chains were not tested (not counted either way)</span></div><span class="st">not tested</span></li>
+ </ul></section>
+ <section class="sec" id="try"><h2>Test it yourself</h2><p class="hint">Free and open source. Same checks, same score.</p>
+  <div class="cmd"><code id="cmd">npx qamcp-cli https://mcp.jerry.ai/mcp</code><button type="button" id="copy">Copy</button></div></section>
+ <section class="sec" id="history"><h2>Score over time</h2><ul class="hist"><li><span class="d">25 Oct 2026</span><span class="bar"><i style="width:91%"></i></span><span class="v">91</span></li></ul><p class="hint">One test so far. New tests will show here.</p></section>
+ <section class="sec" id="reviews"><h2>Reviews</h2><p class="hint">Coming soon: reviews from people who use Jerry Insurance, signed in with GitHub, one per person. Reviews never change the score.</p></section>
+ <div class="claim"><div><b>Is this your server?</b><p>Soon you can claim this page: re-test it from here, reply to results, and show a "Tested by QAmcp" badge.</p><p>Have a concern, or want it removed? <a href="https://github.com/QAmcp/qamcp-cli/issues">Ask us</a> and we'll take it off the list. <a href="../directory-rules.html">How the directory works</a></p></div></div>
+</div>
+<script src="../theme.js"></script>
+<script>
+for (const id of ['copy', 'copy-top']) document.getElementById(id).onclick = async (e) => {
+  const b = e.currentTarget, was = b.textContent;
+  try { await navigator.clipboard.writeText(document.getElementById('cmd').textContent); b.textContent = 'Copied'; } catch (err) { b.textContent = 'Select the command below'; }
+  setTimeout(() => (b.textContent = was), 1800);
+};
+</script>
+</body></html>

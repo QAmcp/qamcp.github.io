@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>OpenCancer: QAmcp test results</title>
-<meta name="description" content="OpenCancer MCP server: not scored when tested by QAmcp on 18 Oct 2026.">
+<meta name="description" content="OpenCancer MCP server: scored 89/100 when tested by QAmcp on 25 Oct 2026.">
 <script>try{var t=localStorage.getItem('qamcp-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
 <link rel="stylesheet" href="../site.css"><link rel="stylesheet" href="../theme.css"><link rel="stylesheet" href="server.css">
 </head><body>
@@ -15,24 +15,40 @@
    <h1>OpenCancer</h1>
    <p class="by">by <a href="https://opencancer.ai/connectors" rel="noopener nofollow">opencancer.ai</a> · https://opencancer.ai/api/mcp</p>
    <p class="d">Cancer patient expert: NCCN-grounded answers with sources, recruiting trials, and expert review.</p>
-   <div class="chips"><span>Pricing: not listed</span></div>
+   <div class="chips"><span>5 tools</span><span class="ok">✓ no account needed</span><span>Pricing: not listed</span></div>
    <div class="acts"><button class="p" type="button" id="copy-top">Copy the test command</button><a class="s" href="https://opencancer.ai/connectors" rel="noopener nofollow">Visit website</a></div>
   </div>
   <div class="medal">
-   <div class="n login">not scored</div>
-   <span class="stamp none">NOT SCORED</span>
+   <div class="n">89<small> /100</small></div>
+   <span class="stamp mid">PASS · WITH NOTES</span>
    
-   <p>Not scored: limited our requests (HTTP 429) · 18 Oct 2026</p>
+   <p>11 of 11 checks · 25 Oct 2026</p>
   </div>
  </section>
- <nav class="tabs" aria-label="On this page"><a href="#results">Test results</a><a href="#try">Test it yourself</a><a href="#history">Score over time</a><a href="#reviews">Reviews</a></nav>
-
- <section class="sec" id="results"><h2>Test results</h2><p class="hint">We will test again soon. <a href="../how-it-works.html">How the test works</a></p><ul class="checks">
-<li class="chk off"><span class="mk off" aria-label="not tested">–</span><div><b>Connects</b><span class="sum">The server limited our requests (HTTP 429: too many requests), even after waiting. This is not a fault; try again in a minute.</span></div><span class="st">not tested</span></li>
+ <nav class="tabs" aria-label="On this page"><a href="#tools">What it can do</a><a href="#results">Test results</a><a href="#try">Test it yourself</a><a href="#history">Score over time</a><a href="#reviews">Reviews</a></nav>
+ <section class="sec" id="tools"><h2>What it can do</h2><p class="hint">5 tools, in the server's own words.</p><div class="grid">
+<div class="tool"><code>ask_opencancer</code><span class="ro">read-only</span><p>Answers a cancer patient or caregiver question in plain language, grounded in NCCN Guidelines for Patients and medical literature.</p></div>
+<div class="tool"><code>find_clinical_trials</code><span class="ro">read-only</span><p>Lists clinical trials recruiting now for a cancer type, from ClinicalTrials.gov, optionally near a city, state or country and filtered by a biomarker, drug or …</p></div>
+<div class="tool"><code>get_trial_details</code><span class="ro">read-only</span><p>Returns one clinical trial from ClinicalTrials.gov by its NCT number: what it tests, phase, status, last registry update, ages, the inclusion and exclusion cri…</p></div>
+<div class="tool"><code>open_case</code><span class="ro">read-only</span><p>Returns a link where a patient can start an expert review of their case by OpenCancer and Cancer Commons scientists (records, options, trial shortlist, next st…</p></div>
+<div class="tool"><code>send_feedback</code><p>Flags an OpenCancer answer for human expert review, or sends feedback to the OpenCancer team.</p></div>
+ </div></section>
+ <section class="sec" id="results"><h2>Test results</h2><p class="hint">Safe mode: only tools labeled read-only were run. <a href="../how-it-works.html">How the test works</a></p><ul class="checks">
+<li class="chk warn"><span class="mk warn" aria-label="note">!</span><div><b>Ready for the newest MCP version</b><details><summary>1 warning</summary><ul><li class="warn"><span class="m">!</span>Uses an older MCP version (2025-11-25). It works today, but it isn&#39;t on the July 2026 version (2026-07-28) yet.</li></ul></details></div><span class="st">note</span></li>
+<li class="chk warn"><span class="mk warn" aria-label="note">!</span><div><b>Every tool is described</b><details><summary>1 warning</summary><ul><li class="warn"><span class="m">!</span><b>open_case</b>: Inputs with no description: preferred_destinations</li></ul></details></div><span class="st">note</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Connects</b><span class="sum">Connected in 546 ms</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Lists its tools</b><span class="sum">Found 5 tools</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Tools are labeled safe or dangerous</b><span class="sum">Every tool has a safety label</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>No hidden instructions</b><span class="sum">No hidden instructions found in tool descriptions</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Tools work with good inputs</b><details><summary>All good</summary><ul><li class="pass"><span class="m">✓</span><b>ask_opencancer</b>: Answered with an error, probably because of our sample input: Could not get a vetted answer right now. Please try again, or ask at https://opencancer.ai/ask</li><li class="pass"><span class="m">✓</span><b>find_clinical_trials</b>: Worked (147 ms)</li><li class="pass"><span class="m">✓</span><b>get_trial_details</b>: Answered with an error, probably because of our sample input: Expected a ClinicalTrials.gov ID like NCT05902169. Check the number, or search with find_clinical_trials.</li><li class="off"><span class="m">–</span><b>open_case</b>: Not run: labeled read-only, but its name starts with &quot;open&quot;, which usually means it changes something. Skipped to be safe: if it only reads, a clearer name helps AI apps too, or test again with --owner</li><li class="off"><span class="m">–</span><b>send_feedback</b>: Not run: labeled as changing data</li></ul></details></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Bad inputs give a clean error</b><details><summary>All good</summary><ul><li class="pass"><span class="m">✓</span><b>ask_opencancer</b>: Refused missing required input &quot;question&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>ask_opencancer</b>: Refused wrong type for &quot;question&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>find_clinical_trials</b>: Refused missing required input &quot;condition&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>find_clinical_trials</b>: Refused wrong type for &quot;condition&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>get_trial_details</b>: Refused missing required input &quot;nct_id&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>get_trial_details</b>: Refused wrong type for &quot;nct_id&quot; with a clear error</li></ul></details></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Tools work together</b><span class="sum">find_clinical_trials → get_trial_details: get_trial_details found what find_clinical_trials returned (nct_id = &quot;NCT07810439&quot;)</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Fast enough</b><details><summary>All good</summary><ul><li class="pass"><span class="m">✓</span>Connecting took 546 ms</li><li class="pass"><span class="m">✓</span>Listing tools took 93 ms</li><li class="pass"><span class="m">✓</span>Average tool answer: 522 ms</li><li class="pass"><span class="m">✓</span><b>ask_opencancer</b>: Slowest tool: ask_opencancer (1.3 s)</li></ul></details></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>No secrets leaked</b><span class="sum">Checked 9 error messages: no secrets or internal details</span></div><span class="st">pass</span></li>
  </ul></section>
  <section class="sec" id="try"><h2>Test it yourself</h2><p class="hint">Free and open source. Same checks, same score.</p>
   <div class="cmd"><code id="cmd">npx qamcp-cli https://opencancer.ai/api/mcp</code><button type="button" id="copy">Copy</button></div></section>
- <section class="sec" id="history"><h2>Score over time</h2><ul class="hist"><li><span class="d">15 Oct 2026</span><span class="bar"><i style="width:85%"></i></span><span class="v">85</span></li><li><span class="d">17 Oct 2026</span><span class="v nl">not scored</span></li><li><span class="d">18 Oct 2026</span><span class="v nl">not scored</span></li></ul></section>
+ <section class="sec" id="history"><h2>Score over time</h2><ul class="hist"><li><span class="d">15 Oct 2026</span><span class="bar"><i style="width:85%"></i></span><span class="v">85</span></li><li><span class="d">17 Oct 2026</span><span class="v nl">not scored</span></li><li><span class="d">18 Oct 2026</span><span class="v nl">not scored</span></li><li><span class="d">25 Oct 2026</span><span class="bar"><i style="width:89%"></i></span><span class="v">89</span></li></ul></section>
  <section class="sec" id="reviews"><h2>Reviews</h2><p class="hint">Coming soon: reviews from people who use OpenCancer, signed in with GitHub, one per person. Reviews never change the score.</p></section>
  <div class="claim"><div><b>Is this your server?</b><p>Soon you can claim this page: re-test it from here, reply to results, and show a "Tested by QAmcp" badge.</p><p>Have a concern, or want it removed? <a href="https://github.com/QAmcp/qamcp-cli/issues">Ask us</a> and we'll take it off the list. <a href="../directory-rules.html">How the directory works</a></p></div></div>
 </div>

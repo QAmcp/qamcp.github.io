@@ -109,5 +109,13 @@
  "ai.hipa/clinical-trials": "2026-10-24",
  "ai.human4ai/collaboration": "2026-10-24",
  "ai.lograck/lograck": "2026-10-24",
- "ai.reclypse.csv/utility-node": "2026-10-24"
+ "ai.reclypse.csv/utility-node": "2026-10-24",
+ "ai.brevium/agent-puzzle-bounty": "2026-10-25",
+ "ai.ciphyr.agentmart/core": "2026-10-25",
+ "ai.commerceai/shopping": "2026-10-25",
+ "ai.jerry/insurance": "2026-10-25",
+ "ai.payzilla/marketplace": "2026-10-25",
+ "ai.spelunking/hub": "2026-10-25",
+ "ai.talmbout.leviathan/community": "2026-10-25",
+ "app.bitledger/bitledger": "2026-10-25"
 }
