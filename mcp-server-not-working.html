@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MCP server not working in Cursor or Claude Desktop? Fixes · QAmcp</title>
+<meta name="description" content="Why an MCP server won't connect, won't show up or shows no tools in Cursor, Claude Desktop or VS Code, and how to fix each cause: wrong link, config errors, PATH, stdout logs, logins, broken tool lists.">
+<link rel="canonical" href="https://qamcp.dev/mcp-server-not-working.html">
+<meta property="og:type" content="article"><meta property="og:site_name" content="QAmcp"><meta property="og:title" content="MCP server not working in Cursor or Claude Desktop? Fixes"><meta property="og:description" content="Why an MCP server won't connect, won't show up or shows no tools in Cursor, Claude Desktop or VS Code, and how to fix each cause: wrong link, config errors, PATH, stdout logs, logins, broken tool lists."><meta property="og:url" content="https://qamcp.dev/mcp-server-not-working.html"><meta name="twitter:card" content="summary">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231A1A1A'/%3E%3Crect x='7' y='7' width='18' height='18' rx='2' fill='none' stroke='%23B9838A' stroke-width='2.4'/%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('qamcp-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="stylesheet" href="site.css">
+<style>
+.faq{margin-top:clamp(22px,3vw,36px);border-top:1px solid var(--rule)}
+.faq details{border-bottom:1px solid var(--rule);padding:14px 0}
+.faq summary{cursor:pointer;font-weight:700;list-style-position:outside}
+.faq summary:focus-visible{outline:2px solid var(--rose);outline-offset:3px}
+.faq p{margin-top:8px;color:var(--soft);max-width:68ch}
+ol.proc span.ex{display:block;margin-top:12px;padding:12px 14px;background:var(--ground);border:1px solid var(--rule);border-radius:8px;font:400 13.5px/1.55 var(--mono);color:var(--ink);overflow-wrap:anywhere;font-variant-ligatures:none}
+ol.proc .ex span.bad{color:var(--fail)}ol.proc .ex span.note{color:var(--rose)}
+.way{margin-top:clamp(26px,3.4vw,40px);font:700 clamp(18px,1.6vw,22px)/1.2 var(--head)}
+.part-in > .ex{margin-top:12px;padding:12px 14px;background:var(--ground);border:1px solid var(--rule);border-radius:8px;font:400 13.5px/1.6 var(--mono);color:var(--ink);overflow-wrap:anywhere;font-variant-ligatures:none}
+.page-head p.updated{margin-top:10px;font:400 13px var(--mono);color:var(--faint)}
+</style>
+<style>
+table.opts{width:100%;border-collapse:collapse;margin-top:clamp(18px,2.4vw,28px);font-size:15px}
+table.opts td{padding:11px 12px 11px 0;border-top:1px solid var(--rule);vertical-align:top}
+table.opts td:first-child{width:34%;font:400 14px/1.5 var(--mono);color:var(--ink);overflow-wrap:anywhere}
+table.opts td:last-child{color:var(--soft)}
+.part-in h3.way + .intro{margin-top:8px}
+@media (max-width:640px){table.opts td{display:block;width:auto!important;padding:4px 0}table.opts tr{display:block;padding:10px 0;border-top:1px solid var(--rule)}table.opts td{border:0}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why does my MCP server work in the terminal but not in Claude Desktop?","acceptedAnswer":{"@type":"Answer","text":"Usually because the app doesn't see the same PATH as your terminal, so it can't find npx, node or uvx. Use the full path to the program in the config file, then fully quit and reopen the app."}},{"@type":"Question","name":"Where is the Claude Desktop config file?","acceptedAnswer":{"@type":"Answer","text":"On macOS: ~/Library/Application Support/Claude/claude_desktop_config.json. On Windows: %APPDATA%\\Claude\\claude_desktop_config.json."}},{"@type":"Question","name":"Where is the Cursor MCP config?","acceptedAnswer":{"@type":"Answer","text":"In ~/.cursor/mcp.json for all projects, or .cursor/mcp.json inside a project for that project only."}},{"@type":"Question","name":"How do I know if the problem is my server or the app?","acceptedAnswer":{"@type":"Answer","text":"Test the server directly with npx qamcp-cli or on qamcp.dev. If the test passes, the server is fine and the app's settings are the problem."}}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="sheet">
+ <div class="sheet-in">
+  <header class="top">
+   <a class="brand" href="./">QA<b>mcp</b></a>
+   <nav aria-label="Main"><a href="directory.html">Directory</a><a href="test.html">Test a server</a><a href="how-it-works.html">How it works</a><a href="safety.html">Safety</a><a href="ci.html">Run it in CI</a><a href="samples.html">Sample reports</a></nav>
+   <a class="gh" href="https://github.com/QAmcp/qamcp-cli"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38v-1.33c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.06-.49.06-.49.8.06 1.23.83 1.23.83.72 1.22 1.88.87 2.34.66.07-.52.28-.87.5-1.07-1.78-.2-3.65-.89-3.65-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>GitHub</a>
+   <button class="theme" id="theme" type="button" style="margin-left:10px">Light</button>
+  </header>
+  <main id="main">
+   <div class="page-head">
+    <h1>MCP server not working? Find the cause</h1>
+    <p>When an MCP server won't connect, doesn't show up, or shows no tools in Cursor, Claude Desktop or VS Code, it's almost always one of the causes below. The fastest way to know which one: test the server directly, outside the app.</p>
+    <p class="updated">Last updated: 27 October 2026</p>
+    <nav class="toc" aria-label="On this page"><a href="#first">Test it first</a><a href="#remote">Server on the internet</a><a href="#local">Server on your computer</a><a href="#tools">Connects, but tools are missing</a><a href="#logs">Where the logs are</a><a href="#faq">Questions</a></nav>
+   </div>
+  </main>
+ </div>
+</div>
+
+<section class="part" id="first" aria-labelledby="h-first">
+ <div class="part-in">
+  <span class="sheetno">Step 1 · Test the server directly</span>
+  <h2 id="h-first">Test the server outside the app first</h2>
+  <p class="intro">An app like Cursor or Claude Desktop often just says the server failed. Testing it directly tells you whether the problem is the server or the app's settings, and QAmcp explains the failure in plain words.</p>
+  <div class="ex">npx qamcp-cli https://your-server.com/mcp<br>npx qamcp-cli --stdio "npx -y @acme/mcp-server"</div>
+  <p class="intro">A server on the internet can also be tested on the <a href="test.html">test page</a>, with nothing to install. If the test passes, the server is fine and the problem is in the app's settings: jump to the section for your kind of server below.</p>
+ </div>
+</section>
+
+<section class="part" id="remote" aria-labelledby="h-remote">
+ <div class="part-in">
+  <span class="sheetno">Step 2 · A server on the internet</span>
+  <h2 id="h-remote">A server on the internet won't connect</h2>
+  <h3 class="way" id="wrong-link">The link points to the wrong place</h3>
+  <p class="intro">Many servers live at an address ending in <code>/mcp</code>, and links copied from a listing often leave it out. A 404 or 405 error usually means the path is wrong. When this happens, QAmcp checks the usual paths and tells you the address where an MCP server really answers.</p>
+
+  <h3 class="way" id="old-sse">The server only speaks the old SSE connection</h3>
+  <p class="intro">Older servers use the SSE connection type, newer ones use streamable HTTP. Some apps only try one of them. QAmcp tries both and says which one the server speaks, so you can pick the matching setting or link in your app.</p>
+
+  <h3 class="way" id="login">It needs a login or an API key</h3>
+  <p class="intro">A 401 or 403 error means the server wants you to sign in. Add the key the server's docs ask for (often an <code>Authorization</code> header) or use the app's sign-in option. To check the login setup itself, test with <code>--login</code>: QAmcp opens the login page in your browser and reports what's wrong with the login setup if it fails.</p>
+
+  <h3 class="way" id="slow">It's too slow</h3>
+  <p class="intro">If the server takes many seconds to connect or answer, apps can give up first. QAmcp times connecting, listing tools and every answer, and flags anything slow.</p>
+
+ </div>
+</section>
+
+<section class="part" id="local" aria-labelledby="h-local">
+ <div class="part-in">
+  <span class="sheetno">Step 3 · A server on your computer</span>
+  <h2 id="h-local">A server on your computer won't start</h2>
+  <h3 class="way" id="json">The config file has a typo</h3>
+  <p class="intro">One missing comma or quote in <code>claude_desktop_config.json</code> or <code>mcp.json</code> breaks every server in it. Paste the file into any JSON checker. Watch for trailing commas, which JSON doesn't allow.</p>
+
+  <h3 class="way" id="path">The app can't find <code>npx</code>, <code>node</code> or <code>uvx</code></h3>
+  <p class="intro">Desktop apps often don't see the same PATH as your terminal, especially on macOS, so a command that works in the terminal fails in the app. Use the full path to the program in the config, for example the output of <code>which npx</code> (macOS and Linux) or <code>where npx</code> (Windows).</p>
+
+  <h3 class="way" id="stdout">The server prints logs to stdout</h3>
+  <p class="intro">A local server talks to the app over stdout, so any stray line it prints there, like a startup message or a debug log, breaks the connection. Send logs to stderr instead. QAmcp's <code>--stdio</code> test checks for this and shows the lines that don't belong.</p>
+
+  <h3 class="way" id="env">A key or setting is missing</h3>
+  <p class="intro">Many servers need an API key in an environment variable. Put it in the <code>env</code> section of the server's entry in the config, then test the same way with <code>npx qamcp-cli --stdio "your command" --env NAME=value</code>.</p>
+
+  <h3 class="way" id="restart">The app wasn't restarted</h3>
+  <p class="intro">Most apps only read the config when they start. Fully quit the app (not just close its window) and open it again after every change.</p>
+
+ </div>
+</section>
+
+<section class="part" id="tools" aria-labelledby="h-tools">
+ <div class="part-in">
+  <span class="sheetno">Step 4 · Connected, but something's missing</span>
+  <h2 id="h-tools">It connects, but tools are missing or wrong</h2>
+  <h3 class="way" id="broken-tool">One broken tool hides the whole server</h3>
+  <p class="intro">If a single tool has an invalid definition, some apps refuse to load the server at all. QAmcp checks every tool definition and names the one that breaks the list, while still testing the others.</p>
+
+  <h3 class="way" id="too-many">Too many tools in total</h3>
+  <p class="intro">Apps limit how many tools they pass to the AI. Cursor users report a limit of 40 tools across all servers, and some servers alone come close. Turn off servers or tools you don't use. QAmcp's tips also say when a server's tool list is unusually large.</p>
+
+  <h3 class="way" id="wrong-tool">The AI picks the wrong tool, or none</h3>
+  <p class="intro">The AI chooses tools from their names and descriptions alone. Missing or vague descriptions, or two tools that read the same, make it guess. QAmcp flags each of these with the exact tool names.</p>
+
+ </div>
+</section>
+
+<section class="part" id="logs" aria-labelledby="h-logs">
+ <div class="part-in">
+  <span class="sheetno">Step 5 · Read the logs</span>
+  <h2 id="h-logs">Where the logs are</h2>
+  <p class="intro">If a server still fails, the app's logs usually show the real error. Claude Desktop writes its MCP logs to <code>~/Library/Logs/Claude</code> on macOS and <code>%APPDATA%\Claude\logs</code> on Windows. Cursor shows MCP output in its Output panel. Look for the first error after the server starts; the lines after it are usually just the app giving up.</p>
+ </div>
+</section>
+
+<section class="part" id="faq" aria-labelledby="h-faq">
+ <div class="part-in">
+  <span class="sheetno">Questions</span>
+  <h2 id="h-faq">Questions</h2>
+  <div class="faq">
+   <details><summary>Why does my MCP server work in the terminal but not in Claude Desktop?</summary><p>Usually because the app doesn't see the same PATH as your terminal, so it can't find npx, node or uvx. Use the full path to the program in the config file, then fully quit and reopen the app.</p></details>
+   <details><summary>Where is the Claude Desktop config file?</summary><p>On macOS: ~/Library/Application Support/Claude/claude_desktop_config.json. On Windows: %APPDATA%\Claude\claude_desktop_config.json.</p></details>
+   <details><summary>Where is the Cursor MCP config?</summary><p>In ~/.cursor/mcp.json for all projects, or .cursor/mcp.json inside a project for that project only.</p></details>
+   <details><summary>How do I know if the problem is my server or the app?</summary><p>Test the server directly with <code>npx qamcp-cli</code> or on qamcp.dev. If the test passes, the server is fine and the app's settings are the problem.</p></details>
+  </div>
+ </div>
+</section>
+
+<footer>
+ <span>QAmcp · free and open source (MIT)</span>
+ <a href="./">Home</a>
+ <a href="https://github.com/QAmcp/qamcp-cli">GitHub</a>
+ <a href="https://www.npmjs.com/package/qamcp-cli">npm</a>
+ <a href="how-to-test-mcp-server.html">How to test an MCP server</a>
+ <a href="cli.html">Use it in the terminal</a>
+ <a href="mcp-server-not-working.html">MCP server not working?</a>
+ <a href="safety.html">Safety and privacy</a>
+ <a href="https://github.com/QAmcp/qamcp-cli/issues">Report a wrong result</a>
+ <a href="privacy.html">Privacy and terms</a>
+ <span class="r">This site has no tracking.</span>
+</footer>
+<script src="theme.js"></script>
+<script src="count.js"></script>
+</body>
+</html>

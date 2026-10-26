@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QAmcp CLI: test an MCP server from the terminal (npx qamcp-cli) · QAmcp</title>
+<meta name="description" content="Every command and option of npx qamcp-cli: test remote and local (stdio) MCP servers, logins and API keys, safe modes, --before-install, commit hooks, CI gates, reports and exit codes.">
+<link rel="canonical" href="https://qamcp.dev/cli.html">
+<meta property="og:type" content="article"><meta property="og:site_name" content="QAmcp"><meta property="og:title" content="QAmcp CLI: test an MCP server from the terminal (npx qamcp-cli)"><meta property="og:description" content="Every command and option of npx qamcp-cli: test remote and local (stdio) MCP servers, logins and API keys, safe modes, --before-install, commit hooks, CI gates, reports and exit codes."><meta property="og:url" content="https://qamcp.dev/cli.html"><meta name="twitter:card" content="summary">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231A1A1A'/%3E%3Crect x='7' y='7' width='18' height='18' rx='2' fill='none' stroke='%23B9838A' stroke-width='2.4'/%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('qamcp-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="stylesheet" href="site.css">
+<style>
+.faq{margin-top:clamp(22px,3vw,36px);border-top:1px solid var(--rule)}
+.faq details{border-bottom:1px solid var(--rule);padding:14px 0}
+.faq summary{cursor:pointer;font-weight:700;list-style-position:outside}
+.faq summary:focus-visible{outline:2px solid var(--rose);outline-offset:3px}
+.faq p{margin-top:8px;color:var(--soft);max-width:68ch}
+ol.proc span.ex{display:block;margin-top:12px;padding:12px 14px;background:var(--ground);border:1px solid var(--rule);border-radius:8px;font:400 13.5px/1.55 var(--mono);color:var(--ink);overflow-wrap:anywhere;font-variant-ligatures:none}
+ol.proc .ex span.bad{color:var(--fail)}ol.proc .ex span.note{color:var(--rose)}
+.way{margin-top:clamp(26px,3.4vw,40px);font:700 clamp(18px,1.6vw,22px)/1.2 var(--head)}
+.part-in > .ex{margin-top:12px;padding:12px 14px;background:var(--ground);border:1px solid var(--rule);border-radius:8px;font:400 13.5px/1.6 var(--mono);color:var(--ink);overflow-wrap:anywhere;font-variant-ligatures:none}
+.page-head p.updated{margin-top:10px;font:400 13px var(--mono);color:var(--faint)}
+</style>
+<style>
+table.opts{width:100%;border-collapse:collapse;margin-top:clamp(18px,2.4vw,28px);font-size:15px}
+table.opts td{padding:11px 12px 11px 0;border-top:1px solid var(--rule);vertical-align:top}
+table.opts td:first-child{width:34%;font:400 14px/1.5 var(--mono);color:var(--ink);overflow-wrap:anywhere}
+table.opts td:last-child{color:var(--soft)}
+.part-in h3.way + .intro{margin-top:8px}
+@media (max-width:640px){table.opts td{display:block;width:auto!important;padding:4px 0}table.opts tr{display:block;padding:10px 0;border-top:1px solid var(--rule)}table.opts td{border:0}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do I need to install anything?","acceptedAnswer":{"@type":"Answer","text":"Only Node.js 20 or newer. npx qamcp-cli downloads and runs the latest version for you."}},{"@type":"Question","name":"Does it send my data anywhere?","acceptedAnswer":{"@type":"Answer","text":"No. It talks only to the server you test (and its login page, if it has one). No tracking, no telemetry."}},{"@type":"Question","name":"Can it test a Python MCP server?","acceptedAnswer":{"@type":"Answer","text":"Yes. Test it by its link if it runs on a port, or start it with --stdio, for example --stdio \"uv run server.py\"."}},{"@type":"Question","name":"What does --before-install do?","acceptedAnswer":{"@type":"Answer","text":"It reads what a server says about itself, without calling any tool, and tells you in plain words about hidden instructions and which tools could change, send or delete things."}}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="sheet">
+ <div class="sheet-in">
+  <header class="top">
+   <a class="brand" href="./">QA<b>mcp</b></a>
+   <nav aria-label="Main"><a href="directory.html">Directory</a><a href="test.html">Test a server</a><a href="how-it-works.html">How it works</a><a href="safety.html">Safety</a><a href="ci.html">Run it in CI</a><a href="samples.html">Sample reports</a></nav>
+   <a class="gh" href="https://github.com/QAmcp/qamcp-cli"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38v-1.33c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.06-.49.06-.49.8.06 1.23.83 1.23.83.72 1.22 1.88.87 2.34.66.07-.52.28-.87.5-1.07-1.78-.2-3.65-.89-3.65-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>GitHub</a>
+   <button class="theme" id="theme" type="button" style="margin-left:10px">Light</button>
+  </header>
+  <main id="main">
+   <div class="page-head">
+    <h1>QAmcp in the terminal</h1>
+    <p>Everything the command-line tool can do, with an example for each. You need Node.js 20 or newer. Nothing to install first: <code>npx</code> downloads and runs it. It sends nothing anywhere except to the server you test.</p>
+    <p class="updated">Last updated: 27 October 2026</p>
+    <nav class="toc" aria-label="On this page"><a href="#start">Start here</a><a href="#what">What to test</a><a href="#safety">Which tools may run</a><a href="#ci">On every change</a><a href="#reports">Reports</a><a href="#exit">Exit codes</a><a href="#faq">Questions</a></nav>
+   </div>
+  </main>
+ </div>
+</div>
+
+<section class="part" id="start" aria-labelledby="h-start">
+ <div class="part-in">
+  <span class="sheetno">Start here</span>
+  <h2 id="h-start">The three commands most people need</h2>
+  <h3 class="way" id="remote">A server on the internet</h3>
+  <div class="ex">npx qamcp-cli https://your-server.com/mcp</div>
+
+  <h3 class="way" id="local-cmd">A server that runs on your computer</h3>
+  <div class="ex">npx qamcp-cli --stdio "npx -y @your-org/your-server"</div>
+
+  <h3 class="way" id="demo">No server yet? Try the demo</h3>
+  <div class="ex">npx qamcp-cli --demo</div>
+  <p class="intro">Starts a server we broke on purpose, on your computer only, tests it, and writes <code>qamcp-demo-report.html</code>. About 30 seconds.</p>
+
+  <p class="intro">Prefer to install it once? <code>npm install -g qamcp-cli</code>, then just type <code>qamcp</code>. See every option any time with <code>npx qamcp-cli --help</code>.</p>
+ </div>
+</section>
+
+<section class="part" id="what" aria-labelledby="h-what">
+ <div class="part-in">
+  <span class="sheetno">Options · What to test</span>
+  <h2 id="h-what">Telling it what to test</h2>
+  <table class="opts"><tbody>
+   <tr><td>--header "Name: value"</td><td>Send a header, for a server that needs an API key. Example: <code>--header "Authorization: Bearer YOUR_KEY"</code>. Can be repeated.</td></tr>
+   <tr><td>--login</td><td>For a server that needs you to sign in: opens its login page in your browser. The login is used for this test only.</td></tr>
+   <tr><td>--stdio "&lt;command&gt;"</td><td>Start this program and test it: a server that runs on your computer.</td></tr>
+   <tr><td>--env NAME=value</td><td>An environment variable for the <code>--stdio</code> program, like an API key. Can be repeated.</td></tr>
+   <tr><td>--cwd &lt;folder&gt;</td><td>The folder to start the <code>--stdio</code> program in.</td></tr>
+   <tr><td>--timeout &lt;seconds&gt;</td><td>Time limit for each request. Default 20.</td></tr>
+   <tr><td>--no-history</td><td>Don't remember this server's tools between runs. Without it, the next run shows exactly what changed in the tools.</td></tr>
+  </tbody></table>
+ </div>
+</section>
+
+<section class="part" id="safety" aria-labelledby="h-safety">
+ <div class="part-in">
+  <span class="sheetno">Options · Which tools may run</span>
+  <h2 id="h-safety">Choosing how much it may touch</h2>
+  <p class="intro">By default it only runs tools the server labels read-only, and never runs tools that sound destructive, like <code>delete_account</code>, in any mode.</p>
+  <table class="opts"><tbody>
+   <tr><td>--before-install</td><td>About to add someone else's server to Claude or Cursor? A quick safety look in plain words: red flags, and which tools can change, send or delete things. Calls no tools.</td></tr>
+   <tr><td>--look-only</td><td>Call no tools at all; only read what the server says about itself. For a server you don't trust.</td></tr>
+   <tr><td>--owner</td><td>Your own server: also run unlabeled tools whose names clearly only read (<code>get_</code>, <code>list_</code>, <code>search_</code>…).</td></tr>
+   <tr><td>--run-unlabeled</td><td>Your own test copy: run every tool not named or labeled dangerous. Never on live data.</td></tr>
+  </tbody></table>
+ </div>
+</section>
+
+<section class="part" id="ci" aria-labelledby="h-ci">
+ <div class="part-in">
+  <span class="sheetno">Options · On every change</span>
+  <h2 id="h-ci">Testing on every commit and pull request</h2>
+  <h3 class="way" id="hook">Before every commit</h3>
+  <div class="ex">npx qamcp-cli --install-hook --stdio "npm start"</div>
+  <p class="intro">From then on every <code>git commit</code> tests your server first, and stops the commit if it scores below 80 (change it with <code>--fail-under</code>). Skip it once with <code>git commit --no-verify</code>.</p>
+
+  <h3 class="way" id="gates">In CI</h3>
+  <div class="ex">npx qamcp-cli https://your-server.com/mcp --fail-under 80 --baseline base.json --save-baseline base.json --junit report.xml</div>
+  <p class="intro">On GitHub, the action <code>QAmcp/qamcp-cli@v0</code> does this and comments the score on each pull request. See <a href="ci.html">Run it in CI</a>.</p>
+
+  <table class="opts"><tbody>
+   <tr><td>--fail-under &lt;score&gt;</td><td>Fail if the score is below this.</td></tr>
+   <tr><td>--fail-on-fail</td><td>Fail if any check failed.</td></tr>
+   <tr><td>--fail-on-tool-change</td><td>Fail if a tool changed in a way that changes what an AI does (compared with the baseline, or the last run on this computer).</td></tr>
+   <tr><td>--baseline &lt;file.json&gt;</td><td>Compare with a saved report; fail if the score dropped or a check got worse.</td></tr>
+   <tr><td>--max-drop &lt;points&gt;</td><td>How far the score may fall below the baseline. Default 5.</td></tr>
+   <tr><td>--save-baseline &lt;file&gt;</td><td>Save this report to compare with next time.</td></tr>
+   <tr><td>--install-hook</td><td>Test this server on every git commit (see above).</td></tr>
+  </tbody></table>
+ </div>
+</section>
+
+<section class="part" id="reports" aria-labelledby="h-reports">
+ <div class="part-in">
+  <span class="sheetno">Options · Reports</span>
+  <h2 id="h-reports">Saving and sharing the result</h2>
+  <table class="opts"><tbody>
+   <tr><td>--html &lt;file.html&gt;</td><td>A report page you can open and share. Works offline.</td></tr>
+   <tr><td>--json &lt;file.json&gt;</td><td>The full report as data.</td></tr>
+   <tr><td>--markdown &lt;file.md&gt;</td><td>A short report for pull-request comments.</td></tr>
+   <tr><td>--junit &lt;file.xml&gt;</td><td>A JUnit report for CI systems.</td></tr>
+  </tbody></table>
+ </div>
+</section>
+
+<section class="part" id="exit" aria-labelledby="h-exit">
+ <div class="part-in">
+  <span class="sheetno">Exit codes</span>
+  <h2 id="h-exit">Exit codes</h2>
+  <table class="opts"><tbody>
+   <tr><td>0</td><td>Fine.</td></tr>
+   <tr><td>1</td><td>A check you required failed (a CI gate).</td></tr>
+   <tr><td>2</td><td>Wrong options.</td></tr>
+   <tr><td>3</td><td>Could not test: the server is down or needs a login.</td></tr>
+  </tbody></table>
+ </div>
+</section>
+
+<section class="part" id="faq" aria-labelledby="h-faq">
+ <div class="part-in">
+  <span class="sheetno">Questions</span>
+  <h2 id="h-faq">Questions</h2>
+  <div class="faq">
+   <details><summary>Do I need to install anything?</summary><p>Only Node.js 20 or newer. <code>npx qamcp-cli</code> downloads and runs the latest version for you.</p></details>
+   <details><summary>Does it send my data anywhere?</summary><p>No. It talks only to the server you test (and its login page, if it has one). No tracking, no telemetry.</p></details>
+   <details><summary>Can it test a Python MCP server?</summary><p>Yes. Test it by its link if it runs on a port, or start it with <code>--stdio</code>, for example <code>--stdio "uv run server.py"</code>.</p></details>
+   <details><summary>What does --before-install do?</summary><p>It reads what a server says about itself, without calling any tool, and tells you in plain words about hidden instructions and which tools could change, send or delete things.</p></details>
+  </div>
+ </div>
+</section>
+
+<footer>
+ <span>QAmcp · free and open source (MIT)</span>
+ <a href="./">Home</a>
+ <a href="https://github.com/QAmcp/qamcp-cli">GitHub</a>
+ <a href="https://www.npmjs.com/package/qamcp-cli">npm</a>
+ <a href="how-to-test-mcp-server.html">How to test an MCP server</a>
+ <a href="cli.html">Use it in the terminal</a>
+ <a href="mcp-server-not-working.html">MCP server not working?</a>
+ <a href="safety.html">Safety and privacy</a>
+ <a href="https://github.com/QAmcp/qamcp-cli/issues">Report a wrong result</a>
+ <a href="privacy.html">Privacy and terms</a>
+ <span class="r">This site has no tracking.</span>
+</footer>
+<script src="theme.js"></script>
+<script src="count.js"></script>
+</body>
+</html>
