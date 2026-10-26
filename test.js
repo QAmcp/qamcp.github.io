@@ -205,6 +205,9 @@
 
   // Before any test: show the checks that will run.
   $('rows').replaceChildren(...CHECKS.map(([id, title]) => row(id, title)));
-  const fromLink = new URLSearchParams(location.search).get('url');
+  const params = new URLSearchParams(location.search);
+  const fromLink = params.get('url');
   if (fromLink) $('url').value = fromLink;
+  // Pressed "Test it" on the home page: start right away instead of asking twice.
+  if (fromLink && params.get('go') === '1') $('form').requestSubmit();
 })();
