@@ -1,0 +1,28 @@
+# QAmcp
+
+> QAmcp is a free, open-source (MIT) tester for MCP (Model Context Protocol) servers. It connects to a server the way an AI app does and reports, in plain words, what is broken: connection, tool descriptions, safety labels, hidden instructions in tool descriptions, bad-input handling, leaked secrets in error messages, speed, login (OAuth) setup, resources and prompts. Every result is a hard fact (pass or fail, milliseconds, exact matches); no AI judges the results.
+
+How to use it:
+
+- In the browser, no install: https://qamcp.github.io/test.html (paste a server link, press Test it)
+- In a terminal: `npx qamcp-cli https://your-server.com/mcp` (or `npx qamcp-cli --stdio "your command"` for a local server)
+- Before installing someone else's server: `npx qamcp-cli <link> --before-install`
+- On every commit: `npx qamcp-cli --install-hook --stdio "npm start"`
+- On every pull request: the GitHub Action `QAmcp/qamcp-cli@v0`
+
+Safety: by default it only runs tools the server labels read-only, never runs tools that sound destructive, and sends nothing anywhere except to the server being tested. No tracking, no telemetry.
+
+## Pages
+
+- [Test a server in the browser](https://qamcp.github.io/test.html): free, same checks and score as the CLI
+- [Directory](https://qamcp.github.io/directory.html): public MCP servers tested by QAmcp, with scores and every finding; updated daily
+- [How it works](https://qamcp.github.io/how-it-works.html): every check and how the 0-100 score is calculated
+- [Safety and privacy](https://qamcp.github.io/safety.html): what QAmcp touches and what it never does
+- [Run it in CI](https://qamcp.github.io/ci.html): GitHub Action and other CI systems
+- [Sample reports](https://qamcp.github.io/samples.html): a deliberately broken server, a login wall, and a perfect score
+- [Directory rules](https://qamcp.github.io/directory-rules.html): how servers are listed and ranked; scores are never changed for money
+
+## Source
+
+- [GitHub: QAmcp/qamcp-cli](https://github.com/QAmcp/qamcp-cli)
+- [npm: qamcp-cli](https://www.npmjs.com/package/qamcp-cli)
