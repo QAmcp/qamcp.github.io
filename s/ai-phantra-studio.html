@@ -39,10 +39,11 @@
   <div class="cmd"><code id="cmd">npx qamcp-cli https://api.phantra.ai/mcp --login</code><button type="button" id="copy">Copy</button></div></section>
  <section class="sec" id="history"><h2>Score over time</h2><ul class="hist"><li><span class="d">23 Oct 2026</span><span class="v nl">not scored</span></li></ul><p class="hint">One test so far. New tests will show here.</p></section>
  <section class="sec" id="reviews"><h2>Reviews</h2><p class="hint">Coming soon: reviews from people who use Phantra, signed in with GitHub, one per person. Reviews never change the score.</p></section>
- <div class="claim"><div><b>Is this your server?</b><p>Soon you can claim this page: re-test it from here, reply to results, and show a "Tested by QAmcp" badge.</p><p>Have a concern, or want it removed? <a href="https://github.com/QAmcp/qamcp-cli/issues">Ask us</a> and we'll take it off the list. <a href="../directory-rules.html">How the directory works</a></p></div></div>
+ <div class="claim"><div><b>Is this your server? Get an alert the moment it breaks.</b><p>QAmcp Monitor (coming soon) tests it every hour and emails you when it goes down, the score drops, a tool changes or a secret leaks. You'll also be able to claim this page and show a "Tested by QAmcp" badge. Founding price: $19/month for life for the first 50 teams.</p><form class="notify" novalidate><input type="hidden" name="server" value="https://api.phantra.ai/mcp"><label class="nl">Work email<input name="email" type="email" autocomplete="email" required placeholder="you@company.com"></label><button type="submit">Notify me</button></form><p class="notify-msg" role="status" aria-live="polite"></p><p>Have a concern, or want it removed? <a href="https://github.com/QAmcp/qamcp-cli/issues">Ask us</a> and we'll take it off the list. <a href="../directory-rules.html">How the directory works</a></p></div></div>
 </div>
 <script src="../theme.js"></script>
 <script src="../count.js"></script>
+<script src="../notify.js"></script>
 <script>
 for (const id of ['copy', 'copy-top']) document.getElementById(id).onclick = async (e) => {
   const b = e.currentTarget, was = b.textContent;

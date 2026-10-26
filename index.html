@@ -208,6 +208,28 @@ footer .r{margin-left:auto}
 .faq summary:focus-visible{outline:2px solid var(--rose);outline-offset:3px}
 .faq p{margin-top:8px;color:var(--soft)}
 #faq .intro a{color:var(--rose)}
+.mon{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:center}
+.notify{display:grid;grid-template-columns:1fr 1fr;gap:10px;align-items:end;margin-top:clamp(20px,2.6vw,30px)}
+.notify .nl{white-space:nowrap}
+.notify .nl{display:grid;gap:6px;font:600 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--faint)}
+.notify .nl span{text-transform:none;letter-spacing:0;font-weight:400}
+.notify input{border:1px solid var(--frame);border-radius:9px;background:var(--ground);padding:13px 14px;font:400 15px var(--text);color:var(--ink);outline:none;min-width:0}
+.notify input:focus{border-color:var(--rose)}
+.notify button{grid-column:1/-1;border:0;border-radius:9px;background:var(--rose);color:var(--on-rose);font:700 15px var(--text);padding:14px 20px;cursor:pointer}
+.notify button:disabled{opacity:.6;cursor:default}
+.notify button:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.notify-msg{margin-top:10px;min-height:1.4em;font-size:14.5px;color:var(--soft)}.notify-msg.ok{color:var(--pass);font-weight:700}
+.fine{margin-top:4px;font-size:14px;color:var(--soft);max-width:70ch}.fine b{color:var(--ink)}
+.alert{margin:0;border:1px solid var(--frame);border-radius:12px;background:var(--ground);padding:18px 20px;box-shadow:0 18px 40px -24px rgba(0,0,0,.55)}
+.ah{display:flex;align-items:center;gap:8px;font:600 13px var(--mono);color:var(--soft)}.ah time{margin-left:auto;color:var(--faint);font-weight:400}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--fail)}
+.at{margin-top:12px;font:700 22px var(--head);font-variant-numeric:tabular-nums}
+.alert ul{list-style:none;padding:0;margin-top:10px;display:grid;gap:9px;font-size:14px;color:var(--soft)}
+.alert li{display:grid;grid-template-columns:16px minmax(0,1fr);gap:8px}
+.alert .m{font:700 14px var(--mono)}.alert li.f .m{color:var(--fail)}.alert li.w .m{color:var(--rose)}
+.alert li b{font-family:var(--mono);font-weight:600;color:var(--ink)}
+.alert figcaption{margin-top:14px;font:400 12px var(--mono);color:var(--faint)}.alert figcaption span{color:var(--rose)}
+@media (max-width:860px){.mon,.notify{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -275,7 +297,7 @@ footer .r{margin-left:auto}
     </div>
     <div class="block">
      <div><span class="k">FOR TEAMS</span>Publish a server for customers? <a href="#teams">Check it on every change</a></div>
-     <div><span class="k">SHEET</span>1 of 5 · v0.1.14 · MIT</div>
+     <div><span class="k">SHEET</span>1 of 6 · v0.1.14 · MIT</div>
     </div>
    </div>
   </section>
@@ -285,7 +307,7 @@ footer .r{margin-left:auto}
 
 <section class="part" id="checks" aria-labelledby="h-checks">
  <div class="part-in">
-  <span class="sheetno">Sheet 2 of 5 · What it checks</span>
+  <span class="sheetno">Sheet 2 of 6 · What it checks</span>
   <h2 id="h-checks">Every check is a plain fact you can verify.</h2>
   <p class="intro">No AI judges anything. Every result is pass or fail, a time in milliseconds, or an exact match, and the report always says what it could not test.</p>
   <table class="checks">
@@ -309,7 +331,7 @@ footer .r{margin-left:auto}
 
 <section class="part" id="report" aria-labelledby="h-report">
  <div class="part-in">
-  <span class="sheetno">Sheet 3 of 5 · The report</span>
+  <span class="sheetno">Sheet 3 of 6 · The report</span>
   <h2 id="h-report">A report page you can send to anyone.</h2>
   <div class="two">
    <div>
@@ -331,7 +353,7 @@ footer .r{margin-left:auto}
 
 <section class="part" id="teams" aria-labelledby="h-teams">
  <div class="part-in">
-  <span class="sheetno">Sheet 4 of 5 · For teams</span>
+  <span class="sheetno">Sheet 4 of 6 · For teams</span>
   <h2 id="h-teams">Publish a server for customers? Check it on every change.</h2>
   <div class="two">
    <div>
@@ -363,9 +385,37 @@ footer .r{margin-left:auto}
  </div>
 </section>
 
+<section class="part" id="monitor" aria-labelledby="h-mon">
+ <div class="part-in">
+  <span class="sheetno">Sheet 5 of 6 · Monitor (coming soon)</span>
+  <div class="mon">
+   <div>
+    <h2 id="h-mon">Your server changed at 2:14 am. You'd know.</h2>
+    <p class="intro">QAmcp Monitor tests your server every hour and sends you an alert like this the moment something breaks: it goes down, the score drops, a tool changes, or a secret leaks.</p>
+    <form class="notify" novalidate>
+     <label class="nl">Work email<input name="email" type="email" autocomplete="email" required placeholder="you@company.com"></label>
+     <label class="nl">Your MCP server <span>· optional</span><input name="server" type="url" inputmode="url" autocomplete="off" spellcheck="false" placeholder="https://your-server.com/mcp"></label>
+     <button type="submit">Notify me when it opens</button>
+    </form>
+    <p class="notify-msg" role="status" aria-live="polite"></p>
+    <p class="fine">Founding price: <b>$19/month for life</b> for the first 50 teams (normally $29). We'll email you once when it opens. Nothing else, never shared.</p>
+   </div>
+   <figure class="alert" aria-label="Example alert">
+    <div class="ah"><span class="dot" aria-hidden="true"></span>QAmcp Monitor <time>2:14 am</time></div>
+    <p class="at">acme-mcp: 92 → 61</p>
+    <ul>
+     <li class="f"><span class="m" aria-hidden="true">✕</span><span><b>fetch_notes</b> description changed: now contains a hidden &lt;IMPORTANT&gt; block</span></li>
+     <li class="w"><span class="m" aria-hidden="true">!</span><span><b>get_order</b> readOnlyHint: true → removed</span></li>
+    </ul>
+    <figcaption>Example alert · <span>Open the report</span></figcaption>
+   </figure>
+  </div>
+ </div>
+</section>
+
 <section class="part" id="faq" aria-labelledby="h-faq">
  <div class="part-in">
-  <span class="sheetno">Sheet 5 of 5 · Questions</span>
+  <span class="sheetno">Sheet 6 of 6 · Questions</span>
   <h2 id="h-faq">Questions about QAmcp</h2>
   <div class="faq">
    <details><summary>What is QAmcp?</summary><p>A free, open-source tester for MCP servers. It connects to a server the way an AI app does and tells you, in plain words, what is broken: connection, tool descriptions, safety labels, hidden instructions, bad inputs, leaked secrets and speed. Every result is a hard fact, and no AI judges anything.</p></details>
@@ -455,5 +505,6 @@ for (const co of document.querySelectorAll('.co')) {
 </script>
 <script src="theme.js"></script>
 <script src="count.js"></script>
+<script src="notify.js"></script>
 </body>
 </html>
