@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Is HODDS MCP server safe? 93/100 in QAmcp's test</title>
+<meta name="description" content="HODDS MCP server: Find software, SaaS and APIs for a need in a sourced catalogue organised by business process.. Scored 93/100 in QAmcp&#39;s safety and quality test on 26 Oct 2026.">
+<link rel="canonical" href="https://qamcp.dev/s/ai-hodds-hodds.html">
+<meta property="og:type" content="website"><meta property="og:site_name" content="QAmcp"><meta property="og:title" content="HODDS MCP server: tested by QAmcp"><meta property="og:description" content="HODDS MCP server: Find software, SaaS and APIs for a need in a sourced catalogue organised by business process.. Scored 93/100 in QAmcp&#39;s safety and quality test on 26 Oct 2026."><meta property="og:url" content="https://qamcp.dev/s/ai-hodds-hodds.html"><meta name="twitter:card" content="summary">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is HODDS MCP server safe?","acceptedAnswer":{"@type":"Answer","text":"QAmcp's test on 26 Oct 2026: No hidden instructions were found in its tool descriptions. Its error messages showed no secrets or internal details. 10 of its 19 tools are labeled read-only; the others may change or send things. Overall it scored 93/100 on 26 Oct 2026. A test can only see what the server shows from outside, not what it does with your data behind the scenes. Connect servers from makers you trust."}}]}</script>
+<script>try{var t=localStorage.getItem('qamcp-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="stylesheet" href="../site.css"><link rel="stylesheet" href="../theme.css"><link rel="stylesheet" href="server.css">
+</head><body>
+<div class="wrap">
+ <header class="top"><a class="brand" href="../index.html">QA<b>mcp</b></a><nav aria-label="Main"><a href="../directory.html" aria-current="page">Directory</a><a href="../test.html">Test a server</a><a href="../how-it-works.html">How it works</a><a href="../safety.html">Safety</a><a href="../ci.html">Run it in CI</a><a href="../samples.html">Sample reports</a></nav>
+  <div class="tools"><button class="theme" id="theme" type="button">Light</button><a class="gh" href="https://github.com/QAmcp/qamcp-cli">GitHub</a></div></header>
+ <section class="hero">
+  <img class="logo" src="logo/ai-hodds-hodds.png" alt="" width="96" height="96">
+  <div class="who">
+   <p class="crumb"><a href="../directory.html">Directory</a> / HODDS</p>
+   <h1>HODDS</h1>
+   <p class="by">by <a href="https://hodds.ai/connect/" rel="noopener nofollow">hodds.ai</a> · https://hodds.ai/mcp</p>
+   <p class="d">Find software, SaaS and APIs for a need in a sourced catalogue organised by business process.</p>
+   <div class="chips"><span>19 tools</span><span class="ok">✓ no account needed</span><span>Pricing: not listed</span></div>
+   <div class="acts"><button class="p" type="button" id="copy-top">Copy the test command</button><a class="s" href="https://hodds.ai/connect/" rel="noopener nofollow">Visit website</a></div>
+  </div>
+  <div class="medal">
+   <div class="n">93<small> /100</small></div>
+   <span class="stamp mid">PASS · WITH NOTES</span>
+   
+   <p>12 of 12 checks · 26 Oct 2026</p>
+  </div>
+ </section>
+ <nav class="tabs" aria-label="On this page"><a href="#safe">Is it safe?</a><a href="#tools">What it can do</a><a href="#results">Test results</a><a href="#try">Test it yourself</a><a href="#history">Score over time</a><a href="#reviews">Reviews</a></nav>
+<section class="sec" id="safe"><h2>Is HODDS MCP server safe?</h2><ul class="safe"><li>No hidden instructions were found in its tool descriptions.</li><li>Its error messages showed no secrets or internal details.</li><li>10 of its 19 tools are labeled read-only; the others may change or send things.</li><li>Overall it scored 93/100 on 26 Oct 2026.</li></ul><p class="hint">A test can only see what the server shows from outside, not what it does with your data behind the scenes. Connect servers from makers you trust.</p></section>
+ <section class="sec" id="tools"><h2>What it can do</h2><p class="hint">19 tools, in the server's own words.</p><div class="grid">
+<div class="tool"><code>search_solutions</code><span class="ro">read-only</span><p>Searches the HODDS catalogue of software, SaaS, APIs and online services, organised by business process, for records that match a need written in English or Fr…</p></div>
+<div class="tool"><code>get_solution</code><span class="ro">read-only</span><p>Returns one HODDS catalogue record by id (an option id returned by search_solutions): name, homepage, summary in English and French, processes (the first is pr…</p></div>
+<div class="tool"><code>list_processes</code><span class="ro">read-only</span><p>Returns the HODDS process taxonomy: groups (for example &quot;Run the business&quot;) and processes (for example &quot;invoice-and-get-paid&quot;), with English and French labels …</p></div>
+<div class="tool"><code>send_feedback</code><p>Stores a declarative outcome report for an option returned by search_solutions: outcome YES (the option met the need), PARTLY or NO, with the request_id and th…</p></div>
+<div class="tool"><code>watch_need</code><p>Opens a watch on a need for the organisation of the token: constraints and software by id or name (any process).</p></div>
+<div class="tool"><code>get_watch</code><span class="ro">read-only</span><p>Returns one watch of the organisation: constraints, solution in place, challenger with its switch brief and HODDS status, challenger_reason when there is none,…</p></div>
+<div class="tool"><code>list_watches</code><span class="ro">read-only</span><p>Lists the watches of the organisation with their challenger and number of pending alerts; include_closed adds the watches closed in the last 30 days.</p></div>
+<div class="tool"><code>set_current_choice</code><p>Sets a solution by id or free name (any process), null clears.</p></div>
+<div class="tool"><code>ack_alerts</code><p>Acknowledges alerts of one watch (alert_ids, or all: true for every alert of this watch); the only call that empties the pending delivery.</p></div>
+<div class="tool"><code>rate_alert</code><p>Marks one alert relevant or not_relevant, with an optional note of at most 500 characters.</p></div>
+<div class="tool"><code>unwatch_need</code><p>Closes a watch; its need, constraints and alerts are erased 30 days after closing.</p></div>
+<div class="tool"><code>get_creator_plan</code><span class="ro">read-only</span><p>Returns the demand data subscription of the organisation of the token: plan NONE or SUBSCRIBED, subscribed processes, pending removals, the coming invoice, pay…</p></div>
+<div class="tool"><code>set_creator_processes</code><p>Replaces the list of subscribed processes.</p></div>
+<div class="tool"><code>list_gaps</code><span class="ro">read-only</span><p>Returns, for a subscribed process, the gaps formulated by HODDS and the client aggregates above the anonymity threshold (watched needs, organisations watching,…</p></div>
+<div class="tool"><code>cancel_creator_plan</code><p>Stops the subscription at the end of the paid period.</p></div>
+<div class="tool"><code>get_plan</code><span class="ro">read-only</span><p>Returns the plan of the organisation of the token: FREE, PAID, PAST_DUE, ENDING or ENDED; watched solutions billed in the current Stripe period, the coming inv…</p></div>
+<div class="tool"><code>cancel_plan</code><p>Stops the paid plan at the end of the Stripe period.</p></div>
+<div class="tool"><code>compare_solutions</code><span class="ro">read-only</span><p>Compare 2–3 catalogue IDs by required capabilities, offer, context and dated sources.</p></div>
+<div class="tool"><code>find_comparable_solutions</code><span class="ro">read-only</span><p>Find alternatives by required priority, optionally relative to one solution.</p></div>
+ </div></section>
+ <section class="sec" id="results"><h2>Test results</h2><p class="hint">Safe mode: only tools labeled read-only were run. <a href="../how-it-works.html">How the test works</a></p><ul class="checks">
+<li class="chk warn"><span class="mk warn" aria-label="note">!</span><div><b>Every tool is described</b><details><summary>3 warnings</summary><ul><li class="warn"><span class="m">!</span><b>set_creator_processes</b>: Inputs with no description: processes</li><li class="warn"><span class="m">!</span><b>compare_solutions</b>: Inputs with no description: solution_ids, priority, priority_required, criteria, requirements, context, cost_scenario, locale, view</li><li class="warn"><span class="m">!</span><b>find_comparable_solutions</b>: Inputs with no description: reference_id, priority, criteria, requirements, context, cost_scenario, locale, limit, view</li></ul></details></div><span class="st">note</span></li>
+<li class="chk warn"><span class="mk warn" aria-label="note">!</span><div><b>Follows MCP best practices (not scored yet)</b><details><summary>1 tip (not scored)</summary><ul><li class="warn"><span class="m">!</span>The tool list is about 129 KB (roughly 32k tokens). AI apps send it with every message, so it takes that much of the AI&#39;s memory before any work starts.</li></ul></details></div><span class="st">note</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Connects</b><span class="sum">Connected in 451 ms</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Ready for the newest MCP version</b><span class="sum">Uses the latest MCP version (2026-07-28)</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Lists its tools</b><span class="sum">Found 19 tools</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Tools are labeled safe or dangerous</b><span class="sum">Every tool has a safety label</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>No hidden instructions</b><span class="sum">No hidden instructions found in tool descriptions</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Tools work with good inputs</b><details><summary>All good</summary><ul><li class="pass"><span class="m">✓</span><b>search_solutions</b>: Worked (454 ms)</li><li class="pass"><span class="m">✓</span><b>get_solution</b>: Answered with an error, probably because of our sample input: No solution with id &quot;test&quot;. Catalogue ids are the option ids returned by search_solutions.</li><li class="pass"><span class="m">✓</span><b>list_processes</b>: Worked (21 ms)</li><li class="pass"><span class="m">✓</span><b>get_watch</b>: Answered with an error, probably because of our sample input: token_required: A valid HODDS token is required (Authorization: Bearer hodds_…). See https://hodds.ai/connect/.</li><li class="pass"><span class="m">✓</span><b>list_watches</b>: Answered with an error, probably because of our sample input: token_required: A valid HODDS token is required (Authorization: Bearer hodds_…). See https://hodds.ai/connect/.</li><li class="pass"><span class="m">✓</span><b>get_creator_plan</b>: Answered with an error, probably because of our sample input: token_required: A valid HODDS token is required (Authorization: Bearer hodds_…). See https://hodds.ai/connect/.</li><li class="pass"><span class="m">✓</span><b>list_gaps</b>: Answered with an error, probably because of our sample input: token_required: A valid HODDS token is required (Authorization: Bearer hodds_…). See https://hodds.ai/connect/.</li><li class="pass"><span class="m">✓</span><b>get_plan</b>: Answered with an error, probably because of our sample input: token_required: A valid HODDS token is required (Authorization: Bearer hodds_…). See https://hodds.ai/connect/.</li><li class="more">and 11 more</li></ul></details></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Bad inputs give a clean error</b><details><summary>All good</summary><ul><li class="pass"><span class="m">✓</span><b>search_solutions</b>: Refused missing required input &quot;need&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>search_solutions</b>: Refused wrong type for &quot;need&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>get_solution</b>: Refused missing required input &quot;id&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>get_solution</b>: Refused wrong type for &quot;id&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>get_watch</b>: Refused missing required input &quot;watch_id&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>get_watch</b>: Refused wrong type for &quot;watch_id&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>list_watches</b>: Refused wrong type for &quot;include_closed&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>list_gaps</b>: Refused missing required input &quot;process&quot; with a clear error</li><li class="more">and 5 more</li></ul></details></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Tools work together</b><span class="sum">search_solutions → get_solution: get_solution found what search_solutions returned (id = &quot;circleci&quot;)</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Fast enough</b><details><summary>All good</summary><ul><li class="pass"><span class="m">✓</span>Connecting took 451 ms</li><li class="pass"><span class="m">✓</span>Listing tools took 32 ms</li><li class="pass"><span class="m">✓</span>Average tool answer: 253 ms</li><li class="pass"><span class="m">✓</span><b>get_watch</b>: Slowest tool: get_watch (1.9 s)</li></ul></details></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>No secrets leaked</b><span class="sum">Checked 32 error messages: no secrets or internal details</span></div><span class="st">pass</span></li>
+ </ul></section>
+ <section class="sec" id="try"><h2>Test it yourself</h2><p class="hint">Free and open source. Same checks, same score.</p>
+  <div class="cmd"><code id="cmd">npx qamcp-cli https://hodds.ai/mcp</code><button type="button" id="copy">Copy</button></div></section>
+ <section class="sec" id="history"><h2>Score over time</h2><ul class="hist"><li><span class="d">26 Oct 2026</span><span class="bar"><i style="width:93%"></i></span><span class="v">93</span></li></ul><p class="hint">One test so far. New tests will show here.</p></section>
+ <section class="sec" id="reviews"><h2>Reviews</h2><p class="hint">Coming soon: reviews from people who use HODDS, signed in with GitHub, one per person. Reviews never change the score.</p></section>
+ <div class="claim"><div><b>Is this your server?</b><p>Soon you can claim this page: re-test it from here, reply to results, and show a "Tested by QAmcp" badge.</p><p>Have a concern, or want it removed? <a href="https://github.com/QAmcp/qamcp-cli/issues">Ask us</a> and we'll take it off the list. <a href="../directory-rules.html">How the directory works</a></p></div></div>
+</div>
+<script src="../theme.js"></script>
+<script src="../count.js"></script>
+<script>
+for (const id of ['copy', 'copy-top']) document.getElementById(id).onclick = async (e) => {
+  const b = e.currentTarget, was = b.textContent;
+  try { await navigator.clipboard.writeText(document.getElementById('cmd').textContent); b.textContent = 'Copied'; } catch (err) { b.textContent = 'Select the command below'; }
+  setTimeout(() => (b.textContent = was), 1800);
+};
+</script>
+</body></html>

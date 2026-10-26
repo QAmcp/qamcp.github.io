@@ -1172,5 +1172,94 @@
  },
  "app.boxitem/boxitem": {
   "checked": "2026-10-25"
+ },
+ "ai.atlaso/mcp": {
+  "url": "https://www.atlaso.ai/pricing",
+  "checked": "2026-10-26"
+ },
+ "ai.auxen/auxen": {
+  "checked": "2026-10-26"
+ },
+ "ai.daiku/daiku": {
+  "url": "https://daiku.ai/pricing",
+  "checked": "2026-10-26"
+ },
+ "ai.devicelink/dlink": {
+  "checked": "2026-10-26"
+ },
+ "ai.financial-portfolios/financial-portfolios-ai": {
+  "url": "https://financial-portfolios.ai/pricing",
+  "checked": "2026-10-26"
+ },
+ "ai.ghostengine/ghostengine": {
+  "url": "https://ghostengine.ai/pricing",
+  "checked": "2026-10-26"
+ },
+ "ai.hifrank/frank": {
+  "url": "https://www.hifrank.ai/pricing",
+  "checked": "2026-10-26"
+ },
+ "ai.hodds/hodds": {
+  "checked": "2026-10-26"
+ },
+ "ai.huddo/huddo": {
+  "checked": "2026-10-26"
+ },
+ "ai.inite/directory": {
+  "url": "https://inite.ai/en/pricing",
+  "checked": "2026-10-26"
+ },
+ "ai.leapsteps/leapsteps": {
+  "checked": "2026-10-26"
+ },
+ "ai.migurei.pw/parallel-world": {
+  "checked": "2026-10-26"
+ },
+ "ai.nexrex/nexrex": {
+  "checked": "2026-10-26"
+ },
+ "ai.postey/postey": {
+  "url": "https://postey.ai/pricing",
+  "checked": "2026-10-26"
+ },
+ "ai.powerbeat/powerbeat": {
+  "checked": "2026-10-26"
+ },
+ "ai.pubfi/mcp": {
+  "url": "https://pubfi.ai/pricing",
+  "checked": "2026-10-26"
+ },
+ "ai.spendpoint/spendpoint": {
+  "checked": "2026-10-26"
+ },
+ "ai.taasky/taasky": {
+  "checked": "2026-10-26"
+ },
+ "ai.teampredict/hr-calculators": {
+  "url": "https://www.teampredict.ai/pricing",
+  "checked": "2026-10-26"
+ },
+ "ai.thestrat/thestrat": {
+  "url": "https://thestrat.ai/docs/price-discovery-broadening-formation/",
+  "checked": "2026-10-26"
+ },
+ "ai.topped/topped": {
+  "url": "https://app.topped.ai/pricing",
+  "checked": "2026-10-26"
+ },
+ "ai.walnutlink/walnutlink-a-share": {
+  "checked": "2026-10-26"
+ },
+ "al.ephemer/ephemeral": {
+  "url": "https://ephemer.al/en/pricing",
+  "checked": "2026-10-26"
+ },
+ "app.aide/aide": {
+  "url": "https://aide.app/pricing",
+  "checked": "2026-10-26"
+ },
+ "app.artec/creator": {
+  "url": "https://artec.app/pricing",
+  "checked": "2026-10-26"
  }
 }
