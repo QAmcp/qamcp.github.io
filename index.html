@@ -8,6 +8,7 @@
 <link rel="canonical" href="https://qamcp.dev/">
 <meta property="og:type" content="website"><meta property="og:site_name" content="QAmcp"><meta property="og:title" content="QAmcp: free MCP server tester, in your browser or terminal"><meta property="og:description" content="Free, open-source tester for MCP servers. Connects the way an AI app does and checks hidden instructions, leaked secrets, bad inputs, speed and login setup. Never runs risky tools."><meta property="og:url" content="https://qamcp.dev/"><meta property="og:image" content="https://qamcp.dev/img/sample-context7.png"><meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"QAmcp","description":"Free, open-source tester for MCP (Model Context Protocol) servers: connection, tool descriptions, safety labels, hidden instructions, bad inputs, leaked secrets and speed, in plain words.","url":"https://qamcp.dev/","applicationCategory":"DeveloperApplication","operatingSystem":"Windows, macOS, Linux (Node.js 20+), or any browser","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"license":"https://opensource.org/licenses/MIT","downloadUrl":"https://www.npmjs.com/package/qamcp-cli","sameAs":["https://github.com/QAmcp/qamcp-cli","https://www.npmjs.com/package/qamcp-cli"],"author":{"@type":"Person","name":"Abhiram Reddy"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is QAmcp?","acceptedAnswer":{"@type":"Answer","text":"A free, open-source tester for MCP servers. It connects to a server the way an AI app does and tells you, in plain words, what is broken: connection, tool descriptions, safety labels, hidden instructions, bad inputs, leaked secrets and speed. Every result is a hard fact, and no AI judges anything."}},{"@type":"Question","name":"Is it free?","acceptedAnswer":{"@type":"Answer","text":"Yes. The browser test, the command-line tool (npx qamcp-cli), the GitHub check and the directory are free. The code is open source under the MIT license."}},{"@type":"Question","name":"Does it send my data anywhere?","acceptedAnswer":{"@type":"Answer","text":"No. It talks only to the server you test, and to its login page if it has one. There is no tracking and no telemetry. On the website, the test runs on our test service and the report is kept so you can share its link."}},{"@type":"Question","name":"Can it change or delete anything on my server?","acceptedAnswer":{"@type":"Answer","text":"By default it only runs tools the server labels read-only, and it never runs tools that sound destructive, like delete_account, in any mode. With --look-only it calls no tools at all."}},{"@type":"Question","name":"Can it test local servers, or servers behind a login?","acceptedAnswer":{"@type":"Answer","text":"Yes. Local servers from the terminal: npx qamcp-cli --stdio \"your start command\". Servers behind a login: add --login to sign in through your browser, or --header with an API key."}},{"@type":"Question","name":"How is the score calculated?","acceptedAnswer":{"@type":"Answer","text":"Each check is worth points: a pass earns all of them, a warning half, a failure none. Checks that could not run don't count either way, and serious problems such as hidden instructions or leaked secrets cap the score. The full rules are on the How it works page."}},{"@type":"Question","name":"How is it different from MCP Inspector?","acceptedAnswer":{"@type":"Answer","text":"MCP Inspector, the official tool, lets you connect and call tools by hand, which is ideal for exploring and debugging. QAmcp runs a fixed set of checks automatically and gives a score you can repeat on every change. They work well together."}},{"@type":"Question","name":"My server is in the directory. Can I have it removed?","acceptedAnswer":{"@type":"Answer","text":"Yes. Open an issue on GitHub and we'll take it off the list. Scores in the directory are never changed for money."}},{"@type":"Question","name":"Who makes QAmcp?","acceptedAnswer":{"@type":"Answer","text":"Abhiram Reddy, a solo founder, building it in the open. Found a wrong result? Report it on GitHub: being fair to every server matters most."}}]}</script>
 <meta name="color-scheme" content="light dark">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231A1A1A'/%3E%3Crect x='7' y='7' width='18' height='18' rx='2' fill='none' stroke='%23B9838A' stroke-width='2.4'/%3E%3C/svg%3E">
 <script>try{var t=localStorage.getItem('qamcp-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
@@ -26,8 +27,8 @@
   --gutter:clamp(16px,2.6vw,40px);
 }
 /* Light "warm paper" theme: when the visitor's system is light, or when they pick it (theme.js). */
-:root[data-theme="light"]{--ground:#F4F0EA;--sheet:#FBF8F4;--raise:#EFE9E1;--ink:#1F1A17;--soft:#635A54;--faint:#6F655F;--rule:#E1D8CD;--frame:#CFC4B8;--rose:#91565F;--fail:#C8433C;--pass:#3F7D52;--off:#9C928A;--on-rose:#FBF8F4}
-@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--ground:#F4F0EA;--sheet:#FBF8F4;--raise:#EFE9E1;--ink:#1F1A17;--soft:#635A54;--faint:#6F655F;--rule:#E1D8CD;--frame:#CFC4B8;--rose:#91565F;--fail:#C8433C;--pass:#3F7D52;--off:#9C928A;--on-rose:#FBF8F4}}
+:root[data-theme="light"]{--ground:#F4F0EA;--sheet:#FBF8F4;--raise:#EFE9E1;--ink:#1F1A17;--soft:#635A54;--faint:#6F655F;--rule:#E1D8CD;--frame:#CFC4B8;--rose:#91565F;--fail:#B83A33;--pass:#3F7D52;--off:#9C928A;--on-rose:#FBF8F4}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--ground:#F4F0EA;--sheet:#FBF8F4;--raise:#EFE9E1;--ink:#1F1A17;--soft:#635A54;--faint:#6F655F;--rule:#E1D8CD;--frame:#CFC4B8;--rose:#91565F;--fail:#B83A33;--pass:#3F7D52;--off:#9C928A;--on-rose:#FBF8F4}}
 .theme{background:none;border:1px solid var(--frame);border-radius:7px;color:var(--ink);font:400 13px var(--mono);padding:7px 11px;cursor:pointer;margin-left:10px}
 .theme:hover{border-color:var(--rose)}
 *{box-sizing:border-box;margin:0}
@@ -201,6 +202,12 @@ footer .r{margin-left:auto}
   .cmd .copy{width:100%;padding:13px}
   .lede{font-size:16px}
 }
+.faq{margin-top:clamp(20px,2.6vw,32px);border-top:1px solid var(--rule);max-width:78ch}
+.faq details{border-bottom:1px solid var(--rule);padding:14px 0}
+.faq summary{cursor:pointer;font-weight:700}
+.faq summary:focus-visible{outline:2px solid var(--rose);outline-offset:3px}
+.faq p{margin-top:8px;color:var(--soft)}
+#faq .intro a{color:var(--rose)}
 </style>
 </head>
 <body>
@@ -268,7 +275,7 @@ footer .r{margin-left:auto}
     </div>
     <div class="block">
      <div><span class="k">FOR TEAMS</span>Publish a server for customers? <a href="#teams">Check it on every change</a></div>
-     <div><span class="k">SHEET</span>1 of 4 · v0.1.5 · MIT</div>
+     <div><span class="k">SHEET</span>1 of 5 · v0.1.14 · MIT</div>
     </div>
    </div>
   </section>
@@ -278,7 +285,7 @@ footer .r{margin-left:auto}
 
 <section class="part" id="checks" aria-labelledby="h-checks">
  <div class="part-in">
-  <span class="sheetno">Sheet 2 of 4 · What it checks</span>
+  <span class="sheetno">Sheet 2 of 5 · What it checks</span>
   <h2 id="h-checks">Every check is a plain fact you can verify.</h2>
   <p class="intro">No AI judges anything. Every result is pass or fail, a time in milliseconds, or an exact match, and the report always says what it could not test.</p>
   <table class="checks">
@@ -302,7 +309,7 @@ footer .r{margin-left:auto}
 
 <section class="part" id="report" aria-labelledby="h-report">
  <div class="part-in">
-  <span class="sheetno">Sheet 3 of 4 · The report</span>
+  <span class="sheetno">Sheet 3 of 5 · The report</span>
   <h2 id="h-report">A report page you can send to anyone.</h2>
   <div class="two">
    <div>
@@ -324,7 +331,7 @@ footer .r{margin-left:auto}
 
 <section class="part" id="teams" aria-labelledby="h-teams">
  <div class="part-in">
-  <span class="sheetno">Sheet 4 of 4 · For teams</span>
+  <span class="sheetno">Sheet 4 of 5 · For teams</span>
   <h2 id="h-teams">Publish a server for customers? Check it on every change.</h2>
   <div class="two">
    <div>
@@ -356,11 +363,31 @@ footer .r{margin-left:auto}
  </div>
 </section>
 
+<section class="part" id="faq" aria-labelledby="h-faq">
+ <div class="part-in">
+  <span class="sheetno">Sheet 5 of 5 · Questions</span>
+  <h2 id="h-faq">Questions about QAmcp</h2>
+  <div class="faq">
+   <details><summary>What is QAmcp?</summary><p>A free, open-source tester for MCP servers. It connects to a server the way an AI app does and tells you, in plain words, what is broken: connection, tool descriptions, safety labels, hidden instructions, bad inputs, leaked secrets and speed. Every result is a hard fact, and no AI judges anything.</p></details>
+   <details><summary>Is it free?</summary><p>Yes. The browser test, the command-line tool (npx qamcp-cli), the GitHub check and the directory are free. The code is open source under the MIT license.</p></details>
+   <details><summary>Does it send my data anywhere?</summary><p>No. It talks only to the server you test, and to its login page if it has one. There is no tracking and no telemetry. On the website, the test runs on our test service and the report is kept so you can share its link.</p></details>
+   <details><summary>Can it change or delete anything on my server?</summary><p>By default it only runs tools the server labels read-only, and it never runs tools that sound destructive, like delete_account, in any mode. With --look-only it calls no tools at all.</p></details>
+   <details><summary>Can it test local servers, or servers behind a login?</summary><p>Yes. Local servers from the terminal: npx qamcp-cli --stdio "your start command". Servers behind a login: add --login to sign in through your browser, or --header with an API key.</p></details>
+   <details><summary>How is the score calculated?</summary><p>Each check is worth points: a pass earns all of them, a warning half, a failure none. Checks that could not run don't count either way, and serious problems such as hidden instructions or leaked secrets cap the score. The full rules are on the How it works page.</p></details>
+   <details><summary>How is it different from MCP Inspector?</summary><p>MCP Inspector, the official tool, lets you connect and call tools by hand, which is ideal for exploring and debugging. QAmcp runs a fixed set of checks automatically and gives a score you can repeat on every change. They work well together.</p></details>
+   <details><summary>My server is in the directory. Can I have it removed?</summary><p>Yes. Open an issue on GitHub and we'll take it off the list. Scores in the directory are never changed for money.</p></details>
+   <details><summary>Who makes QAmcp?</summary><p>Abhiram Reddy, a solo founder, building it in the open. Found a wrong result? Report it on GitHub: being fair to every server matters most.</p></details>
+  </div>
+  <p class="intro">More: <a href="how-it-works.html">How it works</a> · <a href="safety.html">Safety and privacy</a> · <a href="how-to-test-mcp-server.html">How to test an MCP server</a></p>
+ </div>
+</section>
+
 <footer>
  <span>QAmcp · free and open source (MIT)</span>
  <a href="https://github.com/QAmcp/qamcp-cli">GitHub</a>
  <a href="how-it-works.html">How it works</a>
  <a href="https://www.npmjs.com/package/qamcp-cli">npm</a>
+ <a href="how-to-test-mcp-server.html">How to test an MCP server</a>
  <a href="safety.html">Safety and privacy</a>
  <a href="https://github.com/QAmcp/qamcp-cli/issues">Report a wrong result</a>
  <a href="privacy.html">Privacy and terms</a>

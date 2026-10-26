@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to test an MCP server: online, locally, Inspector, curl · QAmcp</title>
+<meta name="description" content="How to test an MCP server online, locally, with MCP Inspector or with curl, plus a checklist: connection, tool descriptions, safety labels, hidden instructions, bad inputs, leaked secrets.">
+<link rel="canonical" href="https://qamcp.dev/how-to-test-mcp-server.html">
+<meta property="og:type" content="article"><meta property="og:site_name" content="QAmcp"><meta property="og:title" content="How to test an MCP server: online, locally, with Inspector or curl"><meta property="og:description" content="Connection, tool descriptions, safety labels, hidden instructions, bad inputs and leaked secrets: what to check in an MCP server, and how."><meta property="og:url" content="https://qamcp.dev/how-to-test-mcp-server.html"><meta name="twitter:card" content="summary">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231A1A1A'/%3E%3Crect x='7' y='7' width='18' height='18' rx='2' fill='none' stroke='%23B9838A' stroke-width='2.4'/%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('qamcp-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="stylesheet" href="site.css">
+<style>
+.faq{margin-top:clamp(22px,3vw,36px);border-top:1px solid var(--rule)}
+.faq details{border-bottom:1px solid var(--rule);padding:14px 0}
+.faq summary{cursor:pointer;font-weight:700;list-style-position:outside}
+.faq summary:focus-visible{outline:2px solid var(--rose);outline-offset:3px}
+.faq p{margin-top:8px;color:var(--soft);max-width:68ch}
+ol.proc span.ex{display:block;margin-top:12px;padding:12px 14px;background:var(--ground);border:1px solid var(--rule);border-radius:8px;font:400 13.5px/1.55 var(--mono);color:var(--ink);overflow-wrap:anywhere;font-variant-ligatures:none}
+ol.proc .ex span.bad{color:var(--fail)}ol.proc .ex span.note{color:var(--rose)}
+.way{margin-top:clamp(26px,3.4vw,40px);font:700 clamp(18px,1.6vw,22px)/1.2 var(--head)}
+.part-in > .ex{margin-top:12px;padding:12px 14px;background:var(--ground);border:1px solid var(--rule);border-radius:8px;font:400 13.5px/1.6 var(--mono);color:var(--ink);overflow-wrap:anywhere;font-variant-ligatures:none}
+.page-head p.updated{margin-top:10px;font:400 13px var(--mono);color:var(--faint)}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Is it safe to test someone else's MCP server?","acceptedAnswer":{"@type":"Answer","text":"In QAmcp's default safe mode, only tools the server labels read-only are run, tools that sound destructive are never run, and nothing is sent anywhere except to the server being tested. For a server you don't trust at all, --look-only calls no tools."}},
+{"@type":"Question","name":"Do I need an account to test an MCP server?","acceptedAnswer":{"@type":"Answer","text":"No. The browser test at qamcp.dev and the command npx qamcp-cli are free and need no account or sign-up."}},
+{"@type":"Question","name":"Can I test a local stdio MCP server?","acceptedAnswer":{"@type":"Answer","text":"Yes, from the terminal: npx qamcp-cli --stdio \"your start command\". The browser test only reaches servers on the internet."}},
+{"@type":"Question","name":"What about servers that need a login?","acceptedAnswer":{"@type":"Answer","text":"Add --login to sign in through your browser, or --header with an API key. On the website, choose \"It needs a login\". Login tokens are used for that one test and not kept."}},
+{"@type":"Question","name":"How is this different from MCP Inspector?","acceptedAnswer":{"@type":"Answer","text":"MCP Inspector, the official tool, lets you connect and call tools by hand, which is ideal for exploring and debugging. QAmcp runs a fixed set of checks automatically and gives a score you can repeat on every change. They work well together."}}
+]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="sheet">
+ <div class="sheet-in">
+  <header class="top">
+   <a class="brand" href="./">QA<b>mcp</b></a>
+   <nav aria-label="Main"><a href="directory.html">Directory</a><a href="test.html">Test a server</a><a href="how-it-works.html">How it works</a><a href="safety.html">Safety</a><a href="ci.html">Run it in CI</a><a href="samples.html">Sample reports</a></nav>
+   <a class="gh" href="https://github.com/QAmcp/qamcp-cli"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38v-1.33c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.06-.49.06-.49.8.06 1.23.83 1.23.83.72 1.22 1.88.87 2.34.66.07-.52.28-.87.5-1.07-1.78-.2-3.65-.89-3.65-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>GitHub</a>
+   <button class="theme" id="theme" type="button" style="margin-left:10px">Light</button>
+  </header>
+  <main id="main">
+   <div class="page-head">
+    <h1>How to test an MCP server</h1>
+    <p>An MCP server works when an AI app can connect to it, understand its tools, use them correctly, and stay safe while doing it. This checklist covers each of those, in the order that catches the most problems first. Every step can be checked by hand, and all of them run automatically in a free test.</p>
+    <p class="updated">Last updated: 26 October 2026</p>
+    <nav class="toc" aria-label="On this page"><a href="#steps">The checklist</a><a href="#online">Online</a><a href="#locally">Locally</a><a href="#inspector">With MCP Inspector</a><a href="#curl">With curl</a><a href="#faq">Questions</a></nav>
+   </div>
+  </main>
+ </div>
+</div>
+
+<section class="part" id="steps" aria-labelledby="h-steps">
+ <div class="part-in">
+  <span class="sheetno">Sheet 2 of 4 · The checklist</span>
+  <h2 id="h-steps">Six steps, from "does it answer" to "is it safe"</h2>
+  <p class="intro">The examples below are real results from our test server, which is broken on purpose. You can run the same test yourself with <code>npx qamcp-cli --demo</code>.</p>
+  <ol class="proc">
+   <li><b>Check that it connects the way an AI app does</b><span>An AI app first connects and agrees on an MCP version, then asks for the list of tools. If either step fails, nothing else matters. Check that the link is the real MCP address (often ending in <code>/mcp</code>), that it answers on the current connection type rather than only the old SSE one, and that a local server prints nothing but MCP messages on stdout, since stray log lines break the connection.</span></li>
+   <li><b>Read every tool description as the AI will</b><span>The AI picks tools from their names and descriptions alone. A missing description, an input with no explanation, or two tools that read almost the same make it guess, and a guessing AI picks the wrong tool.
+     <span class="ex"><span class="bad">✕ slow_report</span>: has no description, so the AI has to guess what it does</span></span></li>
+   <li><b>Check the safety labels</b><span>Tools can say whether they only read (<code>readOnlyHint</code>), can destroy something (<code>destructiveHint</code>), are safe to repeat (<code>idempotentHint</code>), or reach outside services (<code>openWorldHint</code>). AI apps use these to decide when to ask the user first. Check that each tool has them, and that they agree with the tool's name and description. A tool called <code>delete_account</code> that isn't marked dangerous is a problem.
+     <span class="ex"><span class="note">! delete_account</span>: name sounds like it deletes something, but it is not labeled dangerous</span></span></li>
+   <li><b>Look for hidden instructions</b><span>A tool description can contain text aimed at the AI rather than at you, such as an <code>&lt;IMPORTANT&gt;</code> block telling it to read private files or keep something from the user. This is known as tool poisoning. Read descriptions in full, including input descriptions, and watch for invisible characters.
+     <span class="ex"><span class="bad">✕ fetch_notes</span>: Description contains hidden &lt;IMPORTANT&gt; block. This is a known trick to make AI do things the user didn't ask for.</span></span></li>
+   <li><b>Try bad inputs and read every error</b><span>Call each safe tool once with sensible inputs, then with a required input missing and with the wrong type. A good tool answers the first and refuses the others with a clear message. Read those error messages closely: they should never show passwords, API keys, stack traces or server file paths.
+     <span class="ex"><span class="bad">✕ search_users</span>: error message shows what looks like a database password in a link</span></span></li>
+   <li><b>Test again on every change</b><span>Servers break quietly: a renamed input, a removed label, a slow dependency. Run the same checks before each commit and on every pull request, and compare with the last run so any tool that changed is shown with the exact lines.</span></li>
+  </ol>
+  <h2 style="margin-top:clamp(36px,5vw,56px);font-size:clamp(22px,2vw,28px)">Run all six automatically</h2>
+  <p class="intro">Paste the server link on the <a href="test.html">test page</a>, or run it from a terminal. Only tools labeled read-only are run, and nothing is sent anywhere but the server.</p>
+  <ul class="facts">
+   <li><strong>A server on the internet</strong><code>npx qamcp-cli https://your-server.com/mcp</code></li>
+   <li><strong>A server on your computer</strong><code>npx qamcp-cli --stdio "npm start"</code></li>
+   <li><strong>Before every commit</strong><code>npx qamcp-cli --install-hook --stdio "npm start"</code></li>
+   <li><strong>On every pull request</strong>The GitHub Action <code>QAmcp/qamcp-cli@v0</code>, see <a href="ci.html">Run it in CI</a></li>
+  </ul>
+ </div>
+</section>
+
+<section class="part" id="ways" aria-labelledby="h-ways">
+ <div class="part-in">
+  <span class="sheetno">Sheet 3 of 4 · Ways to test</span>
+  <h2 id="h-ways">Four ways to test an MCP server</h2>
+  <h3 class="way" id="online">Test an MCP server online</h3>
+  <p class="intro">For a server on the internet, paste its link on the <a href="test.html">QAmcp test page</a> and press Test it. The checks fill in while you watch, and you get a report link you can share. Nothing to install, no account. Only tools labeled read-only are run.</p>
+  <h3 class="way" id="locally">Test an MCP server locally</h3>
+  <p class="intro">A server that runs on your own computer (stdio) can't be reached from a website, so test it from your terminal. QAmcp starts the program and checks it the same way, including that it prints nothing but MCP messages:</p>
+  <div class="ex">npx qamcp-cli --stdio "npm start"</div>
+  <p class="intro">A local server that listens on a port works with its link instead, like <code>npx qamcp-cli http://localhost:3000/mcp</code>. For local servers on a port, QAmcp also checks that they refuse requests from other websites, which the MCP spec requires.</p>
+  <h3 class="way" id="inspector">Test an MCP server with MCP Inspector</h3>
+  <p class="intro">MCP Inspector is the official tool from the MCP project. Start it with <code>npx @modelcontextprotocol/inspector</code>, connect to your server, and you can list its tools and call each one yourself with any inputs you like. It's the best way to explore a server and debug one tool at a time.</p>
+  <p class="intro">An automatic test does the opposite job: the same checks every time, a score, and a clear list of what failed, so you can run it on every change without clicking through each tool. Use Inspector to investigate, and an automatic test to make sure nothing broke.</p>
+  <h3 class="way" id="curl">Test an MCP server with curl</h3>
+  <p class="intro">To check that a remote server answers at all, send it the first message every MCP app sends, <code>initialize</code>:</p>
+  <div class="ex">curl -X POST https://your-server.com/mcp \<br>&nbsp;&nbsp;-H "Content-Type: application/json" \<br>&nbsp;&nbsp;-H "Accept: application/json, text/event-stream" \<br>&nbsp;&nbsp;-d '{"jsonrpc":"2.0","id":1,"method":"initialize","params":{"protocolVersion":"2025-06-18","capabilities":{},"clientInfo":{"name":"curl","version":"1"}}}'</div>
+  <p class="intro">A working server answers with its name, version and the features it supports. If it sends back an <code>Mcp-Session-Id</code> header, include that header in your next requests, such as <code>tools/list</code>. curl shows that the server answers; it doesn't tell you whether an AI can use the tools well. That's what the checklist above is for.</p>
+ </div>
+</section>
+
+<section class="part" id="faq" aria-labelledby="h-faq">
+ <div class="part-in">
+  <span class="sheetno">Sheet 4 of 4 · Questions</span>
+  <h2 id="h-faq">Questions</h2>
+  <div class="faq">
+   <details><summary>Is it safe to test someone else's MCP server?</summary><p>In QAmcp's default safe mode, only tools the server labels read-only are run, tools that sound destructive are never run, and nothing is sent anywhere except to the server being tested. For a server you don't trust at all, <code>--look-only</code> calls no tools.</p></details>
+   <details><summary>Do I need an account to test an MCP server?</summary><p>No. The browser test and the command <code>npx qamcp-cli</code> are free and need no account or sign-up.</p></details>
+   <details><summary>Can I test a local stdio MCP server?</summary><p>Yes, from the terminal: <code>npx qamcp-cli --stdio "your start command"</code>. The browser test only reaches servers on the internet.</p></details>
+   <details><summary>What about servers that need a login?</summary><p>Add <code>--login</code> to sign in through your browser, or <code>--header</code> with an API key. On the website, choose "It needs a login". Login tokens are used for that one test and not kept.</p></details>
+   <details><summary>How is this different from MCP Inspector?</summary><p>MCP Inspector lets you connect and call tools by hand, which is ideal for exploring and debugging. QAmcp runs a fixed set of checks automatically and gives a score you can repeat on every change. They work well together.</p></details>
+  </div>
+ </div>
+</section>
+
+<footer>
+ <span>QAmcp · free and open source (MIT)</span>
+ <a href="./">Home</a>
+ <a href="https://github.com/QAmcp/qamcp-cli">GitHub</a>
+ <a href="https://www.npmjs.com/package/qamcp-cli">npm</a>
+ <a href="safety.html">Safety and privacy</a>
+ <a href="https://github.com/QAmcp/qamcp-cli/issues">Report a wrong result</a>
+ <a href="privacy.html">Privacy and terms</a>
+ <span class="r">This site has no tracking.</span>
+</footer>
+<script src="theme.js"></script>
+<script src="count.js"></script>
+</body>
+</html>

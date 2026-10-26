@@ -16,6 +16,7 @@ Safety: by default it only runs tools the server labels read-only, never runs to
 
 - [Test a server in the browser](https://qamcp.dev/test.html): free, same checks and score as the CLI
 - [Directory](https://qamcp.dev/directory.html): public MCP servers tested by QAmcp, with scores and every finding; updated daily
+- [How to test an MCP server](https://qamcp.dev/how-to-test-mcp-server.html): a step-by-step checklist (connection, descriptions, safety labels, hidden instructions, bad inputs, leaks)
 - [How it works](https://qamcp.dev/how-it-works.html): every check and how the 0-100 score is calculated
 - [Safety and privacy](https://qamcp.dev/safety.html): what QAmcp touches and what it never does
 - [Run it in CI](https://qamcp.dev/ci.html): GitHub Action and other CI systems
