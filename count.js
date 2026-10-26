@@ -1,7 +1,7 @@
 // Visit counter: tells our own test service which page was opened and which site sent the visitor
 // (just its name, like "x.com"). No cookies, nothing stored in the browser, nothing about the person.
 (() => {
-  if (!/^qamcp\.github\.io$/.test(location.hostname)) return; // not on this computer or in previews
+  if (!/^((www\.)?qamcp\.dev|qamcp\.github\.io)$/.test(location.hostname)) return; // not on this computer or in previews
   let ref = '';
   try { ref = document.referrer ? new URL(document.referrer).hostname : ''; } catch (e) {}
   const from = new URLSearchParams(location.search).get('from') || undefined;

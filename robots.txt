@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /mock/
 
-Sitemap: https://qamcp.github.io/sitemap.xml
+Sitemap: https://qamcp.dev/sitemap.xml
