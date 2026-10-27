@@ -23,13 +23,13 @@
 
 :root{
   --ground:#1A1A1A;--sheet:#232323;--raise:#2A2726;--ink:#EDE7E3;--soft:#ABA49F;--faint:#938B86;
-  --rule:#38332F;--frame:#4A443F;--rose:#B9838A;--fail:#EC5F57;--off:#7C7570;--pass:#93BB9B;--on-rose:#1A1A1A;
+  --rule:#38332F;--frame:#4A443F;--rose:#B9838A;--fail:#EC5F57;--off:#7C7570;--pass:#D9D0C7;--on-rose:#1A1A1A;
   --head:"Archivo Narrow",sans-serif;--text:"Atkinson Hyperlegible Next",sans-serif;--mono:"JetBrains Mono",monospace;
   --gutter:clamp(16px,2.6vw,40px);
 }
 /* Light "warm paper" theme: when the visitor's system is light, or when they pick it (theme.js). */
-:root[data-theme="light"]{--ground:#F4F0EA;--sheet:#FBF8F4;--raise:#EFE9E1;--ink:#1F1A17;--soft:#635A54;--faint:#6F655F;--rule:#E1D8CD;--frame:#CFC4B8;--rose:#91565F;--fail:#B83A33;--pass:#3F7D52;--off:#9C928A;--on-rose:#FBF8F4}
-@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--ground:#F4F0EA;--sheet:#FBF8F4;--raise:#EFE9E1;--ink:#1F1A17;--soft:#635A54;--faint:#6F655F;--rule:#E1D8CD;--frame:#CFC4B8;--rose:#91565F;--fail:#B83A33;--pass:#3F7D52;--off:#9C928A;--on-rose:#FBF8F4}}
+:root[data-theme="light"]{--ground:#F4F0EA;--sheet:#FBF8F4;--raise:#EFE9E1;--ink:#1F1A17;--soft:#635A54;--faint:#6F655F;--rule:#E1D8CD;--frame:#CFC4B8;--rose:#91565F;--fail:#B83A33;--pass:#4F4842;--off:#9C928A;--on-rose:#FBF8F4}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--ground:#F4F0EA;--sheet:#FBF8F4;--raise:#EFE9E1;--ink:#1F1A17;--soft:#635A54;--faint:#6F655F;--rule:#E1D8CD;--frame:#CFC4B8;--rose:#91565F;--fail:#B83A33;--pass:#4F4842;--off:#9C928A;--on-rose:#FBF8F4}}
 .theme{background:none;border:1px solid var(--frame);border-radius:7px;color:var(--ink);font:400 13px var(--mono);padding:7px 11px;cursor:pointer;margin-left:10px}
 .theme:hover{border-color:var(--rose)}
 *{box-sizing:border-box;margin:0}
@@ -444,7 +444,8 @@ header.top .hr .gh{margin-left:auto}header.top .hr .ai-pop{left:0;right:auto}
    <details><summary>My server is in the directory. Can I have it removed?</summary><p>Yes. Open an issue on GitHub and we'll take it off the list. Scores in the directory are never changed for money.</p></details>
    <details><summary>Who makes QAmcp?</summary><p>Abhiram Reddy, a solo founder, building it in the open. Found a wrong result? Report it on GitHub: being fair to every server matters most.</p></details>
   </div>
-  <p class="intro">More: <a href="how-it-works.html">How it works</a> · <a href="how-to-test-mcp-server.html">How to test an MCP server</a> · <a href="cli.html">Use it in the terminal</a> · <a href="mcp-server-not-working.html">MCP server not working?</a> · <a href="safety.html">Safety and privacy</a></p>
+  <p class="intro">More: <a href="how-it-works.html">How it works</a> · <a href="how-to-test-mcp-server.html">How to test an MCP server</a> · <a href="cli.html">Use it in the terminal</a> · <a href="mcp-server-not-working.html">MCP server not working?</a>
+ <a href="state-of-mcp-2026-10.html">State of MCP, Oct 2026</a> · <a href="safety.html">Safety and privacy</a></p>
  </div>
 </section>
 
@@ -456,6 +457,7 @@ header.top .hr .gh{margin-left:auto}header.top .hr .ai-pop{left:0;right:auto}
  <a href="how-to-test-mcp-server.html">How to test an MCP server</a>
  <a href="cli.html">Use it in the terminal</a>
  <a href="mcp-server-not-working.html">MCP server not working?</a>
+ <a href="state-of-mcp-2026-10.html">State of MCP, Oct 2026</a>
  <a href="safety.html">Safety and privacy</a>
  <a href="https://github.com/QAmcp/qamcp-cli/issues">Report a wrong result</a>
  <a href="privacy.html">Privacy and terms</a>

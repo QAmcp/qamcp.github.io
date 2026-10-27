@@ -1,0 +1,68 @@
+{
+  "title": "State of MCP servers, October 2026",
+  "source": "QAmcp (https://qamcp.dev), tests of public servers from the official MCP Registry",
+  "tested": "2026-10-18 to 2026-10-26",
+  "method": "https://qamcp.dev/state-of-mcp-2026-10.html#method",
+  "servers": {
+    "tested": 365,
+    "answered": 362,
+    "notAnswering": 3,
+    "needLogin": 233,
+    "loginSetupChecked": 219,
+    "loginSetupPassed": 207,
+    "fullyTested": 129
+  },
+  "scores": {
+    "average": 88,
+    "median": 89,
+    "from90to100": 63,
+    "from70to89": 64,
+    "below70": 2,
+    "perfect100": 10
+  },
+  "tools": {
+    "total": 1806,
+    "perServerAverage": 14.3,
+    "largestServer": 60,
+    "labeledReadOnly": 1080,
+    "labeledNotReadOnly": 570,
+    "noSafetyLabel": 156
+  },
+  "problems": {
+    "serversWithUndescribedInputs": {
+      "count": 66,
+      "of": 129
+    },
+    "serversAcceptingWrongInputType": {
+      "count": 27,
+      "of": 102
+    },
+    "serversAcceptingMissingRequiredInput": {
+      "count": 7,
+      "of": 102
+    },
+    "serversOnOlderMcpVersion": {
+      "count": 90,
+      "of": 362
+    },
+    "serversWithNearDuplicateTools": {
+      "count": 11,
+      "of": 129
+    },
+    "serversWithHugeAnswers": {
+      "count": 8,
+      "of": 129
+    },
+    "serversWithToolsThatCrashOrHang": {
+      "count": 4,
+      "of": 129
+    }
+  },
+  "security": {
+    "hiddenInstructionsFound": 0,
+    "serversChecked": 129,
+    "leakedSecretsFound": 0,
+    "serversWithErrorMessagesChecked": 110
+  },
+  "license": "CC BY 4.0: free to use with credit to QAmcp (qamcp.dev)"
+}

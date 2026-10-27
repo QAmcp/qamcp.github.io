@@ -23,6 +23,7 @@ Safety: by default it only runs tools the server labels read-only, never runs to
 - [Safety and privacy](https://qamcp.dev/safety.html): what QAmcp touches and what it never does
 - [Run it in CI](https://qamcp.dev/ci.html): GitHub Action and other CI systems
 - [Sample reports](https://qamcp.dev/samples.html): a deliberately broken server, a login wall, and a perfect score
+- [State of MCP servers, October 2026](https://qamcp.dev/state-of-mcp-2026-10.html): what we found testing 365 public MCP servers; numbers as open data (CC BY 4.0) at https://qamcp.dev/state-of-mcp-2026-10.json
 - [Directory rules](https://qamcp.dev/directory-rules.html): how servers are listed and ranked; scores are never changed for money
 
 ## For AI agents
