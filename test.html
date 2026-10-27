@@ -73,6 +73,7 @@ legend{position:absolute;left:-999px}
    </fieldset>
    <div id="step" class="step" hidden></div>
    <button class="go" id="go" type="submit">Test it</button>
+   <p class="try">No link handy? Try a real server: <a href="test.html?url=https%3A%2F%2Fmcp.context7.com%2Fmcp&amp;go=1">Context7</a> · <a href="test.html?url=https%3A%2F%2Fmcp.deepwiki.com%2Fmcp&amp;go=1">DeepWiki</a></p>
    <p class="msg" id="msg" role="status" aria-live="polite"></p>
    <div id="soon" class="step" hidden>
     <b>Testing in the browser opens very soon.</b> Until then, it's one command on your computer, with the same checks and the same score:
@@ -88,6 +89,17 @@ legend{position:absolute;left:-999px}
    <p class="now" id="now"></p>
    <ul class="rows" id="rows"></ul>
    <div class="after" id="after" hidden></div>
+   <div id="watch" hidden><div class="watch">
+   <p class="watch-k">Coming soon · QAmcp Monitor</p>
+   <h3>Want us to watch this server?</h3>
+   <p>Monitor tests it every hour, checks it's up every 5 minutes, and emails you when it goes down, the score drops or a tool changes.</p>
+   <form class="notify" novalidate>
+    <label class="nl">Work email<input name="email" type="email" autocomplete="email" required placeholder="you@company.com"></label>
+    <input name="server" type="hidden" value="">
+    <button type="submit">Notify me when it opens</button>
+   </form>
+   <p class="notify-msg" role="status" aria-live="polite"></p>
+  </div></div>
   </section>
  </div>
  <p class="foot">Tests run one at a time; a few per visitor each hour. Links into private networks are refused. Testing a program on your own computer? Use <code>npx qamcp-cli --stdio "your command"</code>.</p>
@@ -96,4 +108,5 @@ legend{position:absolute;left:-999px}
 <script src="count.js"></script>
 <script src="ai.js"></script>
 <script src="test.js"></script>
+<script src="notify.js"></script>
 </body></html>

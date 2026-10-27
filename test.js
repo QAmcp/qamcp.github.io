@@ -61,6 +61,7 @@
     $('stamp').className = 'stamp wait'; $('stamp').textContent = 'TESTING';
     $('now').textContent = '';
     $('after').hidden = true; $('after').replaceChildren();
+    $('watch').hidden = true;
     $('rows').replaceChildren(...CHECKS.map(([id, title]) => row(id, title)));
   }
 
@@ -111,6 +112,9 @@
     const again = el('button', 's', 'Test another server'); again.type = 'button';
     again.onclick = () => { $('url').value = ''; $('url').focus(); };
     $('after').replaceChildren(open, copy, again); $('after').hidden = false;
+    // The person who just tested a server is the one Monitor is for: offer it, with the server filled in.
+    const watch = $('watch'), srv = watch.querySelector('[name=server]');
+    if (srv && !watch.querySelector('.notify-msg.ok')) { srv.value = r.url || $('url').value; watch.hidden = false; }
   }
 
   // Start a test and follow it live until it ends.

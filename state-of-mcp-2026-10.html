@@ -119,6 +119,17 @@ ol.proc li em{font-style:normal;font-weight:700;color:var(--ink)}
    <li><b>Tools that don't say if they're safe</b><span>156 of 1,806 tools (9%) carry no safety label: they don't say whether they only read, or can change or delete things.</span><span class="why"><em>Why it matters:</em> AI apps use these labels to decide when to ask you first. No label means the app has to assume the worst.</span><span class="fix"><em>The fix:</em> add <code>readOnlyHint</code> or <code>destructiveHint</code> (and ideally <code>idempotentHint</code> and <code>openWorldHint</code>) to every tool, truthfully.</span></li>
   </ol>
   <div class="cta"><a class="p" href="test.html?from=report">Test your server free</a><a class="s" href="how-to-test-mcp-server.html">The full checklist</a></div>
+  <div class="watch">
+   <p class="watch-k">Coming soon · QAmcp Monitor</p>
+   <h3>Fixed it? Keep it fixed.</h3>
+   <p>Servers change. Monitor tests yours every hour and emails you when it goes down, the score drops, a tool changes or a secret leaks.</p>
+   <form class="notify" novalidate>
+    <label class="nl">Work email<input name="email" type="email" autocomplete="email" required placeholder="you@company.com"></label>
+    <label class="nl">Your MCP server <span>· optional</span><input name="server" type="url" inputmode="url" autocomplete="off" spellcheck="false" placeholder="https://your-server.com/mcp"></label>
+    <button type="submit">Notify me when it opens</button>
+   </form>
+   <p class="notify-msg" role="status" aria-live="polite"></p>
+  </div>
  </div>
 </section>
 
@@ -164,5 +175,6 @@ ol.proc li em{font-style:normal;font-weight:700;color:var(--ink)}
 <script src="theme.js"></script>
 <script src="count.js"></script>
 <script src="ai.js"></script>
+<script src="notify.js"></script>
 </body>
 </html>
