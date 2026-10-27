@@ -1261,5 +1261,102 @@
  "app.artec/creator": {
   "url": "https://artec.app/pricing",
   "checked": "2026-10-26"
+ },
+ "ad.getle/leads": {
+  "url": "https://getle.ad/pricing",
+  "checked": "2026-10-27"
+ },
+ "ai.bankrolled/agent-hub": {
+  "checked": "2026-10-27"
+ },
+ "ai.bugtape/bugtape-demo": {
+  "url": "https://bugtape.ai/pricing/",
+  "checked": "2026-10-27"
+ },
+ "ai.cardboard/cardboard": {
+  "checked": "2026-10-27"
+ },
+ "ai.chipp/chipp": {
+  "url": "https://chipp.ai/pricing",
+  "checked": "2026-10-27"
+ },
+ "ai.chipp/chipp-actions": {
+  "url": "https://chipp.ai/pricing",
+  "checked": "2026-10-27"
+ },
+ "ai.chipp/chipp-analytics": {
+  "url": "https://chipp.ai/pricing",
+  "checked": "2026-10-27"
+ },
+ "ai.chipp/chipp-app-settings": {
+  "url": "https://chipp.ai/pricing",
+  "checked": "2026-10-27"
+ },
+ "ai.chipp/chipp-apps": {
+  "url": "https://chipp.ai/pricing",
+  "checked": "2026-10-27"
+ },
+ "ai.chipp/chipp-billing": {
+  "url": "https://chipp.ai/pricing",
+  "checked": "2026-10-27"
+ },
+ "ai.chipp/chipp-channels": {
+  "url": "https://chipp.ai/pricing",
+  "checked": "2026-10-27"
+ },
+ "ai.chipp/chipp-core": {
+  "url": "https://chipp.ai/pricing",
+  "checked": "2026-10-27"
+ },
+ "ai.chipp/chipp-data-ops": {
+  "url": "https://chipp.ai/pricing",
+  "checked": "2026-10-27"
+ },
+ "ai.chipp/chipp-integrations": {
+  "url": "https://chipp.ai/pricing",
+  "checked": "2026-10-27"
+ },
+ "ai.chipp/chipp-knowledge": {
+  "url": "https://chipp.ai/pricing",
+  "checked": "2026-10-27"
+ },
+ "ai.chipp/chipp-legacy-code": {
+  "url": "https://chipp.ai/pricing",
+  "checked": "2026-10-27"
+ },
+ "ai.chipp/chipp-memory": {
+  "url": "https://chipp.ai/pricing",
+  "checked": "2026-10-27"
+ },
+ "ai.chipp/chipp-newsletters": {
+  "url": "https://chipp.ai/pricing",
+  "checked": "2026-10-27"
+ },
+ "ai.chipp/chipp-observability": {
+  "url": "https://chipp.ai/pricing",
+  "checked": "2026-10-27"
+ },
+ "ai.chipp/chipp-packs": {
+  "url": "https://chipp.ai/pricing",
+  "checked": "2026-10-27"
+ },
+ "ai.chipp/chipp-projects": {
+  "url": "https://chipp.ai/pricing",
+  "checked": "2026-10-27"
+ },
+ "ai.chipp/chipp-releases": {
+  "url": "https://chipp.ai/pricing",
+  "checked": "2026-10-27"
+ },
+ "ai.chipp/chipp-tags": {
+  "url": "https://chipp.ai/pricing",
+  "checked": "2026-10-27"
+ },
+ "ai.chipp/chipp-tickets": {
+  "url": "https://chipp.ai/pricing",
+  "checked": "2026-10-27"
+ },
+ "ai.commercebook/commercebook": {
+  "checked": "2026-10-27"
  }
 }
