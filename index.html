@@ -7,7 +7,7 @@
 <meta name="description" content="Free, open-source tool to test and audit MCP servers. Connects the way an AI app does and checks hidden instructions, leaked secrets, safety labels, bad inputs, speed and login setup. Never runs risky tools.">
 <link rel="canonical" href="https://qamcp.dev/">
 <meta property="og:type" content="website"><meta property="og:site_name" content="QAmcp"><meta property="og:title" content="QAmcp: free MCP server tester, in your browser or terminal"><meta property="og:description" content="Free, open-source tool to test and audit MCP servers. Connects the way an AI app does and checks hidden instructions, leaked secrets, safety labels, bad inputs, speed and login setup. Never runs risky tools."><meta property="og:url" content="https://qamcp.dev/"><meta property="og:image" content="https://qamcp.dev/img/sample-context7.png"><meta name="twitter:card" content="summary_large_image">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"QAmcp","url":"https://qamcp.dev/","email":"hi@qamcp.dev","founder":{"@type":"Person","name":"Abhiram Reddy"},"sameAs":["https://github.com/QAmcp","https://github.com/QAmcp/qamcp-cli","https://www.npmjs.com/package/qamcp-cli"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"QAmcp","url":"https://qamcp.dev/","email":"hi@qamcp.dev","founder":{"@type":"Person","name":"Abhiram Reddy","sameAs":["https://x.com/AbhiRam2371650","https://www.linkedin.com/in/abhiram-reddy-k-44444343b"]},"sameAs":["https://github.com/QAmcp","https://github.com/QAmcp/qamcp-cli","https://www.npmjs.com/package/qamcp-cli"]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"QAmcp","description":"Free, open-source tool to test and audit MCP (Model Context Protocol) servers: connection, tool descriptions, safety labels, hidden instructions, bad inputs, leaked secrets and speed, in plain words. Also monitors servers and alerts their owners when they break.","url":"https://qamcp.dev/","applicationCategory":"DeveloperApplication","operatingSystem":"Windows, macOS, Linux (Node.js 20+), or any browser","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"license":"https://opensource.org/licenses/MIT","downloadUrl":"https://www.npmjs.com/package/qamcp-cli","sameAs":["https://github.com/QAmcp/qamcp-cli","https://www.npmjs.com/package/qamcp-cli"],"author":{"@type":"Person","name":"Abhiram Reddy"}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is QAmcp?","acceptedAnswer":{"@type":"Answer","text":"A free, open-source tester for MCP servers. It connects to a server the way an AI app does and tells you, in plain words, what is broken: connection, tool descriptions, safety labels, hidden instructions, bad inputs, leaked secrets and speed. Every result is a hard fact, and no AI judges anything."}},{"@type":"Question","name":"Is it free?","acceptedAnswer":{"@type":"Answer","text":"Yes. The browser test, the command-line tool (npx qamcp-cli), the GitHub check and the directory are free. The code is open source under the MIT license."}},{"@type":"Question","name":"Does it send my data anywhere?","acceptedAnswer":{"@type":"Answer","text":"No. It talks only to the server you test, and to its login page if it has one. There is no tracking and no telemetry. On the website, the test runs on our test service and the report is kept so you can share its link."}},{"@type":"Question","name":"Can it change or delete anything on my server?","acceptedAnswer":{"@type":"Answer","text":"By default it only runs tools the server labels read-only, and it never runs tools that sound destructive, like delete_account, in any mode. With --look-only it calls no tools at all."}},{"@type":"Question","name":"Can it test local servers, or servers behind a login?","acceptedAnswer":{"@type":"Answer","text":"Yes. Local servers from the terminal: npx qamcp-cli --stdio \"your start command\". Servers behind a login: add --login to sign in through your browser, or --header with an API key."}},{"@type":"Question","name":"How is the score calculated?","acceptedAnswer":{"@type":"Answer","text":"Each check is worth points: a pass earns all of them, a warning half, a failure none. Checks that could not run don't count either way, and serious problems such as hidden instructions or leaked secrets cap the score. The full rules are on the How it works page."}},{"@type":"Question","name":"How is it different from MCP Inspector?","acceptedAnswer":{"@type":"Answer","text":"MCP Inspector, the official tool, lets you connect and call tools by hand, which is ideal for exploring and debugging. QAmcp runs a fixed set of checks automatically and gives a score you can repeat on every change. They work well together."}},{"@type":"Question","name":"My server is in the directory. Can I have it removed?","acceptedAnswer":{"@type":"Answer","text":"Yes. Open an issue on GitHub and we'll take it off the list. Scores in the directory are never changed for money."}},{"@type":"Question","name":"Who makes QAmcp?","acceptedAnswer":{"@type":"Answer","text":"Abhiram Reddy, a solo founder, building it in the open. Found a wrong result? Report it on GitHub: being fair to every server matters most."}}]}</script>
 <meta name="color-scheme" content="light dark">
@@ -231,6 +231,20 @@ footer .r{margin-left:auto}
 .alert li b{font-family:var(--mono);font-weight:600;color:var(--ink)}
 .alert figcaption{margin-top:14px;font:400 12px var(--mono);color:var(--faint)}.alert figcaption span{color:var(--rose)}
 @media (max-width:860px){.mon,.notify{grid-template-columns:1fr}}
+.ai{position:relative}
+.ai-btn{display:inline-flex;align-items:center;gap:7px;border:1.5px solid var(--rose);background:none;color:var(--ink);border-radius:8px;padding:7px 12px;font:700 14px var(--text);cursor:pointer;white-space:nowrap}
+.ai-btn:hover{background:var(--raise)}.ai-btn svg{color:var(--rose)}
+.ai-btn:focus-visible{outline:2px solid var(--rose);outline-offset:2px}
+.ai-pop{position:absolute;right:0;top:calc(100% + 10px);z-index:20;width:min(380px,calc(100vw - 32px));background:var(--sheet);border:1.5px solid var(--frame);border-radius:12px;padding:14px 16px;box-shadow:0 20px 40px -20px rgba(0,0,0,.55);font-size:14px;text-align:left}
+.ai-pop b{display:block;font-weight:700;color:var(--ink)}.ai-pop code{display:block;margin:10px 0;padding:10px 12px;background:var(--ground);border:1px solid var(--rule);border-radius:8px;font:400 13px/1.5 var(--mono);color:var(--ink);overflow-wrap:anywhere;white-space:normal}
+.ai-pop p{color:var(--soft);margin:0}.ai-pop a{color:var(--rose)}
+@media (max-width:640px){.ai-btn{padding:6px 9px;font-size:13px}}
+header.top{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(400px,1fr);padding:0;gap:0}
+header.top .hl{display:flex;align-items:center;gap:clamp(14px,2.2vw,30px);padding:14px clamp(16px,2.4vw,34px);border-right:1px solid var(--rule);min-width:0}
+header.top .hr{display:flex;align-items:center;padding:14px clamp(20px,2.6vw,38px)}
+header.top .hr .gh{margin-left:auto}header.top .hr .ai-pop{left:0;right:auto}
+@media (max-width:1100px){header.top{display:flex;align-items:center;padding:14px clamp(16px,2.4vw,34px);gap:14px}header.top .hl,header.top .hr{padding:0;border:0}header.top .hr{flex:1;gap:10px}header.top .hr .ai-pop{left:auto;right:0}}
+@media (max-width:640px){header.top .hr .ai-btn svg{display:none}header.top .hr .gh{display:none}header.top .hr .ai-pop{position:fixed;left:16px;right:16px;top:64px;width:auto}}
 </style>
 </head>
 <body>
@@ -243,10 +257,11 @@ footer .r{margin-left:auto}
  </div>
  <div class="sheet-in">
   <header class="top">
-   <a class="brand" href="./">QA<b>mcp</b></a>
-   <nav aria-label="Main"><a href="directory.html">Directory</a><a href="test.html">Test a server</a><a href="how-it-works.html">How it works</a><a href="safety.html">Safety</a><a href="ci.html">Run it in CI</a><a href="samples.html">Sample reports</a></nav>
+   <div class="hl"><a class="brand" href="./">QA<b>mcp</b></a>
+   <nav aria-label="Main"><a href="directory.html">Directory</a><a href="test.html">Test a server</a><a href="how-it-works.html">How it works</a><a href="safety.html">Safety</a><a href="ci.html">Run it in CI</a><a href="samples.html">Sample reports</a></nav></div>
+   <div class="hr"><div class="ai"><button class="ai-btn" type="button" aria-expanded="false" aria-controls="ai-pop"><svg viewBox="0 0 16 16" aria-hidden="true" width="15" height="15"><path fill="none" stroke="currentColor" stroke-width="1.4" d="M8 1.5l1.6 3.9 3.9 1.6-3.9 1.6L8 12.5 6.4 8.6 2.5 7l3.9-1.6z"/></svg>Test with your AI</button><div class="ai-pop" id="ai-pop" hidden><b>Copied. Paste it into Claude Code, Cursor or Codex:</b><code>Fetch and follow the instructions at https://qamcp.dev/setup.md to test my MCP server.</code><p>Your AI finds your server in your project, tests it with QAmcp, explains what's wrong in plain words, fixes it with your OK, and tests again. <a href="setup.md">Read the instructions</a></p></div></div>
    <a class="gh" href="https://github.com/QAmcp/qamcp-cli"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38v-1.33c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.06-.49.06-.49.8.06 1.23.83 1.23.83.72 1.22 1.88.87 2.34.66.07-.52.28-.87.5-1.07-1.78-.2-3.65-.89-3.65-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>GitHub</a>
-   <button class="theme" id="theme" type="button">Light</button>
+   <button class="theme" id="theme" type="button">Light</button></div>
   </header>
 
   <main id="main">
@@ -508,6 +523,7 @@ for (const co of document.querySelectorAll('.co')) {
 </script>
 <script src="theme.js"></script>
 <script src="count.js"></script>
+<script src="ai.js"></script>
 <script src="notify.js"></script>
 </body>
 </html>

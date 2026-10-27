@@ -25,6 +25,10 @@ Safety: by default it only runs tools the server labels read-only, never runs to
 - [Sample reports](https://qamcp.dev/samples.html): a deliberately broken server, a login wall, and a perfect score
 - [Directory rules](https://qamcp.dev/directory-rules.html): how servers are listed and ranked; scores are never changed for money
 
+## For AI agents
+
+- [setup.md](https://qamcp.dev/setup.md): step-by-step instructions for a coding agent to test and fix an MCP server with QAmcp
+
 ## Source
 
 - [GitHub: QAmcp/qamcp-cli](https://github.com/QAmcp/qamcp-cli)
