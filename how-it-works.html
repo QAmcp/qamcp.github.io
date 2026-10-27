@@ -86,6 +86,8 @@
     <tr><td>The two other safety labels</td><td>Whether a tool says if running it twice is safe (<code>idempotentHint</code>) and if it reaches outside services like the web (<code>openWorldHint</code>)</td></tr>
     <tr><td>Size of the tool list</td><td>A tool list over about 40 KB. AI apps send it with every message, so it fills the AI's memory before any work starts</td></tr>
     <tr><td>Declares its answer shape</td><td>Tools that answer with structured data but don't declare its shape (<code>outputSchema</code>), so a change to it can't be noticed</td></tr>
+    <tr><td>Read-only tools that run what they're sent</td><td>A tool labeled read-only that takes a raw query or command (<code>sql</code>, <code>command</code>) or a delete-style input (<code>force</code>, <code>cascade</code>). The label can't promise much there, so safe mode doesn't run it</td></tr>
+    <tr><td>Open-ended file paths and filters</td><td>A read-only tool whose file path or filter accepts any text, with no pattern, length limit or fixed choices, so it may reach further than meant</td></tr>
     <tr><td>Blocks requests from other websites</td><td>Only for servers on your computer: whether it refuses a request that claims to come from a strange website, as the MCP spec requires. No tools are called</td></tr>
    </tbody>
   </table>
