@@ -1,6 +1,6 @@
 # QAmcp
 
-> QAmcp is a free, open-source (MIT) tool to test and audit MCP (Model Context Protocol) servers. It connects to a server the way an AI app does and reports, in plain words, what is broken: connection, tool descriptions, safety labels, hidden instructions in tool descriptions, bad-input handling, leaked secrets in error messages, speed, login (OAuth) setup, resources and prompts. Every result is a hard fact (pass or fail, milliseconds, exact matches); no AI judges the results.
+> QAmcp is a free, open-source (MIT) tool to test and audit MCP (Model Context Protocol) servers. It connects to a server the way an AI app does and reports, in plain words, what is broken: connection, tool descriptions, safety labels, hidden instructions in tool descriptions, bad-input handling, leaked secrets in error messages, speed, login (OAuth) setup, resources and prompts. Every result is checked by code and shows its evidence (pass or fail, milliseconds, exact matches, or the words in a name or description that triggered a finding); no AI judges the results. What it can and cannot catch: https://qamcp.dev/limits.html
 
 How to use it:
 
@@ -24,7 +24,10 @@ Safety: by default it only runs tools the server labels read-only, never runs to
 - [Run it in CI](https://qamcp.dev/ci.html): GitHub Action and other CI systems
 - [Sample reports](https://qamcp.dev/samples.html): a deliberately broken server, a login wall, and a perfect score
 - [State of MCP servers, October 2026](https://qamcp.dev/state-of-mcp-2026-10.html): what we found testing 365 public MCP servers; numbers as open data (CC BY 4.0) at https://qamcp.dev/state-of-mcp-2026-10.json
+- [What QAmcp can and can't catch](https://qamcp.dev/limits.html): what a result covers, what it cannot see (behind-the-scenes side effects, tools not run, attacks), and how to read a green report
+- [Security and data](https://qamcp.dev/security.html): for security teams: where data goes in the terminal tool, the website test and Monitor; what QAmcp keeps and never does
 - [Directory rules](https://qamcp.dev/directory-rules.html): how servers are listed and ranked; scores are never changed for money
+- [Privacy and terms](https://qamcp.dev/privacy.html) · [Contact](https://qamcp.dev/contact.html): hi@qamcp.dev
 
 ## For AI agents
 

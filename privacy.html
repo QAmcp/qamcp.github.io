@@ -3,21 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>QAmcp privacy policy and terms</title>
-<meta name="description" content="QAmcp's privacy policy and terms of use, in plain words. The free tool and this website collect nothing about you.">
+<title>Privacy and terms · QAmcp</title>
+<meta name="description" content="What QAmcp keeps and what it never keeps: the terminal tool sends nothing to us; the website test never saves API keys; no cookies, no tracking, no AI. Plus the terms of use.">
 <link rel="canonical" href="https://qamcp.dev/privacy.html">
-<meta property="og:type" content="website"><meta property="og:site_name" content="QAmcp"><meta property="og:title" content="QAmcp privacy policy and terms"><meta property="og:description" content="QAmcp's privacy policy and terms of use, in plain words. The free tool and this website collect nothing about you."><meta property="og:url" content="https://qamcp.dev/privacy.html"><meta name="twitter:card" content="summary">
+<meta property="og:type" content="website"><meta property="og:site_name" content="QAmcp"><meta property="og:title" content="Privacy and terms · QAmcp"><meta property="og:description" content="What QAmcp keeps and what it never keeps: the terminal tool sends nothing to us; the website test never saves API keys; no cookies, no tracking, no AI. Plus the terms of use.">
 <meta name="color-scheme" content="light dark">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231A1A1A'/%3E%3Crect x='7' y='7' width='18' height='18' rx='2' fill='none' stroke='%23B9838A' stroke-width='2.4'/%3E%3C/svg%3E">
 <script>try{var t=localStorage.getItem('qamcp-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
 <link rel="stylesheet" href="site.css">
 <style>
-.legal{max-width:72ch}
-.legal h3{font:700 21px/1.2 var(--head);margin-top:30px}
-.legal p,.legal li{color:var(--soft);margin-top:10px}
-.legal ul{padding-left:20px}
-.legal strong{color:var(--ink)}
-.updated{font:400 13px/1 var(--mono);color:var(--faint);margin-top:14px;display:block}
+.doc h3{margin-top:clamp(22px,3vw,32px);font:700 clamp(18px,1.6vw,21px)/1.25 var(--head);color:var(--ink)}
+.doc p,.doc li{color:var(--soft);max-width:70ch}.doc p{margin-top:10px}
+.doc ul{margin-top:10px;padding-left:20px}.doc li{margin-top:6px}
+.doc b{color:var(--ink);font-weight:700}.doc a{color:var(--rose)}
+.doc code{color:var(--rose);font:400 0.92em var(--mono)}
+.page-head p.updated{margin-top:10px;font:400 13px var(--mono);color:var(--faint)}
 </style>
 </head>
 <body>
@@ -35,54 +35,93 @@
   <main id="main">
    <div class="page-head">
     <h1>Privacy and terms, in plain words</h1>
-    <p>Short version: the free tool and this website collect nothing about you. The rest of this page says exactly what that means.</p>
-    <span class="updated">Last updated 17 October 2026</span>
-    <nav class="toc" aria-label="On this page"><a href="#privacy">Privacy policy</a><a href="#terms">Terms of use</a><a href="#contact">Contact</a></nav>
+    <p>Short version: the free terminal tool sends nothing to us. The website test and Monitor do pass through our own service, and this page says exactly what that service sees, keeps and throws away.</p>
+    <p class="updated">Last updated 27 October 2026</p>
+    <nav class="toc" aria-label="On this page"><a href="#tool">The free tool</a><a href="#web">The website test</a><a href="#monitor">Monitor and payments</a><a href="#site">This website</a><a href="#public">Public servers</a><a href="#you">Your choices</a><a href="#terms">Terms of use</a></nav>
    </div>
   </main>
  </div>
 </div>
 
-<section class="part" id="privacy" aria-labelledby="h-privacy">
- <div class="part-in legal">
-  <span class="sheetno">Sheet 2 of 3 · Privacy policy</span>
-  <h2 id="h-privacy">What we collect: nothing about you</h2>
-
-  <h3>The free tool (qamcp-cli)</h3>
+<section class="part" id="tool" aria-labelledby="h-tool">
+ <div class="part-in doc">
+  <span class="sheetno">Sheet 2 of 7 · The free tool</span>
+  <h2 id="h-tool">The terminal tool and the GitHub check</h2>
   <ul>
-   <li>It runs on your computer and talks only to the MCP server you choose, and to that server's login service if it has one.</li>
+   <li>The terminal tool (<code>qamcp-cli</code>) runs on your computer and talks only to the MCP server you choose, and to that server's login service if it has one.</li>
    <li>It sends nothing to us: no usage data, no reports, no error logs, no analytics.</li>
-   <li>If you log in with <code>--login</code>, the login pass is saved on your own computer, in a <code>.qamcp</code> folder, and nowhere else. Delete that folder to remove it.</li>
+   <li>If you log in with <code>--login</code>, the login pass is saved on your own computer in a <code>.qamcp</code> folder, and nowhere else. Delete that folder to remove it.</li>
    <li>Reports are written only to the files you ask for, on your computer.</li>
+   <li>The GitHub check runs inside your own GitHub account, on GitHub's computers, under GitHub's terms. We receive nothing from it.</li>
   </ul>
+ </div>
+</section>
 
-  <h3>The GitHub check</h3>
-  <p>It runs inside your own GitHub account, on GitHub's computers, under GitHub's own terms. It comments only on your own pull requests. We receive nothing from it.</p>
-
-  <h3>This website</h3>
+<section class="part" id="web" aria-labelledby="h-web">
+ <div class="part-in doc">
+  <span class="sheetno">Sheet 3 of 7 · The website test</span>
+  <h2 id="h-web">What happens when you test on qamcp.dev</h2>
+  <p>The website can't reach your server by itself, so our test service (hosted on Railway) connects to it for you and sends back the results.</p>
   <ul>
-   <li>No cookies, no ads, no tracking scripts, and no outside analytics service. The fonts are served from this site.</li>
-   <li>If you ask to be notified when Monitor opens, we keep your email (and the server link, if you give one) on our own test service, only to email you once when it opens. We never share or sell it. Want it deleted? Open an issue on GitHub or reply to our email.</li>
-   <li>We count visits ourselves, as daily totals: which page was opened and which site sent you there (only its name, like "reddit.com"). We don't keep IP addresses or anything else that points to you, so we can't tell who visited or follow anyone from page to page.</li>
-   <li>The site is hosted on GitHub Pages. Like any web host, GitHub may keep basic technical logs (such as IP addresses) to run and protect its service. We don't receive or use them. See GitHub's privacy statement for details.</li>
+   <li><b>The report is kept</b>: the server link and the results, so the result page and its share link keep working. It isn't linked to you, and report pages are hidden from search engines.</li>
+   <li><b>An API key you type is never saved.</b> It's held in memory for that one test and dropped when the test ends.</li>
+   <li><b>A login pass</b> ("It needs a login") is used for one test and thrown away. It's never written to disk.</li>
+   <li><b>Your IP address</b> is held in memory for up to an hour, only to limit how many tests one visitor can start. It isn't saved.</li>
+   <li>Links that point into private networks are refused, so the service can't be used to reach machines it shouldn't.</li>
+   <li><b>No AI sees anything.</b> Tool names, descriptions and answers are checked by plain code, never sent to an AI service.</li>
   </ul>
+  <p>For a server that shouldn't pass through anyone else, use the terminal tool instead: then nothing leaves your computer except the requests to your own server.</p>
+ </div>
+</section>
 
-  <h3>When we test public servers</h3>
+<section class="part" id="monitor" aria-labelledby="h-monitor">
+ <div class="part-in doc">
+  <span class="sheetno">Sheet 4 of 7 · Monitor and payments</span>
+  <h2 id="h-monitor">What Monitor keeps</h2>
   <ul>
-   <li>We test new servers from the official MCP Registry, in safe mode (read-only tools only), and tell their owners what we found.</li>
-   <li>To do that we keep the test result, and the public contact details listed on the server's own website or registry page, such as a contact email or company page.</li>
-   <li>Report links we send are unlisted and hidden from search engines.</li>
-   <li>If you own a server and want us to stop testing it, remove a report, or delete the contact details we used, tell us (see Contact) and we will.</li>
+   <li><b>Your email address</b>, to confirm it's you and to send alerts.</li>
+   <li><b>Your server's link</b> and <b>its test history</b>: every score, every change we found, and the alerts we sent.</li>
+   <li>A private link to your monitor page. Anyone with that link can see that page, so keep it to yourself.</li>
   </ul>
+  <p>Alert emails are sent through <a href="https://resend.com">Resend</a>, an email service. When you stop a monitor, testing stops; email us and we'll delete its history too.</p>
+  <h3>Payments</h3>
+  <p>When paid plans open, payments go through <a href="https://razorpay.com">Razorpay</a>. We never see or store your card number. We receive what we need to run your plan: your name, email, the amount, and whether the payment went through. Razorpay handles card details under its own privacy policy.</p>
+ </div>
+</section>
 
-  <h3>Changes</h3>
-  <p>If this ever changes, for example when we add accounts to a hosted version, we'll update this page first and change the date at the top.</p>
+<section class="part" id="site" aria-labelledby="h-site">
+ <div class="part-in doc">
+  <span class="sheetno">Sheet 5 of 7 · This website</span>
+  <h2 id="h-site">No cookies, no ads, no tracking</h2>
+  <ul>
+   <li>No cookies for visitors, no ads, no tracking scripts, and no outside analytics service. The fonts are served from this site.</li>
+   <li>We count visits ourselves, as daily totals: which page was opened and which site sent you there (only its name, like "reddit.com"). We don't keep IP addresses or anything else that points to you.</li>
+   <li>If you ask to be notified when something opens, we keep your email (and the server link, if you give one) only to email you about it. We never share or sell it.</li>
+   <li>The site is hosted on GitHub Pages, and the domain and the hi@qamcp.dev mailbox run through Cloudflare. Like any host, they may keep basic technical logs to run and protect their services. We don't receive or use them.</li>
+  </ul>
+ </div>
+</section>
+
+<section class="part" id="public" aria-labelledby="h-public">
+ <div class="part-in doc">
+  <span class="sheetno">Sheet 6 of 7 · Public servers and your choices</span>
+  <h2 id="h-public">When we test public servers</h2>
+  <ul>
+   <li>We test public servers from the official MCP Registry, in safe mode (only tools labeled read-only, and never ones that sound destructive), and list the results in the directory.</li>
+   <li>To tell an owner what we found, we use the public contact details on the server's own website or registry page.</li>
+   <li>If you own a server and want us to stop testing it, remove a report, or delete the contact details we used, tell us and we will.</li>
+  </ul>
+  <h3 id="you">Your choices</h3>
+  <p>To see, correct or delete anything we keep about you, email <a href="mailto:hi@qamcp.dev">hi@qamcp.dev</a>. We never sell or share your data, and we never use it for ads.</p>
+  <h3>Who we are</h3>
+  <p>QAmcp is run by V V M Abhiram Reddy Kalluru, an independent developer in Proddatur, Kadapa district, Andhra Pradesh, India. If this page changes, we'll update it first and change the date at the top.</p>
+  <p>See also: <a href="security.html">Security and data</a> · <a href="limits.html">What QAmcp can and can't catch</a> · <a href="contact.html">Contact</a></p>
  </div>
 </section>
 
 <section class="part" id="terms" aria-labelledby="h-terms">
  <div class="part-in legal">
-  <span class="sheetno">Sheet 3 of 3 · Terms of use</span>
+  <span class="sheetno">Sheet 7 of 7 · Terms of use</span>
   <h2 id="h-terms">Using QAmcp</h2>
 
   <h3>The software</h3>
@@ -99,27 +138,22 @@
  </div>
 </section>
 
-<section class="part" id="contact" aria-labelledby="h-contact">
- <div class="part-in legal">
-  <h2 id="h-contact" style="font-size:clamp(22px,2vw,28px)">Contact</h2>
-  <p>For anything on this page, including removing a report or contact details, open an issue on <a href="https://github.com/QAmcp/qamcp-cli/issues">GitHub</a>, or reply to the email we sent you.</p>
- </div>
-</section>
-
 <footer>
  <span>QAmcp · free and open source (MIT)</span>
  <a href="./">Home</a>
- <a href="how-it-works.html">How it works</a>
- <a href="how-to-test-mcp-server.html">How to test an MCP server</a>
+ <a href="https://github.com/QAmcp/qamcp-cli">GitHub</a>
+ <a href="https://www.npmjs.com/package/qamcp-cli">npm</a>
  <a href="cli.html">Use it in the terminal</a>
  <a href="mcp-server-not-working.html">MCP server not working?</a>
  <a href="state-of-mcp-2026-10.html">State of MCP, Oct 2026</a>
  <a href="safety.html">Safety and privacy</a>
- <a href="ci.html">Run it in CI</a>
- <a href="https://github.com/QAmcp/qamcp-cli">GitHub</a>
+ <a href="https://github.com/QAmcp/qamcp-cli/issues">Report a wrong result</a>
+ <a href="limits.html">What it can't catch</a>
+ <a href="security.html">Security and data</a>
+ <a href="privacy.html">Privacy and terms</a>
+ <a href="contact.html">Contact</a>
  <span class="r">This site has no tracking.</span>
 </footer>
-<script src="site.js"></script>
 <script src="theme.js"></script>
 <script src="count.js"></script>
 <script src="ai.js"></script>

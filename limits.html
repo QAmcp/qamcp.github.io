@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What QAmcp can and can't catch · QAmcp</title>
+<meta name="description" content="Where a QAmcp result stops: what it catches in an MCP server, what it can't see, how its checks decide, and how to read a green report.">
+<link rel="canonical" href="https://qamcp.dev/limits.html">
+<meta property="og:type" content="website"><meta property="og:site_name" content="QAmcp"><meta property="og:title" content="What QAmcp can and can't catch · QAmcp"><meta property="og:description" content="Where a QAmcp result stops: what it catches in an MCP server, what it can't see, how its checks decide, and how to read a green report.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231A1A1A'/%3E%3Crect x='7' y='7' width='18' height='18' rx='2' fill='none' stroke='%23B9838A' stroke-width='2.4'/%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('qamcp-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="stylesheet" href="site.css">
+<style>
+.doc h3{margin-top:clamp(22px,3vw,32px);font:700 clamp(18px,1.6vw,21px)/1.25 var(--head);color:var(--ink)}
+.doc p,.doc li{color:var(--soft);max-width:70ch}.doc p{margin-top:10px}
+.doc ul{margin-top:10px;padding-left:20px}.doc li{margin-top:6px}
+.doc b{color:var(--ink);font-weight:700}.doc a{color:var(--rose)}
+.doc code{color:var(--rose);font:400 0.92em var(--mono)}
+.page-head p.updated{margin-top:10px;font:400 13px var(--mono);color:var(--faint)}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="sheet">
+ <div class="sheet-in">
+  <header class="top">
+   <a class="brand" href="./">QA<b>mcp</b></a>
+   <nav aria-label="Main"><a href="directory.html">Directory</a><a href="test.html">Test a server</a><a href="how-it-works.html">How it works</a><a href="safety.html">Safety</a><a href="ci.html">Run it in CI</a><a href="samples.html">Sample reports</a></nav>
+   <div class="ai"><button class="ai-btn" type="button" aria-expanded="false" aria-controls="ai-pop"><svg viewBox="0 0 16 16" aria-hidden="true" width="15" height="15"><path fill="none" stroke="currentColor" stroke-width="1.4" d="M8 1.5l1.6 3.9 3.9 1.6-3.9 1.6L8 12.5 6.4 8.6 2.5 7l3.9-1.6z"/></svg>Test with your AI</button><div class="ai-pop" id="ai-pop" hidden><b>Copied. Paste it into Claude Code, Cursor or Codex:</b><code>Fetch and follow the instructions at https://qamcp.dev/setup.md to test my MCP server.</code><p>Your AI finds your server in your project, tests it with QAmcp, explains what's wrong in plain words, fixes it with your OK, and tests again. <a href="setup.md">Read the instructions</a></p></div></div>
+   <a class="gh" href="https://github.com/QAmcp/qamcp-cli"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38v-1.33c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.06-.49.06-.49.8.06 1.23.83 1.23.83.72 1.22 1.88.87 2.34.66.07-.52.28-.87.5-1.07-1.78-.2-3.65-.89-3.65-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>GitHub</a>
+   <button class="theme" id="theme" type="button" style="margin-left:10px">Light</button>
+  </header>
+  <main id="main">
+   <div class="page-head">
+    <h1>What QAmcp can and can't catch</h1>
+    <p>A green report means QAmcp's checks passed on what it could test. It doesn't mean a server is safe. This page says exactly where that line is, so you can decide how much to trust a result.</p>
+    <p class="updated">Last updated 27 October 2026</p>
+    <nav class="toc" aria-label="On this page"><a href="#catches">What it catches</a><a href="#misses">What it can't see</a><a href="#how">How checks decide</a><a href="#read">Reading a report</a></nav>
+   </div>
+  </main>
+ </div>
+</div>
+
+<section class="part" id="catches" aria-labelledby="h-catches">
+ <div class="part-in doc">
+  <span class="sheetno">Sheet 2 of 5 · What it catches</span>
+  <h2 id="h-catches">What QAmcp catches</h2>
+  <ul>
+   <li><b>Connection and protocol problems</b>: a server that won't connect, is on an older MCP version, or sends replies AI apps can't load.</li>
+   <li><b>Unclear tools</b>: missing or vague descriptions, inputs with no description, tools that read almost the same.</li>
+   <li><b>Safety labels</b> that are missing, or contradicted by the tool's own name, description or inputs.</li>
+   <li><b>Known hidden-instruction tricks</b> in tool, resource and prompt descriptions, like <code>&lt;IMPORTANT&gt;</code> blocks, "don't tell the user" and invisible characters.</li>
+   <li><b>Bad input handling</b> in tools it can safely run: a missing or wrong-type input that doesn't get a clear error.</li>
+   <li><b>Leaks in error messages</b> from those tools: keys, passwords, tokens, server folders and stack traces.</li>
+   <li><b>Tools that crash, hang or answer too slowly</b>, and answers too big for AI apps.</li>
+   <li><b>Login setup</b> that doesn't follow the MCP spec, so AI apps can't sign in.</li>
+   <li><b>Changes</b>: every tool, input and label that changed since the last test.</li>
+  </ul>
+ </div>
+</section>
+
+<section class="part" id="misses" aria-labelledby="h-misses">
+ <div class="part-in doc">
+  <span class="sheetno">Sheet 3 of 5 · What it can't see</span>
+  <h2 id="h-misses">What QAmcp can't see</h2>
+  <ul>
+   <li><b>What happens behind the scenes.</b> QAmcp sees what a server says and answers. It can't see whether a tool quietly writes a file, calls another service or reads something it shouldn't.</li>
+   <li><b>Tools it doesn't run.</b> In safe mode, tools without a read-only label, tools that sound like they change things, and tools behind a login it doesn't have are only read, never run. The report lists them as "Not run".</li>
+   <li><b>A server that lies consistently.</b> A tool with a clean name, a clean description and a false read-only label looks like any honest tool.</li>
+   <li><b>Behavior that only shows up sometimes</b>: for certain users, inputs, dates or places, or after QAmcp has stopped looking.</li>
+   <li><b>New tricks.</b> Hidden instructions written in a way QAmcp's list doesn't know yet.</li>
+   <li><b>Permissions between users</b>, like whether user A can read user B's data. That needs two accounts on the server.</li>
+   <li><b>Attacks</b>, like <code>../</code> path tricks or command injection. Sending those to someone else's server would be attacking it, so QAmcp doesn't.</li>
+   <li><b>The server's own code and packages</b>: QAmcp doesn't scan source code or dependencies.</li>
+  </ul>
+ </div>
+</section>
+
+<section class="part" id="how" aria-labelledby="h-how">
+ <div class="part-in doc">
+  <span class="sheetno">Sheet 4 of 5 · How checks decide</span>
+  <h2 id="h-how">Two kinds of check, both shown with evidence</h2>
+  <h3>Measured</h3>
+  <p>Some results come straight from what happened: the server connected or didn't, a tool answered in 1.4 seconds, an error message contained a key, a reply was missing a field the spec requires.</p>
+  <h3>Rule-based</h3>
+  <p>Others follow fixed rules about words, like "a read-only tool whose name starts with <code>send</code>" or "an input called <code>sql</code>". Rules can be wrong about an unusual tool, so the report always says which word or input set it off, and these are usually warnings, not failures.</p>
+  <p>Neither kind uses an AI. The same server gives the same result every time, and you can check every finding yourself. <a href="how-it-works.html">Every check and its points</a></p>
+ </div>
+</section>
+
+<section class="part" id="read" aria-labelledby="h-read">
+ <div class="part-in doc">
+  <span class="sheetno">Sheet 5 of 5 · Reading a report</span>
+  <h2 id="h-read">How to read a report</h2>
+  <ul>
+   <li><b>Read the score with its coverage line</b>, like <code>Tested 10 of 10 checks · ran 5 of 9 tools</code>. A 90 from 2 of 20 tools says much less than a 90 from all 20.</li>
+   <li><b>A pass means "no problem found"</b> in what was tested, not "no problem exists".</li>
+   <li><b>For a server you don't trust yet</b>, use <code>--before-install</code> or <code>--look-only</code>: they run no tools at all.</li>
+   <li><b>For your own server</b>, owner mode runs more tools, and running QAmcp on every change catches problems the day they appear.</li>
+  </ul>
+  <p>See also: <a href="safety.html">Safety</a> · <a href="security.html">Security and data</a></p>
+ </div>
+</section>
+
+<footer>
+ <span>QAmcp · free and open source (MIT)</span>
+ <a href="./">Home</a>
+ <a href="https://github.com/QAmcp/qamcp-cli">GitHub</a>
+ <a href="https://www.npmjs.com/package/qamcp-cli">npm</a>
+ <a href="cli.html">Use it in the terminal</a>
+ <a href="mcp-server-not-working.html">MCP server not working?</a>
+ <a href="state-of-mcp-2026-10.html">State of MCP, Oct 2026</a>
+ <a href="safety.html">Safety and privacy</a>
+ <a href="https://github.com/QAmcp/qamcp-cli/issues">Report a wrong result</a>
+ <a href="limits.html">What it can't catch</a>
+ <a href="security.html">Security and data</a>
+ <a href="privacy.html">Privacy and terms</a>
+ <a href="contact.html">Contact</a>
+ <span class="r">This site has no tracking.</span>
+</footer>
+<script src="theme.js"></script>
+<script src="count.js"></script>
+<script src="ai.js"></script>
+</body>
+</html>
