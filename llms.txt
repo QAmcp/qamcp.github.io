@@ -1,6 +1,6 @@
 # QAmcp
 
-> QAmcp is a free, open-source (MIT) tester for MCP (Model Context Protocol) servers. It connects to a server the way an AI app does and reports, in plain words, what is broken: connection, tool descriptions, safety labels, hidden instructions in tool descriptions, bad-input handling, leaked secrets in error messages, speed, login (OAuth) setup, resources and prompts. Every result is a hard fact (pass or fail, milliseconds, exact matches); no AI judges the results.
+> QAmcp is a free, open-source (MIT) tool to test and audit MCP (Model Context Protocol) servers. It connects to a server the way an AI app does and reports, in plain words, what is broken: connection, tool descriptions, safety labels, hidden instructions in tool descriptions, bad-input handling, leaked secrets in error messages, speed, login (OAuth) setup, resources and prompts. Every result is a hard fact (pass or fail, milliseconds, exact matches); no AI judges the results.
 
 How to use it:
 
@@ -16,7 +16,7 @@ Safety: by default it only runs tools the server labels read-only, never runs to
 
 - [Test a server in the browser](https://qamcp.dev/test.html): free, same checks and score as the CLI
 - [Directory](https://qamcp.dev/directory.html): public MCP servers tested by QAmcp, with scores and every finding; updated daily
-- [How to test an MCP server](https://qamcp.dev/how-to-test-mcp-server.html): a step-by-step checklist (connection, descriptions, safety labels, hidden instructions, bad inputs, leaks)
+- [How to test and audit an MCP server](https://qamcp.dev/how-to-test-mcp-server.html): a step-by-step checklist (connection, descriptions, safety labels, hidden instructions, bad inputs, leaks)
 - [MCP server not working?](https://qamcp.dev/mcp-server-not-working.html): fixes for servers that won't connect or show no tools in Cursor, Claude Desktop or VS Code
 - [QAmcp in the terminal](https://qamcp.dev/cli.html): every command and option of npx qamcp-cli
 - [How it works](https://qamcp.dev/how-it-works.html): every check and how the 0-100 score is calculated

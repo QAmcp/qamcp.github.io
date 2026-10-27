@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>How to test an MCP server: online, locally, Inspector, curl · QAmcp</title>
-<meta name="description" content="How to test an MCP server online, locally, with MCP Inspector or with curl, plus a checklist: connection, tool descriptions, safety labels, hidden instructions, bad inputs, leaked secrets.">
+<meta name="description" content="How to test and audit an MCP server online, locally, with MCP Inspector or with curl, plus a checklist: connection, tool descriptions, safety labels, hidden instructions, bad inputs, leaked secrets.">
 <link rel="canonical" href="https://qamcp.dev/how-to-test-mcp-server.html">
 <meta property="og:type" content="article"><meta property="og:site_name" content="QAmcp"><meta property="og:title" content="How to test an MCP server: online, locally, with Inspector or curl"><meta property="og:description" content="Connection, tool descriptions, safety labels, hidden instructions, bad inputs and leaked secrets: what to check in an MCP server, and how."><meta property="og:url" content="https://qamcp.dev/how-to-test-mcp-server.html"><meta name="twitter:card" content="summary">
 <meta name="color-scheme" content="light dark">
@@ -24,6 +24,7 @@ ol.proc .ex span.bad{color:var(--fail)}ol.proc .ex span.note{color:var(--rose)}
 .page-head p.updated{margin-top:10px;font:400 13px var(--mono);color:var(--faint)}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"How do I audit an MCP server?","acceptedAnswer":{"@type":"Answer","text":"Run the six-step checklist on this page: connection, tool descriptions, safety labels, hidden instructions, bad inputs and leaked secrets. QAmcp runs all six automatically and gives a score with every finding, so an audit takes about a minute: paste the link on qamcp.dev, or run npx qamcp-cli with the server link. For servers you depend on, Monitor repeats the audit every hour and emails you when something changes."}},
 {"@type":"Question","name":"Is it safe to test someone else's MCP server?","acceptedAnswer":{"@type":"Answer","text":"In QAmcp's default safe mode, only tools the server labels read-only are run, tools that sound destructive are never run, and nothing is sent anywhere except to the server being tested. For a server you don't trust at all, --look-only calls no tools."}},
 {"@type":"Question","name":"Do I need an account to test an MCP server?","acceptedAnswer":{"@type":"Answer","text":"No. The browser test at qamcp.dev and the command npx qamcp-cli are free and need no account or sign-up."}},
 {"@type":"Question","name":"Can I test a local stdio MCP server?","acceptedAnswer":{"@type":"Answer","text":"Yes, from the terminal: npx qamcp-cli --stdio \"your start command\". The browser test only reaches servers on the internet."}},
@@ -57,6 +58,7 @@ ol.proc .ex span.bad{color:var(--fail)}ol.proc .ex span.note{color:var(--rose)}
  <div class="part-in">
   <span class="sheetno">Sheet 2 of 4 · The checklist</span>
   <h2 id="h-steps">Six steps, from "does it answer" to "is it safe"</h2>
+  <p class="intro">The same six steps work as an audit of any MCP server, yours or one you're about to install.</p>
   <p class="intro">The examples below are real results from our test server, which is broken on purpose. You can run the same test yourself with <code>npx qamcp-cli --demo</code>.</p>
   <ol class="proc">
    <li><b>Check that it connects the way an AI app does</b><span>An AI app first connects and agrees on an MCP version, then asks for the list of tools. If either step fails, nothing else matters. Check that the link is the real MCP address (often ending in <code>/mcp</code>), that it answers on the current connection type rather than only the old SSE one, and that a local server prints nothing but MCP messages on stdout, since stray log lines break the connection.</span></li>
@@ -106,6 +108,7 @@ ol.proc .ex span.bad{color:var(--fail)}ol.proc .ex span.note{color:var(--rose)}
   <span class="sheetno">Sheet 4 of 4 · Questions</span>
   <h2 id="h-faq">Questions</h2>
   <div class="faq">
+   <details><summary>How do I audit an MCP server?</summary><p>Run the six-step checklist on this page: connection, tool descriptions, safety labels, hidden instructions, bad inputs and leaked secrets. QAmcp runs all six automatically and gives a score with every finding, so an audit takes about a minute: paste the link on qamcp.dev, or run <code>npx qamcp-cli</code> with the server link. For servers you depend on, Monitor repeats the audit every hour and emails you when something changes.</p></details>
    <details><summary>Is it safe to test someone else's MCP server?</summary><p>In QAmcp's default safe mode, only tools the server labels read-only are run, tools that sound destructive are never run, and nothing is sent anywhere except to the server being tested. For a server you don't trust at all, <code>--look-only</code> calls no tools.</p></details>
    <details><summary>Do I need an account to test an MCP server?</summary><p>No. The browser test and the command <code>npx qamcp-cli</code> are free and need no account or sign-up.</p></details>
    <details><summary>Can I test a local stdio MCP server?</summary><p>Yes, from the terminal: <code>npx qamcp-cli --stdio "your start command"</code>. The browser test only reaches servers on the internet.</p></details>
