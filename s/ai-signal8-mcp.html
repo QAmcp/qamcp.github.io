@@ -36,18 +36,21 @@
  </ul></section>
  <section class="sec" id="try"><h2>Test it yourself</h2><p class="hint">Is this your server? This signs in with your account and tests everything behind the login.</p>
   <div class="cmd"><code id="cmd">npx qamcp-cli https://mcp.signal8.ai/mcp --login</code><button type="button" id="copy">Copy</button></div></section>
+ <section class="sec" id="badge"><h2>Show this score on GitHub</h2><p class="hint">Free for every server in the directory. Paste this into your README: the badge shows the score from our latest test.</p>
+  <p class="badge-img"><img src="ai-signal8-mcp.svg" alt="QAmcp badge for Signal8" height="20"></p>
+  <div class="cmd"><code id="badge-md">[![QAmcp score](https://qamcp.dev/s/ai-signal8-mcp.svg)](https://qamcp.dev/s/ai-signal8-mcp.html)</code><button type="button" id="copy-badge">Copy</button></div></section>
  <section class="sec" id="history"><h2>Score over time</h2><ul class="hist"><li><span class="d">15 Oct 2026</span><span class="v nl">not scored</span></li><li><span class="d">17 Oct 2026</span><span class="v nl">not scored</span></li><li><span class="d">18 Oct 2026</span><span class="v nl">not scored</span></li><li><span class="d">27 Oct 2026</span><span class="v nl">not scored</span></li></ul></section>
  <section class="sec" id="reviews"><h2>Reviews</h2><p class="hint">Coming soon: reviews from people who use Signal8, signed in with GitHub, one per person. Reviews never change the score.</p></section>
- <div class="claim"><div><b>Is this your server? Get an alert the moment it breaks.</b><p>QAmcp Monitor (coming soon) tests it every hour and emails you when it goes down, the score drops, a tool changes or a secret leaks. You'll also be able to claim this page and show a "Tested by QAmcp" badge. Founding price: $19/month for life for the first 50 teams.</p><form class="notify" novalidate><input type="hidden" name="server" value="https://mcp.signal8.ai/mcp"><label class="nl">Work email<input name="email" type="email" autocomplete="email" required placeholder="you@company.com"></label><button type="submit">Notify me</button></form><p class="notify-msg" role="status" aria-live="polite"></p><p>Have a concern, or want it removed? <a href="https://github.com/QAmcp/qamcp-cli/issues">Ask us</a> and we'll take it off the list. <a href="../directory-rules.html">How the directory works</a></p></div></div>
+ <div class="claim"><div><b>Is this your server? Get an alert the moment it breaks.</b><p>QAmcp Monitor (coming soon) tests it every hour and emails you when it goes down, the score drops, a tool changes or a secret leaks. You'll also be able to claim this page and get a verified owner mark. Founding price: $19/month for life for the first 50 teams.</p><form class="notify" novalidate><input type="hidden" name="server" value="https://mcp.signal8.ai/mcp"><label class="nl">Work email<input name="email" type="email" autocomplete="email" required placeholder="you@company.com"></label><button type="submit">Notify me</button></form><p class="notify-msg" role="status" aria-live="polite"></p><p>Have a concern, or want it removed? <a href="https://github.com/QAmcp/qamcp-cli/issues">Ask us</a> and we'll take it off the list. <a href="../directory-rules.html">How the directory works</a></p></div></div>
 </div>
 <script src="../theme.js"></script>
 <script src="../count.js"></script>
 <script src="../ai.js"></script>
 <script src="../notify.js"></script>
 <script>
-for (const id of ['copy', 'copy-top']) document.getElementById(id).onclick = async (e) => {
+for (const [id, from] of [['copy', 'cmd'], ['copy-top', 'cmd'], ['copy-badge', 'badge-md']]) document.getElementById(id).onclick = async (e) => {
   const b = e.currentTarget, was = b.textContent;
-  try { await navigator.clipboard.writeText(document.getElementById('cmd').textContent); b.textContent = 'Copied'; } catch (err) { b.textContent = 'Select the command below'; }
+  try { await navigator.clipboard.writeText(document.getElementById(from).textContent); b.textContent = 'Copied'; } catch (err) { b.textContent = 'Select the command below'; }
   setTimeout(() => (b.textContent = was), 1800);
 };
 </script>

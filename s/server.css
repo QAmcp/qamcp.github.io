@@ -77,3 +77,6 @@ details li.more{display:block;color:var(--faint);padding-left:24px}
 .claim .notify button:disabled{opacity:.6}
 .claim .notify-msg{margin-top:8px;min-height:1.4em;font-size:14px;color:var(--soft)}.claim .notify-msg.ok{color:var(--pass);font-weight:700}
 @media (max-width:560px){.claim .notify{grid-template-columns:1fr}}
+
+.badge-img{margin-top:12px}.badge-img img{display:block}
+#badge .cmd code{overflow-wrap:anywhere;white-space:normal}
