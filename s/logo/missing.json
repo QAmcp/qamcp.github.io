@@ -122,5 +122,14 @@
  "ai.spendpoint/spendpoint": "2026-10-26",
  "ai.thestrat/thestrat": "2026-10-26",
  "ai.walnutlink/walnutlink-a-share": "2026-10-26",
- "app.artec/creator": "2026-10-26"
+ "app.artec/creator": "2026-10-26",
+ "ai.coreyjames/portfolio": "2026-10-28",
+ "ai.mukala/mcp": "2026-10-28",
+ "ai.saifs/assessment-intelligence": "2026-10-28",
+ "ai.saifs/code-execution": "2026-10-28",
+ "ai.saifs/collections-optimizer": "2026-10-28",
+ "ai.saifs/learning-optimizer": "2026-10-28",
+ "ai.saifs/mastery-pathing": "2026-10-28",
+ "ai.saifs/procurement-and-supplier-selection": "2026-10-28",
+ "ai.saifs/route-optimizer": "2026-10-28"
 }

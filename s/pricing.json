@@ -1358,5 +1358,89 @@
  },
  "ai.commercebook/commercebook": {
   "checked": "2026-10-27"
+ },
+ "ai.aeoengine/best-ai-search-agency-aeo-report": {
+  "url": "https://aeoengine.ai/pricing",
+  "checked": "2026-10-28"
+ },
+ "ai.agentplaybooks/agentplaybooks": {
+  "checked": "2026-10-28"
+ },
+ "ai.commercializer/commercializer": {
+  "url": "https://commercializer.ai/pricing",
+  "checked": "2026-10-28"
+ },
+ "ai.compi/compi": {
+  "checked": "2026-10-28"
+ },
+ "ai.coreyjames/portfolio": {
+  "checked": "2026-10-28"
+ },
+ "ai.denser/denser": {
+  "url": "https://denser.ai/pricing/",
+  "checked": "2026-10-28"
+ },
+ "ai.docuwriter/docuwriter": {
+  "url": "https://www.docuwriter.ai/pricing",
+  "checked": "2026-10-28"
+ },
+ "ai.eshmere/tenda": {
+  "checked": "2026-10-28"
+ },
+ "ai.fundas/horizoniq": {
+  "checked": "2026-10-28"
+ },
+ "ai.getimg/getimg": {
+  "url": "https://getimg.ai/pricing",
+  "checked": "2026-10-28"
+ },
+ "ai.hoghogh/chistara": {
+  "checked": "2026-10-28"
+ },
+ "ai.hookbird/hookbird": {
+  "url": "https://hookbird.ai/pricing",
+  "checked": "2026-10-28"
+ },
+ "ai.limurse/limurse": {
+  "url": "https://limurse.ai/pricing",
+  "checked": "2026-10-28"
+ },
+ "ai.mdil/remap": {
+  "checked": "2026-10-28"
+ },
+ "ai.mediora/mediora": {
+  "checked": "2026-10-28"
+ },
+ "ai.mukala/mcp": {
+  "url": "https://mukala.ai/pricing",
+  "checked": "2026-10-28"
+ },
+ "ai.reachkit/reachkit": {
+  "url": "https://reachkit.ai/pricing",
+  "checked": "2026-10-28"
+ },
+ "ai.richgo.m/richgo": {
+  "checked": "2026-10-28"
+ },
+ "ai.saifs/assessment-intelligence": {
+  "checked": "2026-10-28"
+ },
+ "ai.saifs/code-execution": {
+  "checked": "2026-10-28"
+ },
+ "ai.saifs/collections-optimizer": {
+  "checked": "2026-10-28"
+ },
+ "ai.saifs/learning-optimizer": {
+  "checked": "2026-10-28"
+ },
+ "ai.saifs/mastery-pathing": {
+  "checked": "2026-10-28"
+ },
+ "ai.saifs/procurement-and-supplier-selection": {
+  "checked": "2026-10-28"
+ },
+ "ai.saifs/route-optimizer": {
+  "checked": "2026-10-28"
  }
 }
