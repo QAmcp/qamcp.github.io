@@ -248,6 +248,10 @@ header.top .hr .gh{margin-left:auto}header.top .hr .ai-pop{left:0;right:auto}
 .news{display:inline-flex;align-self:flex-start;width:fit-content;align-items:center;gap:9px;margin-bottom:16px;padding:4px 12px 4px 4px;border:1px solid var(--frame);border-radius:999px;font-size:13.5px;color:var(--soft);text-decoration:none;max-width:100%}
 .news b{flex:none;background:var(--rose);color:var(--on-rose);border-radius:999px;padding:2px 9px;font:700 12px var(--text)}
 .news span{min-width:0}.news i{font-style:normal;color:var(--rose)}
+.news{position:relative;overflow:hidden;border-color:color-mix(in srgb,var(--rose) 55%,transparent)}
+.news::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(100deg,transparent 35%,color-mix(in srgb,var(--rose) 55%,transparent) 50%,transparent 65%);transform:translateX(-100%);animation:beam 3.6s ease-in-out 1s infinite}
+@keyframes beam{0%{transform:translateX(-100%)}45%,100%{transform:translateX(100%)}}
+@media (prefers-reduced-motion:reduce){.news::after{animation:none;display:none}}
 .news:hover{border-color:var(--rose);color:var(--ink)}.news:focus-visible{outline:2px solid var(--rose);outline-offset:3px}
 .try{margin:10px 0 0;font-size:14.5px;color:var(--soft)}.try a{color:var(--rose);font-weight:700}
 header.top nav a{white-space:nowrap}
