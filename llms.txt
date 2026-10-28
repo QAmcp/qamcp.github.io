@@ -24,6 +24,8 @@ Safety: by default it only runs tools the server labels read-only, never runs to
 - [Run it in CI](https://qamcp.dev/ci.html): GitHub Action and other CI systems
 - [Sample reports](https://qamcp.dev/samples.html): a deliberately broken server, a login wall, and a perfect score
 - [State of MCP servers, October 2026](https://qamcp.dev/state-of-mcp-2026-10.html): what we found testing 365 public MCP servers; numbers as open data (CC BY 4.0) at https://qamcp.dev/state-of-mcp-2026-10.json
+- [Pricing](https://qamcp.dev/pricing.html): testing is free; Monitor is free for 1 server, Pro is $19 a month founding price (3 servers, 5-minute checks, Slack)
+- [Terms](https://qamcp.dev/terms.html) and [refunds](https://qamcp.dev/refund.html): 7-day money back on the first payment, cancel any time
 - [QAmcp Monitor](https://qamcp.dev/monitor.html): coming soon: an up check every 5 minutes, the full test every hour, and an email when a server goes down, its score drops, a tool changes or a secret leaks
 - [What QAmcp can and can't catch](https://qamcp.dev/limits.html): what a result covers, what it cannot see (behind-the-scenes side effects, tools not run, attacks), and how to read a green report
 - [Security and data](https://qamcp.dev/security.html): for security teams: where data goes in the terminal tool, the website test and Monitor; what QAmcp keeps and never does

@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pricing · QAmcp</title>
+<meta name="description" content="QAmcp is free to test MCP servers. Monitor tests your server every hour, checks it is up every 5 minutes and emails you when it breaks or changes: $19 a month founding price.">
+<link rel="canonical" href="https://qamcp.dev/pricing.html">
+<meta property="og:type" content="website"><meta property="og:site_name" content="QAmcp"><meta property="og:title" content="QAmcp pricing: free to test, $19 a month to keep watch">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231A1A1A'/%3E%3Crect x='7' y='7' width='18' height='18' rx='2' fill='none' stroke='%23B9838A' stroke-width='2.4'/%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('qamcp-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="stylesheet" href="site.css">
+<style>
+.faq{margin-top:clamp(22px,3vw,36px);border-top:1px solid var(--rule)}
+.faq details{border-bottom:1px solid var(--rule);padding:14px 0}
+.faq summary{cursor:pointer;font-weight:700;list-style-position:outside}
+.faq summary:focus-visible{outline:2px solid var(--rose);outline-offset:3px}
+.faq p{margin-top:8px;color:var(--soft);max-width:68ch}.faq a{color:var(--rose)}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.cta a{font:700 15px var(--text);padding:12px 16px;border-radius:9px;text-decoration:none}
+.cta .p{background:var(--rose);color:var(--on-rose)}.cta .s{border:1.5px solid var(--rose);color:var(--ink)}
+.cta a:focus-visible,.plans a:focus-visible{outline:2px solid var(--rose);outline-offset:3px}
+.hero-plan{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(24px,4vw,64px);margin-top:clamp(14px,2vw,22px);padding:clamp(22px,3vw,36px);border:1.5px solid var(--rose);border-radius:14px}
+.hp-tag{font:400 13px var(--mono);color:var(--rose);text-transform:none}
+.part-in h2.hp-num{margin-top:8px;font:700 clamp(56px,7vw,84px)/1 var(--mono);letter-spacing:-0.02em}
+.hp-was{margin-left:12px;font:400 clamp(18px,1.8vw,24px) var(--mono);color:var(--off);text-decoration:line-through;letter-spacing:0;vertical-align:middle}
+.hp-per{margin-top:10px;color:var(--soft);max-width:34ch}
+.hp-list{list-style:none;padding:0;margin:0}
+.hp-list li{padding:11px 0;border-top:1px solid var(--rule);color:var(--soft)}
+.hp-list li:first-child{border-top:0;padding-top:0}
+.hp-list b{color:var(--ink);font-weight:700}
+.soon{display:inline-block;margin-left:6px;padding:1px 7px;border:1px solid var(--frame);border-radius:5px;font:400 12px var(--mono);color:var(--faint);vertical-align:2px}
+.plans{list-style:none;padding:0;margin-top:clamp(18px,2.6vw,30px);display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 clamp(24px,4vw,56px)}
+.plans li{padding:18px 0;border-top:1px solid var(--rule)}
+.pl-name{font:700 19px/1.2 var(--head);color:var(--ink)}
+.pl-price{margin-top:4px;font:400 15px var(--mono);color:var(--ink)}.pl-price .hp-was{font-size:14px;margin-left:6px}
+.plans p{margin-top:8px;color:var(--soft);max-width:52ch}
+.plans a{display:inline-block;margin-top:10px;color:var(--rose);font-weight:700}
+@media (max-width:760px){.hero-plan,.plans{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="sheet">
+ <div class="sheet-in">
+  <header class="top">
+   <a class="brand" href="./">QA<b>mcp</b></a>
+   <nav aria-label="Main"><a href="directory.html">Directory</a><a href="test.html">Test a server</a><a href="how-it-works.html">How it works</a><a href="safety.html">Safety</a><a href="ci.html">Run it in CI</a><a href="samples.html">Sample reports</a></nav>
+   <div class="ai"><button class="ai-btn" type="button" aria-expanded="false" aria-controls="ai-pop"><svg viewBox="0 0 16 16" aria-hidden="true" width="15" height="15"><path fill="none" stroke="currentColor" stroke-width="1.4" d="M8 1.5l1.6 3.9 3.9 1.6-3.9 1.6L8 12.5 6.4 8.6 2.5 7l3.9-1.6z"/></svg>Test with your AI</button><div class="ai-pop" id="ai-pop" hidden><b>Copied. Paste it into Claude Code, Cursor or Codex:</b><code>Fetch and follow the instructions at https://qamcp.dev/setup.md to test my MCP server.</code><p>Your AI finds your server in your project, tests it with QAmcp, explains what's wrong in plain words, fixes it with your OK, and tests again. <a href="setup.md">Read the instructions</a></p></div></div>
+   <a class="gh" href="https://github.com/QAmcp/qamcp-cli"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38v-1.33c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.06-.49.06-.49.8.06 1.23.83 1.23.83.72 1.22 1.88.87 2.34.66.07-.52.28-.87.5-1.07-1.78-.2-3.65-.89-3.65-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>GitHub</a>
+   <button class="theme" id="theme" type="button" style="margin-left:10px">Light</button>
+  </header>
+  <main id="main">
+   <div class="page-head">
+    <h1>Free to test.<br>$19 a month to keep watch.</h1>
+    <p>Testing a server is free forever, in the browser or the terminal. Monitor is for servers people already depend on: it tests yours every hour, checks it's up every 5 minutes, and emails you the moment something breaks or changes.</p>
+    <nav class="toc" aria-label="On this page"><a href="#pro">Pro</a><a href="#plans">Other plans</a><a href="#questions">Questions</a></nav>
+   </div>
+  </main>
+ </div>
+</div>
+
+<section class="part" id="pro" aria-labelledby="h-pro">
+ <div class="part-in">
+  <span class="sheetno">Sheet 2 of 4 · Pro</span>
+  <div class="hero-plan">
+   <div class="hp-price">
+    <p class="hp-tag">Founding price · first 50 customers</p>
+    <h2 id="h-pro" class="hp-num">$19<span class="hp-was">$29</span></h2>
+    <p class="hp-per">a month, for life, as long as you stay. Yearly: pay for 10 months, get 12.</p>
+    <div class="cta"><a class="p" href="monitor.html?from=pricing#notify">Get notified</a><a class="s" href="test.html">Test a server first</a></div>
+   </div>
+   <ul class="hp-list">
+    <li><b>3 servers</b>, each with its own private page</li>
+    <li><b>A full test every hour</b>, the same safe-mode test as the free one</li>
+    <li><b>An up check every 5 minutes</b>, so you hear about a dead server fast</li>
+    <li><b>An email when it matters:</b> down, back up, slow, going up and down, score dropped, a tool changed, a secret leaked, a problem fixed</li>
+    <li><b>A live badge</b> for your README that shows the current score</li>
+    <li><b>1 year of history</b>: every score, every change</li>
+    <li><b>Slack alerts</b> in your own channel, as well as email</li>
+    <li><b>Servers behind a login</b>: save a key and every test uses it, stored encrypted</li>
+    <li><b>Teammates</b> who get the same alerts</li>
+    <li><b>Verified owner mark</b> once you prove the server is yours</li>
+    <li><b>1 security test a month</b> on a test copy of your server <span class="soon">soon</span></li>
+   </ul>
+  </div>
+ </div>
+</section>
+
+<section class="part" id="plans" aria-labelledby="h-plans">
+ <div class="part-in">
+  <span class="sheetno">Sheet 3 of 4 · Other plans</span>
+  <h2 id="h-plans">Everything else</h2>
+  <ul class="plans">
+   <li><div class="pl-name">Free</div><div class="pl-price">$0, forever</div><p>The browser test, the terminal tool, the GitHub check, the commit hook, the before-you-install check and your listing in the directory, with no account. Plus <b>Monitor for 1 server</b>: a full test every hour and the same email alerts, after an email sign-in.</p><a href="test.html">Test a server</a></li>
+   <li><div class="pl-name">Agency <span class="soon">soon</span></div><div class="pl-price">$99 a month <span class="hp-was">$149</span></div><p>For teams that build servers for clients: 25 servers, a test every 15 minutes, reports with your logo, 5 seats and 10 security tests a month.</p><a href="mailto:hi@qamcp.dev?subject=Agency%20plan">Tell me when it's ready</a></li>
+   <li><div class="pl-name">Enterprise</div><div class="pl-price">Let's talk</div><p>Many servers, a private setup inside your network, invoices and the paperwork your security team needs.</p><a href="mailto:hi@qamcp.dev?subject=Enterprise">Email hi@qamcp.dev</a></li>
+   <li><div class="pl-name">Security report <span class="soon">soon</span></div><div class="pl-price">$49, once</div><p>A one-off, deeper check of one server you own, run against a test copy, with every finding explained and how to fix it.</p><a href="mailto:hi@qamcp.dev?subject=Security%20report">Ask about it</a></li>
+  </ul>
+ </div>
+</section>
+
+<section class="part" id="questions" aria-labelledby="h-questions">
+ <div class="part-in">
+  <span class="sheetno">Sheet 4 of 4 · Questions</span>
+  <h2 id="h-questions">Before you pay</h2>
+  <div class="faq">
+   <details><summary>Does paying change my score in the directory?</summary><p>No. Scores come from the same test for everyone and are never changed for money. Paying gets you monitoring and alerts, not a better number. <a href="directory-rules.html">The directory rules</a></p></details>
+   <details><summary>What does Monitor do to my server?</summary><p>The same as the free test in safe mode: it only runs tools your server labels read-only, and only when their name, description and inputs agree. It never runs tools that sound like they delete or change something.</p></details>
+   <details><summary>What happens when the 50 founding spots are gone?</summary><p>New customers pay $29 a month. If you started at $19, you keep $19 for as long as you stay subscribed.</p></details>
+   <details><summary>Can I cancel?</summary><p>Yes, any time, from your dashboard. Monitoring stops at the end of the month you paid for.</p></details>
+   <details><summary>Is the free tool going away?</summary><p>No. The test, the terminal tool, the GitHub check and the directory stay free and open source (MIT). Monitor is what pays for them.</p></details>
+  </div>
+ </div>
+</section>
+
+<footer>
+ <span>QAmcp · free and open source (MIT)</span>
+ <a href="./">Home</a>
+ <a href="https://github.com/QAmcp/qamcp-cli">GitHub</a>
+ <a href="https://www.npmjs.com/package/qamcp-cli">npm</a>
+ <a href="cli.html">Use it in the terminal</a>
+ <a href="mcp-server-not-working.html">MCP server not working?</a>
+ <a href="pricing.html">Pricing</a>
+ <a href="state-of-mcp-2026-10.html">State of MCP, Oct 2026</a>
+ <a href="safety.html">Safety and privacy</a>
+ <a href="https://github.com/QAmcp/qamcp-cli/issues">Report a wrong result</a>
+ <a href="privacy.html">Privacy and terms</a>
+ <a href="monitor.html">Monitor</a>
+ <a href="terms.html">Terms</a>
+ <a href="refund.html">Refunds</a>
+ <span class="r">This site has no tracking.</span>
+</footer>
+<script src="theme.js"></script>
+<script src="count.js"></script>
+<script src="ai.js"></script>
+</body>
+</html>
