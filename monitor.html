@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QAmcp Monitor · QAmcp</title>
+<meta name="description" content="QAmcp Monitor checks your MCP server is up every 5 minutes, runs the full test every hour, and emails you when it goes down, the score drops, a tool changes or a secret leaks.">
+<link rel="canonical" href="https://qamcp.dev/monitor.html">
+<meta property="og:type" content="website"><meta property="og:site_name" content="QAmcp"><meta property="og:title" content="QAmcp Monitor · QAmcp"><meta property="og:description" content="QAmcp Monitor checks your MCP server is up every 5 minutes, runs the full test every hour, and emails you when it goes down, the score drops, a tool changes or a secret leaks.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231A1A1A'/%3E%3Crect x='7' y='7' width='18' height='18' rx='2' fill='none' stroke='%23B9838A' stroke-width='2.4'/%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('qamcp-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="stylesheet" href="site.css">
+<style>
+.doc h3{margin-top:clamp(22px,3vw,32px);font:700 clamp(18px,1.6vw,21px)/1.25 var(--head);color:var(--ink)}
+.doc p,.doc li{color:var(--soft);max-width:70ch}.doc p{margin-top:10px}
+.doc ul{margin-top:10px;padding-left:20px}.doc li{margin-top:6px}
+.doc b{color:var(--ink);font-weight:700}.doc a{color:var(--rose)}
+.doc code{color:var(--rose);font:400 0.92em var(--mono)}
+.page-head p.updated{margin-top:10px;font:400 13px var(--mono);color:var(--faint)}
+.mhero{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(300px,1fr);gap:clamp(24px,4vw,64px);align-items:start}
+.mpill{display:inline-block;background:var(--rose);color:var(--on-rose);border-radius:999px;padding:3px 11px;font:700 12.5px var(--text);margin-bottom:14px}
+.mprice{border:1.5px solid var(--rose);border-radius:14px;padding:clamp(18px,2.4vw,26px)}
+.page-head .mprice .mp-tag{margin:0;max-width:none;font:400 12.5px var(--mono);color:var(--rose)}
+.page-head .mprice .mp-num{max-width:none;margin-top:6px;font:700 clamp(48px,5.5vw,64px)/1 var(--mono);color:var(--ink)}.mp-num span{margin-left:10px;font:400 20px var(--mono);color:var(--off);text-decoration:line-through;vertical-align:middle}
+.page-head .mprice .mp-per{font-size:15.5px;margin-top:8px;color:var(--soft)}
+.mprice .notify{display:grid;gap:10px;margin-top:16px}
+.mprice .nl{display:grid;gap:6px;font:600 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--faint)}.mprice .nl span{text-transform:none;letter-spacing:0;font-weight:400}
+.mprice input{border:1px solid var(--frame);border-radius:9px;background:var(--ground);padding:12px 14px;font:400 15px var(--text);color:var(--ink);outline:none;min-width:0}.mprice input:focus{border-color:var(--rose)}
+.mprice button{border:0;border-radius:9px;background:var(--rose);color:var(--on-rose);font:700 15px var(--text);padding:13px 18px;cursor:pointer}.mprice button:disabled{opacity:.6}
+.mprice button:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.page-head .mprice .notify-msg{font-size:14.5px;max-width:none;margin-top:10px;min-height:1.4em;font-size:14.5px;color:var(--soft)}.notify-msg.ok{color:var(--pass);font-weight:700}
+.page-head .mprice .mp-fine{margin-top:6px;font-size:13px;color:var(--faint)}
+.doc .facts{margin-top:clamp(16px,2vw,24px)}
+.mail{margin-top:16px;border:1px solid var(--frame);border-radius:12px;background:var(--ground);overflow:hidden}
+.mail-h{margin:0!important;padding:10px 14px;border-bottom:1px solid var(--rule);font:400 12.5px var(--mono);color:var(--faint)!important}
+.mail pre{margin:0;padding:14px;font:400 13px/1.6 var(--mono);color:var(--ink);white-space:pre-wrap;overflow-wrap:anywhere}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}.cta a{font:700 15px var(--text);padding:12px 16px;border-radius:9px;text-decoration:none}
+.cta .p{background:var(--rose);color:var(--on-rose)}.cta .s{border:1.5px solid var(--rose);color:var(--ink)}
+.faq{margin-top:clamp(18px,2.6vw,30px);border-top:1px solid var(--rule)}.faq details{border-bottom:1px solid var(--rule);padding:14px 0}
+.faq summary{cursor:pointer;font-weight:700}.faq p{margin-top:8px;color:var(--soft);max-width:68ch}.faq a{color:var(--rose)}
+@media (max-width:860px){.mhero{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="sheet">
+ <div class="sheet-in">
+  <header class="top">
+   <a class="brand" href="./">QA<b>mcp</b></a>
+   <nav aria-label="Main"><a href="directory.html">Directory</a><a href="test.html">Test a server</a><a href="how-it-works.html">How it works</a><a href="safety.html">Safety</a><a href="ci.html">Run it in CI</a><a href="samples.html">Sample reports</a></nav>
+   <div class="ai"><button class="ai-btn" type="button" aria-expanded="false" aria-controls="ai-pop"><svg viewBox="0 0 16 16" aria-hidden="true" width="15" height="15"><path fill="none" stroke="currentColor" stroke-width="1.4" d="M8 1.5l1.6 3.9 3.9 1.6-3.9 1.6L8 12.5 6.4 8.6 2.5 7l3.9-1.6z"/></svg>Test with your AI</button><div class="ai-pop" id="ai-pop" hidden><b>Copied. Paste it into Claude Code, Cursor or Codex:</b><code>Fetch and follow the instructions at https://qamcp.dev/setup.md to test my MCP server.</code><p>Your AI finds your server in your project, tests it with QAmcp, explains what's wrong in plain words, fixes it with your OK, and tests again. <a href="setup.md">Read the instructions</a></p></div></div>
+   <a class="gh" href="https://github.com/QAmcp/qamcp-cli"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38v-1.33c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.06-.49.06-.49.8.06 1.23.83 1.23.83.72 1.22 1.88.87 2.34.66.07-.52.28-.87.5-1.07-1.78-.2-3.65-.89-3.65-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>GitHub</a>
+   <button class="theme" id="theme" type="button" style="margin-left:10px">Light</button>
+  </header>
+  <main id="main">
+   <div class="page-head mhero">
+    <div>
+     <span class="mpill">Coming soon</span>
+     <h1>Know the moment your MCP server breaks</h1>
+     <p>QAmcp Monitor checks your server is up every 5 minutes and runs the full QAmcp test every hour. When something goes wrong, you get one email that says what happened, what it means and what to do. When it's fixed, you get one more.</p>
+     <nav class="toc" aria-label="On this page"><a href="#watches">What it watches</a><a href="#get">What you get</a><a href="#alert">An example alert</a><a href="#price">Price</a><a href="#questions">Questions</a></nav>
+    </div>
+    <div class="mprice" id="notify">
+     <p class="mp-tag">Founding price · first 50 teams</p>
+     <p class="mp-num">$19<span>$29</span></p>
+     <p class="mp-per">a month, for life, as long as you stay · 3 servers</p>
+     <form class="notify" novalidate>
+      <label class="nl">Work email<input name="email" type="email" autocomplete="email" required placeholder="you@company.com"></label>
+      <label class="nl">Your MCP server <span>· optional</span><input name="server" type="url" inputmode="url" autocomplete="off" spellcheck="false" placeholder="https://your-server.com/mcp"></label>
+      <button type="submit">Notify me when it opens</button>
+     </form>
+     <p class="notify-msg" role="status" aria-live="polite"></p>
+     <p class="mp-fine">We email you once, when it opens. Nothing else, never shared.</p>
+    </div>
+   </div>
+  </main>
+ </div>
+</div>
+
+<section class="part" id="watches" aria-labelledby="h-watches">
+ <div class="part-in doc">
+  <span class="sheetno">Sheet 2 of 6 · What it watches</span>
+  <h2 id="h-watches">What Monitor watches</h2>
+  <ul class="facts">
+   <li><strong>Is it up?</strong>A quick check every 5 minutes that runs no tools. After 2 failed checks in a row, you get a "Down" email; when it answers again, a "Back up" email with how long it was down.</li>
+   <li><strong>The full test, every hour</strong>The same test as the free one: connection, MCP version, tool descriptions and inputs, safety labels, hidden instructions, bad-input handling, leaked secrets, speed, login setup, resources and prompts.</li>
+   <li><strong>Score drops</strong>When the score falls by 5 points or more, with exactly which checks got worse.</li>
+   <li><strong>Tool changes</strong>A tool added, removed or renamed, an input or required field that changed, a safety label that flipped: the exact before and after, even if you didn't change it yourself.</li>
+   <li><strong>Security</strong>A hidden instruction that appears in a tool description, or a secret that starts showing up in an error message, and the moment it's gone again.</li>
+   <li><strong>Safe, always</strong>Only tools labeled read-only are ever run, and never anything that sounds like it deletes. Monitor never changes your data.</li>
+  </ul>
+ </div>
+</section>
+
+<section class="part" id="get" aria-labelledby="h-get">
+ <div class="part-in doc">
+  <span class="sheetno">Sheet 3 of 6 · What you get</span>
+  <h2 id="h-get">What you get</h2>
+  <ul class="facts">
+   <li><strong>Emails worth reading</strong>One when a problem starts and one when it's fixed, never a repeat while it lasts. You choose which kinds you want.</li>
+   <li><strong>A dashboard</strong>Every server at a glance, problems first. For each one: up time over 24 hours, 7 and 30 days, the first failing and last good test, the score over time, every change and every past problem.</li>
+   <li><strong>Test now, pause, resume</strong>Run a test whenever you ship, and pause a server while you work on it.</li>
+   <li><strong>Teammates</strong>Up to 3 people get the same alerts. Each one confirms from their own inbox first.</li>
+   <li><strong>A live badge</strong>The current score in your README, updated with every test.</li>
+   <li><strong>A year of history</strong>Every score and every change, kept for a year. Delete everything any time, from your settings.</li>
+  </ul>
+  <h3>Coming soon</h3>
+  <p>Slack alerts · a verified owner mark on your directory page · a monthly security test on a test copy of your server · testing the tools behind a login.</p>
+ </div>
+</section>
+
+<section class="part" id="alert" aria-labelledby="h-alert">
+ <div class="part-in doc">
+  <span class="sheetno">Sheet 4 of 6 · An example alert</span>
+  <h2 id="h-alert">What an alert looks like</h2>
+  <p>This is a real Monitor email, for our own test server that we switched off on purpose.</p>
+  <div class="mail"><p class="mail-h">From: QAmcp Monitor · Subject: [Down] api.acme.ai is not answering</p><pre>DOWN: api.acme.ai is not answering
+────────────────────────────
+What happened
+   Your MCP server stopped answering at 02:14 UTC. It failed 2 checks in a row.
+What it means
+   Right now, AI apps that use this server get errors instead of answers.
+What to do
+   Check that the server is running and reachable. You don't need to do
+   anything here: we keep testing and email you again the moment it answers.
+Details
+   What we saw: the connection timed out</pre></div>
+ </div>
+</section>
+
+<section class="part" id="price" aria-labelledby="h-price">
+ <div class="part-in doc">
+  <span class="sheetno">Sheet 5 of 6 · Price</span>
+  <h2 id="h-price">One plan to start</h2>
+  <ul class="facts">
+   <li><strong>Pro: $19 a month, for life</strong>The founding price for the first 50 teams, kept for as long as your plan stays active. After that it's $29 a month. 3 servers.</li>
+   <li><strong>Try it without worry</strong>Your first payment comes with a 7-day money-back promise. Cancel any time from the dashboard.</li>
+   <li><strong>Running many servers?</strong>An agency plan for 25 servers is coming. <a href="mailto:hi@qamcp.dev?subject=Agency%20plan">Tell us</a> and we'll let you know.</li>
+   <li><strong>The free test stays free</strong>The browser test, the terminal tool, the GitHub check and the directory stay free and open source. Monitor is what pays for them.</li>
+  </ul>
+  <div class="cta"><a class="p" href="#notify">Notify me when it opens</a><a class="s" href="test.html?from=monitor">Test a server for free now</a></div>
+ </div>
+</section>
+
+<section class="part" id="questions" aria-labelledby="h-questions">
+ <div class="part-in doc">
+  <span class="sheetno">Sheet 6 of 6 · Questions</span>
+  <h2 id="h-questions">Questions</h2>
+  <div class="faq">
+   <details><summary>Does paying change my score in the directory?</summary><p>No, never. Every server gets the same test, and scores are never changed for money. <a href="directory-rules.html">The directory rules</a></p></details>
+   <details><summary>Can Monitor break or change my server?</summary><p>No. It only runs tools your server labels read-only, and only when their name, description and inputs agree. The 5-minute check runs no tools at all.</p></details>
+   <details><summary>My server needs a login. Does Monitor work?</summary><p>Today it watches whether the server is up and whether its login setup still follows the MCP rules. Testing the tools behind the login is coming.</p></details>
+   <details><summary>What do you keep about me?</summary><p>Your email, your server's link and its test history. No AI reads any of it. <a href="privacy.html">Privacy</a></p></details>
+   <details><summary>When does it open?</summary><p>Soon. Leave your email above and we'll write to you once, the day it opens.</p></details>
+  </div>
+ </div>
+</section>
+
+<footer>
+ <span>QAmcp · free and open source (MIT)</span>
+ <a href="./">Home</a>
+ <a href="https://github.com/QAmcp/qamcp-cli">GitHub</a>
+ <a href="https://www.npmjs.com/package/qamcp-cli">npm</a>
+ <a href="cli.html">Use it in the terminal</a>
+ <a href="mcp-server-not-working.html">MCP server not working?</a>
+ <a href="state-of-mcp-2026-10.html">State of MCP, Oct 2026</a>
+ <a href="safety.html">Safety and privacy</a>
+ <a href="https://github.com/QAmcp/qamcp-cli/issues">Report a wrong result</a>
+ <a href="monitor.html">Monitor</a>
+ <a href="limits.html">What it can't catch</a>
+ <a href="security.html">Security and data</a>
+ <a href="privacy.html">Privacy and terms</a>
+ <a href="contact.html">Contact</a>
+ <span class="r">This site has no tracking.</span>
+</footer>
+<script src="theme.js"></script>
+<script src="count.js"></script>
+<script src="ai.js"></script>
+<script src="notify.js"></script>
+</body>
+</html>

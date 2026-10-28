@@ -80,3 +80,7 @@ details li.more{display:block;color:var(--faint);padding-left:24px}
 
 .badge-img{margin-top:12px}.badge-img img{display:block}
 #badge .cmd code{overflow-wrap:anywhere;white-space:normal}
+
+.mon-strip{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin:0 0 var(--gutter);padding:11px clamp(14px,2vw,20px);border:1px solid var(--rule);background:var(--sheet);color:var(--soft);text-decoration:none;font-size:14.5px}
+.mon-strip b{background:var(--rose);color:var(--on-rose);border-radius:999px;padding:2px 9px;font-size:12px}.mon-strip strong{color:var(--ink)}
+.mon-strip i{font-style:normal;color:var(--rose);margin-left:auto;font-weight:700}.mon-strip:hover{border-color:var(--rose)}
