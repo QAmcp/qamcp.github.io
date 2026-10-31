@@ -3324,5 +3324,273 @@
  },
  "com.lanesurf/agent": {
   "checked": "2026-10-30"
+ },
+ "agency.thirdhemisphere/ai-authority-index": {
+  "checked": "2026-10-31"
+ },
+ "ai.ahel/ahel": {
+  "url": "https://ahel.ai/pricing",
+  "checked": "2026-10-31"
+ },
+ "ai.aldro/tax": {
+  "url": "https://aldro.ai/pricing",
+  "checked": "2026-10-31"
+ },
+ "ai.duami/intent-exchange": {
+  "checked": "2026-10-31"
+ },
+ "ai.lightray/lightray": {
+  "url": "https://www.lightray.ai/pricing",
+  "checked": "2026-10-31"
+ },
+ "ai.mythex/mythex": {
+  "url": "https://mythex.ai/pricing",
+  "checked": "2026-10-31"
+ },
+ "ai.n3tz/atlas": {
+  "checked": "2026-10-31"
+ },
+ "ai.nabit/nabit": {
+  "url": "https://nabit.ai/pricing",
+  "checked": "2026-10-31"
+ },
+ "ai.pullpush/pullpush-mcp": {
+  "url": "https://pullpush.ai/pricing",
+  "checked": "2026-10-31"
+ },
+ "ai.rewst/mcp": {
+  "checked": "2026-10-31"
+ },
+ "ai.socialsight/mcp": {
+  "url": "https://socialsight.ai/apps/subscribe",
+  "checked": "2026-10-31"
+ },
+ "ai.softskillsacademy/destrava": {
+  "checked": "2026-10-31"
+ },
+ "ai.theskillvault/skills": {
+  "checked": "2026-10-31"
+ },
+ "ai.unitrader/unitrader": {
+  "checked": "2026-10-31"
+ },
+ "ai.vinano/mcp": {
+  "url": "https://vinano.ai/pricing",
+  "checked": "2026-10-31"
+ },
+ "app.aplusz/ultra-pool-billiards": {
+  "checked": "2026-10-31"
+ },
+ "app.awwab/qibla": {
+  "checked": "2026-10-31"
+ },
+ "app.evlek/mcp-server": {
+  "checked": "2026-10-31"
+ },
+ "app.inescapable/booking": {
+  "checked": "2026-10-31"
+ },
+ "app.longbook/mcp": {
+  "checked": "2026-10-31"
+ },
+ "app.moflow/mcp": {
+  "url": "https://moflow.app/pricing",
+  "checked": "2026-10-31"
+ },
+ "app.worthbase/worthbase": {
+  "url": "https://worthbase.app/pricing/",
+  "checked": "2026-10-31"
+ },
+ "be.cloo/ofertas": {
+  "checked": "2026-10-31"
+ },
+ "ca.mescolis/shipping": {
+  "checked": "2026-10-31"
+ },
+ "ca.mescolis/shipsmarter": {
+  "checked": "2026-10-31"
+ },
+ "ch.aarven/aarven": {
+  "checked": "2026-10-31"
+ },
+ "chat.airys/mcp": {
+  "checked": "2026-10-31"
+ },
+ "chat.probed/mcp": {
+  "url": "https://probed.chat/pricing",
+  "checked": "2026-10-31"
+ },
+ "co.getclippy/clippy": {
+  "checked": "2026-10-31"
+ },
+ "co.instantreply/mcp": {
+  "url": "https://www.instantreply.co/pricing",
+  "checked": "2026-10-31"
+ },
+ "co.peptidesacademy/peptides-academy": {
+  "url": "https://peptidesacademy.co/pricing",
+  "checked": "2026-10-31"
+ },
+ "com.0xpi.sdsentry/sds-lookup": {
+  "checked": "2026-10-31"
+ },
+ "com.agentscouthq/directory": {
+  "checked": "2026-10-31"
+ },
+ "com.alexandrecaramaschi/public-content": {
+  "checked": "2026-10-31"
+ },
+ "com.alwa7i.bayan/bayan": {
+  "checked": "2026-10-31"
+ },
+ "com.artifactsend/mcp": {
+  "url": "https://artifactsend.com/pricing",
+  "checked": "2026-10-31"
+ },
+ "com.autocarena/auctions": {
+  "checked": "2026-10-31"
+ },
+ "com.avenbridgetech/avenbridge": {
+  "url": "https://avenbridgetech.com/pricing",
+  "checked": "2026-10-31"
+ },
+ "com.bastionhelix/fab-quote": {
+  "checked": "2026-10-31"
+ },
+ "com.blooio/mcp": {
+  "checked": "2026-10-31"
+ },
+ "com.bluulabs/bluu": {
+  "checked": "2026-10-31"
+ },
+ "com.bullionpricecheck/bullion-price-check": {
+  "checked": "2026-10-31"
+ },
+ "com.chinafootnotes/china-footnotes": {
+  "checked": "2026-10-31"
+ },
+ "com.clarity4d/clarity4d": {
+  "checked": "2026-10-31"
+ },
+ "com.constituchat/constitucion": {
+  "checked": "2026-10-31"
+ },
+ "com.deepchampai/deepchamp-agents": {
+  "url": "https://deepchampai.com/pricing",
+  "checked": "2026-10-31"
+ },
+ "com.doucebeads/image-to-beads": {
+  "checked": "2026-10-31"
+ },
+ "com.dpolens/dpolens": {
+  "checked": "2026-10-31"
+ },
+ "com.drawstoday/fair-random": {
+  "checked": "2026-10-31"
+ },
+ "com.drawstoday/lottery-numbers": {
+  "checked": "2026-10-31"
+ },
+ "com.dronebundle/mcp": {
+  "url": "https://dronebundle.com/pricing",
+  "checked": "2026-10-31"
+ },
+ "com.escortfox/escortfox": {
+  "checked": "2026-10-31"
+ },
+ "com.findenergyrates/electricity-rates": {
+  "checked": "2026-10-31"
+ },
+ "com.fooguard/library": {
+  "url": "https://fooguard.com/pricing",
+  "checked": "2026-10-31"
+ },
+ "com.formsmcp/formsmcp": {
+  "url": "https://formsmcp.com/pricing",
+  "checked": "2026-10-31"
+ },
+ "com.genexxis/data-apis": {
+  "checked": "2026-10-31"
+ },
+ "com.goodailabs/arrakis": {
+  "checked": "2026-10-31"
+ },
+ "com.graggrobotics/agent-bazaar": {
+  "checked": "2026-10-31"
+ },
+ "com.graunt/marketplace": {
+  "checked": "2026-10-31"
+ },
+ "com.greenpharmacies-sharm/pharmacy": {
+  "checked": "2026-10-31"
+ },
+ "com.hanaprism/fair-random": {
+  "checked": "2026-10-31"
+ },
+ "com.hanaprism/lottery-numbers": {
+  "checked": "2026-10-31"
+ },
+ "com.harashsuq/marketplace": {
+  "checked": "2026-10-31"
+ },
+ "com.hawklify/odoo": {
+  "url": "https://hawklify.com/plans/",
+  "checked": "2026-10-31"
+ },
+ "com.himoose/aeo-tools": {
+  "url": "https://himoose.com/pricing/",
+  "checked": "2026-10-31"
+ },
+ "com.ierhub/license-lookup": {
+  "checked": "2026-10-31"
+ },
+ "com.ipipai/ipipai-mcp": {
+  "checked": "2026-10-31"
+ },
+ "com.it.justclaw/justclaw-it": {
+  "url": "https://justclaw.it.com/pricing",
+  "checked": "2026-10-31"
+ },
+ "com.jmiszewicz/mcp": {
+  "checked": "2026-10-31"
+ },
+ "com.jobsitecerts/jobsite": {
+  "url": "https://jobsitecerts.com/pricing",
+  "checked": "2026-10-31"
+ },
+ "com.jobsitecerts/safety-reference": {
+  "url": "https://jobsitecerts.com/pricing",
+  "checked": "2026-10-31"
+ },
+ "com.joeygeorgeplumbing/joey-george-plumbing": {
+  "checked": "2026-10-31"
+ },
+ "com.johalinsurancebrokers/ai-liability-insurance": {
+  "checked": "2026-10-31"
+ },
+ "com.koskamo/koskamo": {
+  "checked": "2026-10-31"
+ },
+ "com.leadmarina/leadmarina": {
+  "url": "https://leadmarina.com/pricing",
+  "checked": "2026-10-31"
+ },
+ "com.ledgercrossing/quickbooks-desktop": {
+  "checked": "2026-10-31"
+ },
+ "com.letkite/letkite": {
+  "checked": "2026-10-31"
+ },
+ "com.lettance/account": {
+  "checked": "2026-10-31"
+ },
+ "com.lettance/rules": {
+  "checked": "2026-10-31"
+ },
+ "com.levelscustomapparel/catalogue": {
+  "checked": "2026-10-31"
+ },
+ "com.liliphant.mcp/mcp": {
+  "checked": "2026-10-31"
  }
 }
