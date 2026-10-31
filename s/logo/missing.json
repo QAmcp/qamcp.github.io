@@ -332,5 +332,21 @@
  "com.graggrobotics/agent-bazaar": "2026-10-31",
  "com.graunt/marketplace": "2026-10-31",
  "com.ipipai/ipipai-mcp": "2026-10-31",
- "com.johalinsurancebrokers/ai-liability-insurance": "2026-10-31"
+ "com.johalinsurancebrokers/ai-liability-insurance": "2026-10-31",
+ "ai.avasis.agents/avasis": "2026-10-31",
+ "ai.peerfoundry/holdkit": "2026-10-31",
+ "ai.peerfoundry/typedpull": "2026-10-31",
+ "ca.fonciq/fonciq": "2026-10-31",
+ "com.18cores/tracker": "2026-10-31",
+ "com.agentmasterdata/agent-master-data": "2026-10-31",
+ "com.anyvideototext/any-video-to-text": "2026-10-31",
+ "com.benchleader/benchleader": "2026-10-31",
+ "com.bestbouncebiz/rankings": "2026-10-31",
+ "com.casaprivat/casaprivat": "2026-10-31",
+ "com.dcblueprint/data-centres": "2026-10-31",
+ "com.directmailamerica/mcp": "2026-10-31",
+ "com.directmailamerica/mcp-narrow": "2026-10-31",
+ "com.escapetheweek/public": "2026-10-31",
+ "com.faredice/trips": "2026-10-31",
+ "com.foldlaboratories/art": "2026-10-31"
 }

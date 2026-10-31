@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Is AutoPrivado MCP server safe? 83/100 in QAmcp's test</title>
+<meta name="description" content="AutoPrivado MCP server: Private car sales in Europe: search listings, price estimate from VIN, portals, contracts.. Scored 83/100 in QAmcp&#39;s safety and quality test on 31 Oct 2026.">
+<link rel="canonical" href="https://qamcp.dev/s/com-autoprivado-autoprivado.html">
+<meta property="og:type" content="website"><meta property="og:site_name" content="QAmcp"><meta property="og:title" content="AutoPrivado MCP server: tested by QAmcp"><meta property="og:description" content="AutoPrivado MCP server: Private car sales in Europe: search listings, price estimate from VIN, portals, contracts.. Scored 83/100 in QAmcp&#39;s safety and quality test on 31 Oct 2026."><meta property="og:url" content="https://qamcp.dev/s/com-autoprivado-autoprivado.html"><meta name="twitter:card" content="summary">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is AutoPrivado MCP server safe?","acceptedAnswer":{"@type":"Answer","text":"QAmcp's test on 31 Oct 2026: None of the hidden-instruction wordings we know were found in its tool descriptions. Its error messages showed no secrets or internal details. 6 of its 7 tools are labeled read-only; the others may change or send things. Overall it scored 83/100 on 31 Oct 2026. A test can only see what the server shows from outside, not what it does with your data behind the scenes. Connect servers from makers you trust."}}]}</script>
+<script>try{var t=localStorage.getItem('qamcp-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="stylesheet" href="../site.css"><link rel="stylesheet" href="../theme.css"><link rel="stylesheet" href="server.css">
+</head><body>
+<div class="wrap">
+ <header class="top"><a class="brand" href="../index.html">QA<b>mcp</b></a><nav aria-label="Main"><a href="../directory.html" aria-current="page">Directory</a><a href="../test.html">Test a server</a><a href="../how-it-works.html">How it works</a><a href="../safety.html">Safety</a><a href="../ci.html">Run it in CI</a><a href="../samples.html">Sample reports</a></nav>
+  <div class="tools"><div class="ai"><button class="ai-btn" type="button" aria-expanded="false" aria-controls="ai-pop"><svg viewBox="0 0 16 16" aria-hidden="true" width="15" height="15"><path fill="none" stroke="currentColor" stroke-width="1.4" d="M8 1.5l1.6 3.9 3.9 1.6-3.9 1.6L8 12.5 6.4 8.6 2.5 7l3.9-1.6z"/></svg>Test with your AI</button><div class="ai-pop" id="ai-pop" hidden><b>Copied. Paste it into Claude Code, Cursor or Codex:</b><code>Fetch and follow the instructions at https://qamcp.dev/setup.md to test my MCP server.</code><p>Your AI finds your server in your project, tests it with QAmcp, explains what&#39;s wrong in plain words, fixes it with your OK, and tests again. <a href="../setup.md">Read the instructions</a></p></div></div><button class="theme" id="theme" type="button">Light</button><a class="gh" href="https://github.com/QAmcp/qamcp-cli">GitHub</a></div></header>
+ <a class="mon-strip" href="../monitor.html?from=server-page"><b>Soon</b><span>Your score can change any day. <strong>QAmcp Monitor</strong> tests your server every hour and emails you when it breaks.</span><i>See what Monitor does →</i></a>
+ <section class="hero">
+  <img class="logo" src="logo/com-autoprivado-autoprivado.png" alt="" width="96" height="96">
+  <div class="who">
+   <p class="crumb"><a href="../directory.html">Directory</a> / AutoPrivado</p>
+   <h1>AutoPrivado</h1>
+   <p class="by">by <a href="https://autoprivado.com/" rel="noopener nofollow">autoprivado.com</a> · https://autoprivado.com/mcp</p>
+   <p class="d">Private car sales in Europe: search listings, price estimate from VIN, portals, contracts.</p>
+   <div class="chips"><span>7 tools</span><span class="ok">✓ no account needed</span><span>Pricing: not listed</span></div>
+   <div class="acts"><button class="p" type="button" id="copy-top">Copy the test command</button><a class="s" href="https://autoprivado.com/" rel="noopener nofollow">Visit website</a></div>
+  </div>
+  <div class="medal">
+   <div class="n">83<small> /100</small></div>
+   <span class="stamp mid">PASS · WITH NOTES</span>
+   
+   <p>11 of 11 checks · 31 Oct 2026</p>
+  </div>
+ </section>
+ <nav class="tabs" aria-label="On this page"><a href="#safe">Is it safe?</a><a href="#tools">What it can do</a><a href="#results">Test results</a><a href="#try">Test it yourself</a><a href="#history">Score over time</a><a href="#reviews">Reviews</a></nav>
+<section class="sec" id="safe"><h2>Is AutoPrivado MCP server safe?</h2><ul class="safe"><li>None of the hidden-instruction wordings we know were found in its tool descriptions.</li><li>Its error messages showed no secrets or internal details.</li><li>6 of its 7 tools are labeled read-only; the others may change or send things.</li><li>Overall it scored 83/100 on 31 Oct 2026.</li></ul><p class="hint">A test can only see what the server shows from outside, not what it does with your data behind the scenes. Connect servers from makers you trust.</p></section>
+ <section class="sec" id="tools"><h2>What it can do</h2><p class="hint">7 tools, in the server's own words.</p><div class="grid">
+<div class="tool"><code>create_listing</code><p>Create a car-for-sale listing for a PRIVATE seller on AutoPrivado, only on behalf of and with the consent of the car&#39;s owner.</p></div>
+<div class="tool"><code>get_listing</code><span class="ro">read-only</span><p>Get one AutoPrivado listing by id: vehicle data, price and currency, texts in 7 languages, photo URLs, page URL per language, missing-info checklist.</p></div>
+<div class="tool"><code>search_listings</code><span class="ro">read-only</span><p>Search active private-seller car listings on AutoPrivado.</p></div>
+<div class="tool"><code>decode_vehicle</code><span class="ro">read-only</span><p>Decode a 17-character VIN (NHTSA vPIC, works best for cars sold in the US and many EU makes) or a Dutch licence plate (RDW open data: make, model, first regist…</p></div>
+<div class="tool"><code>estimate_price</code><span class="ro">read-only</span><p>Rule-based price range (low/mid/high, EUR) for a used car from its VIN or Dutch plate (or make/model/year), mileage, condition and the approximate price when n…</p></div>
+<div class="tool"><code>list_portals</code><span class="ro">read-only</span><p>The car portals AutoPrivado prepares posting kits for, per country (IT, ES, DE, FR, NL, PL): recommended and optional portal, home page, the portal&#39;s own listi…</p></div>
+<div class="tool"><code>get_sale_documents</code><span class="ro">read-only</span><p>Links and data for closing a private car sale in a country: printable sale-contract template (prefilled when a listing id is given), the change-of-ownership ch…</p></div>
+ </div></section>
+ <section class="sec" id="results"><h2>Test results</h2><p class="hint">Safe mode: only tools labeled read-only were run. <a href="../how-it-works.html">How the test works</a></p><ul class="checks">
+<li class="chk warn"><span class="mk warn" aria-label="note">!</span><div><b>Ready for the newest MCP version</b><details><summary>1 warning</summary><ul><li class="warn"><span class="m">!</span>Uses an older MCP version (2025-11-25). It works today, but it isn&#39;t on the July 2026 version (2026-07-28) yet.</li></ul></details></div><span class="st">note</span></li>
+<li class="chk warn"><span class="mk warn" aria-label="note">!</span><div><b>Every tool is described</b><details><summary>5 warnings</summary><ul><li class="warn"><span class="m">!</span><b>create_listing</b>: Inputs with no description: condition, negotiable, gearbox, colour, accidentFree, serviceHistory, owners, city</li><li class="warn"><span class="m">!</span><b>search_listings</b>: Inputs with no description: make, model, minPrice, maxPrice, maxKm, minYear, fuel, limit</li><li class="warn"><span class="m">!</span><b>decode_vehicle</b>: Inputs with no description: vin</li><li class="warn"><span class="m">!</span><b>estimate_price</b>: Inputs with no description: vin, km, condition</li><li class="warn"><span class="m">!</span><b>get_sale_documents</b>: Inputs with no description: country</li></ul></details></div><span class="st">note</span></li>
+<li class="chk warn"><span class="mk warn" aria-label="note">!</span><div><b>Bad inputs give a clean error</b><details><summary>3 warnings</summary><ul><li class="warn"><span class="m">!</span><b>search_listings</b>: Accepted wrong type for &quot;q&quot; without complaining</li><li class="warn"><span class="m">!</span><b>decode_vehicle</b>: Accepted wrong type for &quot;vin&quot; without complaining</li><li class="warn"><span class="m">!</span><b>list_portals</b>: Accepted wrong type for &quot;country&quot; without complaining</li><li class="more">and 5 more</li></ul></details></div><span class="st">note</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Connects</b><span class="sum">Connected in 382 ms</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Lists its tools</b><span class="sum">Found 7 tools</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Tools are labeled safe or dangerous</b><span class="sum">Every tool has a safety label</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>No known hidden instructions</b><span class="sum">None of the hidden-instruction wordings we know were found in tool descriptions. New wordings can get past this check.</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Tools work with good inputs</b><details><summary>All good</summary><ul><li class="pass"><span class="m">✓</span><b>get_listing</b>: Answered with an error, probably because of our sample input: not_found: Listing not found: it does not exist, was deleted or has expired.</li><li class="pass"><span class="m">✓</span><b>search_listings</b>: Worked (701 ms)</li><li class="pass"><span class="m">✓</span><b>decode_vehicle</b>: Answered with an error, probably because of our sample input: missing: Give vin or plate.</li><li class="pass"><span class="m">✓</span><b>estimate_price</b>: Answered with an error, probably because of our sample input: need_year: Year of first registration is needed. Inputs: vin or plate (NL) or vehicle {year}; km; newPrice (approximate price when new) unl…</li><li class="pass"><span class="m">✓</span><b>list_portals</b>: Worked (469 ms)</li><li class="pass"><span class="m">✓</span><b>get_sale_documents</b>: Worked (218 ms)</li><li class="off"><span class="m">–</span><b>create_listing</b>: Not run: labeled as changing data</li></ul></details></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Fast enough</b><details><summary>All good</summary><ul><li class="pass"><span class="m">✓</span>Connecting took 382 ms</li><li class="pass"><span class="m">✓</span>Listing tools took 68 ms</li><li class="pass"><span class="m">✓</span>Average tool answer: 359 ms</li><li class="pass"><span class="m">✓</span><b>search_listings</b>: Slowest tool: search_listings (701 ms)</li></ul></details></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>No secrets leaked</b><span class="sum">Checked 10 error messages: no secrets or internal details</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Follows MCP best practices (not scored yet)</b><span class="sum">Tool names, safety labels and tool list size follow the MCP guide</span></div><span class="st">pass</span></li>
+<li class="chk off"><span class="mk off" aria-label="not tested">–</span><div><b>Tools work together</b><span class="sum">No tool&#39;s answer could be fed into another tool, so there were no chains to test (not counted either way)</span></div><span class="st">not tested</span></li>
+ </ul></section>
+ <section class="sec" id="try"><h2>Test it yourself</h2><p class="hint">Free and open source. Same checks, same score.</p>
+  <div class="cmd"><code id="cmd">npx qamcp-cli https://autoprivado.com/mcp</code><button type="button" id="copy">Copy</button></div></section>
+ <section class="sec" id="badge"><h2>Show this score on GitHub</h2><p class="hint">Free for every server in the directory. Paste this into your README: the badge shows the score from our latest test.</p>
+  <p class="badge-img"><img src="com-autoprivado-autoprivado.svg" alt="QAmcp badge for AutoPrivado" height="20"></p>
+  <div class="cmd"><code id="badge-md">[![QAmcp score](https://qamcp.dev/s/com-autoprivado-autoprivado.svg)](https://qamcp.dev/s/com-autoprivado-autoprivado.html)</code><button type="button" id="copy-badge">Copy</button></div></section>
+ <section class="sec" id="history"><h2>Score over time</h2><ul class="hist"><li><span class="d">31 Oct 2026</span><span class="bar"><i style="width:83%"></i></span><span class="v">83</span></li></ul><p class="hint">One test so far. New tests will show here.</p></section>
+ <section class="sec" id="reviews"><h2>Reviews</h2><p class="hint">Coming soon: reviews from people who use AutoPrivado, signed in with GitHub, one per person. Reviews never change the score.</p></section>
+ <div class="claim"><div><b>Is this your server? Get an alert the moment it breaks.</b><p>QAmcp Monitor (coming soon) tests it every hour and emails you when it goes down, the score drops, a tool changes or a secret leaks. You'll also be able to claim this page and get a verified owner mark. Founding price: $19/month for life for the first 50 teams.</p><form class="notify" novalidate><input type="hidden" name="server" value="https://autoprivado.com/mcp"><label class="nl">Work email<input name="email" type="email" autocomplete="email" required placeholder="you@company.com"></label><button type="submit">Notify me</button></form><p class="notify-msg" role="status" aria-live="polite"></p><p>Have a concern, or want it removed? <a href="https://github.com/QAmcp/qamcp-cli/issues">Ask us</a> and we'll take it off the list. <a href="../directory-rules.html">How the directory works</a></p></div></div>
+</div>
+<script src="../theme.js"></script>
+<script src="../count.js"></script>
+<script src="../ai.js"></script>
+<script src="../notify.js"></script>
+<script>
+for (const [id, from] of [['copy', 'cmd'], ['copy-top', 'cmd'], ['copy-badge', 'badge-md']]) document.getElementById(id).onclick = async (e) => {
+  const b = e.currentTarget, was = b.textContent;
+  try { await navigator.clipboard.writeText(document.getElementById(from).textContent); b.textContent = 'Copied'; } catch (err) { b.textContent = 'Select the command below'; }
+  setTimeout(() => (b.textContent = was), 1800);
+};
+</script>
+</body></html>

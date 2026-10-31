@@ -3592,5 +3592,201 @@
  },
  "com.liliphant.mcp/mcp": {
   "checked": "2026-10-31"
+ },
+ "ai.avasis.agents/avasis": {
+  "checked": "2026-10-31"
+ },
+ "ai.beexcellent/excellent": {
+  "url": "https://beexcellent.ai/pricing",
+  "checked": "2026-10-31"
+ },
+ "ai.beexcellent/reference": {
+  "url": "https://beexcellent.ai/pricing",
+  "checked": "2026-10-31"
+ },
+ "ai.greenlandai/greenlandai": {
+  "checked": "2026-10-31"
+ },
+ "ai.gwix/gwix": {
+  "url": "https://gwix.ai/pricing",
+  "checked": "2026-10-31"
+ },
+ "ai.homouniversalis/astrologia-horoscopo-carta-natal-sinastria-oraculo-efemerides-constelaciones-familiares-tarot-bazi-maya-ching-cabala-diseno-humano-arquetipos-espiritual-alma-destino-ancestors": {
+  "checked": "2026-10-31"
+ },
+ "ai.homouniversalis/astrology-swiss-ephemeris-natal-chart-synastry-horoscope-zodiac-draconic-astronomy-cosmos-cosmic-soul-spiritual-esoteric-destiny-numerology-meditation": {
+  "checked": "2026-10-31"
+ },
+ "ai.homouniversalis/bazi-ba-zi-tarot-vedic-jyotish-nakshatra-mayan-iching-i-ching-human-design-humandesign-kabbalah-alchemy-karmic-compatibility-family-constellation": {
+  "checked": "2026-10-31"
+ },
+ "ai.homouniversalis/four-pillars-tzolkin-dreamspell-hexagram-gene-keys-genekeys-sephiroth-tree-of-life-gematria-arcana-chakras-kundalini-ayurveda-elements-relationship-matchmaking-couple-lineage": {
+  "checked": "2026-10-31"
+ },
+ "ai.homouniversalis/planetary-planets-lunar-solar-ascendant-transits-retrograde-chiron-lilith-nodes-houses-divination-mystic-karma-dharma-fate-consciousness-awakening-archetypes-jungian": {
+  "checked": "2026-10-31"
+ },
+ "ai.komyosys.raabta/raabta": {
+  "checked": "2026-10-31"
+ },
+ "ai.peerfoundry/holdkit": {
+  "checked": "2026-10-31"
+ },
+ "ai.peerfoundry/typedpull": {
+  "checked": "2026-10-31"
+ },
+ "ai.postpiper/mcp": {
+  "url": "https://www.postpiper.ai/pricing",
+  "checked": "2026-10-31"
+ },
+ "ai.sageteacher/learning-printables": {
+  "checked": "2026-10-31"
+ },
+ "ai.surfingdog/inbox": {
+  "checked": "2026-10-31"
+ },
+ "ai.tokentender/token-tender": {
+  "checked": "2026-10-31"
+ },
+ "ai.tovan/tovan": {
+  "url": "https://www.tovan.ai/pricing",
+  "checked": "2026-10-31"
+ },
+ "ai.vistazo/vistazo": {
+  "url": "https://vistazo.ai/plans",
+  "checked": "2026-10-31"
+ },
+ "app.everynumber/spreadsheet-dashboard": {
+  "checked": "2026-10-31"
+ },
+ "app.gotsol/gotsol": {
+  "url": "https://gotsol.app/pricing",
+  "checked": "2026-10-31"
+ },
+ "app.homotope/homotope": {
+  "checked": "2026-10-31"
+ },
+ "app.horoscoop/horoscoop": {
+  "checked": "2026-10-31"
+ },
+ "app.kaliham/mail": {
+  "checked": "2026-10-31"
+ },
+ "app.kellian/kellian": {
+  "checked": "2026-10-31"
+ },
+ "app.samiswoi/firmy": {
+  "checked": "2026-10-31"
+ },
+ "ca.fonciq/fonciq": {
+  "checked": "2026-10-31"
+ },
+ "co.gobananas/go-bananas": {
+  "checked": "2026-10-31"
+ },
+ "co.neverapply/neverapply": {
+  "url": "https://neverapply.co/pricing",
+  "checked": "2026-10-31"
+ },
+ "co.policyforge/mcp": {
+  "url": "https://policyforge.co/pricing",
+  "checked": "2026-10-31"
+ },
+ "com.18cores/tracker": {
+  "url": "https://18cores.com/pricing",
+  "checked": "2026-10-31"
+ },
+ "com.agentgid/agentgid": {
+  "url": "https://agentgid.com/pricing/",
+  "checked": "2026-10-31"
+ },
+ "com.agentmasterdata/agent-master-data": {
+  "checked": "2026-10-31"
+ },
+ "com.aisetupsthatwork/setups": {
+  "checked": "2026-10-31"
+ },
+ "com.amazap/amazap": {
+  "checked": "2026-10-31"
+ },
+ "com.anyvideototext/any-video-to-text": {
+  "url": "https://anyvideototext.com/pricing",
+  "checked": "2026-10-31"
+ },
+ "com.appgazers/appgazers": {
+  "url": "https://appgazers.com/pricing",
+  "checked": "2026-10-31"
+ },
+ "com.autoprivado/autoprivado": {
+  "checked": "2026-10-31"
+ },
+ "com.awesomevideoeditor/awesomevideo": {
+  "url": "https://awesomevideoeditor.com/pricing",
+  "checked": "2026-10-31"
+ },
+ "com.benchleader/benchleader": {
+  "checked": "2026-10-31"
+ },
+ "com.bestbouncebiz/rankings": {
+  "url": "https://bestbouncebiz.com/pricing",
+  "checked": "2026-10-31"
+ },
+ "com.cairn-commons/cairn-commons": {
+  "checked": "2026-10-31"
+ },
+ "com.casaprivat/casaprivat": {
+  "checked": "2026-10-31"
+ },
+ "com.cavyro/cavyro": {
+  "url": "https://cavyro.com/pricing/",
+  "checked": "2026-10-31"
+ },
+ "com.cielstay/cielstay": {
+  "checked": "2026-10-31"
+ },
+ "com.cloudquell/cloudquell-mcp-server": {
+  "url": "https://www.cloudquell.com/pricing/",
+  "checked": "2026-10-31"
+ },
+ "com.dcblueprint/data-centres": {
+  "url": "https://dcblueprint.com/pricing",
+  "checked": "2026-10-31"
+ },
+ "com.dejabars/pattern-search": {
+  "url": "https://dejabars.com/pricing",
+  "checked": "2026-10-31"
+ },
+ "com.directmailamerica/mcp": {
+  "url": "https://directmailamerica.com/pricing",
+  "checked": "2026-10-31"
+ },
+ "com.directmailamerica/mcp-narrow": {
+  "url": "https://directmailamerica.com/pricing",
+  "checked": "2026-10-31"
+ },
+ "com.discoverlaunches/launches": {
+  "url": "https://discoverlaunches.com/pricing",
+  "checked": "2026-10-31"
+ },
+ "com.escapetheweek/public": {
+  "checked": "2026-10-31"
+ },
+ "com.exepal/exepal": {
+  "checked": "2026-10-31"
+ },
+ "com.faredice/trips": {
+  "checked": "2026-10-31"
+ },
+ "com.foldlaboratories/art": {
+  "checked": "2026-10-31"
+ },
+ "com.getfairquery/company-jobs-feed-mcp": {
+  "checked": "2026-10-31"
+ },
+ "com.getmanifeste/manifeste": {
+  "checked": "2026-10-31"
+ },
+ "com.githubcard/mcp": {
+  "checked": "2026-10-31"
  }
 }
