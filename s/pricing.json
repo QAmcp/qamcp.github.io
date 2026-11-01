@@ -4117,5 +4117,197 @@
  },
  "com.myartefacts/myartefacts": {
   "checked": "2026-11-01"
+ },
+ "ai.coinfactory/coinfactory": {
+  "checked": "2026-11-01"
+ },
+ "ai.cybernative/pdf-check": {
+  "checked": "2026-11-01"
+ },
+ "ai.gemboss/gemboss": {
+  "url": "https://gemboss.ai/pricing",
+  "checked": "2026-11-01"
+ },
+ "ai.kirinboard/kirinboard": {
+  "checked": "2026-11-01"
+ },
+ "ai.leconfidant/le-confidant": {
+  "checked": "2026-11-01"
+ },
+ "ai.levelfour/levelfour-mcp": {
+  "checked": "2026-11-01"
+ },
+ "ai.postnitro/mcp": {
+  "url": "https://postnitro.ai/plans",
+  "checked": "2026-11-01"
+ },
+ "ai.theleaf.observatory/threat-observatory": {
+  "checked": "2026-11-01"
+ },
+ "ai.vibepatent/vibe-patent": {
+  "checked": "2026-11-01"
+ },
+ "app.compoundsim/compoundsim": {
+  "checked": "2026-11-01"
+ },
+ "app.divekit/mcp": {
+  "checked": "2026-11-01"
+ },
+ "app.floot.via-router/via-gateway": {
+  "checked": "2026-11-01"
+ },
+ "app.kumbaa/kumbaa": {
+  "url": "https://kumbaa.app/pricing",
+  "checked": "2026-11-01"
+ },
+ "app.movemate/movemate": {
+  "checked": "2026-11-01"
+ },
+ "app.stackpick/directory": {
+  "checked": "2026-11-01"
+ },
+ "app.thedreamtrip/dream-trip": {
+  "checked": "2026-11-01"
+ },
+ "app.wemoveat/moveat": {
+  "checked": "2026-11-01"
+ },
+ "au.com.dwelldelta/dwelldelta": {
+  "checked": "2026-11-01"
+ },
+ "au.com.nexwin/nexwin": {
+  "checked": "2026-11-01"
+ },
+ "br.com.houseofpace/endurance-sports": {
+  "checked": "2026-11-01"
+ },
+ "capital.cre/cre-capital": {
+  "checked": "2026-11-01"
+ },
+ "careers.aisafe/ai-exposure": {
+  "url": "https://aisafe.careers/pricing",
+  "checked": "2026-11-01"
+ },
+ "cc.hrva/url-shortener": {
+  "checked": "2026-11-01"
+ },
+ "cloud.lcas/directory": {
+  "checked": "2026-11-01"
+ },
+ "co.raziel/calculators": {
+  "url": "https://raziel.co/pricing",
+  "checked": "2026-11-01"
+ },
+ "com.3d2holo/mcp": {
+  "checked": "2026-11-01"
+ },
+ "com.442ball/442ball": {
+  "checked": "2026-11-01"
+ },
+ "com.agencysearchtool/agencies": {
+  "checked": "2026-11-01"
+ },
+ "com.agentrevenuenetwork/agent-revenue-network": {
+  "checked": "2026-11-01"
+ },
+ "com.andrewcmcguire/gtm-directory": {
+  "checked": "2026-11-01"
+ },
+ "com.atabooking/mcp": {
+  "url": "https://atabooking.com/pricing/",
+  "checked": "2026-11-01"
+ },
+ "com.atriumkit/atriumkit": {
+  "url": "https://www.atriumkit.com/pricing",
+  "checked": "2026-11-01"
+ },
+ "com.audiscape.agentguard/agentguard": {
+  "checked": "2026-11-01"
+ },
+ "com.aurgus/aurgus": {
+  "url": "https://aurgus.com/pricing/",
+  "checked": "2026-11-01"
+ },
+ "com.brainonbnb/bsc-token-preflight": {
+  "checked": "2026-11-01"
+ },
+ "com.bricknjlocal/directory": {
+  "url": "https://bricknjlocal.com/pricing",
+  "checked": "2026-11-01"
+ },
+ "com.cirrela/video-generator": {
+  "url": "https://cirrela.com/pricing",
+  "checked": "2026-11-01"
+ },
+ "com.complianceassessmenttool/pci-compliance": {
+  "checked": "2026-11-01"
+ },
+ "com.contboxx/procurement": {
+  "checked": "2026-11-01"
+ },
+ "com.crosspublish/mcp": {
+  "url": "https://crosspublish.com/pricing",
+  "checked": "2026-11-01"
+ },
+ "com.detectorproof/humanizer": {
+  "checked": "2026-11-01"
+ },
+ "com.diariobitcoin/news": {
+  "checked": "2026-11-01"
+ },
+ "com.dveracity/semantic-mcp": {
+  "url": "https://dveracity.com/pricing",
+  "checked": "2026-11-01"
+ },
+ "com.evalmee/evalmee": {
+  "checked": "2026-11-01"
+ },
+ "com.every-ai/ai-tools": {
+  "checked": "2026-11-01"
+ },
+ "com.exclusivedigits/phone-numbers": {
+  "checked": "2026-11-01"
+ },
+ "com.exniche/search": {
+  "url": "https://exniche.com/pricing",
+  "checked": "2026-11-01"
+ },
+ "com.expense-budget-tracker/expense-budget-tracker": {
+  "url": "https://expense-budget-tracker.com/pricing/",
+  "checked": "2026-11-01"
+ },
+ "com.extensiondownloader/mcp": {
+  "url": "https://extensiondownloader.com/pricing",
+  "checked": "2026-11-01"
+ },
+ "com.fynepdf/fynepdf": {
+  "url": "https://fynepdf.com/pricing",
+  "checked": "2026-11-01"
+ },
+ "com.getrigbase/rigbase": {
+  "checked": "2026-11-01"
+ },
+ "com.gymsnj/directory": {
+  "url": "https://gymsnj.com/pricing",
+  "checked": "2026-11-01"
+ },
+ "com.jishie/jishie": {
+  "checked": "2026-11-01"
+ },
+ "com.joinvilleboasofertas/ofertas": {
+  "checked": "2026-11-01"
+ },
+ "com.knacco/knacco": {
+  "checked": "2026-11-01"
+ },
+ "com.localgymfinder/directory": {
+  "url": "https://localgymfinder.com/pricing",
+  "checked": "2026-11-01"
+ },
+ "com.lostinnotes/lostinnotes": {
+  "checked": "2026-11-01"
+ },
+ "com.machineschema/mcp": {
+  "checked": "2026-11-01"
  }
 }
