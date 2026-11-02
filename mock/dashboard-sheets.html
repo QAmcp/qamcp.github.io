@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Dashboard, sheet style (mock) · QAmcp</title>
+<link rel="stylesheet" href="../site.css">
+<style>
+.dash{display:grid;grid-template-columns:200px minmax(0,1fr)}
+.dside{border-right:1px solid var(--rule);padding:22px 18px;display:flex;flex-direction:column;gap:4px;min-height:calc(100vh - 2*var(--gutter) - 2*var(--pad))}
+.dside a,.dside span{display:block;padding:7px 10px;border-radius:7px;color:var(--soft);text-decoration:none}.dside .on{background:var(--raise);color:var(--ink)}
+.dside .soon{font:400 11px var(--mono);color:var(--faint);margin-left:4px;display:inline}
+.dside .who{margin-top:auto;font-size:13px;color:var(--faint)}
+.dmain{padding:clamp(22px,3vw,40px)}
+.status{font:700 clamp(28px,3vw,40px)/1.06 var(--head);margin:0}.status i{font-style:normal;color:var(--fail)}
+.sub{color:var(--soft);margin-top:6px}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:0;margin-top:clamp(20px,2.6vw,30px);border-top:1px solid var(--rule);border-left:1px solid var(--rule)}
+.c{padding:18px;border-right:1px solid var(--rule);border-bottom:1px solid var(--rule);display:flex;flex-direction:column;gap:7px}
+.c.bad{box-shadow:inset 3px 0 0 var(--fail)}.c.chg{box-shadow:inset 3px 0 0 var(--rose)}
+.host{font:400 12.5px var(--mono);color:var(--faint)}
+.big{display:flex;align-items:baseline;gap:10px}.big b{font:600 32px var(--mono)}.lab{font:700 13px var(--mono);letter-spacing:.06em;text-transform:uppercase}.lab.dn{color:var(--fail)}.lab.ch{color:var(--rose)}.lab.ok{color:var(--pass)}
+.d{font:400 13px var(--mono);color:var(--fail)}
+.line{color:var(--soft);font-size:14.5px}
+.bars{display:flex;gap:2px;height:22px;align-items:flex-end}.bars i{width:8px;height:100%;background:var(--pass);opacity:.7}.bars i.x{background:var(--fail);opacity:1}
+.when{font:400 12px var(--mono);color:var(--faint)}
+.acts{display:flex;gap:8px;flex-wrap:wrap;margin-top:4px}.acts a{border:1px solid var(--frame);border-radius:7px;padding:6px 10px;font:700 13px var(--text);color:var(--ink);text-decoration:none}
+.seg{display:inline-flex;border:1px solid var(--frame);border-radius:8px;overflow:hidden;font:400 13px var(--mono)}.seg span{padding:6px 12px;color:var(--soft)}.seg .on{background:var(--raise);color:var(--ink)}
+.row{display:flex;gap:16px;align-items:flex-start;flex-wrap:wrap}.row .seg{margin-left:auto}
+.mocknote{margin:0 var(--gutter) var(--gutter);font:400 12px var(--mono);color:var(--faint)}
+@media (max-width:760px){.dash{grid-template-columns:1fr}.dside{min-height:0;flex-direction:row;flex-wrap:wrap;border-right:0;border-bottom:1px solid var(--rule)}.dside span{display:none}.dside .who{margin:0 0 0 auto}}
+</style>
+</head>
+<body>
+<div class="sheet"><div class="sheet-in">
+ <div class="dash">
+  <nav class="dside" aria-label="Dashboard">
+   <a class="brand" href="#" style="font:700 21px/1 var(--head);margin:0 10px 18px;color:var(--ink);padding:0">QA<b style="color:var(--rose)">mcp</b></a>
+   <a class="on" href="#">Servers</a><span>Alerts<span class="soon">soon</span></span><span>Billing<span class="soon">soon</span></span><span>Settings<span class="soon">soon</span></span>
+   <div class="who">demo@example.com<br><a href="#" style="padding:0;color:var(--rose)">Sign out</a></div>
+  </nav>
+  <div class="dmain">
+   <span class="sheetno">Sheet 1 of 1 · Your servers · Pro, founding $19</span>
+   <div class="row"><div><h1 class="status"><i>●</i> 2 of 3 servers need attention</h1><p class="sub">api.acme.ai: not answering since 2 h ago. We emailed you.</p></div><span class="seg"><span class="on">Cards</span><span>Table</span></span></div>
+   <div class="cards">
+    <div class="c bad"><div class="host">https://api.acme.ai/mcp</div><div class="big"><b>88</b><span class="lab dn">● Down</span></div><div class="line">Not answering since 2 h ago. We emailed you.</div><div class="bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="x"></i><i class="x"></i></div><div class="when">Last test 16 min ago · next in 44 min</div><div class="acts"><a href="#">Test now</a><a href="#">Pause</a><a href="#">Details →</a></div></div>
+    <div class="c chg"><div class="host">https://beta.acme.ai/mcp</div><div class="big"><b>81</b><span class="d">↓13</span><span class="lab ch">● Tool changed</span></div><div class="line">search: a new input "force" was added.</div><div class="bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i style="height:80%"></i></div><div class="when">Last test 34 min ago · next in 26 min</div><div class="acts"><a href="#">Test now</a><a href="#">Pause</a><a href="#">Details →</a></div></div>
+    <div class="c"><div class="host">https://docs.acme.ai/mcp</div><div class="big"><b>96</b><span class="lab ok">● Up</span></div><div class="line">All good.</div><div class="bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="when">Last test 7 min ago · next in 53 min</div><div class="acts"><a href="#">Test now</a><a href="#">Pause</a><a href="#">Details →</a></div></div>
+    <div class="c" style="border-style:dashed"><b style="font:700 19px var(--head)">Add a server</b><div class="when">3 of 3 used</div><div class="line">You're using all 3 servers on your plan.</div></div>
+   </div>
+  </div>
+ </div>
+</div></div>
+<p class="mocknote">Mock for comparison only: the same dashboard inside the website's sheet frame, with a ruled grid instead of separate cards.</p>
+</body>
+</html>

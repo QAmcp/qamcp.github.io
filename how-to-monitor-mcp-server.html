@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to monitor an MCP server: uptime, tool changes, alerts · QAmcp</title>
+<meta name="description" content="How to monitor an MCP server in production: check it answers the way an AI app connects, watch for tool changes, slow starts, leaked secrets and login problems, and get an alert when something breaks.">
+<link rel="canonical" href="https://qamcp.dev/how-to-monitor-mcp-server.html">
+<meta property="og:type" content="article"><meta property="og:site_name" content="QAmcp"><meta property="og:title" content="How to monitor an MCP server: uptime, tool changes, alerts"><meta property="og:description" content="An uptime check tells you the server answered. Here is what else to watch so you know an AI can still use it."><meta property="og:url" content="https://qamcp.dev/how-to-monitor-mcp-server.html"><meta name="twitter:card" content="summary">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231A1A1A'/%3E%3Crect x='7' y='7' width='18' height='18' rx='2' fill='none' stroke='%23B9838A' stroke-width='2.4'/%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('qamcp-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="stylesheet" href="site.css">
+<style>
+.faq{margin-top:clamp(22px,3vw,36px);border-top:1px solid var(--rule)}
+.faq details{border-bottom:1px solid var(--rule);padding:14px 0}
+.faq summary{cursor:pointer;font-weight:700;list-style-position:outside}
+.faq summary:focus-visible{outline:2px solid var(--rose);outline-offset:3px}
+.faq p{margin-top:8px;color:var(--soft);max-width:68ch}
+.way{margin-top:clamp(26px,3.4vw,40px);font:700 clamp(18px,1.6vw,22px)/1.2 var(--head)}
+.part-in > .ex{margin-top:12px;padding:12px 14px;background:var(--ground);border:1px solid var(--rule);border-radius:8px;font:400 13.5px/1.6 var(--mono);color:var(--ink);overflow-wrap:anywhere;font-variant-ligatures:none}
+.page-head p.updated{margin-top:10px;font:400 13px var(--mono);color:var(--faint)}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Isn't an uptime check enough for an MCP server?","acceptedAnswer":{"@type":"Answer","text":"No. An uptime check tells you the server answered a request. An MCP server can answer and still be unusable for an AI app: a tool renamed, an input removed, a safety label dropped, a login that broke, or answers that suddenly come back empty. Monitoring an MCP server means connecting the way an AI app does and checking the tools, not only the status code."}},
+{"@type":"Question","name":"How often should I check my MCP server?","acceptedAnswer":{"@type":"Answer","text":"A quick connect-and-list-tools check every few minutes catches outages fast. A full test of every safe tool once an hour catches quieter breaks, like a tool that changed or a score that dropped. QAmcp Monitor does both."}},
+{"@type":"Question","name":"Does monitoring change anything on my server?","acceptedAnswer":{"@type":"Answer","text":"Not with QAmcp. Monitor runs the same safe-mode test as the free tester: it only runs tools your server labels read-only, and only when their name, description and inputs agree. It never runs tools that sound like they delete or change something."}},
+{"@type":"Question","name":"Is there a free way to monitor an MCP server?","acceptedAnswer":{"@type":"Answer","text":"Yes. QAmcp Monitor is free for 1 server with email alerts. Once you prove the server is yours, it gets a full test every hour. Pro adds an up check every 5 minutes, 3 servers, Slack alerts and servers behind a login."}}
+]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="sheet">
+ <div class="sheet-in">
+  <header class="top">
+   <a class="brand" href="./">QA<b>mcp</b></a>
+   <nav aria-label="Main"><a href="directory.html">Directory</a><a href="test.html">Test a server</a><a href="monitor.html">Monitor</a><a href="how-it-works.html">How it works</a><a href="safety.html">Safety</a><a href="ci.html">Run it in CI</a><a href="samples.html">Sample reports</a></nav>
+   <div class="ai"><button class="ai-btn" type="button" aria-expanded="false" aria-controls="ai-pop"><svg viewBox="0 0 16 16" aria-hidden="true" width="15" height="15"><path fill="none" stroke="currentColor" stroke-width="1.4" d="M8 1.5l1.6 3.9 3.9 1.6-3.9 1.6L8 12.5 6.4 8.6 2.5 7l3.9-1.6z"/></svg>Test with your AI</button><div class="ai-pop" id="ai-pop" hidden><b>Copied. Paste it into Claude Code, Cursor or Codex:</b><code>Fetch and follow the instructions at https://qamcp.dev/setup.md to test my MCP server.</code><p>Your AI finds your server in your project, tests it with QAmcp, explains what's wrong in plain words, fixes it with your OK, and tests again. <a href="setup.md">Read the instructions</a></p></div></div>
+   <a class="gh" href="https://github.com/QAmcp/qamcp-cli"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38v-1.33c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.06-.49.06-.49.8.06 1.23.83 1.23.83.72 1.22 1.88.87 2.34.66.07-.52.28-.87.5-1.07-1.78-.2-3.65-.89-3.65-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>GitHub</a>
+   <a class="gh signin" href="https://api.qamcp.dev/dashboard?from=menu">Sign in</a>
+   <button class="theme" id="theme" type="button" style="margin-left:10px">Light</button>
+  </header>
+  <main id="main">
+   <div class="page-head">
+    <h1>How to monitor an MCP server</h1>
+    <p>An uptime check tells you the server answered. Monitoring an MCP server means knowing an AI app can still use it: that it connects, that its tools are still there and still the same, and that nothing unsafe has crept in. This page covers what to watch, how often, and how to set it up.</p>
+    <p class="updated">Last updated: 2 November 2026</p>
+    <nav class="toc" aria-label="On this page"><a href="#watch">What to watch</a><a href="#often">How often</a><a href="#diy">Do it yourself</a><a href="#qamcp">With QAmcp Monitor</a><a href="#faq">Questions</a></nav>
+   </div>
+  </main>
+ </div>
+</div>
+
+<section class="part" id="watch" aria-labelledby="h-watch">
+ <div class="part-in">
+  <span class="sheetno">Sheet 2 of 4 · What to watch</span>
+  <h2 id="h-watch">Seven things that break without an outage</h2>
+  <p class="intro">Most MCP breaks don't take the server down. The server keeps answering, and the AI app quietly stops working with it. These are the ones worth an alert.</p>
+  <ol class="proc">
+   <li><b>It stops answering the way an AI app connects</b><span>Not just "the link loads", but the MCP handshake: <code>initialize</code>, then <code>tools/list</code>. A server can return a web page or an error on the right link and still fail the handshake.</span></li>
+   <li><b>A tool changed</b><span>A tool renamed or removed, an input added or made required, a description rewritten. AI apps and saved prompts that relied on the old shape break. Compare each tool list with the last one and alert on the exact lines that changed.</span></li>
+   <li><b>A safety label changed</b><span>A tool that was marked read-only no longer is, or a delete tool lost its <code>destructiveHint</code>. AI apps use these labels to decide when to ask the user first.</span></li>
+   <li><b>New sentences in a tool description</b><span>Text added to a description is read by the AI. If it tells the AI to do something the user didn't ask for, that is tool poisoning. Every new sentence deserves a look.</span></li>
+   <li><b>A secret shows up in an answer or error</b><span>A password, API key or private file path that appears after a deploy, often in an error message.</span></li>
+   <li><b>It gets slow to start</b><span>Many AI apps give up if connecting and listing tools takes too long. Watch the time to start, not only the time to answer one request.</span></li>
+   <li><b>The login broke</b><span>For servers behind a login: the sign-in setup stops working, or a saved key stops being accepted. Users see "can't connect" while the server itself is fine.</span></li>
+  </ol>
+ </div>
+</section>
+
+<section class="part" id="often" aria-labelledby="h-often">
+ <div class="part-in">
+  <span class="sheetno">Sheet 3 of 4 · How to set it up</span>
+  <h2 id="h-often">How often to check</h2>
+  <p class="intro">Two kinds of check, at two speeds. A <b>quick check</b> (connect and list the tools) every few minutes tells you fast when the server is down. A <b>full test</b> (every safe tool, every label and description) once an hour catches the quieter breaks above. One failed check can be a blip, so check again before you alert, and send one email when a problem starts and one when it's fixed, not one per check.</p>
+
+  <h3 class="way" id="diy">Do it yourself</h3>
+  <p class="intro">The smallest useful check is the first message every MCP app sends. Run it on a schedule (a cron job or any scheduled CI run) and alert when it fails or gets slow:</p>
+  <div class="ex">curl -sS -m 10 -o /dev/null -w "%{http_code} %{time_total}s\n" -X POST https://your-server.com/mcp \<br>&nbsp;&nbsp;-H "Content-Type: application/json" \<br>&nbsp;&nbsp;-H "Accept: application/json, text/event-stream" \<br>&nbsp;&nbsp;-d '{"jsonrpc":"2.0","id":1,"method":"initialize","params":{"protocolVersion":"2025-06-18","capabilities":{},"clientInfo":{"name":"monitor","version":"1"}}}'</div>
+  <p class="intro">For tool changes, run the free tester on the same schedule against a saved baseline. It shows the exact lines that changed and exits with an error on a change that alters behavior, like a new required input or a changed safety label:</p>
+  <div class="ex">npx qamcp-cli https://your-server.com/mcp --baseline base.json --fail-on-tool-change</div>
+  <p class="intro">Save the baseline once, from a run you're happy with, by adding <code>--save-baseline base.json</code>.</p>
+  <p class="intro">This works, but you build the comparing, the "check again before alerting" and the emails yourself.</p>
+
+  <h3 class="way" id="qamcp">With QAmcp Monitor</h3>
+  <p class="intro">QAmcp Monitor does all of the above for you, with the same safe-mode test as the free tester. It only runs tools your server labels read-only, and never runs tools that sound like they delete or change something.</p>
+  <ul class="facts">
+   <li><strong>Free, 1 server</strong>A quick check every hour and a full test every 6 hours. Prove the server is yours with a short code on your server or in your DNS, and it gets a full test every hour. Email alerts, a live README badge and a year of history.</li>
+   <li><strong>Pro, $19 a month</strong>3 servers, an up check every 5 minutes, Slack alerts, teammates, and servers behind a login with a saved key. The founding price for the first 50 customers, kept as long as you stay subscribed.</li>
+  </ul>
+  <div class="cta"><a class="p" href="monitor.html?from=guide#notify">Start monitoring free</a><a class="s" href="test.html">Test a server first</a></div>
+ </div>
+</section>
+
+<section class="part" id="faq" aria-labelledby="h-faq">
+ <div class="part-in">
+  <span class="sheetno">Sheet 4 of 4 · Questions</span>
+  <h2 id="h-faq">Questions</h2>
+  <div class="faq">
+   <details><summary>Isn't an uptime check enough for an MCP server?</summary><p>No. An uptime check tells you the server answered a request. An MCP server can answer and still be unusable for an AI app: a tool renamed, an input removed, a safety label dropped, a login that broke, or answers that suddenly come back empty.</p></details>
+   <details><summary>How often should I check my MCP server?</summary><p>A quick connect-and-list-tools check every few minutes catches outages fast. A full test once an hour catches quieter breaks, like a tool that changed or a score that dropped.</p></details>
+   <details><summary>Does monitoring change anything on my server?</summary><p>Not with QAmcp. Monitor only runs tools your server labels read-only, and only when their name, description and inputs agree. It never runs tools that sound like they delete or change something.</p></details>
+   <details><summary>Is there a free way to monitor an MCP server?</summary><p>Yes. QAmcp Monitor is free for 1 server with email alerts. Once you prove the server is yours, it gets a full test every hour. <a href="pricing.html">See pricing</a>.</p></details>
+  </div>
+ </div>
+</section>
+
+<footer>
+ <span>QAmcp · free and open source (MIT)</span>
+ <a href="./">Home</a>
+ <a href="https://github.com/QAmcp/qamcp-cli">GitHub</a>
+ <a href="https://www.npmjs.com/package/qamcp-cli">npm</a>
+ <a href="how-to-test-mcp-server.html">How to test an MCP server</a>
+ <a href="mcp-server-not-working.html">MCP server not working?</a>
+ <a href="monitor.html">Monitor</a>
+ <a href="pricing.html">Pricing</a>
+ <a href="security.html">Security and data</a>
+ <a href="privacy.html">Privacy and terms</a>
+ <a href="contact.html">Contact</a>
+ <span class="r">This site has no tracking.</span>
+</footer>
+<script src="theme.js"></script>
+<script src="count.js"></script>
+<script src="ai.js"></script>
+</body>
+</html>

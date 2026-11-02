@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>QAmcp: free MCP server tester, in your browser or terminal</title>
-<meta name="description" content="Free, open-source tool to test and audit MCP servers. Connects the way an AI app does and checks hidden instructions, leaked secrets, safety labels, bad inputs, speed and login setup. Never runs risky tools.">
+<title>QAmcp: free MCP server testing and monitoring</title>
+<meta name="description" content="Test and monitor MCP servers the way an AI app uses them. Free, open-source tests for hidden instructions, leaked secrets, safety labels, bad inputs and speed, plus monitoring with email alerts, free for 1 server.">
 <link rel="canonical" href="https://qamcp.dev/">
-<meta property="og:type" content="website"><meta property="og:site_name" content="QAmcp"><meta property="og:title" content="QAmcp: free MCP server tester, in your browser or terminal"><meta property="og:description" content="Free, open-source tool to test and audit MCP servers. Connects the way an AI app does and checks hidden instructions, leaked secrets, safety labels, bad inputs, speed and login setup. Never runs risky tools."><meta property="og:url" content="https://qamcp.dev/"><meta property="og:image" content="https://qamcp.dev/img/sample-context7.png"><meta name="twitter:card" content="summary_large_image">
+<meta property="og:type" content="website"><meta property="og:site_name" content="QAmcp"><meta property="og:title" content="QAmcp: free MCP server testing and monitoring"><meta property="og:description" content="Test and monitor MCP servers the way an AI app uses them. Free, open-source tests for hidden instructions, leaked secrets, safety labels, bad inputs and speed, plus monitoring with email alerts, free for 1 server."><meta property="og:url" content="https://qamcp.dev/"><meta property="og:image" content="https://qamcp.dev/img/sample-context7.png"><meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"QAmcp","url":"https://qamcp.dev/","email":"hi@qamcp.dev","founder":{"@type":"Person","name":"Abhiram Reddy","sameAs":["https://x.com/AbhiRam2371650","https://www.linkedin.com/in/abhiram-reddy-k-44444343b"]},"sameAs":["https://github.com/QAmcp","https://github.com/QAmcp/qamcp-cli","https://www.npmjs.com/package/qamcp-cli"]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"QAmcp","description":"Free, open-source tool to test and audit MCP (Model Context Protocol) servers: connection, tool descriptions, safety labels, hidden instructions, bad inputs, leaked secrets and speed, in plain words. Also monitors servers and alerts their owners when they break.","url":"https://qamcp.dev/","applicationCategory":"DeveloperApplication","operatingSystem":"Windows, macOS, Linux (Node.js 20+), or any browser","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"license":"https://opensource.org/licenses/MIT","downloadUrl":"https://www.npmjs.com/package/qamcp-cli","sameAs":["https://github.com/QAmcp/qamcp-cli","https://www.npmjs.com/package/qamcp-cli"],"author":{"@type":"Person","name":"Abhiram Reddy"}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is QAmcp?","acceptedAnswer":{"@type":"Answer","text":"A free, open-source tester for MCP servers. It connects to a server the way an AI app does and tells you, in plain words, what is broken: connection, tool descriptions, safety labels, hidden instructions, bad inputs, leaked secrets and speed. Every result is checked by code, never by an AI, and shows its evidence."}},{"@type":"Question","name":"Is it free?","acceptedAnswer":{"@type":"Answer","text":"Yes. The browser test, the command-line tool (npx qamcp-cli), the GitHub check and the directory are free. The code is open source under the MIT license."}},{"@type":"Question","name":"Does it send my data anywhere?","acceptedAnswer":{"@type":"Answer","text":"No. It talks only to the server you test, and to its login page if it has one. There is no tracking and no telemetry. On the website, the test runs on our test service and the report is kept so you can share its link."}},{"@type":"Question","name":"Can it change or delete anything on my server?","acceptedAnswer":{"@type":"Answer","text":"By default it only runs tools the server labels read-only, and it never runs tools that sound destructive, like delete_account, in any mode. With --look-only it calls no tools at all."}},{"@type":"Question","name":"Can it test local servers, or servers behind a login?","acceptedAnswer":{"@type":"Answer","text":"Yes. Local servers from the terminal: npx qamcp-cli --stdio \"your start command\". Servers behind a login: add --login to sign in through your browser, or --header with an API key."}},{"@type":"Question","name":"How is the score calculated?","acceptedAnswer":{"@type":"Answer","text":"Each check is worth points: a pass earns all of them, a warning half, a failure none. Checks that could not run don't count either way, and serious problems such as hidden instructions or leaked secrets cap the score. The full rules are on the How it works page."}},{"@type":"Question","name":"How is it different from MCP Inspector?","acceptedAnswer":{"@type":"Answer","text":"MCP Inspector, the official tool, lets you connect and call tools by hand, which is ideal for exploring and debugging. QAmcp runs a fixed set of checks automatically and gives a score you can repeat on every change. They work well together."}},{"@type":"Question","name":"My server is in the directory. Can I have it removed?","acceptedAnswer":{"@type":"Answer","text":"Yes. Open an issue on GitHub and we'll take it off the list. Scores in the directory are never changed for money."}},{"@type":"Question","name":"Who makes QAmcp?","acceptedAnswer":{"@type":"Answer","text":"Abhiram Reddy, a solo founder, building it in the open. Found a wrong result? Report it on GitHub: being fair to every server matters most."}}]}</script>
@@ -242,9 +242,9 @@ footer .r{margin-left:auto}
 header.top{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(400px,1fr);padding:0;gap:0}
 header.top .hl{display:flex;align-items:center;gap:clamp(14px,2.2vw,30px);padding:14px clamp(16px,2.4vw,34px);border-right:1px solid var(--rule);min-width:0}
 header.top .hr{display:flex;align-items:center;padding:14px clamp(20px,2.6vw,38px)}
-header.top .hr .gh{margin-left:auto}header.top .hr .ai-pop{left:0;right:auto}
+header.top .hr .gh{margin-left:auto}header.top .hr .gh.signin{margin-left:8px;white-space:nowrap}header.top .hr .ai-pop{left:0;right:auto}
 @media (max-width:1100px){header.top{display:flex;align-items:center;padding:14px clamp(16px,2.4vw,34px);gap:14px}header.top .hl,header.top .hr{padding:0;border:0}header.top .hr{flex:1;gap:10px}header.top .hr .ai-pop{left:auto;right:0}}
-@media (max-width:640px){header.top .hr .ai-btn svg{display:none}header.top .hr .gh{display:none}header.top .hr .ai-pop{position:fixed;left:16px;right:16px;top:64px;width:auto}}
+@media (max-width:640px){header.top .hr .ai{display:none}header.top .hr .ai-btn svg{display:none}header.top .hr .gh{display:none}header.top .hr .gh.signin{display:inline-flex;padding:7px 10px}header.top .hr .ai-pop{position:fixed;left:16px;right:16px;top:64px;width:auto}}
 .news{display:inline-flex;align-self:flex-start;width:fit-content;align-items:center;gap:9px;margin-bottom:16px;padding:4px 12px 4px 4px;border:1px solid var(--frame);border-radius:999px;font-size:13.5px;color:var(--soft);text-decoration:none;max-width:100%}
 .news b{flex:none;background:var(--rose);color:var(--on-rose);border-radius:999px;padding:2px 9px;font:700 12px var(--text)}
 .news span{min-width:0}.news i{font-style:normal;color:var(--rose)}
@@ -256,6 +256,21 @@ header.top .hr .gh{margin-left:auto}header.top .hr .ai-pop{left:0;right:auto}
 .try{margin:10px 0 0;font-size:14.5px;color:var(--soft)}.try a{color:var(--rose);font-weight:700}
 header.top nav a{white-space:nowrap}
 @media (max-width:1360px){header.top nav a[href="ci.html"],header.top nav a[href="samples.html"]{display:none}}
+a.mon{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:22px;padding:15px 20px;background:var(--rose);color:var(--on-rose);font:700 15px/1 var(--text);text-decoration:none;transition:background .2s}a.mon:hover{background:var(--ink)}a.mon:focus-visible{outline:2px solid var(--rose);outline-offset:3px}
+.or-test{margin:18px 0 0;color:var(--soft)}
+.tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:clamp(28px,4vw,48px)}
+.tier{display:flex;flex-direction:column;padding:20px;border:1px solid var(--frame);background:var(--sheet)}
+.tier.pro{border-color:var(--rose)}
+.tier .tn{font:700 15px/1.2 var(--text);color:var(--ink)}.tier .tn span{margin-left:6px;font:400 12.5px var(--mono);color:var(--rose)}
+.tier .tp{margin-top:10px;font:700 34px/1 var(--head);color:var(--ink)}.tier .tp s{margin-left:8px;font-size:18px;color:var(--faint)}.tier .tp small{margin-left:4px;font:400 14px var(--text);color:var(--soft)}
+.tier ul.td{margin:14px 0 0;padding:0;list-style:none;font-size:14.5px}
+.tier ul.td li{display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-top:1px solid var(--rule)}
+.tier ul.td span{color:var(--soft)}.tier ul.td b{color:var(--ink);text-align:right}
+.tier .tf{margin-top:10px;color:var(--faint);font-size:13px;flex:1}
+.tier .tb{margin-top:16px;padding:12px 14px;text-align:center;border:1.5px solid var(--frame);color:var(--ink);font:700 14.5px/1 var(--text);text-decoration:none}
+.tier.pro .tb{background:var(--rose);border-color:var(--rose);color:var(--on-rose)}
+.tier .tb:hover{border-color:var(--rose)}.tier .tb:focus-visible{outline:2px solid var(--rose);outline-offset:3px}
+@media (max-width:860px){.tiers{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -269,9 +284,10 @@ header.top nav a{white-space:nowrap}
  <div class="sheet-in">
   <header class="top">
    <div class="hl"><a class="brand" href="./">QA<b>mcp</b></a>
-   <nav aria-label="Main"><a href="directory.html">Directory</a><a href="test.html">Test a server</a><a href="how-it-works.html">How it works</a><a href="safety.html">Safety</a><a href="ci.html">Run it in CI</a><a href="samples.html">Sample reports</a></nav></div>
+   <nav aria-label="Main"><a href="directory.html">Directory</a><a href="test.html">Test a server</a><a href="monitor.html">Monitor</a><a href="how-it-works.html">How it works</a><a href="safety.html">Safety</a><a href="ci.html">Run it in CI</a><a href="samples.html">Sample reports</a></nav></div>
    <div class="hr"><div class="ai"><button class="ai-btn" type="button" aria-expanded="false" aria-controls="ai-pop"><svg viewBox="0 0 16 16" aria-hidden="true" width="15" height="15"><path fill="none" stroke="currentColor" stroke-width="1.4" d="M8 1.5l1.6 3.9 3.9 1.6-3.9 1.6L8 12.5 6.4 8.6 2.5 7l3.9-1.6z"/></svg>Test with your AI</button><div class="ai-pop" id="ai-pop" hidden><b>Copied. Paste it into Claude Code, Cursor or Codex:</b><code>Fetch and follow the instructions at https://qamcp.dev/setup.md to test my MCP server.</code><p>Your AI finds your server in your project, tests it with QAmcp, explains what's wrong in plain words, fixes it with your OK, and tests again. <a href="setup.md">Read the instructions</a></p></div></div>
    <a class="gh" href="https://github.com/QAmcp/qamcp-cli"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38v-1.33c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.06-.49.06-.49.8.06 1.23.83 1.23.83.72 1.22 1.88.87 2.34.66.07-.52.28-.87.5-1.07-1.78-.2-3.65-.89-3.65-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>GitHub</a>
+   <a class="gh signin" href="https://api.qamcp.dev/dashboard?from=menu">Sign in</a>
    <button class="theme" id="theme" type="button">Light</button></div>
   </header>
 
@@ -306,9 +322,11 @@ header.top nav a{white-space:nowrap}
    </div>
 
    <div class="side">
-    <a class="news" href="monitor.html?from=home"><b>Soon</b><span>Monitor: hourly tests, an email when your server breaks</span><i aria-hidden="true">→</i></a>
-    <h1 id="t">Test any MCP server, right here.</h1>
-    <p class="lede">QAmcp connects to your server the way an AI app does, checks every tool, and draws you exactly where it breaks.</p>
+    <a class="news" href="monitor.html?from=home"><b>New</b><span>Monitor is live: free for 1 server</span><i aria-hidden="true">→</i></a>
+    <h1 id="t">Know when your MCP server breaks, before your users do.</h1>
+    <p class="lede">We check it every hour the way an AI app does, and email you when it goes down or a tool changes. Free for 1 server.</p>
+    <a class="mon" href="monitor.html?from=home#notify">Start monitoring free →</a>
+    <p class="or-test">Or test one now, free:</p>
     <div class="run">
      <span class="k-run">Paste your server link · nothing to install</span>
      <form class="cmd go" action="test.html" method="get"><input id="srv1" class="srv" name="url" type="url" inputmode="url" placeholder="https://your-server.com/mcp" aria-label="Your MCP server link" spellcheck="false" autocomplete="off" autocapitalize="off" required><input type="hidden" name="go" value="1"><button class="copy" type="submit">Test it</button></form>
@@ -342,7 +360,7 @@ header.top nav a{white-space:nowrap}
   <table class="checks">
    <thead><tr><th>Check</th><th>What it means</th><th>On the test server</th></tr></thead>
    <tbody>
-    <tr><td>No hidden instructions</td><td>Tool descriptions don't smuggle orders to the AI, invisible characters, or tricks.</td><td><b>Failed:</b> fetch_notes</td></tr>
+    <tr><td>No known hidden instructions</td><td>Tool descriptions don't smuggle orders to the AI, invisible characters, or tricks.</td><td><b>Failed:</b> fetch_notes</td></tr>
     <tr><td>No secrets leaked</td><td>Error messages don't show passwords, keys, tokens or internal file paths.</td><td><b>Failed:</b> search_users</td></tr>
     <tr><td>Tools work with good inputs</td><td>Each safe tool answers in time with something real.</td><td><b>Failed:</b> slow_report</td></tr>
     <tr><td>Bad inputs give a clean error</td><td>Missing or wrong-type inputs get a clear refusal, not a hang or a crash.</td><td><b>Failed:</b> slow_report</td></tr>
@@ -416,18 +434,18 @@ header.top nav a{white-space:nowrap}
 
 <section class="part" id="monitor" aria-labelledby="h-mon">
  <div class="part-in">
-  <span class="sheetno">Sheet 5 of 6 · Monitor (coming soon)</span>
+  <span class="sheetno">Sheet 5 of 6 · Monitor</span>
   <div class="mon">
    <div>
     <h2 id="h-mon">Your server changed at 2:14 am. You'd know.</h2>
-    <p class="intro">QAmcp Monitor tests your server every hour and sends you an alert like this the moment something breaks: it goes down, the score drops, a tool changes, or a secret leaks.</p>
+    <p class="intro">QAmcp Monitor tests your server the way an AI app uses it and sends you an alert like this the moment something breaks: it goes down, the score drops, a tool changes, or a secret leaks. Free for 1 server.</p>
     <form class="notify" novalidate>
      <label class="nl">Work email<input name="email" type="email" autocomplete="email" required placeholder="you@company.com"></label>
-     <label class="nl">Your MCP server <span>· optional</span><input name="server" type="url" inputmode="url" autocomplete="off" spellcheck="false" placeholder="https://your-server.com/mcp"></label>
-     <button type="submit">Notify me when it opens</button>
+     <label class="nl">Your MCP server<input name="server" type="url" inputmode="url" autocomplete="off" spellcheck="false" placeholder="https://your-server.com/mcp"></label>
+     <button type="submit">Start monitoring free</button>
     </form>
     <p class="notify-msg" role="status" aria-live="polite"></p>
-    <p class="fine">Founding price: <b>$19/month for life</b> for the first 50 teams (normally $29). We'll email you once when it opens. Nothing else, never shared.</p>
+    <p class="fine">Free for 1 server, no card.</p>
    </div>
    <figure class="alert" aria-label="Example alert">
     <div class="ah"><span class="dot" aria-hidden="true"></span>QAmcp Monitor <time>2:14 am</time></div>
@@ -439,6 +457,26 @@ header.top nav a{white-space:nowrap}
     <figcaption>Example alert · <span>Open the report</span></figcaption>
    </figure>
   </div>
+  <div class="tiers" id="pricing" aria-label="Pricing">
+   <div class="tier">
+    <p class="tn">Free</p><p class="tp">$0</p>
+    <ul class="td"><li><span>Servers</span><b>1</b></li><li><span>Up check</span><b>every hour</b></li><li><span>Full test</span><b>every hour*</b></li><li><span>Alerts</span><b>email</b></li><li><span>Teammates</span><b>–</b></li><li><span>Login servers</span><b>–</b></li><li><span>Reports with your logo</span><b>–</b></li></ul>
+    <p class="tf">*once you prove the server is yours; every 6 hours until then. Testing is always free.</p>
+    <a class="tb" href="monitor.html?from=home-pricing#notify">Start free</a>
+   </div>
+   <div class="tier pro">
+    <p class="tn">Pro <span>founding price</span></p><p class="tp">$19<s>$29</s><small>/month</small></p>
+    <ul class="td"><li><span>Servers</span><b>3</b></li><li><span>Up check</span><b>every 5 minutes*</b></li><li><span>Full test</span><b>every hour*</b></li><li><span>Alerts</span><b>email + Slack</b></li><li><span>Teammates</span><b>✓</b></li><li><span>Login servers</span><b>✓</b></li><li><span>Reports with your logo</span><b>–</b></li></ul>
+    <p class="tf">*once you prove the server is yours. $19 for the first 50 customers, kept as long as you stay subscribed.</p>
+    <a class="tb" href="https://api.qamcp.dev/dashboard/billing?from=home-pricing">Get Pro</a>
+   </div>
+   <div class="tier">
+    <p class="tn">Agency <span>soon</span></p><p class="tp">$99<s>$149</s><small>/month</small></p>
+    <p class="tf" style="margin-top:14px;color:var(--soft);font-size:14.5px">For teams that build servers for clients: 25 servers, 5 seats, reports with your logo. Check speeds are set when it's built.</p>
+    <a class="tb" href="mailto:hi@qamcp.dev?subject=Agency%20plan">Tell me when it's ready</a>
+   </div>
+  </div>
+  <p class="fine"><a href="pricing.html">Full pricing and questions →</a></p>
  </div>
 </section>
 
@@ -457,7 +495,7 @@ header.top nav a{white-space:nowrap}
    <details><summary>My server is in the directory. Can I have it removed?</summary><p>Yes. Open an issue on GitHub and we'll take it off the list. Scores in the directory are never changed for money.</p></details>
    <details><summary>Who makes QAmcp?</summary><p>Abhiram Reddy, a solo founder, building it in the open. Found a wrong result? Report it on GitHub: being fair to every server matters most.</p></details>
   </div>
-  <p class="intro">More: <a href="how-it-works.html">How it works</a> · <a href="how-to-test-mcp-server.html">How to test an MCP server</a> · <a href="cli.html">Use it in the terminal</a> · <a href="mcp-server-not-working.html">MCP server not working?</a>
+  <p class="intro">More: <a href="how-it-works.html">How it works</a> · <a href="how-to-test-mcp-server.html">How to test an MCP server</a> · <a href="how-to-monitor-mcp-server.html">How to monitor an MCP server</a> · <a href="cli.html">Use it in the terminal</a> · <a href="mcp-server-not-working.html">MCP server not working?</a>
  <a href="state-of-mcp-2026-10.html">State of MCP, Oct 2026</a> · <a href="safety.html">Safety and privacy</a></p>
  </div>
 </section>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A · Certificate + About</title>
+<script>try{var t=localStorage.getItem('qamcp-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="stylesheet" href="../site.css"><link rel="stylesheet" href="../theme.css"><link rel="stylesheet" href="../s/server.css">
+<style>
+.about{margin-top:18px;padding:16px 18px;border:1px solid var(--rule);border-radius:10px;background:var(--ground)}
+.about p{color:var(--ink);font-size:16px}
+.facts{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:10px;font:400 13px var(--mono);color:var(--soft)}
+.facts b{color:var(--pass);font-weight:600}
+.price{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:12px;padding-top:12px;border-top:1px solid var(--rule);font-size:14px;color:var(--soft)}
+.price dt{font:600 10.5px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--faint)}
+.price a{color:var(--rose)}
+.mocknote{font:400 12px var(--mono);color:var(--faint);margin:0 0 10px}
+</style></head><body>
+<div class="wrap">
+ <p class="mocknote">Version A · the certificate we have now, with an About box inside it</p>
+ <header class="top"><a class="brand">QA<b>mcp</b></a><nav aria-label="Main"><a aria-current="page">Directory</a><a>Test a server</a><a>How it works</a><a>Safety</a><a>Run it in CI</a><a>Sample reports</a></nav><div class="tools"><button class="theme" id="theme" type="button">Light</button><a class="gh">GitHub</a></div></header>
+ <section class="cert">
+  <div class="l">
+   <p class="crumb"><a>Directory</a> / RegPulse Compliance Oracle</p>
+   <div class="title"><img class="logo" src="../s/logo/ai-reg-bot-compliance-oracle.png" alt="" width="56" height="56"><h1>RegPulse Compliance Oracle</h1></div>
+   <div class="about">
+    <p>Read-only US food license data: verified state rules, Florida license lookup, renewal dates.</p>
+    <div class="facts"><span>3 tools</span><span><b>✓</b> all read-only</span><span><b>✓</b> no account needed</span><span>tested 18 Oct 2026</span></div>
+    <dl class="price"><div><dt>Pricing</dt><dd><a href="https://www.reg-bot.ai/pricing">See their pricing page →</a></dd></div><div><dt>Made by</dt><dd><a href="https://www.reg-bot.ai">reg-bot.ai</a></dd></div><div><dt>Server link</dt><dd>https://www.reg-bot.ai/api/mcp</dd></div></dl>
+   </div>
+  </div>
+  <div class="r"><span class="lbl">QAmcp score</span><div class="num">95<small> / 100</small></div><span class="stamp mid">PASS · WITH NOTES</span><p class="cov">10 of 10 checks run, in safe mode</p></div>
+ </section>
+ <div class="two">
+  <div class="side">
+   <section class="box"><h2>What it can do</h2><p class="hint">3 tools, in the server's own words.</p><ul class="toollist">
+    <li><code>lookup_florida_license</code><span class="ro">read-only</span><span>Look up a Florida DBPR food service / mobile food license (restaurants, food trucks, caterers) by license number, or by business name plus 5-digit zip.</span></li>
+    <li><code>get_state_food_rules</code><span class="ro">read-only</span><span>Get verified food license rules (issuing agency, renewal cycle, expiry, fee, late fee, official link) for a US state and business type.</span></li>
+    <li><code>next_renewal_date</code><span class="ro">read-only</span><span>Get the next food license renewal deadline.</span></li>
+   </ul></section>
+   <section class="box"><h2>What we checked</h2><ul class="checks">
+    <li class="chk warn"><span class="mk warn">!</span><div><b>Ready for the newest MCP version</b><span class="sum">Uses an older MCP version (2025-06-18). It works today, but it isn't on the July 2026 version yet.</span></div><span class="st">note</span></li>
+    <li class="chk pass"><span class="mk pass">✓</span><div><b>Connects</b><span class="sum">Connected</span></div><span class="st">pass</span></li>
+    <li class="chk pass"><span class="mk pass">✓</span><div><b>No hidden instructions</b><span class="sum">No hidden instructions found in tool descriptions</span></div><span class="st">pass</span></li>
+    <li class="chk pass"><span class="mk pass">✓</span><div><b>Tools work with good inputs</b><span class="sum">All good</span></div><span class="st">pass</span></li>
+   </ul></section>
+  </div>
+  <div class="side">
+   <section class="box"><h2>Test it yourself</h2><p class="hint">Free and open source. Same checks, same score.</p><div class="cmd"><code>npx qamcp-cli https://www.reg-bot.ai/api/mcp</code><button type="button">Copy</button></div></section>
+   <section class="box"><h2>Score over time</h2><ul class="hist"><li><span class="d">18 Oct 2026</span><span class="bar"><i style="width:95%"></i></span><span class="v">95</span></li></ul><p class="hint">One test so far.</p></section>
+  </div>
+ </div>
+ <section class="box reviews"><h2>Reviews</h2><p class="hint">Coming soon.</p></section>
+</div>
+<script src="../theme.js"></script>
+</body></html>

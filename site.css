@@ -130,3 +130,9 @@ pre{max-width:100%;overflow-x:auto}
 .watch .notify button:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
 .watch .notify-msg{margin-top:10px;min-height:1.4em;font-size:14.5px;color:var(--soft)}.watch .notify-msg.ok{color:var(--pass);font-weight:700}
 @media (max-width:640px){.watch .notify,.watch .notify:has(input[type=url]){grid-template-columns:1fr}}
+
+.gh.signin{margin-left:8px;white-space:nowrap}
+@media (max-width:1360px){header.top nav a[href="ci.html"],header.top nav a[href="samples.html"]{display:none}}
+@media (max-width:1180px){header.top nav a[href="safety.html"]{display:none}}
+@media (max-width:900px){header.top .gh.signin{display:inline-flex;padding:7px 10px}}
+@media (max-width:480px){header.top .ai{display:none}}

@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>QAmcp Monitor · QAmcp</title>
-<meta name="description" content="QAmcp Monitor checks your MCP server is up every 5 minutes, runs the full test every hour, and emails you when it goes down, the score drops, a tool changes or a secret leaks.">
+<title>MCP Server Monitoring: free uptime and tool-change alerts · QAmcp</title>
+<meta name="description" content="Monitor your MCP server the way an AI app uses it. Free for 1 server: a full test every hour once you prove it's yours, and an email when it goes down, the score drops, a tool changes or a secret leaks. Pro adds an up check every 5 minutes and Slack.">
 <link rel="canonical" href="https://qamcp.dev/monitor.html">
-<meta property="og:type" content="website"><meta property="og:site_name" content="QAmcp"><meta property="og:title" content="QAmcp Monitor · QAmcp"><meta property="og:description" content="QAmcp Monitor checks your MCP server is up every 5 minutes, runs the full test every hour, and emails you when it goes down, the score drops, a tool changes or a secret leaks.">
+<meta property="og:type" content="website"><meta property="og:site_name" content="QAmcp"><meta property="og:title" content="MCP Server Monitoring: free uptime and tool-change alerts · QAmcp"><meta property="og:description" content="Monitor your MCP server the way an AI app uses it. Free for 1 server: a full test every hour once you prove it's yours, and an email when it goes down, the score drops, a tool changes or a secret leaks. Pro adds an up check every 5 minutes and Slack.">
 <meta name="color-scheme" content="light dark">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231A1A1A'/%3E%3Crect x='7' y='7' width='18' height='18' rx='2' fill='none' stroke='%23B9838A' stroke-width='2.4'/%3E%3C/svg%3E">
 <script>try{var t=localStorage.getItem('qamcp-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
@@ -49,30 +49,31 @@
  <div class="sheet-in">
   <header class="top">
    <a class="brand" href="./">QA<b>mcp</b></a>
-   <nav aria-label="Main"><a href="directory.html">Directory</a><a href="test.html">Test a server</a><a href="how-it-works.html">How it works</a><a href="safety.html">Safety</a><a href="ci.html">Run it in CI</a><a href="samples.html">Sample reports</a></nav>
+   <nav aria-label="Main"><a href="directory.html">Directory</a><a href="test.html">Test a server</a><a href="monitor.html">Monitor</a><a href="how-it-works.html">How it works</a><a href="safety.html">Safety</a><a href="ci.html">Run it in CI</a><a href="samples.html">Sample reports</a></nav>
    <div class="ai"><button class="ai-btn" type="button" aria-expanded="false" aria-controls="ai-pop"><svg viewBox="0 0 16 16" aria-hidden="true" width="15" height="15"><path fill="none" stroke="currentColor" stroke-width="1.4" d="M8 1.5l1.6 3.9 3.9 1.6-3.9 1.6L8 12.5 6.4 8.6 2.5 7l3.9-1.6z"/></svg>Test with your AI</button><div class="ai-pop" id="ai-pop" hidden><b>Copied. Paste it into Claude Code, Cursor or Codex:</b><code>Fetch and follow the instructions at https://qamcp.dev/setup.md to test my MCP server.</code><p>Your AI finds your server in your project, tests it with QAmcp, explains what's wrong in plain words, fixes it with your OK, and tests again. <a href="setup.md">Read the instructions</a></p></div></div>
    <a class="gh" href="https://github.com/QAmcp/qamcp-cli"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38v-1.33c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.06-.49.06-.49.8.06 1.23.83 1.23.83.72 1.22 1.88.87 2.34.66.07-.52.28-.87.5-1.07-1.78-.2-3.65-.89-3.65-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>GitHub</a>
+   <a class="gh signin" href="https://api.qamcp.dev/dashboard?from=menu">Sign in</a>
    <button class="theme" id="theme" type="button" style="margin-left:10px">Light</button>
   </header>
   <main id="main">
    <div class="page-head mhero">
     <div>
-     <span class="mpill">Coming soon</span>
+     <span class="mpill">Free for 1 server</span>
      <h1>Know the moment your MCP server breaks</h1>
-     <p>QAmcp Monitor checks your server is up every 5 minutes and runs the full QAmcp test every hour. When something goes wrong, you get one email that says what happened, what it means and what to do. When it's fixed, you get one more.</p>
-     <nav class="toc" aria-label="On this page"><a href="#watches">What it watches</a><a href="#get">What you get</a><a href="#alert">An example alert</a><a href="#price">Price</a><a href="#questions">Questions</a></nav>
+     <p>MCP server monitoring that checks your server the way an AI app uses it: a full QA test every hour once you prove it's yours, and on Pro an up check every 5 minutes. When something goes wrong, you get one email that says what happened, what it means and what to do. When it's fixed, you get one more.</p>
+     <nav class="toc" aria-label="On this page"><a href="#watches">What it watches</a><a href="#get">What you get</a><a href="#alert">An example alert</a><a href="#price">Price</a><a href="#questions">Questions</a><a href="how-to-monitor-mcp-server.html">How to monitor an MCP server</a></nav>
     </div>
     <div class="mprice" id="notify">
-     <p class="mp-tag">Founding price · first 50 teams</p>
-     <p class="mp-num">$19<span>$29</span></p>
-     <p class="mp-per">a month, for life, as long as you stay · 3 servers</p>
+     <p class="mp-tag">Start free</p>
+     <p class="mp-num">$0</p>
+     <p class="mp-per">for 1 server, no card. Pro is $19 a month, the founding price.</p>
      <form class="notify" novalidate>
       <label class="nl">Work email<input name="email" type="email" autocomplete="email" required placeholder="you@company.com"></label>
-      <label class="nl">Your MCP server <span>· optional</span><input name="server" type="url" inputmode="url" autocomplete="off" spellcheck="false" placeholder="https://your-server.com/mcp"></label>
-      <button type="submit">Notify me when it opens</button>
+      <label class="nl">Your MCP server<input name="server" type="url" inputmode="url" autocomplete="off" spellcheck="false" required placeholder="https://your-server.com/mcp"></label>
+      <button type="submit">Start monitoring free</button>
      </form>
      <p class="notify-msg" role="status" aria-live="polite"></p>
-     <p class="mp-fine">We email you once, when it opens. Nothing else, never shared.</p>
+     <p class="mp-fine">Free for 1 server, no card. We send one link to confirm your email. Already in? <a href="https://api.qamcp.dev/dashboard?from=monitor">Sign in</a>.</p>
     </div>
    </div>
   </main>
@@ -84,11 +85,15 @@
   <span class="sheetno">Sheet 2 of 6 · What it watches</span>
   <h2 id="h-watches">What Monitor watches</h2>
   <ul class="facts">
-   <li><strong>Is it up?</strong>A quick check every 5 minutes that runs no tools. After 2 failed checks in a row, you get a "Down" email; when it answers again, a "Back up" email with how long it was down.</li>
-   <li><strong>The full test, every hour</strong>The same test as the free one: connection, MCP version, tool descriptions and inputs, safety labels, hidden instructions, bad-input handling, leaked secrets, speed, login setup, resources and prompts.</li>
+   <li><strong>Is it up?</strong>A quick check that runs no tools: every hour, or every 5 minutes on Pro for a server you own. After 2 failed checks in a row, you get a "Down" email; when it answers again, a "Back up" email with how long it was down.</li>
+   <li><strong>The full QA test</strong>Every hour on a server you own, every 6 hours otherwise. The same test as the free one: connection, MCP version, tool descriptions and inputs, safety labels, hidden instructions, bad-input handling, leaked secrets, speed, login setup, resources and prompts.</li>
    <li><strong>Score drops</strong>When the score falls by 5 points or more, with exactly which checks got worse.</li>
    <li><strong>Tool changes</strong>A tool added, removed or renamed, an input or required field that changed, a safety label that flipped: the exact before and after, even if you didn't change it yourself.</li>
+   <li><strong>Answers, not just "up"</strong>A server can answer and still be broken. You hear when a tool's answer changes shape, or it starts sending back a sign-in page, nothing at all, or far too much.</li>
+   <li><strong>Login, MCP version, certificate</strong>When it suddenly asks for a login or its login setup breaks, when the MCP version it speaks changes, and 14 days before its security certificate ends.</li>
+   <li><strong>Slow</strong>When it takes 3 seconds or more to start and 3 times longer than usual, 2 checks in a row.</li>
    <li><strong>Security</strong>A hidden instruction that appears in a tool description, or a secret that starts showing up in an error message, and the moment it's gone again.</li>
+   <li><strong>Gentle until you prove it's yours</strong>We never test a server hard unless its owner says so. Publish a short code on your server or in your DNS, it takes a minute, and you get full speed. If many people watch one server, it still gets one test.</li>
    <li><strong>Safe, always</strong>Only tools labeled read-only are ever run, and never anything that sounds like it deletes. Monitor never changes your data.</li>
   </ul>
  </div>
@@ -107,7 +112,7 @@
    <li><strong>A year of history</strong>Every score and every change, kept for a year. Delete everything any time, from your settings.</li>
   </ul>
   <h3>Coming soon</h3>
-  <p>Slack alerts · a verified owner mark on your directory page · a monthly security test on a test copy of your server · testing the tools behind a login.</p>
+  <p>A verified owner mark on your directory page.</p>
  </div>
 </section>
 
@@ -136,12 +141,12 @@ Details
   <h2 id="h-price">Start free, grow with Pro</h2>
   <ul class="facts">
    <li><strong>Free: 1 server</strong>A full test every hour and the same email alerts, for one server. No card.</li>
-   <li><strong>Pro: $19 a month, for life</strong>The founding price for the first 50 teams, kept for as long as your plan stays active. After that it's $29 a month. 3 servers, a check every 5 minutes, Slack alerts. <a href="pricing.html">See pricing</a>.</li>
+   <li><strong>Pro: $19 a month</strong>The founding price for the first 50 teams, kept for as long as your plan stays active. After that it's $29 a month. 3 servers, a check every 5 minutes, Slack alerts. <a href="pricing.html">See pricing</a>.</li>
    <li><strong>Try it without worry</strong>Your first payment comes with a 7-day money-back promise. Cancel any time from the dashboard.</li>
    <li><strong>Running many servers?</strong>An agency plan for 25 servers is coming. <a href="mailto:hi@qamcp.dev?subject=Agency%20plan">Tell us</a> and we'll let you know.</li>
    <li><strong>The free test stays free</strong>The browser test, the terminal tool, the GitHub check and the directory stay free and open source. Monitor is what pays for them.</li>
   </ul>
-  <div class="cta"><a class="p" href="#notify">Notify me when it opens</a><a class="s" href="test.html?from=monitor">Test a server for free now</a></div>
+  <div class="cta"><a class="p" href="#notify">Start monitoring free</a><a class="s" href="test.html?from=monitor">Test a server for free now</a></div>
  </div>
 </section>
 
@@ -152,9 +157,9 @@ Details
   <div class="faq">
    <details><summary>Does paying change my score in the directory?</summary><p>No, never. Every server gets the same test, and scores are never changed for money. <a href="directory-rules.html">The directory rules</a></p></details>
    <details><summary>Can Monitor break or change my server?</summary><p>No. It only runs tools your server labels read-only, and only when their name, description and inputs agree. The 5-minute check runs no tools at all.</p></details>
-   <details><summary>My server needs a login. Does Monitor work?</summary><p>Today it watches whether the server is up and whether its login setup still follows the MCP rules. Testing the tools behind the login is coming.</p></details>
+   <details><summary>My server needs a login. Does Monitor work?</summary><p>Yes. On Pro, prove the server is yours, then save a key on its page and every test uses it. It's stored encrypted, sent only to your server, and never shown again. Use a key that can only read.</p></details>
    <details><summary>What do you keep about me?</summary><p>Your email, your server's link and its test history. No AI reads any of it. <a href="privacy.html">Privacy</a></p></details>
-   <details><summary>When does it open?</summary><p>Soon. Leave your email above and we'll write to you once, the day it opens.</p></details>
+   <details><summary>How is this different from an uptime checker?</summary><p>An uptime checker tells you your server answered. QAmcp tells you an AI can still use it: tools, inputs, safety labels and answers, all compared with what your server normally does.</p></details>
   </div>
  </div>
 </section>
