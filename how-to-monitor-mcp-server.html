@@ -25,7 +25,7 @@
 {"@type":"Question","name":"Isn't an uptime check enough for an MCP server?","acceptedAnswer":{"@type":"Answer","text":"No. An uptime check tells you the server answered a request. An MCP server can answer and still be unusable for an AI app: a tool renamed, an input removed, a safety label dropped, a login that broke, or answers that suddenly come back empty. Monitoring an MCP server means connecting the way an AI app does and checking the tools, not only the status code."}},
 {"@type":"Question","name":"How often should I check my MCP server?","acceptedAnswer":{"@type":"Answer","text":"A quick connect-and-list-tools check every few minutes catches outages fast. A full test of every safe tool once an hour catches quieter breaks, like a tool that changed or a score that dropped. QAmcp Monitor does both."}},
 {"@type":"Question","name":"Does monitoring change anything on my server?","acceptedAnswer":{"@type":"Answer","text":"Not with QAmcp. Monitor runs the same safe-mode test as the free tester: it only runs tools your server labels read-only, and only when their name, description and inputs agree. It never runs tools that sound like they delete or change something."}},
-{"@type":"Question","name":"Is there a free way to monitor an MCP server?","acceptedAnswer":{"@type":"Answer","text":"Yes. QAmcp Monitor is free for 1 server with email alerts. Once you prove the server is yours, it gets a full test every hour. Pro adds an up check every 5 minutes, 3 servers, Slack alerts and servers behind a login."}}
+{"@type":"Question","name":"Is there a free way to monitor an MCP server?","acceptedAnswer":{"@type":"Answer","text":"Yes. QAmcp Monitor is free for 1 server with email alerts: a look every hour and a full test once a day. Pro tests every hour, adds an up check every 5 minutes, 3 servers, Slack alerts and servers behind a login."}}
 ]}</script>
 </head>
 <body>
@@ -86,8 +86,8 @@
   <h3 class="way" id="qamcp">With QAmcp Monitor</h3>
   <p class="intro">QAmcp Monitor does all of the above for you, with the same safe-mode test as the free tester. It only runs tools your server labels read-only, and never runs tools that sound like they delete or change something.</p>
   <ul class="facts">
-   <li><strong>Free, 1 server</strong>A quick check every hour and a full test every 6 hours. Prove the server is yours with a short code on your server or in your DNS, and it gets a full test every hour. Email alerts, a live README badge and a year of history.</li>
-   <li><strong>Pro, $19 a month</strong>3 servers, an up check every 5 minutes, Slack alerts, teammates, and servers behind a login with a saved key. The founding price for the first 50 customers, kept as long as you stay subscribed.</li>
+   <li><strong>Free, 1 server</strong>A quick check every hour and a full test once a day. Email alerts, a live README badge and a year of history.</li>
+   <li><strong>Pro, $19 a month</strong>3 servers, a full test every hour, an up check every 5 minutes (once you prove the server is yours with a short code on your server or in your DNS), Slack alerts, teammates, and servers behind a login with a saved key. The founding price for the first 50 customers, kept as long as you stay subscribed.</li>
   </ul>
   <div class="cta"><a class="p" href="monitor.html?from=guide#notify">Start monitoring free</a><a class="s" href="test.html">Test a server first</a></div>
  </div>
@@ -101,7 +101,7 @@
    <details><summary>Isn't an uptime check enough for an MCP server?</summary><p>No. An uptime check tells you the server answered a request. An MCP server can answer and still be unusable for an AI app: a tool renamed, an input removed, a safety label dropped, a login that broke, or answers that suddenly come back empty.</p></details>
    <details><summary>How often should I check my MCP server?</summary><p>A quick connect-and-list-tools check every few minutes catches outages fast. A full test once an hour catches quieter breaks, like a tool that changed or a score that dropped.</p></details>
    <details><summary>Does monitoring change anything on my server?</summary><p>Not with QAmcp. Monitor only runs tools your server labels read-only, and only when their name, description and inputs agree. It never runs tools that sound like they delete or change something.</p></details>
-   <details><summary>Is there a free way to monitor an MCP server?</summary><p>Yes. QAmcp Monitor is free for 1 server with email alerts. Once you prove the server is yours, it gets a full test every hour. <a href="pricing.html">See pricing</a>.</p></details>
+   <details><summary>Is there a free way to monitor an MCP server?</summary><p>Yes. QAmcp Monitor is free for 1 server with email alerts and a full test once a day. Pro tests every hour. <a href="pricing.html">See pricing</a>.</p></details>
   </div>
  </div>
 </section>
