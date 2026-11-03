@@ -1,0 +1,277 @@
+{
+ "academy.apexai/apex-ai-academy": {
+  "checked": "2026-11-03",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ad.getle/leads": {
+  "checked": "2026-11-03",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.a1lane/a1lane": {
+  "checked": "2026-11-03",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.achromat/mcp-server": {
+  "checked": "2026-11-03",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "ai.adrails/adrails": {
+  "checked": "2026-11-03",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.agentblueprint/agent-blueprint": {
+  "checked": "2026-11-03",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.agentgates/mcp": {
+  "checked": "2026-11-03",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.agentplaybooks/agentplaybooks": {
+  "checked": "2026-11-03",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.agilex.service/docs": {
+  "checked": "2026-11-03",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.aivikings/registrar": {
+  "checked": "2026-11-03",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.analyticslegends/sap-analytics": {
+  "checked": "2026-11-03",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.arcreport/mcp": {
+  "checked": "2026-11-03",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.arvx/arvx": {
+  "checked": "2026-11-03",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.askgina/gina": {
+  "checked": "2026-11-03",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.askgina/perps": {
+  "checked": "2026-11-03",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.askgina/predictions": {
+  "checked": "2026-11-03",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.askgina/spot": {
+  "checked": "2026-11-03",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.askyouraudience/ask-your-audience": {
+  "checked": "2026-11-03",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.asms/asms": {
+  "checked": "2026-11-03",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.atlaso/mcp": {
+  "checked": "2026-11-03",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.audiopod/audiopod": {
+  "checked": "2026-11-03",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.audiopod/audiopod-core": {
+  "checked": "2026-11-03",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.audo/audo": {
+  "checked": "2026-11-03",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.auxen/auxen": {
+  "checked": "2026-11-03",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.betslipdoctor/mcp": {
+  "checked": "2026-11-03",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.bluebed.property/new-launches": {
+  "checked": "2026-11-03",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.bnbgenius/mcp": {
+  "checked": "2026-11-03",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.brainmemory/brain": {
+  "checked": "2026-11-03",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.bumblebox/mail": {
+  "checked": "2026-11-03",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.bynor/bynor": {
+  "checked": "2026-11-03",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.calven/mcp": {
+  "checked": "2026-11-03",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.capxule/capxule": {
+  "checked": "2026-11-03",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.centralcity/central-city": {
+  "checked": "2026-11-03",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.certscore/mcp": {
+  "checked": "2026-11-03",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "ai.certscore/mcp-light": {
+  "checked": "2026-11-03",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.chucho/chucho": {
+  "checked": "2026-11-03",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.ciphyr.agentmart/core": {
+  "checked": "2026-11-03",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.cloudbrowser/mcp": {
+  "checked": "2026-11-03",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.cloudcrane/workspace": {
+  "checked": "2026-11-03",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ }
+}
