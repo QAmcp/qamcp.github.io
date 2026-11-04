@@ -558,5 +558,244 @@
    "GitHub Security Advisories"
   ],
   "items": []
+ },
+ "ai.ankidecks/ankidecks": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.instantclips/instantclips": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "ai.intodns/scanner": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "ai.joxo/joxo": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.justpublish/just-publish": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.kaiv/bridge": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.kavel/kavel-mcp": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "ai.livecrm/livecrm": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.luw/mcp": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "ai.machinerelations/mri": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.mailmcp/mailmcp": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.makeaivideo/video-generator": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "ai.markettrace/agent-feed": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.meetsquad/squad": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.membase/membase": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.memestack/mcp": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.memocore/mcp": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.merget/merget": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.meshtool/meshmarket": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.motiblog/mcp": {
+  "checked": "2026-11-04",
+  "sources": [
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "ai.nabit/nabit": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.needwing/needwing": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.neuralverge/neuralverge": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "ai.nitrino/nitrino": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.nourva/mind": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.nyna/mcp": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.oceantoken/mcp": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.onepin/onepin": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.overwing/mcp": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "ai.patentreply/patentreply": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.pensionhunter/pensionhunter": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.plori/plori": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.posteverywhere/mcp": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
  }
 }

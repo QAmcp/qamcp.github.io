@@ -5658,5 +5658,18 @@
  "ai.bidbetter/collector-car-values": {
   "url": "https://bidbetter.ai/pricing",
   "checked": "2026-11-04"
+ },
+ "africa.lomi/mcp": {
+  "checked": "2026-11-04"
+ },
+ "ai.agentcv/registry": {
+  "checked": "2026-11-04"
+ },
+ "ai.ankidecks/ankidecks": {
+  "url": "https://ankidecks.ai/pricing",
+  "checked": "2026-11-04"
+ },
+ "ai.bananabread/bananabread": {
+  "checked": "2026-11-04"
  }
 }
