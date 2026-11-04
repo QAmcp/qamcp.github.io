@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MCP prompt injection: what a test can and cannot find · QAmcp</title>
+<meta name="description" content="Prompt injection through MCP can come from a tool's description or from the live answers it returns. What a test can find, what it can't, and how to limit the damage.">
+<link rel="canonical" href="https://qamcp.dev/mcp-prompt-injection.html">
+<meta property="og:type" content="article"><meta property="og:site_name" content="QAmcp"><meta property="og:title" content="MCP prompt injection: what a test can and cannot find"><meta property="og:description" content="What a test can find, what it can't, and how to limit the damage."><meta property="og:url" content="https://qamcp.dev/mcp-prompt-injection.html"><meta name="twitter:card" content="summary">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231A1A1A'/%3E%3Crect x='7' y='7' width='18' height='18' rx='2' fill='none' stroke='%23B9838A' stroke-width='2.4'/%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('qamcp-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="stylesheet" href="site.css">
+<style>
+.faq{margin-top:clamp(22px,3vw,36px);border-top:1px solid var(--rule)}
+.faq details{border-bottom:1px solid var(--rule);padding:14px 0}
+.faq summary{cursor:pointer;font-weight:700;list-style-position:outside}
+.faq summary:focus-visible{outline:2px solid var(--rose);outline-offset:3px}
+.faq p{margin-top:8px;color:var(--soft);max-width:68ch}
+.page-head p.updated{margin-top:10px;font:400 13px var(--mono);color:var(--faint)}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"What is prompt injection in MCP?","acceptedAnswer":{"@type":"Answer","text":"Prompt injection is text that gets your AI to follow someone else's instructions. Through MCP it can arrive in a tool's description, or inside what a tool returns, such as a web page or an email the tool fetched."}},
+{"@type":"Question","name":"Can a test find prompt injection in an MCP server?","acceptedAnswer":{"@type":"Answer","text":"Partly. A test can read tool descriptions for known tricks. It can't predict what will be inside live answers later, because that content comes from the outside world at the moment you use the tool."}},
+{"@type":"Question","name":"How do I limit the risk?","acceptedAnswer":{"@type":"Answer","text":"Connect only the tools you need, keep your app's approval prompts on for anything that can change or send things, and avoid giving one AI session private data, untrusted content and a way to send data out, all at the same time."}}
+]}</script>
+<script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}((p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r));var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_p4Wad2LVUW2yHEWsWXrCajwiM2XNK45coFjRNev4DoH9',{api_host:'https://us.i.posthog.com',persistence:'sessionStorage',person_profiles:'identified_only',capture_pageview:true,autocapture:true,session_recording:{maskAllInputs:true},respect_dnt:true});
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e.target.closest('a, button'):null;if(!a)return;var t=(a.textContent||'').trim().toLowerCase(),h=a.getAttribute('href')||'';if(t.includes('get pro')||h.includes('dashboard/billing')||(t.includes('pricing')&&(a.classList.contains('btn')||a.classList.contains('tb')||a.classList.contains('p')||a.classList.contains('cta')))){try{window.posthog&&window.posthog.capture('get_pro_clicked')}catch(err){}}},true);
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="sheet">
+ <div class="sheet-in">
+  <header class="top">
+   <a class="brand" href="./">QA<b>mcp</b></a>
+   <nav aria-label="Main"><a href="directory.html">Directory</a><a href="test.html">Test a server</a><a href="how-it-works.html">How it works</a><a href="safety.html">Safety</a><a href="ci.html">Run it in CI</a><a href="samples.html">Sample reports</a></nav>
+   <button class="theme" id="theme" type="button" style="margin-left:auto">Light</button>
+  </header>
+  <main id="main">
+   <div class="page-head">
+    <h1>MCP prompt injection: what a test can and cannot find</h1>
+    <p>Prompt injection is text that gets your AI to follow someone else's instructions. Through MCP it can arrive two ways: in a tool's description, or inside the answer a tool returns. A test can help with the first and much less with the second, and it's better to know which is which.</p>
+    <p class="updated">Last updated: 2 November 2026</p>
+    <nav class="toc" aria-label="On this page"><a href="#two">Two ways in</a><a href="#table">Can and cannot</a><a href="#limit">Limit the damage</a><a href="#faq">Questions</a></nav>
+   </div>
+  </main>
+ </div>
+</div>
+
+<section class="part" id="two" aria-labelledby="h-two">
+ <div class="part-in">
+  <span class="sheetno">Sheet 2 of 4 · Two ways in</span>
+  <h2 id="h-two">Two ways in</h2>
+  <ol class="proc">
+   <li><b>In a tool's description</b><span>The server's own text carries the instructions. It's there before you run anything, so it can be read and checked. This is <a href="mcp-tool-poisoning.html">tool poisoning</a>.</span></li>
+   <li><b>In a tool's answer</b><span>The tool fetches something from the outside world, like a web page, an email or a support ticket, and that content contains instructions. The server can be entirely honest, and the attack comes from whoever wrote the content. This changes with every call, so no test run today can see tomorrow's answers.</span></li>
+  </ol>
+ </div>
+</section>
+
+<section class="part" id="table" aria-labelledby="h-table">
+ <div class="part-in">
+  <span class="sheetno">Sheet 3 of 4 · Can and cannot</span>
+  <h2 id="h-table">What QAmcp can and cannot find</h2>
+  <ul class="facts">
+   <li><strong>Can find</strong>Known hidden-instruction wordings and invisible characters in tool descriptions</li>
+   <li><strong>Can find</strong>Secrets in error messages, and what looks like a key in a tool's answer</li>
+   <li><strong>Can find</strong>Tools that can change or send things, from their labels and descriptions</li>
+   <li><strong>Cannot find</strong>Instructions hidden inside live tool answers. We only look for those in descriptions</li>
+   <li><strong>Cannot find</strong>Hidden instructions worded in a way our list doesn't know yet</li>
+   <li><strong>Cannot find</strong>What a tool does behind the scenes, or anything in its source code</li>
+  </ul>
+  <p class="intro">So a clean result in the <a href="directory.html">directory</a> doesn't mean a server is immune to prompt injection. Any tool that brings in outside content can carry it. The full list is on <a href="limits.html">what QAmcp can and can't see</a>.</p>
+ </div>
+</section>
+
+<section class="part" id="limit" aria-labelledby="h-limit">
+ <div class="part-in">
+  <span class="sheetno">Sheet 4 of 4 · Limit the damage</span>
+  <h2 id="h-limit">How to limit the damage</h2>
+  <p class="intro">Since no test catches everything, limit what a tricked AI could do.</p>
+  <ol class="proc">
+   <li><b>Connect only the tools you need</b><span>Fewer tools means fewer ways for something to go wrong. Check <a href="is-my-mcp-server-safe.html">what a server can change</a> before you add it.</span></li>
+   <li><b>Keep approval prompts on</b><span>Let your AI app ask you before anything that changes or sends something, and read what it asks.</span></li>
+   <li><b>Don't mix the three risky things</b><span>The danger is highest when one AI session has private data, reads untrusted content, and can send data out. Remove any one of the three and an injected instruction can do much less.</span></li>
+  </ol>
+  <h2 id="faq" style="margin-top:clamp(36px,5vw,56px);font-size:clamp(22px,2vw,28px)">Questions</h2>
+  <div class="faq">
+   <details><summary>What is prompt injection in MCP?</summary><p>Prompt injection is text that gets your AI to follow someone else's instructions. Through MCP it can arrive in a tool's description, or inside what a tool returns, such as a web page or an email the tool fetched.</p></details>
+   <details><summary>Can a test find prompt injection in an MCP server?</summary><p>Partly. A test can read tool descriptions for known tricks. It can't predict what will be inside live answers later, because that content comes from the outside world at the moment you use the tool.</p></details>
+   <details><summary>How do I limit the risk?</summary><p>Connect only the tools you need, keep your app's approval prompts on for anything that can change or send things, and avoid giving one AI session private data, untrusted content and a way to send data out, all at the same time.</p></details>
+  </div>
+  <p class="intro" style="margin-top:24px">Read next: <a href="is-my-mcp-server-safe.html">How to tell if an MCP server is safe</a> · <a href="mcp-tool-poisoning.html">Hidden instructions (tool poisoning)</a></p>
+ </div>
+</section>
+
+<footer>
+ <span>QAmcp · free and open source (MIT)</span>
+ <a href="./">Home</a>
+ <a href="directory.html">Directory</a>
+ <a href="https://github.com/QAmcp/qamcp-cli">GitHub</a>
+ <a href="how-to-test-mcp-server.html">How to test an MCP server</a>
+ <a href="limits.html">What it can't catch</a>
+ <a href="privacy.html">Privacy and terms</a>
+ <a href="contact.html">Contact</a>
+ <span class="r">No cookies · <a href="privacy.html">Privacy</a></span>
+</footer>
+<script src="theme.js"></script>
+<script src="count.js"></script>
+</body>
+</html>

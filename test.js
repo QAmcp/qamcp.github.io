@@ -90,6 +90,13 @@
   }
 
   function showResult(r, reportId) {
+    try {
+      window.posthog?.capture('test_finished', {
+        score: r.notScored ? null : r.score,
+        notScored: r.notScored || null,
+        server_host: hostOf(r.url || $('url').value)
+      });
+    } catch {}
     const login = /login/i.test(r.notScored || '');
     // Behind a login, "could not connect" is the server asking for a login, not a failure.
     for (const c of r.checks) showCheck(login && c.id === 'connect' && c.status === 'fail' ? { ...c, status: 'skip', title: 'Asks for a login first', summary: '' } : c);
@@ -114,12 +121,13 @@
     $('after').replaceChildren(open, copy, again); $('after').hidden = false;
     // The person who just tested a server is the one Monitor is for: offer it, with the server filled in.
     const watch = $('watch'), srv = watch.querySelector('[name=server]');
-    if (srv && !watch.querySelector('.notify-msg.ok')) { srv.value = r.url || $('url').value; watch.hidden = false; }
+    if (srv && !watch.querySelector('.notify-msg.ok')) { srv.value = r.url || $('url').value; watch.hidden = false; try { window.posthog?.capture('watch_offer_shown'); } catch {} }
   }
 
   // Start a test and follow it live until it ends.
   async function runTest(body) {
     resetCert(body.url);
+    try { window.posthog?.capture('test_started', { server_host: hostOf(body.url) }); } catch {}
     const { id } = await call('/api/tests', body);
     const st = await call(`/api/tests/${id}`);
     if (st.state === 'queued' && st.position > 1) $('now').textContent = `Waiting in line: ${st.position - 1} test${st.position > 2 ? 's' : ''} ahead of yours.`;

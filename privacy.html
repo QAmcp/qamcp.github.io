@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy and terms · QAmcp</title>
-<meta name="description" content="What QAmcp keeps and what it never keeps: the terminal tool sends nothing to us; the website test never saves API keys; no cookies, no tracking, no AI. Plus the terms of use.">
+<meta name="description" content="What QAmcp keeps and what it never keeps: the terminal tool sends nothing to us; the website test never saves API keys; no cookies, no AI. Plus the terms of use.">
 <link rel="canonical" href="https://qamcp.dev/privacy.html">
-<meta property="og:type" content="website"><meta property="og:site_name" content="QAmcp"><meta property="og:title" content="Privacy and terms · QAmcp"><meta property="og:description" content="What QAmcp keeps and what it never keeps: the terminal tool sends nothing to us; the website test never saves API keys; no cookies, no tracking, no AI. Plus the terms of use.">
+<meta property="og:type" content="website"><meta property="og:site_name" content="QAmcp"><meta property="og:title" content="Privacy and terms · QAmcp"><meta property="og:description" content="What QAmcp keeps and what it never keeps: the terminal tool sends nothing to us; the website test never saves API keys; no cookies, no AI. Plus the terms of use.">
 <meta name="color-scheme" content="light dark">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231A1A1A'/%3E%3Crect x='7' y='7' width='18' height='18' rx='2' fill='none' stroke='%23B9838A' stroke-width='2.4'/%3E%3C/svg%3E">
 <script>try{var t=localStorage.getItem('qamcp-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
@@ -19,6 +19,11 @@
 .doc code{color:var(--rose);font:400 0.92em var(--mono)}
 .page-head p.updated{margin-top:10px;font:400 13px var(--mono);color:var(--faint)}
 </style>
+<script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}((p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r));var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_p4Wad2LVUW2yHEWsWXrCajwiM2XNK45coFjRNev4DoH9',{api_host:'https://us.i.posthog.com',persistence:'sessionStorage',person_profiles:'identified_only',capture_pageview:true,autocapture:true,session_recording:{maskAllInputs:true},respect_dnt:true});
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e.target.closest('a, button'):null;if(!a)return;var t=(a.textContent||'').trim().toLowerCase(),h=a.getAttribute('href')||'';if(t.includes('get pro')||h.includes('dashboard/billing')||(t.includes('pricing')&&(a.classList.contains('btn')||a.classList.contains('tb')||a.classList.contains('p')||a.classList.contains('cta')))){try{window.posthog&&window.posthog.capture('get_pro_clicked')}catch(err){}}},true);
+</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -93,13 +98,18 @@
 <section class="part" id="site" aria-labelledby="h-site">
  <div class="part-in doc">
   <span class="sheetno">Sheet 5 of 7 · This website</span>
-  <h2 id="h-site">No cookies, no ads, no tracking</h2>
+  <h2 id="h-site">How we understand website usage</h2>
+  <p>We use PostHog, an analytics service with servers in the US, to see how people use this website, the dashboard and the report pages we host: which pages they open, what they click, and where they stop. It's how we find out what's confusing.</p>
   <ul>
-   <li>No cookies for visitors, no ads, no tracking scripts, and no outside analytics service. The fonts are served from this site.</li>
-   <li>We count visits ourselves, as daily totals: which page was opened and which site sent you there (only its name, like "reddit.com"). We don't keep IP addresses or anything else that points to you.</li>
-   <li>If you ask to be notified when something opens, we keep your email (and the server link, if you give one) only to email you about it. We never share or sell it.</li>
-   <li>The site is hosted on GitHub Pages, and the domain and the hi@qamcp.dev mailbox run through Cloudflare. Like any host, they may keep basic technical logs to run and protect their services. We don't receive or use them.</li>
+   <li><b>No cookies.</b> A random visit ID is kept in your browser tab only until you close it, then it's gone. Nothing follows you from one visit to the next.</li>
+   <li><b>We don't use IP addresses.</b> Like any website service, PostHog sees your IP address when your browser talks to it. We never look at it or use it to find out who you are.</li>
+   <li><b>Recordings hide what you type.</b> On the dashboard and on report pages, recordings hide all text on the page too, so emails and server links are never seen.</li>
+   <li><b>No emails, keys or full server links</b> are ever sent to PostHog. When you test a server, only its host name is sent (like mcp.example.com).</li>
+   <li><b>The command-line tool sends nothing to PostHog or to us.</b> Reports it saves contain no scripts at all.</li>
   </ul>
+  <p>We also count visits ourselves, as daily totals: which page was opened and which site sent you there (only its name, like "reddit.com"). We don't keep IP addresses or anything else that points to you.</p>
+  <p>If you ask to be notified when something opens, we keep your email (and the server link, if you give one) only to email you about it. We never share or sell it.</p>
+  <p>The site is hosted on GitHub Pages, and the domain and the hi@qamcp.dev mailbox run through Cloudflare. Like any host, they may keep basic technical logs to run and protect their services. We don't receive or use them.</p>
  </div>
 </section>
 
@@ -157,7 +167,7 @@
  <a href="security.html">Security and data</a>
  <a href="privacy.html">Privacy and terms</a>
  <a href="contact.html">Contact</a>
- <span class="r">This site has no tracking.</span>
+ <span class="r">No cookies · <a href="privacy.html">Privacy</a></span>
 </footer>
 <script src="theme.js"></script>
 <script src="count.js"></script>

@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hidden instructions in MCP tool descriptions (tool poisoning), and how to check · QAmcp</title>
+<meta name="description" content="Tool poisoning hides instructions for your AI inside an MCP tool description. What it looks like, how to check a server for it, and what a word list can't catch.">
+<link rel="canonical" href="https://qamcp.dev/mcp-tool-poisoning.html">
+<meta property="og:type" content="article"><meta property="og:site_name" content="QAmcp"><meta property="og:title" content="Hidden instructions in MCP tool descriptions (tool poisoning)"><meta property="og:description" content="What tool poisoning looks like, how to check a server for it, and what a word list can't catch."><meta property="og:url" content="https://qamcp.dev/mcp-tool-poisoning.html"><meta name="twitter:card" content="summary">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231A1A1A'/%3E%3Crect x='7' y='7' width='18' height='18' rx='2' fill='none' stroke='%23B9838A' stroke-width='2.4'/%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('qamcp-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="stylesheet" href="site.css">
+<style>
+.faq{margin-top:clamp(22px,3vw,36px);border-top:1px solid var(--rule)}
+.faq details{border-bottom:1px solid var(--rule);padding:14px 0}
+.faq summary{cursor:pointer;font-weight:700;list-style-position:outside}
+.faq summary:focus-visible{outline:2px solid var(--rose);outline-offset:3px}
+.faq p{margin-top:8px;color:var(--soft);max-width:68ch}
+.part-in > .ex{margin-top:12px;padding:12px 14px;background:var(--ground);border:1px solid var(--rule);border-radius:8px;font:400 13.5px/1.6 var(--mono);color:var(--ink);overflow-wrap:anywhere;font-variant-ligatures:none}
+.page-head p.updated{margin-top:10px;font:400 13px var(--mono);color:var(--faint)}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"What is MCP tool poisoning?","acceptedAnswer":{"@type":"Answer","text":"Tool poisoning is hiding instructions for the AI inside an MCP tool's description. The AI reads descriptions to decide how to use a tool, so it may follow that text, while the person using it usually never sees it."}},
+{"@type":"Question","name":"How do I check an MCP server for hidden instructions?","acceptedAnswer":{"@type":"Answer","text":"Read every tool description in full, including input descriptions, or run npx qamcp-cli with the server link and --before-install, which checks them for known wordings and invisible characters without calling any tool."}},
+{"@type":"Question","name":"If a check finds nothing, is the server clean?","acceptedAnswer":{"@type":"Answer","text":"Not for certain. A check based on known wordings can miss a trick written in a new way. Finding nothing means none of the wordings it knows were there."}}
+]}</script>
+<script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}((p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r));var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_p4Wad2LVUW2yHEWsWXrCajwiM2XNK45coFjRNev4DoH9',{api_host:'https://us.i.posthog.com',persistence:'sessionStorage',person_profiles:'identified_only',capture_pageview:true,autocapture:true,session_recording:{maskAllInputs:true},respect_dnt:true});
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e.target.closest('a, button'):null;if(!a)return;var t=(a.textContent||'').trim().toLowerCase(),h=a.getAttribute('href')||'';if(t.includes('get pro')||h.includes('dashboard/billing')||(t.includes('pricing')&&(a.classList.contains('btn')||a.classList.contains('tb')||a.classList.contains('p')||a.classList.contains('cta')))){try{window.posthog&&window.posthog.capture('get_pro_clicked')}catch(err){}}},true);
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="sheet">
+ <div class="sheet-in">
+  <header class="top">
+   <a class="brand" href="./">QA<b>mcp</b></a>
+   <nav aria-label="Main"><a href="directory.html">Directory</a><a href="test.html">Test a server</a><a href="how-it-works.html">How it works</a><a href="safety.html">Safety</a><a href="ci.html">Run it in CI</a><a href="samples.html">Sample reports</a></nav>
+   <button class="theme" id="theme" type="button" style="margin-left:auto">Light</button>
+  </header>
+  <main id="main">
+   <div class="page-head">
+    <h1>Hidden instructions in MCP tool descriptions</h1>
+    <p>Every MCP tool has a description, written by whoever made the server. Your AI reads it to decide how to use the tool. So a description can carry instructions meant for your AI, and you would usually never see them. This is known as tool poisoning.</p>
+    <p class="updated">Last updated: 2 November 2026</p>
+    <nav class="toc" aria-label="On this page"><a href="#what">What it looks like</a><a href="#check">How to check</a><a href="#later">After you install</a><a href="#faq">Questions</a></nav>
+   </div>
+  </main>
+ </div>
+</div>
+
+<section class="part" id="what" aria-labelledby="h-what">
+ <div class="part-in">
+  <span class="sheetno">Sheet 2 of 4 · What it looks like</span>
+  <h2 id="h-what">What it looks like</h2>
+  <p class="intro">Here is a finding from our own test server, which is broken on purpose. You can run it yourself with <code>npx qamcp-cli --demo</code>.</p>
+  <div class="ex">✕ fetch_notes: Description contains hidden &lt;IMPORTANT&gt; block. This is a known trick to make AI do things the user didn't ask for.</div>
+  <p class="intro">The tool looks like an ordinary note reader, but its description tells the AI to read your SSH key. The apps people use often show only a tool's name or a short line, so the part aimed at the AI can stay out of sight.</p>
+  <p class="intro">In our October test of public servers, none of the wordings we look for turned up. That's good news, but it covers known wordings on the days we tested, so it's a reason to keep checking and not a reason to stop.</p>
+ </div>
+</section>
+
+<section class="part" id="check" aria-labelledby="h-check">
+ <div class="part-in">
+  <span class="sheetno">Sheet 3 of 4 · How to check</span>
+  <h2 id="h-check">How to check a server</h2>
+  <ol class="proc">
+   <li><b>Run a check before you install</b><span>This reads every description and calls none of the server's tools: <code>npx qamcp-cli &lt;server link&gt; --before-install</code>. Or look the server up in the <a href="directory.html">directory</a>.</span></li>
+   <li><b>Read the descriptions yourself</b><span>Include the descriptions of each input, since text can hide there too. Be wary of anything that talks to the AI and not about the tool: telling it to keep something from you, to ignore its rules, or to send a file somewhere.</span></li>
+   <li><b>Watch for invisible characters</b><span>Some characters don't show on screen but are still read by the AI, so text can look clean and not be.</span></li>
+  </ol>
+  <h2 style="margin-top:clamp(36px,5vw,56px);font-size:clamp(22px,2vw,28px)">What QAmcp looks for</h2>
+  <p class="intro">Known tricks such as "ignore previous instructions", <code>&lt;IMPORTANT&gt;</code> blocks, "don't tell the user", requests to send secrets like SSH keys or <code>.env</code> files, and invisible characters. Wider wordings that are often innocent are only flagged for a person to read, and never lower a score.</p>
+  <p class="intro"><b>What it can miss:</b> this is a list of known wordings, so a trick written in a new way can get past it. "None found" means none of the wordings we know were there. <a href="limits.html">What QAmcp can and can't see</a>.</p>
+ </div>
+</section>
+
+<section class="part" id="later" aria-labelledby="h-later">
+ <div class="part-in">
+  <span class="sheetno">Sheet 4 of 4 · After you install</span>
+  <h2 id="h-later">A description can change after you install</h2>
+  <p class="intro">A server you checked last month can change its descriptions today, and most apps just load the new ones. This is sometimes called a rug pull. Run the check again now and then: <code>npx qamcp-cli</code> shows exactly what changed since your last run.</p>
+  <h2 id="faq" style="margin-top:clamp(36px,5vw,56px);font-size:clamp(22px,2vw,28px)">Questions</h2>
+  <div class="faq">
+   <details><summary>What is MCP tool poisoning?</summary><p>Tool poisoning is hiding instructions for the AI inside an MCP tool's description. The AI reads descriptions to decide how to use a tool, so it may follow that text, while the person using it usually never sees it.</p></details>
+   <details><summary>How do I check an MCP server for hidden instructions?</summary><p>Read every tool description in full, including input descriptions, or run <code>npx qamcp-cli &lt;server link&gt; --before-install</code>, which checks them for known wordings and invisible characters without calling any tool.</p></details>
+   <details><summary>If a check finds nothing, is the server clean?</summary><p>Not for certain. A check based on known wordings can miss a trick written in a new way. Finding nothing means none of the wordings it knows were there.</p></details>
+  </div>
+  <p class="intro" style="margin-top:24px">Read next: <a href="is-my-mcp-server-safe.html">How to tell if an MCP server is safe</a> · <a href="mcp-prompt-injection.html">MCP prompt injection: what a test can and cannot find</a></p>
+ </div>
+</section>
+
+<footer>
+ <span>QAmcp · free and open source (MIT)</span>
+ <a href="./">Home</a>
+ <a href="directory.html">Directory</a>
+ <a href="https://github.com/QAmcp/qamcp-cli">GitHub</a>
+ <a href="how-to-test-mcp-server.html">How to test an MCP server</a>
+ <a href="limits.html">What it can't catch</a>
+ <a href="privacy.html">Privacy and terms</a>
+ <a href="contact.html">Contact</a>
+ <span class="r">No cookies · <a href="privacy.html">Privacy</a></span>
+</footer>
+<script src="theme.js"></script>
+<script src="count.js"></script>
+</body>
+</html>

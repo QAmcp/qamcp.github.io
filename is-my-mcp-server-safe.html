@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to tell if an MCP server is safe: 6 things to check · QAmcp</title>
+<meta name="description" content="No test can prove an MCP server is safe, but six checks tell you a lot before you install one: who made it, what it can change, hidden instructions, advisories, sign-in, and whether it changes later.">
+<link rel="canonical" href="https://qamcp.dev/is-my-mcp-server-safe.html">
+<meta property="og:type" content="article"><meta property="og:site_name" content="QAmcp"><meta property="og:title" content="How to tell if an MCP server is safe"><meta property="og:description" content="Six things to check before you install an MCP server, and what no test can tell you."><meta property="og:url" content="https://qamcp.dev/is-my-mcp-server-safe.html"><meta name="twitter:card" content="summary">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231A1A1A'/%3E%3Crect x='7' y='7' width='18' height='18' rx='2' fill='none' stroke='%23B9838A' stroke-width='2.4'/%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('qamcp-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="stylesheet" href="site.css">
+<style>
+.faq{margin-top:clamp(22px,3vw,36px);border-top:1px solid var(--rule)}
+.faq details{border-bottom:1px solid var(--rule);padding:14px 0}
+.faq summary{cursor:pointer;font-weight:700;list-style-position:outside}
+.faq summary:focus-visible{outline:2px solid var(--rose);outline-offset:3px}
+.faq p{margin-top:8px;color:var(--soft);max-width:68ch}
+.page-head p.updated{margin-top:10px;font:400 13px var(--mono);color:var(--faint)}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Can a test prove an MCP server is safe?","acceptedAnswer":{"@type":"Answer","text":"No. A test only sees what a server says and answers from the outside, on the day it ran. It can find real problems, but a clean result means none were found, not that there are none."}},
+{"@type":"Question","name":"How do I check an MCP server before installing it?","acceptedAnswer":{"@type":"Answer","text":"Run npx qamcp-cli with the server link and --before-install. It reads what the server says about itself, calls none of its tools, and lists which tools can delete, change or send things, and any hidden instructions it knows about."}},
+{"@type":"Question","name":"Are read-only labels trustworthy?","acceptedAnswer":{"@type":"Answer","text":"A label is the server's own word. Most are honest, but a server can label a tool read-only when it isn't. Treat labels as a useful hint and not as proof."}}
+]}</script>
+<script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}((p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r));var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_p4Wad2LVUW2yHEWsWXrCajwiM2XNK45coFjRNev4DoH9',{api_host:'https://us.i.posthog.com',persistence:'sessionStorage',person_profiles:'identified_only',capture_pageview:true,autocapture:true,session_recording:{maskAllInputs:true},respect_dnt:true});
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e.target.closest('a, button'):null;if(!a)return;var t=(a.textContent||'').trim().toLowerCase(),h=a.getAttribute('href')||'';if(t.includes('get pro')||h.includes('dashboard/billing')||(t.includes('pricing')&&(a.classList.contains('btn')||a.classList.contains('tb')||a.classList.contains('p')||a.classList.contains('cta')))){try{window.posthog&&window.posthog.capture('get_pro_clicked')}catch(err){}}},true);
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="sheet">
+ <div class="sheet-in">
+  <header class="top">
+   <a class="brand" href="./">QA<b>mcp</b></a>
+   <nav aria-label="Main"><a href="directory.html">Directory</a><a href="test.html">Test a server</a><a href="how-it-works.html">How it works</a><a href="safety.html">Safety</a><a href="ci.html">Run it in CI</a><a href="samples.html">Sample reports</a></nav>
+   <button class="theme" id="theme" type="button" style="margin-left:auto">Light</button>
+  </header>
+  <main id="main">
+   <div class="page-head">
+    <h1>How to tell if an MCP server is safe</h1>
+    <p>No test can prove an MCP server is safe. What you can do is find out who made it, what it can touch, and whether anything looks wrong, before you connect it to your AI. These six checks take a few minutes, and most of them are free to automate.</p>
+    <p class="updated">Last updated: 2 November 2026</p>
+    <nav class="toc" aria-label="On this page"><a href="#steps">The six checks</a><a href="#run">Check one now</a><a href="#limits">What no test can tell you</a><a href="#faq">Questions</a></nav>
+   </div>
+  </main>
+ </div>
+</div>
+
+<section class="part" id="steps" aria-labelledby="h-steps">
+ <div class="part-in">
+  <span class="sheetno">Sheet 2 of 4 · The six checks</span>
+  <h2 id="h-steps">Six things to check before you install one</h2>
+  <p class="intro">An MCP server gives your AI new abilities, and its text goes straight into what your AI reads. So it deserves the same look you would give any app you let near your files or accounts.</p>
+  <ol class="proc">
+   <li><b>Who made it, and where does it run?</b><span>A server from the company whose product it connects to is a different thing from a copy by a stranger with a similar name. Check the link and the code repository. Then check where it runs: a remote server sees what you send it, and a local one runs as a program on your computer with your permissions.</span></li>
+   <li><b>What can it change?</b><span>Count the tools that only read and the ones that can change, send or delete. Tools carry safety labels for this, such as <code>readOnlyHint</code> and <code>destructiveHint</code>. In our October test of 1,806 tools, 156 (9%) had no safety label at all. A label is the server's own word, so read the tool's name and description too.</span></li>
+   <li><b>Are there hidden instructions in its descriptions?</b><span>A tool description can carry text aimed at your AI and not at you. This is called tool poisoning. We explain it in <a href="mcp-tool-poisoning.html">hidden instructions in MCP tool descriptions</a>.</span></li>
+   <li><b>Are there published security advisories?</b><span>Look up the server's code in GitHub Security Advisories and OSV.dev. An advisory isn't a reason to walk away on its own: a project that publishes and fixes problems is doing the right thing. Check whether your version is fixed.</span></li>
+   <li><b>What does it ask you to sign in with?</b><span>Prefer a login that lets you limit what it can reach. Be careful with a server that wants a broad, long-lived key to an important account. Give it the smallest access that does the job.</span></li>
+   <li><b>Does it change after you install it?</b><span>A server can change its tools later, and a clean check last month says nothing about today. Check again now and then, especially after an update. <code>npx qamcp-cli</code> shows what changed since your last run.</span></li>
+  </ol>
+ </div>
+</section>
+
+<section class="part" id="run" aria-labelledby="h-run">
+ <div class="part-in">
+  <span class="sheetno">Sheet 3 of 4 · Check one now</span>
+  <h2 id="h-run">Check one now</h2>
+  <p class="intro">Look it up in the <a href="directory.html">directory</a> first. Each server has a page with its test results, safety labels, and any advisories we have reviewed. For example, see the pages for <a href="s/io-github-upstash-context7.html">Context7</a>, which needs no login, and <a href="s/com-notion-mcp.html">Notion</a>, which does, so only its outside could be checked.</p>
+  <ul class="facts">
+   <li><strong>Before you install, calling none of its tools</strong><code>npx qamcp-cli &lt;server link&gt; --before-install</code></li>
+   <li><strong>The full test in your browser, no install</strong><a href="test.html">Test a server</a></li>
+  </ul>
+  <h2 id="limits" style="margin-top:clamp(36px,5vw,56px);font-size:clamp(22px,2vw,28px)">What no test can tell you</h2>
+  <p class="intro">A test sees what a server says and answers from the outside, on the day it ran. It can't see what happens to your data behind the scenes, what a server does only for some people, or what it will do next month. So a good score means no problems were found, not that there are none. <a href="limits.html">What QAmcp can and can't see</a>.</p>
+ </div>
+</section>
+
+<section class="part" id="faq" aria-labelledby="h-faq">
+ <div class="part-in">
+  <span class="sheetno">Sheet 4 of 4 · Questions</span>
+  <h2 id="h-faq">Questions</h2>
+  <div class="faq">
+   <details><summary>Can a test prove an MCP server is safe?</summary><p>No. A test only sees what a server says and answers from the outside, on the day it ran. It can find real problems, but a clean result means none were found, not that there are none.</p></details>
+   <details><summary>How do I check an MCP server before installing it?</summary><p>Run <code>npx qamcp-cli &lt;server link&gt; --before-install</code>. It reads what the server says about itself, calls none of its tools, and lists which tools can delete, change or send things, and any hidden instructions it knows about.</p></details>
+   <details><summary>Are read-only labels trustworthy?</summary><p>A label is the server's own word. Most are honest, but a server can label a tool read-only when it isn't. Treat labels as a useful hint and not as proof.</p></details>
+  </div>
+  <p class="intro" style="margin-top:24px">Read next: <a href="mcp-tool-poisoning.html">Hidden instructions (tool poisoning)</a> · <a href="mcp-prompt-injection.html">MCP prompt injection: what a test can and cannot find</a></p>
+ </div>
+</section>
+
+<footer>
+ <span>QAmcp · free and open source (MIT)</span>
+ <a href="./">Home</a>
+ <a href="directory.html">Directory</a>
+ <a href="https://github.com/QAmcp/qamcp-cli">GitHub</a>
+ <a href="how-to-test-mcp-server.html">How to test an MCP server</a>
+ <a href="limits.html">What it can't catch</a>
+ <a href="privacy.html">Privacy and terms</a>
+ <a href="contact.html">Contact</a>
+ <span class="r">No cookies · <a href="privacy.html">Privacy</a></span>
+</footer>
+<script src="theme.js"></script>
+<script src="count.js"></script>
+</body>
+</html>

@@ -14,11 +14,13 @@
       try {
         const res = await fetch(API, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ email, server }) });
         const data = await res.json().catch(() => ({}));
-        if (!res.ok) throw new Error(data.error || 'Something went wrong. Please try again.');
+        if (!res.ok) { try { window.posthog?.capture('monitor_signup_failed'); } catch {} throw new Error(data.error || 'Something went wrong. Please try again.'); }
+        try { window.posthog?.capture('monitor_signup_submitted'); } catch {}
         form.hidden = true;
         msg.textContent = 'Check your email: click the link and monitoring starts.';
         msg.classList.add('ok');
       } catch (err) {
+        try { window.posthog?.capture('monitor_signup_failed'); } catch {}
         msg.textContent = err.message === 'Failed to fetch' ? 'Could not reach QAmcp. Please try again in a minute.' : err.message;
         btn.disabled = false;
       }
