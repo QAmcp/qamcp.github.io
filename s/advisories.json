@@ -273,5 +273,290 @@
    "GitHub Security Advisories"
   ],
   "items": []
+ },
+ "ad.apogee/apogee": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "agency.ottobot/licensed-house-painters": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": [
+   {
+    "id": "GHSA-2v5f-5r6w-p67r",
+    "summary": "OCI validator skips ownership check on upstream rate limits",
+    "severity": "low",
+    "published": "2026-05-12",
+    "url": "https://github.com/modelcontextprotocol/registry/security/advisories/GHSA-2v5f-5r6w-p67r"
+   },
+   {
+    "id": "GHSA-r48c-v28r-pf6v",
+    "summary": "Unauthenticated SSRF: HTTP namespace verification dials 6to4 / NAT64 / site-local IPv6 addresses, bypassing private-address allowlist",
+    "severity": "medium",
+    "published": "2026-05-04",
+    "url": "https://github.com/modelcontextprotocol/registry/security/advisories/GHSA-r48c-v28r-pf6v"
+   },
+   {
+    "id": "GHSA-rqv2-m695-f8j4",
+    "summary": "Stored XSS in catalogue UI via attribute-quote breakout in publisher-controlled `websiteUrl`",
+    "severity": "medium",
+    "published": "2026-05-04",
+    "url": "https://github.com/modelcontextprotocol/registry/security/advisories/GHSA-rqv2-m695-f8j4"
+   },
+   {
+    "id": "GHSA-v8vw-gw5j-w7m6",
+    "summary": "Open redirect via protocol-relative path in trailing-slash middleware",
+    "severity": "low",
+    "published": "2026-05-04",
+    "url": "https://github.com/modelcontextprotocol/registry/security/advisories/GHSA-v8vw-gw5j-w7m6"
+   },
+   {
+    "id": "GHSA-95c3-6vvw-4mrq",
+    "summary": "GitHub OIDC tokens replayable across registry deployments due to shared audience",
+    "severity": "low",
+    "published": "2026-05-04",
+    "url": "https://github.com/modelcontextprotocol/registry/security/advisories/GHSA-95c3-6vvw-4mrq"
+   }
+  ]
+ },
+ "ai.collager/ai-collage-maker": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.commercializer/commercializer": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.creatify/ad-agent": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.customdomain/mcp": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.deepledger/mcp": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.eachlabs/mcp": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.edgaze/edgaze": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.edgechat/edgepedia": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.ekwo/mcp": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "ai.everydaysecurity/context": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.evolink/mcp": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.flora/flora": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.flowlines/flowlines": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.fodda/mcp-server": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.foura/mcp": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "ai.genfeed/genfeed": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.getoneprofile/oneprofile": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.gighq/gighq": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.giljo/hq": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.glassflow/rius": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.gosummer/summer": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.gridzen/verification": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.grupr/grupr": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.heycactus/cactus": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.heyyumi/heyyumi": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.huddo/huddo": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "ai.hyperresearch/answers": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.in-parallel/in-parallel": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.inite/atlas": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.inite/directory": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.inite/inite": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.inite/inite-visibility": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "ai.inite/site-agents": {
+  "checked": "2026-11-04",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
  }
 }

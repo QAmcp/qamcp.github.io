@@ -5641,5 +5641,22 @@
  },
  "com.dmvtransit/transit": {
   "checked": "2026-11-03"
+ },
+ "ad.apogee/apogee": {
+  "url": "https://www.apogee.ad/en/pricing/",
+  "checked": "2026-11-04"
+ },
+ "ad.tide/mcp": {
+  "checked": "2026-11-04"
+ },
+ "agency.ottobot/licensed-house-painters": {
+  "checked": "2026-11-04"
+ },
+ "ai.agentasy/cronjob": {
+  "checked": "2026-11-04"
+ },
+ "ai.bidbetter/collector-car-values": {
+  "url": "https://bidbetter.ai/pricing",
+  "checked": "2026-11-04"
  }
 }
