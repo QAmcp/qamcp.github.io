@@ -797,5 +797,236 @@
    "OSV.dev"
   ],
   "items": []
+ },
+ "ai.familyofficeknowledgegraph/fo-kg": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.modelrunner/mcp": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.note1/mcp": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "ai.ontoloop/ontoloop": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.outlit/outlit": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.peakflo/spaces": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.plugmcp/directory": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "ai.povver/mcp-server": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.presentations/presentations-ai": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.pubfi/mcp": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.pullpush/pullpush-mcp": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "ai.qiyuanlabs/easyappointments": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.ravenmcp/raven-mcp": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "ai.recomma/recomma": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.rightcard/mcp": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "ai.ruthven/ruthven": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.saifs/assessment-intelligence": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.saifs/code-execution": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.saifs/collections-optimizer": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.saifs/customer-intelligence": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.saifs/demand-forecasting": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.saifs/learning-optimizer": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.saifs/mastery-pathing": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.saifs/optimization-solver": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.saifs/payment-reconciliation": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.saifs/process-control": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.saifs/procurement-and-supplier-selection": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.saifs/revenue-optimization": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.saifs/route-optimizer": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.saltapp/salt": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "ai.satohub/onchain-agents": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "ai.saypage/saypage": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
  }
 }
