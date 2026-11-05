@@ -1028,5 +1028,239 @@
    "GitHub Security Advisories"
   ],
   "items": []
+ },
+ "ai.easydeploy/easydeploy-ai-mcp": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.host0/host0": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.kivohub/pesquisa-de-leis": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.screenweaver/screenweaver": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.securelend/lender": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.securenow/securenow": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "ai.send4/mcp": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.sendinel/mcp-server": {
+  "checked": "2026-11-05",
+  "sources": [
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "ai.sendraven/mcp": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "ai.seomatic/seomatic": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.shipeasy/mcp": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "ai.shumi/mcp": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "ai.signal8/mcp": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "ai.sikaru/docs": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.simular/box": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.skryvo/mcp": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.skyelight/mcp": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "ai.snaphost/snaphost": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.specstream/specstream": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.spelunking/hub": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.sugra/api-mcp": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "ai.surfingdog/inbox": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.swarmnest/mcp": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.taasky/taasky": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.tensorfeed/mcp-server": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "ai.theskillvault/skills": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.tommos/tommos": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.topy/cto": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "ai.tuteliq/mcp": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "ai.userintuition/research": {
+  "checked": "2026-11-05",
+  "sources": [
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "ai.uxpilot/uxpilot": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.wakeshift/slackline": {
+  "checked": "2026-11-05",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
  }
 }
