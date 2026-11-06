@@ -1262,5 +1262,264 @@
    "GitHub Security Advisories"
   ],
   "items": []
+ },
+ "ai.ankra/docs": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.ankra/platform": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.hustlin/hustlin": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.ndaa/mcp": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.ohmybug/bughunter": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.provian/mcp": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.wakeshift/webhooks": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.walnutlink/walnutlink-a-share": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.wavespeed/mcp": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "ai.wiro/mcp": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "ai.withhuman/withhuman": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.yuanwu/aisub": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.adchat/meta-ads": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.ahook/ahook": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.aide/aide": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.ailiste/mcp": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.anakior/atlas-mind": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.apick/business": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.apick/convert": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.apiguru/amazon-data": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "app.cardlake/cardlake": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.cellarion/cellarion": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": [
+   {
+    "id": "GHSA-36mv-34rg-3x3r",
+    "summary": "Unverified pre-registered account keeps its password after the owner signs in with Google/OIDC (account pre-hijacking)",
+    "severity": "medium",
+    "published": "2026-10-29",
+    "url": "https://github.com/jagduvi1/Cellarion/security/advisories/GHSA-36mv-34rg-3x3r"
+   },
+   {
+    "id": "GHSA-972f-r74x-7mfx",
+    "summary": "Google sign-in has no CSRF protection (missing OAuth state) — login CSRF / account confusion",
+    "severity": "medium",
+    "published": "2026-09-08",
+    "url": "https://github.com/jagduvi1/Cellarion/security/advisories/GHSA-972f-r74x-7mfx"
+   }
+  ]
+ },
+ "app.cellarion/wine-registry": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": [
+   {
+    "id": "GHSA-36mv-34rg-3x3r",
+    "summary": "Unverified pre-registered account keeps its password after the owner signs in with Google/OIDC (account pre-hijacking)",
+    "severity": "medium",
+    "published": "2026-10-29",
+    "url": "https://github.com/jagduvi1/Cellarion/security/advisories/GHSA-36mv-34rg-3x3r"
+   },
+   {
+    "id": "GHSA-972f-r74x-7mfx",
+    "summary": "Google sign-in has no CSRF protection (missing OAuth state) — login CSRF / account confusion",
+    "severity": "medium",
+    "published": "2026-09-08",
+    "url": "https://github.com/jagduvi1/Cellarion/security/advisories/GHSA-972f-r74x-7mfx"
+   }
+  ]
+ },
+ "app.chartsy/chartsy": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.creatordb/mcp": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.creatorscompanion/creatorscompanion": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.desktopcommander/remote-desktop-commander": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.domainlab/domain-lab": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.engramo/mcp": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "app.everloot/knowledge": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.evlek/mcp-server": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.getarchboard/archboard": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
  }
 }
