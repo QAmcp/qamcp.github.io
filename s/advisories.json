@@ -1521,5 +1521,345 @@
    "GitHub Security Advisories"
   ],
   "items": []
+ },
+ "ai.graphlog/career": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.keenable/web-search": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "app.getautomata/automata": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.homotope/homotope": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.keeploop/keeploop": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.kumbaa/kumbaa": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.letx/letx": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.longbook/mcp": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "app.mcpharbor/mcp-harbor-search": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.mysouschef/sous-chef": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.netlify.acenes-of-sparta-the-dragon-slayer/epic-fantasy-101-booklist": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.ollav/ollav": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.omamo/omamo": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.postel/postel": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.quantcalc/retirement-engine": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.sallim/contract-compass": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.sallim/korea-realty": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.selis.mcp/pmo": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.singitai/singit": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.stashhh/stashhh": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.tabtree/tabtree": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "app.usefulwork/useful-work": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.vercel.quran-reels-tau/quran-reels-mcp": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.willitstick/will-it-stick": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.worldmonitor/mcp": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": [
+   {
+    "id": "GHSA-r2f7-78jx-q83x",
+    "summary": "32-bit framework hash collisions allow cross-user poisoning of shared AI-analysis caches",
+    "severity": "medium",
+    "published": "2026-10-17",
+    "url": "https://github.com/koala73/worldmonitor/security/advisories/GHSA-r2f7-78jx-q83x"
+   },
+   {
+    "id": "GHSA-jrxc-68ww-p4m4",
+    "summary": "WorldMonitor /docs/mcp facade forwards the caller's Authorization credential verbatim to the third-party Mintlify host",
+    "severity": "medium",
+    "published": "2026-10-17",
+    "url": "https://github.com/koala73/worldmonitor/security/advisories/GHSA-jrxc-68ww-p4m4"
+   },
+   {
+    "id": "GHSA-wf3p-9m55-6vm8",
+    "summary": "Unauthenticated Docker API access can redirect relay requests and disclose `RELAY_SHARED_SECRET`",
+    "severity": "high",
+    "published": "2026-10-17",
+    "url": "https://github.com/koala73/worldmonitor/security/advisories/GHSA-wf3p-9m55-6vm8"
+   },
+   {
+    "id": "GHSA-887j-p88r-qmm9",
+    "summary": "MCP-proxy SSRF via validation-vs-fetch DNS resolver disagreement (no socket pin) — ref #4674",
+    "severity": "medium",
+    "published": "2026-10-17",
+    "url": "https://github.com/koala73/worldmonitor/security/advisories/GHSA-887j-p88r-qmm9"
+   },
+   {
+    "id": "GHSA-8j6q-8cjh-c9r8",
+    "summary": "Entitlement check fails open to Pro access when the Convex /relay/entitlement backend is unreachable",
+    "severity": "low",
+    "published": "2026-10-08",
+    "url": "https://github.com/koala73/worldmonitor/security/advisories/GHSA-8j6q-8cjh-c9r8"
+   },
+   {
+    "id": "GHSA-rcgv-gv2h-87fp",
+    "summary": "Widget agent relay hourly rate limit can be bypassed with client IP headers",
+    "severity": "medium",
+    "published": "2026-10-08",
+    "url": "https://github.com/koala73/worldmonitor/security/advisories/GHSA-rcgv-gv2h-87fp"
+   },
+   {
+    "id": "GHSA-28jv-ccf2-w27h",
+    "summary": "Case-variant summary request can seed the tech cache with generic-prompt output",
+    "severity": "low",
+    "published": "2026-10-08",
+    "url": "https://github.com/koala73/worldmonitor/security/advisories/GHSA-28jv-ccf2-w27h"
+   },
+   {
+    "id": "GHSA-4wq2-wqrh-9x7v",
+    "summary": "Stock-news query hash collision can reuse another Pro caller's cached headlines",
+    "severity": "low",
+    "published": "2026-10-08",
+    "url": "https://github.com/koala73/worldmonitor/security/advisories/GHSA-4wq2-wqrh-9x7v"
+   },
+   {
+    "id": "GHSA-cgm2-fpj5-427h",
+    "summary": "Direct LLM daily quota refunded after provider dispatch in chat analyst",
+    "severity": "low",
+    "published": "2026-10-08",
+    "url": "https://github.com/koala73/worldmonitor/security/advisories/GHSA-cgm2-fpj5-427h"
+   },
+   {
+    "id": "GHSA-2fp6-mhpm-9gvh",
+    "summary": "Pro stock-analysis cache key collision returns another caller's analysis",
+    "severity": "medium",
+    "published": "2026-10-08",
+    "url": "https://github.com/koala73/worldmonitor/security/advisories/GHSA-2fp6-mhpm-9gvh"
+   },
+   {
+    "id": "GHSA-5j39-mmw6-cqw6",
+    "summary": "MCP SSE replay is not bound to the authenticated owner",
+    "severity": "medium",
+    "published": "2026-09-04",
+    "url": "https://github.com/koala73/worldmonitor/security/advisories/GHSA-5j39-mmw6-cqw6"
+   },
+   {
+    "id": "GHSA-9gp4-366w-pcq3",
+    "summary": "Weak (FNV-1a 52-bit) cache key in `buildSummaryCacheKey` allows unauthenticated poisoning of the shared summary/translation cache",
+    "severity": "medium",
+    "published": "2026-09-04",
+    "url": "https://github.com/koala73/worldmonitor/security/advisories/GHSA-9gp4-366w-pcq3"
+   },
+   {
+    "id": "GHSA-gxj5-54wh-7vgr",
+    "summary": "Browser sessions can poison shared temporal baselines",
+    "severity": "medium",
+    "published": "2026-09-04",
+    "url": "https://github.com/koala73/worldmonitor/security/advisories/GHSA-gxj5-54wh-7vgr"
+   },
+   {
+    "id": "GHSA-9m4c-824h-m4xw",
+    "summary": "Slack and Discord OAuth state consumption is non-atomic and fail-open",
+    "severity": "medium",
+    "published": "2026-08-01",
+    "url": "https://github.com/koala73/worldmonitor/security/advisories/GHSA-9m4c-824h-m4xw"
+   },
+   {
+    "id": "GHSA-cmj5-cfhr-w964",
+    "summary": "Generated API runtime validation is disabled",
+    "severity": "medium",
+    "published": "2026-08-01",
+    "url": "https://github.com/koala73/worldmonitor/security/advisories/GHSA-cmj5-cfhr-w964"
+   },
+   {
+    "id": "GHSA-5458-hq84-hcr5",
+    "summary": "Desktop trusted windows could read the full secret cache and local API token",
+    "severity": "high",
+    "published": "2026-07-24",
+    "url": "https://github.com/koala73/worldmonitor/security/advisories/GHSA-5458-hq84-hcr5"
+   },
+   {
+    "id": "GHSA-hcq5-jm84-2395",
+    "summary": "MCP daily cost-cap bypass: quota slot refunded after the tool already executed",
+    "severity": "medium",
+    "published": "2026-07-04",
+    "url": "https://github.com/koala73/worldmonitor/security/advisories/GHSA-hcq5-jm84-2395"
+   },
+   {
+    "id": "GHSA-f6gj-3v7v-j75q",
+    "summary": "OAuth refresh-token reuse not contained: no family revocation on detected reuse",
+    "severity": "low",
+    "published": "2026-07-04",
+    "url": "https://github.com/koala73/worldmonitor/security/advisories/GHSA-f6gj-3v7v-j75q"
+   },
+   {
+    "id": "GHSA-c267-988w-7pq7",
+    "summary": "Abuse-control / rate-limit bypass via spoofable cf-connecting-ip header",
+    "severity": "medium",
+    "published": "2026-07-04",
+    "url": "https://github.com/koala73/worldmonitor/security/advisories/GHSA-c267-988w-7pq7"
+   },
+   {
+    "id": "GHSA-2x6r-qq54-mmhr",
+    "summary": "Windows command injection in Tauri open_url IPC (cmd /c start) — user-assisted desktop RCE",
+    "severity": "high",
+    "published": "2026-07-04",
+    "url": "https://github.com/koala73/worldmonitor/security/advisories/GHSA-2x6r-qq54-mmhr"
+   },
+   {
+    "id": "GHSA-r649-4cqj-w93h",
+    "summary": "Unauthenticated cross-tenant read of all users' alert rules via public Convex query getByEnabled",
+    "severity": "high",
+    "published": "2026-07-04",
+    "url": "https://github.com/koala73/worldmonitor/security/advisories/GHSA-r649-4cqj-w93h"
+   }
+  ]
+ },
+ "app.worthbase/worthbase": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "au.com.alpineai/factstamp": {
+  "checked": "2026-11-06",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
  }
 }

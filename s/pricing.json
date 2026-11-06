@@ -6757,5 +6757,170 @@
  "com.getparceldata/parcels": {
   "url": "https://getparceldata.com/pricing",
   "checked": "2026-11-06"
+ },
+ "ai.anam/anam": {
+  "url": "https://anam.ai/pricing",
+  "checked": "2026-11-06"
+ },
+ "ai.artifactry/artifactry": {
+  "checked": "2026-11-06"
+ },
+ "ai.boltclaw/boltclaw": {
+  "url": "https://boltclaw.ai/pricing",
+  "checked": "2026-11-06"
+ },
+ "ai.flavo/flavo": {
+  "url": "https://flavo.ai/pricing",
+  "checked": "2026-11-06"
+ },
+ "ai.fotogenic/mcp": {
+  "url": "https://fotogenic.ai/pricing",
+  "checked": "2026-11-06"
+ },
+ "ai.graphlog/career": {
+  "url": "https://graphlog.ai/pricing",
+  "checked": "2026-11-06"
+ },
+ "ai.hashgrid/dna": {
+  "checked": "2026-11-06"
+ },
+ "ai.keenable/web-search": {
+  "checked": "2026-11-06"
+ },
+ "ai.loadoptimizer/loadoptimizer": {
+  "url": "https://www.loadoptimizer.ai/pricing/",
+  "checked": "2026-11-06"
+ },
+ "ai.near.market/agent-market": {
+  "checked": "2026-11-06"
+ },
+ "ai.rindee/rindee": {
+  "checked": "2026-11-06"
+ },
+ "ai.rollingedition/books": {
+  "checked": "2026-11-06"
+ },
+ "ai.tulina/tulina": {
+  "url": "https://tulina.ai/pricing",
+  "checked": "2026-11-06"
+ },
+ "ai.usedby/usedby": {
+  "checked": "2026-11-06"
+ },
+ "app.bryti/bryti": {
+  "url": "https://bryti.app/pricing",
+  "checked": "2026-11-06"
+ },
+ "app.clubpal/clubpal": {
+  "checked": "2026-11-06"
+ },
+ "app.ilkal/boards": {
+  "checked": "2026-11-06"
+ },
+ "app.morphing/build": {
+  "checked": "2026-11-06"
+ },
+ "app.officely/officely": {
+  "checked": "2026-11-06"
+ },
+ "app.roomlab/roomlab": {
+  "url": "https://roomlab.app/en/select-plan",
+  "checked": "2026-11-06"
+ },
+ "app.thresholdlink/thresholdlink": {
+  "checked": "2026-11-06"
+ },
+ "app.xcout/intel": {
+  "url": "https://intel.xcout.app/pricing",
+  "checked": "2026-11-06"
+ },
+ "bot.okapi/okapi": {
+  "checked": "2026-11-06"
+ },
+ "ch.zzd/mcp": {
+  "checked": "2026-11-06"
+ },
+ "cloud.amore.accounting/fortnox": {
+  "checked": "2026-11-06"
+ },
+ "cloud.amore.byra/fortnox": {
+  "checked": "2026-11-06"
+ },
+ "cloud.imado/mail": {
+  "url": "https://www.imado.cloud/pricing",
+  "checked": "2026-11-06"
+ },
+ "com.163yu/hetianyu": {
+  "checked": "2026-11-06"
+ },
+ "com.aistrail/ais": {
+  "checked": "2026-11-06"
+ },
+ "com.automateandtweak/ai-tools": {
+  "url": "https://automateandtweak.com/pricing/",
+  "checked": "2026-11-06"
+ },
+ "com.avahr/avahr": {
+  "checked": "2026-11-06"
+ },
+ "com.boatwakr/boatwakr": {
+  "checked": "2026-11-06"
+ },
+ "com.carbonmeld/carbonmeld": {
+  "checked": "2026-11-06"
+ },
+ "com.casso-websites/casso": {
+  "url": "https://casso-websites.com/pricing",
+  "checked": "2026-11-06"
+ },
+ "com.chef-bear/chefbear": {
+  "checked": "2026-11-06"
+ },
+ "com.chislata/chislata": {
+  "checked": "2026-11-06"
+ },
+ "com.clawhard/tick": {
+  "checked": "2026-11-06"
+ },
+ "com.creatorsxbrands/cxb": {
+  "checked": "2026-11-06"
+ },
+ "com.cueston/cueston": {
+  "url": "https://cueston.com/pricing",
+  "checked": "2026-11-06"
+ },
+ "com.cyberredd/cyberredd": {
+  "checked": "2026-11-06"
+ },
+ "com.daggydata/mcp": {
+  "url": "https://www.daggydata.com/pricing",
+  "checked": "2026-11-06"
+ },
+ "com.daisycon.mcp/daisycon": {
+  "checked": "2026-11-06"
+ },
+ "com.delilahusa/legislation": {
+  "checked": "2026-11-06"
+ },
+ "com.digitalocean/mcp": {
+  "url": "https://www.digitalocean.com/pricing",
+  "checked": "2026-11-06"
+ },
+ "com.dontmynd/planner": {
+  "checked": "2026-11-06"
+ },
+ "com.dumbstruck/dumbstruck": {
+  "checked": "2026-11-06"
+ },
+ "com.emberfeed/emberfeed": {
+  "checked": "2026-11-06"
+ },
+ "com.eventdorm/eventdorm": {
+  "url": "https://www.eventdorm.com/pricing",
+  "checked": "2026-11-06"
+ },
+ "com.feedsquad/feedsquad": {
+  "url": "https://feedsquad.com/pricing",
+  "checked": "2026-11-06"
  }
 }

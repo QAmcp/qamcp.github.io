@@ -544,5 +544,14 @@
  "com.aideprecations/ai-deprecations": "2026-11-06",
  "com.authichain/authichain": "2026-11-06",
  "com.briefbash/mcp": "2026-11-06",
- "com.esqcopilot/matching-engine": "2026-11-06"
+ "com.esqcopilot/matching-engine": "2026-11-06",
+ "ai.keenable/web-search": "2026-11-06",
+ "app.ilkal/boards": "2026-11-06",
+ "app.morphing/build": "2026-11-06",
+ "ch.zzd/mcp": "2026-11-06",
+ "com.avahr/avahr": "2026-11-06",
+ "com.cyberredd/cyberredd": "2026-11-06",
+ "com.daisycon.mcp/daisycon": "2026-11-06",
+ "com.digitalocean/mcp": "2026-11-06",
+ "com.dumbstruck/dumbstruck": "2026-11-06"
 }
