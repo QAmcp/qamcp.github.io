@@ -1861,5 +1861,184 @@
    "GitHub Security Advisories"
   ],
   "items": []
+ },
+ "ai.litescribe/litescribe": {
+  "checked": "2026-11-07",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.withby/withby": {
+  "checked": "2026-11-07",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.goldenratio/mcp": {
+  "checked": "2026-11-07",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "bg.imotai/imotai": {
+  "checked": "2026-11-07",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "bi.suno/music-video-generator": {
+  "checked": "2026-11-07",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "biz.killmyidea/killmyidea": {
+  "checked": "2026-11-07",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "br.com.asttec/negocios-de-bairro": {
+  "checked": "2026-11-07",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "br.eng.nexocausal/pericia": {
+  "checked": "2026-11-07",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "build.swapi/star-wars": {
+  "checked": "2026-11-07",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ca.ohey/ohey": {
+  "checked": "2026-11-07",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ca.ohey/research": {
+  "checked": "2026-11-07",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "cash.blackpool/blackpool": {
+  "checked": "2026-11-07",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "cc.hrva/url-shortener": {
+  "checked": "2026-11-07",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "cc.kadal/store": {
+  "checked": "2026-11-07",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "ch.antevo/mandates": {
+  "checked": "2026-11-07",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ch.antevo/tremor-watch": {
+  "checked": "2026-11-07",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ch.getsharepa/sharepa": {
+  "checked": "2026-11-07",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ch.overpass/overpass": {
+  "checked": "2026-11-07",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "chat.airys/mcp": {
+  "checked": "2026-11-07",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "chat.ouragents/ouragents-chat": {
+  "checked": "2026-11-07",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "cloud.cahut/cahut": {
+  "checked": "2026-11-07",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "cloud.cahut/my-cahut": {
+  "checked": "2026-11-07",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "cloud.cloudhpc/mcp": {
+  "checked": "2026-11-07",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "cloud.dchub/mcp-server": {
+  "checked": "2026-11-07",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "cloud.postdata/postdata": {
+  "checked": "2026-11-07",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
  }
 }
