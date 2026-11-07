@@ -7152,5 +7152,259 @@
  "io.github.arcmira/arcmira": {
   "url": "https://arcmira.com/pricing",
   "checked": "2026-11-07"
+ },
+ "ai.anywhereintelligence/switchboard": {
+  "checked": "2026-11-07"
+ },
+ "ai.campaignpack/campaignpack": {
+  "checked": "2026-11-07"
+ },
+ "ai.go-rocket/go-rocket": {
+  "checked": "2026-11-07"
+ },
+ "ai.grepped/marketplace": {
+  "checked": "2026-11-07"
+ },
+ "ai.guestlogic/hotel-pms": {
+  "url": "https://guestlogic.ai/pricing",
+  "checked": "2026-11-07"
+ },
+ "ai.hi-doctor/hi-doctor": {
+  "url": "https://hi-doctor.ai/pricing",
+  "checked": "2026-11-07"
+ },
+ "ai.hiddencontent/mcp": {
+  "url": "https://hiddencontent.ai/pricing/",
+  "checked": "2026-11-07"
+ },
+ "ai.llpro.agentrecord/agent-record": {
+  "checked": "2026-11-07"
+ },
+ "ai.llpro.countersign/countersign": {
+  "checked": "2026-11-07"
+ },
+ "ai.llpro.gt/ground-truth-worldwide": {
+  "checked": "2026-11-07"
+ },
+ "ai.menthink/hub": {
+  "checked": "2026-11-07"
+ },
+ "ai.reel-e/reel-e": {
+  "url": "https://www.reel-e.ai/pricing",
+  "checked": "2026-11-07"
+ },
+ "ai.sosumi/sosumi": {
+  "checked": "2026-11-07"
+ },
+ "ai.varly/varly": {
+  "url": "https://varly.ai/pricing",
+  "checked": "2026-11-07"
+ },
+ "ai.xfix/xfix": {
+  "url": "https://xfix.ai/pricing/",
+  "checked": "2026-11-07"
+ },
+ "app.bioreport/bioreport": {
+  "checked": "2026-11-07"
+ },
+ "app.cashpan/cashpan": {
+  "checked": "2026-11-07"
+ },
+ "app.docpin/docpin": {
+  "checked": "2026-11-07"
+ },
+ "app.jumponthetrend/jumponthetrend": {
+  "checked": "2026-11-07"
+ },
+ "app.nenpi/nenpi": {
+  "checked": "2026-11-07"
+ },
+ "app.pilot0/pilotcontrol": {
+  "checked": "2026-11-07"
+ },
+ "app.theagentcy/theagentcy": {
+  "checked": "2026-11-07"
+ },
+ "app.vercel.watchesinstock-mcp/watches-in-stock": {
+  "checked": "2026-11-07"
+ },
+ "app.wordofagent/wordofagent": {
+  "checked": "2026-11-07"
+ },
+ "build.gearlist/gearlist": {
+  "checked": "2026-11-07"
+ },
+ "com.acprompt/acprompt": {
+  "checked": "2026-11-07"
+ },
+ "com.aiseotracker/mcp": {
+  "checked": "2026-11-07"
+ },
+ "com.argorant/argorant": {
+  "url": "https://argorant.com/pricing",
+  "checked": "2026-11-07"
+ },
+ "com.b2bprofileapi/mcp-server": {
+  "url": "https://b2bprofileapi.com/pricing",
+  "checked": "2026-11-07"
+ },
+ "com.brainonbnb/bnb-chain-fix-board": {
+  "checked": "2026-11-07"
+ },
+ "com.brainonbnb/erc8004-agent-finder": {
+  "checked": "2026-11-07"
+ },
+ "com.brainonbnb/pancakeswap-lp-route": {
+  "checked": "2026-11-07"
+ },
+ "com.camclo3d/camclo": {
+  "url": "https://camclo3d.com/pricing",
+  "checked": "2026-11-07"
+ },
+ "com.contextmemo/mcp": {
+  "checked": "2026-11-07"
+ },
+ "com.cultmath/decision-briefs": {
+  "checked": "2026-11-07"
+ },
+ "com.danielsdesignstudio/mirror-ai-citability": {
+  "checked": "2026-11-07"
+ },
+ "com.dineroenlamesa/perp-dex-costs": {
+  "checked": "2026-11-07"
+ },
+ "com.dmayachting/esther": {
+  "url": "https://dmayachting.com/charter-yacht/priceless-62-ft-azimut/",
+  "checked": "2026-11-07"
+ },
+ "com.duoleads.api/data-utilities": {
+  "checked": "2026-11-07"
+ },
+ "com.duoleads.derivs/perp-funding-rates-open-interest": {
+  "checked": "2026-11-07"
+ },
+ "com.duoleads.keywords/keyword-search-volume-google-trends": {
+  "checked": "2026-11-07"
+ },
+ "com.duoleads.social/social-media-data": {
+  "checked": "2026-11-07"
+ },
+ "com.eancheck/barcode-tools": {
+  "checked": "2026-11-07"
+ },
+ "com.expressnumber/mcp": {
+  "url": "https://expressnumber.com/pricing",
+  "checked": "2026-11-07"
+ },
+ "com.fact-dock/factdock": {
+  "checked": "2026-11-07"
+ },
+ "com.feedhipppo/mcp": {
+  "checked": "2026-11-07"
+ },
+ "com.fekrestan/public": {
+  "checked": "2026-11-07"
+ },
+ "com.fezola.app/fezola": {
+  "url": "https://app.fezola.com/en/pricing",
+  "checked": "2026-11-07"
+ },
+ "com.fixmyscan/fixmyscan": {
+  "url": "https://fixmyscan.com/pricing",
+  "checked": "2026-11-07"
+ },
+ "com.forumdataapi/mcp-server": {
+  "url": "https://forumdataapi.com/pricing",
+  "checked": "2026-11-07"
+ },
+ "com.funooy/krillion": {
+  "url": "https://funooy.com/pricing",
+  "checked": "2026-11-07"
+ },
+ "com.garideal/precios": {
+  "checked": "2026-11-07"
+ },
+ "com.genppt/mcp": {
+  "url": "https://genppt.com/pricing",
+  "checked": "2026-11-07"
+ },
+ "com.get4agent/market": {
+  "url": "https://get4agent.com/pricing",
+  "checked": "2026-11-07"
+ },
+ "com.get4agent/marketplace": {
+  "url": "https://get4agent.com/pricing",
+  "checked": "2026-11-07"
+ },
+ "com.getflowdesign/offsite-seminar-designer": {
+  "checked": "2026-11-07"
+ },
+ "com.getkanal/kanal": {
+  "url": "https://getkanal.com/pricing",
+  "checked": "2026-11-07"
+ },
+ "com.getloot/mcp": {
+  "checked": "2026-11-07"
+ },
+ "com.grafizum/grafizum-command-center": {
+  "url": "https://grafizum.com/pricing",
+  "checked": "2026-11-07"
+ },
+ "com.growsurf/growsurf": {
+  "checked": "2026-11-07"
+ },
+ "com.growvib/growvib": {
+  "checked": "2026-11-07"
+ },
+ "com.gscmagic/gsc-magic": {
+  "url": "https://gscmagic.com/pricing",
+  "checked": "2026-11-07"
+ },
+ "com.haechy/haechy": {
+  "url": "https://haechy.com/pricing",
+  "checked": "2026-11-07"
+ },
+ "com.helpfulmods/catalog": {
+  "checked": "2026-11-07"
+ },
+ "com.heyarchetype/archetype": {
+  "checked": "2026-11-07"
+ },
+ "com.holdingsintel/mcp": {
+  "url": "https://www.holdingsintel.com/pricing",
+  "checked": "2026-11-07"
+ },
+ "com.holydb/holydb-mcp": {
+  "checked": "2026-11-07"
+ },
+ "com.hostamir/account": {
+  "checked": "2026-11-07"
+ },
+ "com.hostamir/hosting": {
+  "checked": "2026-11-07"
+ },
+ "com.hotyata/mcp": {
+  "checked": "2026-11-07"
+ },
+ "com.hoursaved/hoursaved": {
+  "checked": "2026-11-07"
+ },
+ "com.howtomakemoneyonsnapchat/creator-monetization": {
+  "checked": "2026-11-07"
+ },
+ "com.huntautogroup.texas/data": {
+  "url": "https://texas.huntautogroup.com/pricing/",
+  "checked": "2026-11-07"
+ },
+ "com.huntautogroup.texas/docs": {
+  "url": "https://texas.huntautogroup.com/pricing/",
+  "checked": "2026-11-07"
+ },
+ "com.ibluetext/ibluetext": {
+  "url": "https://ibluetext.com/pricing",
+  "checked": "2026-11-07"
+ },
+ "com.iisrescue/iis-rescue": {
+  "checked": "2026-11-07"
  }
 }

@@ -2040,5 +2040,171 @@
    "GitHub Security Advisories"
   ],
   "items": []
+ },
+ "ai.campaignpack/campaignpack": {
+  "checked": "2026-11-07",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.hiddencontent/mcp": {
+  "checked": "2026-11-07",
+  "sources": [
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "ai.sosumi/sosumi": {
+  "checked": "2026-11-07",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.theagentcy/theagentcy": {
+  "checked": "2026-11-07",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "build.gearlist/gearlist": {
+  "checked": "2026-11-07",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "cloud.tatnet/mcp": {
+  "checked": "2026-11-07",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "cloud.xiximm/feeling-search": {
+  "checked": "2026-11-07",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "co.ainumbers/tools": {
+  "checked": "2026-11-07",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "co.bibigpt/youtube-video-summarizer": {
+  "checked": "2026-11-07",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "co.churnkey/churnkey": {
+  "checked": "2026-11-07",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "co.crevio/crevio": {
+  "checked": "2026-11-07",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "co.fictura/mcp": {
+  "checked": "2026-11-07",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "co.hirelayer/hirelayer": {
+  "checked": "2026-11-07",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "co.logbrew/mcp": {
+  "checked": "2026-11-07",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "co.lumman/calendar": {
+  "checked": "2026-11-07",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "co.lumman/mail": {
+  "checked": "2026-11-07",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "co.nameclick/nameclick": {
+  "checked": "2026-11-07",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "co.policyforge/mcp": {
+  "checked": "2026-11-07",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "co.productaura/productaura": {
+  "checked": "2026-11-07",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "co.promptguard/security": {
+  "checked": "2026-11-07",
+  "sources": [
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "co.prosignature/email-signatures": {
+  "checked": "2026-11-07",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "co.rocketreach/mcp": {
+  "checked": "2026-11-07",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "co.screenforge/director": {
+  "checked": "2026-11-07",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
  }
 }
