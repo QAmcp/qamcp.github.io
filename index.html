@@ -259,6 +259,8 @@ header.top nav a{white-space:nowrap}
 a.mon{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:22px;padding:15px 20px;background:var(--rose);color:var(--on-rose);font:700 15px/1 var(--text);text-decoration:none;transition:background .2s}a.mon:hover{background:var(--ink)}a.mon:focus-visible{outline:2px solid var(--rose);outline-offset:3px}
 .or-test{margin:18px 0 0;color:var(--soft)}
 .tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:clamp(28px,4vw,48px)}
+.proof{margin:10px 0 0;font-size:14px;line-height:1.45;color:var(--soft)}.proof a{color:var(--ink)}
+.kq{margin:clamp(28px,4vw,44px) 0 0;padding:18px 22px;border-left:3px solid var(--rose);background:var(--sheet)}.kq p{margin:0;font-size:16px;line-height:1.6;color:var(--ink);max-width:80ch}.kq footer{margin-top:10px;font-size:14px;color:var(--soft)}
 .tier{display:flex;flex-direction:column;padding:20px;border:1px solid var(--frame);background:var(--sheet)}
 .tier.pro{border-color:var(--rose)}
 .tier .tn{font:700 15px/1.2 var(--text);color:var(--ink)}.tier .tn span{margin-left:6px;font:400 12.5px var(--mono);color:var(--rose)}
@@ -331,6 +333,7 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
     <h1 id="t">Know when your MCP server breaks, before your users do.</h1>
     <p class="lede">We test it the way an AI app uses it, and email you when it goes down or a tool changes. Free for 1 server.</p>
     <a class="mon" href="monitor.html?from=home#notify">Start monitoring free →</a>
+    <p class="proof">"Our public tool list dropped from about 308 KB to 8.5 KB." <a href="#proof">Kevin Brown, Cloud World Model</a></p>
     <p class="or-test">Or test one now, free:</p>
     <div class="run">
      <span class="k-run">Paste your server link · nothing to install</span>
@@ -462,6 +465,7 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
     <figcaption>Example alert · <span>Open the report</span></figcaption>
    </figure>
   </div>
+  <blockquote class="kq" id="proof"><p>"Thanks for the QAmcp report. It was genuinely useful, and we acted on it right away. Our public tool list dropped from about 308 KB to 8.5 KB. Before shipping, we ran 110 agent runs across 55 baseline/candidate pairs: every run succeeded, with no invalid-argument errors, and the new tool list used 48–94% fewer measured context bytes per run."</p><footer>Kevin Brown, Cloud World Model</footer></blockquote>
   <div class="tiers" id="pricing" aria-label="Pricing">
    <div class="tier">
     <p class="tn">Free</p><p class="tp">$0</p>
