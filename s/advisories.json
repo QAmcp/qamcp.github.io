@@ -2452,5 +2452,103 @@
    "OSV.dev"
   ],
   "items": []
+ },
+ "ai.ciphyr.agentmart/agentmart": {
+  "checked": "2026-11-08",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.stealads/stealads": {
+  "checked": "2026-11-08",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ca.criticalpathpartners/primavera-p6-forensic-scheduling": {
+  "checked": "2026-11-08",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "com.1102tools/federal-register-mcp": {
+  "checked": "2026-11-08",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "com.1102tools/gsa-calc-mcp": {
+  "checked": "2026-11-08",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "com.1102tools/gsa-perdiem-mcp": {
+  "checked": "2026-11-08",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "com.1102tools/regulations-gov-mcp": {
+  "checked": "2026-11-08",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "com.1102tools/sam-gov-mcp": {
+  "checked": "2026-11-08",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "com.1102tools/usaspending-gov-mcp": {
+  "checked": "2026-11-08",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "com.1toolring/mcp": {
+  "checked": "2026-11-08",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "com.3dneweraai/newera": {
+  "checked": "2026-11-08",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "com.3lgrouptechnology/3lt-letter-mail": {
+  "checked": "2026-11-08",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "com.86hc/hongkong-company": {
+  "checked": "2026-11-08",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
  }
 }

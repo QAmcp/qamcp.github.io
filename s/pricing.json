@@ -7803,5 +7803,441 @@
  },
  "com.relinta/mcp": {
   "checked": "2026-11-08"
+ },
+ "academy.serviceengineer/se-ai": {
+  "checked": "2026-11-08"
+ },
+ "ai.cognitolabs/cognitolabs": {
+  "checked": "2026-11-08"
+ },
+ "ai.humansfix/humansfix": {
+  "checked": "2026-11-08"
+ },
+ "ai.mempipe/mempipe": {
+  "url": "https://www.mempipe.ai/pricing/",
+  "checked": "2026-11-08"
+ },
+ "ai.monity/monity": {
+  "url": "https://monity.ai/pricing/",
+  "checked": "2026-11-08"
+ },
+ "ai.rankspot/seo": {
+  "url": "https://www.rankspot.ai/pricing",
+  "checked": "2026-11-08"
+ },
+ "ai.render/presentations": {
+  "url": "https://render.ai/pricing",
+  "checked": "2026-11-08"
+ },
+ "ai.scopera/scopera": {
+  "checked": "2026-11-08"
+ },
+ "ai.stablenews/news": {
+  "checked": "2026-11-08"
+ },
+ "ai.stealads/stealads": {
+  "url": "https://stealads.ai/pricing",
+  "checked": "2026-11-08"
+ },
+ "ai.sternly/verify": {
+  "checked": "2026-11-08"
+ },
+ "ai.tauric/tauric": {
+  "checked": "2026-11-08"
+ },
+ "ai.vavio/hermes": {
+  "url": "https://vavio.ai/pricing",
+  "checked": "2026-11-08"
+ },
+ "app.awsel/daftra": {
+  "checked": "2026-11-08"
+ },
+ "app.awsel/qoyod": {
+  "checked": "2026-11-08"
+ },
+ "app.awsel/wafeq": {
+  "checked": "2026-11-08"
+ },
+ "app.magnt/magnt": {
+  "url": "https://magnt.app/pricing",
+  "checked": "2026-11-08"
+ },
+ "app.pinmade/pinmade": {
+  "checked": "2026-11-08"
+ },
+ "app.pofa/pofa": {
+  "checked": "2026-11-08"
+ },
+ "app.reelist/reelist": {
+  "checked": "2026-11-08"
+ },
+ "br.com.azpay/monetize": {
+  "checked": "2026-11-08"
+ },
+ "ca.criticalpathpartners/primavera-p6-forensic-scheduling": {
+  "url": "https://criticalpathpartners.ca/pricing.html",
+  "checked": "2026-11-08"
+ },
+ "cn.aigoes/software-toolbox": {
+  "checked": "2026-11-08"
+ },
+ "cn.moltbook/moltcn": {
+  "checked": "2026-11-08"
+ },
+ "co.geotok/trips": {
+  "checked": "2026-11-08"
+ },
+ "com.360dialog/mcp": {
+  "url": "https://www.360dialog.com/pricing",
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/a2awire": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/agent-inbox": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/agent-rooms": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/agent-spend-guard": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-accept-1102-reclaim-342a471e": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-accept-1102-shortfall-342a471e": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-access-change-request-recertify-2026-09-15-b578285f": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-access-request-review-2026-09-10-81479355": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-accurate-financial-record-reconcile-2026-09-22-af293a80": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-ap-exception-review-2026-09-10-ad46e3f1": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-ap-exception-review-2026-09-10-run-037bea": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-ap-exception-review-2026-09-10-run-13e274": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-application-audit-2026-10-01-6e0ad047": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-application-review-2026-09-15-4229ca88": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-authorization-review-2026-09-16-2bd7f518": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-bench-eval-1102-cat-sent-3ea7e7ea": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-campaign-incrementality-audit-v1": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-catch-the-overpayment-v1": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-charge-3pl-invoice-audit-2026-09-10-749db5bd": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-claim-review-2026-09-10-4cd7d405": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-coded-claim-audit-2026-09-14-a7b04acd": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-coded-claim-review-2026-09-14-eed490ea": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-commission-statement-review-2026-09-17-f8485f73": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-custom-entry-review-2026-09-17-2eef943e": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-cw-capitals-1108-a17627f5": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-data-record-audit-2026-09-19-ec80e494": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-data-record-triage-2026-10-12-8effd564": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-document-review-2026-10-02-6e5a2dd9": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-freight-bill-audit-2026-09-14-4aaa7ae2": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-freight-bill-reconcile-2026-09-15-24f53095": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-freight-bill-review-2026-09-14-6c5a409b": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-freight-bill-screen-2026-09-24-8d42472e": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-freight-bill-validate-2026-09-17-5c17ece8": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-grant-report-review-2026-09-17-9189341d": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-inventory-ledger-reconciliation-v1": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-invoice-reconcile-2026-09-23-9888f269": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-invoice-total-extraction-koda-24cece89": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-launch-recurring-bill-audit-2026-09-16-ebc0f6a3": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-launch-recurring-bill-reconcile-2026-09-17-c9c2481b": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-loan-application-review-2026-09-11-61b5d8c8": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-medical-record-review-2026-09-21-dd8c58b7": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-moderation-case-review-2026-09-19-ba3b90e4": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-onboarding-document-review-2026-09-18-38029b5d": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-pr1002r2-prize-createblock": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-pr1002r2-prize-main": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-pr1002r2-rest-prize": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-predict-the-news": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-production-schedule-optimizer-v1": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-r3-qa033-shortfall-1103": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-r4-qa035-fresh-1103": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-r5-qa033-shortfall-1103": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-record-audit-2026-09-21-16725bbb": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-record-review-2026-09-24-4f9382bf": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-refund-request-audit-2026-09-10-2b20046e": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-report-audit-2026-09-21-b9e5e630": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-report-review-2026-09-23-f72b2bd5": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-requisition-audit-2026-09-11-98e58b8b": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-resume-audit-2026-10-02-66514bc8": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-resume-review-2026-09-19-7185eb28": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-resume-screen-2026-09-18-fcdc3b8f": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-return-review-2026-09-11-fb3b8adc": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-support-action-gate-v1": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-support-agent-trials": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-support-agent-trials-hard": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-ticket-triage-2026-09-15-64b68b3e": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-timesheet-audit-2026-09-15-301c061b": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-transcript-audit-2026-09-19-4f00a8c9": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-vendor-clearance-audit-v1": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/benchmark-warranty-claim-review-2026-09-16-42175383": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/data-agent-tool-release-tech-announcement-tracker": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/data-ai-app-demo-huggingface-spaces-discovery": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/data-ai-news-ai-industry-news-ml": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/data-ai-paper-daily-paper-trending-research": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/data-apple-news-apple-announcement-apple-release": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/data-arstechnica-hardware-news-tech-it": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/data-aws-news-cloud-service-update-announcement": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/data-cert-fr-advisory-national-cert-alert": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/data-cisa-advisory-ics-security-alert": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/data-cisa-known-exploited-vulnerability-catalog": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/data-consumer-tech-product-news-gadgets": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/data-cve-security-advisory-vulnerability-database": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/data-cybersecurity-news-breach-alert": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/data-debian-security-advisory-dsa-linux": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/data-deepmind-news-google-ai-model-release": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/data-dependency-vulnerability-malicious-package-security": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/data-developer-blog-programming-tutorial-community": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/data-earthquake-alert-seismic-activity": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/data-enterprise-it-news-sysadmin-tech-headlines": {
+  "checked": "2026-11-08"
+ },
+ "com.a2awire/data-exploit-db-exploit-database-proof-of-concept": {
+  "checked": "2026-11-08"
+ },
+ "com.aeonport/aeonport": {
+  "url": "https://aeonport.com/pricing",
+  "checked": "2026-11-08"
+ },
+ "com.aidememo/aidememo": {
+  "checked": "2026-11-08"
+ },
+ "com.aikendewit/aikendewit": {
+  "url": "https://www.aikendewit.com/pricing",
+  "checked": "2026-11-08"
+ },
+ "com.altoviz/mcp": {
+  "checked": "2026-11-08"
+ },
+ "com.aura-historia/mcp": {
+  "checked": "2026-11-08"
+ },
+ "com.christianpure/connector": {
+  "checked": "2026-11-08"
+ },
+ "com.contrasttherapyfinder.www/contrast-therapy-finder": {
+  "checked": "2026-11-08"
+ },
+ "com.cosasguapas/buscador-regalos": {
+  "checked": "2026-11-08"
+ },
+ "com.cribalo/research-mcp": {
+  "checked": "2026-11-08"
+ },
+ "com.deepnia/deepnia": {
+  "checked": "2026-11-08"
+ },
+ "com.dual-llm.www/dual": {
+  "checked": "2026-11-08"
+ },
+ "com.eclipsemission/eclipsemission": {
+  "checked": "2026-11-08"
+ },
+ "com.engagemii/citation-watch": {
+  "checked": "2026-11-08"
+ },
+ "com.estotambienespolitica/archivo": {
+  "checked": "2026-11-08"
+ },
+ "com.eventassets/eventassets": {
+  "checked": "2026-11-08"
+ },
+ "com.exayard/exayard": {
+  "url": "https://exayard.com/pricing",
+  "checked": "2026-11-08"
+ },
+ "com.featureloom/featureloom": {
+  "checked": "2026-11-08"
+ },
+ "com.findweedny/findweedny": {
+  "checked": "2026-11-08"
+ },
+ "com.finzdata/mcp": {
+  "url": "https://finzdata.com/shop",
+  "checked": "2026-11-08"
+ },
+ "com.finzdata/workspace": {
+  "url": "https://finzdata.com/shop",
+  "checked": "2026-11-08"
+ },
+ "com.fiscalisto/docs": {
+  "checked": "2026-11-08"
+ },
+ "com.fiscalisto/fiscalisto": {
+  "checked": "2026-11-08"
+ },
+ "com.forevenza.services/stillleaf": {
+  "checked": "2026-11-08"
+ },
+ "com.get-citable/citable": {
+  "url": "https://get-citable.com/pricing",
+  "checked": "2026-11-08"
+ },
+ "com.get-lantis/lantis": {
+  "url": "https://get-lantis.com/pricing",
+  "checked": "2026-11-08"
  }
 }
