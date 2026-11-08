@@ -2206,5 +2206,251 @@
    "GitHub Security Advisories"
   ],
   "items": []
+ },
+ "ai.justdomain/just-domain": {
+  "checked": "2026-11-08",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.marketcrew/market-data": {
+  "checked": "2026-11-08",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.memorybrain/memorybrain": {
+  "checked": "2026-11-08",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.mentionagent/mentionagent": {
+  "checked": "2026-11-08",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.percia/percia": {
+  "checked": "2026-11-08",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.robowrite/mcp": {
+  "checked": "2026-11-08",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.hostilo/hostilo": {
+  "checked": "2026-11-08",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.pascal/editor": {
+  "checked": "2026-11-08",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "app.peptidelibrary/peptide-library": {
+  "checked": "2026-11-08",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "au.com.censible/censible": {
+  "checked": "2026-11-08",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "co.sofya/sofya": {
+  "checked": "2026-11-08",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "co.solidinvoice/mcp": {
+  "checked": "2026-11-08",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": [
+   {
+    "id": "GHSA-5gcp-fm29-jgrp",
+    "summary": "User invitation tokens have no expiry, allowing indefinite unauthorized company access via leaked or old invitation links",
+    "severity": "medium",
+    "published": "2026-07-16",
+    "url": "https://github.com/SolidInvoice/SolidInvoice/security/advisories/GHSA-5gcp-fm29-jgrp"
+   },
+   {
+    "id": "GHSA-mp4c-675j-mv67",
+    "summary": "Long-lived API tokens accepted as URL query parameters, exposing credentials in server logs and browser history",
+    "severity": "medium",
+    "published": "2026-07-16",
+    "url": "https://github.com/SolidInvoice/SolidInvoice/security/advisories/GHSA-mp4c-675j-mv67"
+   },
+   {
+    "id": "GHSA-4gj8-frx2-gmp6",
+    "summary": "PHP unserialize() called on client-controlled data in DataGrid LiveComponent context prop",
+    "severity": "high",
+    "published": "2026-07-16",
+    "url": "https://github.com/SolidInvoice/SolidInvoice/security/advisories/GHSA-4gj8-frx2-gmp6"
+   },
+   {
+    "id": "GHSA-jhv9-9fv9-67cr",
+    "summary": "Cross-user access to API token request history via writable DataGrid LiveComponent props",
+    "severity": "medium",
+    "published": "2026-07-16",
+    "url": "https://github.com/SolidInvoice/SolidInvoice/security/advisories/GHSA-jhv9-9fv9-67cr"
+   },
+   {
+    "id": "GHSA-7vfx-4246-jcfh",
+    "summary": "Cross-user access to API tokens and notification transport settings within same company via LiveComponent IDOR",
+    "severity": "high",
+    "published": "2026-05-25",
+    "url": "https://github.com/SolidInvoice/SolidInvoice/security/advisories/GHSA-7vfx-4246-jcfh"
+   },
+   {
+    "id": "GHSA-mqwm-r4g8-wf4w",
+    "summary": "Unrestricted file upload with no MIME validation allows stored XSS via malicious SVG logo",
+    "severity": "high",
+    "published": "2026-05-18",
+    "url": "https://github.com/SolidInvoice/SolidInvoice/security/advisories/GHSA-mqwm-r4g8-wf4w"
+   },
+   {
+    "id": "GHSA-qjfc-h39r-cgwq",
+    "summary": "API tokens stored as plaintext in the database allowing full credential compromise on database breach",
+    "severity": "high",
+    "published": "2026-05-18",
+    "url": "https://github.com/SolidInvoice/SolidInvoice/security/advisories/GHSA-qjfc-h39r-cgwq"
+   },
+   {
+    "id": "GHSA-w26j-vqgm-cfvj",
+    "summary": "Stored XSS Vulnerabilities",
+    "severity": "medium",
+    "published": "2025-06-20",
+    "url": "https://github.com/SolidInvoice/SolidInvoice/security/advisories/GHSA-w26j-vqgm-cfvj"
+   }
+  ]
+ },
+ "co.tempguru/event-staffing": {
+  "checked": "2026-11-08",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "co.totalcms/docs": {
+  "checked": "2026-11-08",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": [
+   {
+    "id": "GHSA-f354-xm96-5p3w",
+    "summary": "Uploaded HTML files execute as same-origin content",
+    "severity": "medium",
+    "published": "2026-11-03",
+    "url": "https://github.com/totalcms/cms/security/advisories/GHSA-f354-xm96-5p3w"
+   },
+   {
+    "id": "GHSA-4852-hjgf-c7q5",
+    "summary": "Protected files are served without their protection through raw upload URLs",
+    "severity": "high",
+    "published": "2026-11-03",
+    "url": "https://github.com/totalcms/cms/security/advisories/GHSA-4852-hjgf-c7q5"
+   },
+   {
+    "id": "GHSA-7p83-8x29-j3j3",
+    "summary": "Path traversal in public upload URLs exposes internal data files",
+    "severity": "high",
+    "published": "2026-11-03",
+    "url": "https://github.com/totalcms/cms/security/advisories/GHSA-7p83-8x29-j3j3"
+   },
+   {
+    "id": "GHSA-3wpr-fj3p-fgr2",
+    "summary": "Multiple authentication and access-control weaknesses",
+    "severity": "high",
+    "published": "2026-11-03",
+    "url": "https://github.com/totalcms/cms/security/advisories/GHSA-3wpr-fj3p-fgr2"
+   },
+   {
+    "id": "GHSA-x3vj-hq6f-h3jx",
+    "summary": "Server-side request forgery in save-from-URL",
+    "severity": "high",
+    "published": "2026-11-03",
+    "url": "https://github.com/totalcms/cms/security/advisories/GHSA-x3vj-hq6f-h3jx"
+   },
+   {
+    "id": "GHSA-95hr-9gqg-c9jw",
+    "summary": "Server-side template injection in Twig callback filters leads to remote code execution",
+    "severity": "high",
+    "published": "2026-11-03",
+    "url": "https://github.com/totalcms/cms/security/advisories/GHSA-95hr-9gqg-c9jw"
+   }
+  ]
+ },
+ "co.trysubstrate/memory": {
+  "checked": "2026-11-08",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "co.wisprs/wisprs": {
+  "checked": "2026-11-08",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "codes.onv/onv-mcp": {
+  "checked": "2026-11-08",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "com.1102tools/acquisition-gov-mcp": {
+  "checked": "2026-11-08",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "com.1102tools/bls-oews-mcp": {
+  "checked": "2026-11-08",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "com.1102tools/ecfr-mcp": {
+  "checked": "2026-11-08",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
  }
 }

@@ -7406,5 +7406,402 @@
  },
  "com.iisrescue/iis-rescue": {
   "checked": "2026-11-07"
+ },
+ "agency.granek.signal/signal": {
+  "checked": "2026-11-08"
+ },
+ "ai.dayora/dayora": {
+  "url": "https://www.dayora.ai/pricing",
+  "checked": "2026-11-08"
+ },
+ "ai.dispatchmind/find": {
+  "url": "https://dispatchmind.ai/pricing/",
+  "checked": "2026-11-08"
+ },
+ "ai.flamigo/presentation": {
+  "url": "https://flamigo.ai/pricing",
+  "checked": "2026-11-08"
+ },
+ "ai.justdomain/just-domain": {
+  "url": "https://justdomain.ai/pricing",
+  "checked": "2026-11-08"
+ },
+ "ai.localprospects/mcp": {
+  "checked": "2026-11-08"
+ },
+ "ai.marketcrew/market-data": {
+  "checked": "2026-11-08"
+ },
+ "ai.memorybrain/memorybrain": {
+  "checked": "2026-11-08"
+ },
+ "ai.mentionagent/mentionagent": {
+  "checked": "2026-11-08"
+ },
+ "ai.percia/percia": {
+  "checked": "2026-11-08"
+ },
+ "ai.pigfox/pigfox-ai": {
+  "checked": "2026-11-08"
+ },
+ "ai.robowrite/mcp": {
+  "url": "https://www.robowrite.ai/pricing",
+  "checked": "2026-11-08"
+ },
+ "ai.storika/storika": {
+  "url": "https://www.storika.ai/pricing",
+  "checked": "2026-11-08"
+ },
+ "ai.xodia/xodia": {
+  "url": "https://xodia.ai/pricing",
+  "checked": "2026-11-08"
+ },
+ "app.bootcamptracker/bootcamp-tracker": {
+  "checked": "2026-11-08"
+ },
+ "app.chesly/chesly": {
+  "url": "https://agents.chesly.app/pricing",
+  "checked": "2026-11-08"
+ },
+ "app.dayheart/dayheart": {
+  "checked": "2026-11-08"
+ },
+ "app.fplai/fplai": {
+  "url": "https://fplai.app/pricing",
+  "checked": "2026-11-08"
+ },
+ "app.hostilo/hostilo": {
+  "checked": "2026-11-08"
+ },
+ "app.pascal/editor": {
+  "url": "https://editor.pascal.app/pricing",
+  "checked": "2026-11-08"
+ },
+ "app.peptidelibrary/peptide-library": {
+  "checked": "2026-11-08"
+ },
+ "app.simfuse/esim-storefront": {
+  "checked": "2026-11-08"
+ },
+ "app.telemoon/telemoon": {
+  "checked": "2026-11-08"
+ },
+ "au.com.censible/censible": {
+  "url": "https://censible.com.au/pricing",
+  "checked": "2026-11-08"
+ },
+ "bike.unstocked/unstocked": {
+  "checked": "2026-11-08"
+ },
+ "cc.badabingapp.forms/calcforms": {
+  "url": "https://forms.badabingapp.cc/pricing",
+  "checked": "2026-11-08"
+ },
+ "cc.prosp/prosp": {
+  "checked": "2026-11-08"
+ },
+ "ch.yesbusiness/swiss-accounting": {
+  "checked": "2026-11-08"
+ },
+ "chat.pinku/pinku": {
+  "checked": "2026-11-08"
+ },
+ "co.newcollab/ugc-creator-search": {
+  "checked": "2026-11-08"
+ },
+ "co.pixelglass/pixelglass": {
+  "url": "https://pixelglass.co/pricing",
+  "checked": "2026-11-08"
+ },
+ "com.360nook/crm": {
+  "url": "https://360nook.com/pricing",
+  "checked": "2026-11-08"
+ },
+ "com.acriumautomated/acrium": {
+  "checked": "2026-11-08"
+ },
+ "com.affitor/mcp": {
+  "url": "https://affitor.com/pricing",
+  "checked": "2026-11-08"
+ },
+ "com.agentmsgr/agentmsgr": {
+  "checked": "2026-11-08"
+ },
+ "com.aiseocrew.www/ai-seo-crew": {
+  "url": "https://www.aiseocrew.com/pricing",
+  "checked": "2026-11-08"
+ },
+ "com.almostfire/strength-training": {
+  "checked": "2026-11-08"
+ },
+ "com.automateamerica/automate-america": {
+  "checked": "2026-11-08"
+ },
+ "com.bazitools/mcp": {
+  "checked": "2026-11-08"
+ },
+ "com.cardworthscanner/mcp": {
+  "checked": "2026-11-08"
+ },
+ "com.closefinch/closefinch": {
+  "url": "https://www.closefinch.com/pricing",
+  "checked": "2026-11-08"
+ },
+ "com.divetripplanner/caves": {
+  "checked": "2026-11-08"
+ },
+ "com.domikumorya/goa-rentals": {
+  "checked": "2026-11-08"
+ },
+ "com.easyruncraft/mcp": {
+  "url": "https://easyruncraft.com/pricing",
+  "checked": "2026-11-08"
+ },
+ "com.factstable/factstable": {
+  "checked": "2026-11-08"
+ },
+ "com.finchiefs/research": {
+  "checked": "2026-11-08"
+ },
+ "com.fogpipe.cloud/mcp": {
+  "checked": "2026-11-08"
+ },
+ "com.foresightplanner/retirement": {
+  "url": "https://foresightplanner.com/pricing/",
+  "checked": "2026-11-08"
+ },
+ "com.freeytbulktranscripts/free-yt-bulk-transcripts": {
+  "checked": "2026-11-08"
+ },
+ "com.fresh2wow/mcp": {
+  "checked": "2026-11-08"
+ },
+ "com.fromerica.api/trade-data": {
+  "checked": "2026-11-08"
+ },
+ "com.getrealtymind.app/find-an-agent": {
+  "checked": "2026-11-08"
+ },
+ "com.getrealtymind.app/london-foster-realty": {
+  "checked": "2026-11-08"
+ },
+ "com.getspawnpoint/spawnpoint": {
+  "url": "https://getspawnpoint.com/pricing",
+  "checked": "2026-11-08"
+ },
+ "com.hellofew/hellofew": {
+  "url": "https://hellofew.com/pricing",
+  "checked": "2026-11-08"
+ },
+ "com.heynutcracker/nutcracker": {
+  "checked": "2026-11-08"
+ },
+ "com.highseat/mcp": {
+  "url": "https://highseat.com/pricing",
+  "checked": "2026-11-08"
+ },
+ "com.hitori-hojokin/subsidies": {
+  "checked": "2026-11-08"
+ },
+ "com.hornlib/mcp": {
+  "checked": "2026-11-08"
+ },
+ "com.igdigi/ai-use-policy": {
+  "url": "https://igdigi.com/pricing",
+  "checked": "2026-11-08"
+ },
+ "com.jeromehandywash/site": {
+  "url": "https://jeromehandywash.com/pricing/",
+  "checked": "2026-11-08"
+ },
+ "com.jpverify/jpverify": {
+  "checked": "2026-11-08"
+ },
+ "com.jwatte/site": {
+  "checked": "2026-11-08"
+ },
+ "com.kairosfamilyagents/research": {
+  "checked": "2026-11-08"
+ },
+ "com.kanalvarna/kanal-varna": {
+  "checked": "2026-11-08"
+ },
+ "com.kresmion/kresmion": {
+  "url": "https://kresmion.com/pricing",
+  "checked": "2026-11-08"
+ },
+ "com.ksaworks/goldseam": {
+  "checked": "2026-11-08"
+ },
+ "com.labelqueue/mcp": {
+  "checked": "2026-11-08"
+ },
+ "com.lastscanned/lastscanned": {
+  "checked": "2026-11-08"
+ },
+ "com.leadpoet/leadpoet": {
+  "url": "https://leadpoet.com/pricing",
+  "checked": "2026-11-08"
+ },
+ "com.lemon-agent.app/goora-travel-posts": {
+  "checked": "2026-11-08"
+ },
+ "com.lexingtonthemes/lexington": {
+  "url": "https://lexingtonthemes.com/pricing",
+  "checked": "2026-11-08"
+ },
+ "com.linkdr/mcp": {
+  "url": "https://linkdr.com/pricing",
+  "checked": "2026-11-08"
+ },
+ "com.lovefengis/mcp": {
+  "checked": "2026-11-08"
+ },
+ "com.lyricalwriter/mcp": {
+  "checked": "2026-11-08"
+ },
+ "com.mahjonghandbook/mcp": {
+  "checked": "2026-11-08"
+ },
+ "com.makernice/makernice": {
+  "url": "https://makernice.com/pricing/",
+  "checked": "2026-11-08"
+ },
+ "com.massageinchina/mcp": {
+  "checked": "2026-11-08"
+ },
+ "com.mattercatalog/catalog": {
+  "checked": "2026-11-08"
+ },
+ "com.membase/membase": {
+  "checked": "2026-11-08"
+ },
+ "com.meridian4pm/meridian": {
+  "url": "https://www.meridian4pm.com/pricing",
+  "checked": "2026-11-08"
+ },
+ "com.migratrix/migratrix": {
+  "url": "https://migratrix.com/plans",
+  "checked": "2026-11-08"
+ },
+ "com.moatlight/mcp": {
+  "url": "https://moatlight.com/pricing",
+  "checked": "2026-11-08"
+ },
+ "com.my-pepts/store": {
+  "url": "https://my-pepts.com/pricing",
+  "checked": "2026-11-08"
+ },
+ "com.mysanfelipevacation/rentals": {
+  "checked": "2026-11-08"
+ },
+ "com.neatkept/neatkept": {
+  "checked": "2026-11-08"
+ },
+ "com.netsendo/website": {
+  "url": "https://netsendo.com/en/pricing",
+  "checked": "2026-11-08"
+ },
+ "com.neuralcosmology/neuralcosmology": {
+  "checked": "2026-11-08"
+ },
+ "com.newruntime/archive": {
+  "checked": "2026-11-08"
+ },
+ "com.nexusbro/website-audit": {
+  "url": "https://nexusbro.com/membership",
+  "checked": "2026-11-08"
+ },
+ "com.nifetency/nife-mcp-server": {
+  "checked": "2026-11-08"
+ },
+ "com.nightspar/nightspar": {
+  "checked": "2026-11-08"
+ },
+ "com.ninthlifelab/catalog": {
+  "checked": "2026-11-08"
+ },
+ "com.nomidmdm/nomid-mdm": {
+  "checked": "2026-11-08"
+ },
+ "com.nomosprotocol/nomos": {
+  "checked": "2026-11-08"
+ },
+ "com.novamris/novamris": {
+  "checked": "2026-11-08"
+ },
+ "com.oboelib/mcp": {
+  "checked": "2026-11-08"
+ },
+ "com.oods-foundry/foundry": {
+  "checked": "2026-11-08"
+ },
+ "com.openanthropic/oh-my-share": {
+  "checked": "2026-11-08"
+ },
+ "com.openrobotkits/openrobotkits": {
+  "checked": "2026-11-08"
+ },
+ "com.openuncensored/open-uncensored": {
+  "checked": "2026-11-08"
+ },
+ "com.orglines/orglines": {
+  "checked": "2026-11-08"
+ },
+ "com.oxypages/oxypages": {
+  "url": "https://oxypages.com/pricing",
+  "checked": "2026-11-08"
+ },
+ "com.paintcolormatcher/mcp": {
+  "checked": "2026-11-08"
+ },
+ "com.parkgraph/mcp": {
+  "checked": "2026-11-08"
+ },
+ "com.patternswizard/pattern-stats": {
+  "checked": "2026-11-08"
+ },
+ "com.paywithlocus/locus": {
+  "url": "https://paywithlocus.com/pricing",
+  "checked": "2026-11-08"
+ },
+ "com.pindicate/pindicate": {
+  "url": "https://pindicate.com/pricing",
+  "checked": "2026-11-08"
+ },
+ "com.placesdataapi/mcp-server": {
+  "url": "https://placesdataapi.com/pricing",
+  "checked": "2026-11-08"
+ },
+ "com.plainquant/plainquant": {
+  "checked": "2026-11-08"
+ },
+ "com.playtesterhub/playtesterhub": {
+  "checked": "2026-11-08"
+ },
+ "com.plendio/plendio": {
+  "checked": "2026-11-08"
+ },
+ "com.policyvera/insurance-quotes": {
+  "checked": "2026-11-08"
+ },
+ "com.precellence-service/paris-chauffeur": {
+  "checked": "2026-11-08"
+ },
+ "com.princeofpost/label-maker": {
+  "checked": "2026-11-08"
+ },
+ "com.reallyo/listings": {
+  "url": "https://www.reallyo.com/pricing",
+  "checked": "2026-11-08"
+ },
+ "com.redlisten/reddit": {
+  "checked": "2026-11-08"
+ },
+ "com.relayger/messaging": {
+  "checked": "2026-11-08"
+ },
+ "com.relinta/mcp": {
+  "checked": "2026-11-08"
  }
 }
