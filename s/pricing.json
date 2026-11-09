@@ -8239,5 +8239,348 @@
  "com.get-lantis/lantis": {
   "url": "https://get-lantis.com/pricing",
   "checked": "2026-11-08"
+ },
+ "ai.aiadvisorlab/teamops": {
+  "url": "https://aiadvisorlab.ai/pricing",
+  "checked": "2026-11-09"
+ },
+ "ai.apitree/apitree": {
+  "url": "https://apitree.ai/pricing",
+  "checked": "2026-11-09"
+ },
+ "ai.filmai/filmai": {
+  "url": "https://filmai.ai/en/pricing",
+  "checked": "2026-11-09"
+ },
+ "ai.getmontage/montage": {
+  "url": "https://getmontage.ai/pricing",
+  "checked": "2026-11-09"
+ },
+ "ai.homouniversalis/cryptography-merkle-tree-rfc6962-jws-ed25519-es256-zero-knowledge-python-ast-code-audit-formal-verification-mutation-testing-reed-muller-multi-agent-deep-think-crucible-barycenter": {
+  "checked": "2026-11-09"
+ },
+ "ai.homouniversalis/diamond-verifier": {
+  "checked": "2026-11-09"
+ },
+ "ai.plainvoice/mcp": {
+  "url": "https://plainvoice.ai/pricing",
+  "checked": "2026-11-09"
+ },
+ "ai.realtimeapi/mcp": {
+  "url": "https://realtimeapi.ai/pricing",
+  "checked": "2026-11-09"
+ },
+ "ai.slashml/ml-memory": {
+  "checked": "2026-11-09"
+ },
+ "ai.slashml/slashml-robotics": {
+  "checked": "2026-11-09"
+ },
+ "ai.spellwarden/spellwarden": {
+  "checked": "2026-11-09"
+ },
+ "ai.strategic-innovations/apis": {
+  "checked": "2026-11-09"
+ },
+ "ai.weir/weir-ai": {
+  "url": "https://weir.ai/pricing",
+  "checked": "2026-11-09"
+ },
+ "ai.yeow/business-index": {
+  "url": "https://yeow.ai/pricing/",
+  "checked": "2026-11-09"
+ },
+ "app.actionlog/action-log": {
+  "checked": "2026-11-09"
+ },
+ "app.firmary/mcp": {
+  "checked": "2026-11-09"
+ },
+ "app.heymoa/heymoa": {
+  "checked": "2026-11-09"
+ },
+ "app.iomarkets/topup": {
+  "checked": "2026-11-09"
+ },
+ "app.readshore/readshore": {
+  "checked": "2026-11-09"
+ },
+ "app.unlimitedmessaging/mcp": {
+  "url": "https://unlimitedmessaging.app/pricing",
+  "checked": "2026-11-09"
+ },
+ "app.usekoji/brand-dna": {
+  "checked": "2026-11-09"
+ },
+ "app.usekoji/koji": {
+  "checked": "2026-11-09"
+ },
+ "app.usesnippet/snippet": {
+  "checked": "2026-11-09"
+ },
+ "app.wieldr/radar": {
+  "checked": "2026-11-09"
+ },
+ "au.com.airsign/airsign": {
+  "url": "https://airsign.com.au/pricing",
+  "checked": "2026-11-09"
+ },
+ "broker.brick/shop": {
+  "checked": "2026-11-09"
+ },
+ "ca.tonbot.tolca/tolca": {
+  "checked": "2026-11-09"
+ },
+ "co.reven/mcp": {
+  "url": "https://reven.co/pricing/",
+  "checked": "2026-11-09"
+ },
+ "com.0xpi.pantrypos/find-food-pantry": {
+  "checked": "2026-11-09"
+ },
+ "com.1099policy/mcp": {
+  "url": "https://www.1099policy.com/pricing",
+  "checked": "2026-11-09"
+ },
+ "com.a2awire/data-fda-recall-alert-food-product-safety": {
+  "checked": "2026-11-09"
+ },
+ "com.a2awire/data-github-changelog-platform-change-announcement": {
+  "checked": "2026-11-09"
+ },
+ "com.a2awire/data-go-vulnerability-golang-security": {
+  "checked": "2026-11-09"
+ },
+ "com.a2awire/data-google-product-announcement-release": {
+  "checked": "2026-11-09"
+ },
+ "com.a2awire/data-hacker-news-front-page-tech-news": {
+  "checked": "2026-11-09"
+ },
+ "com.a2awire/data-huggingface-trending-ai-model": {
+  "checked": "2026-11-09"
+ },
+ "com.a2awire/data-latest-science-news-research-discovery": {
+  "checked": "2026-11-09"
+ },
+ "com.a2awire/data-llm-release-model-availability-tracker": {
+  "checked": "2026-11-09"
+ },
+ "com.a2awire/data-marine-weather-buoy-observation-noaa": {
+  "checked": "2026-11-09"
+ },
+ "com.a2awire/data-medical-news-health-news-breakthrough": {
+  "checked": "2026-11-09"
+ },
+ "com.a2awire/data-medical-research-trial-results-tracker": {
+  "checked": "2026-11-09"
+ },
+ "com.a2awire/data-mit-research-news-university-science": {
+  "checked": "2026-11-09"
+ },
+ "com.a2awire/data-model-context-protocol-mcp-server-discovery": {
+  "checked": "2026-11-09"
+ },
+ "com.a2awire/data-nasa-mission-space-news": {
+  "checked": "2026-11-09"
+ },
+ "com.a2awire/data-nasa-photo-space-image-astronomy": {
+  "checked": "2026-11-09"
+ },
+ "com.a2awire/data-new-dataset-release-huggingface-tracker": {
+  "checked": "2026-11-09"
+ },
+ "com.a2awire/data-new-mcp-server-agent-tools-index": {
+  "checked": "2026-11-09"
+ },
+ "com.a2awire/data-new-model-release-tracker-huggingface-ai": {
+  "checked": "2026-11-09"
+ },
+ "com.a2awire/data-npm-release-node-package-javascript-dependency": {
+  "checked": "2026-11-09"
+ },
+ "com.a2awire/data-nvidia-news-gpu-release-ai-chip-announcement": {
+  "checked": "2026-11-09"
+ },
+ "com.a2awire/data-openai-announcement-model-release-news": {
+  "checked": "2026-11-09"
+ },
+ "com.a2awire/data-pharma-news-biotech-industry-drug-development": {
+  "checked": "2026-11-09"
+ },
+ "com.a2awire/data-physics-news-technology-news-science-headlines": {
+  "checked": "2026-11-09"
+ },
+ "com.a2awire/data-product-launch-upcoming-product-tracker": {
+  "checked": "2026-11-09"
+ },
+ "com.a2awire/data-pubmed-biomedical-paper-research-article": {
+  "checked": "2026-11-09"
+ },
+ "com.a2awire/data-pypi-release-package-release-python-dependency": {
+  "checked": "2026-11-09"
+ },
+ "com.a2awire/data-quanta-magazine-math-news-deep-science": {
+  "checked": "2026-11-09"
+ },
+ "com.a2awire/data-river-level-stream-flow-flood-alert-gauge": {
+  "checked": "2026-11-09"
+ },
+ "com.a2awire/data-rust-crate-release-cargo-package": {
+  "checked": "2026-11-09"
+ },
+ "com.a2awire/data-rust-security-crate-vulnerability": {
+  "checked": "2026-11-09"
+ },
+ "com.a2awire/data-science-aaas-research-breakthrough-news": {
+  "checked": "2026-11-09"
+ },
+ "com.a2awire/data-science-breakthrough-new-research-papers": {
+  "checked": "2026-11-09"
+ },
+ "com.a2awire/data-science-magazine-science-journalism-articles": {
+  "checked": "2026-11-09"
+ },
+ "com.a2awire/data-science-paper-preprint-biotech-release": {
+  "checked": "2026-11-09"
+ },
+ "com.a2awire/data-show-hn-indie-launch-side-project": {
+  "checked": "2026-11-09"
+ },
+ "com.a2awire/data-threat-research-unit42-malware-analysis": {
+  "checked": "2026-11-09"
+ },
+ "com.a2awire/data-trending-repository-new-github-repo-discovery": {
+  "checked": "2026-11-09"
+ },
+ "com.a2awire/data-ubuntu-security-linux-vulnerability": {
+  "checked": "2026-11-09"
+ },
+ "com.a2awire/data-us-weather-alerts-nws": {
+  "checked": "2026-11-09"
+ },
+ "com.a2awire/data-windows-security-update-microsoft-cvrf": {
+  "checked": "2026-11-09"
+ },
+ "com.aicarvideo/car-listing-check": {
+  "checked": "2026-11-09"
+ },
+ "com.akulacyber/catalog": {
+  "checked": "2026-11-09"
+ },
+ "com.alohafungi/store": {
+  "checked": "2026-11-09"
+ },
+ "com.anaella/mcp": {
+  "url": "https://anaella.com/pricing",
+  "checked": "2026-11-09"
+ },
+ "com.anycutlist/anycutlist": {
+  "url": "https://www.anycutlist.com/pricing",
+  "checked": "2026-11-09"
+ },
+ "com.apptiller/apptiller": {
+  "url": "https://apptiller.com/pricing",
+  "checked": "2026-11-09"
+ },
+ "com.awardlanes/awardlanes": {
+  "checked": "2026-11-09"
+ },
+ "com.beyadcha/rights": {
+  "checked": "2026-11-09"
+ },
+ "com.birdproxies/mcp": {
+  "url": "https://birdproxies.com/pricing",
+  "checked": "2026-11-09"
+ },
+ "com.bordfeed/mcp": {
+  "url": "https://bordfeed.com/pricing",
+  "checked": "2026-11-09"
+ },
+ "com.broombook/free-tools": {
+  "url": "https://broombook.com/pricing",
+  "checked": "2026-11-09"
+ },
+ "com.candidatefalcon/candidate-falcon": {
+  "url": "https://candidatefalcon.com/pricing/",
+  "checked": "2026-11-09"
+ },
+ "com.carvoltlab/carvoltlab": {
+  "checked": "2026-11-09"
+ },
+ "com.celebriza/invitations": {
+  "url": "https://celebriza.com/pricing/",
+  "checked": "2026-11-09"
+ },
+ "com.citehawk/citehawk": {
+  "url": "https://www.citehawk.com/pricing",
+  "checked": "2026-11-09"
+ },
+ "com.clockintoday/no-interview-jobs": {
+  "checked": "2026-11-09"
+ },
+ "com.comedybuff/catalog": {
+  "checked": "2026-11-09"
+ },
+ "com.corenexis/cashly": {
+  "checked": "2026-11-09"
+ },
+ "com.cribalo/criba": {
+  "checked": "2026-11-09"
+ },
+ "com.davelalande/camps": {
+  "checked": "2026-11-09"
+ },
+ "com.denkops/denkops": {
+  "url": "https://denkops.com/pricing",
+  "checked": "2026-11-09"
+ },
+ "com.diglabo/learning": {
+  "checked": "2026-11-09"
+ },
+ "com.elliottwaveatlas/elliott-wave-atlas": {
+  "checked": "2026-11-09"
+ },
+ "com.erateradar/erateradar": {
+  "checked": "2026-11-09"
+ },
+ "com.ev-route/mcp": {
+  "checked": "2026-11-09"
+ },
+ "com.evidentagents/reviews": {
+  "checked": "2026-11-09"
+ },
+ "com.exitticketjobs/teacher-jobs": {
+  "url": "https://exitticketjobs.com/pricing",
+  "checked": "2026-11-09"
+ },
+ "com.fairvalue-calculator/fair-value": {
+  "checked": "2026-11-09"
+ },
+ "com.fedsalary/official-pay": {
+  "checked": "2026-11-09"
+ },
+ "com.findabis/findabis": {
+  "checked": "2026-11-09"
+ },
+ "com.form5500data/plan-data": {
+  "checked": "2026-11-09"
+ },
+ "com.formgong/mcp": {
+  "url": "https://formgong.com/en/pricing/",
+  "checked": "2026-11-09"
+ },
+ "com.fotor.mcp/mcp": {
+  "url": "https://www.fotor.com/pricing/",
+  "checked": "2026-11-09"
+ },
+ "com.foundingbird/mcp": {
+  "checked": "2026-11-09"
+ },
+ "com.frcementor.www/frcem-mentor": {
+  "checked": "2026-11-09"
+ },
+ "com.fridgebase/fridges": {
+  "checked": "2026-11-09"
  }
 }

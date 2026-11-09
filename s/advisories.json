@@ -2550,5 +2550,54 @@
    "OSV.dev"
   ],
   "items": []
+ },
+ "ai.homouniversalis/cryptography-merkle-tree-rfc6962-jws-ed25519-es256-zero-knowledge-python-ast-code-audit-formal-verification-mutation-testing-reed-muller-multi-agent-deep-think-crucible-barycenter": {
+  "checked": "2026-11-09",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.homouniversalis/diamond-verifier": {
+  "checked": "2026-11-09",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.slashml/ml-memory": {
+  "checked": "2026-11-09",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.slashml/slashml-robotics": {
+  "checked": "2026-11-09",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.iomarkets/topup": {
+  "checked": "2026-11-09",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ca.tonbot.tolca/tolca": {
+  "checked": "2026-11-09",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "com.1099policy/mcp": {
+  "checked": "2026-11-09",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
  }
 }
