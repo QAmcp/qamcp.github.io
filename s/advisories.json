@@ -2720,5 +2720,61 @@
    "OSV.dev"
   ],
   "items": []
+ },
+ "ai.animeapi/mcp": {
+  "checked": "2026-11-10",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.fortunest/portfolio": {
+  "checked": "2026-11-10",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.fortunest/portfolio-demo": {
+  "checked": "2026-11-10",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.trenz/mcp": {
+  "checked": "2026-11-10",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.verificate/mcp": {
+  "checked": "2026-11-10",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.tier1protocol.mcp/tier-1-protocol": {
+  "checked": "2026-11-10",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.zolvaagent/zolva": {
+  "checked": "2026-11-10",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "cloud.lumberroom/lumberroom": {
+  "checked": "2026-11-10",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
  }
 }
