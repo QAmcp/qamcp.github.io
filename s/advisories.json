@@ -2776,5 +2776,84 @@
    "GitHub Security Advisories"
   ],
   "items": []
+ },
+ "ai.a2uicatalog/docs": {
+  "checked": "2026-11-10",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.excessionlabs/site": {
+  "checked": "2026-11-10",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.fudge/fudge": {
+  "checked": "2026-11-10",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.realeyes/verifeye": {
+  "checked": "2026-11-10",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.withone/mcp": {
+  "checked": "2026-11-10",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "app.agentwright/claude-pricing": {
+  "checked": "2026-11-10",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.nomadpoint/travel-facts": {
+  "checked": "2026-11-10",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "co.canopyapi/mcp": {
+  "checked": "2026-11-10",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "co.firecms/mcp": {
+  "checked": "2026-11-10",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "co.meterapp/meter": {
+  "checked": "2026-11-10",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "co.meterapp/meter-rides": {
+  "checked": "2026-11-10",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
  }
 }
