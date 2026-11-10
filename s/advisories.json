@@ -2599,5 +2599,126 @@
    "GitHub Security Advisories"
   ],
   "items": []
+ },
+ "ai.beefi/mcp": {
+  "checked": "2026-11-10",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.memegician/memegician": {
+  "checked": "2026-11-10",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "app.savedthat/library": {
+  "checked": "2026-11-10",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "biz.valuein/mcp": {
+  "checked": "2026-11-10",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "business.munch/munch": {
+  "checked": "2026-11-10",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "cloud.gagarin/gagarin": {
+  "checked": "2026-11-10",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "cn.pianam/12306-train-mcp": {
+  "checked": "2026-11-10",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "cn.pianam/calendar-mcp": {
+  "checked": "2026-11-10",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "cn.pianam/devtools-mcp": {
+  "checked": "2026-11-10",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "cn.pianam/exchange-rate-mcp": {
+  "checked": "2026-11-10",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "cn.pianam/fuel-mcp": {
+  "checked": "2026-11-10",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "cn.pianam/hot-trending-mcp": {
+  "checked": "2026-11-10",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "cn.pianam/ip-location-mcp": {
+  "checked": "2026-11-10",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "cn.pianam/stock-mcp": {
+  "checked": "2026-11-10",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "cn.pianam/weather-mcp-china": {
+  "checked": "2026-11-10",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "co.revscope/revscope": {
+  "checked": "2026-11-10",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "co.yungle/yungle": {
+  "checked": "2026-11-10",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
  }
 }
