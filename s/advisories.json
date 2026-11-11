@@ -2855,5 +2855,71 @@
    "GitHub Security Advisories"
   ],
   "items": []
+ },
+ "ai.eonik/mcp": {
+  "checked": "2026-11-11",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "ai.harny/accounts": {
+  "checked": "2026-11-11",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.harny/action-record": {
+  "checked": "2026-11-11",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.harny/actions": {
+  "checked": "2026-11-11",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.harny/harness": {
+  "checked": "2026-11-11",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.knowdrive/knowdrive-mcp": {
+  "checked": "2026-11-11",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "app.liqflow/liqflow": {
+  "checked": "2026-11-11",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.naulon/naulon": {
+  "checked": "2026-11-11",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "build.automo/automo-build": {
+  "checked": "2026-11-11",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
  }
 }

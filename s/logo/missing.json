@@ -897,5 +897,20 @@
  "com.clonvo/mcp": "2026-11-10",
  "com.criptonlabs/agent-apis": "2026-11-10",
  "com.cvizor/cryptovizor": "2026-11-10",
- "com.dieanalysten/adressshop": "2026-11-10"
+ "com.dieanalysten/adressshop": "2026-11-10",
+ "ai.futuras/sign": "2026-11-11",
+ "ai.knowdrive/knowdrive-mcp": "2026-11-11",
+ "ai.mentionbird/mentionbird": "2026-11-11",
+ "app.catalantable/recipes": "2026-11-11",
+ "app.cormak/mcp-server": "2026-11-11",
+ "build.automo/automo-build": "2026-11-11",
+ "com.activationking/activationking": "2026-11-11",
+ "com.addrbook/directory": "2026-11-11",
+ "com.agentdataapi/agentdata": "2026-11-11",
+ "com.arenacalc/endurance-pace-lab": "2026-11-11",
+ "com.aurmada.rooms/agent-pay": "2026-11-11",
+ "com.cm7brasil.www/mcp": "2026-11-11",
+ "com.coppica/persuasion-taxonomy": "2026-11-11",
+ "com.dividendsolo.situation/situation": "2026-11-11",
+ "com.esportcalc/fps-sensitivity-lab": "2026-11-11"
 }
