@@ -2921,5 +2921,103 @@
    "GitHub Security Advisories"
   ],
   "items": []
+ },
+ "ai.financial-portfolios/financial-portfolios-ai": {
+  "checked": "2026-11-11",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.getkleos/kleos": {
+  "checked": "2026-11-11",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.greyridgesignals/business-verification-mcp": {
+  "checked": "2026-11-11",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.greyridgesignals/claimfinder-settlements": {
+  "checked": "2026-11-11",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.greyridgesignals/sports-scores-mcp": {
+  "checked": "2026-11-11",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.honeyvid/honeyvid": {
+  "checked": "2026-11-11",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.moneyheap/moneyheap": {
+  "checked": "2026-11-11",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.sozee/mcp": {
+  "checked": "2026-11-11",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.apick/finance": {
+  "checked": "2026-11-11",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.apick/web": {
+  "checked": "2026-11-11",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.shortsync/shortsync": {
+  "checked": "2026-11-11",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "chat.zorgverzekering.mcp/zorgverzekering": {
+  "checked": "2026-11-11",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "co.aworkado/jobs": {
+  "checked": "2026-11-11",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "co.herakraft.recruiting/job-alerts": {
+  "checked": "2026-11-11",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
  }
 }
