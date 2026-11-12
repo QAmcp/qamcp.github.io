@@ -9923,5 +9923,292 @@
  },
  "com.fillprompt/fillprompt": {
   "checked": "2026-11-11"
+ },
+ "ai.agent-bev/bev-door": {
+  "checked": "2026-11-12"
+ },
+ "ai.anyreach/anyreach": {
+  "url": "https://anyreach.ai/pricing",
+  "checked": "2026-11-12"
+ },
+ "ai.callmcp/server": {
+  "url": "https://callmcp.ai/pricing",
+  "checked": "2026-11-12"
+ },
+ "ai.elicitly/pro": {
+  "url": "https://www.elicitly.ai/pricing/",
+  "checked": "2026-11-12"
+ },
+ "ai.getrush/rush": {
+  "url": "https://getrush.ai/pricing/",
+  "checked": "2026-11-12"
+ },
+ "ai.glypse/glypse": {
+  "checked": "2026-11-12"
+ },
+ "ai.gymup/gymup": {
+  "checked": "2026-11-12"
+ },
+ "ai.hlix/hlix": {
+  "checked": "2026-11-12"
+ },
+ "ai.ieverse/postie": {
+  "checked": "2026-11-12"
+ },
+ "ai.leadfuzion.mcp/agent-store": {
+  "checked": "2026-11-12"
+ },
+ "ai.licklider/sciground": {
+  "checked": "2026-11-12"
+ },
+ "ai.mstudio/mstudio": {
+  "url": "https://mstudio.ai/pricing",
+  "checked": "2026-11-12"
+ },
+ "ai.remixviral/clipper": {
+  "url": "https://remixviral.ai/en/pricing",
+  "checked": "2026-11-12"
+ },
+ "ai.reviewpaper/reviewpaper": {
+  "url": "https://reviewpaper.ai/pricing",
+  "checked": "2026-11-12"
+ },
+ "ai.snaplesson/snaplesson": {
+  "checked": "2026-11-12"
+ },
+ "ai.staffpick/staffpick": {
+  "checked": "2026-11-12"
+ },
+ "ai.storageunitos/shop": {
+  "url": "https://www.storageunitos.ai/pricing",
+  "checked": "2026-11-12"
+ },
+ "ai.techshu/aeo-optima": {
+  "checked": "2026-11-12"
+ },
+ "ai.trybrief/brief": {
+  "checked": "2026-11-12"
+ },
+ "app.aisend/aisend": {
+  "url": "https://aisend.app/pricing",
+  "checked": "2026-11-12"
+ },
+ "app.bookbybook/bookbybook": {
+  "url": "https://bookbybook.app/pricing",
+  "checked": "2026-11-12"
+ },
+ "app.buildbase/console": {
+  "checked": "2026-11-12"
+ },
+ "app.datafast/datafast": {
+  "url": "https://datafast.app/pricing",
+  "checked": "2026-11-12"
+ },
+ "app.hellocast/hellocast": {
+  "url": "https://hellocast.eu/pricing",
+  "checked": "2026-11-12"
+ },
+ "app.ironledger/strength-calculators": {
+  "url": "https://www.ironledger.app/pricing",
+  "checked": "2026-11-12"
+ },
+ "app.kanera/mcp": {
+  "url": "https://www.kanera.app/pricing",
+  "checked": "2026-11-12"
+ },
+ "app.korima/pos": {
+  "checked": "2026-11-12"
+ },
+ "app.kwern/kwern": {
+  "url": "https://kwern.app/pricing",
+  "checked": "2026-11-12"
+ },
+ "app.liquidvision/derivatives": {
+  "checked": "2026-11-12"
+ },
+ "app.qrcodecreator/qr-codes": {
+  "url": "https://qrcodecreator.app/pricing",
+  "checked": "2026-11-12"
+ },
+ "app.skaler/skaler": {
+  "checked": "2026-11-12"
+ },
+ "app.storyshort/storyshort": {
+  "url": "https://storyshort.app/en/pricing",
+  "checked": "2026-11-12"
+ },
+ "app.tracwell/analytics": {
+  "url": "https://tracwell.app/pricing",
+  "checked": "2026-11-12"
+ },
+ "app.trainrec/trainrec": {
+  "checked": "2026-11-12"
+ },
+ "art.karaokemaker3000/karaoke-maker-3000": {
+  "checked": "2026-11-12"
+ },
+ "art.omnicreator/omnicreator": {
+  "url": "https://omnicreator.art/pricing",
+  "checked": "2026-11-12"
+ },
+ "at.auto-oez/werkstatt": {
+  "checked": "2026-11-12"
+ },
+ "at.wien-entruempelung/entruempelung": {
+  "checked": "2026-11-12"
+ },
+ "au.com.tix/shows": {
+  "checked": "2026-11-12"
+ },
+ "br.net.lupashop/lupa-shop": {
+  "checked": "2026-11-12"
+ },
+ "ca.roofmanager/roof-manager": {
+  "url": "https://www.roofmanager.ca/pricing",
+  "checked": "2026-11-12"
+ },
+ "ch.qrsuisse/mcp-docs": {
+  "checked": "2026-11-12"
+ },
+ "club.mdldm/grok-bot-town": {
+  "checked": "2026-11-12"
+ },
+ "co.fastformat/mcp": {
+  "checked": "2026-11-12"
+ },
+ "co.rushiwowen/cbeta-buddhist-scripture": {
+  "checked": "2026-11-12"
+ },
+ "co.rushiwowen/scripture": {
+  "checked": "2026-11-12"
+ },
+ "com.aimlapi/mcp": {
+  "checked": "2026-11-12"
+ },
+ "com.aremes-enterprises/aremes": {
+  "checked": "2026-11-12"
+ },
+ "com.atlas-red/mind-map": {
+  "checked": "2026-11-12"
+ },
+ "com.aumimate/aumi": {
+  "checked": "2026-11-12"
+ },
+ "com.bidalto.mcp/tenders": {
+  "checked": "2026-11-12"
+ },
+ "com.blueleopardmedia/mcp": {
+  "url": "https://blueleopardmedia.com/pricing/",
+  "checked": "2026-11-12"
+ },
+ "com.botzskool/playground": {
+  "checked": "2026-11-12"
+ },
+ "com.chainitor/chainitor": {
+  "url": "https://chainitor.com/pricing/",
+  "checked": "2026-11-12"
+ },
+ "com.chefsums/chefsums": {
+  "url": "https://chefsums.com/pricing",
+  "checked": "2026-11-12"
+ },
+ "com.cvposh/cvposh": {
+  "url": "https://cvposh.com/pricing",
+  "checked": "2026-11-12"
+ },
+ "com.daedalmap/boundaries": {
+  "url": "https://www.daedalmap.com/pricing",
+  "checked": "2026-11-12"
+ },
+ "com.daedalmap/county-map": {
+  "url": "https://www.daedalmap.com/pricing",
+  "checked": "2026-11-12"
+ },
+ "com.daedalmap/earthquakes": {
+  "url": "https://www.daedalmap.com/pricing",
+  "checked": "2026-11-12"
+ },
+ "com.daedalmap/geocoding": {
+  "url": "https://www.daedalmap.com/pricing",
+  "checked": "2026-11-12"
+ },
+ "com.daedalmap/hurricanes": {
+  "url": "https://www.daedalmap.com/pricing",
+  "checked": "2026-11-12"
+ },
+ "com.daedalmap/reverse-geocoding": {
+  "url": "https://www.daedalmap.com/pricing",
+  "checked": "2026-11-12"
+ },
+ "com.daedalmap/tornadoes": {
+  "url": "https://www.daedalmap.com/pricing",
+  "checked": "2026-11-12"
+ },
+ "com.daedalmap/tsunamis": {
+  "url": "https://www.daedalmap.com/pricing",
+  "checked": "2026-11-12"
+ },
+ "com.daedalmap/wildfires": {
+  "url": "https://www.daedalmap.com/pricing",
+  "checked": "2026-11-12"
+ },
+ "com.daedalmap/world_factbook": {
+  "url": "https://www.daedalmap.com/pricing",
+  "checked": "2026-11-12"
+ },
+ "com.dexurl/dexurl": {
+  "url": "https://dexurl.com/pricing",
+  "checked": "2026-11-12"
+ },
+ "com.dinoplan/floor-plans": {
+  "checked": "2026-11-12"
+ },
+ "com.dishesof/dishes-of-london": {
+  "checked": "2026-11-12"
+ },
+ "com.domdomjobs/jobs": {
+  "checked": "2026-11-12"
+ },
+ "com.dotmira/catalog": {
+  "url": "https://dotmira.com/en/pricing",
+  "checked": "2026-11-12"
+ },
+ "com.eventrise/mcp": {
+  "url": "https://eventrise.com/pricing",
+  "checked": "2026-11-12"
+ },
+ "com.firesidefolio/fireside-folio": {
+  "checked": "2026-11-12"
+ },
+ "com.firmendata/mcp": {
+  "checked": "2026-11-12"
+ },
+ "com.fockeadvisory/gentool": {
+  "url": "https://gentool.fockeadvisory.com/pricing",
+  "checked": "2026-11-12"
+ },
+ "com.folsn.mcp/own-store-products": {
+  "checked": "2026-11-12"
+ },
+ "com.formada3d/mcp": {
+  "checked": "2026-11-12"
+ },
+ "com.fusestays/rooms": {
+  "url": "https://fusestays.com/pricing",
+  "checked": "2026-11-12"
+ },
+ "com.fxapis/mt5": {
+  "url": "https://fxapis.com/pricing",
+  "checked": "2026-11-12"
+ },
+ "com.fxapis/mt5-insights": {
+  "checked": "2026-11-12"
+ },
+ "com.gaduin/gaduin": {
+  "checked": "2026-11-12"
+ },
+ "com.gamedexy/gamedexy": {
+  "url": "https://www.gamedexy.com/pricing",
+  "checked": "2026-11-12"
  }
 }

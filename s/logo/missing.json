@@ -933,5 +933,21 @@
  "com.desktopsteward/desktop-steward": "2026-11-11",
  "com.eduavenues/eduavenues": "2026-11-11",
  "com.esimtao/mcp": "2026-11-11",
- "com.evolc/signals": "2026-11-11"
+ "com.evolc/signals": "2026-11-11",
+ "ai.callmcp/server": "2026-11-12",
+ "ai.licklider/sciground": "2026-11-12",
+ "ai.reviewpaper/reviewpaper": "2026-11-12",
+ "app.hellocast/hellocast": "2026-11-12",
+ "app.korima/pos": "2026-11-12",
+ "app.liquidvision/derivatives": "2026-11-12",
+ "art.karaokemaker3000/karaoke-maker-3000": "2026-11-12",
+ "at.auto-oez/werkstatt": "2026-11-12",
+ "at.wien-entruempelung/entruempelung": "2026-11-12",
+ "com.aimlapi/mcp": "2026-11-12",
+ "com.atlas-red/mind-map": "2026-11-12",
+ "com.aumimate/aumi": "2026-11-12",
+ "com.bidalto.mcp/tenders": "2026-11-12",
+ "com.botzskool/playground": "2026-11-12",
+ "com.fxapis/mt5": "2026-11-12",
+ "com.fxapis/mt5-insights": "2026-11-12"
 }

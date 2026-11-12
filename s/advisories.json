@@ -3019,5 +3019,49 @@
    "GitHub Security Advisories"
   ],
   "items": []
+ },
+ "ai.agent-bev/bev-door": {
+  "checked": "2026-11-12",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "ai.callmcp/server": {
+  "checked": "2026-11-12",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "app.buildbase/console": {
+  "checked": "2026-11-12",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.kanera/mcp": {
+  "checked": "2026-11-12",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.liquidvision/derivatives": {
+  "checked": "2026-11-12",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "art.omnicreator/omnicreator": {
+  "checked": "2026-11-12",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
  }
 }
