@@ -10210,5 +10210,233 @@
  "com.gamedexy/gamedexy": {
   "url": "https://www.gamedexy.com/pricing",
   "checked": "2026-11-12"
+ },
+ "ae.framerfy/store-builder": {
+  "checked": "2026-11-12"
+ },
+ "ai.airpulse/airpulse": {
+  "url": "https://airpulse.ai/pricing",
+  "checked": "2026-11-12"
+ },
+ "ai.dravr/mcp": {
+  "checked": "2026-11-12"
+ },
+ "ai.edengen/eden-gen": {
+  "url": "https://edengen.ai/pricing",
+  "checked": "2026-11-12"
+ },
+ "ai.garmlink/garmlink": {
+  "checked": "2026-11-12"
+ },
+ "ai.kadmo/kadmo": {
+  "url": "https://kadmo.ai/pricing",
+  "checked": "2026-11-12"
+ },
+ "ai.openlead/openlead": {
+  "url": "https://openlead.ai/pricing",
+  "checked": "2026-11-12"
+ },
+ "ai.wyndlass/wyndlass": {
+  "url": "https://wyndlass.ai/pricing",
+  "checked": "2026-11-12"
+ },
+ "app.aeorank/aeorank-geo-mcp": {
+  "url": "https://aeorank.app/pricing",
+  "checked": "2026-11-12"
+ },
+ "app.amendment/amendment": {
+  "url": "https://amendment.app/pricing",
+  "checked": "2026-11-12"
+ },
+ "app.andock/mail": {
+  "checked": "2026-11-12"
+ },
+ "app.heza/heza": {
+  "checked": "2026-11-12"
+ },
+ "app.kikuyo/kikuyo": {
+  "checked": "2026-11-12"
+ },
+ "app.lizt/lizt": {
+  "checked": "2026-11-12"
+ },
+ "app.marketframe/marketframe": {
+  "url": "https://marketframe.app/pro",
+  "checked": "2026-11-12"
+ },
+ "app.nishka/nishka": {
+  "checked": "2026-11-12"
+ },
+ "app.routemetrics/routemetrics": {
+  "url": "https://routemetrics.app/pricing",
+  "checked": "2026-11-12"
+ },
+ "app.seobolt/seobolt": {
+  "url": "https://seobolt.app/pricing",
+  "checked": "2026-11-12"
+ },
+ "app.statuz/statuz": {
+  "url": "https://statuz.app/pricing",
+  "checked": "2026-11-12"
+ },
+ "ar.com.consignatarias/cattle-market": {
+  "checked": "2026-11-12"
+ },
+ "at.drei-business/business-mobilfunk": {
+  "checked": "2026-11-12"
+ },
+ "br.com.rushcrm/crm": {
+  "checked": "2026-11-12"
+ },
+ "ca.mapleesign/esign": {
+  "url": "https://mapleesign.ca/pricing/",
+  "checked": "2026-11-12"
+ },
+ "cards.dev/components": {
+  "checked": "2026-11-12"
+ },
+ "ch.patrician/patrician": {
+  "url": "https://patrician.ch/pricing/",
+  "checked": "2026-11-12"
+ },
+ "co.fiz/fiz": {
+  "checked": "2026-11-12"
+ },
+ "co.quivo/connector": {
+  "checked": "2026-11-12"
+ },
+ "co.stylecloud.dropflow/mcp": {
+  "url": "https://dropflow.stylecloud.co/pricing/",
+  "checked": "2026-11-12"
+ },
+ "codes.countrycalling/countrycallingcodes": {
+  "checked": "2026-11-12"
+ },
+ "codes.rabatt/spar-auskunft": {
+  "checked": "2026-11-12"
+ },
+ "com.1folderapp/1folder": {
+  "checked": "2026-11-12"
+ },
+ "com.365pinterest/365-pinterest": {
+  "checked": "2026-11-12"
+ },
+ "com.agentfonts/agentfonts": {
+  "checked": "2026-11-12"
+ },
+ "com.aiappsthatwork/tools": {
+  "checked": "2026-11-12"
+ },
+ "com.aim-journal/aim": {
+  "checked": "2026-11-12"
+ },
+ "com.aiseewhy/aiseewhy": {
+  "url": "https://aiseewhy.com/pricing/",
+  "checked": "2026-11-12"
+ },
+ "com.alertachart/alertachart": {
+  "url": "https://www.alertachart.com/pricing",
+  "checked": "2026-11-12"
+ },
+ "com.americancloud/mcp": {
+  "url": "https://americancloud.com/pricing",
+  "checked": "2026-11-12"
+ },
+ "com.americanspend/insights": {
+  "checked": "2026-11-12"
+ },
+ "com.assetsforthreejs/assetsforthreejs": {
+  "checked": "2026-11-12"
+ },
+ "com.boardrepo/boardrepo": {
+  "checked": "2026-11-12"
+ },
+ "com.bytnode/mcp": {
+  "checked": "2026-11-12"
+ },
+ "com.cafeboon/alter-ego": {
+  "checked": "2026-11-12"
+ },
+ "com.casakimball/villa": {
+  "checked": "2026-11-12"
+ },
+ "com.castthewater/cast-the-water": {
+  "checked": "2026-11-12"
+ },
+ "com.clawhard/border": {
+  "checked": "2026-11-12"
+ },
+ "com.cloudinary/analysis-mcp": {
+  "url": "https://cloudinary.com/pricing",
+  "checked": "2026-11-12"
+ },
+ "com.cloudinary/asset-management-mcp": {
+  "url": "https://cloudinary.com/pricing",
+  "checked": "2026-11-12"
+ },
+ "com.cloudinary/environment-config-mcp": {
+  "url": "https://cloudinary.com/pricing",
+  "checked": "2026-11-12"
+ },
+ "com.cloudinary/structured-metadata-mcp": {
+  "url": "https://cloudinary.com/pricing",
+  "checked": "2026-11-12"
+ },
+ "com.commerceforai/mcp": {
+  "url": "https://commerceforai.com/pricing",
+  "checked": "2026-11-12"
+ },
+ "com.controlplane/mcp": {
+  "url": "https://controlplane.com/pricing",
+  "checked": "2026-11-12"
+ },
+ "com.corehu/gpu-cloud": {
+  "url": "https://corehu.com/pricing",
+  "checked": "2026-11-12"
+ },
+ "com.craftuary/mcp": {
+  "checked": "2026-11-12"
+ },
+ "com.crimemetric/crime-index": {
+  "checked": "2026-11-12"
+ },
+ "com.cycle-platform/cycle-intelligence": {
+  "checked": "2026-11-12"
+ },
+ "com.darmousseh/habits-guard": {
+  "checked": "2026-11-12"
+ },
+ "com.datafluxor/seo": {
+  "url": "https://datafluxor.com/pricing",
+  "checked": "2026-11-12"
+ },
+ "com.dialhank/hank": {
+  "checked": "2026-11-12"
+ },
+ "com.drurls/drurls": {
+  "url": "https://drurls.com/pricing",
+  "checked": "2026-11-12"
+ },
+ "com.elvesora/domain-lookup": {
+  "url": "https://www.elvesora.com/pricing",
+  "checked": "2026-11-12"
+ },
+ "com.elvesora/enrichment": {
+  "url": "https://www.elvesora.com/pricing",
+  "checked": "2026-11-12"
+ },
+ "com.euronaire/competition": {
+  "checked": "2026-11-12"
+ },
+ "com.factorroute/factorroute-com": {
+  "checked": "2026-11-12"
+ },
+ "com.falconer/mcp": {
+  "url": "https://falconer.com/pricing",
+  "checked": "2026-11-12"
+ },
+ "com.farsideresearch/research": {
+  "url": "https://farsideresearch.com/pricing",
+  "checked": "2026-11-12"
  }
 }

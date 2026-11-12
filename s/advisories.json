@@ -3063,5 +3063,40 @@
    "GitHub Security Advisories"
   ],
   "items": []
+ },
+ "ai.edengen/eden-gen": {
+  "checked": "2026-11-12",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.openlead/openlead": {
+  "checked": "2026-11-12",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.aeorank/aeorank-geo-mcp": {
+  "checked": "2026-11-12",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ar.com.consignatarias/cattle-market": {
+  "checked": "2026-11-12",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "br.com.rushcrm/crm": {
+  "checked": "2026-11-12",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
  }
 }
