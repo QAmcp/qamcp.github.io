@@ -18,6 +18,8 @@
 .medal .n.login{font-size:26px;padding:10px 0}
 .medal p{font:400 12px/1.5 var(--mono);color:var(--faint);margin-top:10px}
 .medal .down{color:var(--fail)}
+.medal .fresh-note{color:var(--rose);max-width:230px;margin-left:auto;margin-right:auto}
+@media (max-width:980px){.medal .fresh-note{flex-basis:100%;max-width:none;text-align:center}}
 .side{display:flex;flex-direction:column;justify-content:space-between;gap:12px;align-self:stretch}
 .now{display:block;text-align:center;font:700 14px var(--text);padding:10px 15px;border-radius:8px;border:1px solid var(--rose);color:var(--ink);text-decoration:none}.now:hover{background:var(--rose);color:var(--on-rose)}
 .stamp{display:inline-block;margin-top:12px;font:700 12.5px var(--mono);letter-spacing:.12em;padding:7px 10px;border:2px solid currentColor;border-radius:5px}

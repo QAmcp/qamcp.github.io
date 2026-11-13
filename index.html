@@ -258,6 +258,7 @@ header.top nav a{white-space:nowrap}
 @media (max-width:1360px){header.top nav a[href="ci.html"],header.top nav a[href="samples.html"]{display:none}}
 a.mon{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:22px;padding:15px 20px;background:var(--rose);color:var(--on-rose);font:700 15px/1 var(--text);text-decoration:none;transition:background .2s}a.mon:hover{background:var(--ink)}a.mon:focus-visible{outline:2px solid var(--rose);outline-offset:3px}
 .or-test{margin:18px 0 0;color:var(--soft)}
+.pro-line{margin:10px 0 0;font-size:13.5px;line-height:1.45;color:var(--soft);text-align:center}.pro-line a{color:var(--ink);white-space:nowrap}.pro-line a:focus-visible{outline:2px solid var(--rose);outline-offset:2px}
 .tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:clamp(28px,4vw,48px)}
 .proof{margin:10px 0 0;font-size:14px;line-height:1.45;color:var(--soft)}.proof a{color:var(--ink)}
 .kq{margin:clamp(28px,4vw,44px) 0 0;padding:18px 22px;border-left:3px solid var(--rose);background:var(--sheet)}.kq p{margin:0;font-size:16px;line-height:1.6;color:var(--ink);max-width:80ch}.kq footer{margin-top:10px;font-size:14px;color:var(--soft)}
@@ -276,7 +277,7 @@ a.mon{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:
 </style>
 <script>
 !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}((p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r));var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
-posthog.init('phc_p4Wad2LVUW2yHEWsWXrCajwiM2XNK45coFjRNev4DoH9',{api_host:'https://us.i.posthog.com',persistence:'sessionStorage',person_profiles:'identified_only',capture_pageview:true,autocapture:true,session_recording:{maskAllInputs:true},respect_dnt:true});
+if(location.hostname==='qamcp.dev'||location.hostname==='api.qamcp.dev')posthog.init('phc_p4Wad2LVUW2yHEWsWXrCajwiM2XNK45coFjRNev4DoH9',{api_host:'https://us.i.posthog.com',persistence:'sessionStorage',person_profiles:'identified_only',capture_pageview:true,autocapture:true,session_recording:{maskAllInputs:true},respect_dnt:true});
 document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e.target.closest('a, button'):null;if(!a)return;var t=(a.textContent||'').trim().toLowerCase(),h=a.getAttribute('href')||'';if(t.includes('get pro')||h.includes('dashboard/billing')||(t.includes('pricing')&&(a.classList.contains('btn')||a.classList.contains('tb')||a.classList.contains('p')||a.classList.contains('cta')))){try{window.posthog&&window.posthog.capture('get_pro_clicked')}catch(err){}}},true);
 </script>
 </head>
@@ -333,6 +334,7 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
     <h1 id="t">Know when your MCP server breaks, before your users do.</h1>
     <p class="lede">We test it the way an AI app uses it, and email you when it goes down or a tool changes. Free for 1 server.</p>
     <a class="mon" href="monitor.html?from=home#notify">Start monitoring free →</a>
+    <p class="pro-line">Pro: $19/month for 3 servers, tests every hour · <a href="#pricing">See pricing →</a></p>
     <p class="proof">"Our public tool list dropped from about 308 KB to 8.5 KB." <a href="#proof">Kevin Brown, Cloud World Model</a></p>
     <p class="or-test">Or test one now, free:</p>
     <div class="run">

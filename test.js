@@ -89,7 +89,17 @@
     return ['PASS', 'pass'];
   }
 
-  function showResult(r, reportId) {
+  // For a server in our directory: whether its directory page and badge now show this result, and if not, why.
+  function directoryLine(d) {
+    if (!d || !d.slug || !/^[\w-]+$/.test(d.slug)) return null;
+    const p = el('p', 'dir-note');
+    const page = el('a', '', 'directory page'); page.href = `s/${d.slug}.html?from=test`;
+    if (d.updated) p.append(`Its `, page, ` and badge now show ${d.notScored ? 'this result' : `${Number(d.score)}/100`}.`);
+    else p.append(`Its `, page, ` keeps its last score: ${d.reason || 'this test does not count for the directory.'}`);
+    return p;
+  }
+
+  function showResult(r, reportId, directory) {
     try {
       window.posthog?.capture('test_finished', {
         score: r.notScored ? null : r.score,
@@ -118,7 +128,7 @@
     copy.onclick = async () => { try { await navigator.clipboard.writeText(page); copy.textContent = 'Copied'; } catch { copy.textContent = page; } };
     const again = el('button', 's', 'Test another server'); again.type = 'button';
     again.onclick = () => { $('url').value = ''; $('url').focus(); };
-    $('after').replaceChildren(open, copy, again); $('after').hidden = false;
+    $('after').replaceChildren(...[directoryLine(directory), open, copy, again].filter(Boolean)); $('after').hidden = false;
     // The person who just tested a server is the one Monitor is for: offer it, with the server filled in.
     const watch = $('watch'), srv = watch.querySelector('[name=server]');
     if (srv && !watch.querySelector('.notify-msg.ok')) { srv.value = r.url || $('url').value; watch.hidden = false; try { window.posthog?.capture('watch_offer_shown'); } catch {} }
@@ -144,7 +154,7 @@
     });
     const final = end ?? (await call(`/api/tests/${id}`));
     if (final.state !== 'done' || !final.reportId) throw new Error(final.error || 'The test stopped unexpectedly. Please try again.');
-    showResult(await call(`/api/reports/${final.reportId}`), final.reportId);
+    showResult(await call(`/api/reports/${final.reportId}`), final.reportId, final.directory);
     say('');
   }
 
