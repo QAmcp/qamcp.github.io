@@ -3098,5 +3098,54 @@
    "GitHub Security Advisories"
   ],
   "items": []
+ },
+ "ai.luw/studio": {
+  "checked": "2026-11-13",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.reshare/reshare": {
+  "checked": "2026-11-13",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.rolev/job-search": {
+  "checked": "2026-11-13",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.wazza/pro": {
+  "checked": "2026-11-13",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.studio99/calligraphy": {
+  "checked": "2026-11-13",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ch.pfx/mcp-server": {
+  "checked": "2026-11-13",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "cn.com.xiaozhaobao/xiaozhaobao": {
+  "checked": "2026-11-13",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
  }
 }

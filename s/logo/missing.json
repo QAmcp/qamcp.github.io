@@ -960,5 +960,20 @@
  "com.commerceforai/mcp": "2026-11-12",
  "com.darmousseh/habits-guard": "2026-11-12",
  "com.dialhank/hank": "2026-11-12",
- "com.euronaire/competition": "2026-11-12"
+ "com.euronaire/competition": "2026-11-12",
+ "ai.getdial/dial": "2026-11-13",
+ "ai.govisit/govisit-mcp": "2026-11-13",
+ "ai.govisit/govisit-tools": "2026-11-13",
+ "ai.govisit/server": "2026-11-13",
+ "ai.wazza/pro": "2026-11-13",
+ "app.derny/workouts": "2026-11-13",
+ "app.salarynet/payroll": "2026-11-13",
+ "boo.minim/agent-world": "2026-11-13",
+ "ch.pfx/mcp-server": "2026-11-13",
+ "co.bowlingdata/agent-api": "2026-11-13",
+ "com.aiw3b.limitreceipts/plan-fit": "2026-11-13",
+ "com.certisyn/verify": "2026-11-13",
+ "com.exerciseimages/exercise-images": "2026-11-13",
+ "com.forwardsmith/buyer-desk": "2026-11-13",
+ "com.fronresearch/agent-api": "2026-11-13"
 }
