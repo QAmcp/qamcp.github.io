@@ -63,7 +63,7 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
 
 <section class="part" id="steps" aria-labelledby="h-steps">
  <div class="part-in">
-  <span class="sheetno">Sheet 2 of 4 · The checklist</span>
+  <span class="sheetno">The checklist</span>
   <h2 id="h-steps">Six steps, from "does it answer" to "is it safe"</h2>
   <p class="intro">The same six steps work as an audit of any MCP server, yours or one you're about to install.</p>
   <p class="intro">The examples below are real results from our test server, which is broken on purpose. You can run the same test yourself with <code>npx qamcp-cli --demo</code>.</p>
@@ -92,7 +92,7 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
 
 <section class="part" id="ways" aria-labelledby="h-ways">
  <div class="part-in">
-  <span class="sheetno">Sheet 3 of 4 · Ways to test</span>
+  <span class="sheetno">Ways to test</span>
   <h2 id="h-ways">Four ways to test an MCP server</h2>
   <h3 class="way" id="online">Test an MCP server online</h3>
   <p class="intro">For a server on the internet, paste its link on the <a href="test.html">QAmcp test page</a> and press Test it. The checks fill in while you watch, and you get a report link you can share. Nothing to install, no account. Only tools labeled read-only are run.</p>
@@ -112,7 +112,7 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
 
 <section class="part" id="faq" aria-labelledby="h-faq">
  <div class="part-in">
-  <span class="sheetno">Sheet 4 of 4 · Questions</span>
+  <span class="sheetno">Questions</span>
   <h2 id="h-faq">Questions</h2>
   <div class="faq">
    <details><summary>How do I audit an MCP server?</summary><p>Run the six-step checklist on this page: connection, tool descriptions, safety labels, hidden instructions, bad inputs and leaked secrets. QAmcp runs all six automatically and gives a score with every finding, so an audit takes about a minute: paste the link on qamcp.dev, or run <code>npx qamcp-cli</code> with the server link. For servers you depend on, Monitor repeats the audit (once a day free, every hour on Pro) and emails you when something changes.</p></details>

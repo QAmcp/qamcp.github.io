@@ -89,13 +89,15 @@
     return ['PASS', 'pass'];
   }
 
-  // For a server in our directory: whether its directory page and badge now show this result, and if not, why.
+  // For a server in our directory (only those: the API sends no "directory" for others): whether its
+  // directory page and badge now show this result, and if not, why, with a clear link back to that page.
   function directoryLine(d) {
     if (!d || !d.slug || !/^[\w-]+$/.test(d.slug)) return null;
     const p = el('p', 'dir-note');
-    const page = el('a', '', 'directory page'); page.href = `s/${d.slug}.html?from=test`;
-    if (d.updated) p.append(`Its `, page, ` and badge now show ${d.notScored ? 'this result' : `${Number(d.score)}/100`}.`);
-    else p.append(`Its `, page, ` keeps its last score: ${d.reason || 'this test does not count for the directory.'}`);
+    if (d.updated) p.append(`Its directory page and badge now show ${d.notScored ? 'this result' : `${Number(d.score)}/100`}. `);
+    else p.append(`Its directory page keeps its last score: ${d.reason || 'this test does not count for the directory.'} `);
+    const go = el('a', 'dir-go', 'See it on the directory →'); go.href = `s/${d.slug}.html?from=test`;
+    p.append(go);
     return p;
   }
 

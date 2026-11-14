@@ -48,7 +48,7 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
 
 <section class="part" id="start" aria-labelledby="h-start">
  <div class="part-in">
-  <span class="sheetno">Sheet 2 of 6 · Set it up</span>
+  <span class="sheetno">Set it up</span>
   <h2 id="h-start">One file, three steps</h2>
   <ol class="proc">
    <li><b>Create the file</b><span>In your repository, add <code>.github/workflows/qamcp.yml</code> with the contents below. Change the <code>url</code> to your server's link.</span></li>
@@ -77,7 +77,7 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
 
 <section class="part" id="key" aria-labelledby="h-key">
  <div class="part-in">
-  <span class="sheetno">Sheet 3 of 6 · A server that needs a key</span>
+  <span class="sheetno">A server that needs a key</span>
   <h2 id="h-key">Keep the key in GitHub's secrets</h2>
   <ol class="proc">
    <li><b>Make a test key</b><span>Create a key for your server that can only read, just for testing.</span></li>
@@ -95,7 +95,7 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
 
 <section class="part" id="changes" aria-labelledby="h-changes">
  <div class="part-in">
-  <span class="sheetno">Sheet 4 of 6 · Catch what changed</span>
+  <span class="sheetno">Catch what changed</span>
   <h2 id="h-changes">Compare every run with the last one</h2>
   <p class="intro">With a baseline, QAmcp remembers the last report and fails the build if the score dropped by more than 5 points, a check started failing, or a tool was removed. Tools that changed are listed in the report and the <code>tools-changed</code> output, so you can decide what to do. That's how you catch a broken release before your customers do.</p>
   <div class="code-wrap">
@@ -121,7 +121,7 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
 
 <section class="part" id="other" aria-labelledby="h-other">
  <div class="part-in">
-  <span class="sheetno">Sheet 5 of 6 · Any other CI</span>
+  <span class="sheetno">Any other CI</span>
   <h2 id="h-other">GitLab, CircleCI, Jenkins or your own script</h2>
   <p class="intro">Run the same command anywhere Node.js 20 or newer is installed. The exit code tells your CI what happened.</p>
   <div class="code-wrap">
@@ -142,7 +142,7 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
 
 <section class="part" id="options" aria-labelledby="h-options">
  <div class="part-in">
-  <span class="sheetno">Sheet 6 of 6 · All options</span>
+  <span class="sheetno">All options</span>
   <h2 id="h-options">Everything the GitHub check accepts</h2>
   <table class="t">
    <thead><tr><th>Option</th><th>What it does</th><th>Default</th></tr></thead>

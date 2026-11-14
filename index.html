@@ -261,7 +261,7 @@ a.mon{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:
 .pro-line{margin:10px 0 0;font-size:13.5px;line-height:1.45;color:var(--soft);text-align:center}.pro-line a{color:var(--ink);white-space:nowrap}.pro-line a:focus-visible{outline:2px solid var(--rose);outline-offset:2px}
 .tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:clamp(28px,4vw,48px)}
 .proof{margin:10px 0 0;font-size:14px;line-height:1.45;color:var(--soft)}.proof a{color:var(--ink)}
-.kq{margin:clamp(28px,4vw,44px) 0 0;padding:18px 22px;border-left:3px solid var(--rose);background:var(--sheet)}.kq p{margin:0;font-size:16px;line-height:1.6;color:var(--ink);max-width:80ch}.kq footer{margin-top:10px;font-size:14px;color:var(--soft)}
+.kq{margin:clamp(28px,4vw,44px) 0 0;padding:18px 22px;border-left:3px solid var(--rose);background:var(--sheet)}.kq p{margin:0;font-size:16px;line-height:1.6;color:var(--ink);max-width:80ch}.kq footer{display:block;margin:10px 0 0;padding:0;border:0;font-size:14px;color:var(--soft)}.kq+.kq{margin-top:14px}.kq footer a{color:var(--ink)}
 .tier{display:flex;flex-direction:column;padding:20px;border:1px solid var(--frame);background:var(--sheet)}
 .tier.pro{border-color:var(--rose)}
 .tier .tn{font:700 15px/1.2 var(--text);color:var(--ink)}.tier .tn span{margin-left:6px;font:400 12.5px var(--mono);color:var(--rose)}
@@ -286,10 +286,6 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
 <a class="skip" href="#main">Skip to content</a>
 
 <div class="sheet">
- <div class="zones" aria-hidden="true">
-  <span class="l" style="top:22%">A</span><span class="l" style="top:50%">B</span><span class="l" style="top:78%">C</span>
-  <span class="b" style="left:16%">1</span><span class="b" style="left:40%">2</span><span class="b" style="left:64%">3</span><span class="b" style="left:88%">4</span>
- </div>
  <div class="sheet-in">
   <header class="top">
    <div class="hl"><a class="brand" href="./">QA<b>mcp</b></a>
@@ -355,7 +351,7 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
     </div>
     <div class="block">
      <div><span class="k">FOR TEAMS</span>Publish a server for customers? <a href="#teams">Check it on every change</a></div>
-     <div><span class="k">SHEET</span>1 of 6 · v0.1.14 · MIT</div>
+     <div><span class="k">OPEN SOURCE</span>Free, MIT license</div>
     </div>
    </div>
   </section>
@@ -365,7 +361,7 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
 
 <section class="part" id="checks" aria-labelledby="h-checks">
  <div class="part-in">
-  <span class="sheetno">Sheet 2 of 6 · What it checks</span>
+  <span class="sheetno">What it checks</span>
   <h2 id="h-checks">Every check is a plain fact you can verify.</h2>
   <p class="intro">No AI judges anything. Every result is checked by code and shows its evidence (pass or fail, a time in milliseconds, an exact match, or the word that set it off), and the report always says what it could not test.</p>
   <table class="checks">
@@ -389,7 +385,7 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
 
 <section class="part" id="report" aria-labelledby="h-report">
  <div class="part-in">
-  <span class="sheetno">Sheet 3 of 6 · The report</span>
+  <span class="sheetno">The report</span>
   <h2 id="h-report">A report page you can send to anyone.</h2>
   <div class="two">
    <div>
@@ -411,7 +407,7 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
 
 <section class="part" id="teams" aria-labelledby="h-teams">
  <div class="part-in">
-  <span class="sheetno">Sheet 4 of 6 · For teams</span>
+  <span class="sheetno">For teams</span>
   <h2 id="h-teams">Publish a server for customers? Check it on every change.</h2>
   <div class="two">
    <div>
@@ -445,7 +441,7 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
 
 <section class="part" id="monitor" aria-labelledby="h-mon">
  <div class="part-in">
-  <span class="sheetno">Sheet 5 of 6 · Monitor</span>
+  <span class="sheetno">Monitor</span>
   <div class="mon">
    <div>
     <h2 id="h-mon">Your server changed at 2:14 am. You'd know.</h2>
@@ -469,6 +465,7 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
    </figure>
   </div>
   <blockquote class="kq" id="proof"><p>"Thanks for the QAmcp report. It was genuinely useful, and we acted on it right away. Our public tool list dropped from about 308 KB to 8.5 KB. Before shipping, we ran 110 agent runs across 55 baseline/candidate pairs: every run succeeded, with no invalid-argument errors, and the new tool list used 48–94% fewer measured context bytes per run."</p><footer>Kevin Brown, Cloud World Model</footer></blockquote>
+  <blockquote class="kq"><p>"QAmcp's report showed 14 of our tools had inputs with no description. We gave every input a one-sentence description, and fixed choices are now enums in the schema. The score went from 93 to 100 the same day."</p><footer>Daan, founder of <a href="https://aibuildermarketplace.com" rel="noopener">AIBuilder Marketplace</a></footer></blockquote>
   <div class="tiers" id="pricing" aria-label="Pricing">
    <div class="tier">
     <p class="tn">Free</p><p class="tp">$0</p>
@@ -495,7 +492,7 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
 
 <section class="part" id="faq" aria-labelledby="h-faq">
  <div class="part-in">
-  <span class="sheetno">Sheet 6 of 6 · Questions</span>
+  <span class="sheetno">Questions</span>
   <h2 id="h-faq">Questions about QAmcp</h2>
   <div class="faq">
    <details><summary>What is QAmcp?</summary><p>A free, open-source tester for MCP servers. It connects to a server the way an AI app does and tells you, in plain words, what is broken: connection, tool descriptions, safety labels, hidden instructions, bad inputs, leaked secrets and speed. Every result is checked by code, never by an AI, and shows its evidence.</p></details>

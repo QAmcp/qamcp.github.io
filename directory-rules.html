@@ -41,26 +41,28 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
 
 <section class="part" id="listed" aria-labelledby="h-listed">
  <div class="part-in">
-  <span class="sheetno">Sheet 2 of 5 · Getting listed</span>
+  <span class="sheetno">Getting listed</span>
   <h2 id="h-listed">Every new server, tested the day it appears</h2>
   <ul class="facts">
    <li><strong>From the official MCP Registry</strong>Each day we test new servers published to the official MCP Registry and give each one a page with its result.</li>
+   <li><strong>Or added by its owner</strong>An owner who has proven a server is theirs can add it from QAmcp Monitor. It gets the same public test and the same rules, its page says "Added by its owner", and it comes off the directory when the owner removes it.</li>
    <li><strong>The same test anyone can run</strong>It's the free, open-source <code>npx qamcp-cli</code> in safe mode: only tools labeled read-only are run, and nothing is changed or deleted.</li>
-   <li><strong>Behind a login? Still listed</strong>We check what we can from outside and mark it "needs login" instead of giving it a low score. The owner can test everything behind the login.</li>
+   <li><strong>Behind a login? Still listed</strong>We check what we can from outside and mark it "needs login" instead of giving it a low score. If its proven owner gives us a test account for the directory, Monitor tests it signed in, still in safe mode. The page and badge then say "Tested signed in, with a test account from the owner", and it is ranked only among servers that need an account. When the owner removes the test account, it goes back to "needs login".</li>
    <li><strong>Kept up to date</strong>Listed servers are re-tested on a rotation, so scores follow what's live. Every page shows when it was last tested.</li>
-   <li><strong>Coming soon</strong>Adding a server by pasting its link, and claiming your page to add a description, logo and links, and to reply to reviews.</li>
+   <li><strong>Coming soon</strong>Claiming your page to add a description, logo and links, and to reply to reviews.</li>
   </ul>
  </div>
 </section>
 
 <section class="part" id="order" aria-labelledby="h-order">
  <div class="part-in">
-  <span class="sheetno">Sheet 3 of 5 · How the order is decided</span>
-  <h2 id="h-order">Relevance, then the test result</h2>
+  <span class="sheetno">How the order is decided</span>
+  <h2 id="h-order">Real products first, then the test result</h2>
   <ul class="facts">
-   <li><strong>1. What you searched for</strong>A search for "calendar" shows calendar servers first, by their name, description and tool names. The score only sorts servers that match.</li>
-   <li><strong>2. The score</strong>Higher scores come first. The score comes only from the test.</li>
-   <li><strong>3. How recent the test is</strong>Results only start to count a little less once they're more than 60 days old.</li>
+   <li><strong>1. Real products first</strong>A server comes first when it has a working website on its own domain and the site shows a company behind it: a LinkedIn company page, a company name, an about or team page, or terms and privacy pages. We check this from the website itself. It changes only the order, never the score. Servers we haven't confirmed yet come next. Servers whose website is on a free host (like Vercel or Lovable) are under "All servers". Every server is in search.</li>
+   <li><strong>2. What you searched for</strong>A search for "calendar" shows servers that match it in their name, description or address, real products first. The score only sorts servers that match.</li>
+   <li><strong>3. The score</strong>Higher scores come first. The score comes only from the test. Servers behind a login are not scored, so they have their own group and are never ranked against scored ones.</li>
+   <li><strong>4. How recent the test is</strong>Results only start to count a little less once they're more than 60 days old.</li>
    <li><strong>New servers get 90 days</strong>Every new server spends 90 days on the "New" shelf, shuffled every day so no one is stuck at the bottom.</li>
    <li><strong>No upvotes</strong>Votes are easy to fake, so there are none.</li>
    <li><strong>Size doesn't matter</strong>A small server that does one thing well ranks the same as a big one. More tools isn't better.</li>
@@ -70,7 +72,7 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
 
 <section class="part" id="fair" aria-labelledby="h-fair">
  <div class="part-in">
-  <span class="sheetno">Sheet 4 of 5 · Keeping it fair</span>
+  <span class="sheetno">Keeping it fair</span>
   <h2 id="h-fair">Rules for everyone, including us</h2>
   <ul class="facts">
    <li><strong>One server, one listing</strong>Copies of the same server under different names are merged into one.</li>
@@ -85,7 +87,7 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
 
 <section class="part" id="promises" aria-labelledby="h-promises">
  <div class="part-in">
-  <span class="sheetno">Sheet 5 of 5 · What never changes</span>
+  <span class="sheetno">What never changes</span>
   <h2 id="h-promises">Our promises</h2>
   <ul class="facts">
    <li><strong>Scores come only from the test</strong>Nobody edits a score by hand, for any reason.</li>
