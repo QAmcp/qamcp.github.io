@@ -11211,5 +11211,187 @@
  "com.gotsimplified/email-parser": {
   "url": "https://gotsimplified.com/pricing",
   "checked": "2026-11-14"
+ },
+ "ai.dreamwild/dreamwild": {
+  "checked": "2026-11-14"
+ },
+ "ai.escro/escro": {
+  "checked": "2026-11-14"
+ },
+ "ai.guizzo/guizzo": {
+  "checked": "2026-11-14"
+ },
+ "ai.heycai/clinic-tools": {
+  "url": "https://www.heycai.ai/pricing",
+  "checked": "2026-11-14"
+ },
+ "ai.jurnie/jurnie": {
+  "checked": "2026-11-14"
+ },
+ "ai.mirelo/mirelo": {
+  "url": "https://mirelo.ai/pricing",
+  "checked": "2026-11-14"
+ },
+ "ai.preferly/preferly": {
+  "url": "https://www.preferly.ai/pricing",
+  "checked": "2026-11-14"
+ },
+ "ai.ringzee/ringzee": {
+  "checked": "2026-11-14"
+ },
+ "ai.signalry/countersign": {
+  "checked": "2026-11-14"
+ },
+ "ai.whoscribe/transcripts": {
+  "url": "https://whoscribe.ai/en/pricing",
+  "checked": "2026-11-14"
+ },
+ "ai.whyiq.www/whyiq": {
+  "checked": "2026-11-14"
+ },
+ "app.clayware/clayware": {
+  "checked": "2026-11-14"
+ },
+ "app.datasourcecorp/wholesale": {
+  "checked": "2026-11-14"
+ },
+ "app.managebetcodes/managebetcodes-mcp": {
+  "checked": "2026-11-14"
+ },
+ "app.pandacrawl/pandacrawl": {
+  "url": "https://pandacrawl.app/pricing",
+  "checked": "2026-11-14"
+ },
+ "biz.notaryon/calculators": {
+  "checked": "2026-11-14"
+ },
+ "br.com.garimpopublico/garimpo": {
+  "checked": "2026-11-14"
+ },
+ "br.com.hubpolitico/hubpolitico": {
+  "checked": "2026-11-14"
+ },
+ "br.com.racingtickets/tickets": {
+  "checked": "2026-11-14"
+ },
+ "ch.zitli/zitli": {
+  "checked": "2026-11-14"
+ },
+ "cloud.kubana/app-platform": {
+  "url": "https://kubana.cloud/pricing",
+  "checked": "2026-11-14"
+ },
+ "cloud.kubana/dns": {
+  "url": "https://kubana.cloud/pricing",
+  "checked": "2026-11-14"
+ },
+ "cloud.kubana/domains": {
+  "url": "https://kubana.cloud/pricing",
+  "checked": "2026-11-14"
+ },
+ "cloud.kubana/shared-hosting": {
+  "url": "https://kubana.cloud/pricing",
+  "checked": "2026-11-14"
+ },
+ "cloud.kubana/vps": {
+  "url": "https://kubana.cloud/pricing",
+  "checked": "2026-11-14"
+ },
+ "cloud.kubana/webmail": {
+  "url": "https://kubana.cloud/pricing",
+  "checked": "2026-11-14"
+ },
+ "co.civai.nova/mcp-google_photos": {
+  "checked": "2026-11-14"
+ },
+ "co.draftbase/draftbase": {
+  "url": "https://draftbase.co/pricing",
+  "checked": "2026-11-14"
+ },
+ "com.ai-tiles/tiles": {
+  "checked": "2026-11-14"
+ },
+ "com.alalanet/guard": {
+  "url": "https://alalanet.com/pricing",
+  "checked": "2026-11-14"
+ },
+ "com.attendir/attendir": {
+  "url": "https://attendir.com/pricing",
+  "checked": "2026-11-14"
+ },
+ "com.beyourcover/book-cover-generator": {
+  "checked": "2026-11-14"
+ },
+ "com.bonissystems/dealmatcher": {
+  "url": "https://dealmatcherapp.com/pricing.html",
+  "checked": "2026-11-14"
+ },
+ "com.bonissystems/health-agent": {
+  "url": "https://healthagentcare.com/pricing",
+  "checked": "2026-11-14"
+ },
+ "com.braigetori/community": {
+  "checked": "2026-11-14"
+ },
+ "com.calcbright/calcbright": {
+  "checked": "2026-11-14"
+ },
+ "com.cheapcarent/search": {
+  "checked": "2026-11-14"
+ },
+ "com.cosmicgoodboy/shop": {
+  "checked": "2026-11-14"
+ },
+ "com.deeepspace/deeepspace": {
+  "checked": "2026-11-14"
+ },
+ "com.docjacket/server": {
+  "url": "https://www.docjacket.com/pricing",
+  "checked": "2026-11-14"
+ },
+ "com.dutopilot/dutopilot": {
+  "url": "https://dutopilot.com/pricing/",
+  "checked": "2026-11-14"
+ },
+ "com.enterprise-radar/mcp": {
+  "checked": "2026-11-14"
+ },
+ "com.envloped/mcp": {
+  "checked": "2026-11-14"
+ },
+ "com.extraudinary/mcp": {
+  "checked": "2026-11-14"
+ },
+ "com.extrivon/extrivon": {
+  "checked": "2026-11-14"
+ },
+ "com.finometr/finometr": {
+  "checked": "2026-11-14"
+ },
+ "com.fopost/fopost": {
+  "url": "https://fopost.com/pricing",
+  "checked": "2026-11-14"
+ },
+ "com.gameshopenter/shop": {
+  "checked": "2026-11-14"
+ },
+ "com.geodeapps.mcp/geode": {
+  "checked": "2026-11-14"
+ },
+ "com.getklo.mcp/klo": {
+  "checked": "2026-11-14"
+ },
+ "com.getprintbot/printbot": {
+  "checked": "2026-11-14"
+ },
+ "com.getscorra/scorra": {
+  "url": "https://getscorra.com/pricing",
+  "checked": "2026-11-14"
+ },
+ "com.gitranks/contribute": {
+  "checked": "2026-11-14"
+ },
+ "owner/api.aibuildermarketplace.com/mcp": {
+  "checked": "2026-11-14"
  }
 }

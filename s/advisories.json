@@ -3260,5 +3260,34 @@
    "GitHub Security Advisories"
   ],
   "items": []
+ },
+ "ai.escro/escro": {
+  "checked": "2026-11-14",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "ai.preferly/preferly": {
+  "checked": "2026-11-14",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.whyiq.www/whyiq": {
+  "checked": "2026-11-14",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.clayware/clayware": {
+  "checked": "2026-11-14",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
  }
 }
