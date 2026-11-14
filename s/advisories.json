@@ -3147,5 +3147,118 @@
    "GitHub Security Advisories"
   ],
   "items": []
+ },
+ "ai.autonomad/travel": {
+  "checked": "2026-11-14",
+  "sources": [
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "ai.dforms/dforms": {
+  "checked": "2026-11-14",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.ilang/mcp": {
+  "checked": "2026-11-14",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.minidesk/minidesk": {
+  "checked": "2026-11-14",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.mojobase/mojobase": {
+  "checked": "2026-11-14",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.saifs/business-calculator": {
+  "checked": "2026-11-14",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.saifs/cash-forecast": {
+  "checked": "2026-11-14",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.saifs/data-cleaning": {
+  "checked": "2026-11-14",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.saifs/financial-anomaly": {
+  "checked": "2026-11-14",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.saifs/quote-pricing": {
+  "checked": "2026-11-14",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.sellerforge/sellerforge": {
+  "checked": "2026-11-14",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.shiwake/mcp": {
+  "checked": "2026-11-14",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "app.ccreward/ccreward": {
+  "checked": "2026-11-14",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.trainultra/coach": {
+  "checked": "2026-11-14",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "au.com.searchscope/ai-visibility-auditor": {
+  "checked": "2026-11-14",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "co.deadbrands/arena": {
+  "checked": "2026-11-14",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
  }
 }

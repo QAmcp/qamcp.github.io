@@ -1,116 +1,13 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Is Amazon Seller MCP Server — AgentXray server safe? QAmcp test results</title>
-<meta name="description" content="Amazon Seller MCP Server — AgentXray server: Amazon Seller Central and Ads inside Claude, ChatGPT…. Not scored (needs a login) in QAmcp&#39;s test on 11 Nov 2026.">
-<link rel="canonical" href="https://qamcp.dev/s/ai-agentxray-mcp.html">
-<meta property="og:type" content="website"><meta property="og:site_name" content="QAmcp"><meta property="og:title" content="Amazon Seller MCP Server — AgentXray server: tested by QAmcp"><meta property="og:description" content="Amazon Seller MCP Server — AgentXray server: Amazon Seller Central and Ads inside Claude, ChatGPT…. Not scored (needs a login) in QAmcp&#39;s test on 11 Nov 2026."><meta property="og:url" content="https://qamcp.dev/s/ai-agentxray-mcp.html"><meta name="twitter:card" content="summary">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is Amazon Seller MCP Server — AgentXray server safe?","acceptedAnswer":{"@type":"Answer","text":"QAmcp's test on 11 Nov 2026: It needs an account, so we could only check it from outside. Its tools are behind the login. A test can only see what the server shows from outside, not what it does with your data behind the scenes. Connect servers from makers you trust."}}]}</script>
-<script>try{var t=localStorage.getItem('qamcp-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}document.addEventListener('error',function(e){var i=e.target;if(!i||i.tagName!=='IMG'||!i.dataset||!i.dataset.letter)return;var s=document.createElement('span');s.className=i.className+' letter';s.setAttribute('aria-hidden','true');s.textContent=i.dataset.letter;i.replaceWith(s)},true);</script>
-<link rel="stylesheet" href="../site.css"><link rel="stylesheet" href="../theme.css"><link rel="stylesheet" href="server.css">
-<script>
-!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}((p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r));var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
-if(location.hostname==='qamcp.dev'||location.hostname==='api.qamcp.dev')posthog.init('phc_p4Wad2LVUW2yHEWsWXrCajwiM2XNK45coFjRNev4DoH9',{api_host:'https://us.i.posthog.com',persistence:'sessionStorage',person_profiles:'identified_only',capture_pageview:true,autocapture:true,session_recording:{maskAllInputs:true},respect_dnt:true});
-document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e.target.closest('a, button'):null;if(!a)return;var t=(a.textContent||'').trim().toLowerCase(),h=a.getAttribute('href')||'';if(t.includes('get pro')||h.includes('dashboard/billing')||(t.includes('pricing')&&(a.classList.contains('btn')||a.classList.contains('tb')||a.classList.contains('p')||a.classList.contains('cta')))){try{window.posthog&&window.posthog.capture('get_pro_clicked')}catch(err){}}},true);
-</script>
-</head><body>
-<div class="wrap">
- <header class="top"><a class="brand" href="../index.html">QA<b>mcp</b></a><nav aria-label="Main"><a href="../directory.html" aria-current="page">Directory</a><a href="../test.html">Test a server</a><a href="../how-it-works.html">How it works</a><a href="../safety.html">Safety</a><a href="../ci.html">Run it in CI</a><a href="../samples.html">Sample reports</a></nav>
-  <div class="tools"><div class="ai"><button class="ai-btn" type="button" aria-expanded="false" aria-controls="ai-pop"><svg viewBox="0 0 16 16" aria-hidden="true" width="15" height="15"><path fill="none" stroke="currentColor" stroke-width="1.4" d="M8 1.5l1.6 3.9 3.9 1.6-3.9 1.6L8 12.5 6.4 8.6 2.5 7l3.9-1.6z"/></svg>Test with your AI</button><div class="ai-pop" id="ai-pop" hidden><b>Copied. Paste it into Claude Code, Cursor or Codex:</b><code>Fetch and follow the instructions at https://qamcp.dev/setup.md to test my MCP server.</code><p>Your AI finds your server in your project, tests it with QAmcp, explains what&#39;s wrong in plain words, fixes it with your OK, and tests again. <a href="../setup.md">Read the instructions</a></p></div></div><button class="theme" id="theme" type="button">Light</button><a class="gh" href="https://github.com/QAmcp/qamcp-cli">GitHub</a></div></header>
- <a class="mon-strip" href="../monitor.html?from=server-page"><b>New</b><span>Your score can change any day. <strong>QAmcp Monitor</strong> keeps testing your server and emails you when it breaks. Free for 1 server.</span><i>See what Monitor does →</i></a>
- <section class="hero">
-  <img class="logo" src="logo/ai-agentxray-mcp.png" alt="" width="96" height="96" data-letter="A">
-  <div class="who">
-   <p class="crumb"><a href="../directory.html">Directory</a> / Amazon Seller MCP Server — AgentXray</p>
-   <h1>Amazon Seller MCP Server — AgentXray</h1>
-   <p class="by">by <a href="https://agentxray.ai/amazon-mcp" rel="noopener nofollow">agentxray.ai</a> · https://agentxray.ai/api/mcp</p>
-   <p class="d">Amazon Seller Central and Ads inside Claude, ChatGPT or Grok. Fees from your own settlements.</p>
-   <div class="chips"><span>needs an account</span><span>Pricing: not listed</span><span>From the official MCP registry</span></div>
-   <div class="acts"><button class="p" type="button" id="copy-top" data-cmd="npx qamcp-cli https://agentxray.ai/api/mcp --login">Copy the test command</button><a class="s" href="https://agentxray.ai/amazon-mcp" rel="noopener nofollow">Visit website</a></div>
-  </div>
-  <div class="side">
-  <div class="medal" id="medal" data-slug="ai-agentxray-mcp" data-tested="2026-11-11" data-tested-label="11 Nov 2026" data-source="daily test">
-   <div class="n login" id="score-n">needs login</div>
-   <span class="stamp none" id="score-stamp">NOT SCORED</span>
-   <p class="down" id="down-now" hidden></p>
-   <p id="signed-in" hidden>Tested signed in, with a test account from the owner.</p>
-   <p class="fresh-note" id="fresh-note" hidden></p>
-   <p id="score-when">Checked from outside only · 11 Nov 2026 · daily test</p>
-  </div>
-  <a class="now" href="../test.html?url=https%3A%2F%2Fagentxray.ai%2Fapi%2Fmcp&amp;go=1&amp;from=server-page">Test it now for current results</a>
-  </div>
- </section>
- <nav class="tabs" aria-label="On this page"><a href="#glance">At a glance</a><a href="#safe">Is it safe?</a><a href="#advisories">Advisories</a><a href="#results">Test results</a><a href="#reviews">Reviews</a></nav>
-<section class="sec" id="glance"><h2>At a glance</h2><dl class="glance" id="glance-list"><div><dt>Runs where</dt><dd>On their server. What you send to it goes to them.</dd></div><div><dt>What you need</dt><dd>An account with them</dd></div></dl><p class="hint">Its tools are behind the login, so we could not measure them. <span id="glance-when">From the daily test on 11 Nov 2026.</span></p></section>
-<section class="sec" id="safe"><h2>Is Amazon Seller MCP Server — AgentXray server safe?</h2><ul class="safe"><li>It needs an account, so we could only check it from outside. Its tools are behind the login.</li></ul><p class="hint">A test can only see what the server shows from outside, not what it does with your data behind the scenes. Connect servers from makers you trust.</p><h3 class="sub">What this test does not check</h3><ul class="safe not"><li>Its source code and packages.</li><li>What a tool quietly does behind the scenes, such as writing a file or calling another service.</li><li>Instructions hidden inside live tool answers. We only look for those in tool descriptions.</li><li>Hidden instructions worded in a way our list doesn&#39;t know yet.</li><li>Tools that could change something. Those are read, never run.</li></ul><p class="hint"><a href="../limits.html">What QAmcp can and can't see</a> · <a href="../is-my-mcp-server-safe.html">How to tell if an MCP server is safe</a> · <a href="../mcp-tool-poisoning.html">Hidden instructions</a> · <a href="../mcp-prompt-injection.html">Prompt injection</a></p></section>
-<section class="sec" id="advisories"><h2>Known security advisories</h2><p class="hint">It lists no public code, so there is nothing to look up in GitHub Security Advisories or OSV.dev. QAmcp tests how a server behaves. It does not scan source code.</p></section>
-
- <section class="sec" id="results"><h2>Test results</h2><p class="hint">We could only check it from outside. The owner can test everything behind the login. <a href="../how-it-works.html">How the test works</a></p><ul class="checks">
-<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Login setup follows the spec</b><details><summary>All good</summary><ul><li class="pass"><span class="m">✓</span>The server asks for a login (it answers 401 to an anonymous request).</li><li class="pass"><span class="m">✓</span>The 401 reply points AI apps to the login details (resource_metadata).</li><li class="pass"><span class="m">✓</span>The login details name this exact server.</li><li class="pass"><span class="m">✓</span>Found the login server&#39;s description at https://agentxray.ai/.well-known/oauth-authorization-server.</li><li class="pass"><span class="m">✓</span>The login server&#39;s name matches what the server points to.</li><li class="pass"><span class="m">✓</span>PKCE with S256 is supported.</li><li class="pass"><span class="m">✓</span>AI apps can register themselves (dynamic registration).</li></ul></details></div><span class="st">pass</span></li>
-<li class="chk off"><span class="mk off" aria-label="not tested">–</span><div><b>Asks for a login first</b><span class="sum">Everything else is behind the login, so we did not score it.</span></div><span class="st">not tested</span></li>
- </ul></section>
- <section class="sec" id="badge"><h2>Show this score on GitHub</h2><p class="hint">Free for every server in the directory. Paste this into your README: the badge always shows the newest score, from the daily test, a test on our website or a Monitor test.</p>
-  <p class="badge-img"><img src="https://api.qamcp.dev/badge/s/ai-agentxray-mcp.svg" alt="QAmcp badge for Amazon Seller MCP Server — AgentXray" height="20"></p>
-  <div class="cmd"><code id="badge-md">[![QAmcp score](https://api.qamcp.dev/badge/s/ai-agentxray-mcp.svg)](https://qamcp.dev/s/ai-agentxray-mcp.html)</code><button type="button" id="copy-badge">Copy</button></div></section>
- <section class="sec" id="reviews"><h2>Reviews</h2><p class="hint">Coming soon: reviews from people who use Amazon Seller MCP Server — AgentXray, signed in with GitHub, one per person. Reviews never change the score.</p></section>
- <div class="claim"><div><b>Is this your server? Get an alert the moment it breaks.</b><p>QAmcp Monitor tests it every hour and emails you when it goes down, the score drops, a tool changes or a secret leaks. Free for 1 server, no card.</p><form class="notify" novalidate><input type="hidden" name="server" value="https://agentxray.ai/api/mcp"><label class="nl">Work email<input name="email" type="email" autocomplete="email" required placeholder="you@company.com"></label><button type="submit">Start monitoring free</button></form><p class="notify-msg" role="status" aria-live="polite"></p><p>Have a concern, or want it removed? <a href="https://github.com/QAmcp/qamcp-cli/issues">Ask us</a> and we'll take it off the list. <a href="../directory-rules.html">How the directory works</a></p></div></div>
-</div>
-<script src="../theme.js"></script>
-<script src="../count.js"></script>
-<script src="../ai.js"></script>
-<script src="../notify.js"></script>
-<script>
-// The newest result shows here as soon as the page opens: a website test or a Monitor test, with its
-// At a glance, and whether Monitor finds the server answering right now. If the test service doesn't
-// answer, the page keeps what it was built with.
-(async () => {
-  const m = document.getElementById('medal');
-  const WORDS = {"website":"website test","monitor":"Monitor test","daily":"daily test"}, ORDER = ["Runs where","What you need","Tools","Its own safety labels","Memory it takes","Largest answer","Tools that look alike","Speed","Reliability","Tools last changed"], ONE_TEST = ["What you need","Tools","Its own safety labels","Memory it takes","Largest answer","Tools that look alike","Speed"];
-  // A website or Monitor result has a time; the daily test only a day.
-  const when = (t) => String(t).length > 10
-    ? new Date(t).toLocaleString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit' })
-    : new Date(t + 'T12:00:00Z').toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' });
-  try {
-    const r = await fetch('https://api.qamcp.dev/api/directory/' + encodeURIComponent(m.dataset.slug), { cache: 'no-store' });
-    if (!r.ok) return;
-    const n = await r.json();
-    const source = n.source || (n.fromWebsite ? 'website' : 'daily');
-    const fresh = source !== 'daily' && String(n.testedAt).slice(0, 10) >= m.dataset.tested;
-    const down = document.getElementById('down-now');
-    if (n.notAnsweringSince) { down.textContent = 'Not answering since ' + when(n.notAnsweringSince) + '. We keep checking.'; down.hidden = false; }
-    else if (fresh) down.hidden = true; // a newer test saw it answer
-    if (!fresh) return;
-    const word = WORDS[source] || 'test';
-    const num = document.getElementById('score-n');
-    if (n.notScored) { num.className = 'n login'; num.textContent = /login/i.test(n.notScored) ? 'needs login' : 'not scored'; }
-    else { num.className = 'n'; num.textContent = String(Number(n.score)); const small = document.createElement('small'); small.textContent = ' /100'; num.append(small); }
-    if (Array.isArray(n.verdict) && ['pass', 'fail', 'mid', 'none'].includes(n.verdict[1])) { const st = document.getElementById('score-stamp'); st.className = 'stamp ' + n.verdict[1]; st.textContent = String(n.verdict[0]); }
-    document.getElementById('score-when').textContent = 'Newest test · ' + when(n.testedAt) + ' · ' + word;
-    const note = document.getElementById('fresh-note');
-    note.textContent = 'The score and At a glance are from a ' + word + ' on ' + when(n.testedAt) + '. The test results below are from the ' + m.dataset.source + ' on ' + m.dataset.testedLabel + '.';
-    note.hidden = false;
-    document.getElementById('signed-in').hidden = !n.signedIn; // the newest result says whether it was signed in
-    // At a glance: the lines one test measures come from the newest result. A line it no longer shows goes,
-    // unless the test couldn't see the tools (a login wall), when the measured lines stay as they were.
-    if (Array.isArray(n.glance)) {
-      const list = document.getElementById('glance-list');
-      const rows = new Map([...list.children].map((d) => [d.querySelector('dt').textContent, d]));
-      for (const label of ONE_TEST) {
-        const g = n.glance.find((x) => x && x.label === label);
-        if (g) {
-          let row = rows.get(label);
-          if (!row) { row = document.createElement('div'); row.append(document.createElement('dt'), document.createElement('dd')); row.firstChild.textContent = label; rows.set(label, row); }
-          row.lastChild.textContent = String(g.value);
-        } else if (rows.has(label) && (label === 'What you need' || n.sawTools)) { rows.get(label).remove(); rows.delete(label); }
-      }
-      list.replaceChildren(...ORDER.filter((l) => rows.has(l)).map((l) => rows.get(l)));
-      document.getElementById('glance-when').textContent = 'From the ' + word + ' on ' + when(n.testedAt) + '.';
-    }
-  } catch (err) {}
-})();
-for (const [id, text] of [['copy-top', (b) => b.dataset.cmd], ['copy-badge', () => document.getElementById('badge-md').textContent]]) document.getElementById(id).onclick = async (e) => {
-  const b = e.currentTarget, was = b.textContent, t = text(b);
-  try { await navigator.clipboard.writeText(t); b.textContent = 'Copied'; } catch (err) { b.textContent = t; }
-  setTimeout(() => (b.textContent = was), 1800);
-};
-</script>
-</body></html>
+<title>Amazon Seller MCP Server — AgentXray server: page moved · QAmcp</title>
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://qamcp.dev/s/ai-agentxray-amazon-seller-mcp.html">
+<meta http-equiv="refresh" content="0; url=ai-agentxray-amazon-seller-mcp.html">
+<script>try{location.replace("ai-agentxray-amazon-seller-mcp.html"+location.search+location.hash)}catch(e){}</script>
+<link rel="stylesheet" href="../site.css"><link rel="stylesheet" href="../theme.css">
+</head><body><div class="wrap"><main style="padding:48px 0">
+<h1>This page has moved</h1>
+<p>ai.agentxray/mcp is listed in the official MCP registry with the same link as ai.agentxray/amazon-seller-mcp (https://agentxray.ai/api/mcp), so they are one server with one page.</p>
+<p><a href="ai-agentxray-amazon-seller-mcp.html">Go to Amazon Seller MCP Server — AgentXray →</a></p>
+</main></div></body></html>
