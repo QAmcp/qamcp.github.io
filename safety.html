@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>QAmcp safety and privacy: what it touches, and what it never does</title>
-<meta name="description" content="What QAmcp sends and to whom, which tools it runs, where your login is kept, and what it never does. Free, open source, no tracking.">
+<meta name="description" content="What QAmcp sends and to whom, which tools it runs, where your login is kept, and what it never does. Free and open source. The terminal tool has no tracking.">
 <link rel="canonical" href="https://qamcp.dev/safety.html">
-<meta property="og:type" content="website"><meta property="og:site_name" content="QAmcp"><meta property="og:title" content="QAmcp safety and privacy: what it touches, and what it never does"><meta property="og:description" content="What QAmcp sends and to whom, which tools it runs, where your login is kept, and what it never does. Free, open source, no tracking."><meta property="og:url" content="https://qamcp.dev/safety.html"><meta name="twitter:card" content="summary">
+<meta property="og:type" content="website"><meta property="og:site_name" content="QAmcp"><meta property="og:title" content="QAmcp safety and privacy: what it touches, and what it never does"><meta property="og:description" content="What QAmcp sends and to whom, which tools it runs, where your login is kept, and what it never does. Free and open source. The terminal tool has no tracking."><meta property="og:url" content="https://qamcp.dev/safety.html"><meta name="twitter:card" content="summary">
 <meta name="color-scheme" content="light dark">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231A1A1A'/%3E%3Crect x='7' y='7' width='18' height='18' rx='2' fill='none' stroke='%23B9838A' stroke-width='2.4'/%3E%3C/svg%3E">
 <script>try{var t=localStorage.getItem('qamcp-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
@@ -24,7 +24,7 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
  <div class="sheet-in">
   <header class="top">
    <a class="brand" href="./">QA<b>mcp</b></a>
-   <nav aria-label="Main"><a href="directory.html">Directory</a><a href="test.html">Test a server</a><a href="monitor.html">Monitor</a><a href="how-it-works.html">How it works</a><a href="safety.html" aria-current="page">Safety</a><a href="ci.html">Run it in CI</a><a href="samples.html">Sample reports</a></nav>
+   <nav aria-label="Main"><a href="directory.html">Directory</a><a href="test.html">Test a server</a><a href="monitor.html">Monitor</a><a href="guard.html">Guard</a><a href="pricing.html">Pricing</a><a href="how-it-works.html">How it works</a><a href="safety.html" aria-current="page">Safety</a><a href="ci.html">Run it in CI</a><a href="samples.html">Sample reports</a></nav><details class="mnav"><summary>Menu</summary><div class="mnav-list"><a href="directory.html">Directory</a><a href="test.html">Test a server</a><a href="monitor.html">Monitor</a><a href="guard.html">Guard</a><a href="pricing.html">Pricing</a><a href="how-it-works.html">How it works</a><a href="safety.html" aria-current="page">Safety</a><a href="ci.html">Run it in CI</a><a href="samples.html">Sample reports</a><a href="https://api.qamcp.dev/dashboard?from=menu">Sign in</a></div></details>
    <div class="ai"><button class="ai-btn" type="button" aria-expanded="false" aria-controls="ai-pop"><svg viewBox="0 0 16 16" aria-hidden="true" width="15" height="15"><path fill="none" stroke="currentColor" stroke-width="1.4" d="M8 1.5l1.6 3.9 3.9 1.6-3.9 1.6L8 12.5 6.4 8.6 2.5 7l3.9-1.6z"/></svg>Test with your AI</button><div class="ai-pop" id="ai-pop" hidden><b>Copied. Paste it into Claude Code, Cursor or Codex:</b><code>Fetch and follow the instructions at https://qamcp.dev/setup.md to test my MCP server.</code><p>Your AI finds your server in your project, tests it with QAmcp, explains what's wrong in plain words, fixes it with your OK, and tests again. <a href="setup.md">Read the instructions</a></p></div></div>
    <a class="gh" href="https://github.com/QAmcp/qamcp-cli"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38v-1.33c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.06-.49.06-.49.8.06 1.23.83 1.23.83.72 1.22 1.88.87 2.34.66.07-.52.28-.87.5-1.07-1.78-.2-3.65-.89-3.65-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>GitHub</a>
    <a class="gh signin" href="https://api.qamcp.dev/dashboard?from=menu">Sign in</a>
@@ -86,9 +86,9 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
 <section class="part" id="ours" aria-labelledby="h-ours">
  <div class="part-in">
   <span class="sheetno">This website, and our own tests</span>
-  <h2 id="h-ours">No tracking here either</h2>
+  <h2 id="h-ours">What this website counts</h2>
   <ul class="facts">
-   <li><strong>This website</strong>No cookies, no ads, no outside analytics. We only count visits as daily totals (which page, which site sent you), with nothing that points to you. The fonts are served from this site, so your visit isn't reported to anyone else.</li>
+   <li><strong>This website</strong>No cookies and no ads. To find out what's confusing, we use PostHog to see which pages are opened and what is clicked, with recordings that hide what you type. Nothing follows you from one visit to the next, and the terminal tool sends nothing at all. The Privacy page has the details. The fonts are served from this site, so your visit isn't reported to anyone else.</li>
    <li><strong>When we test public servers</strong>We test new servers from the official MCP Registry in the same safe mode, and send the results to their owners. Those report links are unlisted and hidden from search engines.</li>
    <li><strong>Open source, MIT licensed</strong>Every check is in the <a href="https://github.com/QAmcp/qamcp-cli">code on GitHub</a>. Read it before you trust it.</li>
    <li><strong>Found a problem?</strong>If QAmcp gets something wrong about your server, or does something it shouldn't, <a href="https://github.com/QAmcp/qamcp-cli/issues">tell us on GitHub</a>. Being fair matters more than anything.</li>
@@ -102,18 +102,30 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
 <footer>
  <span>QAmcp · free and open source (MIT)</span>
  <a href="./">Home</a>
- <a href="how-it-works.html">How it works</a>
- <a href="https://github.com/QAmcp/qamcp-cli">GitHub</a>
- <a href="https://github.com/QAmcp/qamcp-cli/issues">Report a wrong result</a>
+ <a href="test.html">Test a server</a>
  <a href="monitor.html">Monitor</a>
+ <a href="guard.html">Guard</a>
  <a href="pricing.html">Pricing</a>
- <a href="terms.html">Terms</a>
- <a href="refund.html">Refunds</a>
+ <a href="directory.html">Directory</a>
+ <a href="how-it-works.html">How it works</a>
+ <a href="cli.html">Use it in the terminal</a>
+ <a href="ci.html">Run it in CI</a>
+ <a href="how-to-test-mcp-server.html">How to test an MCP server</a>
+ <a href="how-to-monitor-mcp-server.html">How to monitor an MCP server</a>
+ <a href="mcp-server-not-working.html">MCP server not working?</a>
+ <a href="is-my-mcp-server-safe.html">Is an MCP server safe?</a>
+ <a href="state-of-mcp-2026-10.html">State of MCP, Oct 2026</a>
+ <a href="safety.html">Safety</a>
  <a href="limits.html">What it can't catch</a>
  <a href="security.html">Security and data</a>
- <a href="privacy.html">Privacy and terms</a>
+ <a href="privacy.html">Privacy</a>
+ <a href="terms.html">Terms</a>
+ <a href="refund.html">Refunds</a>
  <a href="contact.html">Contact</a>
- <span class="r">No cookies · <a href="../privacy.html">Privacy</a></span>
+ <a href="https://github.com/QAmcp/qamcp-cli">GitHub</a>
+ <a href="https://www.npmjs.com/package/qamcp-cli">npm</a>
+ <a href="https://github.com/QAmcp/qamcp-cli/issues">Report a wrong result</a>
+ <span class="r">No cookies · <a href="privacy.html">Privacy</a></span>
 </footer>
 <script src="site.js"></script>
 <script src="theme.js"></script>

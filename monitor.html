@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>MCP Server Monitoring: free uptime and tool-change alerts · QAmcp</title>
-<meta name="description" content="Monitor your MCP server the way an AI app uses it. Free for 1 server: a full test once a day and an email when it goes down, the score drops, a tool changes or a secret leaks. Pro tests every hour, checks it's up every 5 minutes and adds Slack.">
+<meta name="description" content="Monitor your MCP server the way an AI app uses it. Free for 1 server: a daily full test and an email when it goes down, the score drops or a tool changes.">
 <link rel="canonical" href="https://qamcp.dev/monitor.html">
-<meta property="og:type" content="website"><meta property="og:site_name" content="QAmcp"><meta property="og:title" content="MCP Server Monitoring: free uptime and tool-change alerts · QAmcp"><meta property="og:description" content="Monitor your MCP server the way an AI app uses it. Free for 1 server: a full test once a day and an email when it goes down, the score drops, a tool changes or a secret leaks. Pro tests every hour, checks it's up every 5 minutes and adds Slack.">
+<meta property="og:image" content="https://qamcp.dev/img/sample-context7.png"><meta property="og:type" content="website"><meta property="og:site_name" content="QAmcp"><meta property="og:title" content="MCP Server Monitoring: free uptime and tool-change alerts · QAmcp"><meta property="og:description" content="Monitor your MCP server the way an AI app uses it. Free for 1 server: a daily full test and an email when it goes down, the score drops or a tool changes.">
 <meta name="color-scheme" content="light dark">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231A1A1A'/%3E%3Crect x='7' y='7' width='18' height='18' rx='2' fill='none' stroke='%23B9838A' stroke-width='2.4'/%3E%3C/svg%3E">
 <script>try{var t=localStorage.getItem('qamcp-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
@@ -54,7 +54,7 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
  <div class="sheet-in">
   <header class="top">
    <a class="brand" href="./">QA<b>mcp</b></a>
-   <nav aria-label="Main"><a href="directory.html">Directory</a><a href="test.html">Test a server</a><a href="monitor.html">Monitor</a><a href="how-it-works.html">How it works</a><a href="safety.html">Safety</a><a href="ci.html">Run it in CI</a><a href="samples.html">Sample reports</a></nav>
+   <nav aria-label="Main"><a href="directory.html">Directory</a><a href="test.html">Test a server</a><a href="monitor.html" aria-current="page">Monitor</a><a href="guard.html">Guard</a><a href="pricing.html">Pricing</a><a href="how-it-works.html">How it works</a><a href="safety.html">Safety</a><a href="ci.html">Run it in CI</a><a href="samples.html">Sample reports</a></nav><details class="mnav"><summary>Menu</summary><div class="mnav-list"><a href="directory.html">Directory</a><a href="test.html">Test a server</a><a href="monitor.html" aria-current="page">Monitor</a><a href="guard.html">Guard</a><a href="pricing.html">Pricing</a><a href="how-it-works.html">How it works</a><a href="safety.html">Safety</a><a href="ci.html">Run it in CI</a><a href="samples.html">Sample reports</a><a href="https://api.qamcp.dev/dashboard?from=menu">Sign in</a></div></details>
    <div class="ai"><button class="ai-btn" type="button" aria-expanded="false" aria-controls="ai-pop"><svg viewBox="0 0 16 16" aria-hidden="true" width="15" height="15"><path fill="none" stroke="currentColor" stroke-width="1.4" d="M8 1.5l1.6 3.9 3.9 1.6-3.9 1.6L8 12.5 6.4 8.6 2.5 7l3.9-1.6z"/></svg>Test with your AI</button><div class="ai-pop" id="ai-pop" hidden><b>Copied. Paste it into Claude Code, Cursor or Codex:</b><code>Fetch and follow the instructions at https://qamcp.dev/setup.md to test my MCP server.</code><p>Your AI finds your server in your project, tests it with QAmcp, explains what's wrong in plain words, fixes it with your OK, and tests again. <a href="setup.md">Read the instructions</a></p></div></div>
    <a class="gh" href="https://github.com/QAmcp/qamcp-cli"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38v-1.33c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.06-.49.06-.49.8.06 1.23.83 1.23.83.72 1.22 1.88.87 2.34.66.07-.52.28-.87.5-1.07-1.78-.2-3.65-.89-3.65-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>GitHub</a>
    <a class="gh signin" href="https://api.qamcp.dev/dashboard?from=menu">Sign in</a>
@@ -64,7 +64,7 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
    <div class="page-head mhero">
     <div>
      <span class="mpill">Free for 1 server</span>
-     <h1>Know the moment your MCP server breaks</h1>
+     <h1>Know when your MCP server breaks</h1>
      <p>MCP server monitoring that checks your server the way an AI app uses it: a full QA test once a day for free, or every hour on Pro with an up check every 5 minutes. When something goes wrong, you get one email that says what happened, what it means and what to do. When it's fixed, you get one more.</p>
      <nav class="toc" aria-label="On this page"><a href="#watches">What it watches</a><a href="#get">What you get</a><a href="#alert">An example alert</a><a href="#price">Price</a><a href="#questions">Questions</a><a href="how-to-monitor-mcp-server.html">How to monitor an MCP server</a></nav>
     </div>
@@ -98,7 +98,7 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
    <li><strong>Login, MCP version, certificate</strong>When it suddenly asks for a login or its login setup breaks, when it goes back to an older MCP version (an update to a newer one comes as good news), and 14 days before its security certificate ends.</li>
    <li><strong>Slow</strong>When it takes 3 seconds or more to start and 3 times longer than usual, 2 checks in a row.</li>
    <li><strong>Security</strong>A hidden instruction that appears in a tool description, or a secret that starts showing up in an error message, and the moment it's gone again.</li>
-   <li><strong>Gentle until you prove it's yours</strong>We never test a server hard unless its owner says so. Publish a short code on your server or in your DNS, it takes a minute, and you get full speed. If many people watch one server, it still gets one test.</li>
+   <li><strong>Gentle until you prove it's yours</strong>We never test a server hard unless its owner says so. Sign in with GitHub or a work email at your server's domain, or publish a short code on your server or in your DNS. It takes a minute, and you get full speed. If many people watch one server, it still gets one test.</li>
    <li><strong>Safe, always</strong>Only tools labeled read-only are ever run, and never anything that sounds like it deletes. Monitor never changes your data.</li>
   </ul>
  </div>
@@ -112,7 +112,7 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
    <li><strong>Emails worth reading</strong>One when a problem starts and one when it's fixed, never a repeat while it lasts. You choose which kinds you want.</li>
    <li><strong>A dashboard</strong>Every server at a glance, problems first. For each one: up time over 24 hours, 7 and 30 days, the first failing and last good test, the score over time, every change and every past problem.</li>
    <li><strong>Test now, pause, resume</strong>Run a test whenever you ship, and pause a server while you work on it.</li>
-   <li><strong>Teammates</strong>Up to 3 people get the same alerts. Each one confirms from their own inbox first.</li>
+   <li><strong>Teammates</strong>On Pro, up to 3 people get the same alerts. Each one confirms from their own inbox first.</li>
    <li><strong>A live badge</strong>The current score in your README, updated with every test.</li>
    <li><strong>A year of history</strong>Every score and every change, kept for a year. Delete everything any time, from your settings.</li>
   </ul>
@@ -125,8 +125,8 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
  <div class="part-in doc">
   <span class="sheetno">An example alert</span>
   <h2 id="h-alert">What an alert looks like</h2>
-  <p>This is a real Monitor email, for our own test server that we switched off on purpose.</p>
-  <div class="mail"><p class="mail-h">From: QAmcp Monitor · Subject: [Down] api.acme.ai is not answering</p><pre>DOWN: api.acme.ai is not answering
+  <p>This is what a Monitor email looks like. The server name is an example.</p>
+  <div class="mail"><p class="mail-h">From: QAmcp Monitor · Subject: [Down] mcp.example.com is not answering</p><pre>DOWN: mcp.example.com is not answering
 ────────────────────────────
 What happened
    Your MCP server stopped answering at 02:14 UTC. It failed 2 checks in a row.
@@ -145,9 +145,9 @@ Details
   <span class="sheetno">Price</span>
   <h2 id="h-price">Start free, grow with Pro</h2>
   <ul class="facts">
-   <li><strong>Free: 1 server</strong>A full test once a day, a look every hour, and the same email alerts. No card.</li>
-   <li><strong>Pro: $19 a month</strong>The founding price for the first 50 teams, kept for as long as your plan stays active. After that it's $29 a month. 3 servers, a full test every hour, an up check every 5 minutes, Slack alerts. <a href="pricing.html">See pricing</a>.</li>
-   <li><strong>Try it without worry</strong>Your first payment comes with a 7-day money-back promise. Cancel any time from the dashboard.</li>
+   <li><strong>Free: 1 server</strong>A full test once a day, an up check every hour, and the same email alerts. No card.</li>
+   <li><strong>Pro: $19 a month</strong>The founding price for the first 50 customers, kept for as long as your plan stays active. After that it's $29 a month. 3 servers, a full test every hour, an up check every 5 minutes, Slack alerts, up to 3 teammates, servers behind a login, and “Can an AI use it?” task tests (beta). <a href="pricing.html">See pricing</a>.</li>
+   <li><strong>Try it without worry</strong>Your first payment comes with a 7-day money-back promise. And if Monitor doesn't catch a single problem or change in your first 30 days, your next month is free. Cancel any time from the dashboard.</li>
    <li><strong>Running many servers?</strong>An agency plan for 25 servers is coming. <a href="mailto:hi@qamcp.dev?subject=Agency%20plan">Tell us</a> and we'll let you know.</li>
    <li><strong>The free test stays free</strong>The browser test, the terminal tool, the GitHub check and the directory stay free and open source. Monitor is what pays for them.</li>
   </ul>
@@ -163,7 +163,7 @@ Details
    <details><summary>Does paying change my score in the directory?</summary><p>No, never. Every server gets the same test, and scores are never changed for money. <a href="directory-rules.html">The directory rules</a></p></details>
    <details><summary>Can Monitor break or change my server?</summary><p>No. It only runs tools your server labels read-only, and only when their name, description and inputs agree. The 5-minute check runs no tools at all.</p></details>
    <details><summary>My server needs a login. Does Monitor work?</summary><p>Yes. On Pro, prove the server is yours, then save a key on its page and every test uses it. It's stored encrypted, sent only to your server, and never shown again. Use a key that can only read.</p></details>
-   <details><summary>What do you keep about me?</summary><p>Your email, your server's link and its test history. No AI reads any of it. <a href="privacy.html">Privacy</a></p></details>
+   <details><summary>What do you keep about me?</summary><p>Your email, your server's link and its test history. On Pro, also a key you save for a login server (stored encrypted), your Slack link and your teammates' emails. The test and the score never use an AI. Only the optional Pro “Can an AI use it?” tests (beta) send your tool list and your tasks to an AI model. <a href="privacy.html">Privacy</a></p></details>
    <details><summary>How is this different from an uptime checker?</summary><p>An uptime checker tells you your server answered. QAmcp tells you an AI can still use it: tools, inputs, safety labels and answers, all compared with what your server normally does.</p></details>
   </div>
  </div>
@@ -172,21 +172,29 @@ Details
 <footer>
  <span>QAmcp · free and open source (MIT)</span>
  <a href="./">Home</a>
- <a href="https://github.com/QAmcp/qamcp-cli">GitHub</a>
- <a href="https://www.npmjs.com/package/qamcp-cli">npm</a>
- <a href="cli.html">Use it in the terminal</a>
- <a href="mcp-server-not-working.html">MCP server not working?</a>
- <a href="state-of-mcp-2026-10.html">State of MCP, Oct 2026</a>
- <a href="safety.html">Safety and privacy</a>
- <a href="https://github.com/QAmcp/qamcp-cli/issues">Report a wrong result</a>
+ <a href="test.html">Test a server</a>
  <a href="monitor.html">Monitor</a>
+ <a href="guard.html">Guard</a>
  <a href="pricing.html">Pricing</a>
- <a href="terms.html">Terms</a>
- <a href="refund.html">Refunds</a>
+ <a href="directory.html">Directory</a>
+ <a href="how-it-works.html">How it works</a>
+ <a href="cli.html">Use it in the terminal</a>
+ <a href="ci.html">Run it in CI</a>
+ <a href="how-to-test-mcp-server.html">How to test an MCP server</a>
+ <a href="how-to-monitor-mcp-server.html">How to monitor an MCP server</a>
+ <a href="mcp-server-not-working.html">MCP server not working?</a>
+ <a href="is-my-mcp-server-safe.html">Is an MCP server safe?</a>
+ <a href="state-of-mcp-2026-10.html">State of MCP, Oct 2026</a>
+ <a href="safety.html">Safety</a>
  <a href="limits.html">What it can't catch</a>
  <a href="security.html">Security and data</a>
- <a href="privacy.html">Privacy and terms</a>
+ <a href="privacy.html">Privacy</a>
+ <a href="terms.html">Terms</a>
+ <a href="refund.html">Refunds</a>
  <a href="contact.html">Contact</a>
+ <a href="https://github.com/QAmcp/qamcp-cli">GitHub</a>
+ <a href="https://www.npmjs.com/package/qamcp-cli">npm</a>
+ <a href="https://github.com/QAmcp/qamcp-cli/issues">Report a wrong result</a>
  <span class="r">No cookies · <a href="privacy.html">Privacy</a></span>
 </footer>
 <script src="theme.js"></script>

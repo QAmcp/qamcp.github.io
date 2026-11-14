@@ -32,7 +32,7 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
  <div class="sheet-in">
   <header class="top">
    <a class="brand" href="./">QA<b>mcp</b></a>
-   <nav aria-label="Main"><a href="directory.html">Directory</a><a href="test.html">Test a server</a><a href="monitor.html">Monitor</a><a href="how-it-works.html">How it works</a><a href="safety.html">Safety</a><a href="ci.html">Run it in CI</a><a href="samples.html">Sample reports</a></nav>
+   <nav aria-label="Main"><a href="directory.html">Directory</a><a href="test.html">Test a server</a><a href="monitor.html">Monitor</a><a href="guard.html">Guard</a><a href="pricing.html">Pricing</a><a href="how-it-works.html">How it works</a><a href="safety.html">Safety</a><a href="ci.html">Run it in CI</a><a href="samples.html">Sample reports</a></nav><details class="mnav"><summary>Menu</summary><div class="mnav-list"><a href="directory.html">Directory</a><a href="test.html">Test a server</a><a href="monitor.html">Monitor</a><a href="guard.html">Guard</a><a href="pricing.html">Pricing</a><a href="how-it-works.html">How it works</a><a href="safety.html">Safety</a><a href="ci.html">Run it in CI</a><a href="samples.html">Sample reports</a><a href="https://api.qamcp.dev/dashboard?from=menu">Sign in</a></div></details>
    <div class="ai"><button class="ai-btn" type="button" aria-expanded="false" aria-controls="ai-pop"><svg viewBox="0 0 16 16" aria-hidden="true" width="15" height="15"><path fill="none" stroke="currentColor" stroke-width="1.4" d="M8 1.5l1.6 3.9 3.9 1.6-3.9 1.6L8 12.5 6.4 8.6 2.5 7l3.9-1.6z"/></svg>Test with your AI</button><div class="ai-pop" id="ai-pop" hidden><b>Copied. Paste it into Claude Code, Cursor or Codex:</b><code>Fetch and follow the instructions at https://qamcp.dev/setup.md to test my MCP server.</code><p>Your AI finds your server in your project, tests it with QAmcp, explains what's wrong in plain words, fixes it with your OK, and tests again. <a href="setup.md">Read the instructions</a></p></div></div>
    <a class="gh" href="https://github.com/QAmcp/qamcp-cli"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38v-1.33c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.06-.49.06-.49.8.06 1.23.83 1.23.83.72 1.22 1.88.87 2.34.66.07-.52.28-.87.5-1.07-1.78-.2-3.65-.89-3.65-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>GitHub</a>
    <a class="gh signin" href="https://api.qamcp.dev/dashboard?from=menu">Sign in</a>
@@ -58,7 +58,7 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
    <tbody>
     <tr><td>Terminal tool, Docker or your CI</td><td>Only the requests to the server you test (and its login service)</td><td>Nothing. We never see it</td></tr>
     <tr><td>Website test on qamcp.dev</td><td>The server link and the results pass through our test service</td><td>The report (link and results). API keys and login passes are never saved</td></tr>
-    <tr><td>Monitor</td><td>The server link and results pass through our test service on every test</td><td>Your email, the server link and its test history</td></tr>
+    <tr><td>Monitor</td><td>The server link and results pass through our test service on every test</td><td>Your email, the server link and its test history. On Pro, also a saved key (encrypted), your Slack link and your teammates' emails</td></tr>
    </tbody>
   </table>
   <p>For a server inside your company, run the terminal tool or the Docker image on your own machines: it can test servers that are only reachable inside your network, and nothing comes to us.</p>
@@ -71,8 +71,8 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
   <h2 id="h-never">What QAmcp never does</h2>
   <ul>
    <li><b>Never runs tools that could change your data</b> in its default safe mode: only tools labeled read-only, and only when their name, description and inputs agree. <code>--look-only</code> runs no tools at all.</li>
-   <li><b>Never sends your data to an AI.</b> Every check is plain code that measures facts.</li>
-   <li><b>Never tracks you.</b> No analytics in the tool, no cookies or tracking scripts on the website.</li>
+   <li><b>Never uses an AI to test or score.</b> Every check is plain code that measures facts. Only the optional Pro “Can an AI use it?” tests (beta) send your tool list and your tasks to an AI model.</li>
+   <li><b>Never tracks you in the tool.</b> The terminal tool has no analytics, and the website has no cookies. The website uses PostHog to see which pages are used; <a href="privacy.html#site">the Privacy page</a> says what it sees.</li>
    <li><b>Never sells or shares your data</b>, and never changes a score for money.</li>
   </ul>
  </div>
@@ -85,7 +85,7 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
   <ul>
    <li><b>Open source (MIT).</b> Your team can read every line before approving it: <a href="https://github.com/QAmcp/qamcp-cli">github.com/QAmcp/qamcp-cli</a>.</li>
    <li><b>Encrypted in transit.</b> The website and the test service only work over HTTPS.</li>
-   <li><b>Secrets stay in memory.</b> An API key or login pass given to the website test is used for that one test and never written to disk.</li>
+   <li><b>Secrets stay in memory.</b> An API key or login pass given to the website test is used for that one test and never written to disk. A key you save in Monitor (Pro) is stored encrypted and sent only to your server.</li>
    <li><b>No reaching inside.</b> The website test refuses links that point into private networks, so it can't be used to reach internal machines.</li>
    <li><b>Limits per visitor</b>, so one person can't flood a server through us.</li>
    <li><b>A careful build.</b> The code's dependencies are watched for security updates, and the GitHub Actions it uses are pinned to exact versions.</li>
@@ -100,29 +100,37 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
   <p>QAmcp is young and made by one person. We don't have a security certification such as SOC 2 or ISO 27001, and we won't claim one until we do. If your company needs a questionnaire filled in, a data agreement or a private setup, email <a href="mailto:hi@qamcp.dev?subject=Security%20questions">hi@qamcp.dev</a>.</p>
   <h3>Found a security problem in QAmcp?</h3>
   <p>Please tell us privately, as described in <a href="https://github.com/QAmcp/qamcp-cli/blob/main/SECURITY.md">our security policy</a>, not in a public issue.</p>
-  <p>See also: <a href="privacy.html">Privacy and terms</a> · <a href="limits.html">What QAmcp can and can't catch</a> · <a href="safety.html">Safety</a></p>
+  <p>See also: <a href="privacy.html">Privacy</a> · <a href="limits.html">What QAmcp can and can't catch</a> · <a href="safety.html">Safety</a></p>
  </div>
 </section>
 
 <footer>
  <span>QAmcp · free and open source (MIT)</span>
  <a href="./">Home</a>
- <a href="https://github.com/QAmcp/qamcp-cli">GitHub</a>
- <a href="https://www.npmjs.com/package/qamcp-cli">npm</a>
- <a href="cli.html">Use it in the terminal</a>
- <a href="mcp-server-not-working.html">MCP server not working?</a>
- <a href="state-of-mcp-2026-10.html">State of MCP, Oct 2026</a>
- <a href="safety.html">Safety and privacy</a>
- <a href="https://github.com/QAmcp/qamcp-cli/issues">Report a wrong result</a>
+ <a href="test.html">Test a server</a>
  <a href="monitor.html">Monitor</a>
+ <a href="guard.html">Guard</a>
  <a href="pricing.html">Pricing</a>
- <a href="terms.html">Terms</a>
- <a href="refund.html">Refunds</a>
+ <a href="directory.html">Directory</a>
+ <a href="how-it-works.html">How it works</a>
+ <a href="cli.html">Use it in the terminal</a>
+ <a href="ci.html">Run it in CI</a>
+ <a href="how-to-test-mcp-server.html">How to test an MCP server</a>
+ <a href="how-to-monitor-mcp-server.html">How to monitor an MCP server</a>
+ <a href="mcp-server-not-working.html">MCP server not working?</a>
+ <a href="is-my-mcp-server-safe.html">Is an MCP server safe?</a>
+ <a href="state-of-mcp-2026-10.html">State of MCP, Oct 2026</a>
+ <a href="safety.html">Safety</a>
  <a href="limits.html">What it can't catch</a>
  <a href="security.html">Security and data</a>
- <a href="privacy.html">Privacy and terms</a>
+ <a href="privacy.html">Privacy</a>
+ <a href="terms.html">Terms</a>
+ <a href="refund.html">Refunds</a>
  <a href="contact.html">Contact</a>
- <span class="r">No cookies · <a href="../privacy.html">Privacy</a></span>
+ <a href="https://github.com/QAmcp/qamcp-cli">GitHub</a>
+ <a href="https://www.npmjs.com/package/qamcp-cli">npm</a>
+ <a href="https://github.com/QAmcp/qamcp-cli/issues">Report a wrong result</a>
+ <span class="r">No cookies · <a href="privacy.html">Privacy</a></span>
 </footer>
 <script src="theme.js"></script>
 <script src="count.js"></script>

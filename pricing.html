@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pricing · QAmcp</title>
+<title>QAmcp pricing: free MCP server testing, Monitor from $0</title>
 <meta name="description" content="QAmcp is free to test MCP servers. Monitor is free for 1 server with a daily test; Pro tests every hour, checks it is up every 5 minutes and emails or posts to Slack when it breaks or changes: $19 a month founding price.">
 <link rel="canonical" href="https://qamcp.dev/pricing.html">
-<meta property="og:type" content="website"><meta property="og:site_name" content="QAmcp"><meta property="og:title" content="QAmcp pricing: free to test, $19 a month to keep watch">
+<meta property="og:image" content="https://qamcp.dev/img/sample-context7.png"><meta property="og:type" content="website"><meta property="og:site_name" content="QAmcp"><meta property="og:title" content="QAmcp pricing: free to test, $19 a month to keep watch">
 <meta name="color-scheme" content="light dark">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231A1A1A'/%3E%3Crect x='7' y='7' width='18' height='18' rx='2' fill='none' stroke='%23B9838A' stroke-width='2.4'/%3E%3C/svg%3E">
 <script>try{var t=localStorage.getItem('qamcp-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
@@ -52,7 +52,7 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
  <div class="sheet-in">
   <header class="top">
    <a class="brand" href="./">QA<b>mcp</b></a>
-   <nav aria-label="Main"><a href="directory.html">Directory</a><a href="test.html">Test a server</a><a href="monitor.html">Monitor</a><a href="how-it-works.html">How it works</a><a href="safety.html">Safety</a><a href="ci.html">Run it in CI</a><a href="samples.html">Sample reports</a></nav>
+   <nav aria-label="Main"><a href="directory.html">Directory</a><a href="test.html">Test a server</a><a href="monitor.html">Monitor</a><a href="guard.html">Guard</a><a href="pricing.html" aria-current="page">Pricing</a><a href="how-it-works.html">How it works</a><a href="safety.html">Safety</a><a href="ci.html">Run it in CI</a><a href="samples.html">Sample reports</a></nav><details class="mnav"><summary>Menu</summary><div class="mnav-list"><a href="directory.html">Directory</a><a href="test.html">Test a server</a><a href="monitor.html">Monitor</a><a href="guard.html">Guard</a><a href="pricing.html" aria-current="page">Pricing</a><a href="how-it-works.html">How it works</a><a href="safety.html">Safety</a><a href="ci.html">Run it in CI</a><a href="samples.html">Sample reports</a><a href="https://api.qamcp.dev/dashboard?from=menu">Sign in</a></div></details>
    <div class="ai"><button class="ai-btn" type="button" aria-expanded="false" aria-controls="ai-pop"><svg viewBox="0 0 16 16" aria-hidden="true" width="15" height="15"><path fill="none" stroke="currentColor" stroke-width="1.4" d="M8 1.5l1.6 3.9 3.9 1.6-3.9 1.6L8 12.5 6.4 8.6 2.5 7l3.9-1.6z"/></svg>Test with your AI</button><div class="ai-pop" id="ai-pop" hidden><b>Copied. Paste it into Claude Code, Cursor or Codex:</b><code>Fetch and follow the instructions at https://qamcp.dev/setup.md to test my MCP server.</code><p>Your AI finds your server in your project, tests it with QAmcp, explains what's wrong in plain words, fixes it with your OK, and tests again. <a href="setup.md">Read the instructions</a></p></div></div>
    <a class="gh" href="https://github.com/QAmcp/qamcp-cli"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38v-1.33c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.06-.49.06-.49.8.06 1.23.83 1.23.83.72 1.22 1.88.87 2.34.66.07-.52.28-.87.5-1.07-1.78-.2-3.65-.89-3.65-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>GitHub</a>
    <a class="gh signin" href="https://api.qamcp.dev/dashboard?from=menu">Sign in</a>
@@ -61,7 +61,7 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
   <main id="main">
    <div class="page-head">
     <h1>Free to test.<br>$19 a month to keep watch.</h1>
-    <p>Testing a server is free forever, in the browser or the terminal. Monitor is for servers people already depend on: free, it tests yours once a day; on Pro it tests every hour, checks it's up every 5 minutes, and tells you the moment something breaks or changes.</p>
+    <p>Testing a server is free forever, in the browser or the terminal. Monitor is for servers people already depend on: free, it tests yours once a day; on Pro it tests every hour, checks it's up every 5 minutes, and tells you when something breaks or changes.</p>
     <nav class="toc" aria-label="On this page"><a href="#pro">Pro</a><a href="#plans">Other plans</a><a href="#questions">Questions</a></nav>
    </div>
   </main>
@@ -76,7 +76,7 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
     <p class="hp-tag">Founding price · first 50 customers</p>
     <h2 id="h-pro" class="hp-num">$19<span class="hp-was">$29</span></h2>
     <p class="hp-per">a month, kept as long as you stay subscribed. Yearly: pay for 10 months, get 12.</p>
-    <p class="hp-per"><b>Our promise:</b> if Monitor doesn't catch a single problem or change in your first 30 days, your next month is free. Just reply to any email from us.</p>
+    <p class="hp-per"><b>Our promise:</b> if Monitor doesn't catch a single problem or change in your first 30 days, your next month is free. Just reply to any email from us. Your first payment also comes with a 7-day money-back promise.</p>
     <div class="cta"><a class="p" href="https://api.qamcp.dev/dashboard/billing?from=pricing">Get Pro</a><a class="s" href="monitor.html?from=pricing#notify">Start free first</a></div>
    </div>
    <ul class="hp-list">
@@ -86,8 +86,9 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
     <li><b>An email when it matters:</b> down, back up, slow, going up and down, score dropped, a tool changed, a secret leaked, a problem fixed</li>
     <li><b>Slack alerts</b> in your own channel, as well as email</li>
     <li><b>Servers behind a login</b>: save a key and every test uses it, stored encrypted</li>
-    <li><b>Teammates</b> who get the same alerts</li>
-    <li><b>Prove a server is yours in a minute</b>: a short code on your server or in your DNS turns on full speed and a Verified owner mark</li>
+    <li><b>Up to 3 teammates</b> who get the same alerts</li>
+    <li><b>“Can an AI use it?” task tests (beta)</b>: an AI gets your tools and a task you write, and you see whether it can finish it. Never part of the score</li>
+    <li><b>Prove a server is yours in a minute</b>: a short code on your server or in your DNS turns on full speed and a Verified owner mark in your dashboard</li>
    </ul>
   </div>
  </div>
@@ -98,7 +99,7 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
   <span class="sheetno">Other plans</span>
   <h2 id="h-plans">Everything else</h2>
   <ul class="plans">
-   <li><div class="pl-name">Free</div><div class="pl-price">$0, forever</div><p>The browser test, the terminal tool, the GitHub check, the commit hook, the before-you-install check and your listing in the directory, with no account. Plus <b>Monitor for 1 server</b> with the same email alerts, after an email sign-in: a look every hour and a full test once a day. It comes with a live README badge and a year of history.</p><a href="test.html">Test a server</a></li>
+   <li><div class="pl-name">Free</div><div class="pl-price">$0, forever</div><p>The browser test, the terminal tool, the GitHub check, a check before every commit, a safety look before you install someone else's server, and your listing in the directory, with no account. Plus <b>Monitor for 1 server</b> with the same email alerts, after an email sign-in: an up check every hour and a full test once a day. It comes with a live README badge and a year of history.</p><a href="test.html">Test a server</a></li>
    <li><div class="pl-name">Agency <span class="soon">soon</span></div><div class="pl-price">$99 a month <span class="hp-was">$149</span></div><p>For teams that build servers for clients: 25 servers, 5 seats and reports with your logo.</p><a href="mailto:hi@qamcp.dev?subject=Agency%20plan">Tell me when it's ready</a></li>
    <li><div class="pl-name">Enterprise</div><div class="pl-price">Let's talk</div><p>Many servers, a private setup inside your network, invoices and the paperwork your security team needs.</p><a href="mailto:hi@qamcp.dev?subject=Enterprise">Email hi@qamcp.dev</a></li>
   </ul>
@@ -113,7 +114,7 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
    <details><summary>Does paying change my score in the directory?</summary><p>No. Scores come from the same test for everyone and are never changed for money. Paying gets you monitoring and alerts, not a better number. <a href="directory-rules.html">The directory rules</a></p></details>
    <details><summary>What does Monitor do to my server?</summary><p>The same as the free test in safe mode: it only runs tools your server labels read-only, and only when their name, description and inputs agree. It never runs tools that sound like they delete or change something.</p></details>
    <details><summary>What happens when the 50 founding spots are gone?</summary><p>New customers pay $29 a month. If you started at $19, you keep $19 for as long as you stay subscribed.</p></details>
-   <details><summary>Can I cancel?</summary><p>Yes, any time, from your dashboard. Monitoring stops at the end of the month you paid for.</p></details>
+   <details><summary>Can I cancel?</summary><p>Yes, any time, from your dashboard. Pro keeps working until the end of the period you paid for. Then your account moves to the Free plan.</p></details>
    <details><summary>Is the free tool going away?</summary><p>No. The test, the terminal tool, the GitHub check and the directory stay free and open source (MIT). Monitor is what pays for them.</p></details>
   </div>
  </div>
@@ -122,18 +123,29 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
 <footer>
  <span>QAmcp · free and open source (MIT)</span>
  <a href="./">Home</a>
- <a href="https://github.com/QAmcp/qamcp-cli">GitHub</a>
- <a href="https://www.npmjs.com/package/qamcp-cli">npm</a>
- <a href="cli.html">Use it in the terminal</a>
- <a href="mcp-server-not-working.html">MCP server not working?</a>
- <a href="pricing.html">Pricing</a>
- <a href="state-of-mcp-2026-10.html">State of MCP, Oct 2026</a>
- <a href="safety.html">Safety and privacy</a>
- <a href="https://github.com/QAmcp/qamcp-cli/issues">Report a wrong result</a>
- <a href="privacy.html">Privacy and terms</a>
+ <a href="test.html">Test a server</a>
  <a href="monitor.html">Monitor</a>
+ <a href="guard.html">Guard</a>
+ <a href="pricing.html">Pricing</a>
+ <a href="directory.html">Directory</a>
+ <a href="how-it-works.html">How it works</a>
+ <a href="cli.html">Use it in the terminal</a>
+ <a href="ci.html">Run it in CI</a>
+ <a href="how-to-test-mcp-server.html">How to test an MCP server</a>
+ <a href="how-to-monitor-mcp-server.html">How to monitor an MCP server</a>
+ <a href="mcp-server-not-working.html">MCP server not working?</a>
+ <a href="is-my-mcp-server-safe.html">Is an MCP server safe?</a>
+ <a href="state-of-mcp-2026-10.html">State of MCP, Oct 2026</a>
+ <a href="safety.html">Safety</a>
+ <a href="limits.html">What it can't catch</a>
+ <a href="security.html">Security and data</a>
+ <a href="privacy.html">Privacy</a>
  <a href="terms.html">Terms</a>
  <a href="refund.html">Refunds</a>
+ <a href="contact.html">Contact</a>
+ <a href="https://github.com/QAmcp/qamcp-cli">GitHub</a>
+ <a href="https://www.npmjs.com/package/qamcp-cli">npm</a>
+ <a href="https://github.com/QAmcp/qamcp-cli/issues">Report a wrong result</a>
  <span class="r">No cookies · <a href="privacy.html">Privacy</a></span>
 </footer>
 <script src="theme.js"></script>

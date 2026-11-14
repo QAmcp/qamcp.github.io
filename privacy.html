@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy and terms · QAmcp</title>
-<meta name="description" content="What QAmcp keeps and what it never keeps: the terminal tool sends nothing to us; the website test never saves API keys; no cookies, no AI. Plus the terms of use.">
+<title>Privacy: what QAmcp keeps and what it never keeps</title>
+<meta name="description" content="What QAmcp keeps and what it never keeps: the terminal tool sends nothing to us; the website test never saves API keys; no cookies, and no AI in the test or the score.">
 <link rel="canonical" href="https://qamcp.dev/privacy.html">
-<meta property="og:type" content="website"><meta property="og:site_name" content="QAmcp"><meta property="og:title" content="Privacy and terms · QAmcp"><meta property="og:description" content="What QAmcp keeps and what it never keeps: the terminal tool sends nothing to us; the website test never saves API keys; no cookies, no AI. Plus the terms of use.">
+<meta property="og:type" content="website"><meta property="og:site_name" content="QAmcp"><meta property="og:title" content="Privacy: what QAmcp keeps and what it never keeps"><meta property="og:description" content="What QAmcp keeps and what it never keeps: the terminal tool sends nothing to us; the website test never saves API keys; no cookies, and no AI in the test or the score.">
 <meta name="color-scheme" content="light dark">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231A1A1A'/%3E%3Crect x='7' y='7' width='18' height='18' rx='2' fill='none' stroke='%23B9838A' stroke-width='2.4'/%3E%3C/svg%3E">
 <script>try{var t=localStorage.getItem('qamcp-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
@@ -32,7 +32,7 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
  <div class="sheet-in">
   <header class="top">
    <a class="brand" href="./">QA<b>mcp</b></a>
-   <nav aria-label="Main"><a href="directory.html">Directory</a><a href="test.html">Test a server</a><a href="monitor.html">Monitor</a><a href="how-it-works.html">How it works</a><a href="safety.html">Safety</a><a href="ci.html">Run it in CI</a><a href="samples.html">Sample reports</a></nav>
+   <nav aria-label="Main"><a href="directory.html">Directory</a><a href="test.html">Test a server</a><a href="monitor.html">Monitor</a><a href="guard.html">Guard</a><a href="pricing.html">Pricing</a><a href="how-it-works.html">How it works</a><a href="safety.html">Safety</a><a href="ci.html">Run it in CI</a><a href="samples.html">Sample reports</a></nav><details class="mnav"><summary>Menu</summary><div class="mnav-list"><a href="directory.html">Directory</a><a href="test.html">Test a server</a><a href="monitor.html">Monitor</a><a href="guard.html">Guard</a><a href="pricing.html">Pricing</a><a href="how-it-works.html">How it works</a><a href="safety.html">Safety</a><a href="ci.html">Run it in CI</a><a href="samples.html">Sample reports</a><a href="https://api.qamcp.dev/dashboard?from=menu">Sign in</a></div></details>
    <div class="ai"><button class="ai-btn" type="button" aria-expanded="false" aria-controls="ai-pop"><svg viewBox="0 0 16 16" aria-hidden="true" width="15" height="15"><path fill="none" stroke="currentColor" stroke-width="1.4" d="M8 1.5l1.6 3.9 3.9 1.6-3.9 1.6L8 12.5 6.4 8.6 2.5 7l3.9-1.6z"/></svg>Test with your AI</button><div class="ai-pop" id="ai-pop" hidden><b>Copied. Paste it into Claude Code, Cursor or Codex:</b><code>Fetch and follow the instructions at https://qamcp.dev/setup.md to test my MCP server.</code><p>Your AI finds your server in your project, tests it with QAmcp, explains what's wrong in plain words, fixes it with your OK, and tests again. <a href="setup.md">Read the instructions</a></p></div></div>
    <a class="gh" href="https://github.com/QAmcp/qamcp-cli"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38v-1.33c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.06-.49.06-.49.8.06 1.23.83 1.23.83.72 1.22 1.88.87 2.34.66.07-.52.28-.87.5-1.07-1.78-.2-3.65-.89-3.65-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>GitHub</a>
    <a class="gh signin" href="https://api.qamcp.dev/dashboard?from=menu">Sign in</a>
@@ -40,10 +40,10 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
   </header>
   <main id="main">
    <div class="page-head">
-    <h1>Privacy and terms, in plain words</h1>
+    <h1>Privacy, in plain words</h1>
     <p>Short version: the free terminal tool sends nothing to us. The website test and Monitor do pass through our own service, and this page says exactly what that service sees, keeps and throws away.</p>
     <p class="updated">Last updated 27 October 2026</p>
-    <nav class="toc" aria-label="On this page"><a href="#tool">The free tool</a><a href="#web">The website test</a><a href="#monitor">Monitor and payments</a><a href="#site">This website</a><a href="#public">Public servers</a><a href="#you">Your choices</a><a href="#terms">Terms of use</a></nav>
+    <nav class="toc" aria-label="On this page"><a href="#tool">The free tool</a><a href="#web">The website test</a><a href="#monitor">Monitor and payments</a><a href="#site">This website</a><a href="#public">Public servers</a><a href="#you">Your choices</a><a href="terms.html">Terms of use</a></nav>
    </div>
   </main>
  </div>
@@ -88,13 +88,15 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
    <li><b>Your email address</b>, to confirm it's you and to send alerts.</li>
    <li><b>Your server's link</b> and <b>its test history</b>: every score, every change we found, and the alerts we sent.</li>
    <li>A private link to your monitor page. Anyone with that link can see that page, so keep it to yourself.</li>
+   <li>On Pro: a key you save for a server behind a login (stored encrypted and sent only to your server), your Slack link, and your teammates' email addresses.</li>
+   <li>On Pro, if you use the “Can an AI use it?” tests (beta): your tool list and the tasks you write are sent to <a href="https://groq.com">Groq</a>, an AI model service, to run them. The normal test and the score never use an AI.</li>
   </ul>
-  <p>Alert emails are sent through <a href="https://resend.com">Resend</a>, an email service. When you stop a monitor, testing stops; email us and we'll delete its history too.</p>
+  <p>Alert emails are sent through <a href="https://resend.com">Resend</a>, an email service. When you stop a monitor, testing stops. You can delete your account and everything in it from your dashboard settings, or email us and we'll do it.</p>
   <h3 id="h-signin">Signing in with GitHub or Google</h3>
   <p>From Google, we get your verified email address and nothing else. From GitHub, we get your verified email address and your username. We use the access they give us only while you sign in. We don't keep it.</p>
   <p>Signing in can also prove you own a server. With GitHub, we check servers listed in the official MCP registry: whether a server's name starts with io.github.<i>your-username</i>, or whether you can push to its repo. With Google or an email link, we check whether your email's domain is the server's domain. We note how it was proven, like the repo name or the domain, next to that server. We never post anything, change anything, or read your code.</p>
   <h3>Payments</h3>
-  <p>When paid plans open, payments go through <a href="https://razorpay.com">Razorpay</a>. We never see or store your card number. We receive what we need to run your plan: your name, email, the amount, and whether the payment went through. Razorpay handles card details under its own privacy policy.</p>
+  <p>Payments go through <a href="https://dodopayments.com">Dodo Payments</a>, who sell paid plans on our behalf. We never see or store your card number. We receive what we need to run your plan: your name, email, the amount, and whether the payment went through. Dodo Payments handles card details under its own privacy policy.</p>
  </div>
 </section>
 
@@ -112,6 +114,7 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
   </ul>
   <p>We also count visits ourselves, as daily totals: which page was opened and which site sent you there (only its name, like "reddit.com"). We don't keep IP addresses or anything else that points to you.</p>
   <p>If you ask to be notified when something opens, we keep your email (and the server link, if you give one) only to email you about it. We never share or sell it.</p>
+  <p>If you join the <a href="guard.html">Guard</a> waitlist, we keep your email and the team size you picked, only to email you when Guard is ready to try. Email <a href="mailto:hi@qamcp.dev">hi@qamcp.dev</a> to be taken off the list.</p>
   <p>The site is hosted on GitHub Pages, and the domain and the hi@qamcp.dev mailbox run through Cloudflare. Like any host, they may keep basic technical logs to run and protect their services. We don't receive or use them.</p>
  </div>
 </section>
@@ -136,40 +139,37 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
 <section class="part" id="terms" aria-labelledby="h-terms">
  <div class="part-in legal">
   <span class="sheetno">Terms of use</span>
-  <h2 id="h-terms">Using QAmcp</h2>
-
-  <h3>The software</h3>
-  <p>QAmcp is free and open source under the <a href="https://github.com/QAmcp/qamcp-cli/blob/main/LICENSE">MIT license</a>. You may use, copy, change and share it. As the license says, it comes <strong>as is, without warranty of any kind</strong>.</p>
-
-  <h3>Test only what you're allowed to</h3>
-  <p>Use QAmcp on servers you own, servers you have permission to test, or public servers in their normal, intended way. You are responsible for how you use it, including any options that run more tools, such as <code>--owner</code> or <code>--run-unlabeled</code>. Use those only on your own server or a test copy.</p>
-
-  <h3>Results</h3>
-  <p>QAmcp reports facts it measured, such as pass or fail, timings and exact matches. It can still be wrong about a server, especially one that behaves in an unusual way. A report is a starting point to check, not a guarantee that a server is safe or unsafe. If a result looks wrong, tell us and we'll fix it.</p>
-
-  <h3>Names and other servers</h3>
-  <p>Servers shown as examples on this site were tested independently. QAmcp is not affiliated with, or endorsed by, their owners.</p>
+  <h2 id="h-terms">Terms of use</h2>
+  <p>The rules for using QAmcp, free or paid, are on their own page: <a href="terms.html">Terms of use</a>. Refunds and cancelling are on <a href="refund.html">Refunds and cancellation</a>.</p>
  </div>
 </section>
 
 <footer>
  <span>QAmcp · free and open source (MIT)</span>
  <a href="./">Home</a>
- <a href="https://github.com/QAmcp/qamcp-cli">GitHub</a>
- <a href="https://www.npmjs.com/package/qamcp-cli">npm</a>
- <a href="cli.html">Use it in the terminal</a>
- <a href="mcp-server-not-working.html">MCP server not working?</a>
- <a href="state-of-mcp-2026-10.html">State of MCP, Oct 2026</a>
- <a href="safety.html">Safety and privacy</a>
- <a href="https://github.com/QAmcp/qamcp-cli/issues">Report a wrong result</a>
+ <a href="test.html">Test a server</a>
  <a href="monitor.html">Monitor</a>
+ <a href="guard.html">Guard</a>
  <a href="pricing.html">Pricing</a>
- <a href="terms.html">Terms</a>
- <a href="refund.html">Refunds</a>
+ <a href="directory.html">Directory</a>
+ <a href="how-it-works.html">How it works</a>
+ <a href="cli.html">Use it in the terminal</a>
+ <a href="ci.html">Run it in CI</a>
+ <a href="how-to-test-mcp-server.html">How to test an MCP server</a>
+ <a href="how-to-monitor-mcp-server.html">How to monitor an MCP server</a>
+ <a href="mcp-server-not-working.html">MCP server not working?</a>
+ <a href="is-my-mcp-server-safe.html">Is an MCP server safe?</a>
+ <a href="state-of-mcp-2026-10.html">State of MCP, Oct 2026</a>
+ <a href="safety.html">Safety</a>
  <a href="limits.html">What it can't catch</a>
  <a href="security.html">Security and data</a>
- <a href="privacy.html">Privacy and terms</a>
+ <a href="privacy.html">Privacy</a>
+ <a href="terms.html">Terms</a>
+ <a href="refund.html">Refunds</a>
  <a href="contact.html">Contact</a>
+ <a href="https://github.com/QAmcp/qamcp-cli">GitHub</a>
+ <a href="https://www.npmjs.com/package/qamcp-cli">npm</a>
+ <a href="https://github.com/QAmcp/qamcp-cli/issues">Report a wrong result</a>
  <span class="r">No cookies · <a href="privacy.html">Privacy</a></span>
 </footer>
 <script src="theme.js"></script>
