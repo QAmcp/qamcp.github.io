@@ -22,10 +22,19 @@
 .page-head .mprice .mp-tag{margin:0;max-width:none;font:400 12.5px var(--mono);color:var(--rose)}
 .page-head .mprice .mp-num{max-width:none;margin-top:6px;font:700 clamp(48px,5.5vw,64px)/1 var(--mono);color:var(--ink)}.mp-num span{margin-left:10px;font:400 20px var(--mono);color:var(--off);text-decoration:line-through;vertical-align:middle}
 .page-head .mprice .mp-per{font-size:15.5px;margin-top:8px;color:var(--soft);max-width:none}
-.wl{display:grid;gap:10px;margin-top:16px}
+.wl{display:grid;gap:10px;margin-top:16px}.wl[hidden]{display:none}
 .wl .nl{display:grid;gap:6px;font:600 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--faint)}
 .wl input,.wl select{border:1px solid var(--frame);border-radius:9px;background:var(--ground);padding:12px 14px;font:400 15px var(--text);color:var(--ink);outline:none;min-width:0}
-.wl input:focus,.wl select:focus{border-color:var(--rose)}
+.wl input:focus,.wl select:focus,.wl textarea:focus{border-color:var(--rose)}
+.wl textarea{border:1px solid var(--frame);border-radius:9px;background:var(--ground);padding:12px 14px;font:400 15px/1.45 var(--text);color:var(--ink);outline:none;min-width:0;resize:vertical;text-transform:none;letter-spacing:0}
+.ask{margin-top:4px;padding-top:16px;border-top:1px solid var(--rule);gap:14px}
+.page-head .ask p.ask-h{margin:0;max-width:none;font:700 16px var(--text);color:var(--ink)}.ask-h span{font-weight:400;color:var(--faint)}
+.ask fieldset{border:0;padding:0;margin:0;display:grid;gap:10px;min-width:0}
+.ask legend{padding:0;margin-bottom:10px;font:600 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--faint)}
+.ask .ck{display:flex;gap:10px;align-items:center;font:400 15px var(--text);color:var(--ink);cursor:pointer}
+.ask .ck input{flex:none;width:18px;height:18px;margin:0;padding:0;appearance:none;-webkit-appearance:none;border:1.5px solid var(--soft);border-radius:5px;background:var(--ground);cursor:pointer}
+.ask .ck input:checked{background:var(--rose);border-color:var(--rose);box-shadow:inset 0 0 0 3px var(--ground)}
+.ask .ck input:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
 .wl button{border:0;border-radius:9px;background:var(--rose);color:var(--on-rose);font:700 15px var(--text);padding:13px 18px;cursor:pointer}
 .wl button:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
 .wl.row{grid-template-columns:minmax(0,1.4fr) minmax(0,1fr) auto;align-items:end;max-width:820px}
@@ -87,6 +96,19 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
       <button type="submit">Reserve the founding price</button>
      </form>
      <p class="wl-msg" role="status" aria-live="polite"></p>
+     <form class="wl ask" id="ask" hidden novalidate style="max-width:420px">
+      <p class="ask-h">One quick question <span>(optional)</span></p>
+      <fieldset>
+       <legend>What do you need most?</legend>
+       <label class="ck"><input type="checkbox" name="needs" value="tools">Choose tools for each person</label>
+       <label class="ck"><input type="checkbox" name="needs" value="secrets">Hide secrets from the AI</label>
+       <label class="ck"><input type="checkbox" name="needs" value="log">A log of who ran what</label>
+       <label class="ck"><input type="checkbox" name="needs" value="readonly">A read-only switch</label>
+      </fieldset>
+      <label class="nl">Anything else? What problem do you have today?<textarea name="note" rows="3" maxlength="500"></textarea></label>
+      <button type="submit">Send</button>
+     </form>
+     <p class="wl-msg ask-msg" role="status" aria-live="polite"></p>
      <p class="fine">First 50 teams: $49 a month instead of $99, for up to 25 people. No card now. Guard is being built.</p>
     </div>
     <div class="rules" aria-label="Sample of the Guard rules page">
