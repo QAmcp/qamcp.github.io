@@ -11393,5 +11393,287 @@
  },
  "owner/api.aibuildermarketplace.com/mcp": {
   "checked": "2026-11-14"
+ },
+ "ae.discond/discond": {
+  "checked": "2026-11-15"
+ },
+ "ai.agentsrank/agentsrank": {
+  "checked": "2026-11-15"
+ },
+ "ai.anysoft.share/anyshare": {
+  "checked": "2026-11-15"
+ },
+ "ai.buzzsearch/mcp": {
+  "url": "https://buzzsearch.ai/pricing",
+  "checked": "2026-11-15"
+ },
+ "ai.carbackground/carbackground": {
+  "checked": "2026-11-15"
+ },
+ "ai.drastro/astrology": {
+  "checked": "2026-11-15"
+ },
+ "ai.heyrole/heyrole": {
+  "checked": "2026-11-15"
+ },
+ "ai.hostlet/hostlet": {
+  "url": "https://hostlet.ai/plans",
+  "checked": "2026-11-15"
+ },
+ "ai.orchis/nimrod": {
+  "checked": "2026-11-15"
+ },
+ "ai.qlane/qlane": {
+  "url": "https://qlane.ai/pricing",
+  "checked": "2026-11-15"
+ },
+ "ai.therunup.index/agent-bookability-index": {
+  "checked": "2026-11-15"
+ },
+ "ai.zuuz/zuuz": {
+  "url": "https://zuuz.ai/pricing",
+  "checked": "2026-11-15"
+ },
+ "app.apunt/aranes": {
+  "checked": "2026-11-15"
+ },
+ "app.getosmo/ai-receptionist": {
+  "url": "https://getosmo.app/pricing",
+  "checked": "2026-11-15"
+ },
+ "app.kibora/kibora": {
+  "url": "https://kibora.app/pricing",
+  "checked": "2026-11-15"
+ },
+ "app.orananalizbot/oran-analiz": {
+  "checked": "2026-11-15"
+ },
+ "app.postwith/postwith": {
+  "checked": "2026-11-15"
+ },
+ "app.repairinfo/repairinfo": {
+  "checked": "2026-11-15"
+ },
+ "app.vercel.chainshift-preview/korea-sets": {
+  "checked": "2026-11-15"
+ },
+ "app.webas/webas": {
+  "checked": "2026-11-15"
+ },
+ "app.wuai/wuai": {
+  "checked": "2026-11-15"
+ },
+ "be.immoportaal/mcp": {
+  "checked": "2026-11-15"
+ },
+ "br.com.meirinho/mcp": {
+  "checked": "2026-11-15"
+ },
+ "br.com.rgfisioequiropraxia/clinica": {
+  "checked": "2026-11-15"
+ },
+ "br.com.tribujus/tribujus": {
+  "checked": "2026-11-15"
+ },
+ "city.haze/world": {
+  "checked": "2026-11-15"
+ },
+ "cl.acredix/acredix": {
+  "checked": "2026-11-15"
+ },
+ "click.mymarketing/decks": {
+  "checked": "2026-11-15"
+ },
+ "co.hostelmate/hostelmate": {
+  "url": "https://hostelmate.co/pricing",
+  "checked": "2026-11-15"
+ },
+ "com.agentosaurus/agentosaurus": {
+  "checked": "2026-11-15"
+ },
+ "com.ai-rete-rag/ai-rete-rag-mcp": {
+  "url": "https://ai-rete-rag.com/pricing",
+  "checked": "2026-11-15"
+ },
+ "com.aiocompatible/ai-readiness": {
+  "url": "https://www.aiocompatible.com/pricing",
+  "checked": "2026-11-15"
+ },
+ "com.alrebro/alrebro": {
+  "checked": "2026-11-15"
+ },
+ "com.apaxas/apaxas": {
+  "checked": "2026-11-15"
+ },
+ "com.auction-radar/auction-radar": {
+  "checked": "2026-11-15"
+ },
+ "com.chironmemory/chiron": {
+  "url": "https://chironmemory.com/pricing",
+  "checked": "2026-11-15"
+ },
+ "com.compsniper/compsniper": {
+  "checked": "2026-11-15"
+ },
+ "com.congcugiangday/cong-cu-giang-day": {
+  "checked": "2026-11-15"
+ },
+ "com.convertaudiototext/transcribe": {
+  "url": "https://convertaudiototext.com/pricing",
+  "checked": "2026-11-15"
+ },
+ "com.cutsio/cutsio": {
+  "checked": "2026-11-15"
+ },
+ "com.danielsdesignstudio/services": {
+  "checked": "2026-11-15"
+ },
+ "com.decionis/mcp": {
+  "url": "https://decionis.ai/pricing",
+  "checked": "2026-11-15"
+ },
+ "com.drawlyhub/drawlyhub": {
+  "url": "https://drawlyhub.com/pricing",
+  "checked": "2026-11-15"
+ },
+ "com.eddocu/site": {
+  "url": "https://eddocu.com/pricing",
+  "checked": "2026-11-15"
+ },
+ "com.elsemeet/elsemeet": {
+  "checked": "2026-11-15"
+ },
+ "com.evuun/network": {
+  "checked": "2026-11-15"
+ },
+ "com.fastfoodindex/fast-food-index": {
+  "checked": "2026-11-15"
+ },
+ "com.fiftyasks/booking": {
+  "checked": "2026-11-15"
+ },
+ "com.filemypublication/ny-llc-publication": {
+  "checked": "2026-11-15"
+ },
+ "com.filemyscorp/s-corp-election": {
+  "checked": "2026-11-15"
+ },
+ "com.freedict/mcp": {
+  "checked": "2026-11-15"
+ },
+ "com.fuseai/fuse": {
+  "url": "https://fuseai.com/pricing",
+  "checked": "2026-11-15"
+ },
+ "com.gameshipkit/gameshipkit": {
+  "checked": "2026-11-15"
+ },
+ "com.halpii/directorio": {
+  "checked": "2026-11-15"
+ },
+ "com.halpii/latam-tax-api": {
+  "checked": "2026-11-15"
+ },
+ "com.heysigna/signa": {
+  "url": "https://heysigna.com/pricing/",
+  "checked": "2026-11-15"
+ },
+ "com.hireroger/roger": {
+  "checked": "2026-11-15"
+ },
+ "com.hiruai/creative-cloud": {
+  "checked": "2026-11-15"
+ },
+ "com.hooktrend/hooktrend": {
+  "url": "https://hooktrend.com/pricing",
+  "checked": "2026-11-15"
+ },
+ "com.hosttools/hosttools": {
+  "url": "https://hosttools.com/pricing/",
+  "checked": "2026-11-15"
+ },
+ "com.hourbun/hourbun": {
+  "checked": "2026-11-15"
+ },
+ "com.housingcomps/compbasis": {
+  "checked": "2026-11-15"
+ },
+ "com.hrtbuyerguide/hrt-prices": {
+  "checked": "2026-11-15"
+ },
+ "com.htmlannotate/htmlannotate": {
+  "checked": "2026-11-15"
+ },
+ "com.humbleai/humble": {
+  "url": "https://humbleai.com/pricing/",
+  "checked": "2026-11-15"
+ },
+ "com.inklinkapp/inklink": {
+  "checked": "2026-11-15"
+ },
+ "com.insightsroyale/insightsroyale": {
+  "checked": "2026-11-15"
+ },
+ "com.interfacedelta/atlas": {
+  "url": "https://interfacedelta.com/pricing",
+  "checked": "2026-11-15"
+ },
+ "com.invezgo/data-saham-indonesia": {
+  "url": "https://invezgo.com/pricing",
+  "checked": "2026-11-15"
+ },
+ "com.kantrom/reino": {
+  "checked": "2026-11-15"
+ },
+ "com.kit-rx.api/kitrx": {
+  "checked": "2026-11-15"
+ },
+ "com.koreaaitel/kat": {
+  "checked": "2026-11-15"
+ },
+ "com.kroelgraphics/docs": {
+  "checked": "2026-11-15"
+ },
+ "com.kroelgraphics/estudio": {
+  "checked": "2026-11-15"
+ },
+ "com.kudowrite/kudowrite": {
+  "checked": "2026-11-15"
+ },
+ "com.kulicadvisory/aictionbot-werkbank": {
+  "checked": "2026-11-15"
+ },
+ "com.kyde/score": {
+  "checked": "2026-11-15"
+ },
+ "com.labreador/labreador": {
+  "checked": "2026-11-15"
+ },
+ "com.lanecost/freight-rates": {
+  "checked": "2026-11-15"
+ },
+ "com.lastfm-mcp/lastfm": {
+  "checked": "2026-11-15"
+ },
+ "com.laterstages/senior-care": {
+  "checked": "2026-11-15"
+ },
+ "com.learntoupholster/upholsterers-bible": {
+  "checked": "2026-11-15"
+ },
+ "com.loqalit/loqalit": {
+  "checked": "2026-11-15"
+ },
+ "com.madebydevx.agentgas/agentgas": {
+  "checked": "2026-11-15"
+ },
+ "com.madmaxsupply/parts": {
+  "checked": "2026-11-15"
+ },
+ "com.obriym-crm/mcp": {
+  "checked": "2026-11-15"
+ },
+ "com.quasslabs/api": {
+  "checked": "2026-11-15"
  }
 }

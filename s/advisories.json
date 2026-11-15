@@ -3289,5 +3289,55 @@
    "GitHub Security Advisories"
   ],
   "items": []
+ },
+ "ai.buzzsearch/mcp": {
+  "checked": "2026-11-15",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "ai.orchis/nimrod": {
+  "checked": "2026-11-15",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.qlane/qlane": {
+  "checked": "2026-11-15",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.getosmo/ai-receptionist": {
+  "checked": "2026-11-15",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.webas/webas": {
+  "checked": "2026-11-15",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "br.com.meirinho/mcp": {
+  "checked": "2026-11-15",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "city.haze/world": {
+  "checked": "2026-11-15",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
  }
 }
