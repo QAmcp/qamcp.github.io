@@ -11675,5 +11675,201 @@
  },
  "com.quasslabs/api": {
   "checked": "2026-11-15"
+ },
+ "ai.amigurumi/patterns": {
+  "checked": "2026-11-15"
+ },
+ "ai.ariso/ari": {
+  "url": "https://ariso.ai/pricing",
+  "checked": "2026-11-15"
+ },
+ "ai.bittuitive.api/bittuitive": {
+  "checked": "2026-11-15"
+ },
+ "ai.shinygen/shiny-gen": {
+  "url": "https://shinygen.ai/pricing",
+  "checked": "2026-11-15"
+ },
+ "ai.vesperagent/vesper": {
+  "checked": "2026-11-15"
+ },
+ "app.aiscoreboard/catalogue": {
+  "checked": "2026-11-15"
+ },
+ "app.anyscribe/anyscribe": {
+  "checked": "2026-11-15"
+ },
+ "app.docflare/docflare": {
+  "url": "https://docflare.app/pricing",
+  "checked": "2026-11-15"
+ },
+ "app.dulysigned/dulysigned": {
+  "checked": "2026-11-15"
+ },
+ "app.dungchua/dungchua": {
+  "url": "https://dungchua.app/pricing",
+  "checked": "2026-11-15"
+ },
+ "app.fluxhost/fluxhost": {
+  "checked": "2026-11-15"
+ },
+ "app.shipfunnels/shipfunnels": {
+  "url": "https://shipfunnels.app/pricing",
+  "checked": "2026-11-15"
+ },
+ "app.smartcompanion/audioguide": {
+  "checked": "2026-11-15"
+ },
+ "app.todonote/todonote": {
+  "url": "https://www.todonote.app/pricing/",
+  "checked": "2026-11-15"
+ },
+ "app.yoodoo/yoodoo": {
+  "url": "https://yoodoo.app/pro",
+  "checked": "2026-11-15"
+ },
+ "app.youvik/youvik": {
+  "checked": "2026-11-15"
+ },
+ "bot.botmarket/mcp": {
+  "checked": "2026-11-15"
+ },
+ "co.quizquiz/quiz-builder": {
+  "checked": "2026-11-15"
+ },
+ "co.spicefactory/public": {
+  "checked": "2026-11-15"
+ },
+ "co.trooth/trooth": {
+  "checked": "2026-11-15"
+ },
+ "com.adcreator-ai/generate-ad-headlines": {
+  "url": "https://adcreator-ai.com/pricing",
+  "checked": "2026-11-15"
+ },
+ "com.ancorei/ancorei": {
+  "checked": "2026-11-15"
+ },
+ "com.askresidents/reviews": {
+  "checked": "2026-11-15"
+ },
+ "com.askyreadings/asky": {
+  "checked": "2026-11-15"
+ },
+ "com.bankregreports/bankregreports": {
+  "url": "https://www.bankregreports.com/pricing/",
+  "checked": "2026-11-15"
+ },
+ "com.beringio/beringio": {
+  "checked": "2026-11-15"
+ },
+ "com.caminoalmil/goles": {
+  "checked": "2026-11-15"
+ },
+ "com.canarias/rentacar": {
+  "checked": "2026-11-15"
+ },
+ "com.choesim/travel-esim": {
+  "url": "https://choesim.com/plans/",
+  "checked": "2026-11-15"
+ },
+ "com.cineflo/cineflo": {
+  "url": "https://cineflo.com/pricing/",
+  "checked": "2026-11-15"
+ },
+ "com.comparamei/compara-mei": {
+  "checked": "2026-11-15"
+ },
+ "com.coopgamesdb/coopgamesdb": {
+  "checked": "2026-11-15"
+ },
+ "com.coupossum/coupossum": {
+  "checked": "2026-11-15"
+ },
+ "com.danuastrology/danu": {
+  "url": "https://danuastrology.com/pricing",
+  "checked": "2026-11-15"
+ },
+ "com.databasedmcp/databasedmcp": {
+  "checked": "2026-11-15"
+ },
+ "com.datailo/datailo": {
+  "url": "https://datailo.com/pricing",
+  "checked": "2026-11-15"
+ },
+ "com.dataprocessingorganization/mcp": {
+  "checked": "2026-11-15"
+ },
+ "com.dealpuffin/mcp": {
+  "checked": "2026-11-15"
+ },
+ "com.deployvera/mcp": {
+  "checked": "2026-11-15"
+ },
+ "com.discoverseniorbenefits/benefits": {
+  "url": "https://discoverseniorbenefits.com/pricing",
+  "checked": "2026-11-15"
+ },
+ "com.dmthefounder/jobs": {
+  "url": "https://dmthefounder.com/pricing",
+  "checked": "2026-11-15"
+ },
+ "com.eatcrush/eatcrush": {
+  "checked": "2026-11-15"
+ },
+ "com.escudocompara/escudo-compara": {
+  "checked": "2026-11-15"
+ },
+ "com.evenleads/evenleads": {
+  "checked": "2026-11-15"
+ },
+ "com.fitzapapps/fitzap": {
+  "checked": "2026-11-15"
+ },
+ "com.fiveblocks/aiq": {
+  "checked": "2026-11-15"
+ },
+ "com.fiveblocks/impact": {
+  "checked": "2026-11-15"
+ },
+ "com.flopscout/scout": {
+  "checked": "2026-11-15"
+ },
+ "com.food-cost-calculator/costrail": {
+  "url": "https://www.food-cost-calculator.com/pricing",
+  "checked": "2026-11-15"
+ },
+ "com.freispace/freispace": {
+  "url": "https://freispace.com/pricing",
+  "checked": "2026-11-15"
+ },
+ "com.getwealthtracker/wealth-tracker": {
+  "checked": "2026-11-15"
+ },
+ "com.heightpair/heightpair": {
+  "checked": "2026-11-15"
+ },
+ "com.hergertsynthora/synthora-x402": {
+  "checked": "2026-11-15"
+ },
+ "com.heyprov/prov": {
+  "url": "https://heyprov.com/pricing",
+  "checked": "2026-11-15"
+ },
+ "com.inshihub/inshihub": {
+  "checked": "2026-11-15"
+ },
+ "com.invoicefatura/fatura-go": {
+  "url": "https://invoicefatura.com/pricing",
+  "checked": "2026-11-15"
+ },
+ "com.kitviagem/kit-viagem": {
+  "checked": "2026-11-15"
+ },
+ "com.klarframe/site": {
+  "checked": "2026-11-15"
+ },
+ "com.latefeature/latefeature": {
+  "checked": "2026-11-15"
  }
 }
