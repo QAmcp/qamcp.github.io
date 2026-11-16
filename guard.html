@@ -63,6 +63,25 @@
 .rules-log b{color:var(--ink);font-weight:600}
 .rules-scroll{overflow-x:auto}
 .ghero{grid-template-columns:minmax(0,1fr) minmax(0,1.15fr)}
+/* the Guard picture (guard-flow.js) */
+.gf{margin-top:clamp(18px,2.6vw,30px);border:1px solid var(--rule);border-radius:14px;background:var(--ground);padding:clamp(10px,2vw,24px)}
+.gf-hero{margin-top:0}
+.gf svg{display:block;width:100%;height:auto;max-width:900px;margin:0 auto}
+.gf-lab{font:600 12px var(--mono);letter-spacing:.08em;fill:var(--faint)}
+.gf-box{fill:var(--sheet);stroke:var(--frame);stroke-width:1}
+.gf-risky{stroke:var(--fail)}
+.gf-t{font:400 13px var(--mono);fill:var(--ink)}
+.gf-s{font:400 11.5px var(--mono);fill:var(--faint)}
+.gf-ini{fill:var(--rose);font-weight:600}
+.gf-av{fill:var(--raise);stroke:var(--rose);stroke-width:1}
+.gf-line{fill:none;stroke:var(--frame);stroke-width:1;stroke-dasharray:3 4}
+.gf-halo{fill:none;stroke:var(--rose);stroke-width:1}
+.gf-core{fill:var(--raise);stroke:var(--rose);stroke-width:1.4;transition:stroke .3s}
+.gf-core.gf-stop{stroke:var(--fail)}
+.gf-shield path{stroke:var(--rose)}
+.gf-dot{fill:var(--rose)}.gf-bad{fill:var(--fail)}
+.gf-note{font:600 12.5px var(--mono);fill:var(--fail);opacity:0}
+.gf-wide .gf-t{font-size:16px}.gf-wide .gf-s{font-size:13.5px}.gf-wide .gf-lab{font-size:14px}.gf-wide .gf-note{font-size:16px}
 @media (max-width:860px){.mhero{grid-template-columns:1fr}.mask{grid-template-columns:1fr}.wl.row{grid-template-columns:1fr}}
 </style>
 <script>
@@ -92,7 +111,7 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
      <p>Guard sits between your team's AI apps and your MCP servers. Tick the tools each team may use. Everything else is blocked and hidden, secrets are hidden before the AI sees them, and every call is logged.</p>
      <form class="wl" id="join" novalidate style="max-width:420px;margin-top:22px">
       <label class="nl">Work email<input name="email" type="email" autocomplete="email" required placeholder="you@company.com"></label>
-      <label class="nl">Team size<select name="size"><option value="1-5">1 to 5 people</option><option value="6-25" selected>6 to 25 people</option><option value="26-100">26 to 100 people</option><option value="100plus">More than 100</option></select></label>
+      <label class="nl">Team size<select name="size"><option value="1-5">1 to 5 employees</option><option value="6-25" selected>6 to 25 employees</option><option value="26-100">26 to 100 employees</option><option value="100plus">More than 100 employees</option></select></label>
       <button type="submit">Reserve the founding price</button>
      </form>
      <p class="wl-msg" role="status" aria-live="polite"></p>
@@ -109,9 +128,20 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
       <button type="submit">Send</button>
      </form>
      <p class="wl-msg ask-msg" role="status" aria-live="polite"></p>
-     <p class="fine">First 50 teams: $49 a month instead of $99, for up to 25 people. No card now. Guard is being built.</p>
+     <p class="fine">First 50 teams: $49 a month instead of $99, for up to 25 employees. No card now. Guard is being built.</p>
     </div>
-    <div class="rules" aria-label="Sample of the Guard rules page">
+    <div class="gf gf-hero" id="flow-pic"></div>
+   </div>
+  </main>
+ </div>
+</div>
+
+<section class="part" id="rules" aria-labelledby="h-rules">
+ <div class="part-in doc">
+  <span class="sheetno">How Guard works</span>
+  <h2 id="h-rules">You tick the boxes, Guard checks every call</h2>
+  <p>Choose which tools each team may use. Guard follows this table for every call, blocks the rest, and keeps a log of what the AI did.</p>
+    <div class="rules" aria-label="Sample of the Guard rules page" style="margin-top:clamp(18px,2.6vw,30px);max-width:900px">
      <div class="rules-h"><span>Guard · Rules</span><span>sample data</span></div>
      <div class="rules-scroll">
      <table>
@@ -127,15 +157,14 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e
      </div>
      <div class="rules-h" style="border-top:0"><span>What the AI just did</span><span>today</span></div>
      <div class="rules-log">
-      10:42 · priya · jira.read_ticket · <b>allowed</b><br>
-      10:43 · priya · github.delete_repo · <b>blocked</b><br>
-      10:47 · sam · orders.search · <b>allowed, 2 secrets hidden</b>
+      10:42 · Priya · jira.read_ticket · <b>allowed</b><br>
+      10:43 · Priya · github.delete_repo · <b>blocked</b><br>
+      10:45 · Dev · orders.refund · <b>blocked</b><br>
+      10:47 · Sam · orders.search · <b>allowed, 2 secrets hidden</b>
      </div>
     </div>
-   </div>
-  </main>
  </div>
-</div>
+</section>
 
 <section class="part" id="problem" aria-labelledby="h-problem">
  <div class="part-in doc">
@@ -192,9 +221,9 @@ card:     <mark>[card hidden]</mark></pre></div>
   <span class="sheetno">Price</span>
   <h2 id="h-price">A price you can see</h2>
   <ul class="facts">
-   <li><strong>Free: up to 5 people</strong>Open source (MIT). Runs on your own computers, so nothing leaves your network.</li>
-   <li><strong>Team: $49 a month</strong>The founding price for the first 50 teams, kept for as long as you stay subscribed. After that it's $99 a month. Up to 25 people, any number of servers.</li>
-   <li><strong>Bigger team?</strong><a href="mailto:hi@qamcp.dev?subject=Guard%20for%20a%20bigger%20team">Tell us</a> how many people and we'll let you know.</li>
+   <li><strong>Free: up to 5 employees</strong>Open source (MIT). Runs on your own computers, so nothing leaves your network.</li>
+   <li><strong>Team: $49 a month</strong>The founding price for the first 50 teams, kept for as long as you stay subscribed. After that it's $99 a month. Up to 25 employees, any number of servers.</li>
+   <li><strong>Bigger team?</strong><a href="mailto:hi@qamcp.dev?subject=Guard%20for%20a%20bigger%20team">Tell us</a> how many employees and we'll let you know.</li>
    <li><strong>No card now</strong>Joining the waitlist reserves the founding price. You pay only when Guard is ready and you decide to use it.</li>
   </ul>
   <div class="cta"><a class="p" href="#join">Reserve the founding price</a><a class="s" href="test.html?from=guard">Test a server for free now</a></div>
@@ -247,5 +276,6 @@ card:     <mark>[card hidden]</mark></pre></div>
 <script src="count.js"></script>
 <script src="ai.js"></script>
 <script src="guard.js"></script>
+<script src="guard-flow.js"></script>
 </body>
 </html>
