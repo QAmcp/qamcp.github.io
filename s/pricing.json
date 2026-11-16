@@ -11871,5 +11871,297 @@
  },
  "com.latefeature/latefeature": {
   "checked": "2026-11-15"
+ },
+ "ai.acquisity/mcp": {
+  "checked": "2026-11-16"
+ },
+ "ai.agenticblue/agentic-blue": {
+  "url": "https://agenticblue.ai/pricing",
+  "checked": "2026-11-16"
+ },
+ "ai.atomsell/atomsell": {
+  "checked": "2026-11-16"
+ },
+ "ai.hanare/hanare": {
+  "checked": "2026-11-16"
+ },
+ "ai.hono/era": {
+  "checked": "2026-11-16"
+ },
+ "ai.modellix/docs-search": {
+  "checked": "2026-11-16"
+ },
+ "ai.nerdnoir/nerdy": {
+  "checked": "2026-11-16"
+ },
+ "ai.ototo/quickbooks": {
+  "url": "https://ototo.ai/pricing",
+  "checked": "2026-11-16"
+ },
+ "ai.postreach/postreach": {
+  "url": "https://www.postreach.ai/pricing",
+  "checked": "2026-11-16"
+ },
+ "ai.refora/refora": {
+  "url": "https://refora.ai/pricing",
+  "checked": "2026-11-16"
+ },
+ "ai.sharpe/mcp": {
+  "checked": "2026-11-16"
+ },
+ "ai.simpyl/receptionist": {
+  "checked": "2026-11-16"
+ },
+ "ai.theautomate/automate-ai": {
+  "url": "https://theautomate.ai/pricing/",
+  "checked": "2026-11-16"
+ },
+ "ai.transept/transept": {
+  "url": "https://transept.ai/pricing",
+  "checked": "2026-11-16"
+ },
+ "ai.typeza/typeza": {
+  "checked": "2026-11-16"
+ },
+ "ai.veselo/mcp": {
+  "checked": "2026-11-16"
+ },
+ "ai.visarun/mcp": {
+  "checked": "2026-11-16"
+ },
+ "al.host/mcp": {
+  "checked": "2026-11-16"
+ },
+ "app.clipzi/clipzi": {
+  "checked": "2026-11-16"
+ },
+ "app.datingprofile/datingprofile": {
+  "checked": "2026-11-16"
+ },
+ "app.deploymonster/deploymonster": {
+  "checked": "2026-11-16"
+ },
+ "app.hivemindos/superagent": {
+  "checked": "2026-11-16"
+ },
+ "app.motionfab/library": {
+  "checked": "2026-11-16"
+ },
+ "app.permtracker/perm-tracker": {
+  "checked": "2026-11-16"
+ },
+ "app.santaphoto/christmas-photos": {
+  "url": "https://santaphoto.app/pricing",
+  "checked": "2026-11-16"
+ },
+ "app.serastudio/sera-studio": {
+  "url": "https://serastudio.app/pricing",
+  "checked": "2026-11-16"
+ },
+ "app.sheetsense/sheetsense": {
+  "checked": "2026-11-16"
+ },
+ "app.trickl/trickl": {
+  "url": "https://trickl.app/pricing",
+  "checked": "2026-11-16"
+ },
+ "app.verifaied/verifaied": {
+  "checked": "2026-11-16"
+ },
+ "app.wecommander/wecommander": {
+  "checked": "2026-11-16"
+ },
+ "at.facturo/facturo": {
+  "checked": "2026-11-16"
+ },
+ "au.com.ato-mcp/ato-mcp": {
+  "url": "https://ato-mcp.com.au/pricing",
+  "checked": "2026-11-16"
+ },
+ "bot.ai-beauty/beautyos": {
+  "url": "https://ai-beauty.bot/pricing",
+  "checked": "2026-11-16"
+ },
+ "br.com.andreprazeresimoveis/faro": {
+  "checked": "2026-11-16"
+ },
+ "br.com.cleanfin/cleanfin": {
+  "checked": "2026-11-16"
+ },
+ "ch.agentready/swiss-company-directory": {
+  "url": "https://agentready.ch/en/pricing",
+  "checked": "2026-11-16"
+ },
+ "city.close/close-api": {
+  "checked": "2026-11-16"
+ },
+ "club.vaper/vaper-club": {
+  "checked": "2026-11-16"
+ },
+ "com.4laterapp/4later": {
+  "checked": "2026-11-16"
+ },
+ "com.67leads/leads": {
+  "url": "https://67leads.com/pricing",
+  "checked": "2026-11-16"
+ },
+ "com.adriansaxton/aacf": {
+  "checked": "2026-11-16"
+ },
+ "com.afefehub/afefehub": {
+  "checked": "2026-11-16"
+ },
+ "com.agentexplorio/agentexplorio": {
+  "checked": "2026-11-16"
+ },
+ "com.agentready-tools/catalog": {
+  "checked": "2026-11-16"
+ },
+ "com.aidoptio/advisor": {
+  "url": "https://aidoptio.com/ai-consulting-cost",
+  "checked": "2026-11-16"
+ },
+ "com.aiformly/aiformly": {
+  "checked": "2026-11-16"
+ },
+ "com.aigei/mcp": {
+  "checked": "2026-11-16"
+ },
+ "com.anpheros/fhir": {
+  "url": "https://developers.anpheros.com/guides/pricing",
+  "checked": "2026-11-16"
+ },
+ "com.arcanemetrix/arcanemetrix": {
+  "checked": "2026-11-16"
+ },
+ "com.askvidbrain/vidbrain": {
+  "checked": "2026-11-16"
+ },
+ "com.astranl/coordination-protocol": {
+  "checked": "2026-11-16"
+ },
+ "com.audienceful/audienceful": {
+  "url": "https://www.audienceful.com/pricing",
+  "checked": "2026-11-16"
+ },
+ "com.bazaveo/bazaveo": {
+  "checked": "2026-11-16"
+ },
+ "com.bee-directory/newsletter-sponsorship": {
+  "checked": "2026-11-16"
+ },
+ "com.bookatu/book": {
+  "url": "https://bookatu.com/en-us/pricing",
+  "checked": "2026-11-16"
+ },
+ "com.bookatu/docs": {
+  "url": "https://bookatu.com/en-us/pricing",
+  "checked": "2026-11-16"
+ },
+ "com.bookifycall/bookifycall": {
+  "url": "https://bookifycall.com/pricing",
+  "checked": "2026-11-16"
+ },
+ "com.bowerbirdhq/studio": {
+  "checked": "2026-11-16"
+ },
+ "com.briefsenden/mcp": {
+  "checked": "2026-11-16"
+ },
+ "com.builtalist/builtalist": {
+  "checked": "2026-11-16"
+ },
+ "com.cacheby/search": {
+  "checked": "2026-11-16"
+ },
+ "com.chikocorp/cuadre": {
+  "checked": "2026-11-16"
+ },
+ "com.clickflame/auto-repair": {
+  "checked": "2026-11-16"
+ },
+ "com.clickflame/connector": {
+  "checked": "2026-11-16"
+ },
+ "com.coawp/internships": {
+  "checked": "2026-11-16"
+ },
+ "com.companiesdaily/sec-filings": {
+  "checked": "2026-11-16"
+ },
+ "com.confbuild/confbuild": {
+  "checked": "2026-11-16"
+ },
+ "com.crisolmcp/crisol": {
+  "checked": "2026-11-16"
+ },
+ "com.criticsroom/critics-room": {
+  "checked": "2026-11-16"
+ },
+ "com.daawid/registry": {
+  "url": "https://daawid.com/pricing",
+  "checked": "2026-11-16"
+ },
+ "com.datarilabs/datari-labs": {
+  "checked": "2026-11-16"
+ },
+ "com.daxni/mcp": {
+  "checked": "2026-11-16"
+ },
+ "com.devicerts/medical-devices": {
+  "checked": "2026-11-16"
+ },
+ "com.discolike/mcp-server": {
+  "url": "https://discolike.com/pricing/",
+  "checked": "2026-11-16"
+ },
+ "com.durabilitycurve/archive": {
+  "checked": "2026-11-16"
+ },
+ "com.equiphive/hive": {
+  "checked": "2026-11-16"
+ },
+ "com.fgdesigners/fgd": {
+  "checked": "2026-11-16"
+ },
+ "com.gexiro/dach-pulse-mcp": {
+  "checked": "2026-11-16"
+ },
+ "com.globaltripx/tripx": {
+  "checked": "2026-11-16"
+ },
+ "com.graggrobotics/agent-tools": {
+  "checked": "2026-11-16"
+ },
+ "com.hanzidrill/hanzidrill": {
+  "url": "https://hanzidrill.com/pricing",
+  "checked": "2026-11-16"
+ },
+ "com.harborrank/harborrank": {
+  "url": "https://harborrank.com/pricing",
+  "checked": "2026-11-16"
+ },
+ "com.hyre-inc/hyre": {
+  "url": "https://hyre-inc.com/pricing",
+  "checked": "2026-11-16"
+ },
+ "com.igrax/igrax": {
+  "checked": "2026-11-16"
+ },
+ "com.ihateposting/mcp": {
+  "url": "https://ihateposting.com/pricing",
+  "checked": "2026-11-16"
+ },
+ "com.invoicequick/account": {
+  "checked": "2026-11-16"
+ },
+ "com.invoicequick/invoice-generator": {
+  "checked": "2026-11-16"
+ },
+ "com.ip-db/ip-reputation": {
+  "checked": "2026-11-16"
+ },
+ "com.kaigen3d/kaigen": {
+  "checked": "2026-11-16"
  }
 }

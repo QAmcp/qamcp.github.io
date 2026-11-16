@@ -3353,5 +3353,42 @@
    "GitHub Security Advisories"
   ],
   "items": []
+ },
+ "ai.modellix/docs-search": {
+  "checked": "2026-11-16",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.trickl/trickl": {
+  "checked": "2026-11-16",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "au.com.ato-mcp/ato-mcp": {
+  "checked": "2026-11-16",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "bot.ai-beauty/beautyos": {
+  "checked": "2026-11-16",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "club.vaper/vaper-club": {
+  "checked": "2026-11-16",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
  }
 }
