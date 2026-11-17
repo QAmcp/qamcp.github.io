@@ -3482,5 +3482,84 @@
    "GitHub Security Advisories"
   ],
   "items": []
+ },
+ "ai.bazichart/bazichart-mcp": {
+  "checked": "2026-11-17",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.pidgeon/mcp": {
+  "checked": "2026-11-17",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "ai.rentadriver/rentadriver": {
+  "checked": "2026-11-17",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.vaaya/mcp": {
+  "checked": "2026-11-17",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "app.apick/ocr": {
+  "checked": "2026-11-17",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.apick/vision": {
+  "checked": "2026-11-17",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.frontierstack/frontierstack": {
+  "checked": "2026-11-17",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.fundingtracker/fundingtracker": {
+  "checked": "2026-11-17",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "archi.den/den_archi_mcp": {
+  "checked": "2026-11-17",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "br.com.elden/jurisprudencia-mcp": {
+  "checked": "2026-11-17",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "cc.healthmcp/health": {
+  "checked": "2026-11-17",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
  }
 }
