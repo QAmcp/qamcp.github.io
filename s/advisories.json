@@ -3561,5 +3561,83 @@
    "GitHub Security Advisories"
   ],
   "items": []
+ },
+ "ai.bloopo/bloopo": {
+  "checked": "2026-11-17",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.just-done/just": {
+  "checked": "2026-11-17",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.makebox.mcp/gohighlevel": {
+  "checked": "2026-11-17",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.perfloop/perfloop": {
+  "checked": "2026-11-17",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.famlore/famlore": {
+  "checked": "2026-11-17",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.heatwayve/mcp": {
+  "checked": "2026-11-17",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.kitbay/catalog": {
+  "checked": "2026-11-17",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "blue.brick/hub": {
+  "checked": "2026-11-17",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "br.com.bitvisual/bitvisual-mcp": {
+  "checked": "2026-11-17",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "co.bulktranscripts/youtube": {
+  "checked": "2026-11-17",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "com.402cron/402cron": {
+  "checked": "2026-11-17",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
  }
 }
