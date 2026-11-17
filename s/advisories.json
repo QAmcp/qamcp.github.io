@@ -3390,5 +3390,97 @@
    "OSV.dev"
   ],
   "items": []
+ },
+ "ai.a2uicatalog/catalog": {
+  "checked": "2026-11-17",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.egbe/egbe": {
+  "checked": "2026-11-17",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.robosystems/robosystems": {
+  "checked": "2026-11-17",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.usestring/web-access": {
+  "checked": "2026-11-17",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "ai.veriacta/law": {
+  "checked": "2026-11-17",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.misento/imessage": {
+  "checked": "2026-11-17",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.palabring/palabring": {
+  "checked": "2026-11-17",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.syncdate/mcp": {
+  "checked": "2026-11-17",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.tourpro/mcp": {
+  "checked": "2026-11-17",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.vercel.ora-x402-gateway/sensations-mergulho": {
+  "checked": "2026-11-17",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "co.behaf/dial": {
+  "checked": "2026-11-17",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "co.pinli/pinli": {
+  "checked": "2026-11-17",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "co.podseeker/podseeker": {
+  "checked": "2026-11-17",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
  }
 }
