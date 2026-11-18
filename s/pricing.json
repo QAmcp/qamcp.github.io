@@ -12938,5 +12938,199 @@
  },
  "com.evertables/evertables": {
   "checked": "2026-11-17"
+ },
+ "ae.brainy.tipline/gta6": {
+  "checked": "2026-11-18"
+ },
+ "ai.beatview/beatview": {
+  "url": "https://beatview.ai/pricing",
+  "checked": "2026-11-18"
+ },
+ "ai.ekaya.mcp/ekaya": {
+  "checked": "2026-11-18"
+ },
+ "ai.imbik/rectifier": {
+  "checked": "2026-11-18"
+ },
+ "ai.klipa/klipa": {
+  "url": "https://klipa.ai/en/pricing",
+  "checked": "2026-11-18"
+ },
+ "ai.paperlist/paperlist": {
+  "checked": "2026-11-18"
+ },
+ "ai.postbeam/mcp": {
+  "url": "https://www.postbeam.ai/pricing",
+  "checked": "2026-11-18"
+ },
+ "ai.ragworks/ai-sdr": {
+  "url": "https://ragworks.ai/pricing",
+  "checked": "2026-11-18"
+ },
+ "app.cashpage/cash-page": {
+  "checked": "2026-11-18"
+ },
+ "app.ippuku/ippuku": {
+  "checked": "2026-11-18"
+ },
+ "app.laudanza/laudanza": {
+  "checked": "2026-11-18"
+ },
+ "app.nextanalytica/mcp": {
+  "url": "https://nextanalytica.app/pricing",
+  "checked": "2026-11-18"
+ },
+ "app.onlyrecipes/only-recipes": {
+  "url": "https://onlyrecipes.app/pricing",
+  "checked": "2026-11-18"
+ },
+ "app.propertypixel/propertypixel": {
+  "url": "https://propertypixel.app/pricing",
+  "checked": "2026-11-18"
+ },
+ "app.remotehunt/remotehunt": {
+  "checked": "2026-11-18"
+ },
+ "au.com.byearthandocean/bookings": {
+  "checked": "2026-11-18"
+ },
+ "br.com.galetosdobrasilaldeota/galetos-aldeota": {
+  "checked": "2026-11-18"
+ },
+ "build.ingenious/mcp": {
+  "checked": "2026-11-18"
+ },
+ "by.digitalpassport/registry-mcp": {
+  "checked": "2026-11-18"
+ },
+ "ca.sitesy/transit": {
+  "checked": "2026-11-18"
+ },
+ "ca.sitesy/website-intelligence": {
+  "checked": "2026-11-18"
+ },
+ "ch.antevo/companies": {
+  "checked": "2026-11-18"
+ },
+ "ch.antevo/trademark": {
+  "checked": "2026-11-18"
+ },
+ "click.myagents/youtube-publish": {
+  "checked": "2026-11-18"
+ },
+ "co.gotombola/gotombola": {
+  "checked": "2026-11-18"
+ },
+ "co.lumman/books": {
+  "checked": "2026-11-18"
+ },
+ "co.mindcase/mindcase": {
+  "url": "https://docs.mindcase.co/pricing",
+  "checked": "2026-11-18"
+ },
+ "co.note-bridge/note-bridge": {
+  "checked": "2026-11-18"
+ },
+ "co.storepoint/store-locator": {
+  "url": "https://storepoint.co/pricing",
+  "checked": "2026-11-18"
+ },
+ "com.addshuffle/shuffle": {
+  "url": "https://www.textshuffle.com/plans",
+  "checked": "2026-11-18"
+ },
+ "com.aiactradar/ai-act-radar": {
+  "url": "https://aiactradar.com/pricing/",
+  "checked": "2026-11-18"
+ },
+ "com.alertviz/eurokyb-mcp": {
+  "checked": "2026-11-18"
+ },
+ "com.appstoretracker/mcp": {
+  "url": "https://www.appstoretracker.com/pricing",
+  "checked": "2026-11-18"
+ },
+ "com.ariadnenexus/mcp-server": {
+  "checked": "2026-11-18"
+ },
+ "com.askasteria/asteria": {
+  "checked": "2026-11-18"
+ },
+ "com.atlantflow/hvac-booking": {
+  "checked": "2026-11-18"
+ },
+ "com.boardwalkai.mcp/land-use": {
+  "url": "https://boardwalkai.com/pricing/",
+  "checked": "2026-11-18"
+ },
+ "com.botshelfvampire/botshelf": {
+  "checked": "2026-11-18"
+ },
+ "com.breastpump/coverage": {
+  "checked": "2026-11-18"
+ },
+ "com.buckybuild/bucky": {
+  "url": "https://buckybuild.com/en-us/pricing",
+  "checked": "2026-11-18"
+ },
+ "com.bulkreceiptscanner/bulk-receipt-scanner": {
+  "checked": "2026-11-18"
+ },
+ "com.bulliontradingllc/gold-silver": {
+  "checked": "2026-11-18"
+ },
+ "com.catenix/lab-connectivity": {
+  "url": "https://www.catenix.com/pricing",
+  "checked": "2026-11-18"
+ },
+ "com.cheapcadtools/tools": {
+  "checked": "2026-11-18"
+ },
+ "com.checkrss/mcp": {
+  "checked": "2026-11-18"
+ },
+ "com.chinadrivetest/mcp": {
+  "checked": "2026-11-18"
+ },
+ "com.chinavisacalc/mcp": {
+  "checked": "2026-11-18"
+ },
+ "com.chrisballam/site-search": {
+  "checked": "2026-11-18"
+ },
+ "com.clickflame/wedding": {
+  "checked": "2026-11-18"
+ },
+ "com.cloud.copilot/citrix-daas-mcp-server": {
+  "checked": "2026-11-18"
+ },
+ "com.cnamio/domains": {
+  "checked": "2026-11-18"
+ },
+ "com.cnccompass/suppliers": {
+  "checked": "2026-11-18"
+ },
+ "com.contactvalidate/contactvalidate": {
+  "url": "https://contactvalidate.com/pricing",
+  "checked": "2026-11-18"
+ },
+ "com.dentalunlock/dentalunlock": {
+  "url": "https://dentalunlock.com/pricing",
+  "checked": "2026-11-18"
+ },
+ "com.disruptapi/disrupt": {
+  "url": "https://www.disruptapi.com/pricing",
+  "checked": "2026-11-18"
+ },
+ "com.dnsfix/dnsfix": {
+  "url": "https://dnsfix.com/pricing",
+  "checked": "2026-11-18"
+ },
+ "com.domaroo/domaroo": {
+  "url": "https://domaroo.com/pricing",
+  "checked": "2026-11-18"
+ },
+ "com.fiverr/mcp": {
+  "checked": "2026-11-18"
  }
 }
