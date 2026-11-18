@@ -3639,5 +3639,139 @@
    "GitHub Security Advisories"
   ],
   "items": []
+ },
+ "ai.bluebox/mcp": {
+  "checked": "2026-11-18",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.buildwithorbit/orbit": {
+  "checked": "2026-11-18",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.getprecision/precision-ai-os": {
+  "checked": "2026-11-18",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.klipa/klipa": {
+  "checked": "2026-11-18",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.livecore/ai-video-editor-captions-subtitles-tiktok-shorts-reels-podcast": {
+  "checked": "2026-11-18",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.livecore/levea-mcp-server": {
+  "checked": "2026-11-18",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.livecore/reframe-crop-resize-vertical-broll-b-roll-motion-graphics-animation-title-chromakey-green-screen-background-removal-rotoscope-color-grading-lut-vfx-effects-transitions-stabilize-tracking": {
+  "checked": "2026-11-18",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.livecore/video-editor-ai-video-editing-edit-video-captions-subtitles-srt-transcribe-transcription-tiktok-youtube-shorts-instagram-reels-podcast-multicam-interview-viral-clips-highlight": {
+  "checked": "2026-11-18",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.livecore/video-editor-broll-reframe-chromakey-voiceover-color-vfx": {
+  "checked": "2026-11-18",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.livecore/voiceover-tts-dubbing-translate-lip-sync-audio-music-sfx-silence-ffmpeg-remotion-capcut-descript-opus-premiere-after-effects-ugc-faceless-explainer-promo-montage-thumbnail-watermark-blur": {
+  "checked": "2026-11-18",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.qualityclouds/norma": {
+  "checked": "2026-11-18",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.seocrawl/mcp": {
+  "checked": "2026-11-18",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.vegvis/vegvisai": {
+  "checked": "2026-11-18",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.fluxygram/mcp": {
+  "checked": "2026-11-18",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "app.vercel.mare-liberum/sea": {
+  "checked": "2026-11-18",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "by.digitalpassport/registry-mcp": {
+  "checked": "2026-11-18",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ch.antevo/companies": {
+  "checked": "2026-11-18",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ch.antevo/trademark": {
+  "checked": "2026-11-18",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "co.lumman/books": {
+  "checked": "2026-11-18",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
  }
 }

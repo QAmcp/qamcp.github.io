@@ -13132,5 +13132,280 @@
  },
  "com.fiverr/mcp": {
   "checked": "2026-11-18"
+ },
+ "ai.13f/mcp": {
+  "checked": "2026-11-18"
+ },
+ "ai.ballotdata/mcp": {
+  "url": "https://ballotdata.ai/pricing",
+  "checked": "2026-11-18"
+ },
+ "ai.bluebox/mcp": {
+  "checked": "2026-11-18"
+ },
+ "ai.buildwithorbit/orbit": {
+  "checked": "2026-11-18"
+ },
+ "ai.cattalog/cattalog": {
+  "url": "https://cattalog.ai/pricing",
+  "checked": "2026-11-18"
+ },
+ "ai.efekto/efekto": {
+  "url": "https://efekto.ai/pricing",
+  "checked": "2026-11-18"
+ },
+ "ai.enclave/mcp": {
+  "checked": "2026-11-18"
+ },
+ "ai.exducer/turbo": {
+  "url": "https://exducer.ai/pricing",
+  "checked": "2026-11-18"
+ },
+ "ai.inprocess/cockpit": {
+  "url": "https://github.com/pricing",
+  "checked": "2026-11-18"
+ },
+ "ai.janney/creator-search": {
+  "url": "https://www.janney.ai/pricing/",
+  "checked": "2026-11-18"
+ },
+ "ai.livecore/ai-video-editor-captions-subtitles-tiktok-shorts-reels-podcast": {
+  "checked": "2026-11-18"
+ },
+ "ai.livecore/levea-mcp-server": {
+  "checked": "2026-11-18"
+ },
+ "ai.livecore/reframe-crop-resize-vertical-broll-b-roll-motion-graphics-animation-title-chromakey-green-screen-background-removal-rotoscope-color-grading-lut-vfx-effects-transitions-stabilize-tracking": {
+  "checked": "2026-11-18"
+ },
+ "ai.livecore/video-editor-ai-video-editing-edit-video-captions-subtitles-srt-transcribe-transcription-tiktok-youtube-shorts-instagram-reels-podcast-multicam-interview-viral-clips-highlight": {
+  "checked": "2026-11-18"
+ },
+ "ai.livecore/video-editor-broll-reframe-chromakey-voiceover-color-vfx": {
+  "checked": "2026-11-18"
+ },
+ "ai.livecore/voiceover-tts-dubbing-translate-lip-sync-audio-music-sfx-silence-ffmpeg-remotion-capcut-descript-opus-premiere-after-effects-ugc-faceless-explainer-promo-montage-thumbnail-watermark-blur": {
+  "checked": "2026-11-18"
+ },
+ "ai.minutesmaster/minutesmaster": {
+  "url": "https://www.minutesmaster.ai/pricing",
+  "checked": "2026-11-18"
+ },
+ "ai.nanosite/nanosite": {
+  "url": "https://nanosite.ai/pricing",
+  "checked": "2026-11-18"
+ },
+ "ai.natalchart/astrology": {
+  "url": "https://www.natalchart.ai/pricing",
+  "checked": "2026-11-18"
+ },
+ "ai.otbstudio/mcp": {
+  "checked": "2026-11-18"
+ },
+ "ai.peerfoundry/run": {
+  "checked": "2026-11-18"
+ },
+ "ai.qualityclouds/norma": {
+  "url": "https://qualityclouds.ai/pricing/norma",
+  "checked": "2026-11-18"
+ },
+ "ai.seocrawl/mcp": {
+  "url": "https://seocrawl.ai/pricing",
+  "checked": "2026-11-18"
+ },
+ "ai.stratafinance/strata": {
+  "checked": "2026-11-18"
+ },
+ "ai.thepayday/payday": {
+  "url": "https://thepayday.ai/pricing",
+  "checked": "2026-11-18"
+ },
+ "ai.todofor/todoforai": {
+  "url": "https://todofor.ai/pricing",
+  "checked": "2026-11-18"
+ },
+ "ai.vegvis/vegvisai": {
+  "checked": "2026-11-18"
+ },
+ "ai.vibiz/vibiz": {
+  "url": "https://www.vibiz.ai/pricing",
+  "checked": "2026-11-18"
+ },
+ "app.awsel/erpnext": {
+  "checked": "2026-11-18"
+ },
+ "app.awsel/odoo": {
+  "checked": "2026-11-18"
+ },
+ "app.ballistic/ballistic": {
+  "url": "https://ballistic.app/pricing",
+  "checked": "2026-11-18"
+ },
+ "app.benchmarkai/research": {
+  "url": "https://www.benchmarkai.app/pricing",
+  "checked": "2026-11-18"
+ },
+ "app.bestfolio/bestfolio": {
+  "url": "https://bestfolio.app/pricing",
+  "checked": "2026-11-18"
+ },
+ "app.cobd/cobd": {
+  "checked": "2026-11-18"
+ },
+ "app.fluxygram/mcp": {
+  "url": "https://fluxygram.app/pricing",
+  "checked": "2026-11-18"
+ },
+ "app.kinomo/mcp": {
+  "checked": "2026-11-18"
+ },
+ "app.laporra/laporra": {
+  "checked": "2026-11-18"
+ },
+ "app.pelnora/corpus": {
+  "checked": "2026-11-18"
+ },
+ "app.pepvault/pepvault": {
+  "checked": "2026-11-18"
+ },
+ "app.provanza/public-delivery-evidence": {
+  "checked": "2026-11-18"
+ },
+ "app.thenextrace/tnr": {
+  "url": "https://www.thenextrace.app/pricing",
+  "checked": "2026-11-18"
+ },
+ "app.vercel.mare-liberum/sea": {
+  "checked": "2026-11-18"
+ },
+ "art.funai/studio": {
+  "url": "https://funai.art/pricing",
+  "checked": "2026-11-18"
+ },
+ "be.agimo/agimo": {
+  "checked": "2026-11-18"
+ },
+ "bg.sportpoint/sportpoint": {
+  "checked": "2026-11-18"
+ },
+ "by.authorized/brands": {
+  "checked": "2026-11-18"
+ },
+ "cc.12axes/mcp": {
+  "checked": "2026-11-18"
+ },
+ "ch.bir/birch": {
+  "checked": "2026-11-18"
+ },
+ "channel.orbit/mcp": {
+  "checked": "2026-11-18"
+ },
+ "cl.miscausas/miscausas": {
+  "checked": "2026-11-18"
+ },
+ "co.andopen.mcp/mcp": {
+  "checked": "2026-11-18"
+ },
+ "co.com.meteor/meteor": {
+  "checked": "2026-11-18"
+ },
+ "co.saleslegends/sales-jobs": {
+  "checked": "2026-11-18"
+ },
+ "co.selectime/selectime": {
+  "checked": "2026-11-18"
+ },
+ "com.admitprotocol/admit-protocol": {
+  "url": "https://admitprotocol.com/pricing",
+  "checked": "2026-11-18"
+ },
+ "com.agentstackd/directory": {
+  "checked": "2026-11-18"
+ },
+ "com.agnoclast/agnoclast": {
+  "checked": "2026-11-18"
+ },
+ "com.agoreta/where-when": {
+  "checked": "2026-11-18"
+ },
+ "com.aigovernanceengineer/reference": {
+  "checked": "2026-11-18"
+ },
+ "com.aiurion/agentic-3d-printing": {
+  "checked": "2026-11-18"
+ },
+ "com.alohalabshq/dial": {
+  "checked": "2026-11-18"
+ },
+ "com.appfinishers/fix-guides": {
+  "checked": "2026-11-18"
+ },
+ "com.aurioapp/calculadoras": {
+  "checked": "2026-11-18"
+ },
+ "com.aurioapp/extracto": {
+  "checked": "2026-11-18"
+ },
+ "com.b2bprofileapi/linkedin-company-people-b2b-mcp": {
+  "url": "https://b2bprofileapi.com/pricing",
+  "checked": "2026-11-18"
+ },
+ "com.betterllama/chile-data": {
+  "checked": "2026-11-18"
+ },
+ "com.blogelia/mcp": {
+  "checked": "2026-11-18"
+ },
+ "com.blotato/mcp": {
+  "url": "https://www.blotato.com/pricing",
+  "checked": "2026-11-18"
+ },
+ "com.breadboardhub/circuits": {
+  "checked": "2026-11-18"
+ },
+ "com.cazimedia.agentnative/data-exchange": {
+  "checked": "2026-11-18"
+ },
+ "com.cazimedia.agentnative/government-public-open-data-datasets-federal-state-city-statistics-census-records-police-education-schools": {
+  "checked": "2026-11-18"
+ },
+ "com.cazimedia.agentnative/official-provenance-aggregations-insights-free-samples-open-data": {
+  "checked": "2026-11-18"
+ },
+ "com.cheapxapi/mcp": {
+  "url": "https://cheapxapi.com/pricing",
+  "checked": "2026-11-18"
+ },
+ "com.cheapxapi/twitter-x-search-tweets-mcp": {
+  "url": "https://cheapxapi.com/pricing",
+  "checked": "2026-11-18"
+ },
+ "com.clawhard/jig": {
+  "checked": "2026-11-18"
+ },
+ "com.connecteurs-juridiques/connecteurs-juridiques": {
+  "checked": "2026-11-18"
+ },
+ "com.cresclab.catalog/ai-catalog": {
+  "checked": "2026-11-18"
+ },
+ "com.cronumstudio/work": {
+  "checked": "2026-11-18"
+ },
+ "com.cryptohopper/mcp-trader": {
+  "checked": "2026-11-18"
+ },
+ "com.deploykin/mcp": {
+  "checked": "2026-11-18"
+ },
+ "com.djbnb/djbnb": {
+  "checked": "2026-11-18"
+ },
+ "com.double-oh/double-oh": {
+  "url": "https://double-oh.com/pricing",
+  "checked": "2026-11-18"
+ },
+ "com.easycoexistence/mcp": {
+  "checked": "2026-11-18"
  }
 }
