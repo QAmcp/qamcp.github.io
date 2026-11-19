@@ -3830,5 +3830,77 @@
    "OSV.dev"
   ],
   "items": []
+ },
+ "ai.achurch/church": {
+  "checked": "2026-11-19",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "ai.apipod/mcp": {
+  "checked": "2026-11-19",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.exa/exa": {
+  "checked": "2026-11-19",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.llmbenchmark/llmbenchmark": {
+  "checked": "2026-11-19",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "al.toyshub/catalog": {
+  "checked": "2026-11-19",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.learnhouse/learnhouse": {
+  "checked": "2026-11-19",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.tresca/catalog": {
+  "checked": "2026-11-19",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "br.com.perpetuus/crm": {
+  "checked": "2026-11-19",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "by.ai-belarus/registry": {
+  "checked": "2026-11-19",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "cloud.blitz/mcp": {
+  "checked": "2026-11-19",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
  }
 }
