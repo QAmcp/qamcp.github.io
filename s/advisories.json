@@ -3773,5 +3773,62 @@
    "GitHub Security Advisories"
   ],
   "items": []
+ },
+ "ai.homouniversalis/robotics-ros2-humanoid-embodied-ai-safety-proxemics-eu-ai-act-ieee-7001-w3c-vc-verifiable-credentials-human-dignity-guardrails-compliance-audit": {
+  "checked": "2026-11-19",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.ai2human/humanizer": {
+  "checked": "2026-11-19",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.getosmo/booking-calls": {
+  "checked": "2026-11-19",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.getosmo/call-screening": {
+  "checked": "2026-11-19",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.getosmo/customer-service-calls": {
+  "checked": "2026-11-19",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.jobhunt/jobhunt": {
+  "checked": "2026-11-19",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.owlx/owlx": {
+  "checked": "2026-11-19",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "club.atlasyield/mcp": {
+  "checked": "2026-11-19",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
  }
 }

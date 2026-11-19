@@ -1184,5 +1184,20 @@
  "com.agoreta/where-when": "2026-11-18",
  "com.cazimedia.agentnative/data-exchange": "2026-11-18",
  "com.cazimedia.agentnative/government-public-open-data-datasets-federal-state-city-statistics-census-records-police-education-schools": "2026-11-18",
- "com.cazimedia.agentnative/official-provenance-aggregations-insights-free-samples-open-data": "2026-11-18"
+ "com.cazimedia.agentnative/official-provenance-aggregations-insights-free-samples-open-data": "2026-11-18",
+ "ai.lrrk/agent-desk": "2026-11-19",
+ "ai.servicefront/front-desk": "2026-11-19",
+ "ai.swapwire/contractor-licenses": "2026-11-19",
+ "app.bodybuddy/coach": "2026-11-19",
+ "app.onehaus/haus": "2026-11-19",
+ "au.com.byronwebstudio.linepref/linepref": "2026-11-19",
+ "au.com.ftcapital/ftus-mcp": "2026-11-19",
+ "club.atlasyield/mcp": "2026-11-19",
+ "com.ai2fin/ai2fin-tax-mcp": "2026-11-19",
+ "com.aimlrounds/aimlrounds": "2026-11-19",
+ "com.archerionlabs/nasc": "2026-11-19",
+ "com.earlyopenings/earlyopenings": "2026-11-19",
+ "com.eventstatapp/eventstatapp": "2026-11-19",
+ "com.everybodyhasagun.agents/assoutarmory": "2026-11-19",
+ "owner/mcp2.corpusiq.io/mcp": "2026-11-19"
 }

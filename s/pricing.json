@@ -13407,5 +13407,266 @@
  },
  "com.easycoexistence/mcp": {
   "checked": "2026-11-18"
+ },
+ "ai.baseedgelabs/account": {
+  "checked": "2026-11-19"
+ },
+ "ai.baseedgelabs/catalog": {
+  "checked": "2026-11-19"
+ },
+ "ai.codegene/codegene": {
+  "url": "https://codegene.ai/pricing",
+  "checked": "2026-11-19"
+ },
+ "ai.coris/mcp": {
+  "checked": "2026-11-19"
+ },
+ "ai.coris/mcp-eu": {
+  "checked": "2026-11-19"
+ },
+ "ai.expenselm/expenselm": {
+  "checked": "2026-11-19"
+ },
+ "ai.homouniversalis/robotics-ros2-humanoid-embodied-ai-safety-proxemics-eu-ai-act-ieee-7001-w3c-vc-verifiable-credentials-human-dignity-guardrails-compliance-audit": {
+  "checked": "2026-11-19"
+ },
+ "ai.lrrk/agent-desk": {
+  "checked": "2026-11-19"
+ },
+ "ai.novacut/novacut": {
+  "url": "https://novacut.ai/pricing",
+  "checked": "2026-11-19"
+ },
+ "ai.partnertax/tax-research": {
+  "url": "https://www.partnertax.ai/pricing",
+  "checked": "2026-11-19"
+ },
+ "ai.rendreal/design-and-print": {
+  "checked": "2026-11-19"
+ },
+ "ai.safina/safina": {
+  "url": "https://safina.ai/de/preise/",
+  "checked": "2026-11-19"
+ },
+ "ai.servicefront/front-desk": {
+  "url": "https://servicefront.ai/pricing",
+  "checked": "2026-11-19"
+ },
+ "ai.shuut/shuut": {
+  "checked": "2026-11-19"
+ },
+ "ai.swapwire/contractor-licenses": {
+  "checked": "2026-11-19"
+ },
+ "app.ai2human/humanizer": {
+  "url": "https://ai2human.app/pricing",
+  "checked": "2026-11-19"
+ },
+ "app.bodybuddy/coach": {
+  "url": "https://bodybuddy.app/plans",
+  "checked": "2026-11-19"
+ },
+ "app.floorgen/floorgen": {
+  "url": "https://floorgen.app/pricing",
+  "checked": "2026-11-19"
+ },
+ "app.getosmo/booking-calls": {
+  "url": "https://getosmo.app/pricing",
+  "checked": "2026-11-19"
+ },
+ "app.getosmo/call-screening": {
+  "url": "https://getosmo.app/pricing",
+  "checked": "2026-11-19"
+ },
+ "app.getosmo/customer-service-calls": {
+  "url": "https://getosmo.app/pricing",
+  "checked": "2026-11-19"
+ },
+ "app.jobhunt/jobhunt": {
+  "url": "https://jobhunt.app/pricing",
+  "checked": "2026-11-19"
+ },
+ "app.markwise/markwise": {
+  "checked": "2026-11-19"
+ },
+ "app.onehaus/haus": {
+  "url": "https://onehaus.app/pricing",
+  "checked": "2026-11-19"
+ },
+ "app.owlx/owlx": {
+  "checked": "2026-11-19"
+ },
+ "app.publishport/publishport": {
+  "url": "https://www.publishport.app/pricing",
+  "checked": "2026-11-19"
+ },
+ "app.sharekite/sharekite": {
+  "url": "https://www.sharekite.app/pricing/",
+  "checked": "2026-11-19"
+ },
+ "app.svitgrid/svitgrid": {
+  "url": "https://svitgrid.app/pricing",
+  "checked": "2026-11-19"
+ },
+ "app.tgpipe/tgpipe": {
+  "checked": "2026-11-19"
+ },
+ "au.com.byronwebstudio.linepref/linepref": {
+  "checked": "2026-11-19"
+ },
+ "au.com.ftcapital/ftus-mcp": {
+  "checked": "2026-11-19"
+ },
+ "be.renovatiestart/renovatie-tools": {
+  "checked": "2026-11-19"
+ },
+ "br.com.doutorchamada/doutor-chamada": {
+  "checked": "2026-11-19"
+ },
+ "br.com.hoopai/hoop": {
+  "checked": "2026-11-19"
+ },
+ "ch.kord/kord": {
+  "checked": "2026-11-19"
+ },
+ "club.atlasyield/mcp": {
+  "checked": "2026-11-19"
+ },
+ "co.bindler/regulatory-calculators": {
+  "checked": "2026-11-19"
+ },
+ "co.codeways/co-za-whois-dns": {
+  "checked": "2026-11-19"
+ },
+ "co.contextovigente/contextovigente": {
+  "checked": "2026-11-19"
+ },
+ "com.25karats/storefront": {
+  "checked": "2026-11-19"
+ },
+ "com.aceroymagia.www/catalogo": {
+  "checked": "2026-11-19"
+ },
+ "com.adanos/mcp": {
+  "url": "https://adanos.com/pricing",
+  "checked": "2026-11-19"
+ },
+ "com.addressriskreport/addressriskreport-discovery": {
+  "checked": "2026-11-19"
+ },
+ "com.agentfieldkit/kits": {
+  "url": "https://agentfieldkit.com/pricing",
+  "checked": "2026-11-19"
+ },
+ "com.ai2fin/ai2fin-tax-mcp": {
+  "checked": "2026-11-19"
+ },
+ "com.ai2fin/fin": {
+  "url": "https://ai2fin.com/pricing",
+  "checked": "2026-11-19"
+ },
+ "com.aimlrounds/aimlrounds": {
+  "checked": "2026-11-19"
+ },
+ "com.aisoulkeeper/memory": {
+  "checked": "2026-11-19"
+ },
+ "com.aithanksu/thanks": {
+  "checked": "2026-11-19"
+ },
+ "com.alquileryvivienda/mcp": {
+  "checked": "2026-11-19"
+ },
+ "com.alynki/alynki": {
+  "checked": "2026-11-19"
+ },
+ "com.archerionlabs/nasc": {
+  "checked": "2026-11-19"
+ },
+ "com.aussiesats/aussiesats": {
+  "checked": "2026-11-19"
+ },
+ "com.backtestingmax/backtestingmax": {
+  "url": "https://www.backtestingmax.com/pricing",
+  "checked": "2026-11-19"
+ },
+ "com.beautifiedyou/store": {
+  "checked": "2026-11-19"
+ },
+ "com.bizpeel/bizpeel": {
+  "url": "https://bizpeel.com/pricing",
+  "checked": "2026-11-19"
+ },
+ "com.bloomyesim/esim": {
+  "checked": "2026-11-19"
+ },
+ "com.botsrated/botsrated": {
+  "url": "https://botsrated.com/pricing",
+  "checked": "2026-11-19"
+ },
+ "com.calendarioyfestivos/mcp": {
+  "checked": "2026-11-19"
+ },
+ "com.californialicensingeducation/california-traffic-tools": {
+  "checked": "2026-11-19"
+ },
+ "com.cloudploy/cloudploy": {
+  "url": "https://cloudploy.com/pricing",
+  "checked": "2026-11-19"
+ },
+ "com.cloudytuesdays/orbit": {
+  "checked": "2026-11-19"
+ },
+ "com.coinmarketcal/events": {
+  "checked": "2026-11-19"
+ },
+ "com.cue-queue/qq": {
+  "url": "https://cue-queue.com/pricing/",
+  "checked": "2026-11-19"
+ },
+ "com.dataautomation/agent": {
+  "checked": "2026-11-19"
+ },
+ "com.daymaker/daymaker": {
+  "url": "https://daymaker.com/pricing",
+  "checked": "2026-11-19"
+ },
+ "com.earlyopenings/earlyopenings": {
+  "checked": "2026-11-19"
+ },
+ "com.enshapeapp/enshape": {
+  "checked": "2026-11-19"
+ },
+ "com.envisioning/ncb": {
+  "checked": "2026-11-19"
+ },
+ "com.errilo/errilo": {
+  "checked": "2026-11-19"
+ },
+ "com.esignstack/docs": {
+  "checked": "2026-11-19"
+ },
+ "com.esignstack/esignstack": {
+  "url": "https://esignstack.com/pricing",
+  "checked": "2026-11-19"
+ },
+ "com.eurekuh/eurekuh": {
+  "url": "https://eurekuh.com/pricing",
+  "checked": "2026-11-19"
+ },
+ "com.eurovps/eurovps": {
+  "checked": "2026-11-19"
+ },
+ "com.evendo/places": {
+  "checked": "2026-11-19"
+ },
+ "com.eventstatapp/eventstatapp": {
+  "checked": "2026-11-19"
+ },
+ "com.everybodyhasagun.agents/assoutarmory": {
+  "checked": "2026-11-19"
+ },
+ "owner/mcp2.corpusiq.io/mcp": {
+  "checked": "2026-11-19"
  }
 }
