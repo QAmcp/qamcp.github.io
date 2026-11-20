@@ -3952,5 +3952,54 @@
    "GitHub Security Advisories"
   ],
   "items": []
+ },
+ "ai.cubrik/cubrik": {
+  "checked": "2026-11-20",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.eximagent/eximagent": {
+  "checked": "2026-11-20",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.basko/basko": {
+  "checked": "2026-11-20",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.hyperperps/liquidation-heatmap": {
+  "checked": "2026-11-20",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.trippitroppa/trippi": {
+  "checked": "2026-11-20",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "chat.mumo/mcp": {
+  "checked": "2026-11-20",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "co.getchime/scheduler": {
+  "checked": "2026-11-20",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
  }
 }
