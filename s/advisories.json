@@ -3902,5 +3902,55 @@
    "GitHub Security Advisories"
   ],
   "items": []
+ },
+ "ai.forumtrust/forum": {
+  "checked": "2026-11-20",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.homouniversalis/a2a-agent2agent-mcp-symbiotic-bridge-macaroons-capability-attenuation-tool-poisoning-rug-pull-schema-drift-merkle-dag-provenance-confused-deputy-swarm-security": {
+  "checked": "2026-11-20",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.mroffice/office": {
+  "checked": "2026-11-20",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "ai.mysiren/siren": {
+  "checked": "2026-11-20",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.getosmo.esim/travel-esim": {
+  "checked": "2026-11-20",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.pivotbank/pivotbank": {
+  "checked": "2026-11-20",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "codes.dna/agent": {
+  "checked": "2026-11-20",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
  }
 }
