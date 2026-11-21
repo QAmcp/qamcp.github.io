@@ -4001,5 +4001,84 @@
    "GitHub Security Advisories"
   ],
   "items": []
+ },
+ "ai.axad/axad": {
+  "checked": "2026-11-21",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.fmsg/mcp": {
+  "checked": "2026-11-21",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.gleap/mcp": {
+  "checked": "2026-11-21",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.opencurrent/opencurrent": {
+  "checked": "2026-11-21",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.suntropy/connect": {
+  "checked": "2026-11-21",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.trent/trent": {
+  "checked": "2026-11-21",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.mahonia/mahonia": {
+  "checked": "2026-11-21",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "br.com.adseditor/mcp": {
+  "checked": "2026-11-21",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "cloud.agent-tools/agent-tools-mcp": {
+  "checked": "2026-11-21",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "cn.mackorn/mackorn-cone-crusher": {
+  "checked": "2026-11-21",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "co.buzzfy/mcp": {
+  "checked": "2026-11-21",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
  }
 }
