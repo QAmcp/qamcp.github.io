@@ -4080,5 +4080,33 @@
    "GitHub Security Advisories"
   ],
   "items": []
+ },
+ "ai.axad/language-tutor": {
+  "checked": "2026-11-21",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.kartic/digital-loyalty-stamp-cards": {
+  "checked": "2026-11-21",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "art.travel/mcp": {
+  "checked": "2026-11-21",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "co.granite/granite": {
+  "checked": "2026-11-21",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
  }
 }

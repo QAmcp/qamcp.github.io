@@ -14804,5 +14804,276 @@
  },
  "com.gmbsync/gmbsync-mcp": {
   "checked": "2026-11-21"
+ },
+ "academy.mycontent/google-ads": {
+  "checked": "2026-11-21"
+ },
+ "ai.autobound/signals": {
+  "url": "https://www.autobound.ai/pricing",
+  "checked": "2026-11-21"
+ },
+ "ai.axad/language-tutor": {
+  "url": "https://axad.ai/plans",
+  "checked": "2026-11-21"
+ },
+ "ai.dincat/dincat": {
+  "checked": "2026-11-21"
+ },
+ "ai.erc8126scan/agent-verification": {
+  "checked": "2026-11-21"
+ },
+ "ai.erc8126scan/erc8126-scan": {
+  "checked": "2026-11-21"
+ },
+ "ai.evermail/mcp": {
+  "url": "https://www.evermail.ai/pricing",
+  "checked": "2026-11-21"
+ },
+ "ai.navad/jobs": {
+  "checked": "2026-11-21"
+ },
+ "ai.schoolwise/schoolwise": {
+  "url": "https://schoolwise.ai/pricing",
+  "checked": "2026-11-21"
+ },
+ "ai.smblistings/smblistings": {
+  "checked": "2026-11-21"
+ },
+ "ai.tsoden.serp/ai-visibility-audit": {
+  "url": "https://serp.tsoden.ai/pricing",
+  "checked": "2026-11-21"
+ },
+ "ai.tsoden.serp/tsoden-seo": {
+  "url": "https://serp.tsoden.ai/pricing",
+  "checked": "2026-11-21"
+ },
+ "app.bonegyre/bonegyre": {
+  "checked": "2026-11-21"
+ },
+ "app.hedgr/hedgr": {
+  "url": "https://hedgr.app/pricing",
+  "checked": "2026-11-21"
+ },
+ "app.kartic/digital-loyalty-stamp-cards": {
+  "checked": "2026-11-21"
+ },
+ "app.nubbo/nubbo": {
+  "url": "https://nubbo.app/pricing/",
+  "checked": "2026-11-21"
+ },
+ "app.pinnu/pinnu": {
+  "checked": "2026-11-21"
+ },
+ "app.proactiveparent/guidance": {
+  "checked": "2026-11-21"
+ },
+ "app.randomcolorgenerator/color-palette": {
+  "checked": "2026-11-21"
+ },
+ "app.samestay/direct-site-finder": {
+  "checked": "2026-11-21"
+ },
+ "app.tidetrade/tidetrade": {
+  "url": "https://tidetrade.app/pricing",
+  "checked": "2026-11-21"
+ },
+ "art.travel/mcp": {
+  "checked": "2026-11-21"
+ },
+ "be.databakkes/company-data": {
+  "checked": "2026-11-21"
+ },
+ "bot.qed/register": {
+  "checked": "2026-11-21"
+ },
+ "build.haya/hayabuild": {
+  "checked": "2026-11-21"
+ },
+ "ca.dentalcostfinder/canada-dental": {
+  "checked": "2026-11-21"
+ },
+ "ca.tripfinder/tours": {
+  "checked": "2026-11-21"
+ },
+ "capital.aindex/aindex": {
+  "checked": "2026-11-21"
+ },
+ "cc.map-maker/map-maker": {
+  "checked": "2026-11-21"
+ },
+ "cfd.neytom.ai/mcp": {
+  "url": "https://ai.neytom.cfd/pricing",
+  "checked": "2026-11-21"
+ },
+ "ch.opendata/transport": {
+  "checked": "2026-11-21"
+ },
+ "ch.opendata/vornamen": {
+  "checked": "2026-11-21"
+ },
+ "ch.visin.mcp/icloud": {
+  "checked": "2026-11-21"
+ },
+ "ch.visin.mcp/padi": {
+  "checked": "2026-11-21"
+ },
+ "ch.visin.mcp/suunto": {
+  "checked": "2026-11-21"
+ },
+ "cl.bettizlegal/guides": {
+  "checked": "2026-11-21"
+ },
+ "cl.gilroymotor/agent-door": {
+  "checked": "2026-11-21"
+ },
+ "co.animo/animo": {
+  "checked": "2026-11-21"
+ },
+ "co.granite/granite": {
+  "url": "https://granite.co/pricing",
+  "checked": "2026-11-21"
+ },
+ "com.ad-o-matic/adomatic": {
+  "checked": "2026-11-21"
+ },
+ "com.addsynapse/rooms": {
+  "url": "https://addsynapse.com/pricing",
+  "checked": "2026-11-21"
+ },
+ "com.andesprotocol/cmf": {
+  "checked": "2026-11-21"
+ },
+ "com.appliedmanifold/spatial-compiler": {
+  "url": "https://appliedmanifold.com/pricing/",
+  "checked": "2026-11-21"
+ },
+ "com.askhooman/askhooman": {
+  "checked": "2026-11-21"
+ },
+ "com.augstash/mcp": {
+  "checked": "2026-11-21"
+ },
+ "com.beamfar/website-monitoring": {
+  "url": "https://beamfar.com/pricing",
+  "checked": "2026-11-21"
+ },
+ "com.bee-wholesale/outils-revendeur": {
+  "checked": "2026-11-21"
+ },
+ "com.biaedge/passim-ai": {
+  "url": "https://passimai.com/pricing",
+  "checked": "2026-11-21"
+ },
+ "com.blitzreels/blitzreels": {
+  "url": "https://blitzreels.com/pricing",
+  "checked": "2026-11-21"
+ },
+ "com.boternity/boternity": {
+  "checked": "2026-11-21"
+ },
+ "com.camilafonseca/psychotherapy": {
+  "checked": "2026-11-21"
+ },
+ "com.cards4play/cards4play": {
+  "checked": "2026-11-21"
+ },
+ "com.clearmakes/agents": {
+  "url": "https://agents.clearmakes.com/pricing",
+  "checked": "2026-11-21"
+ },
+ "com.coachmoshiur/daily-tonic": {
+  "checked": "2026-11-21"
+ },
+ "com.cobaltcapture/cobalt": {
+  "url": "https://cobaltcapture.com/pricing",
+  "checked": "2026-11-21"
+ },
+ "com.comidoc/comidoc": {
+  "checked": "2026-11-21"
+ },
+ "com.cyclixagents/japan-tax-rules": {
+  "checked": "2026-11-21"
+ },
+ "com.cyclixagents/jimu": {
+  "checked": "2026-11-21"
+ },
+ "com.daylytix/daylytix": {
+  "url": "https://daylytix.com/pricing",
+  "checked": "2026-11-21"
+ },
+ "com.dialredphone/redphone": {
+  "url": "https://dialredphone.com/pricing",
+  "checked": "2026-11-21"
+ },
+ "com.diastella/diastella": {
+  "checked": "2026-11-21"
+ },
+ "com.direct-hotels/directory": {
+  "checked": "2026-11-21"
+ },
+ "com.dugun/wedding": {
+  "checked": "2026-11-21"
+ },
+ "com.engicor/agent-door": {
+  "checked": "2026-11-21"
+ },
+ "com.europeinstead/europe-instead": {
+  "checked": "2026-11-21"
+ },
+ "com.evenstocks/indian-markets": {
+  "url": "https://evenstocks.com/pricing",
+  "checked": "2026-11-21"
+ },
+ "com.fetchtranscript/fetchtranscript": {
+  "url": "https://fetchtranscript.com/pricing",
+  "checked": "2026-11-21"
+ },
+ "com.formationlane/llc-fees": {
+  "checked": "2026-11-21"
+ },
+ "com.fuzzzycore.law/georgian-law": {
+  "checked": "2026-11-21"
+ },
+ "com.getmenzio/menzio": {
+  "url": "https://getmenzio.com/pricing",
+  "checked": "2026-11-21"
+ },
+ "com.getscentai/fragrance-finder": {
+  "checked": "2026-11-21"
+ },
+ "com.gotokenme/gotokenme": {
+  "checked": "2026-11-21"
+ },
+ "com.gotsimplified/csvconvert": {
+  "url": "https://gotsimplified.com/pricing",
+  "checked": "2026-11-21"
+ },
+ "com.gotsimplified/files": {
+  "url": "https://gotsimplified.com/pricing",
+  "checked": "2026-11-21"
+ },
+ "com.gotsimplified/graph": {
+  "url": "https://gotsimplified.com/pricing",
+  "checked": "2026-11-21"
+ },
+ "com.gotsimplified/note": {
+  "url": "https://gotsimplified.com/pricing",
+  "checked": "2026-11-21"
+ },
+ "com.gotsimplified/search": {
+  "url": "https://gotsimplified.com/pricing",
+  "checked": "2026-11-21"
+ },
+ "com.gotsimplified/shorturl": {
+  "url": "https://gotsimplified.com/pricing",
+  "checked": "2026-11-21"
+ },
+ "com.gotsimplified/task": {
+  "url": "https://gotsimplified.com/pricing",
+  "checked": "2026-11-21"
+ },
+ "com.gotsimplified/text": {
+  "url": "https://gotsimplified.com/pricing",
+  "checked": "2026-11-21"
  }
 }
