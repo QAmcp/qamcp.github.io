@@ -1349,5 +1349,22 @@
  "com.keeb-finder/keebfinder": "2026-11-22",
  "com.kineticist/mcp-server": "2026-11-22",
  "com.krevaya/mcp": "2026-11-22",
- "com.lazynext/ai-slop-checker": "2026-11-22"
+ "com.lazynext/ai-slop-checker": "2026-11-22",
+ "ai.ellul/services": "2026-11-22",
+ "app.charmotion/charmotion": "2026-11-22",
+ "app.invohub/connect": "2026-11-22",
+ "app.railway.up.chainguard-studio-production/chainguard-vault": "2026-11-22",
+ "app.symban/symban": "2026-11-22",
+ "box.snapshot/mcp": "2026-11-22",
+ "br.com.cabrapi/mcp": "2026-11-22",
+ "br.com.obm/api": "2026-11-22",
+ "business.act60/mcp": "2026-11-22",
+ "cn.ctaning/ka-forge": "2026-11-22",
+ "cn.net.sixu-ai/moyan-audit": "2026-11-22",
+ "co.grantcompass/grantcompass-us": "2026-11-22",
+ "com.agentpaystore/muskox3": "2026-11-22",
+ "com.airsockfly.www/airsockfly": "2026-11-22",
+ "com.autoalerto/mcp": "2026-11-22",
+ "com.easycando/easycando": "2026-11-22",
+ "com.edakon/herramientas": "2026-11-22"
 }

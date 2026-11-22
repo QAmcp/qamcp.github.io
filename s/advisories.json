@@ -4129,5 +4129,97 @@
    "GitHub Security Advisories"
   ],
   "items": []
+ },
+ "ai.whappy/whappy": {
+  "checked": "2026-11-22",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.charmotion/charmotion": {
+  "checked": "2026-11-22",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.kaeso/kaeso": {
+  "checked": "2026-11-22",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": [
+   {
+    "id": "GHSA-f6jv-jmg6-cw9c",
+    "summary": "Compressed request bodies are decompressed before the translation memory budget admits them, so a few small requests from one key can exhaust the gateway's memory",
+    "severity": "high",
+    "published": "2026-11-21",
+    "url": "https://github.com/logicplanes/kaeso/security/advisories/GHSA-f6jv-jmg6-cw9c"
+   },
+   {
+    "id": "GHSA-v7jh-9qhf-4424",
+    "summary": "Alibaba Cloud's instance metadata address passes the custom provider and OIDC address guard",
+    "severity": "low",
+    "published": "2026-10-30",
+    "url": "https://github.com/logicplanes/kaeso/security/advisories/GHSA-v7jh-9qhf-4424"
+   },
+   {
+    "id": "GHSA-vr6h-jrf4-8f5w",
+    "summary": "One model API request can exhaust the gateway's memory and stop it for every organization",
+    "severity": "medium",
+    "published": "2026-10-21",
+    "url": "https://github.com/logicplanes/kaeso/security/advisories/GHSA-vr6h-jrf4-8f5w"
+   }
+  ]
+ },
+ "au.com.primitiveai/paper": {
+  "checked": "2026-11-22",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "box.snapshot/mcp": {
+  "checked": "2026-11-22",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "by.ai-tender/tenders": {
+  "checked": "2026-11-22",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ca.sophialabs/nomos": {
+  "checked": "2026-11-22",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "cc.wealthos/mcp": {
+  "checked": "2026-11-22",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ch.antevo/strategy-radar": {
+  "checked": "2026-11-22",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "cloud.freshleads/freshleads": {
+  "checked": "2026-11-22",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
  }
 }
