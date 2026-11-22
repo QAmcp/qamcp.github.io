@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Is LayerHop MCP server safe? 91/100 in QAmcp's test</title>
+<meta name="description" content="LayerHop MCP server: Best-price cross-chain swap quotes across 70 chains, EVM and Solana. Holds no keys, never…. Scored 91/100 in QAmcp&#39;s test on 22 Nov 2026.">
+<link rel="canonical" href="https://qamcp.dev/s/com-layerhop-mcp.html">
+<meta property="og:type" content="website"><meta property="og:site_name" content="QAmcp"><meta property="og:title" content="LayerHop MCP server: tested by QAmcp"><meta property="og:description" content="LayerHop MCP server: Best-price cross-chain swap quotes across 70 chains, EVM and Solana. Holds no keys, never…. Scored 91/100 in QAmcp&#39;s test on 22 Nov 2026."><meta property="og:url" content="https://qamcp.dev/s/com-layerhop-mcp.html"><meta name="twitter:card" content="summary">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is LayerHop MCP server safe?","acceptedAnswer":{"@type":"Answer","text":"QAmcp's test on 22 Nov 2026: None of the hidden-instruction wordings we know were found in its 22 tool descriptions. Its error messages showed no secrets or internal details. 13 of its 22 tools are labeled read-only; the others may change or send things. Overall it scored 91/100 on 22 Nov 2026. A test can only see what the server shows from outside, not what it does with your data behind the scenes. Connect servers from makers you trust."}}]}</script>
+<script>try{var t=localStorage.getItem('qamcp-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}document.addEventListener('error',function(e){var i=e.target;if(!i||i.tagName!=='IMG'||!i.dataset||!i.dataset.letter)return;var s=document.createElement('span');s.className=i.className+' letter';s.setAttribute('aria-hidden','true');s.textContent=i.dataset.letter;i.replaceWith(s)},true);</script>
+<link rel="stylesheet" href="../site.css"><link rel="stylesheet" href="../theme.css"><link rel="stylesheet" href="server.css">
+<script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}((p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r));var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+if(location.hostname==='qamcp.dev'||location.hostname==='api.qamcp.dev')posthog.init('phc_p4Wad2LVUW2yHEWsWXrCajwiM2XNK45coFjRNev4DoH9',{api_host:'https://us.i.posthog.com',persistence:'sessionStorage',person_profiles:'identified_only',capture_pageview:true,autocapture:true,session_recording:{maskAllInputs:true},respect_dnt:true});
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e.target.closest('a, button'):null;if(!a)return;var t=(a.textContent||'').trim().toLowerCase(),h=a.getAttribute('href')||'';if(t.includes('get pro')||h.includes('dashboard/billing')||(t.includes('pricing')&&(a.classList.contains('btn')||a.classList.contains('tb')||a.classList.contains('p')||a.classList.contains('cta')))){try{window.posthog&&window.posthog.capture('get_pro_clicked')}catch(err){}}},true);
+</script>
+</head><body>
+<div class="wrap">
+ <header class="top"><a class="brand" href="../index.html">QA<b>mcp</b></a><nav aria-label="Main"><a href="../directory.html" aria-current="page">Directory</a><a href="../test.html">Test a server</a><a href="../monitor.html">Monitor</a><a href="../guard.html">Guard</a><a href="../pricing.html">Pricing</a><a href="../how-it-works.html">How it works</a><a href="../safety.html">Safety</a><a href="../ci.html">Run it in CI</a><a href="../samples.html">Sample reports</a></nav><details class="mnav"><summary>Menu</summary><div class="mnav-list"><a href="../directory.html" aria-current="page">Directory</a><a href="../test.html">Test a server</a><a href="../monitor.html">Monitor</a><a href="../guard.html">Guard</a><a href="../pricing.html">Pricing</a><a href="../how-it-works.html">How it works</a><a href="../safety.html">Safety</a><a href="../ci.html">Run it in CI</a><a href="../samples.html">Sample reports</a><a href="https://api.qamcp.dev/dashboard?from=menu">Sign in</a></div></details>
+  <div class="tools"><div class="ai"><button class="ai-btn" type="button" aria-expanded="false" aria-controls="ai-pop"><svg viewBox="0 0 16 16" aria-hidden="true" width="15" height="15"><path fill="none" stroke="currentColor" stroke-width="1.4" d="M8 1.5l1.6 3.9 3.9 1.6-3.9 1.6L8 12.5 6.4 8.6 2.5 7l3.9-1.6z"/></svg>Test with your AI</button><div class="ai-pop" id="ai-pop" hidden><b>Copied. Paste it into Claude Code, Cursor or Codex:</b><code>Fetch and follow the instructions at https://qamcp.dev/setup.md to test my MCP server.</code><p>Your AI finds your server in your project, tests it with QAmcp, explains what&#39;s wrong in plain words, fixes it with your OK, and tests again. <a href="../setup.md">Read the instructions</a></p></div></div><button class="theme" id="theme" type="button">Light</button><a class="gh" href="https://github.com/QAmcp/qamcp-cli">GitHub</a></div></header>
+ <a class="mon-strip" href="../monitor.html?from=server-page"><b>Your server?</b><span>Its score can change any day. <strong>QAmcp Monitor</strong> keeps testing it and emails you when it breaks. Free for 1 server.</span><i>See what Monitor does →</i></a>
+ <section class="hero">
+  <img class="logo" src="logo/com-layerhop-mcp.png" alt="" width="96" height="96" data-letter="L">
+  <div class="who">
+   <p class="crumb"><a href="../directory.html">Directory</a> / LayerHop</p>
+   <h1>LayerHop</h1>
+   <p class="by">by <a href="https://docs.layerhop.com/guides/ai-agents" rel="noopener nofollow">docs.layerhop.com</a> · https://mcp.layerhop.com/mcp</p>
+   
+   <p class="d">Best-price cross-chain swap quotes across 70 chains, EVM and Solana. Holds no keys, never signs.</p>
+   <div class="chips"><span>22 tools</span><span class="ok">✓ no account needed</span><span>Pricing: not listed</span><span>From the official MCP registry</span></div>
+   <div class="acts"><button class="p" type="button" id="copy-top" data-cmd="npx qamcp-cli https://mcp.layerhop.com/mcp">Copy the test command</button><a class="s" href="https://docs.layerhop.com/guides/ai-agents" rel="noopener nofollow">Visit website</a></div>
+  </div>
+  <div class="side">
+  <div class="medal" id="medal" data-slug="com-layerhop-mcp" data-tested="2026-11-22" data-tested-label="22 Nov 2026" data-source="daily test">
+   <div class="n" id="score-n">91<small> /100</small></div>
+   <span class="stamp mid" id="score-stamp">PASS · WITH NOTES</span>
+   <p class="down" id="down-now" hidden></p>
+   <p id="signed-in" hidden>Tested signed in, with a test account from the owner.</p>
+   <p class="fresh-note" id="fresh-note" hidden></p>
+   <p id="score-when">13 of 13 checks · 22 Nov 2026 · daily test</p>
+  </div>
+  <a class="now" href="../test.html?url=https%3A%2F%2Fmcp.layerhop.com%2Fmcp&amp;go=1&amp;from=server-page">Test it now for current results</a>
+  </div>
+ </section>
+ <nav class="tabs" aria-label="On this page"><a href="#glance">At a glance</a><a href="#safe">Is it safe?</a><a href="#advisories">Advisories</a><a href="#tools">What it can do</a><a href="#results">Test results</a><a href="#reviews">Reviews</a></nav>
+<section class="sec" id="glance"><h2>At a glance</h2><dl class="glance" id="glance-list"><div><dt>Runs where</dt><dd>On their server. What you send to it goes to them.</dd></div><div><dt>What you need</dt><dd>Nothing: it answered without a login</dd></div><div><dt>Tools</dt><dd>22 tools</dd></div><div><dt>Its own safety labels</dt><dd>13 read-only, 2 labeled as deleting or destroying, 7 labeled as changing things</dd></div><div><dt>Memory it takes</dt><dd>About 6,300 tokens of your AI&#39;s memory, just for its tool descriptions</dd></div><div><dt>Largest answer</dt><dd>About 11 KB in our test</dd></div><div><dt>Speed</dt><dd>Average answer in our test: 216 ms</dd></div></dl><p class="hint">Tokens are an estimate: the characters in its tool names, descriptions and inputs, divided by 4. The exact number depends on your AI model. Safety labels are what the server says about itself. <span id="glance-when">From the daily test on 22 Nov 2026.</span></p></section>
+<section class="sec" id="safe"><h2>Is LayerHop MCP server safe?</h2><ul class="safe"><li>None of the hidden-instruction wordings we know were found in its 22 tool descriptions.</li><li>Its error messages showed no secrets or internal details.</li><li>13 of its 22 tools are labeled read-only; the others may change or send things.</li><li>Overall it scored 91/100 on 22 Nov 2026.</li></ul><p class="hint">A test can only see what the server shows from outside, not what it does with your data behind the scenes. Connect servers from makers you trust.</p><h3 class="sub">What this test does not check</h3><ul class="safe not"><li>Its source code and packages.</li><li>What a tool quietly does behind the scenes, such as writing a file or calling another service.</li><li>Instructions hidden inside live tool answers. We only look for those in tool descriptions.</li><li>Hidden instructions worded in a way our list doesn&#39;t know yet.</li><li>Tools that could change something. Those are read, never run.</li></ul><p class="hint"><a href="../limits.html">What QAmcp can and can't see</a> · <a href="../is-my-mcp-server-safe.html">How to tell if an MCP server is safe</a> · <a href="../mcp-tool-poisoning.html">Hidden instructions</a> · <a href="../mcp-prompt-injection.html">Prompt injection</a></p></section>
+<section class="sec" id="advisories"><h2>Known security advisories</h2><p class="hint">Not looked up yet. QAmcp tests how a server behaves. It does not scan source code.</p></section>
+ <section class="sec" id="tools"><h2>What it can do</h2><p class="hint">22 tools, in the server's own words.</p><div class="grid">
+<div class="tool"><code>list_chains</code><span class="ro">read-only</span><p>List every blockchain LayerHop can swap from or to: slug, numeric chain id, name, VM type (evm or svm = Solana) and native coin.</p></div>
+<div class="tool"><code>list_tokens</code><span class="ro">read-only</span><p>List LayerHop&#39;s built-in tokens on one chain (symbol, contract address or mint, decimals).</p></div>
+<div class="tool"><code>get_quote</code><span class="ro">read-only</span><p>Get the best price to swap or bridge tokens, within one chain or across chains (EVM Solana).</p></div>
+<div class="tool"><code>build_transaction</code><p>Turn a quoteId from get_quote into the UNSIGNED transaction the user&#39;s own wallet must sign: EVM {chainId, to, data, value in wei, optional ERC-20 approval to …</p></div>
+<div class="tool"><code>simulate_transaction</code><span class="ro">read-only</span><p>Build the transaction for a quoteId and dry-run it on-chain (EVM eth_call + gas estimate from the sender; Solana simulateTransaction) without sending anything …</p></div>
+<div class="tool"><code>report_submitted</code><p>Tell LayerHop that the user&#39;s wallet broadcast the transaction for a quoteId, so the order is tracked (status, webhooks).</p></div>
+<div class="tool"><code>get_order_status</code><span class="ro">read-only</span><p>Check the status of a swap or bridge after the source transaction was sent: pending, filled (funds delivered), refunded, failed, or unknown (some same-chain pr…</p></div>
+<div class="tool"><code>list_orders</code><span class="ro">read-only</span><p>List LayerHop orders (swaps built or submitted through LayerHop) where the address is the sender or recipient, newest first, with status.</p></div>
+<div class="tool"><code>get_swap_link</code><span class="ro">read-only</span><p>Create a https://layerhop.com/swap link prefilled with the swap, which the user opens to review the live quote and fees and sign in their own wallet.</p></div>
+<div class="tool"><code>lookup_token</code><span class="ro">read-only</span><p>Get one token&#39;s symbol, name, decimals, USD price and verified flag from its contract address or SPL mint.</p></div>
+<div class="tool"><code>get_token_risk</code><span class="ro">read-only</span><p>Safety report for a token before the user buys or receives it: honeypot (can&#39;t sell), buy/sell/transfer taxes, owner powers (mint, blacklist, pause, freeze), u…</p></div>
+<div class="tool"><code>list_limit_orders</code><span class="ro">read-only</span><p>List limit orders (Solana: Jupiter Trigger; EVM: CoW Protocol) of a wallet, or of the API key&#39;s account without a wallet: what is sold, the minimum received, s…</p></div>
+<div class="tool"><code>get_limit_order</code><span class="ro">read-only</span><p>Get one limit order with its fills (each fill is an order whose quoteId starts with lof_).</p></div>
+<div class="tool"><code>create_limit_order</code><p>Build a limit order: sell sellAmount of sellToken once the market gives at least minReceive of buyToken.</p></div>
+<div class="tool"><code>submit_limit_order</code><p>Send a limit order&#39;s create or cancel step AFTER the maker&#39;s own wallet signed it (from create_limit_order or cancel_limit_order): the signed Solana transactio…</p></div>
+<div class="tool"><code>cancel_limit_order</code><p>Cancel an open limit order: returns the UNSIGNED cancel transaction (Solana) or the cancellation typed data (EVM, no gas) for the maker&#39;s wallet to sign, then …</p></div>
+<div class="tool"><code>create_deposit_address</code><p>Create an address the user sends tokens to; every deposit is swapped/bridged and delivered as toToken on toChain to recipient.</p></div>
+<div class="tool"><code>list_deposit_addresses</code><span class="ro">read-only</span><p>List the deposit addresses of the API key&#39;s account and mode (live or test), newest first: address, route, status, deposit count.</p></div>
+<div class="tool"><code>get_deposit_address</code><span class="ro">read-only</span><p>Get one deposit address with its 20 most recent deposits (orders, quoteId starting with dep_): amount deposited and delivered, status (submitted, pending, fill…</p></div>
+<div class="tool"><code>refresh_deposit_address</code><p>Ask LayerHop to check a deposit address for new deposits right away (instead of waiting for the next scheduled check).</p></div>
+<div class="tool"><code>disable_deposit_address</code><p>Disable a deposit address: LayerHop stops tracking it (no more orders or webhooks for it).</p></div>
+<div class="tool"><code>simulate_deposit</code><p>TEST MODE ONLY (lh_test_ key and a test deposit address): record a fake deposit so the integration can be tested end to end; it becomes a test order that settl…</p></div>
+ </div></section>
+ <section class="sec" id="results"><h2>Test results</h2><p class="hint">Safe mode: only tools labeled read-only were run. <a href="../how-it-works.html">How the test works</a></p><ul class="checks">
+<li class="chk warn"><span class="mk warn" aria-label="note">!</span><div><b>Ready for the newest MCP version</b><details><summary>1 warning</summary><ul><li class="warn"><span class="m">!</span>Uses an older MCP version (2025-11-25). It works today, but it isn&#39;t on the July 2026 version (2026-07-28) yet.</li></ul></details></div><span class="st">note</span></li>
+<li class="chk warn"><span class="mk warn" aria-label="note">!</span><div><b>Follows MCP best practices (not scored yet)</b><details><summary>1 tip (not scored)</summary><ul><li class="warn"><span class="m">!</span>1 tool answers with structured data but doesn&#39;t declare its shape (outputSchema): list_chains. If those answers change shape, nothing can catch it; with a schema, every answer is checked.</li></ul></details></div><span class="st">note</span></li>
+<li class="chk warn"><span class="mk warn" aria-label="note">!</span><div><b>Resources and prompts work</b><details><summary>1 warning (72 resources, 1 template, 1 prompt)</summary><ul><li class="warn"><span class="m">!</span><b>layerhop://tokens/{chain}</b>: A made-up value (layerhop://tokens/qamcp-test) gets an internal error instead of a clean &quot;not found&quot;: Unknown chain &quot;qamcp-test&quot;.</li><li class="more">and 3 more</li></ul></details></div><span class="st">note</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Connects</b><span class="sum">Connected in 1.4 s</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Lists its tools</b><span class="sum">Found 22 tools</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Every tool is described</b><span class="sum">All 22 tools and their inputs are described</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Tools are labeled safe or dangerous</b><span class="sum">Every tool has a safety label</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>No known hidden instructions</b><span class="sum">None of the hidden-instruction wordings we know were found in tool descriptions. New wordings can get past this check.</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Tools work with good inputs</b><details><summary>All good</summary><ul><li class="pass"><span class="m">✓</span><b>list_chains</b>: Worked (274 ms)</li><li class="pass"><span class="m">✓</span><b>list_tokens</b>: Answered with an error, probably because of our sample input: Unknown chain &quot;test&quot;. Supported: ethereum (1), base (8453), arbitrum (42161), solana (7565164), bsc (56), optimism (10), polygon (137), ava…</li><li class="pass"><span class="m">✓</span><b>get_quote</b>: Answered with an error, probably because of our sample input: Unknown chain &quot;test&quot;. Supported: ethereum (1), base (8453), arbitrum (42161), solana (7565164), bsc (56), optimism (10), polygon (137), ava…</li><li class="pass"><span class="m">✓</span><b>simulate_transaction</b>: Answered with an error, probably because of our sample input: MCP error -32602: Input validation error: Invalid arguments for tool simulate_transaction: quoteId starts with q_ at quoteId</li><li class="pass"><span class="m">✓</span><b>get_order_status</b>: Answered with an error, probably because of our sample input: LayerHop API error INVALID_PARAMS (HTTP 400): id must be a source transaction hash (0x + 64 hex, a Solana signature or a Tron hash) or a pr…</li><li class="pass"><span class="m">✓</span><b>list_orders</b>: Answered with an error, probably because of our sample input: &quot;test&quot; is not a valid EVM or Solana address.</li><li class="pass"><span class="m">✓</span><b>lookup_token</b>: Answered with an error, probably because of our sample input: LayerHop API error INVALID_PARAMS (HTTP 400): address is not a valid EVM address, Solana mint or Tron address [requestId 896fad1d-6b02-408c…</li><li class="pass"><span class="m">✓</span><b>get_token_risk</b>: Answered with an error, probably because of our sample input: Unknown chain &quot;test&quot;. Supported: ethereum (1), base (8453), arbitrum (42161), solana (7565164), bsc (56), optimism (10), polygon (137), ava…</li><li class="more">and 14 more</li></ul></details></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Bad inputs give a clean error</b><details><summary>All good</summary><ul><li class="pass"><span class="m">✓</span><b>list_tokens</b>: Refused missing required input &quot;chain&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>list_tokens</b>: Refused wrong type for &quot;chain&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>get_quote</b>: Refused missing required input &quot;fromChain&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>get_quote</b>: Refused wrong type for &quot;fromChain&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>simulate_transaction</b>: Refused missing required input &quot;quoteId&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>simulate_transaction</b>: Refused wrong type for &quot;quoteId&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>get_order_status</b>: Refused missing required input &quot;provider&quot; with a clear error</li><li class="pass"><span class="m">✓</span><b>get_order_status</b>: Refused wrong type for &quot;provider&quot; with a clear error</li><li class="more">and 12 more</li></ul></details></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>Fast enough</b><details><summary>All good</summary><ul><li class="pass"><span class="m">✓</span>Connecting took 1.4 s</li><li class="pass"><span class="m">✓</span>Listing tools took 187 ms</li><li class="pass"><span class="m">✓</span>Average tool answer: 216 ms</li><li class="pass"><span class="m">✓</span><b>simulate_transaction</b>: Slowest tool: simulate_transaction (284 ms)</li></ul></details></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>No secrets leaked</b><span class="sum">Checked 37 error messages: no secrets or internal details</span></div><span class="st">pass</span></li>
+<li class="chk pass"><span class="mk pass" aria-label="pass">✓</span><div><b>No known hidden instructions in tool answers (not scored yet)</b><span class="sum">Read 38 answers from 12 tools: none of the hidden-instruction wordings we know were found. New wordings can get past this check.</span></div><span class="st">pass</span></li>
+<li class="chk off"><span class="mk off" aria-label="not tested">–</span><div><b>Tools work together</b><span class="sum">No tool&#39;s answer could be fed into another tool, so there were no chains to test (not counted either way)</span></div><span class="st">not tested</span></li>
+ </ul></section>
+ <section class="sec" id="badge"><h2>Show this score on GitHub</h2><p class="hint">Free for every server in the directory. Paste this into your README: the badge always shows the newest score, from the daily test, a test on our website or a Monitor test.</p>
+  <p class="badge-img"><img src="https://api.qamcp.dev/badge/s/com-layerhop-mcp.svg" alt="QAmcp badge for LayerHop" height="20"></p>
+  <div class="cmd"><code id="badge-md">[![QAmcp score](https://api.qamcp.dev/badge/s/com-layerhop-mcp.svg)](https://qamcp.dev/s/com-layerhop-mcp.html)</code><button type="button" id="copy-badge">Copy</button></div></section>
+ <section class="sec" id="reviews"><h2>Reviews</h2><p class="hint">Coming soon: reviews from people who use LayerHop, signed in with GitHub, one per person. Reviews never change the score.</p></section>
+ <div class="claim"><div><b>Is this your server? Get an alert the moment it breaks.</b><p>QAmcp Monitor tests it every hour and emails you when it goes down, the score drops, a tool changes or a secret leaks. Free for 1 server, no card.</p><form class="notify" novalidate><input type="hidden" name="server" value="https://mcp.layerhop.com/mcp"><label class="nl">Work email<input name="email" type="email" autocomplete="email" required placeholder="you@company.com"></label><button type="submit">Start monitoring free</button></form><p class="notify-msg" role="status" aria-live="polite"></p><p>Have a concern, or want it removed? <a href="https://github.com/QAmcp/qamcp-cli/issues">Ask us</a> and we'll take it off the list. <a href="../directory-rules.html">How the directory works</a></p></div></div>
+</div>
+<script src="../theme.js"></script>
+<script src="../count.js"></script>
+<script src="../ai.js"></script>
+<script src="../notify.js"></script>
+<script>
+// The newest result shows here as soon as the page opens: a website test or a Monitor test, with its
+// At a glance, and whether Monitor finds the server answering right now. If the test service doesn't
+// answer, the page keeps what it was built with.
+(async () => {
+  const m = document.getElementById('medal');
+  const WORDS = {"website":"website test","monitor":"Monitor test","daily":"daily test"}, ORDER = ["Runs where","What you need","Tools","Its own safety labels","Memory it takes","Largest answer","Tools that look alike","Speed","Reliability","Tools last changed"], ONE_TEST = ["What you need","Tools","Its own safety labels","Memory it takes","Largest answer","Tools that look alike","Speed"];
+  // A website or Monitor result has a time; the daily test only a day.
+  const when = (t) => String(t).length > 10
+    ? new Date(t).toLocaleString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit' })
+    : new Date(t + 'T12:00:00Z').toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' });
+  try {
+    const r = await fetch('https://api.qamcp.dev/api/directory/' + encodeURIComponent(m.dataset.slug), { cache: 'no-store' });
+    if (!r.ok) return;
+    const n = await r.json();
+    const source = n.source || (n.fromWebsite ? 'website' : 'daily');
+    const fresh = source !== 'daily' && String(n.testedAt).slice(0, 10) >= m.dataset.tested;
+    const down = document.getElementById('down-now');
+    if (n.notAnsweringSince) { down.textContent = 'Not answering since ' + when(n.notAnsweringSince) + '. We keep checking.'; down.hidden = false; }
+    else if (fresh) down.hidden = true; // a newer test saw it answer
+    if (!fresh) return;
+    const word = WORDS[source] || 'test';
+    const num = document.getElementById('score-n');
+    if (n.notScored) { num.className = 'n login'; num.textContent = /login/i.test(n.notScored) ? 'needs login' : 'not scored'; }
+    else { num.className = 'n'; num.textContent = String(Number(n.score)); const small = document.createElement('small'); small.textContent = ' /100'; num.append(small); }
+    if (Array.isArray(n.verdict) && ['pass', 'fail', 'mid', 'none'].includes(n.verdict[1])) { const st = document.getElementById('score-stamp'); st.className = 'stamp ' + n.verdict[1]; st.textContent = String(n.verdict[0]); }
+    document.getElementById('score-when').textContent = 'Newest test · ' + when(n.testedAt) + ' · ' + word;
+    const note = document.getElementById('fresh-note');
+    note.textContent = 'The score and At a glance are from a ' + word + ' on ' + when(n.testedAt) + '. The test results below are from the ' + m.dataset.source + ' on ' + m.dataset.testedLabel + '.';
+    note.hidden = false;
+    document.getElementById('signed-in').hidden = !n.signedIn; // the newest result says whether it was signed in
+    // At a glance: the lines one test measures come from the newest result. A line it no longer shows goes,
+    // unless the test couldn't see the tools (a login wall), when the measured lines stay as they were.
+    if (Array.isArray(n.glance)) {
+      const list = document.getElementById('glance-list');
+      const rows = new Map([...list.children].map((d) => [d.querySelector('dt').textContent, d]));
+      for (const label of ONE_TEST) {
+        const g = n.glance.find((x) => x && x.label === label);
+        if (g) {
+          let row = rows.get(label);
+          if (!row) { row = document.createElement('div'); row.append(document.createElement('dt'), document.createElement('dd')); row.firstChild.textContent = label; rows.set(label, row); }
+          row.lastChild.textContent = String(g.value);
+        } else if (rows.has(label) && (label === 'What you need' || n.sawTools)) { rows.get(label).remove(); rows.delete(label); }
+      }
+      list.replaceChildren(...ORDER.filter((l) => rows.has(l)).map((l) => rows.get(l)));
+      document.getElementById('glance-when').textContent = 'From the ' + word + ' on ' + when(n.testedAt) + '.';
+    }
+  } catch (err) {}
+})();
+for (const [id, text] of [['copy-top', (b) => b.dataset.cmd], ['copy-badge', () => document.getElementById('badge-md').textContent]]) document.getElementById(id).onclick = async (e) => {
+  const b = e.currentTarget, was = b.textContent, t = text(b);
+  try { await navigator.clipboard.writeText(t); b.textContent = 'Copied'; } catch (err) { b.textContent = t; }
+  setTimeout(() => (b.textContent = was), 1800);
+};
+</script>
+</body></html>

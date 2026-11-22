@@ -4108,5 +4108,26 @@
    "GitHub Security Advisories"
   ],
   "items": []
+ },
+ "ai.shystudio/shystudio": {
+  "checked": "2026-11-22",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.dealmonitor/dealmonitor": {
+  "checked": "2026-11-22",
+  "sources": [
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "app.freshleads/freshleads": {
+  "checked": "2026-11-22",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
  }
 }
