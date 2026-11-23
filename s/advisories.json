@@ -4221,5 +4221,62 @@
    "GitHub Security Advisories"
   ],
   "items": []
+ },
+ "ai.linkly/linkly-ai": {
+  "checked": "2026-11-23",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.priorlight/priorlight": {
+  "checked": "2026-11-23",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.ticketdesk/mcp": {
+  "checked": "2026-11-23",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.visualdimension/audio-to-video": {
+  "checked": "2026-11-23",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.himalayas/mcp": {
+  "checked": "2026-11-23",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "app.replenwise/mcp": {
+  "checked": "2026-11-23",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.shopsbuilder/mcp": {
+  "checked": "2026-11-23",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "blog.agentdiary/diary": {
+  "checked": "2026-11-23",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
  }
 }
