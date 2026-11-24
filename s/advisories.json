@@ -4278,5 +4278,131 @@
    "GitHub Security Advisories"
   ],
   "items": []
+ },
+ "ai.flashloop/flashloop": {
+  "checked": "2026-11-24",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.infograph/infograph": {
+  "checked": "2026-11-24",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.meshive/meshive": {
+  "checked": "2026-11-24",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.saastoolkit/mcp": {
+  "checked": "2026-11-24",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.sprites/ads": {
+  "checked": "2026-11-24",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.sprites/apple-ads": {
+  "checked": "2026-11-24",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.sprites/google-ads": {
+  "checked": "2026-11-24",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.sprites/google-analytics": {
+  "checked": "2026-11-24",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.sprites/linkedin-ads": {
+  "checked": "2026-11-24",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.sprites/meta-ads": {
+  "checked": "2026-11-24",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.sprites/microsoft-ads": {
+  "checked": "2026-11-24",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.sprites/reddit-ads": {
+  "checked": "2026-11-24",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.sprites/search-console": {
+  "checked": "2026-11-24",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.sprites/shopify": {
+  "checked": "2026-11-24",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.sprites/tiktok-ads": {
+  "checked": "2026-11-24",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.khaugully/khaugully": {
+  "checked": "2026-11-24",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.trustydata/trustydata": {
+  "checked": "2026-11-24",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ca.nimbusland/nimbus-land": {
+  "checked": "2026-11-24",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
  }
 }

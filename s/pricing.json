@@ -16114,5 +16114,474 @@
  "com.getstorra/creators": {
   "url": "https://getstorra.com/pricing",
   "checked": "2026-11-23"
+ },
+ "ai.aim-shield/mcp": {
+  "checked": "2026-11-24"
+ },
+ "ai.analyticalinsider/agents": {
+  "checked": "2026-11-24"
+ },
+ "ai.appgarten/appgarten": {
+  "checked": "2026-11-24"
+ },
+ "ai.cpapmachine/mcp": {
+  "checked": "2026-11-24"
+ },
+ "ai.datasnack/outbox": {
+  "url": "https://datasnack.ai/pricing",
+  "checked": "2026-11-24"
+ },
+ "ai.debugger/mcp": {
+  "url": "https://debugger.ai/pricing/",
+  "checked": "2026-11-24"
+ },
+ "ai.dv4/dv4": {
+  "url": "https://dv4.ai/pricing-calculator",
+  "checked": "2026-11-24"
+ },
+ "ai.elvex/elvex": {
+  "checked": "2026-11-24"
+ },
+ "ai.firstemployee/mcp": {
+  "url": "https://firstemployee.ai/pricing/",
+  "checked": "2026-11-24"
+ },
+ "ai.flashloop/flashloop": {
+  "url": "https://www.flashloop.ai/pricing",
+  "checked": "2026-11-24"
+ },
+ "ai.free/mcp": {
+  "url": "https://free.ai/pricing/",
+  "checked": "2026-11-24"
+ },
+ "ai.getwerk/werk": {
+  "checked": "2026-11-24"
+ },
+ "ai.healthysleep/mcp": {
+  "checked": "2026-11-24"
+ },
+ "ai.infograph/infograph": {
+  "checked": "2026-11-24"
+ },
+ "ai.knotr/knotr": {
+  "url": "https://knotr.ai/pricing",
+  "checked": "2026-11-24"
+ },
+ "ai.mensara/mind": {
+  "checked": "2026-11-24"
+ },
+ "ai.meshive/meshive": {
+  "checked": "2026-11-24"
+ },
+ "ai.noiseremover/mcp": {
+  "url": "https://noiseremover.ai/pricing/",
+  "checked": "2026-11-24"
+ },
+ "ai.pesky/pesky": {
+  "checked": "2026-11-24"
+ },
+ "ai.phasis/phasis": {
+  "url": "https://phasis.ai/pricing",
+  "checked": "2026-11-24"
+ },
+ "ai.pickbench/pickbench": {
+  "url": "https://pickbench.ai/en/pricing/",
+  "checked": "2026-11-24"
+ },
+ "ai.qonvert/qonvert": {
+  "checked": "2026-11-24"
+ },
+ "ai.ruam/agents": {
+  "url": "https://ruam.ai/pricing",
+  "checked": "2026-11-24"
+ },
+ "ai.ruam/ruam": {
+  "url": "https://ruam.ai/pricing",
+  "checked": "2026-11-24"
+ },
+ "ai.saastoolkit/mcp": {
+  "url": "https://saastoolkit.ai/pricing",
+  "checked": "2026-11-24"
+ },
+ "ai.sprites/ads": {
+  "checked": "2026-11-24"
+ },
+ "ai.sprites/apple-ads": {
+  "checked": "2026-11-24"
+ },
+ "ai.sprites/google-ads": {
+  "checked": "2026-11-24"
+ },
+ "ai.sprites/google-analytics": {
+  "checked": "2026-11-24"
+ },
+ "ai.sprites/linkedin-ads": {
+  "checked": "2026-11-24"
+ },
+ "ai.sprites/meta-ads": {
+  "checked": "2026-11-24"
+ },
+ "ai.sprites/microsoft-ads": {
+  "checked": "2026-11-24"
+ },
+ "ai.sprites/reddit-ads": {
+  "checked": "2026-11-24"
+ },
+ "ai.sprites/search-console": {
+  "checked": "2026-11-24"
+ },
+ "ai.sprites/shopify": {
+  "checked": "2026-11-24"
+ },
+ "ai.sprites/tiktok-ads": {
+  "checked": "2026-11-24"
+ },
+ "ai.stt/mcp": {
+  "url": "https://stt.ai/pricing/",
+  "checked": "2026-11-24"
+ },
+ "ai.transglot/transglot": {
+  "url": "https://transglot.ai/pricing",
+  "checked": "2026-11-24"
+ },
+ "ai.tts/mcp": {
+  "url": "https://tts.ai/pricing/",
+  "checked": "2026-11-24"
+ },
+ "ai.wallpapers/mcp": {
+  "url": "https://wallpapers.ai/pricing/",
+  "checked": "2026-11-24"
+ },
+ "ai.zestli/commerce": {
+  "checked": "2026-11-24"
+ },
+ "ai.zestli/operator": {
+  "checked": "2026-11-24"
+ },
+ "app.hypercrm/hypercrm": {
+  "url": "https://hypercrm.app/pricing",
+  "checked": "2026-11-24"
+ },
+ "app.khaugully/khaugully": {
+  "checked": "2026-11-24"
+ },
+ "app.nabras/qudrat": {
+  "checked": "2026-11-24"
+ },
+ "app.networkly/networkly": {
+  "checked": "2026-11-24"
+ },
+ "app.podstow/podstow": {
+  "checked": "2026-11-24"
+ },
+ "app.prismintel/triage": {
+  "checked": "2026-11-24"
+ },
+ "app.rendrr/0human": {
+  "checked": "2026-11-24"
+ },
+ "app.trustydata/trustydata": {
+  "checked": "2026-11-24"
+ },
+ "app.usebim/bim": {
+  "checked": "2026-11-24"
+ },
+ "app.visaengine/mcp": {
+  "url": "https://visaengine.app/pricing",
+  "checked": "2026-11-24"
+ },
+ "app.weelist/weelist": {
+  "checked": "2026-11-24"
+ },
+ "bike.seo/mcp": {
+  "url": "https://seo.bike/pricing/",
+  "checked": "2026-11-24"
+ },
+ "br.api.fipe/fipe": {
+  "checked": "2026-11-24"
+ },
+ "br.com.finjabs/jabs": {
+  "checked": "2026-11-24"
+ },
+ "ca.nimbusland/nimbus-land": {
+  "url": "https://nimbusland.ca/pricing",
+  "checked": "2026-11-24"
+ },
+ "ch.antevo/research": {
+  "checked": "2026-11-24"
+ },
+ "chat.ocr/mcp": {
+  "url": "https://ocr.chat/pricing/",
+  "checked": "2026-11-24"
+ },
+ "chat.pdf/mcp": {
+  "url": "https://pdf.chat/pricing/",
+  "checked": "2026-11-24"
+ },
+ "chat.theorem/mcp": {
+  "url": "https://theorem.chat/pricing/",
+  "checked": "2026-11-24"
+ },
+ "cloud.estiba/estiba": {
+  "checked": "2026-11-24"
+ },
+ "cloud.thort/thortspace": {
+  "checked": "2026-11-24"
+ },
+ "co.andbloom/growingus": {
+  "checked": "2026-11-24"
+ },
+ "co.chiefagenticofficer/cao": {
+  "checked": "2026-11-24"
+ },
+ "co.embeddable/embeddable": {
+  "url": "https://embeddable.co/pricing",
+  "checked": "2026-11-24"
+ },
+ "co.zindies/zindies": {
+  "checked": "2026-11-24"
+ },
+ "com.83belectioncalculator/site": {
+  "checked": "2026-11-24"
+ },
+ "com.abinomics/reference": {
+  "checked": "2026-11-24"
+ },
+ "com.admeldo/verified-work": {
+  "checked": "2026-11-24"
+ },
+ "com.agentopsboard/jobs": {
+  "checked": "2026-11-24"
+ },
+ "com.aiactdatasummary/site": {
+  "checked": "2026-11-24"
+ },
+ "com.aidatacloser/site": {
+  "checked": "2026-11-24"
+ },
+ "com.aidatafindersfee/site": {
+  "checked": "2026-11-24"
+ },
+ "com.aidatalicensingdeals/site": {
+  "checked": "2026-11-24"
+ },
+ "com.aidatamarketplaces/site": {
+  "checked": "2026-11-24"
+ },
+ "com.aidatapartnerprogram/site": {
+  "checked": "2026-11-24"
+ },
+ "com.aidataprovenance/site": {
+  "checked": "2026-11-24"
+ },
+ "com.aidatareferral/site": {
+  "checked": "2026-11-24"
+ },
+ "com.aileakage/ai-tool-facts": {
+  "checked": "2026-11-24"
+ },
+ "com.aitrainerpay/site": {
+  "checked": "2026-11-24"
+ },
+ "com.aitrainersalary/site": {
+  "checked": "2026-11-24"
+ },
+ "com.aitrainingjobsaustralia/site": {
+  "checked": "2026-11-24"
+ },
+ "com.aitrainingjobscanada/site": {
+  "checked": "2026-11-24"
+ },
+ "com.aitrainingjobsforaccountants/site": {
+  "checked": "2026-11-24"
+ },
+ "com.aitrainingjobsfordesigners/site": {
+  "checked": "2026-11-24"
+ },
+ "com.aitrainingjobsfordoctors/site": {
+  "checked": "2026-11-24"
+ },
+ "com.aitrainingjobsforengineers/site": {
+  "checked": "2026-11-24"
+ },
+ "com.aitrainingjobsforlawyers/site": {
+  "checked": "2026-11-24"
+ },
+ "com.aitrainingjobsfornurses/site": {
+  "checked": "2026-11-24"
+ },
+ "com.aitrainingjobsforpharmacists/site": {
+  "checked": "2026-11-24"
+ },
+ "com.aitrainingjobsforphds/site": {
+  "checked": "2026-11-24"
+ },
+ "com.aitrainingjobsforpsychologists/site": {
+  "checked": "2026-11-24"
+ },
+ "com.aitrainingjobsforscientists/site": {
+  "checked": "2026-11-24"
+ },
+ "com.aitrainingjobsforteachers/site": {
+  "checked": "2026-11-24"
+ },
+ "com.aitrainingjobsforwriters/site": {
+  "checked": "2026-11-24"
+ },
+ "com.aitrainingjobsindia/site": {
+  "checked": "2026-11-24"
+ },
+ "com.aitrainingjobskenya/site": {
+  "checked": "2026-11-24"
+ },
+ "com.aitrainingjobslegit/site": {
+  "checked": "2026-11-24"
+ },
+ "com.aitrainingjobsnigeria/site": {
+  "checked": "2026-11-24"
+ },
+ "com.aitrainingjobsnoexperience/site": {
+  "checked": "2026-11-24"
+ },
+ "com.aitrainingjobsphilippines/site": {
+  "checked": "2026-11-24"
+ },
+ "com.aitrainingjobssouthafrica/site": {
+  "checked": "2026-11-24"
+ },
+ "com.aitrainingjobsuae/site": {
+  "checked": "2026-11-24"
+ },
+ "com.aitrainingjobsuk/site": {
+  "checked": "2026-11-24"
+ },
+ "com.aitutorjobs/site": {
+  "checked": "2026-11-24"
+ },
+ "com.alkaratr/store-mcp": {
+  "checked": "2026-11-24"
+ },
+ "com.alpymcp/alpy-mcp": {
+  "url": "https://alpymcp.com/pricing",
+  "checked": "2026-11-24"
+ },
+ "com.arabicaitrainerjobs/site": {
+  "checked": "2026-11-24"
+ },
+ "com.ardo-hub/dabach-gaz": {
+  "checked": "2026-11-24"
+ },
+ "com.ashcaswellcompany.mcp/ash-caswell-company": {
+  "checked": "2026-11-24"
+ },
+ "com.austinhappyhourdatabase/happy-hours": {
+  "checked": "2026-11-24"
+ },
+ "com.automatedclientacquisition.www/aca": {
+  "url": "https://www.automatedclientacquisition.com/pricing",
+  "checked": "2026-11-24"
+ },
+ "com.avarisk/avarisk": {
+  "checked": "2026-11-24"
+ },
+ "com.badgermaps/badger-maps-mcp-v2": {
+  "url": "https://www.badgermapping.com/pricing",
+  "checked": "2026-11-24"
+ },
+ "com.badgermaps/badger-maps-mcp-v3": {
+  "url": "https://www.badgermapping.com/pricing",
+  "checked": "2026-11-24"
+ },
+ "com.blaidtrades/mcp": {
+  "url": "https://blaidtrades.com/pricing",
+  "checked": "2026-11-24"
+ },
+ "com.blockrelations/agent-access": {
+  "checked": "2026-11-24"
+ },
+ "com.box-track/home-inventory": {
+  "checked": "2026-11-24"
+ },
+ "com.buyaitrainingdata/site": {
+  "checked": "2026-11-24"
+ },
+ "com.calmvoy/fichas-de-pais": {
+  "checked": "2026-11-24"
+ },
+ "com.canisellmycompanydata/site": {
+  "checked": "2026-11-24"
+ },
+ "com.chapter11datasale/site": {
+  "checked": "2026-11-24"
+ },
+ "com.chineseaitrainerjobs/site": {
+  "checked": "2026-11-24"
+ },
+ "com.clawhard/preflight": {
+  "checked": "2026-11-24"
+ },
+ "com.clawhard/ripe": {
+  "checked": "2026-11-24"
+ },
+ "com.clerk/mcp": {
+  "url": "https://clerk.com/pricing",
+  "checked": "2026-11-24"
+ },
+ "com.closercommissioncalculator/site": {
+  "checked": "2026-11-24"
+ },
+ "com.cloudairy/cloudairy": {
+  "url": "https://cloudairy.com/pricing",
+  "checked": "2026-11-24"
+ },
+ "com.cloudinary/video-mcp": {
+  "url": "https://cloudinary.com/pricing",
+  "checked": "2026-11-24"
+ },
+ "com.commentdownloader/comment-downloader": {
+  "url": "https://commentdownloader.com/pricing",
+  "checked": "2026-11-24"
+ },
+ "com.credentialcamp.app/credential-camp": {
+  "checked": "2026-11-24"
+ },
+ "com.crmsynq/crmsynq": {
+  "url": "https://crmsynq.com/pricing",
+  "checked": "2026-11-24"
+ },
+ "com.crowdwisdomtrading.api/crowd-wisdom-trading": {
+  "url": "https://crowdwisdomtrading.com/pricing",
+  "checked": "2026-11-24"
+ },
+ "com.cyberscorelab.www/cyberscore": {
+  "checked": "2026-11-24"
+ },
+ "com.databrokerregistration/site": {
+  "checked": "2026-11-24"
+ },
+ "com.datacardgenerator/site": {
+  "checked": "2026-11-24"
+ },
+ "com.datacompanyvaluation/site": {
+  "checked": "2026-11-24"
+ },
+ "com.datadealroom/site": {
+  "checked": "2026-11-24"
+ },
+ "com.dataforwardflow/site": {
+  "checked": "2026-11-24"
+ },
+ "com.datalicensingagreement/site": {
+  "checked": "2026-11-24"
+ },
+ "com.datasetvaluation/site": {
+  "checked": "2026-11-24"
+ },
+ "com.delegancebrokerage/insurance": {
+  "checked": "2026-11-24"
+ },
+ "com.devaito/admin": {
+  "url": "https://www.devaito.com/page/plans",
+  "checked": "2026-11-24"
  }
 }
