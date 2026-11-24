@@ -1450,5 +1450,19 @@
  "com.blockrelations/agent-access": "2026-11-24",
  "com.clerk/mcp": "2026-11-24",
  "com.crowdwisdomtrading.api/crowd-wisdom-trading": "2026-11-24",
- "com.cyberscorelab.www/cyberscore": "2026-11-24"
+ "com.cyberscorelab.www/cyberscore": "2026-11-24",
+ "ai.anitilo/anitilo": "2026-11-24",
+ "ai.cmdop/machines": "2026-11-24",
+ "ai.elfa/mcp": "2026-11-24",
+ "ai.meerko/meerko": "2026-11-24",
+ "app.agentdeals/agentdeals": "2026-11-24",
+ "app.hyver/presay": "2026-11-24",
+ "app.vercel.warstwa-omega/docs-mcp": "2026-11-24",
+ "app.vercel.warstwa-omega/mcp": "2026-11-24",
+ "com.aplaceforagents/square": "2026-11-24",
+ "com.atriumsmarketplace/marketplace": "2026-11-24",
+ "com.blackryde/booking": "2026-11-24",
+ "com.buktryp/booking": "2026-11-24",
+ "com.chexlow/catalog": "2026-11-24",
+ "com.commhub-ai/communication-hub": "2026-11-24"
 }

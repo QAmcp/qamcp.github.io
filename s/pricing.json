@@ -16583,5 +16583,187 @@
  "com.devaito/admin": {
   "url": "https://www.devaito.com/page/plans",
   "checked": "2026-11-24"
+ },
+ "ai.1alexander/ai-visibility-tracker": {
+  "url": "https://1alexander.ai/pricing",
+  "checked": "2026-11-24"
+ },
+ "ai.anitilo/anitilo": {
+  "url": "https://anitilo.ai/pricing",
+  "checked": "2026-11-24"
+ },
+ "ai.appcart/buy": {
+  "checked": "2026-11-24"
+ },
+ "ai.appcart/sell": {
+  "checked": "2026-11-24"
+ },
+ "ai.bluemetal/mcp": {
+  "url": "https://bluemetal.ai/pricing",
+  "checked": "2026-11-24"
+ },
+ "ai.cmdop/machines": {
+  "url": "https://cmdop.ai/pricing",
+  "checked": "2026-11-24"
+ },
+ "ai.codedesign/codedesign": {
+  "url": "https://codedesign.ai/pricing",
+  "checked": "2026-11-24"
+ },
+ "ai.elfa/mcp": {
+  "url": "https://docs.elfa.ai/platform/pricing/",
+  "checked": "2026-11-24"
+ },
+ "ai.focala/mcp": {
+  "checked": "2026-11-24"
+ },
+ "ai.foodtales/foodtales": {
+  "url": "https://foodtales.ai/pricing",
+  "checked": "2026-11-24"
+ },
+ "ai.hellodoggo/hello-doggo": {
+  "checked": "2026-11-24"
+ },
+ "ai.lastmod/lastmod": {
+  "url": "https://www.lastmod.ai/en/pricing",
+  "checked": "2026-11-24"
+ },
+ "ai.maxaeo/ai-visibility-api": {
+  "url": "https://maxaeo.ai/pricing/",
+  "checked": "2026-11-24"
+ },
+ "ai.meerko/meerko": {
+  "url": "https://meerko.ai/pricing",
+  "checked": "2026-11-24"
+ },
+ "ai.rakelabs/rake-mcp": {
+  "url": "https://www.rakelabs.ai/pricing",
+  "checked": "2026-11-24"
+ },
+ "ai.thunderduck/thunderduck": {
+  "url": "https://thunderduck.ai/pricing/",
+  "checked": "2026-11-24"
+ },
+ "ai.tryfade.www/fade": {
+  "url": "https://www.tryfade.ai/pricing",
+  "checked": "2026-11-24"
+ },
+ "app.agentdeals/agentdeals": {
+  "checked": "2026-11-24"
+ },
+ "app.clearpolicy/clearpolicy": {
+  "checked": "2026-11-24"
+ },
+ "app.cupday/cupday": {
+  "checked": "2026-11-24"
+ },
+ "app.hyver/presay": {
+  "checked": "2026-11-24"
+ },
+ "app.moemail/mcp": {
+  "checked": "2026-11-24"
+ },
+ "app.planj/planj": {
+  "checked": "2026-11-24"
+ },
+ "app.renderboard/render-board": {
+  "url": "https://renderboard.app/pricing",
+  "checked": "2026-11-24"
+ },
+ "app.shopproof/rules": {
+  "url": "https://shopproof.app/pricing/",
+  "checked": "2026-11-24"
+ },
+ "app.vercel.warstwa-omega/docs-mcp": {
+  "checked": "2026-11-24"
+ },
+ "app.vercel.warstwa-omega/mcp": {
+  "checked": "2026-11-24"
+ },
+ "ca.princegeorgepulse/pg-pulse": {
+  "checked": "2026-11-24"
+ },
+ "ca.speedydrone.agr/site": {
+  "checked": "2026-11-24"
+ },
+ "ch.primai/primai": {
+  "checked": "2026-11-24"
+ },
+ "chat.publishwith/publish-with-chat": {
+  "url": "https://publishwith.chat/pricing",
+  "checked": "2026-11-24"
+ },
+ "com.adacetinsigorta/insurance": {
+  "checked": "2026-11-24"
+ },
+ "com.adrasi/adrasi": {
+  "url": "https://adrasi.com/pricing",
+  "checked": "2026-11-24"
+ },
+ "com.airprompter/airprompter": {
+  "checked": "2026-11-24"
+ },
+ "com.aivastark/aivastark": {
+  "url": "https://www.aivastark.com/pricing",
+  "checked": "2026-11-24"
+ },
+ "com.alltegrio/site": {
+  "checked": "2026-11-24"
+ },
+ "com.allthetdu/events": {
+  "checked": "2026-11-24"
+ },
+ "com.aplaceforagents/square": {
+  "checked": "2026-11-24"
+ },
+ "com.astranl/renovation-estimate-nl": {
+  "checked": "2026-11-24"
+ },
+ "com.atriumsmarketplace/marketplace": {
+  "checked": "2026-11-24"
+ },
+ "com.battery-snap/batterysnap": {
+  "checked": "2026-11-24"
+ },
+ "com.blaaklane/booking": {
+  "checked": "2026-11-24"
+ },
+ "com.blacklinelimousineservice/booking": {
+  "checked": "2026-11-24"
+ },
+ "com.blackryde/booking": {
+  "checked": "2026-11-24"
+ },
+ "com.blacksprinters/booking": {
+  "checked": "2026-11-24"
+ },
+ "com.buktryp/booking": {
+  "checked": "2026-11-24"
+ },
+ "com.byokg/byokg": {
+  "checked": "2026-11-24"
+ },
+ "com.capturebatch/capturebatch": {
+  "url": "https://capturebatch.com/pricing",
+  "checked": "2026-11-24"
+ },
+ "com.carsandcoast/coast": {
+  "checked": "2026-11-24"
+ },
+ "com.chatedly/chatedly": {
+  "url": "https://chatedly.com/pricing",
+  "checked": "2026-11-24"
+ },
+ "com.chexlow/catalog": {
+  "checked": "2026-11-24"
+ },
+ "com.cinematimes/showtimes": {
+  "checked": "2026-11-24"
+ },
+ "com.cobourglimo/booking": {
+  "checked": "2026-11-24"
+ },
+ "com.commhub-ai/communication-hub": {
+  "checked": "2026-11-24"
  }
 }

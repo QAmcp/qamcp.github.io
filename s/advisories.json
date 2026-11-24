@@ -4404,5 +4404,104 @@
    "GitHub Security Advisories"
   ],
   "items": []
+ },
+ "ai.1alexander/ai-visibility-tracker": {
+  "checked": "2026-11-24",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.codedesign/codedesign": {
+  "checked": "2026-11-24",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.elfa/mcp": {
+  "checked": "2026-11-24",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "ai.focala/mcp": {
+  "checked": "2026-11-24",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.maxaeo/ai-visibility-api": {
+  "checked": "2026-11-24",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.meerko/meerko": {
+  "checked": "2026-11-24",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.tryfade.www/fade": {
+  "checked": "2026-11-24",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.agentdeals/agentdeals": {
+  "checked": "2026-11-24",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.cupday/cupday": {
+  "checked": "2026-11-24",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.moemail/mcp": {
+  "checked": "2026-11-24",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ca.speedydrone.agr/site": {
+  "checked": "2026-11-24",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ch.antevo/research": {
+  "checked": "2026-11-24",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "chat.publishwith/publish-with-chat": {
+  "checked": "2026-11-24",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "co.embeddable/embeddable": {
+  "checked": "2026-11-24",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
  }
 }
