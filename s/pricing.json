@@ -16765,5 +16765,211 @@
  },
  "com.commhub-ai/communication-hub": {
   "checked": "2026-11-24"
+ },
+ "ai.bondren/docs": {
+  "checked": "2026-11-25"
+ },
+ "ai.chattee/chattee": {
+  "url": "https://chattee.ai/pricing",
+  "checked": "2026-11-25"
+ },
+ "ai.encodedbrands/bcp-registry": {
+  "checked": "2026-11-25"
+ },
+ "ai.genkite/genkite": {
+  "url": "https://genkite.ai/pricing",
+  "checked": "2026-11-25"
+ },
+ "ai.gixo/arc": {
+  "url": "https://gixo.ai/pricing",
+  "checked": "2026-11-25"
+ },
+ "ai.gixo/lex": {
+  "url": "https://gixo.ai/pricing",
+  "checked": "2026-11-25"
+ },
+ "ai.gixo/lumen": {
+  "url": "https://gixo.ai/pricing",
+  "checked": "2026-11-25"
+ },
+ "ai.gondola/gondola": {
+  "checked": "2026-11-25"
+ },
+ "ai.laimon/id": {
+  "checked": "2026-11-25"
+ },
+ "ai.llpro/finance": {
+  "url": "https://llpro.ai/pricing",
+  "checked": "2026-11-25"
+ },
+ "ai.llpro/legal": {
+  "url": "https://llpro.ai/pricing",
+  "checked": "2026-11-25"
+ },
+ "ai.llpro/records": {
+  "url": "https://llpro.ai/pricing",
+  "checked": "2026-11-25"
+ },
+ "ai.llpro/trust": {
+  "url": "https://llpro.ai/pricing",
+  "checked": "2026-11-25"
+ },
+ "ai.loopfour/financial-workflows": {
+  "url": "https://loopfour.ai/pricing",
+  "checked": "2026-11-25"
+ },
+ "ai.merchmaker/merchmaker": {
+  "url": "https://merchmaker.ai/pricing",
+  "checked": "2026-11-25"
+ },
+ "ai.nativeport/rooms": {
+  "checked": "2026-11-25"
+ },
+ "ai.plcs/plcs-ai": {
+  "url": "https://www.plcs.ai/pricing",
+  "checked": "2026-11-25"
+ },
+ "ai.rankcycle/seo": {
+  "url": "https://rankcycle.ai/pricing",
+  "checked": "2026-11-25"
+ },
+ "ai.selectd/security-brain": {
+  "url": "https://selectd.ai/pricing",
+  "checked": "2026-11-25"
+ },
+ "ai.stimhaus/emma-for-agents": {
+  "checked": "2026-11-25"
+ },
+ "ai.thefinancial/financial-ai": {
+  "checked": "2026-11-25"
+ },
+ "ai.tokenlock/tokenlock": {
+  "url": "https://tokenlock.ai/pricing",
+  "checked": "2026-11-25"
+ },
+ "ai.wpconvert/mcp": {
+  "checked": "2026-11-25"
+ },
+ "app.bestappify/shopify-app-store": {
+  "url": "https://bestappify.com/pricing",
+  "checked": "2026-11-25"
+ },
+ "app.coinspay/docs": {
+  "url": "https://coinspay.app/pricing",
+  "checked": "2026-11-25"
+ },
+ "app.movemate/body-progress": {
+  "checked": "2026-11-25"
+ },
+ "app.rendrr/biterminal": {
+  "checked": "2026-11-25"
+ },
+ "app.sayelf/sayelf": {
+  "checked": "2026-11-25"
+ },
+ "app.sharek/sharek": {
+  "url": "https://sharek.app/pricing",
+  "checked": "2026-11-25"
+ },
+ "app.storescreenshot/storescreenshot": {
+  "checked": "2026-11-25"
+ },
+ "app.travelrightnow/travel-right-now": {
+  "checked": "2026-11-25"
+ },
+ "app.uteke/uteke-memory": {
+  "url": "https://uteke.app/pricing",
+  "checked": "2026-11-25"
+ },
+ "at.lucando/kimmy": {
+  "checked": "2026-11-25"
+ },
+ "at.lucando/text-to-speech": {
+  "checked": "2026-11-25"
+ },
+ "br.com.smartdrugs/mcp": {
+  "checked": "2026-11-25"
+ },
+ "ca.mathter/mathter": {
+  "checked": "2026-11-25"
+ },
+ "ca.resortfinder/resortfinder": {
+  "checked": "2026-11-25"
+ },
+ "casa.alma/alma": {
+  "url": "https://alma.casa/pricing",
+  "checked": "2026-11-25"
+ },
+ "chat.wyp/docs": {
+  "checked": "2026-11-25"
+ },
+ "cloud.rosellm/rosellm": {
+  "checked": "2026-11-25"
+ },
+ "co.boatpartner/boat-partner": {
+  "checked": "2026-11-25"
+ },
+ "co.reparse/reparse": {
+  "checked": "2026-11-25"
+ },
+ "co.webcite/webcite": {
+  "url": "https://webcite.co/pricing",
+  "checked": "2026-11-25"
+ },
+ "com.adveron/mcp": {
+  "url": "https://adveron.com/pricing",
+  "checked": "2026-11-25"
+ },
+ "com.aidoptio/aidoptio": {
+  "url": "https://aidoptio.com/ai-consulting-cost",
+  "checked": "2026-11-25"
+ },
+ "com.aigradjobs/careers": {
+  "checked": "2026-11-25"
+ },
+ "com.aipromocodefinder/promo-code-finder": {
+  "checked": "2026-11-25"
+ },
+ "com.aipulsee/aipulsee": {
+  "checked": "2026-11-25"
+ },
+ "com.andreporsch/scorecards": {
+  "checked": "2026-11-25"
+ },
+ "com.angelsend/crm": {
+  "url": "https://angelsend.com/pricing",
+  "checked": "2026-11-25"
+ },
+ "com.apkrunner/android": {
+  "checked": "2026-11-25"
+ },
+ "com.ashareapi/ashare-data-api": {
+  "checked": "2026-11-25"
+ },
+ "com.askshopi/shopi": {
+  "checked": "2026-11-25"
+ },
+ "com.atxgraniteking/countertops": {
+  "checked": "2026-11-25"
+ },
+ "com.aurorainbox/signup": {
+  "checked": "2026-11-25"
+ },
+ "com.batchdispatch/mcp": {
+  "checked": "2026-11-25"
+ },
+ "com.buffer/mcp": {
+  "checked": "2026-11-25"
+ },
+ "com.certapoland/assessment": {
+  "url": "https://certapoland.com/pricing/",
+  "checked": "2026-11-25"
+ },
+ "com.chainstack/chainstack": {
+  "checked": "2026-11-25"
+ },
+ "com.changethisfile/mcp": {
+  "url": "https://changethisfile.com/pricing",
+  "checked": "2026-11-25"
  }
 }

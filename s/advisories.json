@@ -4503,5 +4503,77 @@
    "GitHub Security Advisories"
   ],
   "items": []
+ },
+ "ai.chattee/chattee": {
+  "checked": "2026-11-25",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.gondola/gondola": {
+  "checked": "2026-11-25",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.nativeport/rooms": {
+  "checked": "2026-11-25",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.plcs/plcs-ai": {
+  "checked": "2026-11-25",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.thefinancial/financial-ai": {
+  "checked": "2026-11-25",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.wpconvert/mcp": {
+  "checked": "2026-11-25",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "app.uteke/uteke-memory": {
+  "checked": "2026-11-25",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "br.com.smartdrugs/mcp": {
+  "checked": "2026-11-25",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ca.mathter/mathter": {
+  "checked": "2026-11-25",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "co.webcite/webcite": {
+  "checked": "2026-11-25",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
  }
 }
