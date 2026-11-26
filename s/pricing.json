@@ -17195,5 +17195,260 @@
  },
  "com.commandersolver/levin": {
   "checked": "2026-11-25"
+ },
+ "agency.lona/trading": {
+  "url": "https://www.lona.agency/pricing",
+  "checked": "2026-11-25"
+ },
+ "ai.casama/casama": {
+  "checked": "2026-11-25"
+ },
+ "ai.celgrid/celgrid": {
+  "checked": "2026-11-25"
+ },
+ "ai.getclustr/clustr": {
+  "checked": "2026-11-25"
+ },
+ "ai.getwinly/winly": {
+  "checked": "2026-11-25"
+ },
+ "ai.gradium/mcp": {
+  "checked": "2026-11-25"
+ },
+ "ai.indaga/indaga": {
+  "url": "https://indaga.ai/pricing",
+  "checked": "2026-11-25"
+ },
+ "ai.kanonik/kanonik": {
+  "url": "https://kanonik.ai/pricing",
+  "checked": "2026-11-25"
+ },
+ "ai.mindmetrics/mindmetrics": {
+  "checked": "2026-11-25"
+ },
+ "ai.mystoryland/my-storyland": {
+  "checked": "2026-11-25"
+ },
+ "ai.open-kanvas/kanvas": {
+  "checked": "2026-11-25"
+ },
+ "ai.orbiterdev/remote-mcp": {
+  "checked": "2026-11-25"
+ },
+ "ai.retailbeautyfetch/retailbeautyfetch": {
+  "checked": "2026-11-25"
+ },
+ "ai.retailgroceryfetch/retailgroceryfetch": {
+  "checked": "2026-11-25"
+ },
+ "ai.retailmediafetch/retailmediafetch": {
+  "checked": "2026-11-25"
+ },
+ "ai.sayprint/sayprint": {
+  "checked": "2026-11-25"
+ },
+ "ai.segue/segue": {
+  "url": "https://segue.ai/pricing",
+  "checked": "2026-11-25"
+ },
+ "ai.shipfolio/shipfolio": {
+  "url": "https://shipfolio.ai/pricing",
+  "checked": "2026-11-25"
+ },
+ "ai.songpilot/songpilot": {
+  "url": "https://songpilot.ai/pricing/",
+  "checked": "2026-11-25"
+ },
+ "ai.sprites/ai-visibility": {
+  "checked": "2026-11-25"
+ },
+ "ai.sprites/competitor-research": {
+  "checked": "2026-11-25"
+ },
+ "ai.sprites/framer": {
+  "checked": "2026-11-25"
+ },
+ "ai.sprites/google-business-profile": {
+  "checked": "2026-11-25"
+ },
+ "ai.sprites/marketing": {
+  "checked": "2026-11-25"
+ },
+ "ai.sprites/posthog": {
+  "checked": "2026-11-25"
+ },
+ "ai.sprites/seo": {
+  "checked": "2026-11-25"
+ },
+ "ai.sprites/webflow": {
+  "checked": "2026-11-25"
+ },
+ "ai.sprites/wordpress": {
+  "checked": "2026-11-25"
+ },
+ "ai.thor/thor": {
+  "url": "https://www.thor.ai/pricing",
+  "checked": "2026-11-25"
+ },
+ "ai.torre/torre": {
+  "url": "https://torre.ai/price",
+  "checked": "2026-11-25"
+ },
+ "ai.turnzero/tzcloud": {
+  "url": "https://turnzero.ai/pricing",
+  "checked": "2026-11-25"
+ },
+ "ai.turnzero/tztools": {
+  "url": "https://turnzero.ai/pricing",
+  "checked": "2026-11-25"
+ },
+ "ai.tuski/tuski": {
+  "checked": "2026-11-25"
+ },
+ "ai.usedream/dream": {
+  "url": "https://usedream.ai/pricing",
+  "checked": "2026-11-25"
+ },
+ "ai.zihin/mcp-server": {
+  "checked": "2026-11-25"
+ },
+ "ai.zooop/mcp": {
+  "url": "https://zooop.ai/pricing",
+  "checked": "2026-11-25"
+ },
+ "am.vcr/vcr": {
+  "checked": "2026-11-25"
+ },
+ "app.agentrooms/agentrooms": {
+  "checked": "2026-11-25"
+ },
+ "app.betterqr/betterqr": {
+  "url": "https://www.betterqr.app/pricing",
+  "checked": "2026-11-25"
+ },
+ "app.coinspay/shop": {
+  "url": "https://coinspay.app/pricing",
+  "checked": "2026-11-25"
+ },
+ "app.depesh/inbox": {
+  "url": "https://depesh.app/pricing",
+  "checked": "2026-11-25"
+ },
+ "app.eezly/nana": {
+  "checked": "2026-11-25"
+ },
+ "app.fojin/fojin-mcp": {
+  "checked": "2026-11-25"
+ },
+ "app.garageplanner/garage-planner": {
+  "checked": "2026-11-25"
+ },
+ "app.knotpad/knotpad": {
+  "checked": "2026-11-25"
+ },
+ "app.odyn/odyn": {
+  "url": "https://odyn.app/pricing",
+  "checked": "2026-11-25"
+ },
+ "app.roarer/roarer": {
+  "checked": "2026-11-25"
+ },
+ "app.sportarena/mcp": {
+  "checked": "2026-11-25"
+ },
+ "app.uzeo/uzeo": {
+  "checked": "2026-11-25"
+ },
+ "app.vercel.plety-desk/plety-guides": {
+  "url": "https://plety-desk.vercel.app/about/pricing",
+  "checked": "2026-11-25"
+ },
+ "app.wendung/analytics": {
+  "checked": "2026-11-25"
+ },
+ "app.wendung/docs": {
+  "checked": "2026-11-25"
+ },
+ "br.com.neuralsystem/neural-system": {
+  "checked": "2026-11-25"
+ },
+ "click.voltbench/voltbench": {
+  "checked": "2026-11-25"
+ },
+ "cloud.moonbase/moonbase": {
+  "url": "https://moonbase.cloud/pricing",
+  "checked": "2026-11-25"
+ },
+ "co.avagama/openings": {
+  "checked": "2026-11-25"
+ },
+ "co.caldrin/search": {
+  "checked": "2026-11-25"
+ },
+ "co.feedster/feedster": {
+  "checked": "2026-11-25"
+ },
+ "co.frontierresearch/frontier": {
+  "checked": "2026-11-25"
+ },
+ "co.kapshur/kapshur": {
+  "url": "https://kapshur.co/pricing",
+  "checked": "2026-11-25"
+ },
+ "co.kapshur/link-in-bio-checker": {
+  "url": "https://kapshur.co/pricing",
+  "checked": "2026-11-25"
+ },
+ "co.lumineapp/lumine": {
+  "checked": "2026-11-25"
+ },
+ "co.packs/packs": {
+  "url": "https://packs.co/pricing",
+  "checked": "2026-11-25"
+ },
+ "com.4xciv/explore": {
+  "checked": "2026-11-25"
+ },
+ "com.adchestra/mcp": {
+  "checked": "2026-11-25"
+ },
+ "com.agentyak/agentyak": {
+  "checked": "2026-11-25"
+ },
+ "com.aifindme/directory": {
+  "checked": "2026-11-25"
+ },
+ "com.andrechek.room-planner/mcp": {
+  "checked": "2026-11-25"
+ },
+ "com.athenadssolutions/hospital-payments": {
+  "url": "https://athenadssolutions.com/pricing.html",
+  "checked": "2026-11-25"
+ },
+ "com.athenrai/offers": {
+  "checked": "2026-11-25"
+ },
+ "com.b2btoolstudio/data-api": {
+  "checked": "2026-11-25"
+ },
+ "com.burgeonads/oracles": {
+  "checked": "2026-11-25"
+ },
+ "com.caloriecub/calorie-cub": {
+  "checked": "2026-11-25"
+ },
+ "com.clinichall/clinichall": {
+  "checked": "2026-11-25"
+ },
+ "com.clipkaboom/mcp": {
+  "url": "https://clipkaboom.com/pricing",
+  "checked": "2026-11-25"
+ },
+ "com.collatiomedia/bettingtipsai": {
+  "checked": "2026-11-25"
+ },
+ "com.connectchats/connectchats": {
+  "url": "https://connectchats.com/pricing",
+  "checked": "2026-11-25"
  }
 }

@@ -4575,5 +4575,175 @@
    "OSV.dev"
   ],
   "items": []
+ },
+ "ai.bootpay/mcp": {
+  "checked": "2026-11-25",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "ai.casama/casama": {
+  "checked": "2026-11-25",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.celgrid/celgrid": {
+  "checked": "2026-11-25",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.clema/mcp": {
+  "checked": "2026-11-25",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.kanonik/kanonik": {
+  "checked": "2026-11-25",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.keystonecloud/keystone": {
+  "checked": "2026-11-25",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.open-kanvas/kanvas": {
+  "checked": "2026-11-25",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.saifs/duplicate-payments": {
+  "checked": "2026-11-25",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.saifs/ecl": {
+  "checked": "2026-11-25",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.saifs/msme-43bh": {
+  "checked": "2026-11-25",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.saifs/three-way-match": {
+  "checked": "2026-11-25",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.saifs/vendor-fraud-check": {
+  "checked": "2026-11-25",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.skillsafe/skillsafe": {
+  "checked": "2026-11-25",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.sprites/ai-visibility": {
+  "checked": "2026-11-25",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.sprites/competitor-research": {
+  "checked": "2026-11-25",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.sprites/framer": {
+  "checked": "2026-11-25",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.sprites/google-business-profile": {
+  "checked": "2026-11-25",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.sprites/marketing": {
+  "checked": "2026-11-25",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.sprites/posthog": {
+  "checked": "2026-11-25",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.sprites/seo": {
+  "checked": "2026-11-25",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.sprites/webflow": {
+  "checked": "2026-11-25",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.sprites/wordpress": {
+  "checked": "2026-11-25",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.zihin/mcp-server": {
+  "checked": "2026-11-25",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "app.fojin/fojin-mcp": {
+  "checked": "2026-11-25",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
  }
 }
