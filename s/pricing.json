@@ -17450,5 +17450,335 @@
  "com.connectchats/connectchats": {
   "url": "https://connectchats.com/pricing",
   "checked": "2026-11-25"
+ },
+ "ac.compare/air-conditioners": {
+  "checked": "2026-11-26"
+ },
+ "ae.datadubai/dubai-real-estate": {
+  "checked": "2026-11-26"
+ },
+ "ai.argil/mcp": {
+  "checked": "2026-11-26"
+ },
+ "ai.brigaide/brigaide": {
+  "url": "https://app.brigaide.ai/pricing",
+  "checked": "2026-11-26"
+ },
+ "ai.chab/chab": {
+  "url": "https://www.chab.ai/pricing",
+  "checked": "2026-11-26"
+ },
+ "ai.delpha/delpha": {
+  "checked": "2026-11-26"
+ },
+ "ai.easybook/booking": {
+  "checked": "2026-11-26"
+ },
+ "ai.easybook/business": {
+  "checked": "2026-11-26"
+ },
+ "ai.founden/founden": {
+  "url": "https://founden.ai/plans",
+  "checked": "2026-11-26"
+ },
+ "ai.getcamino/camino": {
+  "checked": "2026-11-26"
+ },
+ "ai.gethandler/handler": {
+  "checked": "2026-11-26"
+ },
+ "ai.levr/mcp": {
+  "url": "https://levr.ai/pricing/",
+  "checked": "2026-11-26"
+ },
+ "ai.mountainwave/mountainwave-ai": {
+  "checked": "2026-11-26"
+ },
+ "ai.muninlabs/munin": {
+  "checked": "2026-11-26"
+ },
+ "ai.nanophoto/nanophoto": {
+  "url": "https://nanophoto.ai/pricing",
+  "checked": "2026-11-26"
+ },
+ "ai.poyo/mcp": {
+  "url": "https://poyo.ai/pricing",
+  "checked": "2026-11-26"
+ },
+ "ai.runnova/nova": {
+  "url": "https://runnova.ai/pricing",
+  "checked": "2026-11-26"
+ },
+ "ai.sidetrip.connect/countries": {
+  "checked": "2026-11-26"
+ },
+ "ai.sidetrip.connect/github": {
+  "checked": "2026-11-26"
+ },
+ "ai.sidetrip.connect/hackernews": {
+  "checked": "2026-11-26"
+ },
+ "ai.sidetrip.connect/lacrm": {
+  "checked": "2026-11-26"
+ },
+ "ai.sidetrip.connect/weather": {
+  "checked": "2026-11-26"
+ },
+ "ai.sogood/mcp": {
+  "checked": "2026-11-26"
+ },
+ "ai.ss33/skill-store": {
+  "checked": "2026-11-26"
+ },
+ "ai.toolsenabled/tesi-agent": {
+  "url": "https://toolsenabled.ai/pricing/",
+  "checked": "2026-11-26"
+ },
+ "ai.yix/yix": {
+  "checked": "2026-11-26"
+ },
+ "app.burnby/burnby": {
+  "checked": "2026-11-26"
+ },
+ "app.englishcue/englishcue": {
+  "url": "https://englishcue.app/pricing",
+  "checked": "2026-11-26"
+ },
+ "app.featury/featury": {
+  "checked": "2026-11-26"
+ },
+ "app.findsooner/sooner": {
+  "checked": "2026-11-26"
+ },
+ "app.playsnack/playsnack": {
+  "checked": "2026-11-26"
+ },
+ "app.purrkey/purrkey": {
+  "checked": "2026-11-26"
+ },
+ "app.scrapa/scrapa": {
+  "checked": "2026-11-26"
+ },
+ "app.smartgenius/smartgenius": {
+  "checked": "2026-11-26"
+ },
+ "app.stemp/stemp": {
+  "checked": "2026-11-26"
+ },
+ "app.visorfinance/visor": {
+  "checked": "2026-11-26"
+ },
+ "au.com.groundworkit/keelson": {
+  "checked": "2026-11-26"
+ },
+ "au.com.unicornlab/storefront": {
+  "checked": "2026-11-26"
+ },
+ "br.com.alaserver/bestpricetoday": {
+  "checked": "2026-11-26"
+ },
+ "br.com.bibliaestoica/anciao": {
+  "checked": "2026-11-26"
+ },
+ "br.com.ilojista/ilojista": {
+  "checked": "2026-11-26"
+ },
+ "cc.axiv/pay": {
+  "url": "https://pay.axiv.cc/pricing/",
+  "checked": "2026-11-26"
+ },
+ "cc.checkleaked/checkleaked-mcp": {
+  "url": "https://checkleaked.cc/pricing",
+  "checked": "2026-11-26"
+ },
+ "chat.grupy/grupy": {
+  "checked": "2026-11-26"
+ },
+ "city.vibeofthe/vibeofthecity": {
+  "checked": "2026-11-26"
+ },
+ "cleaning.agora/agora-marketplace": {
+  "checked": "2026-11-26"
+ },
+ "cloud.ferrite/ferrite": {
+  "url": "https://ferrite.cloud/pricing",
+  "checked": "2026-11-26"
+ },
+ "cloud.pinata/mcp": {
+  "checked": "2026-11-26"
+ },
+ "cn.dekuple/dekuple-china": {
+  "checked": "2026-11-26"
+ },
+ "co.fastgpu/fastgpu": {
+  "url": "https://fastgpu.co/pricing",
+  "checked": "2026-11-26"
+ },
+ "co.glp1prices/glp1-price-index": {
+  "checked": "2026-11-26"
+ },
+ "co.sanecode/sanecode": {
+  "checked": "2026-11-26"
+ },
+ "co.solarisrael/solarisrael": {
+  "checked": "2026-11-26"
+ },
+ "co.trtcompare/trt-clinic-prices": {
+  "checked": "2026-11-26"
+ },
+ "com.3dorchard/orchard-cad": {
+  "checked": "2026-11-26"
+ },
+ "com.a2aroom/guest": {
+  "checked": "2026-11-26"
+ },
+ "com.aakaarai/mcp": {
+  "checked": "2026-11-26"
+ },
+ "com.abcdancer/events": {
+  "checked": "2026-11-26"
+ },
+ "com.adslibraryapi/meta-google-tiktok-ads-library-mcp": {
+  "url": "https://adslibraryapi.com/pricing",
+  "checked": "2026-11-26"
+ },
+ "com.advisorppc/advisorppc": {
+  "url": "https://advisorppc.com/pricing",
+  "checked": "2026-11-26"
+ },
+ "com.agenttoolyard/mcp": {
+  "checked": "2026-11-26"
+ },
+ "com.anonpolls/anonpolls": {
+  "checked": "2026-11-26"
+ },
+ "com.appraisily/mcp": {
+  "checked": "2026-11-26"
+ },
+ "com.appusula/appusula": {
+  "url": "https://appusula.com/pricing",
+  "checked": "2026-11-26"
+ },
+ "com.askpandi/ask-pandi": {
+  "checked": "2026-11-26"
+ },
+ "com.astravue/astravue-mcp": {
+  "url": "https://astravue.com/pricing/",
+  "checked": "2026-11-26"
+ },
+ "com.audioparcel/audioparcel": {
+  "checked": "2026-11-26"
+ },
+ "com.automarketatlas/vehicle-data": {
+  "url": "https://automarketatlas.com/pricing",
+  "checked": "2026-11-26"
+ },
+ "com.avanciq/toolpulse": {
+  "checked": "2026-11-26"
+ },
+ "com.bayanlibrary/library": {
+  "checked": "2026-11-26"
+ },
+ "com.bike4mind/bike4mind": {
+  "url": "https://bike4mind.com/pricing",
+  "checked": "2026-11-26"
+ },
+ "com.bluecoastwater/bcw": {
+  "checked": "2026-11-26"
+ },
+ "com.bram4/publication": {
+  "checked": "2026-11-26"
+ },
+ "com.brightideascorp/brightideas": {
+  "checked": "2026-11-26"
+ },
+ "com.bulkemailvalidation/email-verification-deliverability-mcp": {
+  "url": "https://bulkemailvalidation.com/pricing",
+  "checked": "2026-11-26"
+ },
+ "com.cardatasales/spain-dgt": {
+  "checked": "2026-11-26"
+ },
+ "com.chatacademia/chatacademia": {
+  "checked": "2026-11-26"
+ },
+ "com.checkleaked/whatsapp-data": {
+  "url": "https://whatsapp.checkleaked.cc/pricing",
+  "checked": "2026-11-26"
+ },
+ "com.clevrgo/clevrgo": {
+  "checked": "2026-11-26"
+ },
+ "com.clevrgo/clevrgo-merchant": {
+  "checked": "2026-11-26"
+ },
+ "com.coldchainrules/cold-chain-rules": {
+  "checked": "2026-11-26"
+ },
+ "com.containermath/cbm": {
+  "url": "https://containermath.com/pricing",
+  "checked": "2026-11-26"
+ },
+ "com.contrastcyber/contrastapi": {
+  "url": "https://api.contrastcyber.com/pricing",
+  "checked": "2026-11-26"
+ },
+ "com.courtsapp/mcp": {
+  "checked": "2026-11-26"
+ },
+ "com.creatordeskai/machine-acquisition": {
+  "checked": "2026-11-26"
+ },
+ "com.creatordeskai/machine-growth": {
+  "checked": "2026-11-26"
+ },
+ "com.creatordeskai/machine-products": {
+  "checked": "2026-11-26"
+ },
+ "com.creatordeskai/machine-router": {
+  "checked": "2026-11-26"
+ },
+ "com.cryptocasinomedia/newsroom": {
+  "checked": "2026-11-26"
+ },
+ "com.cspriceapi/mcp": {
+  "checked": "2026-11-26"
+ },
+ "com.dabugs/shop": {
+  "checked": "2026-11-26"
+ },
+ "com.datawatongchal/korea-data": {
+  "checked": "2026-11-26"
+ },
+ "com.david-medeiros/archive": {
+  "checked": "2026-11-26"
+ },
+ "com.dayvil/dayvil": {
+  "checked": "2026-11-26"
+ },
+ "com.debyta/agent-check": {
+  "checked": "2026-11-26"
+ },
+ "com.defici/marketplace": {
+  "checked": "2026-11-26"
+ },
+ "com.delegateonce/delegateonce": {
+  "checked": "2026-11-26"
+ },
+ "com.destockage-habitat/catalogue": {
+  "checked": "2026-11-26"
+ },
+ "com.didww.doc/mcp": {
+  "checked": "2026-11-26"
+ },
+ "com.docexp/exam-photo-specs": {
+  "checked": "2026-11-26"
+ },
+ "com.draftcompare/legal-diff": {
+  "checked": "2026-11-26"
+ },
+ "com.drawtobid/drawtobid": {
+  "url": "https://drawtobid.com/pricing",
+  "checked": "2026-11-26"
  }
 }

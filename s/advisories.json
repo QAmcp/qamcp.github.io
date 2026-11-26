@@ -4745,5 +4745,85 @@
    "GitHub Security Advisories"
   ],
   "items": []
+ },
+ "ae.datadubai/dubai-real-estate": {
+  "checked": "2026-11-26",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.poyo/mcp": {
+  "checked": "2026-11-26",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "app.englishcue/englishcue": {
+  "checked": "2026-11-26",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "br.com.eapbuild/eapbuild": {
+  "checked": "2026-11-26",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ca.xcelsior/gpu-cloud": {
+  "checked": "2026-11-26",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "chat.grupy/grupy": {
+  "checked": "2026-11-26",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "cl.kruuse/tienda": {
+  "checked": "2026-11-26",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "cloud.ferrite/ferrite": {
+  "checked": "2026-11-26",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "co.avagama/openings": {
+  "checked": "2026-11-26",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "co.glp1prices/glp1-price-index": {
+  "checked": "2026-11-26",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "co.pepys/pepys-mcp": {
+  "checked": "2026-11-26",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
  }
 }
