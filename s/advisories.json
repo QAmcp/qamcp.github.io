@@ -4825,5 +4825,76 @@
    "OSV.dev"
   ],
   "items": []
+ },
+ "ai.alchemyagent/alchemyagent": {
+  "checked": "2026-11-27",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.discera/mcp": {
+  "checked": "2026-11-27",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.leadreef/leadreef": {
+  "checked": "2026-11-27",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.twelfth/free-tools": {
+  "checked": "2026-11-27",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.unitedcompute/gpu-prices": {
+  "checked": "2026-11-27",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.antigravityreset/antigravity-reset": {
+  "checked": "2026-11-27",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.conbridge/conbridge": {
+  "checked": "2026-11-27",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.finkeel/finkeel": {
+  "checked": "2026-11-27",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.hookslides/hookslides": {
+  "checked": "2026-11-27",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "at.memebo/memeboat-mcp": {
+  "checked": "2026-11-27",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
  }
 }
