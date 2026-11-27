@@ -4896,5 +4896,83 @@
    "OSV.dev"
   ],
   "items": []
+ },
+ "ai.autoposter/autoposter": {
+  "checked": "2026-11-27",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.cresva/cresva": {
+  "checked": "2026-11-27",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.felpra/felpra-trading-mcp": {
+  "checked": "2026-11-27",
+  "sources": [
+   "GitHub Security Advisories",
+   "OSV.dev"
+  ],
+  "items": []
+ },
+ "ai.postkeep/postkeep": {
+  "checked": "2026-11-27",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.sprites/attio": {
+  "checked": "2026-11-27",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.sprites/gohighlevel": {
+  "checked": "2026-11-27",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.sprites/hubspot": {
+  "checked": "2026-11-27",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.sprites/pipedrive": {
+  "checked": "2026-11-27",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.sprites/salesforce": {
+  "checked": "2026-11-27",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.socialtoai/socialtoai-app": {
+  "checked": "2026-11-27",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ar.com.nachthelad/argentina-mcp": {
+  "checked": "2026-11-27",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
  }
 }
