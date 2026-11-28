@@ -4974,5 +4974,61 @@
    "GitHub Security Advisories"
   ],
   "items": []
+ },
+ "ai.alvary.open/open-alvary": {
+  "checked": "2026-11-28",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.insightjet/insightjet": {
+  "checked": "2026-11-28",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ai.zebracat/zebracat": {
+  "checked": "2026-11-28",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.flowfiengine/flux": {
+  "checked": "2026-11-28",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "app.listspace/listspace": {
+  "checked": "2026-11-28",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ar.com.ignacioventura/argentina-mcp": {
+  "checked": "2026-11-28",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "ch.vulnpocalypse/vulnpocalypse": {
+  "checked": "2026-11-28",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
+ },
+ "co.quantkit/asia-market-mcp": {
+  "checked": "2026-11-28",
+  "sources": [
+   "GitHub Security Advisories"
+  ],
+  "items": []
  }
 }
