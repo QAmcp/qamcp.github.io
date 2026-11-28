@@ -18421,5 +18421,214 @@
  "com.boongon/boongon": {
   "url": "https://boongon.com/pricing",
   "checked": "2026-11-28"
+ },
+ "ai.ardyn/kyah": {
+  "checked": "2026-11-28"
+ },
+ "ai.contextdb/memory": {
+  "url": "https://contextdb.ai/pricing",
+  "checked": "2026-11-28"
+ },
+ "ai.dsght/public": {
+  "checked": "2026-11-28"
+ },
+ "ai.embodier/embodier-rails": {
+  "checked": "2026-11-28"
+ },
+ "ai.metricproof/metricproof": {
+  "checked": "2026-11-28"
+ },
+ "ai.nimblebrain/careers": {
+  "checked": "2026-11-28"
+ },
+ "ai.propertyinsight/propertyinsight": {
+  "url": "https://propertyinsight.ai/pricing",
+  "checked": "2026-11-28"
+ },
+ "ai.regulations/regulations-ai": {
+  "checked": "2026-11-28"
+ },
+ "ai.rubii/rubii-roleplay-mcp": {
+  "url": "https://rubii.ai/pricing",
+  "checked": "2026-11-28"
+ },
+ "ai.supersubject/insurance-rules-kb": {
+  "checked": "2026-11-28"
+ },
+ "ai.talira/talira": {
+  "checked": "2026-11-28"
+ },
+ "app.atmet/whatsapp": {
+  "checked": "2026-11-28"
+ },
+ "app.bulktranscript/transcripts": {
+  "url": "https://www.bulktranscript.app/pricing",
+  "checked": "2026-11-28"
+ },
+ "app.cabinetx/cabinet-x": {
+  "checked": "2026-11-28"
+ },
+ "app.hypro/hypro": {
+  "url": "https://www.hypro.app/pricing",
+  "checked": "2026-11-28"
+ },
+ "app.joshlabs/tingdao": {
+  "checked": "2026-11-28"
+ },
+ "app.joshlabs/volt": {
+  "checked": "2026-11-28"
+ },
+ "app.mailtea/mailtea": {
+  "url": "https://mailtea.app/pricing",
+  "checked": "2026-11-28"
+ },
+ "app.motiontone/motiontone": {
+  "url": "https://motiontone.app/pricing",
+  "checked": "2026-11-28"
+ },
+ "app.signalovernoise/signal-over-noise": {
+  "checked": "2026-11-28"
+ },
+ "app.silma/silma": {
+  "url": "https://silma.app/pricing",
+  "checked": "2026-11-28"
+ },
+ "app.tempocast/tempocast": {
+  "url": "https://tempocast.app/pricing",
+  "checked": "2026-11-28"
+ },
+ "app.vercel.warrant-agent-check/checks": {
+  "url": "https://github.com/pricing",
+  "checked": "2026-11-28"
+ },
+ "app.voicetask/voicetask": {
+  "checked": "2026-11-28"
+ },
+ "best.opendata.ai/web-intelligence": {
+  "checked": "2026-11-28"
+ },
+ "bio.clips/clips-bio": {
+  "url": "https://clips.bio/pricing",
+  "checked": "2026-11-28"
+ },
+ "bj.essor/essor": {
+  "checked": "2026-11-28"
+ },
+ "ca.aportee/aportee": {
+  "url": "https://aportee.ca/price",
+  "checked": "2026-11-28"
+ },
+ "ca.buytravelinsurance/travel-quotes": {
+  "checked": "2026-11-28"
+ },
+ "care.findcare/findcare": {
+  "checked": "2026-11-28"
+ },
+ "care.stillhuman/stillhuman": {
+  "checked": "2026-11-28"
+ },
+ "ch.insider24/swiss-insiders": {
+  "checked": "2026-11-28"
+ },
+ "chat.jammin/rooms": {
+  "checked": "2026-11-28"
+ },
+ "cloud.keyset/booking-pages": {
+  "checked": "2026-11-28"
+ },
+ "co.envel/design": {
+  "checked": "2026-11-28"
+ },
+ "com.0xpi.scholar/study-tools": {
+  "url": "https://scholar.0xpi.com/pricing",
+  "checked": "2026-11-28"
+ },
+ "com.agent-room/agent-room": {
+  "url": "https://www.agent-room.com/pricing",
+  "checked": "2026-11-28"
+ },
+ "com.agentinfraindex/agent-infra-index": {
+  "url": "https://agentinfraindex.com/pricing/",
+  "checked": "2026-11-28"
+ },
+ "com.agentyurt/agent-yurt": {
+  "url": "https://agentyurt.com/plans",
+  "checked": "2026-11-28"
+ },
+ "com.aibuildermarketplace/software-pricing": {
+  "checked": "2026-11-28"
+ },
+ "com.anvilpropulsion/customer": {
+  "checked": "2026-11-28"
+ },
+ "com.bestcloudcomputers/mcp": {
+  "checked": "2026-11-28"
+ },
+ "com.box-track/moving-tools": {
+  "checked": "2026-11-28"
+ },
+ "com.brainonbnb/binance-agent-id": {
+  "checked": "2026-11-28"
+ },
+ "com.business2si/registry": {
+  "checked": "2026-11-28"
+ },
+ "com.calderinference/workspace": {
+  "checked": "2026-11-28"
+ },
+ "com.calmatax.mcp/modelo-210": {
+  "checked": "2026-11-28"
+ },
+ "com.chillyairllc/products": {
+  "checked": "2026-11-28"
+ },
+ "com.cimtechmanufacturing/manufacturing": {
+  "checked": "2026-11-28"
+ },
+ "com.classicalbot/concerts": {
+  "checked": "2026-11-28"
+ },
+ "com.coinagemarketplace/coinage": {
+  "checked": "2026-11-28"
+ },
+ "com.cometinvest/shariahgrade": {
+  "checked": "2026-11-28"
+ },
+ "com.complianceautomator/public-mcp": {
+  "checked": "2026-11-28"
+ },
+ "com.consciousliv/conscious-living": {
+  "checked": "2026-11-28"
+ },
+ "com.constelarcumbaya.www/constelar-cumbaya": {
+  "checked": "2026-11-28"
+ },
+ "com.corebreath.www/core-breath": {
+  "checked": "2026-11-28"
+ },
+ "com.costitch/costitch": {
+  "checked": "2026-11-28"
+ },
+ "com.createwithaihub/hub": {
+  "checked": "2026-11-28"
+ },
+ "com.ctrader/mcp": {
+  "checked": "2026-11-28"
+ },
+ "com.cuelark/data": {
+  "checked": "2026-11-28"
+ },
+ "com.cursivepal/generator": {
+  "checked": "2026-11-28"
+ },
+ "com.dailyancestor/daily-ancestor": {
+  "checked": "2026-11-28"
+ },
+ "com.dataembed/crm": {
+  "checked": "2026-11-28"
+ },
+ "com.dealport/dealport": {
+  "url": "https://dealport.com/pricing",
+  "checked": "2026-11-28"
  }
 }
